@@ -1,8 +1,8 @@
 {
-  "as_of": "2026-11-12",
+  "as_of": "2026-11-14",
   "selection": "eeg.txt",
-  "selected_problems": 82,
-  "registered_problems": 91,
+  "selected_problems": 114,
+  "registered_problems": 123,
   "registered_not_selected": [
     "Blink",
     "ButtonPress",
@@ -19,8 +19,8 @@
   "counts": [
     {
       "category": "Clinical and physiological states",
-      "all_selected": 22,
-      "scalp_eeg": 22
+      "all_selected": 32,
+      "scalp_eeg": 32
     },
     {
       "category": "Brain-computer interfaces",
@@ -29,8 +29,8 @@
     },
     {
       "category": "Cognitive and affective states",
-      "all_selected": 6,
-      "scalp_eeg": 6
+      "all_selected": 28,
+      "scalp_eeg": 28
     },
     {
       "category": "Behaviour and activity",
@@ -44,7 +44,7 @@
     }
   ],
   "modalities": {
-    "scalp EEG": 82,
+    "scalp EEG": 114,
     "MEG": 0,
     "ECoG": 0
   },
@@ -56,6 +56,38 @@
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": "Attended versus unattended flashes in ALS participants; not ALS diagnosis."
+    },
+    {
+      "problem": "AcuteTBIVisualMemory",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Sub-acute mild TBI (3-14 days post-injury with LOC) versus matched healthy controls during Session 1 change-detection visual working memory (Cavanagh et al., ds003523; shared baseline cohort with TBIAuditoryOddball, separate task recordings)."
+    },
+    {
+      "problem": "AdultSeizures",
+      "category": "Clinical and physiological states",
+      "subclass": "Seizure detection",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Focal ictal seizure versus matched interictal non-seizure 4.0 s scalp EEG windows across 14 adult epilepsy patients (Detti et al., PhysioNet siena-scalp-eeg v1.0.0; activated fallback for duplicate Cavanagh2019)."
+    },
+    {
+      "problem": "AffectiveMusic",
+      "category": "Cognitive and affective states",
+      "subclass": "Emotion",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "4-quadrant circumplex music emotion from self-rated pleasantness (Q800) and energy (Q801) across 4.0 s windows (Daly et al., ds002721)."
+    },
+    {
+      "problem": "AlcoholBandit",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Alcohol use disorder (AUD) versus non-AUD control cohort during a three-armed bandit task (ds004595 v1.0.0); clinical cohort target."
     },
     {
       "problem": "Alzheimers",
@@ -74,6 +106,14 @@
       "notes": ""
     },
     {
+      "problem": "ArithmeticDifficulty",
+      "category": "Cognitive and affective states",
+      "subclass": "Workload / joint task condition",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "7-level Q-value mental arithmetic difficulty on 6.0 s stimulus-locked epochs (Barras & Booth, ds007262; shared cohort with NBackDifficulty)."
+    },
+    {
       "problem": "ArmCoordination",
       "category": "Brain-computer interfaces",
       "subclass": "Motor execution",
@@ -88,6 +128,22 @@
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": ""
+    },
+    {
+      "problem": "AuditoryDeviance",
+      "category": "Cognitive and affective states",
+      "subclass": "Attention and sensory deviance",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Passive auditory oddball mismatch negativity (MMN): 70 dB deviant versus preceding 80 dB standard tones (Kappenman et al. ERP CORE, ds003064; shared 40-subject cohort with WordRelatedness, FaceStimuli, and SpatialAttention)."
+    },
+    {
+      "problem": "BanditGambling",
+      "category": "Cognitive and affective states",
+      "subclass": "Reward and feedback valuation",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "3-armed oscillating-reward bandit win versus loss feedback epochs (Cavanagh et al., ds003458)."
     },
     {
       "problem": "ChildhoodSeizures",
@@ -122,6 +178,14 @@
       "notes": ""
     },
     {
+      "problem": "CognitiveLoadTasks",
+      "category": "Cognitive and affective states",
+      "subclass": "Workload / joint task condition",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "4-level protocol-induced cognitive load (neutral, low, medium, high) across Stroop and mental arithmetic tasks (CLATEEG26)."
+    },
+    {
       "problem": "CovidSurvivors",
       "category": "Clinical and physiological states",
       "subclass": "Medical diagnosis / clinical cohort",
@@ -136,6 +200,14 @@
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": ""
+    },
+    {
+      "problem": "FaceStimuli",
+      "category": "Cognitive and affective states",
+      "subclass": "Visual perception",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "4-class visual object and face perception (N170: faces, cars, scrambled faces, scrambled cars; Kappenman et al. ERP CORE, ds003061; shared 40-subject cohort with WordRelatedness, AuditoryDeviance, and SpatialAttention)."
     },
     {
       "problem": "FeedbackButton",
@@ -178,6 +250,14 @@
       "notes": ""
     },
     {
+      "problem": "FlankerConflict",
+      "category": "Cognitive and affective states",
+      "subclass": "Cognitive control and conflict",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "6-class lexicality by orthographic flanker interference (words and pseudowords with no, same, or different flankers; Holcomb & Emmorey Flankers-NEAR, ds005866)."
+    },
+    {
       "problem": "FlickerAttention",
       "category": "Brain-computer interfaces",
       "subclass": "SSVEP",
@@ -200,6 +280,14 @@
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": ""
+    },
+    {
+      "problem": "FuzzySemantics",
+      "category": "Cognitive and affective states",
+      "subclass": "Semantic processing",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Fuzzy natural-reading semantic target versus non-target words during rapid serial visual presentation (TMNRED, ds005383)."
     },
     {
       "problem": "GameTargets",
@@ -450,6 +538,14 @@
       "notes": ""
     },
     {
+      "problem": "InternalAttention",
+      "category": "Cognitive and affective states",
+      "subclass": "Attention and sensory deviance",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Sustained internal mental concentration versus relaxation on 2.0 s windows (Delorme et al., ds002691)."
+    },
+    {
       "problem": "LongIntervalTask",
       "category": "Clinical and physiological states",
       "subclass": "Medical diagnosis / clinical cohort",
@@ -490,12 +586,52 @@
       "notes": "Unmedicated interictal migraineurs versus age- and gender-matched controls during central-cross fixation."
     },
     {
+      "problem": "MoralConflict",
+      "category": "Cognitive and affective states",
+      "subclass": "Cognitive control and conflict",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "4-class moral intentionality (accidental versus intentional harm) by target congruency judgement (OpenNeuro ds004860)."
+    },
+    {
+      "problem": "MultitaskWorkload",
+      "category": "Cognitive and affective states",
+      "subclass": "Workload / joint task condition",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "3-level MATB-II ecological multitasking workload across labelled sessions S1 and S2 (Neuroergonomics 2021 competition, Zenodo 5055046)."
+    },
+    {
       "problem": "NBackAudioCondition",
       "category": "Cognitive and affective states",
       "subclass": "Workload / joint task condition",
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": "Joint3 N-back levels x4 audio codes; not a pure workload contrast."
+    },
+    {
+      "problem": "NBackDifficulty",
+      "category": "Cognitive and affective states",
+      "subclass": "Workload / joint task condition",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "4-level visual n-back working-memory load (1-back..4-back) on 1.5 s post-stimulus epochs (Barras & Booth, ds007169; shared cohort with ArithmeticDifficulty)."
+    },
+    {
+      "problem": "NarrativeReward",
+      "category": "Cognitive and affective states",
+      "subclass": "Reward and feedback valuation",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "4-class narrative versus non-narrative context crossed with monetary win versus loss feedback (MacEwan University, ds007968)."
+    },
+    {
+      "problem": "NaturalisticEmotion",
+      "category": "Cognitive and affective states",
+      "subclass": "Emotion",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "4-quadrant circumplex emotion (HVHA, HVLA, LVHA, LVLA from numeric valence >= 5 and arousal >= 5 ratings) during naturalistic multimedia videos across 9 byte-intact rated participants (DENS, ds003751)."
     },
     {
       "problem": "ObsessiveCompulsiveSymptoms",
@@ -520,6 +656,14 @@
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": "PD versus control during pedalling; diagnosis target, not activity classification."
+    },
+    {
+      "problem": "ParkinsonsReinforcement",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "OFF-medication Parkinson's disease patients versus matched controls during probabilistic reinforcement learning (Brown et al. 2020, ds003506 v1.1.0; shared UNM cohort with ParkinsonsRest, separate task recordings)."
     },
     {
       "problem": "ParkinsonsRest",
@@ -562,6 +706,22 @@
       "notes": ""
     },
     {
+      "problem": "PostCovidVigilance",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Post-COVID neurological fatigue cohort versus healthy controls during psychomotor vigilance testing (ds007605 v1.0.0)."
+    },
+    {
+      "problem": "ProbabilisticFeedback",
+      "category": "Cognitive and affective states",
+      "subclass": "Reward and feedback valuation",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "4-class probabilistic reinforcement learning win versus loss feedback crossed with puppy versus cow affective cue (Brown, Jackson & Cavanagh, ds003753)."
+    },
+    {
       "problem": "PronouncedSpeech",
       "category": "Behaviour and activity",
       "subclass": "Overt speech",
@@ -586,12 +746,44 @@
       "notes": "First-episode psychosis versus healthy control at eyes-open rest (second disjoint acquisition cohort)."
     },
     {
+      "problem": "PythonCodeReading",
+      "category": "Cognitive and affective states",
+      "subclass": "Semantic processing",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "4-class Python code comprehension token anomalies (well-formed, semantically implausible, structurally invalid, doubly anomalous; Kuo & Prat, ds004771)."
+    },
+    {
       "problem": "RestingEyeState",
       "category": "Clinical and physiological states",
       "subclass": "Physiological eye state",
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": ""
+    },
+    {
+      "problem": "SchizophreniaConflict",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Chronic schizophrenia patients versus healthy controls during cognitive control (Albrecht et al. 2019, PRED+CT d004)."
+    },
+    {
+      "problem": "SchizophreniaMotion",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Schizophrenia patients versus healthy controls during coherent visual motion perception (ds004367 v1.0.2)."
+    },
+    {
+      "problem": "SchizophreniaUltimatum",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Paranoid schizophrenia patients versus healthy controls during Ultimatum Game social decision-making (ds004000 v1.0.0)."
     },
     {
       "problem": "SelfRegulationSCP1",
@@ -610,6 +802,14 @@
       "notes": ""
     },
     {
+      "problem": "SentenceViolations",
+      "category": "Cognitive and affective states",
+      "subclass": "Semantic processing",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "5-class RSVP sentence comprehension critical words (control, syntactic, semantic, combined syntactic-semantic, and word-order violations; Holcomb SDSU NCL, ds008711)."
+    },
+    {
       "problem": "ShortIntervalTask",
       "category": "Clinical and physiological states",
       "subclass": "Medical diagnosis / clinical cohort",
@@ -626,6 +826,14 @@
       "notes": "Mixed imagined transitions and seated/standing idle classes; included in the existing30 MI tally."
     },
     {
+      "problem": "SleepDeprivation",
+      "category": "Cognitive and affective states",
+      "subclass": "Vigilance / sleep deprivation",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Normal sleep versus acute sleep deprivation during eyes-open resting EEG across 68 byte-intact paired participants (ds004902)."
+    },
+    {
       "problem": "SongFamiliarity",
       "category": "Cognitive and affective states",
       "subclass": "Memory / recognition performance",
@@ -634,12 +842,36 @@
       "notes": "Correct versus incorrect song identification, not simply familiar versus unfamiliar."
     },
     {
+      "problem": "SpatialAttention",
+      "category": "Cognitive and affective states",
+      "subclass": "Attention and sensory deviance",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Covert visual spatial attention target-left versus target-right visual search arrays (N2pc; Kappenman et al. ERP CORE, ds003065; shared 40-subject cohort with WordRelatedness, FaceStimuli, and AuditoryDeviance)."
+    },
+    {
       "problem": "SpellerFlashes",
       "category": "Brain-computer interfaces",
       "subclass": "ERP / P300 target detection",
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": ""
+    },
+    {
+      "problem": "SternbergMemory",
+      "category": "Cognitive and affective states",
+      "subclass": "Working memory maintenance",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "3-level modified Sternberg working-memory load (3, 5, or 7 memorised letters) during 2.0 s post-encoding maintenance intervals (ds004117)."
+    },
+    {
+      "problem": "StrokeMotorImagery",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Post-stroke patients versus healthy controls during hand motor imagery (Pardo-Garcia et al. 2026, Zenodo 19599466); clinical cohort target, not left-versus-right MI decoding."
     },
     {
       "problem": "SymbolAttention",
@@ -656,6 +888,14 @@
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": "3-class TBI diagnosis (control, sub-acute mild TBI, chronic TBI) on Session 1 deviant auditory oddball epochs."
+    },
+    {
+      "problem": "VerbalWorkingMemory",
+      "category": "Cognitive and affective states",
+      "subclass": "Working memory maintenance",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "6-class verbal working-memory maintenance load (5, 6, or 7 letters) crossed with retention versus alphabetical manipulation on 2.0 s delay windows (Pavlov & Kotchoubey, ds003655)."
     },
     {
       "problem": "VideoEmotions",
@@ -682,6 +922,14 @@
       "notes": ""
     },
     {
+      "problem": "VisualSymmetry",
+      "category": "Cognitive and affective states",
+      "subclass": "Visual perception",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Sustained posterior negativity (SPN) regular reflection/rotation symmetry versus random dot patterns (Makin et al. SPN1, ds004347)."
+    },
+    {
       "problem": "WalkingTargets",
       "category": "Brain-computer interfaces",
       "subclass": "ERP / P300 target detection",
@@ -704,6 +952,14 @@
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": "ERP/N400 semantic task; ERP is also a cross-cutting response/paradigm tag."
+    },
+    {
+      "problem": "ZosterNeuralgiaSleep",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Acute herpes zoster neuralgia (AHZN) versus chronic postherpetic neuralgia (PHN) during nocturnal sleep EEG (ds007181 v1.0.1)."
     }
   ],
   "study_exclusions": [

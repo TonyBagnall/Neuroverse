@@ -8,7 +8,9 @@
   "timepoints": 512,
   "classes": 4,
   "frequency": 256,
-  "size_GB": 0.054792,
+  "units": "uV",
+  "scale_factor_from_source_mV": 1000.0,
+  "size_GB": 0.073474,
   "licence": "CC-BY-4.0",
   "class_counts": {
     "train": {
@@ -71,8 +73,14 @@
           "subject09_run1",
           "subject09_run2"
         ],
-        "exact_float32_roundtrip": true,
-        "metadata_rows_verified": true
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "median_channel_sd_uV": 7.2636149671834636,
+        "p05_channel_sd_uV": 4.908582774677235,
+        "p95_channel_sd_uV": 13.368483460577346,
+        "max_abs_uV": 311.3335072994232,
+        "cases_max_abs_gt_1000_uV": 0,
+        "fraction_cases_max_abs_gt_1000_uV": 0.0
       },
       "TEST": {
         "cases": 352,
@@ -105,13 +113,19 @@
           "subject12_run4",
           "subject12_run5"
         ],
-        "exact_float32_roundtrip": true,
-        "metadata_rows_verified": true
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "median_channel_sd_uV": 6.7372786805720715,
+        "p05_channel_sd_uV": 5.036302935493186,
+        "p95_channel_sd_uV": 9.05536078933424,
+        "max_abs_uV": 499.9847710132599,
+        "cases_max_abs_gt_1000_uV": 0,
+        "fraction_cases_max_abs_gt_1000_uV": 0.0
       }
     },
     "aeon": {
       "passed": true,
-      "aeon_version": "1.5.0",
+      "aeon_version": "1.6.0",
       "classifier": "SummaryClassifier",
       "train_cases": 8,
       "test_cases": 8,
@@ -123,13 +137,7 @@
     "duplicate_signal_cases_remaining": 0,
     "dropped_events": [],
     "channel_order_verified": true,
-    "max_float32_cast_absolute_error_source_units": 0.0
-  },
-  "missing_metadata": [
-    "verified physical signal units/calibration",
-    "verified sensor coordinates in metres",
-    "original session labels",
-    "reference laterality",
-    "true subject ownership of duplicate 03/07 recording"
-  ]
+    "eeg_scale_factor_applied": 1000.0,
+    "max_source_fif_float32_vs_float64_diff_mV": 0.0
+  }
 }

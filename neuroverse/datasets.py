@@ -1,7 +1,7 @@
 """The Neuroverse classification archive: dataset lists and metadata.
 
 The archive includes the 30 problems published by Rushbrooke et al. (2026)
-and 61 additional local preparations. Use the supplied fixed train/test splits;
+and 93 additional local preparations. Use the supplied fixed train/test splits;
 some protocols intentionally share subjects and some older identity mappings
 remain incomplete. See docs/dataset-provenance.md for dataset-specific evidence.
 
@@ -10,7 +10,7 @@ to the experiment and leaderboard code::
 
     from neuroverse.datasets import neuroverse_study, by_type
 
-    leaderboard(datasets=by_type("MI"), estimators=["HC2-500-pc", "MRHydra"])
+    leaderboard(datasets=by_type("MI"), estimators=["HC2", "MRHydra"])
 
 Published open files are downloaded with ``aeon.datasets.load_classification``;
 the newer preparations are loaded from local .ts files. The list is
@@ -22,6 +22,12 @@ does.
 __all__ = [
     "neuroverse",
     "neuroverse_study",
+    "neuroverse_core",
+    "neuroverse_90",
+    "neuroverse_extended",
+    "neuroverse_114",
+    "neuroverse_104",
+    "neuroverse_89",
     "neuroverse_82",
     "neuroverse_77",
     "neuroverse_76",
@@ -33,6 +39,7 @@ __all__ = [
     "DOMAINS",
     "PROBLEM_FAMILIES",
     "BCI_TYPES",
+    "CORE_PROBLEM_TYPES",
     "PROBLEM_TYPE_TABS",
     "STUDY_TAXONOMY",
     "metadata",
@@ -50,7 +57,7 @@ DOMAINS = {
     "Psy": "Psychology",
 }
 
-#: Top-level problem families for the 82-problem scalp EEG study.
+#: Top-level problem families for the 114-problem scalp EEG study.
 PROBLEM_FAMILIES = {
     "BCI": "Brain-computer interface",
     "Clinical": "Clinical and physiological",
@@ -66,17 +73,26 @@ BCI_TYPES = {
     "Speech": "Decoded and imagined speech",
 }
 
-#: Ordered problem-type tabs used on the interactive leaderboard.
-PROBLEM_TYPE_TABS = {
-    "All": "All Scalp EEG",
-    "BCI": "BCI (All)",
+#: The three symmetric 30-problem pillars of the primary 90-problem benchmark.
+CORE_PROBLEM_TYPES = {
     "MI": "Motor Imagery",
+    "Clinical": "Clinical",
+    "Cognitive": "Cognitive",
+}
+
+#: Ordered problem-type tabs used on the interactive leaderboard (Core 30/30/30
+#: first, followed by the extended 114-problem scalp EEG tabs).
+PROBLEM_TYPE_TABS = {
+    "Core90": "Core 90 (30/30/30)",
+    "MI": "Motor Imagery",
+    "Clinical": "Clinical",
+    "Cognitive": "Cognitive",
+    "All114": "All Scalp EEG",
+    "BCI": "BCI (All)",
     "ME": "Motor Execution",
     "ERP": "ERP / P300",
     "VEP": "VEP / SSVEP",
     "Speech": "Speech BCI",
-    "Clinical": "Clinical",
-    "Cognitive": "Cognitive",
 }
 
 _COLUMNS = [
@@ -221,6 +237,47 @@ _TABLE += [
     ("TBIAuditoryOddball", 61, 3, 500, 87, 4848, 1748, 500, "Med"),
 ]
 
+_TABLE += [
+    ("ArithmeticDifficulty", 19, 7, 1500, 18, 819, 315, 250, "Psy"),
+    ("CognitiveLoadTasks", 8, 4, 1000, 40, 3600, 1200, 250, "Psy"),
+    ("MultitaskWorkload", 61, 3, 500, 15, 9834, 3576, 250, "Psy"),
+    ("NBackDifficulty", 19, 4, 375, 18, 5200, 2000, 250, "Psy"),
+    ("NaturalisticEmotion", 128, 4, 1000, 9, 780, 405, 250, "Psy"),
+    ("SleepDeprivation", 61, 2, 2000, 68, 3060, 1020, 500, "Psy"),
+    ("SternbergMemory", 69, 3, 500, 23, 1534, 558, 250, "Psy"),
+]
+
+_TABLE += [
+    ("AffectiveMusic", 19, 4, 4000, 31, 2588, 904, 1000, "Psy"),
+    ("AuditoryDeviance", 30, 2, 1024, 40, 11934, 4000, 1024, "Psy"),
+    ("BanditGambling", 63, 2, 500, 23, 8146, 2870, 500, "Psy"),
+    ("FaceStimuli", 30, 4, 1024, 40, 9600, 3200, 1024, "Psy"),
+    ("FlankerConflict", 29, 6, 500, 60, 12148, 4050, 500, "Psy"),
+    ("FuzzySemantics", 30, 2, 200, 30, 8780, 3191, 200, "Psy"),
+    ("InternalAttention", 32, 2, 500, 20, 6071, 2093, 250, "Psy"),
+    ("MoralConflict", 32, 4, 512, 31, 2488, 866, 512, "Psy"),
+    ("NarrativeReward", 30, 4, 1000, 40, 4319, 1440, 1000, "Psy"),
+    ("ProbabilisticFeedback", 59, 4, 500, 25, 2877, 1120, 500, "Psy"),
+    ("PythonCodeReading", 32, 4, 334, 61, 7177, 2560, 256, "Psy"),
+    ("SentenceViolations", 29, 5, 500, 64, 8640, 2880, 500, "Psy"),
+    ("SpatialAttention", 30, 2, 1024, 40, 9607, 3200, 1024, "Psy"),
+    ("VerbalWorkingMemory", 19, 6, 1000, 155, 13910, 4676, 500, "Psy"),
+    ("VisualSymmetry", 64, 2, 512, 24, 2879, 960, 512, "Psy"),
+]
+
+_TABLE += [
+    ("AcuteTBIVisualMemory", 63, 2, 2000, 86, 1920, 660, 500, "Med"),
+    ("AdultSeizures", 29, 2, 2048, 14, 1572, 591, 512, "Med"),
+    ("AlcoholBandit", 59, 2, 2000, 53, 1170, 420, 500, "Med"),
+    ("ParkinsonsReinforcement", 63, 2, 2000, 56, 1260, 420, 500, "Med"),
+    ("PostCovidVigilance", 127, 2, 4000, 97, 1800, 625, 1000, "Med"),
+    ("SchizophreniaConflict", 60, 2, 4000, 76, 1680, 600, 1000, "Med"),
+    ("SchizophreniaMotion", 61, 2, 3600, 40, 870, 330, 1200, "Med"),
+    ("SchizophreniaUltimatum", 128, 2, 3072, 43, 768, 264, 2048, "Med"),
+    ("StrokeMotorImagery", 58, 2, 4000, 18, 520, 200, 1000, "Med"),
+    ("ZosterNeuralgiaSleep", 19, 2, 1024, 58, 1290, 450, 256, "Med"),
+]
+
 _TABLE.sort(key=lambda row: row[0])
 
 #: Prepared locally; not registered for aeon's automatic archive downloads.
@@ -230,39 +287,50 @@ local_only = [row[0] for row in _TABLE if row[0] not in neuroverse_paper]
 #: loaded through aeon. Results for them are still reported.
 restricted = ["FibroLiverpool", "FibroUEA"]
 
-#: All 91 prepared classification problems used by this repository.
+#: All 123 prepared classification problems used by this repository.
 neuroverse = [row[0] for row in _TABLE]
 
 #: The 28 problems anyone can download, the same list as aeon's ``eeg2026``.
 neuroverse_open = [name for name in neuroverse_paper if name not in restricted]
 
-#: Problem-type assignment ``(family, bci_type)`` for the 82 selected scalp EEG
+#: Problem-type assignment ``(family, bci_type)`` for the 114 selected scalp EEG
 #: classification problems. Strict scalp-EEG motor imagery (``MI``) has 30
-#: problems, ``Clinical`` has 20 problems, and the 6 executed/movement-intention
-#: motor tasks sit in ``ME``. MEG (FaceDetection, HandMovementDirection,
-#: MatchWords, MindReading), ECoG (MotorImagery), and the four older excluded
-#: problems (Blink, ButtonPress, EpilepticSeizures, Sleep) remain in the
-#: 91-item archive registry above.
+#: problems, ``Clinical`` has 30 problems, ``Cognitive`` has 30 problems, and
+#: the 6 executed/movement-intention motor tasks sit in ``ME``. MEG
+#: (FaceDetection, HandMovementDirection, MatchWords, MindReading), ECoG
+#: (MotorImagery), and the four older excluded problems (Blink, ButtonPress,
+#: EpilepticSeizures, Sleep) remain in the 123-item archive registry above.
 STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "ALSAttention": ("BCI", "ERP"),
+    "AcuteTBIVisualMemory": ("Clinical", ""),
+    "AdultSeizures": ("Clinical", ""),
+    "AffectiveMusic": ("Cognitive", ""),
+    "AlcoholBandit": ("Clinical", ""),
     "Alzheimers": ("Clinical", ""),
     "AlzheimersAuditory": ("Clinical", ""),
+    "ArithmeticDifficulty": ("Cognitive", ""),
     "ArmCoordination": ("BCI", "ME"),
     "ArmMovements": ("BCI", "ME"),
+    "AuditoryDeviance": ("Cognitive", ""),
+    "BanditGambling": ("Cognitive", ""),
     "ChildhoodSeizures": ("Clinical", ""),
     "ClinicalSleepStages": ("Clinical", ""),
     "CodedFlickerTargets": ("BCI", "VEP"),
     "CodedSymbols": ("BCI", "VEP"),
+    "CognitiveLoadTasks": ("Cognitive", ""),
     "CovidSurvivors": ("Clinical", ""),
     "EyesOpenShut": ("Cognitive", ""),
+    "FaceStimuli": ("Cognitive", ""),
     "FeedbackButton": ("Cognitive", ""),
     "FeetHands": ("BCI", "ME"),
     "FibroLiverpool": ("Clinical", ""),
     "FibroUEA": ("Clinical", ""),
     "FingerMovements": ("BCI", "ME"),
+    "FlankerConflict": ("Cognitive", ""),
     "FlickerAttention": ("BCI", "VEP"),
     "FlickerSymbols": ("BCI", "VEP"),
     "FlickerTargets": ("BCI", "VEP"),
+    "FuzzySemantics": ("Cognitive", ""),
     "GameTargets": ("BCI", "ERP"),
     "ImaginedAnkleRest": ("BCI", "MI"),
     "ImaginedArmMovements": ("BCI", "MI"),
@@ -294,47 +362,82 @@ STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "ImaginedRightHandFeet": ("BCI", "MI"),
     "ImaginedRightHandFeetRest": ("BCI", "MI"),
     "InnerSpeech": ("BCI", "Speech"),
+    "InternalAttention": ("Cognitive", ""),
     "LongIntervalTask": ("Clinical", ""),
     "LowCost": ("BCI", "MI"),
     "MatchingPennies": ("BCI", "ME"),
     "MentalArithmetic": ("Cognitive", ""),
     "MigraineRest": ("Clinical", ""),
+    "MoralConflict": ("Cognitive", ""),
+    "MultitaskWorkload": ("Cognitive", ""),
     "NBackAudioCondition": ("Cognitive", ""),
+    "NBackDifficulty": ("Cognitive", ""),
+    "NarrativeReward": ("Cognitive", ""),
+    "NaturalisticEmotion": ("Cognitive", ""),
     "ObsessiveCompulsiveSymptoms": ("Clinical", ""),
     "OpenCloseFist": ("BCI", "ME"),
     "ParkinsonsPedalling": ("Clinical", ""),
+    "ParkinsonsReinforcement": ("Clinical", ""),
     "ParkinsonsRest": ("Clinical", ""),
     "ParkinsonsRestIowa": ("Clinical", ""),
     "ParkinsonsRestUCSD": ("Clinical", ""),
     "ParkinsonsWalking": ("Clinical", ""),
     "PhotoStimulation": ("Clinical", ""),
+    "PostCovidVigilance": ("Clinical", ""),
+    "ProbabilisticFeedback": ("Cognitive", ""),
     "PronouncedSpeech": ("BCI", "Speech"),
     "PsychosisRestFirst": ("Clinical", ""),
     "PsychosisRestSecond": ("Clinical", ""),
+    "PythonCodeReading": ("Cognitive", ""),
     "RestingEyeState": ("Cognitive", ""),
+    "SchizophreniaConflict": ("Clinical", ""),
+    "SchizophreniaMotion": ("Clinical", ""),
+    "SchizophreniaUltimatum": ("Clinical", ""),
     "SelfRegulationSCP1": ("BCI", "ERP"),
     "SelfRegulationSCP2": ("BCI", "ERP"),
+    "SentenceViolations": ("Cognitive", ""),
     "ShortIntervalTask": ("Clinical", ""),
     "SitStand": ("BCI", "MI"),
+    "SleepDeprivation": ("Cognitive", ""),
     "SongFamiliarity": ("Cognitive", ""),
+    "SpatialAttention": ("Cognitive", ""),
     "SpellerFlashes": ("BCI", "ERP"),
+    "SternbergMemory": ("Cognitive", ""),
+    "StrokeMotorImagery": ("Clinical", ""),
     "SymbolAttention": ("BCI", "ERP"),
     "TBIAuditoryOddball": ("Clinical", ""),
+    "VerbalWorkingMemory": ("Cognitive", ""),
     "VideoEmotions": ("Cognitive", ""),
     "VisualSpeech": ("BCI", "Speech"),
     "VisualSubjects": ("BCI", "ERP"),
+    "VisualSymmetry": ("Cognitive", ""),
     "WalkingTargets": ("BCI", "ERP"),
     "WirelessFlicker": ("BCI", "VEP"),
     "WordRelatedness": ("Cognitive", ""),
+    "ZosterNeuralgiaSleep": ("Clinical", ""),
 }
 
-#: The 82 selected scalp EEG classification problems in the extended benchmark.
-neuroverse_study = sorted(STUDY_TAXONOMY)
-neuroverse_82 = neuroverse_study
-neuroverse_77 = neuroverse_study  # backwards-compatible alias
-neuroverse_76 = neuroverse_study  # backwards-compatible alias
+#: All 114 selected scalp EEG classification problems (30 MI + 24 other BCI +
+#: 30 Clinical + 30 Cognitive).
+neuroverse_114 = sorted(STUDY_TAXONOMY)
+neuroverse_extended = neuroverse_114
+neuroverse_104 = neuroverse_114  # backwards-compatible alias
+neuroverse_89 = neuroverse_114  # backwards-compatible alias
+neuroverse_82 = neuroverse_114  # backwards-compatible alias
+neuroverse_77 = neuroverse_114  # backwards-compatible alias
+neuroverse_76 = neuroverse_114  # backwards-compatible alias
 
-#: Registered archive problems excluded from the 82-problem scalp EEG study.
+#: Primary 90-problem benchmark: symmetric 30 Motor Imagery + 30 Clinical +
+#: 30 Cognitive scalp EEG problems.
+neuroverse_90 = sorted(
+    name
+    for name, (fam, bci) in STUDY_TAXONOMY.items()
+    if fam in ("Clinical", "Cognitive") or bci == "MI"
+)
+neuroverse_core = neuroverse_90
+neuroverse_study = neuroverse_90
+
+#: Registered archive problems excluded from the 114-problem scalp EEG archive.
 excluded_archive = [name for name in neuroverse if name not in STUDY_TAXONOMY]
 
 
@@ -345,8 +448,8 @@ def metadata() -> pd.DataFrame:
     -------
     pd.DataFrame
         Indexed by dataset name, with the columns of Table 1, availability
-        flags, and the 82-problem study taxonomy (``family``, ``bci_type``,
-        ``problem_type``, ``study_selected``).
+        flags, and the study taxonomy (``family``, ``bci_type``,
+        ``problem_type``, ``study_core_90``, ``study_selected``).
     """
     frame = pd.DataFrame(_TABLE, columns=_COLUMNS).set_index("dataset")
     frame["subjects"] = frame["subjects"].astype("Int64")
@@ -358,6 +461,7 @@ def metadata() -> pd.DataFrame:
         "local" if n in local_only else "restricted" if n in restricted else "aeon/Zenodo"
         for n in frame.index
     ]
+    frame["study_core_90"] = frame.index.isin(neuroverse_90)
     frame["study_selected"] = frame.index.isin(STUDY_TAXONOMY)
     frame["study_76"] = frame["study_selected"]
     frame["family"] = [STUDY_TAXONOMY.get(n, ("", ""))[0] for n in frame.index]
@@ -393,30 +497,34 @@ def by_domain(domain: str, open_only: bool = False) -> list[str]:
     ]
 
 
-def by_type(problem_type: str = "All") -> list[str]:
-    """Return datasets from the 82-problem scalp EEG study by problem type.
+def by_type(problem_type: str = "Core90") -> list[str]:
+    """Return scalp EEG benchmark datasets by problem type or benchmark tier.
 
     Parameters
     ----------
-    problem_type : str, default="All"
-        One of ``"All"`` (82), a top-level family (``"BCI"``, ``"Clinical"``,
-        ``"Cognitive"``), or a BCI sub-type (``"MI"``, ``"ME"``, ``"ERP"``,
-        ``"VEP"``, ``"Speech"``).
+    problem_type : str, default="Core90"
+        One of ``"Core90"`` (primary 90-problem ``30 MI + 30 Clinical + 30 Cognitive``
+        benchmark; aliases ``"Core"`` and ``"core90"``), ``"All114"`` or ``"All"``
+        (all 114 scalp EEG problems), a top-level family (``"BCI"``,
+        ``"Clinical"``, ``"Cognitive"``), or a BCI sub-type (``"MI"``, ``"ME"``,
+        ``"ERP"``, ``"VEP"``, ``"Speech"``).
 
     Returns
     -------
     list of str
         Dataset names in alphabetical order.
     """
-    if problem_type == "All":
-        return list(neuroverse_study)
+    if problem_type in {"Core90", "Core", "core90", "90"}:
+        return list(neuroverse_90)
+    if problem_type in {"All114", "All", "all114", "114"}:
+        return list(neuroverse_114)
     if problem_type in PROBLEM_FAMILIES:
         return [
-            name for name in neuroverse_study if STUDY_TAXONOMY[name][0] == problem_type
+            name for name in neuroverse_114 if STUDY_TAXONOMY[name][0] == problem_type
         ]
     if problem_type in BCI_TYPES:
         return [
-            name for name in neuroverse_study if STUDY_TAXONOMY[name][1] == problem_type
+            name for name in neuroverse_114 if STUDY_TAXONOMY[name][1] == problem_type
         ]
     valid = ", ".join(PROBLEM_TYPE_TABS)
     raise ValueError(f"problem_type must be one of {valid}, not {problem_type!r}")

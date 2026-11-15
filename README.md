@@ -1,11 +1,11 @@
 # Neuroverse
 
-**Neuroverse** is an open benchmark and interactive leaderboard for electroencephalogram (EEG) time series classification. It evaluates **72 distinct classifiers** (across 90 configurations including band-pass and random-weight controls)—spanning general time series machine learning (`aeon`), classical Riemannian and spatial-filtering EEG pipelines, supervised Braindecode neural architectures, pretrained EEG foundation models (`aeon-neuro`), and standard tabular baselines—across **82 scalp EEG classification problems** (from an archive of 91 prepared datasets).
+**Neuroverse** is an open benchmark and interactive leaderboard for electroencephalogram (EEG) time series classification. Its primary benchmark is a symmetric **90-problem `30 / 30 / 30` split** (**30 Motor Imagery + 30 Clinical + 30 Cognitive** scalp EEG tasks), within an extended **114-problem scalp EEG study** (`+ 24` Motor Execution, ERP/P300, VEP/SSVEP, and Speech BCI tasks; `123` prepared datasets in total). A curated **12-classifier Headline Leaderboard** spans every time series machine learning paradigm (`HC2`, `Arsenal`, `MRHydra`, `QUANT`, `DrCIF`, `STC`, `RDST`, `TDE`, `Catch22`, `FreshPRINCE`, `InceptionTime`, `RotationForest`) and expands in one click to **81 distinct classifiers** (across **109 configurations** including classical Riemannian/spatial-filtering EEG pipelines, supervised Braindecode neural networks, pretrained EEG foundation models, and band-pass/random-weight controls).
 
 <p align="center">
   <a href="https://raw.githack.com/TonyBagnall/Neuroverse/main/results/neuroverse/leaderboard.html"><strong>Algorithm Leaderboard</strong></a>
   &middot;
-  <a href="https://raw.githack.com/TonyBagnall/Neuroverse/main/results/neuroverse/matrix.html"><strong>Overall Score Matrix (82 &times; 72)</strong></a>
+  <a href="https://raw.githack.com/TonyBagnall/Neuroverse/main/results/neuroverse/matrix.html"><strong>Overall Score Matrix (90 / 114 &times; 81)</strong></a>
   &middot;
   <a href="https://raw.githack.com/TonyBagnall/Neuroverse/main/results/neuroverse/datasets.html"><strong>Problem Explorer</strong></a>
   &middot;
@@ -31,54 +31,47 @@ This repository stands alone (no dependency on the `multiverse` package) while s
 ## Leaderboard
 
 <!-- LEADERBOARD:START -->
-#### Overall Performance Leaderboard (82 Scalp EEG Problems)
+#### Headline Leaderboard: Core 90 Scalp EEG Benchmark (30 MI + 30 Clinical + 30 Cognitive)
 
-| # | Algorithm | Paradigm | Cov. | Mean Rank | Balanced Acc | Accuracy | AUROC | Log Loss &darr; | Wins |
+| # | Classifier | Family | Cov. | Mean Rank | Balanced Acc | Accuracy | AUROC | Log Loss &darr; | Wins |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|
-| 1 | `HC2-500-pc` | General TSML | 63/82 | **11.86** | **54.36%** | **56.44%** | **0.6985** | **0.930** | 4 |
-| 2 | `Arsenal` | General TSML | 74/82 | 17.21 | 52.50% | 54.70% | 0.6786 | 5.571 | 1 |
-| 3 | `MRHydra` | General TSML | 69/82 | 18.18 | 51.49% | 53.09% | 0.6116 | 16.345 | 4 |
-| 4 | `DrCIF-500` | General TSML | 70/82 | 19.54 | 51.82% | 54.63% | 0.6820 | 0.958 | 2 |
-| 5 | `STC-aeon` | General TSML | 72/82 | 19.76 | 51.93% | 54.43% | 0.6708 | 0.964 | 2 |
-| 6 | `EEGNeX-NB` | EEG Supervised DL | 75/82 | 21.24 | 48.75% | 48.95% | 0.6352 | 0.996 | 6 |
-| 7 | `DE-LR` | EEG Classical | 71/82 | 24.55 | 48.78% | 50.04% | 0.6383 | 1.748 | 1 |
-| 8 | `RDST` | General TSML | 66/82 | 25.70 | 49.28% | 51.51% | 0.5939 | 16.902 | 1 |
-| 9 | `TIDNet-NB` | EEG Supervised DL | 75/82 | 26.31 | 48.17% | 48.11% | 0.6281 | 1.084 | 0 |
-| 10 | `TSLR-MOABB` | EEG Classical | 72/82 | 26.39 | 48.11% | 49.54% | 0.6302 | 1.670 | 1 |
-| 11 | `EEGInceptionMI-NB` | EEG Supervised DL | 75/82 | 26.82 | 49.31% | 49.12% | 0.6206 | 1.146 | 2 |
-| 12 | `TSEN-MOABB` | EEG Classical | 75/82 | 27.13 | 47.49% | 48.87% | 0.6251 | 1.643 | 1 |
-| 13 | `TSSVM-MOABB` | EEG Classical | 75/82 | 27.36 | 47.34% | 49.93% | 0.6332 | 1.183 | 1 |
-| 14 | `SincShallowNet-NB` | EEG Supervised DL | 75/82 | 28.18 | 45.97% | 45.08% | 0.5967 | 1.045 | 0 |
-| 15 | `FBMSNet-NB` | EEG Supervised DL | 75/82 | 28.40 | 46.97% | 46.57% | 0.6140 | 1.577 | 1 |
-| &vellip; | *Best remaining paradigm representatives* | | | | | | | | |
-| 45 | `CBraMod` | EEG Foundation | 72/82 | 35.21 | 43.29% | 45.25% | 0.5450 | 18.903 | 0 |
-| 50 | `SVM` | Tabular | 63/82 | 38.02 | 42.41% | 46.11% | 0.5627 | 1.059 | 0 |
+| 1 | `HC2` | Hybrid | 48/90 | **3.30** | **56.23%** | **59.06%** | **0.6865** | **0.845** | 12 |
+| 2 | `Arsenal` | ConvolutionBased | 55/90 | 4.37 | 55.06% | 58.42% | 0.6732 | 4.933 | 4 |
+| 3 | `DrCIF` | IntervalBased | 49/90 | 4.66 | 53.57% | 57.49% | 0.6720 | 0.886 | 5 |
+| 4 | `QUANT` | IntervalBased | 52/90 | 4.71 | 54.49% | 57.84% | 0.6626 | 1.314 | 8 |
+| 5 | `MRHydra` | ConvolutionBased | 50/90 | 4.77 | 53.53% | 56.26% | 0.6035 | 15.128 | 8 |
+| 6 | `STC` | ShapeletBased | 52/90 | 5.30 | 53.19% | 56.79% | 0.6563 | 0.879 | 1 |
+| 7 | `RDST` | ShapeletBased | 52/90 | 5.73 | 51.98% | 55.36% | 0.5921 | 15.430 | 3 |
+| 8 | `TDE` | DictionaryBased | 48/90 | 7.04 | 48.96% | 52.76% | 0.6002 | 1.711 | 2 |
+| 9 | `InceptionTime` | DeepLearning | 51/90 | 7.48 | 46.01% | 47.72% | 0.5709 | 3.444 | 2 |
+| 10 | `Catch22` | FeatureBased | 48/90 | 7.64 | 47.87% | 51.97% | 0.5898 | 0.903 | 0 |
 
-*64 of 72 distinct classifiers meet &ge;80% coverage (61/76 evaluated problems, 82 in study), evaluated on their 42 shared completed problems (resample 0, ordered by mean balanced-accuracy rank).*
+*10 of 12 headline classifiers meet &ge;80% coverage (45/56 evaluated problems, 90 in Core 90), evaluated strictly on their 45 shared completed problems (resample 0, ordered by mean balanced-accuracy rank). Pending &ge;80% coverage: `FreshPRINCE` (21/90), `RotationForest` (44/90) (visible under *All Available* mode). Expand the interactive leaderboard to compare all **81 distinct classifiers** (109 total configurations) across TSML, EEG Classical, Braindecode DL, and EEG Foundation models.*
 
-#### Leaderboard by Problem Type
+#### 30 / 30 / 30 Core Benchmark & Extended BCI Summary
 
-| Problem Type | Problems (Common) | #1 Overall | #2 Overall | #3 Overall | Best EEG-Specific Classifier |
+| Benchmark Scope | Problems (Common) | #1 Headline | #2 Headline | #3 Headline | Best EEG-Specific (of 81) |
 |---|---:|---|---|---|---|
-| **All Scalp EEG** | 82 (42) | `HC2-500-pc` (54.4%) | `Arsenal` (52.5%) | `MRHydra` (51.5%) | `EEGNeX-NB` (#6, 48.8%) |
-| **BCI (All)** | 54 (31) | `HC2-500-pc` (52.8%) | `Arsenal` (50.4%) | `MRHydra` (49.5%) | `EEGNeX-NB` (#6, 46.2%) |
-| **Motor Imagery** | 30 (19) | `HC2-500-pc` (61.3%) | `MRHydra` (58.4%) | `DrCIF-500` (59.9%) | `TIDNet-NB` (#5, 55.2%) |
-| **Motor Execution** | 6 (4) | `HC2-500-pc` (71.4%) | `Arsenal` (70.3%) | `EEGNeX-NB` (71.7%) | `EEGNeX-NB` (#3, 71.7%) |
-| **ERP / P300** | 8 (6) | `Deep4Net-NB` (68.3%) | `EEGNeX-NB` (68.6%) | `SPARCNet-NB` (66.0%) | `Deep4Net-NB` (#1, 68.3%) |
-| **VEP / SSVEP** | 6 (3) | `STC-aeon` (37.4%) | `XdawnCov-MDM-MOABB` (53.8%) | `RDST` (31.0%) | `XdawnCov-MDM-MOABB` (#2, 53.8%) |
-| **Speech BCI** | 4 (4) | `TDE` (35.8%) | `HC2-500-pc` (36.0%) | `STC-aeon` (30.1%) | `RiemannianKNN-OAS-BP140` (#5, 30.2%) |
-| **Clinical** | 20 (8) | `DE-SVM` (56.4%) | `Arsenal` (57.0%) | `EEGNeX-NB` (55.5%) | `DE-SVM` (#1, 56.4%) |
-| **Cognitive** | 8 (6) | `DrCIF-500` (61.2%) | `MRHydra` (60.2%) | `Arsenal` (60.7%) | `EEGNeX-NB` (#4, 58.1%) |
+| **Core 90 (30/30/30)** | 90 (45) | `HC2` (56.2%) | `Arsenal` (55.1%) | `DrCIF` (53.6%) | `EEGNeX-NB` (#2/47, 54.7%) |
+| **Motor Imagery** | 30 (25) | `HC2` (58.2%) | `DrCIF` (56.5%) | `Arsenal` (56.9%) | `TIDNet-NB` (#6/76, 55.7%) |
+| **Clinical** | 30 (14) | `QUANT` (55.9%) | `Arsenal` (53.6%) | `STC` (51.8%) | `EEGNeX-NB` (#1/47, 59.1%) |
+| **Cognitive** | 30 (8) | `RDST` (49.3%) | `Arsenal` (50.9%) | `MRHydra` (49.4%) | `EEGNeX-NB` (#1/29, 44.1%) |
+| **All Scalp EEG** | 114 (61) | `HC2` (54.5%) | `Arsenal` (53.0%) | `MRHydra` (52.5%) | `EEGNeX-NB` (#3/63, 51.7%) |
+| **BCI (All)** | 54 (44) | `HC2` (54.8%) | `Arsenal` (53.1%) | `DrCIF` (53.1%) | `EEGNeX-NB` (#9/74, 50.5%) |
+| **Motor Execution** | 6 (5) | `HC2` (68.3%) | `Arsenal` (67.1%) | `STC` (66.4%) | `TCFormer-NB` (#3/75, 70.3%) |
+| **ERP / P300** | 8 (7) | `MRHydra` (61.4%) | `HC2` (58.7%) | `RDST` (57.3%) | `EEGNeX-NB` (#1/67, 67.4%) |
+| **VEP / SSVEP** | 6 (5) | `DrCIF` (37.4%) | `QUANT` (32.6%) | `HC2` (36.2%) | `XdawnCov-MDM-MOABB` (#2/74, 53.8%) |
+| **Speech BCI** | 4 (4) | `TDE` (35.8%) | `QUANT` (33.4%) | `HC2` (31.0%) | `RiemannianKNN-OAS-BP140` (#6/75, 30.2%) |
 <!-- LEADERBOARD:END -->
 
 ### Interactive Views
 
-Rebuilt automatically via `python -m neuroverse.experiments.tables`, which generates three self-contained interactive HTML dashboards in [`results/neuroverse/`](results/neuroverse/):
+Rebuilt automatically via `python -m neuroverse.experiments.tables`, which generates three self-contained interactive HTML dashboards in [`results/neuroverse/`](results/neuroverse/) (each including an interactive **Download Results** modal in the top navigation bar):
 
-- **[`results/neuroverse/leaderboard.html`](results/neuroverse/leaderboard.html)** ([live preview](https://raw.githack.com/TonyBagnall/Neuroverse/main/results/neuroverse/leaderboard.html)) — Interactive leaderboard ranking the **72 distinct classifiers** across all 82 problems and split across 9 problem-type tabs (`All`, `BCI`, `Motor Imagery`, `Motor Execution`, `ERP`, `VEP`, `Speech`, `Clinical`, `Cognitive`), with paradigm filter pills, Standard Metrics vs Split-by-Problem-Type column views, an optional toggle to include all 90 configurations (18 band-pass, shrinkage, and random-weight controls), and critical difference diagrams.
-- **[`results/neuroverse/matrix.html`](results/neuroverse/matrix.html)** ([live preview](https://raw.githack.com/TonyBagnall/Neuroverse/main/results/neuroverse/matrix.html)) — Interactive **82 Problems &times; 72 Classifiers** (or all 90 configurations) score matrix grouped by problem type and algorithm paradigm, with metric switching (`Balanced Accuracy`, `Accuracy`, `AUROC`, `Log Loss`), row-normalised or baseline-gain heatmap shading, and multi-metric hover tooltips.
-- **[`results/neuroverse/datasets.html`](results/neuroverse/datasets.html)** ([live preview](https://raw.githack.com/TonyBagnall/Neuroverse/main/results/neuroverse/datasets.html)) — Per-problem explorer comparing the constant test-majority `Default` floor, median, ceiling, winning algorithm, and spread across all 82 tasks.
-- Full Top-15 Markdown tables per problem type are also written to [`docs/leaderboard.md`](docs/leaderboard.md).
+- **[`results/neuroverse/leaderboard.html`](results/neuroverse/leaderboard.html)** ([live preview](https://raw.githack.com/TonyBagnall/Neuroverse/main/results/neuroverse/leaderboard.html)): Opens on the **12-classifier Headline Leaderboard** across the primary **Core 90 (`30 MI + 30 Clinical + 30 Cognitive`)** benchmark, with one-click expansion to **81 distinct classifiers** or **all 109 configurations**, tabs for every Core and Extended BCI domain (`All 114`, `BCI`, `Motor Execution`, `ERP`, `VEP`, `Speech`), Standard Metrics vs Split-by-Problem-Type views, and Wilcoxon-Holm critical difference diagrams.
+- **[`results/neuroverse/matrix.html`](results/neuroverse/matrix.html)** ([live preview](https://raw.githack.com/TonyBagnall/Neuroverse/main/results/neuroverse/matrix.html)): Interactive **90 (or 114) Problems &times; 12 / 81 / 109 Classifiers** score matrix grouped by problem type and algorithm paradigm, with metric switching (`Balanced Accuracy`, `Accuracy`, `AUROC`, `Log Loss`), row-normalised or baseline-gain heatmap shading, and multi-metric hover tooltips.
+- **[`results/neuroverse/datasets.html`](results/neuroverse/datasets.html)** ([live preview](https://raw.githack.com/TonyBagnall/Neuroverse/main/results/neuroverse/datasets.html)): Per-problem explorer comparing the constant test-majority `Default` floor, median, ceiling, winning algorithm, and spread across the Core 90 and Extended 114 tasks.
+- Full Headline and Expanded Top-15 Markdown tables per problem type are also written to [`docs/leaderboard.md`](docs/leaderboard.md).
 
 ---
 
@@ -98,24 +91,53 @@ pip install -e .
 
 ## Quick start
 
+### Download & query benchmark results interactively
+
+Results can be queried directly in Python, exported via an interactive CLI wizard (`neuroverse-results`), or downloaded from the **Download Results** button in any dashboard HTML page. When installed standalone via `pip`, `neuroverse` automatically fetches and caches the published CSVs from GitHub:
+
+```python
+import neuroverse as nv
+
+# 1. Load the 12 headline classifiers on the primary 30/30/30 (90-problem) split
+balacc = nv.load_results(metric="balacc", split="core90", estimators="headline")
+
+# 2. Load a ranked league table or tidy long-form table across all 81 distinct classifiers
+league = nv.load_results(metric="balacc", split="MI", estimators="canonical", format="league")
+tidy = nv.load_results(metric="all", split="core90", estimators="canonical", format="long")
+
+# 3. Export a filtered directory of wide CSVs, Multiverse folders, or JSON to disk
+nv.download_results("my_eeg_results", format="wide", split="core90", estimators="headline")
+```
+
+From the terminal, launch the interactive selector or pass flags directly:
+
+```bash
+neuroverse-results                                                                          # interactive wizard
+neuroverse-results --list                                                                   # list splits & pools
+neuroverse-results --split core90 --estimators headline --preview                           # print ranked table
+neuroverse-results --split MI --estimators canonical --format long --out mi_results.csv     # save tidy CSV
+```
+
 ### Explore datasets by problem type
 
-The repository registers 91 problems in `neuroverse.datasets.neuroverse`:
-- **`neuroverse_study`** (`82` scalp EEG problems): split into **BCI** (`54`: `MI` `30`, `ME` `6`, `ERP` `8`, `VEP` `6`, `Speech` `4`), **Clinical** (`20`), and **Cognitive** (`8`), excluding MEG (`4`), ECoG (`1`), and four legacy tasks (`Blink`, `ButtonPress`, `EpilepticSeizures`, `Sleep`).
+The repository registers 123 problems in `neuroverse.datasets.neuroverse`:
+- **`neuroverse_study` / `neuroverse_90`** (`90` primary scalp EEG problems, listed in [`eeg.txt`](eeg.txt)): symmetric **`30 / 30 / 30`** split across **Motor Imagery** (`30`), **Clinical** (`30`), and **Cognitive** (`30`).
+- **`neuroverse_114` / `neuroverse_extended`** (`114` scalp EEG problems, listed in [`eeg_114.txt`](eeg_114.txt)): adds the remaining `24` BCI tasks (`ME` `6`, `ERP` `8`, `VEP` `6`, `Speech` `4`), excluding MEG (`4`), ECoG (`1`), and four legacy tasks (`Blink`, `ButtonPress`, `EpilepticSeizures`, `Sleep`).
 - **`neuroverse_paper`** (`30` problems): the Rushbrooke et al. (2026) DMLR benchmark (`28` open on Zenodo as `neuroverse_open` / `aeon`'s `eeg2026`, plus `2` restricted fibromyalgia cohorts).
 
 ```python
 from aeon.datasets import load_classification
-from neuroverse.datasets import by_type, metadata, neuroverse_study
+from neuroverse.datasets import by_type, metadata, neuroverse_114, neuroverse_study
 
-print(len(neuroverse_study), len(by_type("MI")), len(by_type("Clinical")))
+print(len(neuroverse_study), len(by_type("MI")), len(by_type("Clinical")), len(by_type("Cognitive")))
+print(len(neuroverse_114))
 print(metadata().loc["ImaginedFeetHands"])
 
 X_train, y_train = load_classification("ImaginedFeetHands", split="train")
 X_test, y_test = load_classification("ImaginedFeetHands", split="test")
 ```
 
-For local preparations (61 datasets), load `.ts` files directly via `aeon.datasets.load_from_ts_file`, e.g. `load_from_ts_file("D:/Data/EEG/ImaginedLeftRightHand/ImaginedLeftRightHand_TRAIN.ts")`. Always use the supplied fixed train/test split (`resample 0`); see [`docs/datasets.md`](docs/datasets.md) and [`docs/dataset-provenance.md`](docs/dataset-provenance.md).
+For local preparations (across `D:/Data/EEG/` and overflow storage `C:/Data/EEG/`), load `.ts` files directly via `aeon.datasets.load_from_ts_file`, e.g. `load_from_ts_file("D:/Data/EEG/ImaginedLeftRightHand/ImaginedLeftRightHand_TRAIN.ts")`. Always use the supplied fixed train/test split (`resample 0`); see [`docs/datasets.md`](docs/datasets.md) and [`docs/dataset-provenance.md`](docs/dataset-provenance.md).
 
 ### Train and test a classifier
 
@@ -127,17 +149,17 @@ clf.fit(X_train, y_train)
 print(clf.score(X_test, y_test))
 ```
 
-Neuroverse holds benchmark metadata and results only—no classifier implementation code belongs in this repository:
+Neuroverse holds benchmark metadata and results only (no classifier implementation code belongs in this repository):
 - EEG-specific classifiers (Riemannian pipelines, CSP/xDAWN/CCA/TRCA, Braindecode wrappers, and pretrained EEG foundation models) live in [`aeon-neuro`](https://github.com/aeon-toolkit/aeon-neuro).
 - Ports of general multivariate time series classifiers outside `aeon` live in [`multiverse.classification`](https://github.com/aeon-toolkit/multiverse/tree/main/multiverse/classification).
-- General time series classifiers (`HC2`, `MRHydra`, `Arsenal`, `DrCIF`, `STC`, `RDST`, `TDE`, `QUANT`, `InceptionTime`, `LITETime`) live in [`aeon`](https://github.com/aeon-toolkit/aeon).
+- General time series classifiers (`HC2`, `MRHydra`, `Arsenal`, `QUANT`, `DrCIF`, `STC`, `RDST`, `TDE`, `Catch22`, `FreshPRINCE`, `InceptionTime`, `RotationForest`) live in [`aeon`](https://github.com/aeon-toolkit/aeon).
 
-### Query stored benchmark scores
+### Query individual metric series
 
 ```python
 from neuroverse.experiments.tables import compute_league_table, load_metric
 
-print(load_metric("HC2-500-pc", "balacc")["ImaginedFeetHands"])
+print(load_metric("HC2", "balacc")["ImaginedFeetHands"])
 ```
 
 ### Refresh results and rebuild the dashboard
@@ -158,12 +180,13 @@ See [`docs/evaluation.md`](docs/evaluation.md) for metric definitions, baseline 
 Neuroverse/
 ├── docs/                        # Dataset provenance, taxonomy, evaluation & domain tables
 ├── results/
-│   ├── neuroverse/              # Active 82-problem wide CSVs (72 classifiers, 90 configs) & HTML dashboard
+│   ├── neuroverse/              # Wide CSVs (81 distinct classifiers, 109 configs; 12 headline) & HTML suite
 │   ├── neuroverse_paper_2026/   # Archived 30-problem DMLR 2026 Multiverse CSVs & pages
 │   └── tsml-eval-20261111/      # Dated tsml-eval wide snapshot export
-├── neuroverse/                  # Python package (metadata & leaderboard tooling only)
-│   ├── datasets.py              # Archive registry (91 total, 82 scalp EEG study, taxonomy)
-│   ├── estimators.py            # Classifier metadata (72 distinct across 5 paradigms; 90 configs)
+├── neuroverse/                  # Python package (metadata, result downloader & leaderboard tooling)
+│   ├── datasets.py              # Archive registry (123 total, 90 Core 30/30/30, 114 extended scalp EEG)
+│   ├── estimators.py            # Classifier metadata (12 headline -> 81 canonical -> 109 configs)
+│   ├── results.py               # Python API & interactive CLI (`neuroverse-results`) result downloader
 │   └── experiments/             # Benchmark runners, wide/Multiverse ingest, HTML builders
 └── tools/                       # Dataset import, validation & cluster collation utilities
 ```
@@ -174,5 +197,5 @@ Neuroverse/
 
 - Dataset conversion handover & live progress: [`DATASET_CONVERSION_HANDOVER.md`](DATASET_CONVERSION_HANDOVER.md) and [`docs/assimilation-progress.json`](docs/assimilation-progress.json).
 - Restored motor imagery preparations: [`docs/temp-c-mi-preparations.md`](docs/temp-c-mi-preparations.md).
-- Selected 82-problem scalp EEG study scope & exclusions: [`eeg.txt`](eeg.txt) and [`docs/problem-taxonomy.md`](docs/problem-taxonomy.md).
+- Primary 90-problem (`30/30/30`) & extended 114-problem scalp EEG lists: [`eeg.txt`](eeg.txt), [`eeg_114.txt`](eeg_114.txt), and [`docs/problem-taxonomy.md`](docs/problem-taxonomy.md).
 - External dataset & algorithm benchmark surveys: [`Repositories.md`](Repositories.md) and [`docs/benchmark_algorithms_survey.md`](docs/benchmark_algorithms_survey.md).

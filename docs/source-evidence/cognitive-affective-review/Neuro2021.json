@@ -1,0 +1,112 @@
+{
+  "url": "https://zenodo.org/api/records/5055046",
+  "record_id": 5055046,
+  "title": "An EEG dataset for cross-session mental workload estimation: Passive BCI competition of the Neuroergonomics Conference 2021",
+  "licence": {
+    "id": "cc-by-sa-4.0"
+  },
+  "doi": "10.5281/zenodo.5055046",
+  "description": "<p>The dataset is part of a new open EEG database designed to answer a need for more publicly available EEG-based dataset to design and benchmark passive brain-computer interface pipelines (as detailed in [Hinss2021]). This database is currently being created and will be fully released before the end of the year. It will include data acquired over 30 participant, 4 tasks and 3 sessions. For this competition, hosted by the Neuroergonomics Conference 2021, only one task and half the participants will be analyzed. Hence, this competition focuses on a renowned task that elicits various levels of mental/cognitive workload: the Multi-Atribute Task Battery-II (MATB-II) developed by NASA (https://matb.larc.nasa.gov/). It is composed of 4 sub-tasks: system monitoring, tracking, resource management and communications. By varying the number and complexity of the sub-tasks, 3 levels of workload were elicited (verified through statistical analyzes of both subjective and objective -behavioral and cardiac- data). Each difficulty level was performed by 15 subjects (6 female; 9 average 25 y.o.) during 5 minutes per session, in a pseudo-randomized order. Each session was separated by 7 days. We used a 62 actiChamp EEG channels device (BrainProducts; electrode placement 10-20 system).</p>\n\n<p>&nbsp;</p>\n\n<p><strong>For the competition, your goal is to predict the mental workload for a given subject (intra-subject estimation) using the EEG data from another session (inter-session adaptation). More information on the conference website and in the documentation file.</strong></p>",
+  "files": [
+    {
+      "name": "P06.zip",
+      "bytes": 181039834,
+      "checksum": "md5:50d16798d14c1c698b4dd4f9b526d4b3"
+    },
+    {
+      "name": "P15.zip",
+      "bytes": 181677980,
+      "checksum": "md5:c6894fdc339c8d31f22d02237b14404d"
+    },
+    {
+      "name": "P04.zip",
+      "bytes": 181024179,
+      "checksum": "md5:cededfbc3cbf00b7eb5d09b53441e62a"
+    },
+    {
+      "name": "P05.zip",
+      "bytes": 180254624,
+      "checksum": "md5:05ea67a33520bbcf1745ff56e677b0c4"
+    },
+    {
+      "name": "P07.zip",
+      "bytes": 180297451,
+      "checksum": "md5:e1bd1931965c3117c000e3ea91579258"
+    },
+    {
+      "name": "P14.zip",
+      "bytes": 180954834,
+      "checksum": "md5:db2309ced29fbe6a285a6355d6747361"
+    },
+    {
+      "name": "P13.zip",
+      "bytes": 180788156,
+      "checksum": "md5:779744d692c1ae34f1ff42328a197d64"
+    },
+    {
+      "name": "P12.zip",
+      "bytes": 181705302,
+      "checksum": "md5:c4f9a83bd2dc8fd9ca189821d14e5b72"
+    },
+    {
+      "name": "chan_locs_standard",
+      "bytes": 2340,
+      "checksum": "md5:5c2869958ac5d1af8f9c5e8173e19b88"
+    },
+    {
+      "name": "documentation_pBCI_hackathon.pdf",
+      "bytes": 409938,
+      "checksum": "md5:f9e4b42b9b959722dcb58c6e424d48da"
+    },
+    {
+      "name": "P11.zip",
+      "bytes": 181786771,
+      "checksum": "md5:3f266e6d8f1e61bb3dd9005a74123c08"
+    },
+    {
+      "name": "P10.zip",
+      "bytes": 180648957,
+      "checksum": "md5:0a5fad9f7c2fdc1e169128d4f548eaed"
+    },
+    {
+      "name": "estimation_results_session3.csv",
+      "bytes": 2591,
+      "checksum": "md5:f1122f73893f51aa1fbd0d0391dfe31b"
+    },
+    {
+      "name": "Example_matlab.pdf",
+      "bytes": 84541,
+      "checksum": "md5:92845ee256eeb08a1c50b30a609600c4"
+    },
+    {
+      "name": "Example_python.pdf",
+      "bytes": 50975,
+      "checksum": "md5:47d0a293a7b5a14c246e3a6a7ce13a09"
+    },
+    {
+      "name": "P09.zip",
+      "bytes": 180610915,
+      "checksum": "md5:6ebeeb5fe0a7f4033cc60135f1e3f901"
+    },
+    {
+      "name": "P08.zip",
+      "bytes": 181048090,
+      "checksum": "md5:281ecf30e5139046d37e6045e0cfda26"
+    },
+    {
+      "name": "P01.zip",
+      "bytes": 181032275,
+      "checksum": "md5:e54f3873a07500a8649cab1f567656cb"
+    },
+    {
+      "name": "P02.zip",
+      "bytes": 181083091,
+      "checksum": "md5:b1906fa43d1483c69ba02cc0341a41d9"
+    },
+    {
+      "name": "P03.zip",
+      "bytes": 181262858,
+      "checksum": "md5:f09382e996bfe59e1d2d7bf9c6bfc33f"
+    }
+  ]
+}

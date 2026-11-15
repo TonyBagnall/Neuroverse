@@ -1,0 +1,1356 @@
+{
+  "dataset": "ds005048",
+  "eegdash_id": "on005048",
+  "original_ref": "1.0.1",
+  "original_commit": "165a4d407983e5d7d42441ecc007caf6c98d3fad",
+  "licence": "CC0-1.0",
+  "licence_evidence": "Original pinned dataset_description.json License=CC0; original README retained for conflict review",
+  "source_doi": "doi:10.18112/openneuro.ds005048.v1.0.1",
+  "source_revision": "OpenNeuro ds005048 v1.0.1, Git 165a4d407983e5d7d42441ecc007caf6c98d3fad",
+  "metadata_files": [
+    {
+      "name": "CHANGES",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/CHANGES",
+      "bytes": 88,
+      "checksum": "sha256:e80c098ea59e0f3d871193c9b206221c8e701026d7b66e9e8073dedd612c9a24",
+      "git_blob_sha1": "d1b7a606f95f8879b0ddb108ce8eb3b06d725752"
+    },
+    {
+      "name": "README",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/README",
+      "bytes": 9113,
+      "checksum": "sha256:42ce20c4a061500a0d5123b21f090b4af6a8080607cc6513b26fbb54ec67a4ef",
+      "git_blob_sha1": "1f04e976b5071a17601b4444d86748a50d72c3fa"
+    },
+    {
+      "name": "dataset_description.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/dataset_description.json",
+      "bytes": 1730,
+      "checksum": "sha256:ab22b3f5137ec5fb26e827758ef2f5a2d03bd8b22a6cb47d7dd4b021f22294cd",
+      "git_blob_sha1": "5e9882ca7d27817dc3989c0e5e20c8d6952c5319"
+    },
+    {
+      "name": "participants.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/participants.json",
+      "bytes": 391,
+      "checksum": "sha256:793ef7bce4d1b6779cea18c5544d75178239b267ae9f95c78caa66b7c101c7d0",
+      "git_blob_sha1": "73d4458f2c642bf4803ebd8d09cbc6da45e3ff6a"
+    },
+    {
+      "name": "participants.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/participants.tsv",
+      "bytes": 973,
+      "checksum": "sha256:9a053180deebc4682cf0f3b10c6be2afa3825636fb51941f3c570582cd8214cb",
+      "git_blob_sha1": "2df49c9650cbf90cf03a7350de7e459a87da43da"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-01/eeg/sub-01_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-01/eeg/sub-01_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:b21de65a10dbf0c3d347140d877a7868a843422bf30049909c1aefb7a4214692",
+      "git_blob_sha1": "f7b6f0a47de9711c157eb020fddd50744f8cbc52"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-01/eeg/sub-01_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 310,
+      "checksum": "sha256:a0796af37adf562420798cec8eba48f0f1fa5ad4d17e090b36ad0413bf904436",
+      "git_blob_sha1": "2b4e1273a2f9294801960482e73500e8eee58a1d"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-02/eeg/sub-02_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-02/eeg/sub-02_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:b21de65a10dbf0c3d347140d877a7868a843422bf30049909c1aefb7a4214692",
+      "git_blob_sha1": "f7b6f0a47de9711c157eb020fddd50744f8cbc52"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-02/eeg/sub-02_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 310,
+      "checksum": "sha256:a0796af37adf562420798cec8eba48f0f1fa5ad4d17e090b36ad0413bf904436",
+      "git_blob_sha1": "2b4e1273a2f9294801960482e73500e8eee58a1d"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-03/eeg/sub-03_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-03/eeg/sub-03_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:b21de65a10dbf0c3d347140d877a7868a843422bf30049909c1aefb7a4214692",
+      "git_blob_sha1": "f7b6f0a47de9711c157eb020fddd50744f8cbc52"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-03/eeg/sub-03_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 310,
+      "checksum": "sha256:a0796af37adf562420798cec8eba48f0f1fa5ad4d17e090b36ad0413bf904436",
+      "git_blob_sha1": "2b4e1273a2f9294801960482e73500e8eee58a1d"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-04/eeg/sub-04_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-04/eeg/sub-04_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:b21de65a10dbf0c3d347140d877a7868a843422bf30049909c1aefb7a4214692",
+      "git_blob_sha1": "f7b6f0a47de9711c157eb020fddd50744f8cbc52"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-04/eeg/sub-04_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 310,
+      "checksum": "sha256:a0796af37adf562420798cec8eba48f0f1fa5ad4d17e090b36ad0413bf904436",
+      "git_blob_sha1": "2b4e1273a2f9294801960482e73500e8eee58a1d"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-05/eeg/sub-05_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-05/eeg/sub-05_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:b21de65a10dbf0c3d347140d877a7868a843422bf30049909c1aefb7a4214692",
+      "git_blob_sha1": "f7b6f0a47de9711c157eb020fddd50744f8cbc52"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-05/eeg/sub-05_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 310,
+      "checksum": "sha256:a0796af37adf562420798cec8eba48f0f1fa5ad4d17e090b36ad0413bf904436",
+      "git_blob_sha1": "2b4e1273a2f9294801960482e73500e8eee58a1d"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-06/eeg/sub-06_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-06/eeg/sub-06_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:b21de65a10dbf0c3d347140d877a7868a843422bf30049909c1aefb7a4214692",
+      "git_blob_sha1": "f7b6f0a47de9711c157eb020fddd50744f8cbc52"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-06/eeg/sub-06_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 310,
+      "checksum": "sha256:a0796af37adf562420798cec8eba48f0f1fa5ad4d17e090b36ad0413bf904436",
+      "git_blob_sha1": "2b4e1273a2f9294801960482e73500e8eee58a1d"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-07/eeg/sub-07_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-07/eeg/sub-07_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:b21de65a10dbf0c3d347140d877a7868a843422bf30049909c1aefb7a4214692",
+      "git_blob_sha1": "f7b6f0a47de9711c157eb020fddd50744f8cbc52"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-07/eeg/sub-07_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 310,
+      "checksum": "sha256:a0796af37adf562420798cec8eba48f0f1fa5ad4d17e090b36ad0413bf904436",
+      "git_blob_sha1": "2b4e1273a2f9294801960482e73500e8eee58a1d"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-08/eeg/sub-08_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-08/eeg/sub-08_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:b21de65a10dbf0c3d347140d877a7868a843422bf30049909c1aefb7a4214692",
+      "git_blob_sha1": "f7b6f0a47de9711c157eb020fddd50744f8cbc52"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-08/eeg/sub-08_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 310,
+      "checksum": "sha256:a0796af37adf562420798cec8eba48f0f1fa5ad4d17e090b36ad0413bf904436",
+      "git_blob_sha1": "2b4e1273a2f9294801960482e73500e8eee58a1d"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-09/eeg/sub-09_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-09/eeg/sub-09_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-09/eeg/sub-09_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-10/eeg/sub-10_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-10/eeg/sub-10_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-10/eeg/sub-10_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-11/eeg/sub-11_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-11/eeg/sub-11_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-11/eeg/sub-11_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-12/eeg/sub-12_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-12/eeg/sub-12_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-12/eeg/sub-12_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-13/eeg/sub-13_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-13/eeg/sub-13_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-13/eeg/sub-13_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-14/eeg/sub-14_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-14/eeg/sub-14_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-14/eeg/sub-14_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-15/eeg/sub-15_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-15/eeg/sub-15_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-15/eeg/sub-15_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-16/eeg/sub-16_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-16/eeg/sub-16_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-16/eeg/sub-16_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-17/eeg/sub-17_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-17/eeg/sub-17_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-17/eeg/sub-17_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-18/eeg/sub-18_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-18/eeg/sub-18_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-18/eeg/sub-18_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-19/eeg/sub-19_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-19/eeg/sub-19_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-19/eeg/sub-19_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-20/eeg/sub-20_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-20/eeg/sub-20_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-20/eeg/sub-20_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-21/eeg/sub-21_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-21/eeg/sub-21_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-21/eeg/sub-21_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-22/eeg/sub-22_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-22/eeg/sub-22_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-22/eeg/sub-22_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-23/eeg/sub-23_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-23/eeg/sub-23_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-23/eeg/sub-23_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-24/eeg/sub-24_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-24/eeg/sub-24_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-24/eeg/sub-24_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-25/eeg/sub-25_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-25/eeg/sub-25_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-25/eeg/sub-25_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-26/eeg/sub-26_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-26/eeg/sub-26_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-26/eeg/sub-26_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-27/eeg/sub-27_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-27/eeg/sub-27_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-27/eeg/sub-27_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-28/eeg/sub-28_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-28/eeg/sub-28_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-28/eeg/sub-28_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-29/eeg/sub-29_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-29/eeg/sub-29_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-29/eeg/sub-29_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-30/eeg/sub-30_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-30/eeg/sub-30_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-30/eeg/sub-30_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-31/eeg/sub-31_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-31/eeg/sub-31_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-31/eeg/sub-31_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-32/eeg/sub-32_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-32/eeg/sub-32_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-32/eeg/sub-32_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-33/eeg/sub-33_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-33/eeg/sub-33_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-33/eeg/sub-33_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-34/eeg/sub-34_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-34/eeg/sub-34_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-34/eeg/sub-34_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-40HzAuditoryEntrainment_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-35/eeg/sub-35_task-40HzAuditoryEntrainment_channels.tsv",
+      "bytes": 227,
+      "checksum": "sha256:d1737d425edc2aef389e668425d40b4cda0b25216f31d11d3b1df42fe40347bc",
+      "git_blob_sha1": "a52e943acb6ab214f8591fa438470a28df003995"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-40HzAuditoryEntrainment_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-35/eeg/sub-35_task-40HzAuditoryEntrainment_eeg.json",
+      "bytes": 498,
+      "checksum": "sha256:9b45032a19051e1d8b151652ab7ce52324d8d61ae9e9756ff6f88b1ef1177b23",
+      "git_blob_sha1": "18ba37db7ed8ebcc7d547d5a595faf7ac990fbf6"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-40HzAuditoryEntrainment_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/sub-35/eeg/sub-35_task-40HzAuditoryEntrainment_events.tsv",
+      "bytes": 501,
+      "checksum": "sha256:b82577587e0eb622dfdd0dcfb59a061c257e91408dd77f24c8ab6f8a235c0b7e",
+      "git_blob_sha1": "ca2c4a962d48dc1569c23aa2a14dac233b3a58f0"
+    },
+    {
+      "name": "task-40HzAuditoryEntrainment_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005048/165a4d407983e5d7d42441ecc007caf6c98d3fad/task-40HzAuditoryEntrainment_events.json",
+      "bytes": 1454,
+      "checksum": "sha256:f92af5a75646d425861537e66e3a2319e31911145bd479dc108661405d045c9a",
+      "git_blob_sha1": "c0b389138f6b1d585064192506330b2ff4a51cac"
+    }
+  ],
+  "native_files": [
+    {
+      "name": "sub-01/eeg/sub-01_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-01/eeg/sub-01_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 6650000,
+      "checksum": "sha256:f6beb74467a99d71993eb86d24015b3a06773b5c1bddbee96a03582ecfc7c97e",
+      "git_blob_sha1": "a8f70860896100e39fb550b1bc7fd51dd8badd0f",
+      "git_annex_pointer": "../../.git/annex/objects/30/q0/SHA256E-s6650000--f6beb74467a99d71993eb86d24015b3a06773b5c1bddbee96a03582ecfc7c97e.fdt/SHA256E-s6650000--f6beb74467a99d71993eb86d24015b3a06773b5c1bddbee96a03582ecfc7c97e.fdt"
+    },
+    {
+      "name": "sub-01/eeg/sub-01_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-01/eeg/sub-01_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 429723,
+      "checksum": "sha256:bcd4da8ba0d2ed23652567bfcb2c982b00dc662e0a55815793569c8601b38b1e",
+      "git_blob_sha1": "c3f5f97c65f014be75cb08c0edd7bbdbaff8d1c6",
+      "git_annex_pointer": "../../.git/annex/objects/gk/Vq/SHA256E-s429723--bcd4da8ba0d2ed23652567bfcb2c982b00dc662e0a55815793569c8601b38b1e.set/SHA256E-s429723--bcd4da8ba0d2ed23652567bfcb2c982b00dc662e0a55815793569c8601b38b1e.set"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-02/eeg/sub-02_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 6650000,
+      "checksum": "sha256:b1fe568bddf1f2655c0fe0b6477d8a28a3898279fbf7ba3b5c8ba1a8ef0777c7",
+      "git_blob_sha1": "ae1fa6ee191540787ffa9f718af18c90f59bf80b",
+      "git_annex_pointer": "../../.git/annex/objects/fV/03/SHA256E-s6650000--b1fe568bddf1f2655c0fe0b6477d8a28a3898279fbf7ba3b5c8ba1a8ef0777c7.fdt/SHA256E-s6650000--b1fe568bddf1f2655c0fe0b6477d8a28a3898279fbf7ba3b5c8ba1a8ef0777c7.fdt"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-02/eeg/sub-02_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 419297,
+      "checksum": "sha256:c24e1381da73d347890ce5fc988bab3bf36ebb23f57a3c201de36c891bc6947e",
+      "git_blob_sha1": "022db311569494f089006e3f9e33134b9d024f84",
+      "git_annex_pointer": "../../.git/annex/objects/g3/Jq/SHA256E-s419297--c24e1381da73d347890ce5fc988bab3bf36ebb23f57a3c201de36c891bc6947e.set/SHA256E-s419297--c24e1381da73d347890ce5fc988bab3bf36ebb23f57a3c201de36c891bc6947e.set"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-03/eeg/sub-03_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 6650000,
+      "checksum": "sha256:6ce2c94a70e1d8c570266d960572922e0af73ceba48ca5ab1418f889a7b9ffc1",
+      "git_blob_sha1": "7ae0ff2fd73e41723863280d023593636696c7b1",
+      "git_annex_pointer": "../../.git/annex/objects/v7/f5/SHA256E-s6650000--6ce2c94a70e1d8c570266d960572922e0af73ceba48ca5ab1418f889a7b9ffc1.fdt/SHA256E-s6650000--6ce2c94a70e1d8c570266d960572922e0af73ceba48ca5ab1418f889a7b9ffc1.fdt"
+    },
+    {
+      "name": "sub-03/eeg/sub-03_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-03/eeg/sub-03_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 432113,
+      "checksum": "sha256:37c832a2c740df69a89b84f5779d35104fc965bfa10ee4f7fe1b4fe8e48ce7a1",
+      "git_blob_sha1": "d4d9b17b3bf0f379bf34a3cd25a907623eebf4b9",
+      "git_annex_pointer": "../../.git/annex/objects/qw/K5/SHA256E-s432113--37c832a2c740df69a89b84f5779d35104fc965bfa10ee4f7fe1b4fe8e48ce7a1.set/SHA256E-s432113--37c832a2c740df69a89b84f5779d35104fc965bfa10ee4f7fe1b4fe8e48ce7a1.set"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-04/eeg/sub-04_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 6650000,
+      "checksum": "sha256:c2d61b552f8b12bf81bab6e3706b037efbe55868c589a2739120e64ce9e6926a",
+      "git_blob_sha1": "4879f49440e718ad40dcd6a7e53da962a6b8a1ab",
+      "git_annex_pointer": "../../.git/annex/objects/Mk/j5/SHA256E-s6650000--c2d61b552f8b12bf81bab6e3706b037efbe55868c589a2739120e64ce9e6926a.fdt/SHA256E-s6650000--c2d61b552f8b12bf81bab6e3706b037efbe55868c589a2739120e64ce9e6926a.fdt"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-04/eeg/sub-04_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 431449,
+      "checksum": "sha256:0fb6436ef21075a448b3884040f96fb39c94d2c1d9ccfabb772a7bb028b6a323",
+      "git_blob_sha1": "fc2fe59d277f5fbc66b0c6dc903f129fb98df1d8",
+      "git_annex_pointer": "../../.git/annex/objects/6P/F3/SHA256E-s431449--0fb6436ef21075a448b3884040f96fb39c94d2c1d9ccfabb772a7bb028b6a323.set/SHA256E-s431449--0fb6436ef21075a448b3884040f96fb39c94d2c1d9ccfabb772a7bb028b6a323.set"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-05/eeg/sub-05_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 6650000,
+      "checksum": "sha256:4967fb64ae839cfb8df0a28f3cbe227f23c23d41e3f9acfb921d102d6cad03ed",
+      "git_blob_sha1": "cc725f6fcdb12d217d010b09b37d567ea5ddabb8",
+      "git_annex_pointer": "../../.git/annex/objects/0W/mf/SHA256E-s6650000--4967fb64ae839cfb8df0a28f3cbe227f23c23d41e3f9acfb921d102d6cad03ed.fdt/SHA256E-s6650000--4967fb64ae839cfb8df0a28f3cbe227f23c23d41e3f9acfb921d102d6cad03ed.fdt"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-05/eeg/sub-05_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 434121,
+      "checksum": "sha256:7be1442d3dbe0fa81bf1a6cece3b78a9c43a6a457f1f7342bf1fc51ddcb6ac39",
+      "git_blob_sha1": "16a444752855c5a25e6930739aec5ccdbf079fd3",
+      "git_annex_pointer": "../../.git/annex/objects/Jx/gV/SHA256E-s434121--7be1442d3dbe0fa81bf1a6cece3b78a9c43a6a457f1f7342bf1fc51ddcb6ac39.set/SHA256E-s434121--7be1442d3dbe0fa81bf1a6cece3b78a9c43a6a457f1f7342bf1fc51ddcb6ac39.set"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-06/eeg/sub-06_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 6650000,
+      "checksum": "sha256:b5e870a758ecd1bc200bfac06f0ce55759dba67c6c9522e04f651bbd4bf1dfbb",
+      "git_blob_sha1": "3732e04019de43947af6baa8ba6b25cdc88e10c0",
+      "git_annex_pointer": "../../.git/annex/objects/wv/pM/SHA256E-s6650000--b5e870a758ecd1bc200bfac06f0ce55759dba67c6c9522e04f651bbd4bf1dfbb.fdt/SHA256E-s6650000--b5e870a758ecd1bc200bfac06f0ce55759dba67c6c9522e04f651bbd4bf1dfbb.fdt"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-06/eeg/sub-06_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 431001,
+      "checksum": "sha256:9cf3d9061c449a598eb805c8d8b628a4da9e720a84c9fb286543c8203af56cfd",
+      "git_blob_sha1": "e80dade7b25283cac57d56f1020d6b40689c72ec",
+      "git_annex_pointer": "../../.git/annex/objects/9Z/Wx/SHA256E-s431001--9cf3d9061c449a598eb805c8d8b628a4da9e720a84c9fb286543c8203af56cfd.set/SHA256E-s431001--9cf3d9061c449a598eb805c8d8b628a4da9e720a84c9fb286543c8203af56cfd.set"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-07/eeg/sub-07_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 6650000,
+      "checksum": "sha256:89dfc4be1541631766c3c072220ed5c6df610ce64e31a8b30fccf81253e51a74",
+      "git_blob_sha1": "cd708433f0b159c87dff43453a2c3d48e02f128f",
+      "git_annex_pointer": "../../.git/annex/objects/v6/xz/SHA256E-s6650000--89dfc4be1541631766c3c072220ed5c6df610ce64e31a8b30fccf81253e51a74.fdt/SHA256E-s6650000--89dfc4be1541631766c3c072220ed5c6df610ce64e31a8b30fccf81253e51a74.fdt"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-07/eeg/sub-07_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 431113,
+      "checksum": "sha256:61bd49aa90e22a54ed8681e3c55230db7f3f734311145db8e84c82a3a12954f4",
+      "git_blob_sha1": "9a3e4ee52307cef670f13f25885e894e99bc64d5",
+      "git_annex_pointer": "../../.git/annex/objects/zk/QG/SHA256E-s431113--61bd49aa90e22a54ed8681e3c55230db7f3f734311145db8e84c82a3a12954f4.set/SHA256E-s431113--61bd49aa90e22a54ed8681e3c55230db7f3f734311145db8e84c82a3a12954f4.set"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-08/eeg/sub-08_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 6650000,
+      "checksum": "sha256:888a47b926c9086085700c216bde1e1b94a54af344965db41b8428f3864969ac",
+      "git_blob_sha1": "2b8ea2de1a9a11df479dd302bed2e33946070fd0",
+      "git_annex_pointer": "../../.git/annex/objects/P3/36/SHA256E-s6650000--888a47b926c9086085700c216bde1e1b94a54af344965db41b8428f3864969ac.fdt/SHA256E-s6650000--888a47b926c9086085700c216bde1e1b94a54af344965db41b8428f3864969ac.fdt"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-08/eeg/sub-08_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 431337,
+      "checksum": "sha256:22108aeff630932283671ea725fb9692c1425554397d4005ac51a8b7437ed7f9",
+      "git_blob_sha1": "1f018a691ede4dbb0e53dbc7e3fee10fa114b89c",
+      "git_annex_pointer": "../../.git/annex/objects/85/P2/SHA256E-s431337--22108aeff630932283671ea725fb9692c1425554397d4005ac51a8b7437ed7f9.set/SHA256E-s431337--22108aeff630932283671ea725fb9692c1425554397d4005ac51a8b7437ed7f9.set"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-09/eeg/sub-09_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:e5164c5ea2f62ec13a57fe66a499ddb2fa011df5b7882cf527b16f2c79afd11b",
+      "git_blob_sha1": "f7dce037af5b6e8268b56e0a97b9af17ac8de8e1",
+      "git_annex_pointer": "../../.git/annex/objects/q3/jZ/SHA256E-s11210000--e5164c5ea2f62ec13a57fe66a499ddb2fa011df5b7882cf527b16f2c79afd11b.fdt/SHA256E-s11210000--e5164c5ea2f62ec13a57fe66a499ddb2fa011df5b7882cf527b16f2c79afd11b.fdt"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-09/eeg/sub-09_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 520203,
+      "checksum": "sha256:ca2e1497310bb869a7b77a7f8d334abaf68efbf9c3a32f47d30fff9da93b735a",
+      "git_blob_sha1": "a460367a7424041370373db9e0fc49a213acd0e9",
+      "git_annex_pointer": "../../.git/annex/objects/qP/x4/SHA256E-s520203--ca2e1497310bb869a7b77a7f8d334abaf68efbf9c3a32f47d30fff9da93b735a.set/SHA256E-s520203--ca2e1497310bb869a7b77a7f8d334abaf68efbf9c3a32f47d30fff9da93b735a.set"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-10/eeg/sub-10_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:beb0172aab23e29c53c79677b8b8ae446752e9bfd2887495c0ed483735dc72a4",
+      "git_blob_sha1": "534095c27a3f4dde29a9b9e352e1cc3b3fad7624",
+      "git_annex_pointer": "../../.git/annex/objects/zM/qw/SHA256E-s11210000--beb0172aab23e29c53c79677b8b8ae446752e9bfd2887495c0ed483735dc72a4.fdt/SHA256E-s11210000--beb0172aab23e29c53c79677b8b8ae446752e9bfd2887495c0ed483735dc72a4.fdt"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-10/eeg/sub-10_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 519219,
+      "checksum": "sha256:e402c4ae5485f25a27c054753052cbdf49668c3fe99752e37c10837b6e7b0d4d",
+      "git_blob_sha1": "e407fcc5cf257d65f1e91fa3c281f7c6928a4bc1",
+      "git_annex_pointer": "../../.git/annex/objects/k5/JF/SHA256E-s519219--e402c4ae5485f25a27c054753052cbdf49668c3fe99752e37c10837b6e7b0d4d.set/SHA256E-s519219--e402c4ae5485f25a27c054753052cbdf49668c3fe99752e37c10837b6e7b0d4d.set"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-11/eeg/sub-11_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:971e9de77bfcec427b2174f47163e1b365598c646834f4cf6d21f0689bef6ff7",
+      "git_blob_sha1": "2599fd7c16ce03e369e1006115fd6f1094c8d7d6",
+      "git_annex_pointer": "../../.git/annex/objects/M6/mJ/SHA256E-s11210000--971e9de77bfcec427b2174f47163e1b365598c646834f4cf6d21f0689bef6ff7.fdt/SHA256E-s11210000--971e9de77bfcec427b2174f47163e1b365598c646834f4cf6d21f0689bef6ff7.fdt"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-11/eeg/sub-11_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 518891,
+      "checksum": "sha256:a1e6243fd050924d1730a2d0252523a893e1499df81116406d418498a08f7130",
+      "git_blob_sha1": "a9b39a642da3fa77f16b134e55a58e1a0432641b",
+      "git_annex_pointer": "../../.git/annex/objects/V7/7J/SHA256E-s518891--a1e6243fd050924d1730a2d0252523a893e1499df81116406d418498a08f7130.set/SHA256E-s518891--a1e6243fd050924d1730a2d0252523a893e1499df81116406d418498a08f7130.set"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-12/eeg/sub-12_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:6928c67ebc59af202b90574cd6e2835424e00768a99b9af6734eb623286da467",
+      "git_blob_sha1": "952c648d0a04c03a47cf91d752a422c82f61f5da",
+      "git_annex_pointer": "../../.git/annex/objects/mk/fv/SHA256E-s11210000--6928c67ebc59af202b90574cd6e2835424e00768a99b9af6734eb623286da467.fdt/SHA256E-s11210000--6928c67ebc59af202b90574cd6e2835424e00768a99b9af6734eb623286da467.fdt"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-12/eeg/sub-12_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 519051,
+      "checksum": "sha256:e30f28bfa94cfaf8080549524d057b38b6ce99239c88392adfce6d5417f21274",
+      "git_blob_sha1": "b5ce1c1dea91378a1af180f1147bb2e3a99cfdd2",
+      "git_annex_pointer": "../../.git/annex/objects/4w/MQ/SHA256E-s519051--e30f28bfa94cfaf8080549524d057b38b6ce99239c88392adfce6d5417f21274.set/SHA256E-s519051--e30f28bfa94cfaf8080549524d057b38b6ce99239c88392adfce6d5417f21274.set"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-13/eeg/sub-13_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:c340eb2a2c064381432a899d2f1b143c415e690dcbc6247e331e8b0db0af0d52",
+      "git_blob_sha1": "0d95393ce317cbdb96954996bbb7fb87ced79e90",
+      "git_annex_pointer": "../../.git/annex/objects/Q7/Wq/SHA256E-s11210000--c340eb2a2c064381432a899d2f1b143c415e690dcbc6247e331e8b0db0af0d52.fdt/SHA256E-s11210000--c340eb2a2c064381432a899d2f1b143c415e690dcbc6247e331e8b0db0af0d52.fdt"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-13/eeg/sub-13_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 518555,
+      "checksum": "sha256:5524b8cd05d415a9a47e5d5afe94c8443a30c936333633125437f3bc11f3603a",
+      "git_blob_sha1": "439eed73643b639168e56786d19e96a68503ccb9",
+      "git_annex_pointer": "../../.git/annex/objects/g3/ZF/SHA256E-s518555--5524b8cd05d415a9a47e5d5afe94c8443a30c936333633125437f3bc11f3603a.set/SHA256E-s518555--5524b8cd05d415a9a47e5d5afe94c8443a30c936333633125437f3bc11f3603a.set"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-14/eeg/sub-14_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:0500b79f3f2f5a2346139ac360dac387fd158d3c175bf3b155ccff6172421aca",
+      "git_blob_sha1": "fe49e21d81d92d4e796ce8070f8f8e963434ee30",
+      "git_annex_pointer": "../../.git/annex/objects/2v/J3/SHA256E-s11210000--0500b79f3f2f5a2346139ac360dac387fd158d3c175bf3b155ccff6172421aca.fdt/SHA256E-s11210000--0500b79f3f2f5a2346139ac360dac387fd158d3c175bf3b155ccff6172421aca.fdt"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-14/eeg/sub-14_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 519947,
+      "checksum": "sha256:5e06ed1603ae8345f9cdcf95494174afd1465cca2f7bf5665c918b025b6f33aa",
+      "git_blob_sha1": "ccaaa09961fe8fe5dfbdcf03806e0417ddb30f76",
+      "git_annex_pointer": "../../.git/annex/objects/8w/qQ/SHA256E-s519947--5e06ed1603ae8345f9cdcf95494174afd1465cca2f7bf5665c918b025b6f33aa.set/SHA256E-s519947--5e06ed1603ae8345f9cdcf95494174afd1465cca2f7bf5665c918b025b6f33aa.set"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-15/eeg/sub-15_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:bbb12186e83a05b7140fb441c1672e50fb4dfb5a3b9d5596cdd20109a2e779e1",
+      "git_blob_sha1": "d34a4c62913f6b2360767688ca0c457cfbea0846",
+      "git_annex_pointer": "../../.git/annex/objects/5F/KF/SHA256E-s11210000--bbb12186e83a05b7140fb441c1672e50fb4dfb5a3b9d5596cdd20109a2e779e1.fdt/SHA256E-s11210000--bbb12186e83a05b7140fb441c1672e50fb4dfb5a3b9d5596cdd20109a2e779e1.fdt"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-15/eeg/sub-15_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 511227,
+      "checksum": "sha256:500779617bb1e7874596f0a0d9da1870b3b4b8c3f2b7646c029ecffc47dd1da1",
+      "git_blob_sha1": "9f00408de005b101679c982cee13ac905b442448",
+      "git_annex_pointer": "../../.git/annex/objects/wW/MX/SHA256E-s511227--500779617bb1e7874596f0a0d9da1870b3b4b8c3f2b7646c029ecffc47dd1da1.set/SHA256E-s511227--500779617bb1e7874596f0a0d9da1870b3b4b8c3f2b7646c029ecffc47dd1da1.set"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-16/eeg/sub-16_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:4743fc8951d3b1bb285090fd8471a2beafbbcab20f80962d88e06a63f4600015",
+      "git_blob_sha1": "361fd6035651b0f74987a3f9703b15629872673c",
+      "git_annex_pointer": "../../.git/annex/objects/QJ/q5/SHA256E-s11210000--4743fc8951d3b1bb285090fd8471a2beafbbcab20f80962d88e06a63f4600015.fdt/SHA256E-s11210000--4743fc8951d3b1bb285090fd8471a2beafbbcab20f80962d88e06a63f4600015.fdt"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-16/eeg/sub-16_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 520179,
+      "checksum": "sha256:2d25f3a68cdc9ef97f8ed146be6aba75aebefbe834a977695da93efb07dad120",
+      "git_blob_sha1": "6ea90e24a45a5ddb51a5c34300006f6d539ddb0d",
+      "git_annex_pointer": "../../.git/annex/objects/v7/4K/SHA256E-s520179--2d25f3a68cdc9ef97f8ed146be6aba75aebefbe834a977695da93efb07dad120.set/SHA256E-s520179--2d25f3a68cdc9ef97f8ed146be6aba75aebefbe834a977695da93efb07dad120.set"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-17/eeg/sub-17_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:da498ae5b1e75c5e9c2ae1a6d146f0d26bb9249f2542387252392f28c02bb782",
+      "git_blob_sha1": "97018134fd6ff2cb43f5225e5db626c5fd0d3e75",
+      "git_annex_pointer": "../../.git/annex/objects/vX/09/SHA256E-s11210000--da498ae5b1e75c5e9c2ae1a6d146f0d26bb9249f2542387252392f28c02bb782.fdt/SHA256E-s11210000--da498ae5b1e75c5e9c2ae1a6d146f0d26bb9249f2542387252392f28c02bb782.fdt"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-17/eeg/sub-17_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 520851,
+      "checksum": "sha256:e9724d00528d9adbba0134a9a27e29b7baf1fe4a5b824092b29b36ab957d3803",
+      "git_blob_sha1": "fd8e70ed75be49ec9f4cea4f9106b0ebc976a84e",
+      "git_annex_pointer": "../../.git/annex/objects/6z/jj/SHA256E-s520851--e9724d00528d9adbba0134a9a27e29b7baf1fe4a5b824092b29b36ab957d3803.set/SHA256E-s520851--e9724d00528d9adbba0134a9a27e29b7baf1fe4a5b824092b29b36ab957d3803.set"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-18/eeg/sub-18_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:065cd39779cb1cc94807cbbe68e5624ff11b1630d069df9bf02b8a873f48d2f9",
+      "git_blob_sha1": "34544960f73ad746548e7d41e6c450952ea08b28",
+      "git_annex_pointer": "../../.git/annex/objects/g4/8Z/SHA256E-s11210000--065cd39779cb1cc94807cbbe68e5624ff11b1630d069df9bf02b8a873f48d2f9.fdt/SHA256E-s11210000--065cd39779cb1cc94807cbbe68e5624ff11b1630d069df9bf02b8a873f48d2f9.fdt"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-18/eeg/sub-18_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 518443,
+      "checksum": "sha256:bdf83083b590210982288dfd66176ec3d36cdd525f40bf3214b28d7a9738fd6c",
+      "git_blob_sha1": "b88ee71454f0f8ccb35830500d8e655552522273",
+      "git_annex_pointer": "../../.git/annex/objects/zv/q5/SHA256E-s518443--bdf83083b590210982288dfd66176ec3d36cdd525f40bf3214b28d7a9738fd6c.set/SHA256E-s518443--bdf83083b590210982288dfd66176ec3d36cdd525f40bf3214b28d7a9738fd6c.set"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-19/eeg/sub-19_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:b47b9e9b44682044d94dc10fa68437b512dde6967a4277ebc3b72be363566bca",
+      "git_blob_sha1": "88aff64a8d802988d2475d63ea7707b84eb46fda",
+      "git_annex_pointer": "../../.git/annex/objects/9J/fw/SHA256E-s11210000--b47b9e9b44682044d94dc10fa68437b512dde6967a4277ebc3b72be363566bca.fdt/SHA256E-s11210000--b47b9e9b44682044d94dc10fa68437b512dde6967a4277ebc3b72be363566bca.fdt"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-19/eeg/sub-19_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 511715,
+      "checksum": "sha256:ffd52b010104c51b8450c9fce1b31e1bf04d029b558f29a5fa9c494ead332bad",
+      "git_blob_sha1": "1604b74e7e3cd9b69ff8100b6bc7a99c35c720e3",
+      "git_annex_pointer": "../../.git/annex/objects/5v/QF/SHA256E-s511715--ffd52b010104c51b8450c9fce1b31e1bf04d029b558f29a5fa9c494ead332bad.set/SHA256E-s511715--ffd52b010104c51b8450c9fce1b31e1bf04d029b558f29a5fa9c494ead332bad.set"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-20/eeg/sub-20_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:ee02cbf230ba23f8ea11947ce12e3676efd5479829da04b06c718ed329a04b43",
+      "git_blob_sha1": "d1ab8754d97c387938279f26e6324bb82448b401",
+      "git_annex_pointer": "../../.git/annex/objects/2G/k4/SHA256E-s11210000--ee02cbf230ba23f8ea11947ce12e3676efd5479829da04b06c718ed329a04b43.fdt/SHA256E-s11210000--ee02cbf230ba23f8ea11947ce12e3676efd5479829da04b06c718ed329a04b43.fdt"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-20/eeg/sub-20_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 509627,
+      "checksum": "sha256:8c284f6a82c47b880337a726c6858f43d52a8ec31aef709c9be8b1bb635e7d4c",
+      "git_blob_sha1": "079ef380e569bcc1164fbd921ea4f21d6e9a925f",
+      "git_annex_pointer": "../../.git/annex/objects/M4/80/SHA256E-s509627--8c284f6a82c47b880337a726c6858f43d52a8ec31aef709c9be8b1bb635e7d4c.set/SHA256E-s509627--8c284f6a82c47b880337a726c6858f43d52a8ec31aef709c9be8b1bb635e7d4c.set"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-21/eeg/sub-21_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:1f6c0eccbb678c3315299fecfe9c59ad590ae1e854651d9ea918712838452eae",
+      "git_blob_sha1": "123179c2356ffe829c5bee5d0b07dbf5c56e3758",
+      "git_annex_pointer": "../../.git/annex/objects/jz/8z/SHA256E-s11210000--1f6c0eccbb678c3315299fecfe9c59ad590ae1e854651d9ea918712838452eae.fdt/SHA256E-s11210000--1f6c0eccbb678c3315299fecfe9c59ad590ae1e854651d9ea918712838452eae.fdt"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-21/eeg/sub-21_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 509715,
+      "checksum": "sha256:94e19928557a0417c5bcc556ada818a0f2cba92184d91c6c02f36c865eb0196e",
+      "git_blob_sha1": "7ae3170c1539aac9219334aa8a9c8bc4e5dbb366",
+      "git_annex_pointer": "../../.git/annex/objects/MW/3M/SHA256E-s509715--94e19928557a0417c5bcc556ada818a0f2cba92184d91c6c02f36c865eb0196e.set/SHA256E-s509715--94e19928557a0417c5bcc556ada818a0f2cba92184d91c6c02f36c865eb0196e.set"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-22/eeg/sub-22_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:2f0eb53880a493961505f92616512a1e7bfa1310cb6643f032705a21dc79d782",
+      "git_blob_sha1": "7a6d486f1cd5a89ba95dce76a11e505b1ce606a6",
+      "git_annex_pointer": "../../.git/annex/objects/Pz/1f/SHA256E-s11210000--2f0eb53880a493961505f92616512a1e7bfa1310cb6643f032705a21dc79d782.fdt/SHA256E-s11210000--2f0eb53880a493961505f92616512a1e7bfa1310cb6643f032705a21dc79d782.fdt"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-22/eeg/sub-22_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 508019,
+      "checksum": "sha256:093a47f0db37735a88cdcf54e85039bb15c2ea9007d0f61d30170c5dd97f18fb",
+      "git_blob_sha1": "a8c84cdcb1daa33b23c5e0b721bd6edc671c9627",
+      "git_annex_pointer": "../../.git/annex/objects/QJ/54/SHA256E-s508019--093a47f0db37735a88cdcf54e85039bb15c2ea9007d0f61d30170c5dd97f18fb.set/SHA256E-s508019--093a47f0db37735a88cdcf54e85039bb15c2ea9007d0f61d30170c5dd97f18fb.set"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-23/eeg/sub-23_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:2b638037c7c653b0d76d548f7a0ee031f375a04732f7745d81c180b927c25844",
+      "git_blob_sha1": "9040e5e4d8cee23f1d8e54d6948200cb4e38c462",
+      "git_annex_pointer": "../../.git/annex/objects/kZ/g3/SHA256E-s11210000--2b638037c7c653b0d76d548f7a0ee031f375a04732f7745d81c180b927c25844.fdt/SHA256E-s11210000--2b638037c7c653b0d76d548f7a0ee031f375a04732f7745d81c180b927c25844.fdt"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-23/eeg/sub-23_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 507843,
+      "checksum": "sha256:c025d9dd8a4e3b9c16674d1ad7c9cb41b4310704e32183f5b22418b12f9acecc",
+      "git_blob_sha1": "efc2dc7943d8da0b1fdbe44b36ca727b60d5d52d",
+      "git_annex_pointer": "../../.git/annex/objects/8g/Gz/SHA256E-s507843--c025d9dd8a4e3b9c16674d1ad7c9cb41b4310704e32183f5b22418b12f9acecc.set/SHA256E-s507843--c025d9dd8a4e3b9c16674d1ad7c9cb41b4310704e32183f5b22418b12f9acecc.set"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-24/eeg/sub-24_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:08fcd2a17e89d1458b5bbe22411e60b7341da0b7008c61d990bc17a563e12a0a",
+      "git_blob_sha1": "3091107ef72780a9e3d664a2473c467b85750ce8",
+      "git_annex_pointer": "../../.git/annex/objects/60/73/SHA256E-s11210000--08fcd2a17e89d1458b5bbe22411e60b7341da0b7008c61d990bc17a563e12a0a.fdt/SHA256E-s11210000--08fcd2a17e89d1458b5bbe22411e60b7341da0b7008c61d990bc17a563e12a0a.fdt"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-24/eeg/sub-24_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 507995,
+      "checksum": "sha256:681c1abec24ded2217ca1de83021bc603cc2bb3da86ee59bdccacdfa470e8e66",
+      "git_blob_sha1": "d84e3dd82e6cf2407c2e6a0e5b20badb5c2502c7",
+      "git_annex_pointer": "../../.git/annex/objects/v3/Pj/SHA256E-s507995--681c1abec24ded2217ca1de83021bc603cc2bb3da86ee59bdccacdfa470e8e66.set/SHA256E-s507995--681c1abec24ded2217ca1de83021bc603cc2bb3da86ee59bdccacdfa470e8e66.set"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-25/eeg/sub-25_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:9e6028ab62cc0e0ee3de3d947ca344e61cfa9e62eb2876007947d31d2846f3e9",
+      "git_blob_sha1": "c1212419467ee564a8a56c83d6d2f0e48853a169",
+      "git_annex_pointer": "../../.git/annex/objects/8p/35/SHA256E-s11210000--9e6028ab62cc0e0ee3de3d947ca344e61cfa9e62eb2876007947d31d2846f3e9.fdt/SHA256E-s11210000--9e6028ab62cc0e0ee3de3d947ca344e61cfa9e62eb2876007947d31d2846f3e9.fdt"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-25/eeg/sub-25_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 508171,
+      "checksum": "sha256:3907722c215a2314f2d9b55b68032d1b1e99362e93851dc1a3e1d8c661e8a3e0",
+      "git_blob_sha1": "23edb473ea9d2426a897b1c8bd365ae36a39fc8e",
+      "git_annex_pointer": "../../.git/annex/objects/Vg/v8/SHA256E-s508171--3907722c215a2314f2d9b55b68032d1b1e99362e93851dc1a3e1d8c661e8a3e0.set/SHA256E-s508171--3907722c215a2314f2d9b55b68032d1b1e99362e93851dc1a3e1d8c661e8a3e0.set"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-26/eeg/sub-26_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:96361b0d5592aef11caff27742a5711bcb244d4a0901e4bcb3e09ba7deae742d",
+      "git_blob_sha1": "431837574a103d9567a791647117221a4d16f95b",
+      "git_annex_pointer": "../../.git/annex/objects/73/9V/SHA256E-s11210000--96361b0d5592aef11caff27742a5711bcb244d4a0901e4bcb3e09ba7deae742d.fdt/SHA256E-s11210000--96361b0d5592aef11caff27742a5711bcb244d4a0901e4bcb3e09ba7deae742d.fdt"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-26/eeg/sub-26_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 507891,
+      "checksum": "sha256:48d138efffa4f305c34852354d7c80bb8b63227abfd23dd3fb203b714c642102",
+      "git_blob_sha1": "4e1e24c29c8088d0f8f81531671037cfac7b1786",
+      "git_annex_pointer": "../../.git/annex/objects/5f/1Z/SHA256E-s507891--48d138efffa4f305c34852354d7c80bb8b63227abfd23dd3fb203b714c642102.set/SHA256E-s507891--48d138efffa4f305c34852354d7c80bb8b63227abfd23dd3fb203b714c642102.set"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-27/eeg/sub-27_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:3ba410294deb702e8705db8849cbf28d24393b2ef98318a46e2f154cf0657be3",
+      "git_blob_sha1": "231f2c2026cde0c852899bdeeb74a88b83d43299",
+      "git_annex_pointer": "../../.git/annex/objects/05/km/SHA256E-s11210000--3ba410294deb702e8705db8849cbf28d24393b2ef98318a46e2f154cf0657be3.fdt/SHA256E-s11210000--3ba410294deb702e8705db8849cbf28d24393b2ef98318a46e2f154cf0657be3.fdt"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-27/eeg/sub-27_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 507883,
+      "checksum": "sha256:f6c15c3faae79a6f882b54a419ac101b9ba9f9efe0075b889e9887ba4978f1b6",
+      "git_blob_sha1": "27683f9cecbf6bf79f21e12849eb9a9bb7bc88dd",
+      "git_annex_pointer": "../../.git/annex/objects/V1/8m/SHA256E-s507883--f6c15c3faae79a6f882b54a419ac101b9ba9f9efe0075b889e9887ba4978f1b6.set/SHA256E-s507883--f6c15c3faae79a6f882b54a419ac101b9ba9f9efe0075b889e9887ba4978f1b6.set"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-28/eeg/sub-28_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:f29772311a886de4b23f9d444040fb95a5411effd0a5d560c407524f7b5a8ead",
+      "git_blob_sha1": "32fa69b3d25029c8ae58e20b96a6aa2ae23ebb16",
+      "git_annex_pointer": "../../.git/annex/objects/92/6X/SHA256E-s11210000--f29772311a886de4b23f9d444040fb95a5411effd0a5d560c407524f7b5a8ead.fdt/SHA256E-s11210000--f29772311a886de4b23f9d444040fb95a5411effd0a5d560c407524f7b5a8ead.fdt"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-28/eeg/sub-28_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 507875,
+      "checksum": "sha256:81f3bb234b3de9421cce826741037500b30e11b9d6d3f101dae0d9a91613c3fe",
+      "git_blob_sha1": "b1ca50c5709b183d168b11cf850eb127e64da6fe",
+      "git_annex_pointer": "../../.git/annex/objects/PM/7G/SHA256E-s507875--81f3bb234b3de9421cce826741037500b30e11b9d6d3f101dae0d9a91613c3fe.set/SHA256E-s507875--81f3bb234b3de9421cce826741037500b30e11b9d6d3f101dae0d9a91613c3fe.set"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-29/eeg/sub-29_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:6432fdac3a90770843416e37b195c36388d6ba96465d15b883d150e73d7c4c14",
+      "git_blob_sha1": "481605abac0c86c33c10517fbd6faca28e6f8925",
+      "git_annex_pointer": "../../.git/annex/objects/90/kq/SHA256E-s11210000--6432fdac3a90770843416e37b195c36388d6ba96465d15b883d150e73d7c4c14.fdt/SHA256E-s11210000--6432fdac3a90770843416e37b195c36388d6ba96465d15b883d150e73d7c4c14.fdt"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-29/eeg/sub-29_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 507787,
+      "checksum": "sha256:9b5702743e31dc8796b392d62af4b5c400a30f9a66b22aa102b593eb5c450b12",
+      "git_blob_sha1": "d9ec88d20f1839835fd1e4872498efa2baaf2bd7",
+      "git_annex_pointer": "../../.git/annex/objects/0X/xZ/SHA256E-s507787--9b5702743e31dc8796b392d62af4b5c400a30f9a66b22aa102b593eb5c450b12.set/SHA256E-s507787--9b5702743e31dc8796b392d62af4b5c400a30f9a66b22aa102b593eb5c450b12.set"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-30/eeg/sub-30_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:47205ee16c96b45d5c6f88173de07b0e21a8fa44176973b173d663bf9fa082a1",
+      "git_blob_sha1": "509d0051a900a8c33ac269aa48d249041b5973a2",
+      "git_annex_pointer": "../../.git/annex/objects/P0/kw/SHA256E-s11210000--47205ee16c96b45d5c6f88173de07b0e21a8fa44176973b173d663bf9fa082a1.fdt/SHA256E-s11210000--47205ee16c96b45d5c6f88173de07b0e21a8fa44176973b173d663bf9fa082a1.fdt"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-30/eeg/sub-30_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 508051,
+      "checksum": "sha256:53696e7bc14ec0fd30700e405e85a7a15809417dac9e2abd3faf9321d9698d90",
+      "git_blob_sha1": "3433263e3643792492d6f2a238be3be228464754",
+      "git_annex_pointer": "../../.git/annex/objects/9k/X6/SHA256E-s508051--53696e7bc14ec0fd30700e405e85a7a15809417dac9e2abd3faf9321d9698d90.set/SHA256E-s508051--53696e7bc14ec0fd30700e405e85a7a15809417dac9e2abd3faf9321d9698d90.set"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-31/eeg/sub-31_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:f90faee8b73a81f6c4778e697d7c29600248ed1ac63cd06c912556afe3a8dfa9",
+      "git_blob_sha1": "92d4eecdf6f8e33d31e2279e0d8609c4faaf2638",
+      "git_annex_pointer": "../../.git/annex/objects/q5/18/SHA256E-s11210000--f90faee8b73a81f6c4778e697d7c29600248ed1ac63cd06c912556afe3a8dfa9.fdt/SHA256E-s11210000--f90faee8b73a81f6c4778e697d7c29600248ed1ac63cd06c912556afe3a8dfa9.fdt"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-31/eeg/sub-31_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 510579,
+      "checksum": "sha256:f523b3b38865acd93806929c3469b1e27f11a04127469bf99b57d8dd26282f4f",
+      "git_blob_sha1": "9a3269b1e7550288a2dba13de7987c2d8d0ee6a4",
+      "git_annex_pointer": "../../.git/annex/objects/VZ/8w/SHA256E-s510579--f523b3b38865acd93806929c3469b1e27f11a04127469bf99b57d8dd26282f4f.set/SHA256E-s510579--f523b3b38865acd93806929c3469b1e27f11a04127469bf99b57d8dd26282f4f.set"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-32/eeg/sub-32_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:544033a55a5bdb104abdab7d72daffebc663eec9b45674c1d1248dd39117ad94",
+      "git_blob_sha1": "d015c1f14407fcb59282cadd1c741d92444c4c3a",
+      "git_annex_pointer": "../../.git/annex/objects/wQ/8P/SHA256E-s11210000--544033a55a5bdb104abdab7d72daffebc663eec9b45674c1d1248dd39117ad94.fdt/SHA256E-s11210000--544033a55a5bdb104abdab7d72daffebc663eec9b45674c1d1248dd39117ad94.fdt"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-32/eeg/sub-32_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 510139,
+      "checksum": "sha256:c8bc574c0511ba84122ed73d768a3942d96cbffc6b6ccaee2b61a39838db8858",
+      "git_blob_sha1": "3ee15f40ffc23ce6f1d42f199bab422c0bf29e03",
+      "git_annex_pointer": "../../.git/annex/objects/1Q/XJ/SHA256E-s510139--c8bc574c0511ba84122ed73d768a3942d96cbffc6b6ccaee2b61a39838db8858.set/SHA256E-s510139--c8bc574c0511ba84122ed73d768a3942d96cbffc6b6ccaee2b61a39838db8858.set"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-33/eeg/sub-33_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:d5f4a9866acc0b69aa04eff7c906c4ffdde2f44de4725d5e5ab12c2f874153e5",
+      "git_blob_sha1": "7d5c23f6e56f27f86b5a3749752c04767eea17de",
+      "git_annex_pointer": "../../.git/annex/objects/zF/J6/SHA256E-s11210000--d5f4a9866acc0b69aa04eff7c906c4ffdde2f44de4725d5e5ab12c2f874153e5.fdt/SHA256E-s11210000--d5f4a9866acc0b69aa04eff7c906c4ffdde2f44de4725d5e5ab12c2f874153e5.fdt"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-33/eeg/sub-33_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 511387,
+      "checksum": "sha256:8f9f8628c201b4c6d1a80052b24ec1ae23a8de704fb3adda84e4756cee7258f0",
+      "git_blob_sha1": "968e6f2bd2cca878aff75afe0d29cfe9d3472478",
+      "git_annex_pointer": "../../.git/annex/objects/F2/G9/SHA256E-s511387--8f9f8628c201b4c6d1a80052b24ec1ae23a8de704fb3adda84e4756cee7258f0.set/SHA256E-s511387--8f9f8628c201b4c6d1a80052b24ec1ae23a8de704fb3adda84e4756cee7258f0.set"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-34/eeg/sub-34_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:26b2c8e0e033088e2e8117489b655a0b42aacd6d6a02803d3e15ce74075d8667",
+      "git_blob_sha1": "cd90ccd9eec78d3f8d77820cec0d1de1882f0d3a",
+      "git_annex_pointer": "../../.git/annex/objects/kF/pp/SHA256E-s11210000--26b2c8e0e033088e2e8117489b655a0b42aacd6d6a02803d3e15ce74075d8667.fdt/SHA256E-s11210000--26b2c8e0e033088e2e8117489b655a0b42aacd6d6a02803d3e15ce74075d8667.fdt"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-34/eeg/sub-34_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 505931,
+      "checksum": "sha256:ac9b6eac5b61fb0539777e90272ce48d23e0c804b9dbbf41b25d66ee55d97b80",
+      "git_blob_sha1": "23d3e85eef6c83168c0c5d6546f8445584ba12df",
+      "git_annex_pointer": "../../.git/annex/objects/Q5/pk/SHA256E-s505931--ac9b6eac5b61fb0539777e90272ce48d23e0c804b9dbbf41b25d66ee55d97b80.set/SHA256E-s505931--ac9b6eac5b61fb0539777e90272ce48d23e0c804b9dbbf41b25d66ee55d97b80.set"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-40HzAuditoryEntrainment_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-35/eeg/sub-35_task-40HzAuditoryEntrainment_eeg.fdt",
+      "bytes": 11210000,
+      "checksum": "sha256:05008bccc4c97753aba069b7c14818234b1ffda9cd693d4f17c1be593e295a3f",
+      "git_blob_sha1": "4f1e66b5718630c77346ba852313c27989f0341b",
+      "git_annex_pointer": "../../.git/annex/objects/zq/pJ/SHA256E-s11210000--05008bccc4c97753aba069b7c14818234b1ffda9cd693d4f17c1be593e295a3f.fdt/SHA256E-s11210000--05008bccc4c97753aba069b7c14818234b1ffda9cd693d4f17c1be593e295a3f.fdt"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-40HzAuditoryEntrainment_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005048/sub-35/eeg/sub-35_task-40HzAuditoryEntrainment_eeg.set",
+      "bytes": 507931,
+      "checksum": "sha256:28971fdc42d1cbc12336ea427b14ee9ed8e943c223f27457aea0d6e8dfffc0cb",
+      "git_blob_sha1": "3070cb8d3973e7ee74c00221d876d5d16874de8f",
+      "git_annex_pointer": "../../.git/annex/objects/jq/F2/SHA256E-s507931--28971fdc42d1cbc12336ea427b14ee9ed8e943c223f27457aea0d6e8dfffc0cb.set/SHA256E-s507931--28971fdc42d1cbc12336ea427b14ee9ed8e943c223f27457aea0d6e8dfffc0cb.set"
+    }
+  ],
+  "metadata_archive_sha256": "59f75675c3329d0f163e5ba16907e16536276389527458cbde1265b6be08ef41",
+  "source_urls": [
+    "https://openneuro.org/datasets/ds005048/versions/1.0.1",
+    "https://data.eegdash.org/api/eegdash/datasets/on005048"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "ds003944": [
+    {
+      "sampling_frequency_hz": "1000",
+      "group": "Control",
+      "subjects": 31
+    },
+    {
+      "sampling_frequency_hz": "1000",
+      "group": "Psychosis",
+      "subjects": 50
+    },
+    {
+      "sampling_frequency_hz": "3000.00030000003",
+      "group": "Control",
+      "subjects": 1
+    }
+  ],
+  "ds003947": [
+    {
+      "sampling_frequency_hz": "1000",
+      "group": "Control",
+      "subjects": 3
+    },
+    {
+      "sampling_frequency_hz": "1000",
+      "group": "Psychosis",
+      "subjects": 4
+    },
+    {
+      "sampling_frequency_hz": "3000.00030000003",
+      "group": "Psychosis",
+      "subjects": 27
+    },
+    {
+      "sampling_frequency_hz": "3000.00030000003",
+      "group": "Control",
+      "subjects": 27
+    }
+  ]
+}

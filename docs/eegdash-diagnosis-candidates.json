@@ -1,0 +1,856 @@
+{
+  "target_additional": 20,
+  "baseline_registered": 82,
+  "baseline_selected": 78,
+  "catalogue_entries": 954,
+  "diagnostic_scope": "Diagnosed groups only, confirmed9November2026",
+  "candidates": [
+    {
+      "dataset": "on005048",
+      "name": "40Hz Auditory Entrainment",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds005048.v1.0.1"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 0.373204675,
+      "subjects_preliminary": 35,
+      "groups_preliminary": {
+        "Group": {
+          "Normal": 10,
+          "Mild AD": 16,
+          "-": 2,
+          "MCI": 6,
+          "Moderate AD": 1
+        }
+      },
+      "status": "complete_registered",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification",
+      "problem": "AlzheimersAuditory",
+      "subjects_retained": 33
+    },
+    {
+      "dataset": "on002778",
+      "name": "UC San Diego Resting State EEG Data from Patients with Parkinson's Disease",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds002778.v1.0.5"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 0.571651148,
+      "subjects_preliminary": 31,
+      "groups_preliminary": {
+        "MMSE": {
+          "30.0": 12,
+          "29.0": 13,
+          "28.0": 4,
+          "26.0": 2
+        },
+        "disease_duration": {
+          "9.0": 2,
+          "2.0": 5,
+          "3.0": 2,
+          "1.0": 2,
+          "6.0": 2,
+          "12.0": 1,
+          "8.0": 1
+        },
+        "notes": {
+          "Subject was missing reading glasses": 1,
+          "Claims to have dyslexia, and history of slower reaction times": 1,
+          "Used preprocessed data from EEGLAB .mat file instead of raw data for pd on": 2
+        }
+      },
+      "status": "authorised_source_review",
+      "reason": "User explicitly includes source despite authors diagnostic-ML caution; retain caution in sidecars",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "nm000114",
+      "name": "MDD Patients and Healthy Controls EEG Data",
+      "source_doi": [
+        {
+          "DOI": "https://doi.org/10.6084/m9.figshare.4244171.v2"
+        }
+      ],
+      "catalogue_licence": "CC-BY-4.0",
+      "source_size_GB": 0.852209963,
+      "subjects_preliminary": 64,
+      "groups_preliminary": {},
+      "status": "excluded",
+      "reason": "Known copied waveforms; do not reinstate MDD",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on007823",
+      "name": "A COVID-19 survivors and close contacts EEG dataset",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds007823.v1.0.1"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 1.154815309,
+      "subjects_preliminary": 169,
+      "groups_preliminary": {
+        "group": {
+          "Covid": 86,
+          "Control": 83
+        },
+        "COVID_symptoms": {
+          "Symptomatic": 47,
+          "Asymptomatic": 38
+        },
+        "COVID_severity": {
+          "Mild": 37,
+          "Asymptomatic": 38,
+          "Severe": 10
+        }
+      },
+      "status": "already_prepared",
+      "reason": "CovidSurvivors",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on007020",
+      "name": "EEG Mortality Dataset in Parkinson's Disease",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds007020.v1.0.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 1.870058058,
+      "subjects_preliminary": 94,
+      "groups_preliminary": {
+        "survival_status": {
+          "living": 72,
+          "deceased": 22
+        }
+      },
+      "status": "excluded",
+      "reason": "Prognosis, not diagnosis",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on006036",
+      "name": "A complementary dataset of open-eyes EEG recordings in a photo-stimulation setting from: Alzheimer's disease, Frontotemporal dementia and Healthy subjects",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds006036.v1.0.6"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 2.266896422,
+      "subjects_preliminary": 88,
+      "groups_preliminary": {
+        "Group": {
+          "C": 29,
+          "A": 36,
+          "F": 23
+        }
+      },
+      "status": "already_prepared",
+      "reason": "PhotoStimulation",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on004584",
+      "name": "Rest eyes open",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds004584.v1.0.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 3.078219523,
+      "subjects_preliminary": 149,
+      "groups_preliminary": {
+        "GROUP": {
+          "PD": 100,
+          "Control": 49
+        },
+        "TYPE": {
+          "1.0": 100,
+          "0.0": 49
+        }
+      },
+      "status": "full_download_after_passed_pilot",
+      "reason": "Explicit original PD/control labels, fixed500Hz, CC0; recordings distinct rest condition of Iowa cohort shared with existing interval tasks",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on007526",
+      "name": "PD-EEG: Resting-State & Walking EEG in Parkinson's Disease",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds007526.v1.0.2"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 4.578787059,
+      "subjects_preliminary": 144,
+      "groups_preliminary": {
+        "group": {
+          "PD": 116,
+          "HC": 28
+        }
+      },
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "nm000309",
+      "name": "PardoGarcia2026: Mu/beta motor-imagery EEG in chronic MCA stroke and healthy controls",
+      "source_doi": [
+        {
+          "DOI": "10.5281/zenodo.19599465",
+          "URL": "https://doi.org/10.5281/zenodo.19599465"
+        },
+        {
+          "DOI": "doi:10.5281/zenodo.19599465"
+        }
+      ],
+      "catalogue_licence": "CC-BY-4.0",
+      "source_size_GB": 5.426106636,
+      "subjects_preliminary": 18,
+      "groups_preliminary": {},
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on004504",
+      "name": "A dataset of EEG recordings from: Alzheimer's disease, Frontotemporal dementia and Healthy subjects",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds004504.v1.0.9"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 5.781001822,
+      "subjects_preliminary": 88,
+      "groups_preliminary": {
+        "Group": {
+          "C": 29,
+          "A": 36,
+          "F": 23
+        }
+      },
+      "status": "already_prepared",
+      "reason": "Alzheimers",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on003490",
+      "name": "EEG: 3-Stim Auditory Oddball and Rest in Parkinson's",
+      "source_doi": [
+        {
+          "DOI": "10.18112/openneuro.ds003490.v1.1.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 6.276776377,
+      "subjects_preliminary": 50,
+      "groups_preliminary": {
+        "Group": {
+          "PD": 25,
+          "CTL": 25
+        },
+        "sess1_Med": {
+          "ON": 13,
+          "OFF": 12
+        },
+        "sess2_Med": {
+          "OFF": 13,
+          "no s2": 25,
+          "ON": 12
+        }
+      },
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on003944",
+      "name": "EEG: First Episode Psychosis vs. Control Resting Task 1",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds003944.v1.0.1"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 6.606400561,
+      "subjects_preliminary": 82,
+      "groups_preliminary": {
+        "type": {
+          "Psychosis": 50,
+          "Control": 32
+        },
+        "ethnicity": {
+          "Not Hispanic": 78,
+          "Hispanic": 4
+        }
+      },
+      "status": "authorised_resampling_pilot",
+      "reason": "User authorises anti-alias resampling to keep all participants, original rates retained",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on004595",
+      "name": "EEG: RL Task (3-Armed Bandit) with alcohol cues in hazardous drinkers and ctls",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds004595.v1.0.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 8.470865865,
+      "subjects_preliminary": 53,
+      "groups_preliminary": {
+        "GROUP": {
+          "AUD": 27,
+          "CTRL": 26
+        }
+      },
+      "status": "deferred_initial_diagnosed_batch",
+      "reason": "Hazardous-drinking/AUDIT grouping; formal clinical AUD diagnosis not yet demonstrated",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on003478",
+      "name": "EEG: Depression rest",
+      "source_doi": [
+        {
+          "DOI": "10.18112/openneuro.ds003478.v1.1.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 11.43053439,
+      "subjects_preliminary": 122,
+      "groups_preliminary": {
+        "SCID": {
+          "Do not meet criterion for current or past MDD": 9,
+          "No Interview": 90,
+          "Past MDD": 12,
+          "Current MDD": 11
+        }
+      },
+      "status": "deferred_initial_diagnosed_batch",
+      "reason": "High/low BDI recruitment; only32 clinical interviews, no full-cohort diagnosis labels verified",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on003947",
+      "name": "EEG: First Episode Psychosis vs. Control Resting Task 2",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds003947.v1.0.1"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 13.466594429,
+      "subjects_preliminary": 61,
+      "groups_preliminary": {
+        "type": {
+          "Psychosis": 31,
+          "Control": 30
+        },
+        "race": {
+          "Black": 13,
+          "Asian": 14,
+          "White": 30,
+          "Mixed": 4
+        },
+        "ethnicity": {
+          "Not Hispanic": 55,
+          "Hispanic": 5,
+          "Unknown": 1
+        }
+      },
+      "status": "authorised_resampling_pilot",
+      "reason": "User authorises anti-alias resampling to keep all participants, original rates retained",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on004574",
+      "name": "Cross-modal Oddball Task.",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds004574.v1.0.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 14.470037746,
+      "subjects_preliminary": 146,
+      "groups_preliminary": {
+        "GROUP": {
+          "PD": 98,
+          "Control": 48
+        },
+        "TYPE": {
+          "1.0": 98,
+          "0.0": 48
+        }
+      },
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on004580",
+      "name": "Simon-conflict Task.",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds004580.v1.0.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 17.008442118,
+      "subjects_preliminary": 147,
+      "groups_preliminary": {
+        "GROUP": {
+          "PD": 99,
+          "Control": 48
+        },
+        "TYPE": {
+          "1.0": 99,
+          "0.0": 48
+        }
+      },
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on003506",
+      "name": "EEG: Reinforcement Learning in Parkinson's",
+      "source_doi": [
+        {
+          "DOI": "10.18112/openneuro.ds003506.v1.1.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 17.400043339,
+      "subjects_preliminary": 56,
+      "groups_preliminary": {
+        "Group": {
+          "PD": 28,
+          "CTL": 28
+        },
+        "sess1_Med": {
+          "OFF": 14,
+          "ON": 14
+        },
+        "sess2_Med": {
+          "ON": 14,
+          "OFF": 14,
+          "no s2": 28
+        }
+      },
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on004019",
+      "name": "Effect of obesity on arithmetic processing in preteens with high and low math skills. An event-related potentials study",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds004019.v1.0.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 18.550700001,
+      "subjects_preliminary": 62,
+      "groups_preliminary": {
+        "WS": {
+          "N-O": 33,
+          "O": 28,
+          "n/a": 1
+        },
+        "Performance": {
+          "H": 31,
+          "L": 30,
+          "n/a": 1
+        }
+      },
+      "status": "deferred_initial_diagnosed_batch",
+      "reason": "Obesity category, clinical diagnostic criteria not yet verified; defer initial neurological/psychiatric diagnosis batch",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on007605",
+      "name": "EPOC",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds007605.v1.0.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 23.247196998,
+      "subjects_preliminary": 97,
+      "groups_preliminary": {
+        "group": {
+          "withPCS": 60,
+          "withoutPCS": 37
+        },
+        "neurological_diseases_1": {
+          "yes": 26,
+          "no": 71
+        },
+        "group_Fatigue": {
+          "clinically relevant fatigue": 37,
+          "no clinically relevant fatigue": 59
+        }
+      },
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on003509",
+      "name": "EEG: Simon Conflict in Parkinson's",
+      "source_doi": [
+        {
+          "DOI": "10.18112/openneuro.ds003509.v1.1.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 23.988725045,
+      "subjects_preliminary": 56,
+      "groups_preliminary": {
+        "Group": {
+          "CTL": 28,
+          "PD": 28
+        },
+        "sess2_Med": {
+          "no s2": 28,
+          "OFF": 14,
+          "ON": 14
+        },
+        "sess1_Med": {
+          "ON": 14,
+          "OFF": 14
+        }
+      },
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on004000",
+      "name": "Fribourg Ultimatum Game in Schizophrenia Study",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds004000.v1.0.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 24.161103216,
+      "subjects_preliminary": 43,
+      "groups_preliminary": {
+        "group": {
+          "P": 19,
+          "HC": 24
+        }
+      },
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on004151",
+      "name": "Effect of obesity on inhibitory control in preadolescents during stop-signal \ntask. An event-related potentials study",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds004151.v1.0.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 24.845640433,
+      "subjects_preliminary": 57,
+      "groups_preliminary": {
+        "WS": {
+          "O": 27,
+          "N-O": 30
+        }
+      },
+      "status": "deferred_initial_diagnosed_batch",
+      "reason": "Obesity category, clinical diagnostic criteria not yet verified; defer initial neurological/psychiatric diagnosis batch",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on004579",
+      "name": "Interval Timing Task",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds004579.v1.0.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 25.896740593,
+      "subjects_preliminary": 139,
+      "groups_preliminary": {
+        "GROUP": {
+          "Control": 45,
+          "PD": 94
+        },
+        "TYPE": {
+          "0.0": 45,
+          "1.0": 94
+        }
+      },
+      "status": "already_prepared",
+      "reason": "LongIntervalTask/ShortIntervalTask",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on003522",
+      "name": "EEG: Three-Stim Auditory Oddball and Rest in Acute and Chronic TBI",
+      "source_doi": [
+        {
+          "DOI": "10.18112/openneuro.ds003522.v1.1.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 27.22542698,
+      "subjects_preliminary": 96,
+      "groups_preliminary": {
+        "Group": {
+          "0.0": 44,
+          "1.0": 27,
+          "2.0": 25
+        }
+      },
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "nm000349",
+      "name": "Chamanzar2020: Ultra high-density EEG of interictal migraine and controls during visual, auditory stimulation and rest",
+      "source_doi": [
+        {
+          "URL": "https://kilthub.cmu.edu/articles/dataset/12636731",
+          "DOI": "doi:10.1184/R1/12636731",
+          "Version": "v1 (2020-07-21)"
+        }
+      ],
+      "catalogue_licence": "CC-BY-4.0",
+      "source_size_GB": 28.749532186,
+      "subjects_preliminary": 39,
+      "groups_preliminary": {
+        "group": {
+          "control": 21,
+          "migraine": 18
+        },
+        "in_paper_analysis": {
+          "yes": 32,
+          "no": 7
+        },
+        "aura": {
+          "yes": 12,
+          "no": 6
+        },
+        "medication_before_session": {
+          "no": 15,
+          "yes": 3
+        },
+        "notes": {
+          "extra control, not in the matched control set": 3,
+          "excluded in paper: no SSAEP recording": 1,
+          "excluded in paper: medication before session": 3
+        }
+      },
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on004367",
+      "name": "Meta-rdk: Raw EEG data",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds004367.v1.0.2"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 30.039346409,
+      "subjects_preliminary": 40,
+      "groups_preliminary": {
+        "Group": {
+          "Control": 23,
+          "Patient": 17
+        }
+      },
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on003523",
+      "name": "EEG: Visual Working Memory in Acute TBI",
+      "source_doi": [
+        {
+          "DOI": "10.18112/openneuro.ds003523.v1.1.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 40.304855452,
+      "subjects_preliminary": 91,
+      "groups_preliminary": {
+        "Group": {
+          "1.0": 34,
+          "0.0": 57
+        }
+      },
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on005114",
+      "name": "EEG: DPX Cog Ctl Task in Acute Mild TBI",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds005114.v1.0.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 60.630841889,
+      "subjects_preliminary": 91,
+      "groups_preliminary": {
+        "Group": {
+          "0.0": 57,
+          "1.0": 34
+        }
+      },
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on007181",
+      "name": "Structural MRI, Resting-state fMRI, and PSG/EEG Dataset of Zoster-associated Neuralgia",
+      "source_doi": null,
+      "catalogue_licence": "CC0",
+      "source_size_GB": 63.514978857,
+      "subjects_preliminary": 59,
+      "groups_preliminary": {
+        "group": {
+          "HC": 32,
+          "ZAN": 27
+        }
+      },
+      "status": "source_review",
+      "reason": null,
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on008768",
+      "name": "Resting-State EEG in Parkinson's Disease and Healthy Controls",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds008768.v1.0.0"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 63.56267668,
+      "subjects_preliminary": 312,
+      "groups_preliminary": {
+        "group": {
+          "Control": 110,
+          "PD": 202
+        },
+        "race": {
+          "White": 38,
+          "Asian": 1
+        }
+      },
+      "status": "deferred_initial_diagnosed_batch",
+      "reason": "Possible expansion/overlap of Iowa resting recordings already being admitted; waveform comparison required before independent count",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "on006921",
+      "name": "High Density Resting State EEG of Phantom Limb Pain and Controls",
+      "source_doi": [
+        {
+          "DOI": "doi:10.18112/openneuro.ds006921.v1.1.1"
+        }
+      ],
+      "catalogue_licence": "CC0",
+      "source_size_GB": 69.692639273,
+      "subjects_preliminary": 38,
+      "groups_preliminary": {
+        "Amputee": {
+          "0.0": 19,
+          "1.0": 19
+        },
+        "Pain": {
+          "0.0": 25,
+          "1.0": 13
+        },
+        "AmputationSide": {
+          "Right": 12,
+          "Left": 5,
+          "Quadruple": 1,
+          "Bilateral": 1
+        },
+        "Comment": {
+          "Handedness: Right": 1,
+          "Basically missing only the hand": 1,
+          "Due to congenital malformation, amputated in childhood": 1
+        }
+      },
+      "status": "deferred_initial_diagnosed_batch",
+      "reason": "Amputee/control does not establish pain diagnosis; possible13/6 pain contrast among amputees needs clinical criteria and feasibility review",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    },
+    {
+      "dataset": "nm000289",
+      "name": "I-CARE: International Cardiac Arrest REsearch consortium EEG Database (BIDS)",
+      "source_doi": [
+        {
+          "URL": "https://physionet.org/content/i-care/2.1/",
+          "Version": "2.1"
+        }
+      ],
+      "catalogue_licence": "CC-BY-NC-SA-4.0",
+      "source_size_GB": 1694.198948246,
+      "subjects_preliminary": 607,
+      "groups_preliminary": {
+        "ohca": {
+          "True": 442,
+          "False": 124
+        },
+        "shockable_rhythm": {
+          "True": 297,
+          "False": 278
+        },
+        "ttm": {
+          "33.0": 448,
+          "36.0": 61
+        },
+        "outcome": {
+          "Good": 225,
+          "Poor": 382
+        },
+        "powerline_frequency": {
+          "50.0": 381,
+          "60.0": 226
+        }
+      },
+      "status": "excluded",
+      "reason": "Prognosis, not diagnosis",
+      "source_evidence": "Historical participant metadata survey; eligibility/diagnosis/licence still require original verification"
+    }
+  ],
+  "initial_diagnosed_review_count": 20,
+  "count_caveat": "20candidate source rows, NOT20validated datasets or independent studies; diagnostic criteria, source overlap, licence, channels and case gates still apply"
+}

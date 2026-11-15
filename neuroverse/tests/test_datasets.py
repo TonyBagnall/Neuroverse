@@ -16,8 +16,8 @@ from neuroverse.estimators import ESTIMATORS, FAMILIES, PAPER_ESTIMATORS
 
 
 def test_archive_lists():
-    """All 91 problems, with published and local subsets explicitly identified."""
-    n_total = 91
+    """All 123 problems, with published and local subsets explicitly identified."""
+    n_total = 123
     n_paper = 30
     n_local = n_total - n_paper
     n_open = 28
@@ -28,6 +28,38 @@ def test_archive_lists():
     assert len(neuroverse_open) == n_open
     assert set(neuroverse) - set(neuroverse_open) == set(restricted) | set(local_only)
     assert {
+        'AcuteTBIVisualMemory',
+        'AdultSeizures',
+        'AffectiveMusic',
+        'AlcoholBandit',
+        'AuditoryDeviance',
+        'BanditGambling',
+        'FaceStimuli',
+        'FlankerConflict',
+        'FuzzySemantics',
+        'InternalAttention',
+        'MoralConflict',
+        'NarrativeReward',
+        'ParkinsonsReinforcement',
+        'PostCovidVigilance',
+        'ProbabilisticFeedback',
+        'PythonCodeReading',
+        'SchizophreniaConflict',
+        'SchizophreniaMotion',
+        'SchizophreniaUltimatum',
+        'SentenceViolations',
+        'SpatialAttention',
+        'StrokeMotorImagery',
+        'VerbalWorkingMemory',
+        'VisualSymmetry',
+        'ZosterNeuralgiaSleep',
+        'ArithmeticDifficulty',
+        'CognitiveLoadTasks',
+        'MultitaskWorkload',
+        'NBackDifficulty',
+        'NaturalisticEmotion',
+        'SleepDeprivation',
+        'SternbergMemory',
         'ImaginedFingers',
         'MigraineRest',
         'ParkinsonsWalking',
@@ -56,6 +88,47 @@ def test_domains_partition_the_archive():
 def test_metadata():
     """The table describes the current local versions, including corrections."""
     frame = metadata()
+    cols = ["subjects", "channels", "classes", "length", "train_size", "test_size", "frequency"]
+    expected_group_b = {
+        "AffectiveMusic": [31, 19, 4, 4000, 2588, 904, 1000],
+        "AuditoryDeviance": [40, 30, 2, 1024, 11934, 4000, 1024],
+        "BanditGambling": [23, 63, 2, 500, 8146, 2870, 500],
+        "FaceStimuli": [40, 30, 4, 1024, 9600, 3200, 1024],
+        "FlankerConflict": [60, 29, 6, 500, 12148, 4050, 500],
+        "FuzzySemantics": [30, 30, 2, 200, 8780, 3191, 200],
+        "InternalAttention": [20, 32, 2, 500, 6071, 2093, 250],
+        "MoralConflict": [31, 32, 4, 512, 2488, 866, 512],
+        "NarrativeReward": [40, 30, 4, 1000, 4319, 1440, 1000],
+        "ProbabilisticFeedback": [25, 59, 4, 500, 2877, 1120, 500],
+        "PythonCodeReading": [61, 32, 4, 334, 7177, 2560, 256],
+        "SentenceViolations": [64, 29, 5, 500, 8640, 2880, 500],
+        "SpatialAttention": [40, 30, 2, 1024, 9607, 3200, 1024],
+        "VerbalWorkingMemory": [155, 19, 6, 1000, 13910, 4676, 500],
+        "VisualSymmetry": [24, 64, 2, 512, 2879, 960, 512],
+    }
+    for name, expected in expected_group_b.items():
+        assert frame.loc[name, cols].tolist() == expected
+    expected_clinical_to_30 = {
+        "AcuteTBIVisualMemory": [86, 63, 2, 2000, 1920, 660, 500],
+        "AdultSeizures": [14, 29, 2, 2048, 1572, 591, 512],
+        "AlcoholBandit": [53, 59, 2, 2000, 1170, 420, 500],
+        "ParkinsonsReinforcement": [56, 63, 2, 2000, 1260, 420, 500],
+        "PostCovidVigilance": [97, 127, 2, 4000, 1800, 625, 1000],
+        "SchizophreniaConflict": [76, 60, 2, 4000, 1680, 600, 1000],
+        "SchizophreniaMotion": [40, 61, 2, 3600, 870, 330, 1200],
+        "SchizophreniaUltimatum": [43, 128, 2, 3072, 768, 264, 2048],
+        "StrokeMotorImagery": [18, 58, 2, 4000, 520, 200, 1000],
+        "ZosterNeuralgiaSleep": [58, 19, 2, 1024, 1290, 450, 256],
+    }
+    for name, expected in expected_clinical_to_30.items():
+        assert frame.loc[name, cols].tolist() == expected
+    assert frame.loc["ArithmeticDifficulty", cols].tolist() == [18, 19, 7, 1500, 819, 315, 250]
+    assert frame.loc["CognitiveLoadTasks", cols].tolist() == [40, 8, 4, 1000, 3600, 1200, 250]
+    assert frame.loc["MultitaskWorkload", cols].tolist() == [15, 61, 3, 500, 9834, 3576, 250]
+    assert frame.loc["NBackDifficulty", cols].tolist() == [18, 19, 4, 375, 5200, 2000, 250]
+    assert frame.loc["NaturalisticEmotion", cols].tolist() == [9, 128, 4, 1000, 780, 405, 250]
+    assert frame.loc["SleepDeprivation", cols].tolist() == [68, 61, 2, 2000, 3060, 1020, 500]
+    assert frame.loc["SternbergMemory", cols].tolist() == [23, 69, 3, 500, 1534, 558, 250]
     assert frame.loc["MigraineRest", ["subjects", "channels", "classes", "length", "train_size", "test_size", "frequency"]].tolist() == [33, 128, 2, 2048, 1920, 750, 512]
     assert frame.loc["ParkinsonsWalking", ["subjects", "channels", "classes", "length", "train_size", "test_size", "frequency"]].tolist() == [133, 53, 2, 1000, 6493, 2100, 250]
     assert frame.loc["PsychosisRestFirst", ["subjects", "channels", "classes", "length", "train_size", "test_size", "frequency"]].tolist() == [82, 61, 2, 4000, 4657, 1601, 1000]
@@ -185,22 +258,28 @@ def test_fractional_sampling_frequency_is_preserved(monkeypatch):
 
 
 def test_study_taxonomy_partitions_selected_problems():
-    """The 82-problem scalp EEG taxonomy partitions families (30 MI, 20 Clinical, 8 Cognitive)."""
+    """Core 90 (30/30/30) is the primary study split and 114 partitions all scalp EEG."""
     from neuroverse.datasets import (
         BCI_TYPES,
+        CORE_PROBLEM_TYPES,
         PROBLEM_FAMILIES,
         by_type,
         excluded_archive,
         neuroverse_76,
         neuroverse_77,
         neuroverse_82,
+        neuroverse_89,
+        neuroverse_90,
+        neuroverse_104,
+        neuroverse_114,
+        neuroverse_core,
+        neuroverse_extended,
         neuroverse_study,
     )
 
-    n_selected = 82
-    n_mi = 30
-    n_clinical = 20
-    n_cognitive = 8
+    n_per_core_arm = 30
+    n_core = len(CORE_PROBLEM_TYPES) * n_per_core_arm
+    n_extended = 114
     expected_me = [
         "ArmCoordination",
         "ArmMovements",
@@ -210,30 +289,77 @@ def test_study_taxonomy_partitions_selected_problems():
         "OpenCloseFist",
     ]
 
-    assert len(neuroverse_study) == n_selected
-    assert neuroverse_82 == neuroverse_77 == neuroverse_76 == neuroverse_study
-    assert by_type("All") == neuroverse_study
-    assert len(by_type("MI")) == n_mi
-    assert len(by_type("Clinical")) == n_clinical
-    assert len(by_type("Cognitive")) == n_cognitive
+    assert len(neuroverse_study) == n_core
+    assert neuroverse_study == neuroverse_90 == neuroverse_core
+    assert by_type() == by_type("Core90") == by_type("Core") == neuroverse_study
+    for arm in CORE_PROBLEM_TYPES:
+        assert len(by_type(arm)) == n_per_core_arm
+    assert sorted(name for arm in CORE_PROBLEM_TYPES for name in by_type(arm)) == neuroverse_90
+
+    assert len(neuroverse_114) == n_extended
+    assert (
+        neuroverse_114
+        == neuroverse_extended
+        == neuroverse_104
+        == neuroverse_89
+        == neuroverse_82
+        == neuroverse_77
+        == neuroverse_76
+    )
+    assert by_type("All114") == by_type("All") == neuroverse_114
+    assert set(neuroverse_90) < set(neuroverse_114)
     assert {
+        "AffectiveMusic",
+        "AuditoryDeviance",
+        "BanditGambling",
+        "FaceStimuli",
+        "FlankerConflict",
+        "FuzzySemantics",
+        "InternalAttention",
+        "MoralConflict",
+        "NarrativeReward",
+        "ProbabilisticFeedback",
+        "PythonCodeReading",
+        "SentenceViolations",
+        "SpatialAttention",
+        "VerbalWorkingMemory",
+        "VisualSymmetry",
+        "ArithmeticDifficulty",
+        "CognitiveLoadTasks",
+        "MultitaskWorkload",
+        "NBackDifficulty",
+        "NaturalisticEmotion",
+        "SleepDeprivation",
+        "SternbergMemory",
+    } <= set(by_type("Cognitive"))
+    assert {
+        "AcuteTBIVisualMemory",
+        "AdultSeizures",
+        "AlcoholBandit",
         "MigraineRest",
+        "ParkinsonsReinforcement",
         "ParkinsonsWalking",
+        "PostCovidVigilance",
         "PsychosisRestFirst",
         "PsychosisRestSecond",
+        "SchizophreniaConflict",
+        "SchizophreniaMotion",
+        "SchizophreniaUltimatum",
+        "StrokeMotorImagery",
         "TBIAuditoryOddball",
+        "ZosterNeuralgiaSleep",
     } <= set(by_type("Clinical"))
     assert "ImaginedFingers" in by_type("MI")
     assert by_type("ME") == expected_me
     assert set(by_type("MI")).isdisjoint(by_type("ME"))
-    assert set(neuroverse_study).isdisjoint(excluded_archive)
-    assert sorted(neuroverse_study + excluded_archive) == neuroverse
+    assert set(neuroverse_114).isdisjoint(excluded_archive)
+    assert sorted(neuroverse_114 + excluded_archive) == neuroverse
 
     family_parts = [by_type(fam) for fam in PROBLEM_FAMILIES]
     for idx, left in enumerate(family_parts):
         for right in family_parts[idx + 1 :]:
             assert set(left).isdisjoint(right)
-    assert sorted(name for part in family_parts for name in part) == neuroverse_study
+    assert sorted(name for part in family_parts for name in part) == neuroverse_114
 
     bci_parts = [by_type(sub) for sub in BCI_TYPES]
     for idx, left in enumerate(bci_parts):
@@ -243,36 +369,62 @@ def test_study_taxonomy_partitions_selected_problems():
 
     frame = metadata()
     assert set(frame.index[frame["problem_type"] == "Excluded"]) == set(excluded_archive)
+    assert set(frame.index[frame["study_core_90"]]) == set(neuroverse_90)
     with pytest.raises(ValueError, match="problem_type"):
         by_type("UnknownType")
 
 
 def test_bakeoff_estimators_metadata_contract():
-    """The 90 configurations partition into 72 distinct canonical classifiers and 18 variants."""
+    """The 109 configurations partition into 81 distinct canonical classifiers (12 headline) and 28 variants."""
     from neuroverse.estimators import (
         BAKEOFF_ESTIMATORS,
         CANONICAL_ESTIMATORS,
+        HEADLINE_ESTIMATORS,
         PARADIGMS,
         TSML_FAMILIES,
         VARIANT_ESTIMATORS,
         estimator_info,
         estimator_table,
+        resolve_estimator_name,
     )
 
+    n_headline = 12
+    n_canonical = 81
+    n_variants = 28
+    n_bakeoff = n_canonical + n_variants
+
     active_table = estimator_table(active_only=True)
+    assert len(BAKEOFF_ESTIMATORS) == n_bakeoff
     assert sorted(active_table.index, key=str.lower) == BAKEOFF_ESTIMATORS
     assert set(active_table["paradigm"]) <= set(PARADIGMS)
     assert set(active_table["tsml_family"]) <= set(TSML_FAMILIES)
 
-    assert len(CANONICAL_ESTIMATORS) + len(VARIANT_ESTIMATORS) == len(BAKEOFF_ESTIMATORS)
+    assert len(HEADLINE_ESTIMATORS) == n_headline
+    assert set(HEADLINE_ESTIMATORS) <= set(CANONICAL_ESTIMATORS)
+    assert {"HC2", "DrCIF", "STC", "InceptionTime", "Catch22", "FreshPRINCE", "RotationForest"} <= set(
+        HEADLINE_ESTIMATORS
+    )
+    assert resolve_estimator_name("HC2-noTDE-500-pc") == "HC2"
+    assert resolve_estimator_name("DrCIF-500") == "DrCIF"
+    assert resolve_estimator_name("STC-aeon") == "STC"
+    assert resolve_estimator_name("IT") == "InceptionTime"
+
+    assert len(CANONICAL_ESTIMATORS) == n_canonical
+    assert len(VARIANT_ESTIMATORS) == n_variants
     assert set(CANONICAL_ESTIMATORS).isdisjoint(VARIANT_ESTIMATORS)
     canonical_bases = [estimator_info(name)["base_method"] for name in CANONICAL_ESTIMATORS]
-    assert len(canonical_bases) == len(set(canonical_bases)) == 72
+    assert len(canonical_bases) == len(set(canonical_bases)) == n_canonical
     assert set(active_table["base_method"]) == set(canonical_bases)
+    assert set(active_table.index[active_table["is_headline"]]) == set(HEADLINE_ESTIMATORS)
 
     for base_fm in ("CBraMod", "LaBraM"):
-        assert estimator_info(base_fm)["is_canonical"]
-        assert not estimator_info(base_fm)["is_ablation"]
+        assert estimator_info(f"{base_fm}-FT")["is_canonical"]
+        assert not estimator_info(f"{base_fm}-FT")["is_ablation"]
+        assert not estimator_info(base_fm)["is_canonical"]
         assert estimator_info(f"{base_fm}-random")["is_ablation"]
         assert not estimator_info(f"{base_fm}-random")["is_canonical"]
-        assert estimator_info(base_fm)["base_method"] == estimator_info(f"{base_fm}-random")["base_method"]
+        assert (
+            estimator_info(f"{base_fm}-FT")["base_method"]
+            == estimator_info(base_fm)["base_method"]
+            == estimator_info(f"{base_fm}-random")["base_method"]
+        )

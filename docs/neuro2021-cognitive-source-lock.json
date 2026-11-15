@@ -1,0 +1,118 @@
+{
+  "dataset": "Neuro2021",
+  "source_record_id": "5055046",
+  "source_revision": "Zenodo record 5055046 (v2, 2021-07-01)",
+  "licence": "CC-BY-SA-4.0",
+  "licence_evidence": "Zenodo record 5055046 metadata license.id=cc-by-sa-4.0",
+  "source_urls": [
+    "https://zenodo.org/records/5055046",
+    "https://doi.org/10.5281/zenodo.5055046"
+  ],
+  "files": [
+    {
+      "name": "P01.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P01.zip/content",
+      "bytes": 181032275,
+      "checksum": "md5:e54f3873a07500a8649cab1f567656cb",
+      "sha256": "fd9f2928b591d47439b4be5d76f18245ae1ebe3209985e2f6c5ea277f1cc4038"
+    },
+    {
+      "name": "P02.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P02.zip/content",
+      "bytes": 181083091,
+      "checksum": "md5:b1906fa43d1483c69ba02cc0341a41d9",
+      "sha256": "2907adb80930d771bcb7c275bc475a4ff5dff31f0d6fdee1b3021ba30902ed67"
+    },
+    {
+      "name": "P03.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P03.zip/content",
+      "bytes": 181262858,
+      "checksum": "md5:f09382e996bfe59e1d2d7bf9c6bfc33f",
+      "sha256": "448bc99670391a16c22078ec995d1e4483407ea59d0f2f512d47cd8e72d7be3d"
+    },
+    {
+      "name": "P04.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P04.zip/content",
+      "bytes": 181024179,
+      "checksum": "md5:cededfbc3cbf00b7eb5d09b53441e62a",
+      "sha256": "0f56b85aea48b8150847af3f0ff11d79b2bfb3b5743863c44f658effb941987c"
+    },
+    {
+      "name": "P05.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P05.zip/content",
+      "bytes": 180254624,
+      "checksum": "md5:05ea67a33520bbcf1745ff56e677b0c4",
+      "sha256": "6f582dc0d813b7639a21eb3ecaccd5e1b98629453cf50210c070940f4f32ee69"
+    },
+    {
+      "name": "P06.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P06.zip/content",
+      "bytes": 181039834,
+      "checksum": "md5:50d16798d14c1c698b4dd4f9b526d4b3",
+      "sha256": "12c96861d8dce9c9ad701829b6692cf9108fad552afb408eda4c36dc33ec49da"
+    },
+    {
+      "name": "P07.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P07.zip/content",
+      "bytes": 180297451,
+      "checksum": "md5:e1bd1931965c3117c000e3ea91579258",
+      "sha256": "39fe69f3b1d872ea2360a902bc7bb7fbfc652e8d0802030b0a1106e8fb08a188"
+    },
+    {
+      "name": "P08.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P08.zip/content",
+      "bytes": 181048090,
+      "checksum": "md5:281ecf30e5139046d37e6045e0cfda26",
+      "sha256": "a45263255927732e204ac4f00ff28b21125d5d5a3da21934b690d1ad3d112c3d"
+    },
+    {
+      "name": "P09.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P09.zip/content",
+      "bytes": 180610915,
+      "checksum": "md5:6ebeeb5fe0a7f4033cc60135f1e3f901",
+      "sha256": "f1d7cae9c28bcee5668accdf4789c61c4eba640fee5ae1f65831e79632035d86"
+    },
+    {
+      "name": "P10.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P10.zip/content",
+      "bytes": 180648957,
+      "checksum": "md5:0a5fad9f7c2fdc1e169128d4f548eaed",
+      "sha256": "8e1efa70e512e1d12da5f27c8e4529b6e370a1b198fd23031041e713dcc616b3"
+    },
+    {
+      "name": "P11.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P11.zip/content",
+      "bytes": 181786771,
+      "checksum": "md5:3f266e6d8f1e61bb3dd9005a74123c08",
+      "sha256": "84c64e62d4880b87e4911f6295aa63c4eae626663bc7356182bbd6b8cb87906e"
+    },
+    {
+      "name": "P12.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P12.zip/content",
+      "bytes": 181705302,
+      "checksum": "md5:c4f9a83bd2dc8fd9ca189821d14e5b72",
+      "sha256": "10567caf4873beebbe116d06eb6bd2b55dd78fb291ef2e47bf34e6e4e08f0370"
+    },
+    {
+      "name": "P13.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P13.zip/content",
+      "bytes": 180788156,
+      "checksum": "md5:779744d692c1ae34f1ff42328a197d64",
+      "sha256": "cfc1d7dd0861b2129a8265abccfa7efd93393e458f4b0e173d45ae35ec246cc4"
+    },
+    {
+      "name": "P14.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P14.zip/content",
+      "bytes": 180954834,
+      "checksum": "md5:db2309ced29fbe6a285a6355d6747361",
+      "sha256": "fd25a50808ec47e76ac1147480f9ecdf543c320ed51bf83d5091293a723f2a8f"
+    },
+    {
+      "name": "P15.zip",
+      "url": "https://zenodo.org/api/records/5055046/files/P15.zip/content",
+      "bytes": 181677980,
+      "checksum": "md5:c6894fdc339c8d31f22d02237b14404d",
+      "sha256": "5b26e912353f222b473dec5458f1d60b87076c2bd74be7775e74c6f111368bf8"
+    }
+  ]
+}

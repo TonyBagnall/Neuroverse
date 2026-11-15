@@ -58,6 +58,9 @@ experiments = [
     "tsml_eval>=0.6",
 ]
 
+[project.scripts]
+neuroverse-results = "neuroverse.results:main"
+
 [tool.setuptools.packages.find]
 include = ["neuroverse*"]
 

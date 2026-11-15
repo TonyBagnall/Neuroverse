@@ -203,25 +203,43 @@ def load_metric(
     """
     results_dir = Path(results_dir)
     wide_path = results_dir / f"{metric}.csv"
-    if wide_path.is_file():
-        wide = pd.read_csv(wide_path, index_col=0)
-        if estimator in wide.columns:
-            series = wide[estimator].dropna().astype(float)
+    wide = pd.read_csv(wide_path, index_col=0) if wide_path.is_file() else None
+    if wide is not None and estimator in wide.columns:
+        series = wide[estimator].dropna().astype(float)
+        series.index = series.index.astype(str)
+        series.index.name = "dataset"
+        series.name = estimator
+        return series
+
+    path = results_dir / estimator / f"{estimator}_{metric}.csv"
+    if path.is_file():
+        frame = pd.read_csv(path, index_col=0)
+        series = frame.mean(axis=1)
+        series.index = series.index.astype(str)
+        series.index.name = "dataset"
+        series.name = estimator
+        return series
+
+    from neuroverse.estimators import resolve_estimator_name
+
+    resolved = resolve_estimator_name(estimator)
+    if resolved != estimator:
+        if wide is not None and resolved in wide.columns:
+            series = wide[resolved].dropna().astype(float)
+            series.index = series.index.astype(str)
+            series.index.name = "dataset"
+            series.name = estimator
+            return series
+        alt_path = results_dir / resolved / f"{resolved}_{metric}.csv"
+        if alt_path.is_file():
+            frame = pd.read_csv(alt_path, index_col=0)
+            series = frame.mean(axis=1)
             series.index = series.index.astype(str)
             series.index.name = "dataset"
             series.name = estimator
             return series
 
-    path = results_dir / estimator / f"{estimator}_{metric}.csv"
-    if not path.is_file():
-        raise FileNotFoundError(f"no {metric} results for {estimator}: {path}")
-
-    frame = pd.read_csv(path, index_col=0)
-    series = frame.mean(axis=1)
-    series.index = series.index.astype(str)
-    series.index.name = "dataset"
-    series.name = estimator
-    return series
+    raise FileNotFoundError(f"no {metric} results for {estimator}: {path}")
 
 
 def _critical_difference_png(
@@ -484,9 +502,12 @@ def _describe_datasets(datasets) -> str | None:
     from neuroverse import datasets as archive
 
     requested = sorted(dict.fromkeys(datasets))
-    for name in ["neuroverse", "neuroverse_study", "neuroverse_open"]:
+    for name in ["neuroverse", "neuroverse_study", "neuroverse_114", "neuroverse_open"]:
         if requested == sorted(getattr(archive, name)):
             return f"sorted({name})"
+    for ptype in ("MI", "Clinical", "Cognitive", "BCI", "ME", "ERP", "VEP", "Speech"):
+        if requested == sorted(archive.by_type(ptype)):
+            return f'by_type("{ptype}")'
     for domain in archive.DOMAINS:
         if requested == sorted(archive.by_domain(domain)):
             return f'by_domain("{domain}")'
@@ -506,7 +527,7 @@ def _snippet_html(
     imports = ["from neuroverse.experiments.tables import leaderboard"]
     if datasets_expr is None:
         datasets_expr = f"[...]  # {n_datasets} datasets"
-    for name in ["neuroverse_open", "neuroverse_study", "neuroverse", "by_domain"]:
+    for name in ["neuroverse_open", "neuroverse_study", "neuroverse_114", "neuroverse", "by_type", "by_domain"]:
         if name in datasets_expr:
             imports.insert(0, f"from neuroverse.datasets import {name}")
             break

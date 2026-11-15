@@ -6,64 +6,77 @@
 
 | Page | Purpose | Scope |
 |---|---|---|
-| [`results/neuroverse/leaderboard.html`](../results/neuroverse/leaderboard.html) | Classifier leaderboard with problem-type tabs, Standard Metrics vs Split-by-Problem-Type column views, paradigm filters, coverage-mode switches, and critical difference diagrams | 72 distinct classifiers (plus 18 variant/control configs) across 82 scalp EEG problems |
-| [`results/neuroverse/matrix.html`](../results/neuroverse/matrix.html) | Interactive problem-by-classifier score heatmap grouped under paradigm banners, with metric selector and multi-metric hover tooltips | 82 problems &times; 72 classifiers (or all 90 configs) |
-| [`results/neuroverse/datasets.html`](../results/neuroverse/datasets.html) | Per-problem explorer comparing the `Default` floor, median, best score, winning paradigm, gain over floor, and spread | 82 scalp EEG problems |
+| [`results/neuroverse/leaderboard.html`](../results/neuroverse/leaderboard.html) | Classifier leaderboard opening on the **12 Headline Classifiers** across the primary **Core 90 (`30/30/30`)** split, expandable to **81 distinct classifiers** or **109 configurations**, with problem-type tabs, Split-by-Problem-Type columns, coverage switches, critical difference diagrams, and interactive result export | 12 headline &rarr; 81 distinct &rarr; 109 configs across 90 Core (114 Extended) scalp EEG problems |
+| [`results/neuroverse/matrix.html`](../results/neuroverse/matrix.html) | Interactive problem-by-classifier score heatmap grouped under paradigm banners, with pool switcher (`12` / `81` / `109`), metric selector, multi-metric hover tooltips, and CSV/JSON export | 90 Core (114 Extended) problems &times; 12 / 81 / 109 classifiers |
+| [`results/neuroverse/datasets.html`](../results/neuroverse/datasets.html) | Per-problem explorer comparing the `Default` floor, median, best score, winning paradigm, gain over floor, and spread | 90 Core (`30 MI + 30 Clinical + 30 Cognitive`) &amp; 114 Extended scalp EEG problems |
 | [`results/neuroverse_paper_2026/leaderboard.html`](../results/neuroverse_paper_2026/leaderboard.html) | Archived Rushbrooke et al. (2026) DMLR paper leaderboard | 20 estimators across 30 archive problems |
 
-## Ranking Methodology & Coverage Rules
+## Benchmark Scope & Three-Tier Classifier Hierarchy
 
-The result CSVs contain **90 classifier configurations** spanning **72 distinct classifiers** (`CANONICAL_ESTIMATORS`: 11 General TSML, 23 EEG Classical, 32 EEG Supervised DL, 2 EEG Foundation, and 4 Tabular) plus **18 preprocessing, tree-count, and random-weight ablation variants** (`VARIANT_ESTIMATORS`, such as `-BP140`/`-BP830` filter variants, `HC2-noTDE-500-pc`, `DrCIF`, `CBraMod-random`, and `LaBraM-random`). To avoid clone bias in Friedman/Wilcoxon rank tables, the primary leaderboard ranks the **72 distinct canonical classifiers** by default, with a one-click checkbox in `leaderboard.html` to include all 90 configurations.
+The primary benchmark scope is **`Core 90`** (`neuroverse_study` / `neuroverse_90`, listed in `eeg.txt`): a symmetric **`30 / 30 / 30`** design comprising **30 Motor Imagery**, **30 Clinical**, and **30 Cognitive** scalp-EEG classification problems. The remaining **24** non-MI BCI tasks (`6` Motor Execution, `8` ERP/P300, `6` VEP/SSVEP, and `4` Speech BCI) remain available in the extended **114-problem** tabs (`All 114`, `BCI`, `ME`, `ERP`, `VEP`, `Speech`, listed in `eeg_114.txt`).
 
-Because extended cluster experiments include computationally intensive hybrids (`HC2-500-pc`) as well as structurally restricted EEG methods (such as `TRCSP-LDA-MOABB` on binary tasks and `LaBraM` on datasets with standard 10–20 channel labels), requiring 100% completion across all 82 problems would exclude most classifiers.
+The result CSVs contain **109 classifier configurations** organised into three explicit pools:
+
+1. **Headline Leaderboard (`HEADLINE_ESTIMATORS`, 12 classifiers, primary default)**:
+   - Hybrid: `HC2`
+   - Convolution: `Arsenal`, `MRHydra`
+   - Interval: `QUANT`, `DrCIF`
+   - Shapelet: `STC`, `RDST`
+   - Dictionary: `TDE`
+   - Feature: `Catch22`, `FreshPRINCE`
+   - Deep Learning: `InceptionTime`
+   - Tabular: `RotationForest`
+2. **Expanded Distinct Classifiers (`CANONICAL_ESTIMATORS`, 81 classifiers)**:
+   - One canonical representative per underlying algorithm across all five paradigms (13 General TSML, 26 EEG Classical, 33 EEG Supervised DL, 3 EEG Foundation, and 6 Tabular/Baseline), avoiding clone bias in Friedman/Wilcoxon rank tests.
+3. **All Configurations (`BAKEOFF_ESTIMATORS`, 109 configurations)**:
+   - Adds **28 preprocessing, probe, tree-count, and random-weight ablation controls** (`VARIANT_ESTIMATORS`, such as `-BP140`/`-BP830` band-pass variants, `HC2-500-pc`, `DrCIF-200`, frozen linear probes `CBraMod`/`LaBraM`/`NeuroGPT`, and `*-random` architectural controls).
+
+Because extended cluster experiments include computationally intensive hybrids (`HC2`, `FreshPRINCE`) as well as structurally restricted EEG methods (such as `TRCSP-LDA-MOABB` on binary tasks and `LaBraM-FT` on standard 10-20 channel labels), requiring 100% completion across all problems would exclude key methods while newly assimilated datasets finish running.
 
 The leaderboard therefore provides two explicit ranking modes in the UI and Python API:
 
 1. **Common Block (`>=80%` coverage, primary default)**:
-   - For a selected problem scope of $N$ problems ($N_{\text{eval}}$ with at least one competitive score while newly assimilated problems await cluster runs), every classifier with results on at least $\lceil 0.8 N_{\text{eval}} \rceil$ problems is admitted.
-   - Admitted classifiers are then evaluated strictly on their **shared completed problem intersection** (`common_problems`), so mean ranks, mean balanced accuracy, mean accuracy, AUROC, log loss, wins (ties included), and Wilcoxon–Holm critical difference cliques are paired on the exact same problems.
+   - For a selected problem scope of $N$ problems ($N_{\text{eval}}$ with at least one competitive score while newly assimilated problems await cluster runs), every classifier in the active pool with results on at least $\lceil 0.8 N_{\text{eval}} \rceil$ problems is admitted.
+   - Admitted classifiers are then evaluated strictly on their **shared completed problem intersection** (`common_problems`), so mean ranks, mean balanced accuracy, mean accuracy, AUROC, log loss, wins (ties included), and Wilcoxon-Holm critical difference cliques are paired on the exact same problems.
    - Tighter common-block thresholds (`>=90%` and `100%`) can be selected directly in `leaderboard.html`.
 2. **All Available (No coverage gate, descriptive mode)**:
-   - Admits every classifier with at least one result on the selected tab, normalising within-problem ranks to $[1, M]$ so restricted or partially completed pipelines can be inspected alongside full-archive methods.
+   - Admits every classifier in the active pool with at least one result on the selected tab, normalising within-problem ranks to $[1, M]$ so partially completed or restricted pipelines (such as `FreshPRINCE` while cluster runs complete) can be inspected alongside full-archive methods.
 
-## Programmatic Usage
+## Downloading & Querying Results Interactively
 
-Build a league table in Python for any problem type (`"All"`, `"BCI"`, `"MI"`, `"ME"`, `"ERP"`, `"VEP"`, `"Speech"`, `"Clinical"`, `"Cognitive"`):
+Users can download or slice benchmark results in three ways:
+
+1. **In the browser**: Click **Download Results** in the top bar of `leaderboard.html`, `matrix.html`, or `datasets.html` to pick a problem split, classifier pool, metric set, and export layout (`Wide CSV`, `Tidy Long CSV`, `Ranked League CSV`, or `JSON`), plus a copyable Python/CLI command.
+2. **In Python (`neuroverse.load_results` / `neuroverse.download_results`)**:
 
 ```python
-from neuroverse.datasets import by_type
-from neuroverse.experiments.tables import (
-    available_estimators,
-    compute_league_table,
-    load_metric,
-)
+import neuroverse as nv
 
-estimators = available_estimators(exclude=("Default",))
-frames = {
-    m: {est: load_metric(est, m) for est in estimators}
-    for m in ("balacc", "accuracy", "auroc", "logloss")
-}
-import pandas as pd
-frames = {m: pd.DataFrame(cols) for m, cols in frames.items()}
+# Wide DataFrame (90 Core problems x 12 Headline classifiers)
+core_balacc = nv.load_results(metric="balacc", split="core90", estimators="headline")
 
-mi_table, mi_common = compute_league_table(
-    datasets=by_type("MI"),
-    frames=frames,
-    primary_metric="balacc",
-    min_coverage_ratio=0.8,
-    canonical_only=True,
-)
-print(mi_table.head(10))
+# Ranked league table across all 81 distinct classifiers on Motor Imagery
+mi_league = nv.load_results(metric="balacc", split="MI", estimators="canonical", format="league")
+
+# Export Multiverse per-estimator directories or tidy long CSVs
+nv.download_results("export_mv", format="multiverse", split="core90", estimators="headline")
 ```
 
-The standalone Multiverse single-table HTML builder `leaderboard()` also works directly with both wide summary CSVs and per-estimator directories:
+3. **From the terminal (`neuroverse-results` / `python -m neuroverse.results`)**:
+
+```bash
+neuroverse-results                                                                      # interactive wizard
+neuroverse-results --split core90 --estimators headline --format league --out core.csv  # direct export
+```
+
+For custom HTML single-table generation, `leaderboard()` also works directly with both wide summary CSVs and Multiverse directories:
 
 ```python
 from neuroverse.datasets import by_type
 from neuroverse.experiments.tables import complete_estimators, leaderboard
 
 erp_problems = by_type("ERP")
-candidates = ["Deep4Net-NB", "EEGNeX-NB", "HC2-500-pc", "MRHydra", "XdawnCov-TS-SVM-MOABB"]
+candidates = ["Deep4Net-NB", "EEGNeX-NB", "HC2", "MRHydra", "XdawnCov-TS-SVM-MOABB"]
 leaderboard(
     datasets=erp_problems,
     estimators=complete_estimators(erp_problems, candidates, metric="balacc"),
@@ -79,183 +92,260 @@ leaderboard(
 ## Domain Leaderboards (Top 15 per Problem Type)
 
 <!-- LEADERBOARD_BY_TYPE:START -->
-### All Scalp EEG (82 problems; 42 common; 64 classifiers &ge;61/76 evaluated)
+### Headline Classifiers on Core 90 & 30/30/30 Domains
+
+#### Core 90 (30/30/30) - Headline Pool (90 problems; 45 shared completed)
+
+| # | Classifier | Family | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
+|---:|---|---|---:|---:|---:|---:|---:|---:|
+| 1 | `HC2` | Hybrid | 48/90 | 3.30 | 56.23% | 59.06% | 12 | 37 |
+| 2 | `Arsenal` | ConvolutionBased | 55/90 | 4.37 | 55.06% | 58.42% | 4 | 32 |
+| 3 | `DrCIF` | IntervalBased | 49/90 | 4.66 | 53.57% | 57.49% | 5 | 26 |
+| 4 | `QUANT` | IntervalBased | 52/90 | 4.71 | 54.49% | 57.84% | 8 | 27 |
+| 5 | `MRHydra` | ConvolutionBased | 50/90 | 4.77 | 53.53% | 56.26% | 8 | 24 |
+| 6 | `STC` | ShapeletBased | 52/90 | 5.30 | 53.19% | 56.79% | 1 | 22 |
+| 7 | `RDST` | ShapeletBased | 52/90 | 5.73 | 51.98% | 55.36% | 3 | 22 |
+| 8 | `TDE` | DictionaryBased | 48/90 | 7.04 | 48.96% | 52.76% | 2 | 10 |
+| 9 | `InceptionTime` | DeepLearning | 51/90 | 7.48 | 46.01% | 47.72% | 2 | 11 |
+| 10 | `Catch22` | FeatureBased | 48/90 | 7.64 | 47.87% | 51.97% | 0 | 7 |
+
+#### Motor Imagery - Headline Pool (30 problems; 25 shared completed)
+
+| # | Classifier | Family | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
+|---:|---|---|---:|---:|---:|---:|---:|---:|
+| 1 | `HC2` | Hybrid | 28/30 | 3.12 | 58.20% | 60.62% | 7 | 22 |
+| 2 | `DrCIF` | IntervalBased | 28/30 | 4.50 | 56.54% | 60.00% | 3 | 16 |
+| 3 | `Arsenal` | ConvolutionBased | 29/30 | 4.66 | 56.87% | 59.30% | 3 | 16 |
+| 4 | `QUANT` | IntervalBased | 29/30 | 5.34 | 55.72% | 59.08% | 1 | 14 |
+| 5 | `MRHydra` | ConvolutionBased | 29/30 | 5.38 | 54.95% | 56.97% | 6 | 10 |
+| 6 | `STC` | ShapeletBased | 28/30 | 5.84 | 55.18% | 58.36% | 0 | 10 |
+| 7 | `RotationForest` | Tabular | 26/30 | 6.18 | 51.39% | 54.58% | 3 | 10 |
+| 8 | `RDST` | ShapeletBased | 29/30 | 6.20 | 54.40% | 57.34% | 1 | 11 |
+| 9 | `TDE` | DictionaryBased | 29/30 | 7.90 | 50.25% | 53.21% | 0 | 3 |
+| 10 | `InceptionTime` | DeepLearning | 29/30 | 8.34 | 47.58% | 49.62% | 1 | 6 |
+| 11 | `Catch22` | FeatureBased | 28/30 | 8.54 | 49.20% | 52.36% | 0 | 4 |
+
+#### Clinical - Headline Pool (30 problems; 14 shared completed)
+
+| # | Classifier | Family | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
+|---:|---|---|---:|---:|---:|---:|---:|---:|
+| 1 | `QUANT` | IntervalBased | 15/30 | 1.93 | 55.93% | 61.32% | 8 | 14 |
+| 2 | `Arsenal` | ConvolutionBased | 17/30 | 2.36 | 53.57% | 62.54% | 2 | 14 |
+| 3 | `STC` | ShapeletBased | 15/30 | 2.57 | 51.76% | 59.87% | 2 | 14 |
+| 4 | `RDST` | ShapeletBased | 15/30 | 3.14 | 48.84% | 56.35% | 2 | 14 |
+
+#### Cognitive - Headline Pool (30 problems; 8 shared completed)
+
+| # | Classifier | Family | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
+|---:|---|---|---:|---:|---:|---:|---:|---:|
+| 1 | `RDST` | ShapeletBased | 8/30 | 3.25 | 49.28% | 51.86% | 2 | 6 |
+| 2 | `Arsenal` | ConvolutionBased | 9/30 | 3.62 | 50.94% | 53.32% | 1 | 7 |
+| 3 | `MRHydra` | ConvolutionBased | 8/30 | 3.69 | 49.45% | 50.87% | 1 | 7 |
+| 4 | `DrCIF` | IntervalBased | 8/30 | 4.06 | 49.25% | 51.65% | 1 | 7 |
+| 5 | `STC` | ShapeletBased | 9/30 | 4.12 | 48.14% | 50.91% | 1 | 6 |
+| 6 | `QUANT` | IntervalBased | 8/30 | 4.19 | 49.94% | 51.85% | 3 | 4 |
+| 7 | `Catch22` | FeatureBased | 8/30 | 6.31 | 44.54% | 47.86% | 0 | 2 |
+| 8 | `InceptionTime` | DeepLearning | 8/30 | 6.75 | 42.41% | 44.06% | 0 | 1 |
+
+### Expanded 81-Classifier Leaderboards (Top 15 per Scope)
+
+#### Core 90 (30/30/30) (90 problems; 52 common; 47 classifiers &ge;54/67 evaluated)
 
 | # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
 |---:|---|---|---:|---:|---:|---:|---:|---:|
-| 1 | `HC2-500-pc` | General TSML | 63/82 | 11.86 | 54.36% | 56.44% | 4 | 17 |
-| 2 | `Arsenal` | General TSML | 74/82 | 17.21 | 52.50% | 54.70% | 1 | 12 |
-| 3 | `MRHydra` | General TSML | 69/82 | 18.18 | 51.49% | 53.09% | 4 | 6 |
-| 4 | `DrCIF-500` | General TSML | 70/82 | 19.54 | 51.82% | 54.63% | 2 | 11 |
-| 5 | `STC-aeon` | General TSML | 72/82 | 19.76 | 51.93% | 54.43% | 2 | 6 |
-| 6 | `EEGNeX-NB` | EEG Supervised DL | 75/82 | 21.24 | 48.75% | 48.95% | 6 | 14 |
-| 7 | `DE-LR` | EEG Classical | 71/82 | 24.55 | 48.78% | 50.04% | 1 | 10 |
-| 8 | `RDST` | General TSML | 66/82 | 25.70 | 49.28% | 51.51% | 1 | 5 |
-| 9 | `TIDNet-NB` | EEG Supervised DL | 75/82 | 26.31 | 48.17% | 48.11% | 0 | 3 |
-| 10 | `TSLR-MOABB` | EEG Classical | 72/82 | 26.39 | 48.11% | 49.54% | 1 | 3 |
-| 11 | `EEGInceptionMI-NB` | EEG Supervised DL | 75/82 | 26.82 | 49.31% | 49.12% | 2 | 4 |
-| 12 | `TSEN-MOABB` | EEG Classical | 75/82 | 27.13 | 47.49% | 48.87% | 1 | 3 |
-| 13 | `TSSVM-MOABB` | EEG Classical | 75/82 | 27.36 | 47.34% | 49.93% | 1 | 2 |
-| 14 | `SincShallowNet-NB` | EEG Supervised DL | 75/82 | 28.18 | 45.97% | 45.08% | 0 | 2 |
-| 15 | `FBMSNet-NB` | EEG Supervised DL | 75/82 | 28.40 | 46.97% | 46.57% | 1 | 1 |
+| 1 | `Arsenal` | General TSML | 55/90 | 13.54 | 56.80% | 59.86% | 4 | 18 |
+| 2 | `EEGNeX-NB` | EEG Supervised DL | 67/90 | 15.00 | 54.72% | 54.71% | 9 | 21 |
+| 3 | `TIDNet-NB` | EEG Supervised DL | 67/90 | 17.47 | 53.91% | 53.36% | 0 | 6 |
+| 4 | `CoSpectraLR-NB` | EEG Classical | 56/90 | 18.32 | 54.00% | 56.03% | 3 | 5 |
+| 5 | `EEGInceptionMI-NB` | EEG Supervised DL | 67/90 | 18.53 | 53.50% | 52.42% | 3 | 10 |
+| 6 | `TSLR-MOABB` | EEG Classical | 56/90 | 18.80 | 54.18% | 55.92% | 1 | 7 |
+| 7 | `TSSVM-MOABB` | EEG Classical | 67/90 | 19.10 | 54.35% | 56.94% | 1 | 6 |
+| 8 | `DE-LR` | EEG Classical | 67/90 | 19.15 | 54.02% | 55.68% | 1 | 9 |
+| 9 | `IFNet-NB` | EEG Supervised DL | 67/90 | 19.22 | 53.06% | 52.53% | 0 | 8 |
+| 10 | `XdawnTSLR-NB` | EEG Classical | 55/90 | 19.75 | 52.57% | 53.26% | 2 | 10 |
+| 11 | `TSEN-MOABB` | EEG Classical | 67/90 | 20.53 | 53.42% | 55.08% | 2 | 5 |
+| 12 | `SPARCNet-NB` | EEG Supervised DL | 56/90 | 20.97 | 51.16% | 49.99% | 0 | 5 |
+| 13 | `EEGConformer-NB` | EEG Supervised DL | 56/90 | 21.42 | 52.12% | 51.53% | 2 | 9 |
+| 14 | `FBMSNet-NB` | EEG Supervised DL | 67/90 | 21.47 | 52.60% | 51.84% | 2 | 5 |
+| 15 | `DLCSP-shLDA-MOABB` | EEG Classical | 67/90 | 21.71 | 53.72% | 56.22% | 0 | 6 |
 
-### BCI (All) (54 problems; 31 common; 65 classifiers &ge;43/53 evaluated)
-
-| # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
-|---:|---|---|---:|---:|---:|---:|---:|---:|
-| 1 | `HC2-500-pc` | General TSML | 46/54 | 9.40 | 52.81% | 53.77% | 4 | 17 |
-| 2 | `Arsenal` | General TSML | 52/54 | 15.89 | 50.36% | 51.16% | 1 | 10 |
-| 3 | `MRHydra` | General TSML | 51/54 | 16.89 | 49.46% | 50.15% | 3 | 4 |
-| 4 | `DrCIF-500` | General TSML | 50/54 | 17.97 | 50.77% | 52.40% | 2 | 10 |
-| 5 | `STC-aeon` | General TSML | 50/54 | 18.89 | 50.11% | 51.52% | 2 | 5 |
-| 6 | `EEGNeX-NB` | EEG Supervised DL | 53/54 | 21.48 | 46.16% | 45.99% | 5 | 11 |
-| 7 | `RDST` | General TSML | 46/54 | 21.53 | 48.38% | 49.60% | 1 | 5 |
-| 8 | `TIDNet-NB` | EEG Supervised DL | 53/54 | 25.77 | 46.20% | 45.84% | 0 | 3 |
-| 9 | `TSEN-MOABB` | EEG Classical | 52/54 | 26.55 | 45.36% | 46.34% | 0 | 2 |
-| 10 | `FBMSNet-NB` | EEG Supervised DL | 53/54 | 27.02 | 44.87% | 43.96% | 0 | 0 |
-| 11 | `SPARCNet-NB` | EEG Supervised DL | 53/54 | 27.06 | 43.37% | 43.64% | 0 | 2 |
-| 12 | `TDE` | General TSML | 48/54 | 27.18 | 46.15% | 47.37% | 1 | 3 |
-| 13 | `TSSVM-MOABB` | EEG Classical | 52/54 | 27.34 | 44.63% | 46.31% | 0 | 1 |
-| 14 | `FgMDM-MOABB` | EEG Classical | 53/54 | 27.74 | 44.82% | 45.52% | 0 | 0 |
-| 15 | `EEGInceptionMI-NB` | EEG Supervised DL | 53/54 | 27.76 | 46.93% | 46.59% | 1 | 2 |
-
-### Motor Imagery (30 problems; 19 common; 62 classifiers &ge;24/29 evaluated)
+#### Motor Imagery (30 problems; 20 common; 76 classifiers &ge;24/30)
 
 | # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
 |---:|---|---|---:|---:|---:|---:|---:|---:|
-| 1 | `HC2-500-pc` | General TSML | 25/30 | 11.13 | 61.32% | 62.53% | 3 | 10 |
-| 2 | `MRHydra` | General TSML | 28/30 | 16.84 | 58.39% | 59.33% | 2 | 2 |
-| 3 | `DrCIF-500` | General TSML | 28/30 | 16.89 | 59.93% | 62.15% | 3 | 8 |
-| 4 | `Arsenal` | General TSML | 29/30 | 17.32 | 59.51% | 60.45% | 0 | 7 |
-| 5 | `TIDNet-NB` | EEG Supervised DL | 29/30 | 20.29 | 55.24% | 54.81% | 0 | 1 |
-| 6 | `STC-aeon` | General TSML | 28/30 | 20.37 | 58.14% | 60.00% | 0 | 4 |
-| 7 | `DE-LR` | EEG Classical | 29/30 | 21.63 | 56.20% | 56.80% | 0 | 3 |
-| 8 | `TSLR-MOABB` | EEG Classical | 29/30 | 21.82 | 57.14% | 58.24% | 0 | 3 |
-| 9 | `DLCSP-shLDA-MOABB` | EEG Classical | 29/30 | 22.26 | 56.98% | 58.95% | 0 | 3 |
-| 10 | `FgMDM-MOABB` | EEG Classical | 29/30 | 22.84 | 56.56% | 57.44% | 0 | 2 |
-| 11 | `EEGNeX-NB` | EEG Supervised DL | 29/30 | 23.16 | 53.35% | 53.28% | 3 | 6 |
-| 12 | `TSEN-MOABB` | EEG Classical | 29/30 | 23.37 | 56.93% | 58.09% | 1 | 2 |
-| 13 | `TSSVM-MOABB` | EEG Classical | 29/30 | 23.61 | 56.09% | 58.27% | 0 | 2 |
-| 14 | `FBMSNet-NB` | EEG Supervised DL | 29/30 | 24.66 | 54.32% | 52.89% | 0 | 0 |
-| 15 | `CSP-LDA-MOABB` | EEG Classical | 29/30 | 24.68 | 56.52% | 58.56% | 0 | 3 |
+| 1 | `HC2` | General TSML | 28/30 | 14.35 | 61.52% | 62.40% | 1 | 6 |
+| 2 | `Arsenal` | General TSML | 29/30 | 20.20 | 59.93% | 60.81% | 1 | 6 |
+| 3 | `DrCIF` | General TSML | 28/30 | 20.35 | 60.20% | 62.31% | 2 | 7 |
+| 4 | `MRHydra` | General TSML | 29/30 | 21.77 | 58.46% | 59.35% | 1 | 2 |
+| 5 | `QUANT` | General TSML | 29/30 | 24.20 | 59.07% | 61.07% | 0 | 3 |
+| 6 | `TIDNet-NB` | EEG Supervised DL | 30/30 | 24.90 | 55.73% | 55.32% | 0 | 0 |
+| 7 | `STC` | General TSML | 28/30 | 25.98 | 58.26% | 60.03% | 0 | 3 |
+| 8 | `RDST` | General TSML | 29/30 | 26.02 | 57.63% | 59.17% | 1 | 2 |
+| 9 | `CoSpectraLR-NB` | EEG Classical | 29/30 | 26.10 | 56.55% | 57.24% | 1 | 2 |
+| 10 | `TSLR-MOABB` | EEG Classical | 29/30 | 26.40 | 57.58% | 58.62% | 0 | 3 |
+| 11 | `AUG-TANG-SVM-MOABB` | EEG Classical | 25/30 | 26.73 | 58.05% | 60.15% | 3 | 4 |
+| 12 | `DE-LR` | EEG Classical | 30/30 | 27.23 | 56.40% | 56.97% | 0 | 3 |
+| 13 | `EEGNeX-NB` | EEG Supervised DL | 30/30 | 27.30 | 53.99% | 53.93% | 2 | 4 |
+| 14 | `FgMDM-MOABB` | EEG Classical | 30/30 | 27.40 | 57.03% | 57.87% | 0 | 1 |
+| 15 | `TSEN-MOABB` | EEG Classical | 30/30 | 28.43 | 57.36% | 58.47% | 0 | 2 |
 
-### Motor Execution (6 problems; 4 common; 68 classifiers &ge;5/6)
-
-| # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
-|---:|---|---|---:|---:|---:|---:|---:|---:|
-| 1 | `HC2-500-pc` | General TSML | 6/6 | 8.75 | 71.37% | 71.39% | 0 | 2 |
-| 2 | `Arsenal` | General TSML | 6/6 | 9.50 | 70.28% | 70.20% | 0 | 1 |
-| 3 | `EEGNeX-NB` | EEG Supervised DL | 6/6 | 10.50 | 71.71% | 71.65% | 1 | 3 |
-| 4 | `TCFormer-NB` | EEG Supervised DL | 6/6 | 11.00 | 70.25% | 70.19% | 2 | 2 |
-| 5 | `TIDNet-NB` | EEG Supervised DL | 6/6 | 12.50 | 69.94% | 69.94% | 0 | 1 |
-| 6 | `SPARCNet-NB` | EEG Supervised DL | 6/6 | 14.25 | 68.29% | 68.14% | 0 | 0 |
-| 7 | `RotationForest` | Tabular | 5/6 | 15.25 | 68.87% | 68.78% | 0 | 1 |
-| 8 | `STC-aeon` | General TSML | 6/6 | 15.50 | 67.98% | 67.90% | 0 | 0 |
-| 9 | `Deep4Net-NB` | EEG Supervised DL | 6/6 | 16.00 | 68.28% | 68.22% | 0 | 0 |
-| 10 | `CTNet-NB` | EEG Supervised DL | 6/6 | 18.75 | 67.21% | 67.17% | 0 | 1 |
-| 11 | `EEGInceptionMI-NB` | EEG Supervised DL | 6/6 | 18.75 | 66.32% | 66.46% | 0 | 1 |
-| 12 | `EEGConformer-NB` | EEG Supervised DL | 6/6 | 19.00 | 66.58% | 66.54% | 0 | 2 |
-| 13 | `DrCIF-500` | General TSML | 6/6 | 19.00 | 66.53% | 66.58% | 0 | 0 |
-| 14 | `TMSANet-NB` | EEG Supervised DL | 6/6 | 20.12 | 66.06% | 65.92% | 0 | 0 |
-| 15 | `FBMSNet-NB` | EEG Supervised DL | 6/6 | 20.75 | 65.63% | 65.73% | 0 | 0 |
-
-### ERP / P300 (8 problems; 6 common; 61 classifiers &ge;7/8)
+#### Clinical (30 problems; 16 common; 47 classifiers &ge;16/20 evaluated)
 
 | # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
 |---:|---|---|---:|---:|---:|---:|---:|---:|
-| 1 | `Deep4Net-NB` | EEG Supervised DL | 8/8 | 9.92 | 68.30% | 62.56% | 0 | 1 |
-| 2 | `EEGNeX-NB` | EEG Supervised DL | 8/8 | 11.33 | 68.64% | 61.41% | 0 | 3 |
-| 3 | `SPARCNet-NB` | EEG Supervised DL | 8/8 | 11.83 | 66.03% | 60.96% | 0 | 1 |
-| 4 | `MRHydra` | General TSML | 7/8 | 12.58 | 63.14% | 79.15% | 1 | 1 |
-| 5 | `EEGInceptionMI-NB` | EEG Supervised DL | 8/8 | 12.83 | 69.31% | 71.13% | 1 | 1 |
-| 6 | `CTNet-NB` | EEG Supervised DL | 8/8 | 15.25 | 65.19% | 59.06% | 0 | 1 |
-| 7 | `EEGSimpleConv-NB` | EEG Supervised DL | 8/8 | 16.83 | 65.08% | 65.60% | 0 | 3 |
-| 8 | `TMSANet-NB` | EEG Supervised DL | 8/8 | 17.33 | 61.52% | 50.06% | 0 | 0 |
-| 9 | `BrainModule-NB` | EEG Supervised DL | 8/8 | 18.08 | 64.60% | 64.04% | 0 | 3 |
-| 10 | `TCFormer-NB` | EEG Supervised DL | 8/8 | 19.08 | 62.14% | 55.68% | 2 | 2 |
-| 11 | `IFNet-NB` | EEG Supervised DL | 8/8 | 19.92 | 62.15% | 56.38% | 1 | 2 |
-| 12 | `FBMSNet-NB` | EEG Supervised DL | 8/8 | 21.08 | 58.95% | 57.35% | 0 | 0 |
-| 13 | `TIDNet-NB` | EEG Supervised DL | 8/8 | 21.33 | 61.75% | 58.80% | 0 | 1 |
-| 14 | `EEGNet-NB` | EEG Supervised DL | 8/8 | 21.58 | 63.65% | 52.18% | 0 | 0 |
-| 15 | `TRCA-BP640` | EEG Classical | 7/8 | 21.67 | 57.16% | 55.78% | 0 | 0 |
+| 1 | `EEGNeX-NB` | EEG Supervised DL | 20/30 | 15.28 | 59.12% | 59.45% | 0 | 5 |
+| 2 | `DE-SVM` | EEG Classical | 20/30 | 17.03 | 58.67% | 62.66% | 0 | 4 |
+| 3 | `TSLR-MOABB` | EEG Classical | 18/30 | 18.16 | 57.30% | 60.98% | 1 | 2 |
+| 4 | `CoSpectraLR-NB` | EEG Classical | 18/30 | 18.44 | 56.22% | 61.20% | 0 | 1 |
+| 5 | `CSP-LDA-MOABB` | EEG Classical | 18/30 | 18.53 | 57.72% | 61.28% | 1 | 2 |
+| 6 | `TSSVM-MOABB` | EEG Classical | 20/30 | 18.88 | 57.25% | 63.05% | 0 | 1 |
+| 7 | `Arsenal` | General TSML | 17/30 | 19.03 | 56.50% | 63.76% | 0 | 3 |
+| 8 | `BrainModule-NB` | EEG Supervised DL | 18/30 | 19.56 | 56.29% | 53.02% | 0 | 2 |
+| 9 | `ShallowFBCSPNet-NB` | EEG Supervised DL | 18/30 | 19.66 | 55.20% | 51.24% | 0 | 0 |
+| 10 | `DLCSP-shLDA-MOABB` | EEG Classical | 20/30 | 19.69 | 57.01% | 60.52% | 0 | 2 |
+| 11 | `IFNet-NB` | EEG Supervised DL | 20/30 | 19.88 | 55.61% | 52.92% | 0 | 2 |
+| 12 | `EEGInceptionMI-NB` | EEG Supervised DL | 20/30 | 19.94 | 55.28% | 52.30% | 1 | 2 |
+| 13 | `SincShallowNet-NB` | EEG Supervised DL | 20/30 | 20.06 | 56.15% | 52.66% | 1 | 4 |
+| 14 | `CSP-SVM-MOABB` | EEG Classical | 20/30 | 20.16 | 55.19% | 61.28% | 1 | 2 |
+| 15 | `DE-LR` | EEG Classical | 20/30 | 20.62 | 56.74% | 60.35% | 0 | 3 |
 
-### VEP / SSVEP (6 problems; 3 common; 68 classifiers &ge;5/6)
-
-| # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
-|---:|---|---|---:|---:|---:|---:|---:|---:|
-| 1 | `STC-aeon` | General TSML | 5/6 | 6.33 | 37.42% | 38.32% | 0 | 1 |
-| 2 | `XdawnCov-MDM-MOABB` | EEG Classical | 6/6 | 9.00 | 53.80% | 53.90% | 0 | 2 |
-| 3 | `RDST` | General TSML | 6/6 | 10.33 | 31.01% | 31.64% | 0 | 0 |
-| 4 | `DrCIF-500` | General TSML | 5/6 | 10.33 | 30.50% | 31.59% | 0 | 1 |
-| 5 | `xDAWN-LDA-MOABB` | EEG Classical | 5/6 | 10.67 | 47.63% | 47.87% | 0 | 0 |
-| 6 | `QUANT` | General TSML | 6/6 | 10.67 | 29.36% | 30.33% | 0 | 1 |
-| 7 | `MRHydra` | General TSML | 6/6 | 10.83 | 30.27% | 30.83% | 0 | 0 |
-| 8 | `AUG-TANG-SVM-MOABB` | EEG Classical | 5/6 | 11.00 | 43.12% | 43.89% | 1 | 1 |
-| 9 | `HC2-500-pc` | General TSML | 5/6 | 11.67 | 29.43% | 30.00% | 0 | 0 |
-| 10 | `TemplateCCA-BP640` | EEG Classical | 5/6 | 12.50 | 50.29% | 50.29% | 0 | 1 |
-| 11 | `ERPCov-MDM-MOABB` | EEG Classical | 5/6 | 13.33 | 49.82% | 49.87% | 0 | 1 |
-| 12 | `Arsenal` | General TSML | 6/6 | 13.67 | 27.95% | 28.58% | 0 | 1 |
-| 13 | `XdawnCov-TS-SVM-MOABB` | EEG Classical | 5/6 | 16.17 | 54.58% | 55.28% | 0 | 2 |
-| 14 | `IFNet-NB` | EEG Supervised DL | 6/6 | 21.33 | 47.31% | 46.51% | 0 | 0 |
-| 15 | `LaBraM` | EEG Foundation | 6/6 | 21.33 | 22.13% | 22.54% | 0 | 0 |
-
-### Speech BCI (4 problems; 4 common; 66 classifiers &ge;4/4)
+#### Cognitive (30 problems; 16 common; 29 classifiers &ge;14/17 evaluated)
 
 | # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
 |---:|---|---|---:|---:|---:|---:|---:|---:|
-| 1 | `TDE` | General TSML | 4/4 | 3.25 | 35.75% | 35.70% | 1 | 3 |
-| 2 | `HC2-500-pc` | General TSML | 4/4 | 3.75 | 35.99% | 35.93% | 2 | 3 |
-| 3 | `STC-aeon` | General TSML | 4/4 | 12.00 | 30.07% | 30.12% | 1 | 2 |
-| 4 | `RotationForest` | Tabular | 4/4 | 12.50 | 28.95% | 28.88% | 0 | 1 |
-| 5 | `RiemannianKNN-OAS-BP140` | EEG Classical | 4/4 | 15.50 | 30.17% | 30.19% | 0 | 1 |
-| 6 | `TSSVM-MOABB` | EEG Classical | 4/4 | 21.00 | 28.22% | 28.27% | 0 | 0 |
-| 7 | `CBraMod` | EEG Foundation | 4/4 | 21.75 | 25.35% | 25.22% | 0 | 0 |
-| 8 | `DrCIF-500` | General TSML | 4/4 | 22.25 | 32.07% | 31.91% | 0 | 2 |
-| 9 | `MRHydra` | General TSML | 4/4 | 22.75 | 27.59% | 27.41% | 0 | 0 |
-| 10 | `TSEN-MOABB` | EEG Classical | 4/4 | 23.25 | 25.48% | 25.36% | 0 | 0 |
-| 11 | `TemplateCCA-BP640` | EEG Classical | 4/4 | 24.75 | 24.84% | 24.91% | 0 | 0 |
-| 12 | `Arsenal` | General TSML | 4/4 | 25.50 | 26.85% | 26.85% | 0 | 0 |
-| 13 | `RandomForest` | Tabular | 4/4 | 26.25 | 25.93% | 26.02% | 0 | 0 |
-| 14 | `FgMDM-MOABB` | EEG Classical | 4/4 | 26.25 | 25.28% | 25.25% | 0 | 0 |
-| 15 | `FBCNet-NB` | EEG Supervised DL | 4/4 | 27.25 | 24.77% | 24.90% | 0 | 0 |
+| 1 | `EEGNeX-NB` | EEG Supervised DL | 17/30 | 8.69 | 44.06% | 43.44% | 3 | 7 |
+| 2 | `IFNet-NB` | EEG Supervised DL | 17/30 | 10.41 | 43.27% | 44.53% | 0 | 2 |
+| 3 | `TIDNet-NB` | EEG Supervised DL | 17/30 | 10.66 | 43.91% | 43.94% | 1 | 6 |
+| 4 | `EEGInceptionMI-NB` | EEG Supervised DL | 17/30 | 10.72 | 46.27% | 46.37% | 2 | 8 |
+| 5 | `DE-LR` | EEG Classical | 17/30 | 10.84 | 44.04% | 45.79% | 0 | 4 |
+| 6 | `EEGSimpleConv-NB` | EEG Supervised DL | 17/30 | 11.50 | 43.63% | 45.43% | 0 | 6 |
+| 7 | `DE-SVM` | EEG Classical | 17/30 | 11.56 | 44.75% | 45.77% | 2 | 5 |
+| 8 | `XdawnCov-TS-SVM-MOABB` | EEG Classical | 17/30 | 11.81 | 44.60% | 45.97% | 0 | 3 |
+| 9 | `TSSVM-MOABB` | EEG Classical | 17/30 | 12.28 | 45.36% | 45.67% | 2 | 4 |
+| 10 | `TSEN-MOABB` | EEG Classical | 17/30 | 13.09 | 42.85% | 43.98% | 0 | 2 |
+| 11 | `FBMSNet-NB` | EEG Supervised DL | 17/30 | 13.53 | 41.94% | 41.69% | 0 | 2 |
+| 12 | `CBraMod-FT` | EEG Foundation | 17/30 | 14.03 | 43.21% | 43.69% | 2 | 3 |
+| 13 | `SincShallowNet-NB` | EEG Supervised DL | 17/30 | 14.41 | 41.63% | 39.93% | 0 | 2 |
+| 14 | `FBCNet-NB` | EEG Supervised DL | 17/30 | 14.47 | 41.62% | 42.68% | 0 | 1 |
+| 15 | `CSP-SVM-MOABB` | EEG Classical | 17/30 | 14.53 | 43.70% | 45.49% | 1 | 2 |
 
-### Clinical (20 problems; 8 common; 59 classifiers &ge;12/15 evaluated)
-
-| # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
-|---:|---|---|---:|---:|---:|---:|---:|---:|
-| 1 | `DE-SVM` | EEG Classical | 12/20 | 16.56 | 56.42% | 60.40% | 0 | 2 |
-| 2 | `Arsenal` | General TSML | 14/20 | 17.88 | 56.99% | 63.33% | 0 | 2 |
-| 3 | `EEGNeX-NB` | EEG Supervised DL | 14/20 | 18.69 | 55.46% | 57.43% | 1 | 2 |
-| 4 | `DE-LR` | EEG Classical | 12/20 | 18.94 | 55.83% | 58.93% | 1 | 3 |
-| 5 | `STC-aeon` | General TSML | 14/20 | 19.12 | 55.46% | 60.56% | 0 | 2 |
-| 6 | `SincShallowNet-NB` | EEG Supervised DL | 14/20 | 20.19 | 54.75% | 53.15% | 0 | 2 |
-| 7 | `ContraWR-NB` | EEG Supervised DL | 14/20 | 20.31 | 55.54% | 51.97% | 1 | 2 |
-| 8 | `TSLR-MOABB` | EEG Classical | 12/20 | 20.50 | 54.47% | 57.67% | 1 | 1 |
-| 9 | `ATCNet-NB` | EEG Supervised DL | 12/20 | 20.94 | 55.31% | 52.74% | 0 | 2 |
-| 10 | `SleepStagerChambon2018-NB` | EEG Supervised DL | 14/20 | 21.06 | 54.03% | 56.03% | 0 | 0 |
-| 11 | `TMSANet-NB` | EEG Supervised DL | 12/20 | 21.31 | 57.45% | 57.87% | 1 | 1 |
-| 12 | `AttentionBaseNet-NB` | EEG Supervised DL | 12/20 | 21.50 | 53.01% | 49.43% | 0 | 0 |
-| 13 | `ERPCov-MDM-MOABB` | EEG Classical | 14/20 | 23.38 | 53.62% | 53.59% | 0 | 0 |
-| 14 | `TIDNet-NB` | EEG Supervised DL | 14/20 | 24.44 | 52.49% | 55.20% | 0 | 0 |
-| 15 | `CSP-SVM-MOABB` | EEG Classical | 15/20 | 24.56 | 52.22% | 57.72% | 0 | 1 |
-
-### Cognitive (8 problems; 6 common; 62 classifiers &ge;7/8)
+#### All Scalp EEG (114 problems; 66 common; 63 classifiers &ge;73/91 evaluated)
 
 | # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
 |---:|---|---|---:|---:|---:|---:|---:|---:|
-| 1 | `DrCIF-500` | General TSML | 7/8 | 13.83 | 61.20% | 63.97% | 0 | 1 |
-| 2 | `MRHydra` | General TSML | 8/8 | 16.00 | 60.24% | 62.08% | 1 | 1 |
-| 3 | `Arsenal` | General TSML | 8/8 | 16.50 | 60.67% | 63.54% | 0 | 1 |
-| 4 | `EEGNeX-NB` | EEG Supervised DL | 8/8 | 17.33 | 58.11% | 57.75% | 1 | 3 |
-| 5 | `DE-LR` | EEG Classical | 8/8 | 21.00 | 61.19% | 63.04% | 0 | 2 |
-| 6 | `TIDNet-NB` | EEG Supervised DL | 8/8 | 21.08 | 57.63% | 55.41% | 0 | 0 |
-| 7 | `RDST` | General TSML | 8/8 | 21.33 | 58.78% | 62.02% | 0 | 2 |
-| 8 | `FBCSP-SVM-MOABB` | EEG Classical | 8/8 | 21.58 | 59.21% | 62.50% | 0 | 1 |
-| 9 | `XdawnCov-MDM-MOABB` | EEG Classical | 8/8 | 21.67 | 60.65% | 61.08% | 0 | 2 |
-| 10 | `STC-aeon` | General TSML | 8/8 | 22.17 | 59.15% | 62.53% | 0 | 2 |
-| 11 | `ShallowFBCSPNet-NB` | EEG Supervised DL | 8/8 | 22.75 | 57.13% | 56.65% | 0 | 0 |
-| 12 | `MDM-MOABB` | EEG Classical | 8/8 | 22.92 | 60.00% | 61.98% | 0 | 0 |
-| 13 | `TSLR-NB` | EEG Classical | 8/8 | 22.92 | 55.90% | 57.58% | 0 | 0 |
-| 14 | `RotationForest` | Tabular | 7/8 | 23.75 | 55.74% | 60.01% | 0 | 0 |
-| 15 | `TSSVM-MOABB` | EEG Classical | 8/8 | 25.08 | 61.51% | 60.48% | 1 | 1 |
+| 1 | `Arsenal` | General TSML | 79/114 | 16.65 | 53.57% | 57.23% | 2 | 19 |
+| 2 | `MRHydra` | General TSML | 73/114 | 18.29 | 52.67% | 55.33% | 8 | 11 |
+| 3 | `EEGNeX-NB` | EEG Supervised DL | 91/114 | 19.05 | 51.74% | 51.20% | 9 | 25 |
+| 4 | `STC` | General TSML | 74/114 | 20.38 | 52.46% | 56.36% | 3 | 12 |
+| 5 | `QUANT` | General TSML | 76/114 | 21.58 | 52.85% | 56.65% | 3 | 13 |
+| 6 | `EEGInceptionMI-NB` | EEG Supervised DL | 91/114 | 22.73 | 52.36% | 52.57% | 2 | 10 |
+| 7 | `TIDNet-NB` | EEG Supervised DL | 91/114 | 22.80 | 50.92% | 50.60% | 0 | 7 |
+| 8 | `CoSpectraLR-NB` | EEG Classical | 80/114 | 24.36 | 51.63% | 52.71% | 3 | 7 |
+| 9 | `RDST` | General TSML | 75/114 | 24.55 | 50.74% | 54.47% | 2 | 9 |
+| 10 | `XdawnTSLR-NB` | EEG Classical | 79/114 | 24.91 | 49.95% | 50.72% | 1 | 10 |
+| 11 | `SPARCNet-NB` | EEG Supervised DL | 80/114 | 25.45 | 49.15% | 48.58% | 0 | 4 |
+| 12 | `TMSANet-NB` | EEG Supervised DL | 76/114 | 26.02 | 50.26% | 49.22% | 2 | 6 |
+| 13 | `IFNet-NB` | EEG Supervised DL | 91/114 | 26.64 | 50.59% | 50.34% | 1 | 5 |
+| 14 | `CTNet-NB` | EEG Supervised DL | 80/114 | 27.65 | 49.14% | 49.35% | 0 | 6 |
+| 15 | `Deep4Net-NB` | EEG Supervised DL | 80/114 | 27.87 | 49.83% | 48.98% | 1 | 8 |
+
+#### BCI (All) (54 problems; 33 common; 74 classifiers &ge;44/54)
+
+| # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
+|---:|---|---|---:|---:|---:|---:|---:|---:|
+| 1 | `HC2` | General TSML | 50/54 | 13.41 | 56.35% | 57.12% | 1 | 13 |
+| 2 | `Arsenal` | General TSML | 53/54 | 18.21 | 54.75% | 55.52% | 1 | 9 |
+| 3 | `DrCIF` | General TSML | 51/54 | 19.82 | 54.75% | 56.32% | 2 | 9 |
+| 4 | `MRHydra` | General TSML | 52/54 | 21.06 | 53.34% | 54.00% | 3 | 3 |
+| 5 | `STC` | General TSML | 50/54 | 21.73 | 54.35% | 55.70% | 1 | 7 |
+| 6 | `QUANT` | General TSML | 53/54 | 22.53 | 53.72% | 55.19% | 0 | 6 |
+| 7 | `RotationForest` | Tabular | 46/54 | 24.44 | 52.16% | 53.50% | 2 | 7 |
+| 8 | `RDST` | General TSML | 52/54 | 24.53 | 52.80% | 53.97% | 1 | 6 |
+| 9 | `EEGNeX-NB` | EEG Supervised DL | 54/54 | 25.21 | 50.51% | 50.33% | 3 | 8 |
+| 10 | `XdawnTSLR-NB` | EEG Classical | 53/54 | 27.94 | 49.97% | 50.28% | 1 | 5 |
+| 11 | `CoSpectraLR-NB` | EEG Classical | 53/54 | 28.09 | 52.33% | 52.89% | 3 | 4 |
+| 12 | `TIDNet-NB` | EEG Supervised DL | 54/54 | 28.35 | 50.65% | 50.33% | 0 | 1 |
+| 13 | `TSEN-MOABB` | EEG Classical | 54/54 | 29.55 | 50.20% | 51.10% | 1 | 3 |
+| 14 | `EEGInceptionMI-NB` | EEG Supervised DL | 54/54 | 30.76 | 51.58% | 51.28% | 0 | 3 |
+| 15 | `SPARCNet-NB` | EEG Supervised DL | 53/54 | 30.76 | 47.98% | 48.24% | 0 | 3 |
+
+#### Motor Execution (6 problems; 4 common; 75 classifiers &ge;5/6)
+
+| # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
+|---:|---|---|---:|---:|---:|---:|---:|---:|
+| 1 | `HC2` | General TSML | 6/6 | 9.25 | 72.05% | 72.05% | 0 | 2 |
+| 2 | `Arsenal` | General TSML | 6/6 | 10.50 | 70.28% | 70.20% | 0 | 1 |
+| 3 | `TCFormer-NB` | EEG Supervised DL | 6/6 | 11.50 | 70.25% | 70.19% | 2 | 2 |
+| 4 | `EEGNeX-NB` | EEG Supervised DL | 6/6 | 12.00 | 71.71% | 71.65% | 1 | 3 |
+| 5 | `TSception-NB` | EEG Supervised DL | 5/6 | 13.75 | 69.48% | 69.39% | 0 | 1 |
+| 6 | `TIDNet-NB` | EEG Supervised DL | 6/6 | 14.00 | 69.94% | 69.94% | 0 | 1 |
+| 7 | `SPARCNet-NB` | EEG Supervised DL | 6/6 | 15.75 | 68.29% | 68.14% | 0 | 0 |
+| 8 | `RotationForest` | Tabular | 5/6 | 16.50 | 68.87% | 68.78% | 0 | 1 |
+| 9 | `STC` | General TSML | 6/6 | 16.75 | 67.98% | 67.90% | 0 | 0 |
+| 10 | `Deep4Net-NB` | EEG Supervised DL | 6/6 | 18.25 | 68.28% | 68.22% | 0 | 0 |
+| 11 | `DrCIF` | General TSML | 6/6 | 20.00 | 66.53% | 66.58% | 0 | 0 |
+| 12 | `CTNet-NB` | EEG Supervised DL | 6/6 | 20.25 | 67.21% | 67.17% | 0 | 1 |
+| 13 | `EEGConformer-NB` | EEG Supervised DL | 6/6 | 20.75 | 66.58% | 66.54% | 0 | 2 |
+| 14 | `EEGInceptionMI-NB` | EEG Supervised DL | 6/6 | 20.75 | 66.32% | 66.46% | 0 | 1 |
+| 15 | `FBMSNet-NB` | EEG Supervised DL | 6/6 | 22.00 | 65.63% | 65.73% | 0 | 0 |
+
+#### ERP / P300 (8 problems; 7 common; 67 classifiers &ge;7/8)
+
+| # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
+|---:|---|---|---:|---:|---:|---:|---:|---:|
+| 1 | `EEGNeX-NB` | EEG Supervised DL | 8/8 | 11.07 | 67.42% | 60.98% | 1 | 4 |
+| 2 | `Deep4Net-NB` | EEG Supervised DL | 8/8 | 11.57 | 66.72% | 62.50% | 0 | 1 |
+| 3 | `CBraMod-FT` | EEG Foundation | 7/8 | 11.79 | 68.03% | 65.64% | 0 | 3 |
+| 4 | `XdawnTSLR-NB` | EEG Classical | 8/8 | 11.86 | 66.36% | 66.37% | 0 | 1 |
+| 5 | `SPARCNet-NB` | EEG Supervised DL | 8/8 | 13.43 | 64.84% | 60.64% | 0 | 1 |
+| 6 | `EEGInceptionMI-NB` | EEG Supervised DL | 8/8 | 13.50 | 67.79% | 70.21% | 1 | 1 |
+| 7 | `CTNet-NB` | EEG Supervised DL | 8/8 | 15.50 | 64.28% | 58.48% | 0 | 2 |
+| 8 | `EEGSimpleConv-NB` | EEG Supervised DL | 8/8 | 16.21 | 64.27% | 64.76% | 0 | 4 |
+| 9 | `MRHydra` | General TSML | 7/8 | 16.57 | 61.36% | 78.38% | 1 | 1 |
+| 10 | `BrainModule-NB` | EEG Supervised DL | 8/8 | 18.00 | 63.72% | 64.63% | 0 | 3 |
+| 11 | `TCFormer-NB` | EEG Supervised DL | 8/8 | 18.64 | 61.73% | 55.72% | 2 | 3 |
+| 12 | `TMSANet-NB` | EEG Supervised DL | 8/8 | 19.43 | 60.81% | 50.15% | 0 | 0 |
+| 13 | `IFNet-NB` | EEG Supervised DL | 8/8 | 20.14 | 61.66% | 56.49% | 1 | 1 |
+| 14 | `TIDNet-NB` | EEG Supervised DL | 8/8 | 21.43 | 61.38% | 58.92% | 0 | 1 |
+| 15 | `EEGNet-NB` | EEG Supervised DL | 8/8 | 22.36 | 62.81% | 51.72% | 0 | 0 |
+
+#### VEP / SSVEP (6 problems; 3 common; 74 classifiers &ge;5/6)
+
+| # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
+|---:|---|---|---:|---:|---:|---:|---:|---:|
+| 1 | `STC` | General TSML | 5/6 | 9.33 | 37.42% | 38.32% | 0 | 1 |
+| 2 | `XdawnCov-MDM-MOABB` | EEG Classical | 6/6 | 11.33 | 53.80% | 53.90% | 0 | 1 |
+| 3 | `LaBraM-FT` | EEG Foundation | 5/6 | 12.67 | 62.81% | 62.18% | 0 | 1 |
+| 4 | `RDST` | General TSML | 6/6 | 13.00 | 31.01% | 31.64% | 0 | 0 |
+| 5 | `xDAWN-LDA-MOABB` | EEG Classical | 5/6 | 13.33 | 47.63% | 47.87% | 0 | 0 |
+| 6 | `HC2` | General TSML | 5/6 | 13.33 | 31.15% | 31.92% | 0 | 1 |
+| 7 | `DrCIF` | General TSML | 6/6 | 13.33 | 30.50% | 31.59% | 0 | 0 |
+| 8 | `AUG-TANG-SVM-MOABB` | EEG Classical | 5/6 | 13.67 | 43.12% | 43.89% | 0 | 1 |
+| 9 | `MRHydra` | General TSML | 6/6 | 13.83 | 30.27% | 30.83% | 0 | 0 |
+| 10 | `QUANT` | General TSML | 6/6 | 14.00 | 29.36% | 30.33% | 0 | 0 |
+| 11 | `TemplateCCA-BP640` | EEG Classical | 6/6 | 14.83 | 50.29% | 50.29% | 0 | 1 |
+| 12 | `ERPCov-MDM-MOABB` | EEG Classical | 5/6 | 15.50 | 49.82% | 49.87% | 0 | 1 |
+| 13 | `Arsenal` | General TSML | 6/6 | 17.00 | 27.95% | 28.58% | 0 | 1 |
+| 14 | `XdawnCov-TS-SVM-MOABB` | EEG Classical | 6/6 | 18.83 | 54.58% | 55.28% | 0 | 0 |
+| 15 | `CBraMod-FT` | EEG Foundation | 6/6 | 20.50 | 41.19% | 41.10% | 0 | 1 |
+
+#### Speech BCI (4 problems; 4 common; 75 classifiers &ge;4/4)
+
+| # | Classifier | Paradigm | Coverage | Mean Rank | Balanced Acc | Accuracy | Wins | Top-5 |
+|---:|---|---|---:|---:|---:|---:|---:|---:|
+| 1 | `TDE` | General TSML | 4/4 | 3.50 | 35.75% | 35.70% | 3 | 3 |
+| 2 | `QUANT` | General TSML | 4/4 | 6.50 | 33.41% | 33.12% | 0 | 3 |
+| 3 | `RotationForest` | Tabular | 4/4 | 13.75 | 28.95% | 28.88% | 0 | 0 |
+| 4 | `STC` | General TSML | 4/4 | 14.00 | 30.07% | 30.12% | 1 | 2 |
+| 5 | `HC2` | General TSML | 4/4 | 16.25 | 31.03% | 31.04% | 0 | 2 |
+| 6 | `RiemannianKNN-OAS-BP140` | EEG Classical | 4/4 | 18.00 | 30.17% | 30.19% | 0 | 0 |
+| 7 | `CoSpectraLR-NB` | EEG Classical | 4/4 | 22.00 | 26.40% | 26.39% | 0 | 0 |
+| 8 | `TSSVM-MOABB` | EEG Classical | 4/4 | 23.75 | 28.22% | 28.27% | 0 | 0 |
+| 9 | `DrCIF` | General TSML | 4/4 | 24.00 | 32.07% | 31.91% | 0 | 2 |
+| 10 | `MRHydra` | General TSML | 4/4 | 25.75 | 27.59% | 27.41% | 0 | 0 |
+| 11 | `TSEN-MOABB` | EEG Classical | 4/4 | 26.75 | 25.48% | 25.36% | 0 | 0 |
+| 12 | `TemplateCCA-BP640` | EEG Classical | 4/4 | 28.25 | 24.84% | 24.91% | 0 | 0 |
+| 13 | `Arsenal` | General TSML | 4/4 | 28.75 | 26.85% | 26.85% | 0 | 0 |
+| 14 | `RandomForest` | Tabular | 4/4 | 29.75 | 25.93% | 26.02% | 0 | 0 |
+| 15 | `FgMDM-MOABB` | EEG Classical | 4/4 | 30.25 | 25.28% | 25.25% | 0 | 0 |
 <!-- LEADERBOARD_BY_TYPE:END -->

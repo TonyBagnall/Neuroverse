@@ -2,6 +2,252 @@
 
 Entry point for an agent continuing archive assimilation. Read this before downloading or converting. The user authorises continuing through eligible batches without repeatedly asking permission. Read live state before relying on the snapshot below.
 
+## Hali list synced and GPU gaps surveyed,11November2026
+
+User authorised sync dataset lists/push any new data/see GPU gaps. Hali's own
+~/DataSetLists/eeg.txt now canonical76 (backup eeg.txt.bak-20261111-084336).
+Five previously missing list names added; excluded Blink/EpilepticSeizures/Sleep
+removed. All export directories/files already existed with matching names/sizes,
+so zero data bytes needed pushing. All88available ID sidecars matched SHA256;
+dataset-info84rows cover all76, NBack200Hz correct. No large array rehashing.
+
+See [GPU next-batch report](docs/hali-gpu-next-batch-20261111.md), raw JSON survey
+and CSV task matrix. Existing23Hali GPU models have115new-list gaps and21existing
+terminal failures (FBLightConvNet12, SleepStagerChambon9). New five datasets are
+large: do shape/resource preflights on compute nodes before a restart. In
+particular SymbolAttention becomes120points at120Hz, below FBLightConvNet's250
+window. No GPU jobs were started; user asked to survey, not restart yet.
+
+Additional draft8architectures unregistered in factory; plain EEGNet/DeepConvNet/
+EEGConformer variants have228missing under distinct non-NB identities. DGCNN and
+EEGSym need channel metadata. Future GPU restart must disable inherited report
+email AND unconditional supervisor FAIL mail. Current live code/envs not modified.
+List changes may be picked up by active CPU supervisors; no manual job changes.
+
+## Latest Hali retrieval,11November2026
+
+User switched to UEA VPN and requested Hali progress/results. See
+[Hali report](docs/hali-progress-20261111.md). Authenticated as ajb. Slurm path
+/opt/slurm/25.11.4/bin/squeue (not on noninteractive PATH). Own queue27CPU jobs
+running (24EEG+3Multiverse TDE),3pending entries; no GPU work running. Many GPU
+batches settled with some terminal short-input/model compatibility failures.
+Fetched/validated806new/newer prediction CSVs (118.6MB) into D:/Results/EEG;
+zero invalid files. No remote changes or external calls. Competition stays separate.
+
+Transfer helper now skips older remote versions. Cross-cluster audit caught57
+older Iridis copies from the earlier pull; newer local files restored from
+backups, older Iridis variants preserved separately. See reconciliation receipt.
+Hali list74still has excluded Blink/EpilepticSeizures/Sleep and lacks five of
+Iridis's76current problems; no list changes made. Raw snapshots under
+.openeegbench/hali-*.json. No queued work restarted and no checkpoints deleted.
+
+## Latest Iridis retrieval,11November2026
+
+Read [progress/retrieval report](docs/iridis-progress-20261111.md). Fetched and
+validated1573new/changed archive prediction files (260MB) into D:/Results/EEG,
+backing up overwritten local files. Competition results are separate under
+D:/Data/EEGCompetitions/NeuralInterfaces2026Track2/hc2-cluster-results/results.
+All four competition HC2 components COMPLETED; eight CSVs fetched, standard
+tsml-eval offline builder created HC2FromFile predictions there. TEST is three
+in-sample diagnostic cases; no valid held-out performance claim. Retained models
+are still on Iridis (18.192GB total). User explicitly said keep them.
+
+User requested deleting checkpoints of complete problems. Archive inventory:
+21files/807.94GB, zero complete+inactive eligible tasks; no deletion performed.
+No local archive ckpts found. Do not delete competition models. Live queues read
+only; no cluster jobs/configs changed in this retrieval. MRHydra Codabench upload
+reported failed; async request for error/log pending, no resubmission authorised.
+
+Cluster access: read [the confirmed cluster rules](docs/cluster-access.md).
+No external calls from clusters, including pip; Tony handles those himself.
+Access only his own queues/jobs and file space. Local archive-download authority
+does not override these remote restrictions.
+Heavy computation must use Slurm compute allocations, never login nodes.
+The locally inspected tsml-eval system is explained in
+[farm-management reference](docs/tsml-eval-farm-management.md), including the
+state-mutating `status` command, farm top-up, retries, registries and automatic
+email conflict with the no-external-calls rule. Review only; no cluster changes.
+
+## HC2 competition components on Iridis6,10November2026
+
+User declined QUANT submission and authorised HC2 component builds on the cluster,
+explicitly using tsml-eval's experiment structure and DrCIF-500 (not default).
+See [full run guide](docs/competition-track2-hc2-cluster.md) and
+`docs/competition-track2-hc2-submission.json`. Uploaded all2655public training
+cases and metadata; three repeated training cases form diagnostic TEST only.
+Preflight Slurm job4888596 was submitted. It checks all data hashes, four native
+model reloads, and standard experiment check/dry-run before starting production.
+Do not claim production is running until the preflight passes and job IDs appear.
+
+Update: preflight PASSED. Full model jobs submitted: Arsenal4888654,
+DrCIF-5004888655, STC-aeon4888656, TDE4888657; pending at latest queue check.
+Supervisor4888635 remains queued. First four job IDs4888631-4888634 were replaced
+only to apply an explicit8-thread Numba ceiling rather than inherit preflight's4.
+All final scripts verified eight-thread export and mail NONE. See
+`docs/competition-track2-hc2-preflight.json`; native smoke used aeon1.6.0 and
+sklearn1.8.0. All case hashes/labels and all four model reloads passed;3local
+configuration/overlay tests passed. Read dedicated queue/state before further
+actions. No changes/cancellations to the pre-existing archive farms.
+
+Later startup fix: component jobs4888654–4888657 failed before fitting because a
+desktop-generated pyc was mistakenly included as source in the payload manifest.
+Verifier now checks only the5 `.py` overlay files; bundler/manifests exclude
+`__pycache__`/pyc. Regression test confirms bytecode is ignored and real source
+changes fail;4tests passed. Retried only the dedicated experiment: current jobs
+Arsenal4888747, DrCIF-5004888748, STC-aeon4888749, TDE4888750. Submission receipt
+updated; earlier preflight/queue receipt is historical. Check actual startup.
+
+Remote dedicated stage: /home/ajb2u23/Competitions/NeuralInterfaces2026Track2/HC2;
+isolated worktree: /home/ajb2u23/Code/tsml-eval-proteus-hc2-20261110. Existing
+farm checkout/running source files untouched. Standard controller and threaded
+entry point; opt-in --keep_checkpoint overlay retains final models; threaded
+checkpoint forwarding fixed in this copy, email disabled including supervisor
+mail. Hashes pin five overlay files, base commit ce0d113. Existing aeon1.6.0
+checkpoint branch is used; no external cluster calls or installations.
+
+Four components only: Arsenal, DrCIF-500, STC-aeon, TDE. Seed33; eight CPUs,
+64GB initial per component,60h, bounded checkpoint/resume retries. Outputs stay
+inside the dedicated competition directory, not the archive results. Native
+train estimates support offline CAWPE weights; preserved full checkpoints are
+needed for sealed-case inference. No HC2 submission yet. Desktop local four-way
+smoke was gated by a different DrCIF checkpoint API; cluster compute preflight
+must pass. First desktop Arsenal persistence test passed.
+
+## Downloads resumed,10November2026
+
+User requested continuing downloads. Psychosis1/ds003944 full native download
+resumed using the existing pinned original CC0 source and checksum-verifying
+downloader. Source total6.606GB, previously cached0.542GB. D had72.62GB free.
+Live receipt/log: `.openeegbench/eegdash-diagnosis/psychosis1-download-full.{json,log}`.
+Downloader launcher PID46396; inspect live receipt/process rather than assume PID.
+No new full dataset has been admitted by this download restart.
+
+Continuation supervisor launcher PID3832, reusable implementation
+`tools/resume_eegdash_downloads.py`, local bootstrap
+`.openeegbench/eegdash-diagnosis/resume-downloads.py`. State/logs are
+`.openeegbench/eegdash-diagnosis/download-continuation.{json,log,err}`.
+It waits for the first download, then LOSO completion before any DSP; runs both
+mixed-rate pilots in separate processes using current authorised anti-alias
+resampling adapter; only then downloads psychosis2/ds003947 (13.466GB total),
+requiring source size plus30GB free reserve. Stops on any failed gate. Existing
+psychosis1 pilot succeeded at1000Hz but its additional3000Hz participant still
+needs the current resampling pilot. Old psychosis2 pilot failure predates the
+current resampling implementation; never bypass native/BIDS consistency gates.
+No automatic full conversion/registration yet: review full-source recording
+overlap and projected .ts footprint. Avoid launching duplicate downloaders or
+conversion jobs while this controller is active.
+
+Later update: first full source download completed. Initial continuation stopped
+on exact float comparison: native header division produces3000.0003000000297Hz,
+one ULP from the reviewed literal3000.00030000003. `harmonise_rate` now recognises
+only the reviewed rates with rtol1e-12/atol0, while still resampling with the exact
+native frequency. Regression test now uses the real header calculation;8tests
+passed in the scientific runtime. LOSO is complete, so continuation restarted
+via launcher PID49804; logs `download-continuation-resumed.{log,err}`. Read live
+state for actual PID/stage. Both mixed-rate pilots must still pass before the
+second full source download. The earlier exact-1000Hz pilot did not cover the
+additional3000Hz participant; do not describe the resampled pilot as complete yet.
+
+## Active competition LOSO evaluation,10November2026
+
+Later update: LOSO is complete. Cell-mean BA: MRHydra0.451574,
+QUANT0.435845, equal ensemble0.464418 (see exact JSON). User explicitly authorised
+submitting MRHydra. Packaging worker `.openeegbench/competition-17982/package-mrhydra.py`
+is exporting MRHydra only; live state `mrhydra-package-state.json`, logs
+`mrhydra-package.{log,err}`. All-public ZIP path and upload/check instructions:
+`docs/competition-track2-mrhydra-submission.md`. Browser control failed during
+both available runtime initialisation attempts (kernel assets path error), so
+no upload was made. Finish package/isolated/replay checks before presenting as
+ready. No extra submission attempts or organiser messages authorised.
+
+MRHydra packaging is now complete: all379development predictions match native
+aeon and official objective replay passed; all-public120case sample parity and
+isolated12case ZIP checks passed. Final all-public ZIP2201934bytes, SHA256
+2f43a9622000aabd6f005bc4e05fde2f28398879dd7b76449ffea32b018164b4.
+Browser runtime retry after reset failed too. No submission has been uploaded;
+manual upload handover is required. Submission guide records paths and checks.
+
+User requested leave-one-subject-out evaluation for MRHydra and QUANT.
+Worker restarted with supervisor PID14496 using `.openeegbench/competition-17982/loso-selected.py`;
+check the live process/state rather than relying on that PID. Public reusable
+implementation: `tools/loso_track2_selected.py`; split tests: 2 passed.
+Current logs: `.openeegbench/competition-17982/loso-selected-isolated.{log,err}`.
+First attempt completed MRHydra/P01 (cell-mean BA0.490759), then failed with a
+1.03GiB allocation error fitting P02. Launcher now uses a fresh child process
+per classifier/fold so native allocators release all memory on exit. Completed
+receipts are reused; no changes to classifier settings or split definition.
+Live state, resumable per-fold receipts and case-aligned predictions:
+`D:/Data/EEGCompetitions/NeuralInterfaces2026Track2/selected-loso/`.
+Ten whole-subject folds, fresh seed33 models, 8 CPU threads, all sessions held
+out together. MRHydra runs all folds first, then QUANT. Equal-score ensemble
+uses matched out-of-fold predictions without fitted calibration. Native hard
+predictions are retained separately from ensemble scores. No fold models saved.
+Final repo report: `docs/competition-track2-loso-results.json`; includes official
+cell-mean metric and equal-subject diagnostic. Public P04/P09 are now part of
+LOSO; they must no longer be described as an untouched evaluation set after
+reviewing these results. Do not launch duplicate workers. Resume same launcher
+only after checking the first worker stopped. No uploads authorised.
+
+Development/all-public fits for both classifiers already complete under
+`.../selected-models/`. Previous 6/2 development validation: MRHydra52.64%,
+QUANT48.33%, equal ensemble50.75% cell-mean balanced accuracy. These are separate
+from LOSO and from the all-public submission models. Portable packaging source
+is in `tools/{selected_track2_submission,export_track2_selected}.py`; parity
+smoke/export remains to be checked before treating these ZIPs as ready.
+
+## Competition data preparation complete,10November2026
+
+PROTEUS Track2 (Codabench17982) public data downloaded/converted/audited.
+2655cases x41EEG x480points at120Hz. Native EDF41ch500Hz retained. Prepared
+D:/Data/EEGCompetitions/NeuralInterfaces2026Track2/prepared; source cache under
+D:/Data/EEGSources/Competitions/NeuralInterfaces2026Track2. Subject-holdout TS
+1900TRAIN/755TEST; later-public-session TS2268TRAIN/387TEST. Full numeric TS,
+case alignment, sensors, duplicates, hashes and aeon fit/predict passed;9tests
+passed. Untuned bandpower classifier cell-mean BA0.389883subject-heldout,
+0.405247cross-session. Worker complete; no required download remains. Read
+`docs/competition-track2.md`, preparation/baseline result JSON. No archive
+registration, no sealed access, user not registered, no submissions. Current
+FAQ takes precedence over stale guide: predict only EEG1x41x480, no IDs;
+reset model state per session; metric cells subject/session/interface. Local
+preprocessing reviewed against upstream but full NeuralBench numerical parity
+not established. Active script was subsequently made resumable using verified
+existing artifacts; do not launch duplicate workers or rewrite final TS files.
+
+## Study scope update,10November2026
+
+User excludes all MEG/ECoG from the study: FaceDetection, HandMovementDirection,
+MatchWords, MindReading, MotorImagery. eeg.txt now76scalp EEG problems, including
+29MI; registry remains85 and all data retained. Both registration scripts keep
+these exclusions when rebuilding selections. Current taxonomy/counts:
+`docs/problem-taxonomy.json` and `.md`. Older81selected/30MI figures below are
+historical archive figures, not the present study selection.
+
+## Current task: twenty additional diagnosis problems from EEGDash
+
+9November2026:83registered/79selected;30MI unchanged. AlzheimersAuditory is the
+first completed clinical addition (2020TRAIN/1000TEST,33people). Read
+`docs/eegdash-diagnosis-plan.md`, progress/summary JSON and source evidence.
+User confirmed: diagnosed groups only initially; INCLUDE UCSD despite source
+small-cohort diagnostic-ML caution; anti-alias RESAMPLE mixed-rate psychosis
+recordings to1000Hz to retain all people. No pending permission for these.
+
+Iowa full download is running after successful4person pilot. Reviewed queue
+`tools/run_eegdash_diagnosis.py` waits for its receipt, converts/validates/registers
+Iowa, then runs both mixed-rate psychosis pilots. Local queue state/logs live at
+`.openeegbench/eegdash-diagnosis/`; inspect before starting competing writers.
+Native sources D:/Data/EEGSources/EEGDash; final TS/sidecars D:/Data/EEG.
+Use scientific overlays including eegdash-runtime and escalated native access.
+UCSD pilot passed196cases/4people/32scalp channels at512Hz. Separate UCSD queue
+`tools.run_eegdash_diagnosis.run_ucsd` converts its completed full download and
+waits for Iowa registration before its own registry update. State/logs
+`ucsd-queue.*`. Initial strict screen leaves20candidate source rows, not20
+validated problems or independent studies; see candidate JSON for deferrals.
+24focused clinical/shared-pipeline/registry tests passed.
+Next adapter: ds007526 PD rest; TBI ds003522 original Group codes are
+0=mTBI,1=Control,2=ChronicTBI (not historical survey guesses). Shared cohorts
+must be documented and recordings deduplicated; relabelled copies do not count.
+No uploads/pushes; do not modify student BIDS guide or its backup.
+
 ## Current completion: thirty motor imagery problems
 
 All five additions passed full conversion, artifact verification and local registration: **82registered /78selected /30MI (29scalp EEG +1ECoG)**. Final arrays and sidecars are under D:/Data/EEG; no uploads or pushes. Machine-readable evidence: docs/mi-to-30-progress.json and docs/mi-to-30-summary.json. Original30paper data/results unchanged. Daly final1698TRAIN/643TEST,18subjects,19EEG x20000points at1000Hz; both ambiguous09/15run10 copies excluded, other recordings retained, no retained duplicate cases or shared subjects. The user confirmed reporting the issue on OpenNeuro on9Nov; comment URL not supplied. The focused final tests passed28checks. No conversion worker remains required for this batch. Earlier snapshots below are historical.

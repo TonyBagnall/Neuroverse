@@ -412,6 +412,7 @@ def main():
     parser.add_argument("--subjects", default=None)
     parser.add_argument("--train-subjects", default=None)
     parser.add_argument("--offline", action="store_true")
+    parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
     if args.dataset == "erpcore_n400":
         from tools.prepare_erpcore import convert as convert_erpcore
@@ -423,7 +424,10 @@ def main():
         selected_convert, cache, n_subjects, n_train = convert, ".openeegbench/bi2014a-source", 64, 48
     subjects = tuple(map(int,args.subjects.split(","))) if args.subjects else tuple(range(1,n_subjects+1))
     train = tuple(map(int,args.train_subjects.split(","))) if args.train_subjects else tuple(range(1,n_train+1))
-    selected_convert(args.cache or Path(cache), args.output, subjects, train, not args.offline)
+    if args.dataset == "kalunga2016":
+        selected_convert(args.cache or Path(cache), args.output, subjects, train, not args.offline, overwrite=args.overwrite)
+    else:
+        selected_convert(args.cache or Path(cache), args.output, subjects, train, not args.offline)
 
 
 if __name__ == "__main__":

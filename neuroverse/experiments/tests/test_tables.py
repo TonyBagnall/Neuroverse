@@ -368,16 +368,16 @@ def test_compute_league_table_common_block_vs_available_mode():
 
 
 def test_compute_league_table_canonical_only_excludes_variants():
-    """Canonical-only mode removes non-canonical variants before computing common problems and ranks."""
+    """Canonical-only and headline-only modes filter variants/non-headline models before computing common problems and ranks."""
     from neuroverse.experiments.tables import compute_league_table
 
     problems = ["p1", "p2", "p3"]
-    canonical_models = ["HC2-500-pc", "EEGNeX-NB"]
-    variant_model = "HC2-noTDE-500-pc"
+    canonical_models = ["HC2", "EEGNeX-NB"]
+    variant_model = "HC2-500-pc"
     frames = {
         "balacc": pd.DataFrame(
             {
-                "HC2-500-pc": [0.85, 0.85, 0.85],
+                "HC2": [0.85, 0.85, 0.85],
                 variant_model: [0.84, 0.84, np.nan],
                 "EEGNeX-NB": [0.75, 0.75, 0.75],
             },
@@ -409,6 +409,18 @@ def test_compute_league_table_canonical_only_excludes_variants():
     assert list(canon_tbl["estimator"]) == canonical_models
     assert canon_tbl["is_canonical"].all()
     assert canon_tbl.set_index("estimator").loc["EEGNeX-NB", "mean_rank"] == pytest.approx(2.0)
+
+    head_tbl, head_common = compute_league_table(
+        problems,
+        frames,
+        primary_metric="balacc",
+        min_coverage_ratio=0.60,
+        mode="common_block",
+        headline_only=True,
+    )
+    assert head_common == problems
+    assert list(head_tbl["estimator"]) == ["HC2"]
+    assert head_tbl["is_headline"].all()
 
 
 def test_compute_league_table_unevaluated_datasets_do_not_inflate_coverage_gate():
@@ -451,11 +463,11 @@ def test_build_benchmark_site_writes_self_contained_pages(tmp_path):
     import shutil
     import subprocess
 
-    from neuroverse.datasets import PROBLEM_TYPE_TABS, by_type, neuroverse_study
+    from neuroverse.datasets import PROBLEM_TYPE_TABS, by_type, neuroverse_114, neuroverse_study
     from neuroverse.experiments.tables import build_benchmark_site
 
-    sample_problems = by_type("Speech") + by_type("VEP")[:2]
-    sample_estimators = ["HC2-500-pc", "HC2-noTDE-500-pc", "EEGNeX-NB", "DE-LR"]
+    sample_problems = by_type("Clinical")[:2] + by_type("VEP")[:2]
+    sample_estimators = ["HC2", "HC2-500-pc", "EEGNeX-NB", "DE-LR"]
     rng = np.random.default_rng(42)
 
     snap_dir = tmp_path / "snap"
@@ -478,6 +490,8 @@ def test_build_benchmark_site_writes_self_contained_pages(tmp_path):
         assert 'src="http' not in html
         assert "@import" not in html
         assert "eegDownloadCsv" in html
+        assert 'id="dlModal"' in html
+        assert 'id="openDownloadModalBtn"' in html
         match = re.search(
             r'<script id="benchData" type="application/json">(.*?)</script>',
             html,
@@ -487,31 +501,40 @@ def test_build_benchmark_site_writes_self_contained_pages(tmp_path):
         payload = json.loads(match.group(1))
         assert [e["name"] for e in payload["estimators"]] == sorted(sample_estimators)
         by_name = {e["name"]: e for e in payload["estimators"]}
-        assert by_name["HC2-500-pc"]["is_canonical"] is True
-        assert by_name["HC2-noTDE-500-pc"]["is_canonical"] is False
-        assert len(payload["datasets"]) == len(neuroverse_study)
+        assert by_name["HC2"]["is_canonical"] is True
+        assert by_name["HC2"]["is_headline"] is True
+        assert by_name["HC2-500-pc"]["is_canonical"] is False
+        assert by_name["HC2-500-pc"]["is_headline"] is False
+        assert payload["core_count"] == len(neuroverse_study)
+        assert len(payload["datasets"]) == len(neuroverse_114)
         assert [t["key"] for t in payload["tabs"]] == list(PROBLEM_TYPE_TABS)
-        assert len(payload["scores"]["balacc"]) == len(neuroverse_study)
+        assert len(payload["scores"]["balacc"]) == len(neuroverse_114)
         assert len(payload["scores"]["balacc"][0]) == len(sample_estimators)
         if node_bin is not None:
             js_blocks = re.findall(r"<script>(.*?)</script>", html, re.DOTALL)
-            assert len(js_blocks) == 1
-            js_file = tmp_path / f"{page_key}_check.js"
-            js_file.write_text(js_blocks[0], encoding="utf-8")
-            proc = subprocess.run(
-                [node_bin, "--check", str(js_file)], capture_output=True, text=True
-            )
-            assert proc.returncode == 0, f"{page_key} JS syntax error: {proc.stderr}"
+            assert len(js_blocks) >= 1
+            for block_idx, js_code in enumerate(js_blocks):
+                js_file = tmp_path / f"{page_key}_check_{block_idx}.js"
+                js_file.write_text(js_code, encoding="utf-8")
+                proc = subprocess.run(
+                    [node_bin, "--check", str(js_file)], capture_output=True, text=True
+                )
+                assert proc.returncode == 0, f"{page_key}[{block_idx}] JS syntax error: {proc.stderr}"
 
     lb_html = paths["leaderboard"].read_text(encoding="utf-8")
     assert 'id="viewSelect"' in lb_html
-    assert 'id="includeVariants"' in lb_html
+    assert 'id="poolSeg"' in lb_html
+    assert 'data-pool="headline"' in lb_html
+    assert 'data-pool="canonical"' in lb_html
+    assert 'data-pool="all"' in lb_html
     assert 'id="algModal"' in lb_html
     assert 'id="exportLbCsv"' in lb_html
     matrix_html = paths["matrix"].read_text(encoding="utf-8")
     assert 'id="exportMatrixCsv"' in matrix_html
-    assert 'value="canonical72"' in matrix_html
+    assert 'id="colScopeSelect"' in matrix_html
+    assert 'value="headline"' in matrix_html
+    assert 'value="canonical"' in matrix_html
     ds_html = paths["datasets"].read_text(encoding="utf-8")
-    assert 'id="dsIncludeVariants"' in ds_html
+    assert 'id="dsPoolSelect"' in ds_html
     assert 'id="dsModal"' in ds_html
     assert 'id="exportDsCsv"' in ds_html

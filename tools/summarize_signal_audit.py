@@ -51,7 +51,7 @@ def summarize(root=Path('.openeegbench/signal-audit'),output=Path('docs')):
                 data=json.loads(meta.read_text());u=data.get('units','') or ''
                 if 'microvolt' in u.lower() or u.startswith('microV'):unit='microvolt scale (documented/interpreted)'
             if name in ['ArmMovements','ImaginedArmMovements']:unit='native; upstream interprets microvolts, GDF units ambiguous'
-            if name=='FlickerAttention':unit='native FIF scale; physical calibration unresolved'
+            if name=='FlickerAttention':unit='uV (rescaled x1e3 from verified source mV)'
         row=dict(dataset=name,proposed_status='retire' if name in retired else 'retain',
             train_cases=parts['TRAIN']['cases'],test_cases=parts['TEST']['cases'],channels=int(expected.loc[name,'channels']),
             train_timepoints=parts['TRAIN']['timepoints'][0] if len(parts['TRAIN']['timepoints'])==1 else str(parts['TRAIN']['timepoints']),

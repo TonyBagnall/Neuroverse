@@ -7,7 +7,8 @@ import re
 from tools.prepare_moabb import dump
 
 ROOT=Path(__file__).resolve().parents[1]
-EXCLUDED={'Blink','ButtonPress','Sleep','EpilepticSeizures'}
+# Study selection excludes retired preparations plus non-scalp modalities.
+EXCLUDED={'Blink', 'MatchWords', 'Sleep', 'HandMovementDirection', 'EpilepticSeizures', 'MotorImagery', 'FaceDetection', 'MindReading', 'ButtonPress'}
 
 
 def register(results):

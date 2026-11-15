@@ -1,0 +1,23 @@
+[
+  {
+    "dataset": "ERP CORE N170",
+    "download_bytes": 3394165529,
+    "source": "https://zenodo.org/records/14866307/files/erpcore_manifest.csv?download=1",
+    "manifest_sha256": "5ca6881b6aa217f43916dbb9231c0d089e1f0e554f60ca4baff45e543ed1ea3e",
+    "files": 287
+  },
+  {
+    "dataset": "ERP CORE MMN",
+    "download_bytes": 3485735129,
+    "source": "https://zenodo.org/records/14866307/files/erpcore_manifest.csv?download=1",
+    "manifest_sha256": "5ca6881b6aa217f43916dbb9231c0d089e1f0e554f60ca4baff45e543ed1ea3e",
+    "files": 287
+  },
+  {
+    "dataset": "ERP CORE N2pc",
+    "download_bytes": 3466363341,
+    "source": "https://zenodo.org/records/14866307/files/erpcore_manifest.csv?download=1",
+    "manifest_sha256": "5ca6881b6aa217f43916dbb9231c0d089e1f0e554f60ca4baff45e543ed1ea3e",
+    "files": 287
+  }
+]

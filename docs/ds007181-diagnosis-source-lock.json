@@ -1,0 +1,2474 @@
+{
+  "dataset": "ds007181",
+  "source_record_id": "ds007181",
+  "source_revision": "OpenNeuro ds007181 v1.0.1, Git 2499c3d0f3dca9b3e84b8faf01e7838374dcc621",
+  "original_ref": "1.0.1",
+  "original_commit": "2499c3d0f3dca9b3e84b8faf01e7838374dcc621",
+  "eegdash_id": "on007181",
+  "licence": "CC0-1.0",
+  "licence_evidence": "Original pinned dataset_description.json License=CC0",
+  "source_urls": [
+    "https://openneuro.org/datasets/ds007181/versions/1.0.1"
+  ],
+  "metadata_archive_sha256": "f5ef6d9cdd07880cdbdc00e1387b7eb9b3f42c6c5d45ec7d8e38218cbf508c53",
+  "files": [
+    {
+      "name": "CHANGES",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/CHANGES",
+      "bytes": 117,
+      "checksum": "sha256:42371b42d80a6e0ae80f5e3a4e8747fb43ada99a322aec3df6360f4876e9ca70",
+      "sha256": "42371b42d80a6e0ae80f5e3a4e8747fb43ada99a322aec3df6360f4876e9ca70",
+      "git_blob_sha1": "52473ef953ac8a374f9beeda43fbd73ae6fd4058"
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/README.md",
+      "bytes": 2783,
+      "checksum": "sha256:a017b6ac8957e537ae73d1fa724c6dfc4ccdee730532286389c7a8297c4b9954",
+      "sha256": "a017b6ac8957e537ae73d1fa724c6dfc4ccdee730532286389c7a8297c4b9954",
+      "git_blob_sha1": "3d745131eea45a5a6e4d72856c832399094e162d"
+    },
+    {
+      "name": "dataset_description.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/dataset_description.json",
+      "bytes": 1193,
+      "checksum": "sha256:0a5c2af428d40c8f8d006e9938025f9d79683cc986da5851a14364e49fb3b1ef",
+      "sha256": "0a5c2af428d40c8f8d006e9938025f9d79683cc986da5851a14364e49fb3b1ef",
+      "git_blob_sha1": "0bf70fc3540a28aa4a8bafe351651812c0bb4e6e"
+    },
+    {
+      "name": "participants.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/participants.json",
+      "bytes": 505,
+      "checksum": "sha256:9b2cea1614ace6909e6dc17741c66726e0221a144b090852fae73b07c737e746",
+      "sha256": "9b2cea1614ace6909e6dc17741c66726e0221a144b090852fae73b07c737e746",
+      "git_blob_sha1": "6ca8e3337d11a2c818320aa227a9dfe7ffdfa452"
+    },
+    {
+      "name": "participants.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/participants.tsv",
+      "bytes": 1050,
+      "checksum": "sha256:98fe9a4a8e47c942895ae2cfe84f11641ccc5d9df9562f78c05688ec8f6562d1",
+      "sha256": "98fe9a4a8e47c942895ae2cfe84f11641ccc5d9df9562f78c05688ec8f6562d1",
+      "git_blob_sha1": "fe28bd3e2bdce9a2935c6216296cc9131178387b"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-02/eeg/sub-02_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-02/eeg/sub-02_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 428784296,
+      "checksum": "sha256:360abfa73c1c9b26e94a628abc66968bcd3e0eef296a0eb46da4f708c49f97a9",
+      "git_blob_sha1": "d42204191c9fecacf6a89dbca5a44e47ec8b57f2",
+      "git_annex_pointer": "../../.git/annex/objects/G0/K4/SHA256E-s428784296--360abfa73c1c9b26e94a628abc66968bcd3e0eef296a0eb46da4f708c49f97a9.edf/SHA256E-s428784296--360abfa73c1c9b26e94a628abc66968bcd3e0eef296a0eb46da4f708c49f97a9.edf",
+      "sha256": "360abfa73c1c9b26e94a628abc66968bcd3e0eef296a0eb46da4f708c49f97a9"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-02/eeg/sub-02_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-02/eeg/sub-02_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-02/eeg/sub-02_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-02/eeg/sub-02_task-sleep_acq-PSG_events.tsv",
+      "bytes": 14245,
+      "checksum": "sha256:5bca2d00957e95a29d36c374daea0bb625ec67a840ac3a22bac845a5e83394e7",
+      "sha256": "5bca2d00957e95a29d36c374daea0bb625ec67a840ac3a22bac845a5e83394e7",
+      "git_blob_sha1": "48803b216763faf1454ce44370691a4fe331635a"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-04/eeg/sub-04_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-04/eeg/sub-04_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 410105696,
+      "checksum": "sha256:fe4d38c1865d36d3b589a903d6d4a231a8298f870eca2094d919a592de868a67",
+      "git_blob_sha1": "eb32f8edf06be58a77a1e172f4ae2b338cbfadea",
+      "git_annex_pointer": "../../.git/annex/objects/p4/f2/SHA256E-s410105696--fe4d38c1865d36d3b589a903d6d4a231a8298f870eca2094d919a592de868a67.edf/SHA256E-s410105696--fe4d38c1865d36d3b589a903d6d4a231a8298f870eca2094d919a592de868a67.edf",
+      "sha256": "fe4d38c1865d36d3b589a903d6d4a231a8298f870eca2094d919a592de868a67"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-04/eeg/sub-04_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-04/eeg/sub-04_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-04/eeg/sub-04_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-04/eeg/sub-04_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13511,
+      "checksum": "sha256:2b81abdf4ab6e252210c4199e424988985a1aabd20b848340c17cbd74497f9bc",
+      "sha256": "2b81abdf4ab6e252210c4199e424988985a1aabd20b848340c17cbd74497f9bc",
+      "git_blob_sha1": "d4a707bb3621ef8ab78fef5cb4f1fc35ad959197"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-05/eeg/sub-05_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-05/eeg/sub-05_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 309656336,
+      "checksum": "sha256:524468cc76641b78e3b227ff21b72ccfc31a9bf1ec2ae5866121a94813743cf0",
+      "git_blob_sha1": "bc37451440b6cf416aae8263fe95d4521189b066",
+      "git_annex_pointer": "../../.git/annex/objects/2q/K8/SHA256E-s309656336--524468cc76641b78e3b227ff21b72ccfc31a9bf1ec2ae5866121a94813743cf0.edf/SHA256E-s309656336--524468cc76641b78e3b227ff21b72ccfc31a9bf1ec2ae5866121a94813743cf0.edf",
+      "sha256": "524468cc76641b78e3b227ff21b72ccfc31a9bf1ec2ae5866121a94813743cf0"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-05/eeg/sub-05_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-05/eeg/sub-05_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-05/eeg/sub-05_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-05/eeg/sub-05_task-sleep_acq-PSG_events.tsv",
+      "bytes": 10174,
+      "checksum": "sha256:66c0ebeda692d1b1256bdbd93d4862c81c2ebd2ef8a5f674f4ac82951e49b0af",
+      "sha256": "66c0ebeda692d1b1256bdbd93d4862c81c2ebd2ef8a5f674f4ac82951e49b0af",
+      "git_blob_sha1": "d8136695429ddfa4106e8e58e9f655684f06e0cf"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-06/eeg/sub-06_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-06/eeg/sub-06_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 398898536,
+      "checksum": "sha256:0d6b6b1722fa23c64567008e6b6b7c3775f93f6dbdbc4265362a4bfe4654c8fe",
+      "git_blob_sha1": "7d64bad874b5dbe640494661ba3c5558a637ab87",
+      "git_annex_pointer": "../../.git/annex/objects/mJ/Pk/SHA256E-s398898536--0d6b6b1722fa23c64567008e6b6b7c3775f93f6dbdbc4265362a4bfe4654c8fe.edf/SHA256E-s398898536--0d6b6b1722fa23c64567008e6b6b7c3775f93f6dbdbc4265362a4bfe4654c8fe.edf",
+      "sha256": "0d6b6b1722fa23c64567008e6b6b7c3775f93f6dbdbc4265362a4bfe4654c8fe"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-06/eeg/sub-06_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-06/eeg/sub-06_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-06/eeg/sub-06_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-06/eeg/sub-06_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13245,
+      "checksum": "sha256:38134ef05d766a811d31a720581f6465a22676e19c68f0ced3b324747930c156",
+      "sha256": "38134ef05d766a811d31a720581f6465a22676e19c68f0ced3b324747930c156",
+      "git_blob_sha1": "d6b29fac738c03da39f5a55c2579788c1e1784f8"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-07/eeg/sub-07_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-07/eeg/sub-07_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 417577136,
+      "checksum": "sha256:51775bbe56fefcd1de04292b61051561718f68de488633a5e5e0158062235417",
+      "git_blob_sha1": "04476ce5ac441643d9d7cdc54fe2f54f520436e4",
+      "git_annex_pointer": "../../.git/annex/objects/4M/PF/SHA256E-s417577136--51775bbe56fefcd1de04292b61051561718f68de488633a5e5e0158062235417.edf/SHA256E-s417577136--51775bbe56fefcd1de04292b61051561718f68de488633a5e5e0158062235417.edf",
+      "sha256": "51775bbe56fefcd1de04292b61051561718f68de488633a5e5e0158062235417"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-07/eeg/sub-07_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-07/eeg/sub-07_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-07/eeg/sub-07_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-07/eeg/sub-07_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13886,
+      "checksum": "sha256:f5c0c8fdbca11a64782089355eb775f355f8cd5ebce1e23ae96ac73d79bc98f3",
+      "sha256": "f5c0c8fdbca11a64782089355eb775f355f8cd5ebce1e23ae96ac73d79bc98f3",
+      "git_blob_sha1": "9f82fded8e3d7da1b7b0538f9a9685237eb6756d"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-08/eeg/sub-08_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-08/eeg/sub-08_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 314222216,
+      "checksum": "sha256:65872b77a82ccc2babf7b94a2bf48137e156102e3287cf25a72b86f8b5712e94",
+      "git_blob_sha1": "b431125e2d328b6c2140fb5f4805f9477d34426c",
+      "git_annex_pointer": "../../.git/annex/objects/kz/zQ/SHA256E-s314222216--65872b77a82ccc2babf7b94a2bf48137e156102e3287cf25a72b86f8b5712e94.edf/SHA256E-s314222216--65872b77a82ccc2babf7b94a2bf48137e156102e3287cf25a72b86f8b5712e94.edf",
+      "sha256": "65872b77a82ccc2babf7b94a2bf48137e156102e3287cf25a72b86f8b5712e94"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-08/eeg/sub-08_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-08/eeg/sub-08_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-08/eeg/sub-08_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-08/eeg/sub-08_task-sleep_acq-PSG_events.tsv",
+      "bytes": 10311,
+      "checksum": "sha256:25b3897d9ea4c7a323892c495b4ef0991b9030426dffda7cc24206e391f2b995",
+      "sha256": "25b3897d9ea4c7a323892c495b4ef0991b9030426dffda7cc24206e391f2b995",
+      "git_blob_sha1": "07518467b1236a8ab1d6e3bf2aa5b22447c4753b"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-09/eeg/sub-09_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-09/eeg/sub-09_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 422143016,
+      "checksum": "sha256:f3bc53c47a0984dffe0eaa2808706113af87961cf5c4f94e2274bf925544d312",
+      "git_blob_sha1": "2405feb9df67e1aeb9142535058b0edb1302711a",
+      "git_annex_pointer": "../../.git/annex/objects/p3/7Q/SHA256E-s422143016--f3bc53c47a0984dffe0eaa2808706113af87961cf5c4f94e2274bf925544d312.edf/SHA256E-s422143016--f3bc53c47a0984dffe0eaa2808706113af87961cf5c4f94e2274bf925544d312.edf",
+      "sha256": "f3bc53c47a0984dffe0eaa2808706113af87961cf5c4f94e2274bf925544d312"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-09/eeg/sub-09_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-09/eeg/sub-09_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-09/eeg/sub-09_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-09/eeg/sub-09_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13987,
+      "checksum": "sha256:5a2bce0c9c80128ac996083c174d74bdc9fa53a99a3fad204ed03103acc7df28",
+      "sha256": "5a2bce0c9c80128ac996083c174d74bdc9fa53a99a3fad204ed03103acc7df28",
+      "git_blob_sha1": "9dd6a930b1e8bd9fea1bb04046510f1df1d363f2"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-10/eeg/sub-10_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-10/eeg/sub-10_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 339957176,
+      "checksum": "sha256:f56a5207ff1da32a8bd2465383ce66a3553c523fa8298871c6d1a796407c545b",
+      "git_blob_sha1": "a53bec6340b5188e42f1b51cd4563aa5ace03035",
+      "git_annex_pointer": "../../.git/annex/objects/kv/Kv/SHA256E-s339957176--f56a5207ff1da32a8bd2465383ce66a3553c523fa8298871c6d1a796407c545b.edf/SHA256E-s339957176--f56a5207ff1da32a8bd2465383ce66a3553c523fa8298871c6d1a796407c545b.edf",
+      "sha256": "f56a5207ff1da32a8bd2465383ce66a3553c523fa8298871c6d1a796407c545b"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-10/eeg/sub-10_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-10/eeg/sub-10_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-10/eeg/sub-10_task-sleep_acq-PSG_events.tsv",
+      "bytes": 11175,
+      "checksum": "sha256:15aaa1e88c124f5705d4c6ec0433f23bc62e09d622032683de13b8c018506b17",
+      "sha256": "15aaa1e88c124f5705d4c6ec0433f23bc62e09d622032683de13b8c018506b17",
+      "git_blob_sha1": "4bafcf72e70beae7304f3284921e4e9fb259968a"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-11/eeg/sub-11_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-11/eeg/sub-11_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 361541336,
+      "checksum": "sha256:fe5b14823ab3ecf9042418bfd0f68168563679ea2100997c16d7c0ff279a0b6e",
+      "git_blob_sha1": "9e8a040816245eea879b20d7dcd2d635c9766404",
+      "git_annex_pointer": "../../.git/annex/objects/20/q0/SHA256E-s361541336--fe5b14823ab3ecf9042418bfd0f68168563679ea2100997c16d7c0ff279a0b6e.edf/SHA256E-s361541336--fe5b14823ab3ecf9042418bfd0f68168563679ea2100997c16d7c0ff279a0b6e.edf",
+      "sha256": "fe5b14823ab3ecf9042418bfd0f68168563679ea2100997c16d7c0ff279a0b6e"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-11/eeg/sub-11_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-11/eeg/sub-11_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-11/eeg/sub-11_task-sleep_acq-PSG_events.tsv",
+      "bytes": 11934,
+      "checksum": "sha256:2432715707c8fb4742f25091c4953f8003c134458a7062c3f502a135e6a42ffd",
+      "sha256": "2432715707c8fb4742f25091c4953f8003c134458a7062c3f502a135e6a42ffd",
+      "git_blob_sha1": "1f20c14e0006808a24ed308662ff37acdbac8823"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-12/eeg/sub-12_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-12/eeg/sub-12_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 336221456,
+      "checksum": "sha256:a604031ee9f9f48b8b348536da35266fb1dbd89f56a56a7ad3490bdfc05627a2",
+      "git_blob_sha1": "8ea41d7feee4d533d20b55e591a312ebc16e758c",
+      "git_annex_pointer": "../../.git/annex/objects/Kk/11/SHA256E-s336221456--a604031ee9f9f48b8b348536da35266fb1dbd89f56a56a7ad3490bdfc05627a2.edf/SHA256E-s336221456--a604031ee9f9f48b8b348536da35266fb1dbd89f56a56a7ad3490bdfc05627a2.edf",
+      "sha256": "a604031ee9f9f48b8b348536da35266fb1dbd89f56a56a7ad3490bdfc05627a2"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-12/eeg/sub-12_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-12/eeg/sub-12_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-12/eeg/sub-12_task-sleep_acq-PSG_events.tsv",
+      "bytes": 10974,
+      "checksum": "sha256:6ed78359b15a415fbca63264d8cf8b22dc2b543bb91cd95c20efb191dae18052",
+      "sha256": "6ed78359b15a415fbca63264d8cf8b22dc2b543bb91cd95c20efb191dae18052",
+      "git_blob_sha1": "ba577ea7dfa3f4331b4f96f8edf9746da33c87af"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-13/eeg/sub-13_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-13/eeg/sub-13_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 456594656,
+      "checksum": "sha256:bbdc001a5e223011e7b4a845d6370a60a5b9e16e394dc27d74a9e28ad7d8c287",
+      "git_blob_sha1": "84fa8a606ae2ccb543411282baf7da8dbafa1540",
+      "git_annex_pointer": "../../.git/annex/objects/7K/8x/SHA256E-s456594656--bbdc001a5e223011e7b4a845d6370a60a5b9e16e394dc27d74a9e28ad7d8c287.edf/SHA256E-s456594656--bbdc001a5e223011e7b4a845d6370a60a5b9e16e394dc27d74a9e28ad7d8c287.edf",
+      "sha256": "bbdc001a5e223011e7b4a845d6370a60a5b9e16e394dc27d74a9e28ad7d8c287"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-13/eeg/sub-13_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-13/eeg/sub-13_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-13/eeg/sub-13_task-sleep_acq-PSG_events.tsv",
+      "bytes": 15074,
+      "checksum": "sha256:1e099ac2a5d7754f2814ecbedeb3032c79b382b5cd902bf9e73b24315257e93a",
+      "sha256": "1e099ac2a5d7754f2814ecbedeb3032c79b382b5cd902bf9e73b24315257e93a",
+      "git_blob_sha1": "e5e1e41893e7333fc1c44c159ccfe59418ed978a"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-14/eeg/sub-14_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-14/eeg/sub-14_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 329165096,
+      "checksum": "sha256:76a07dce5e0b7e2c0fc87fa2ace3430b96dec7de656b282ccdf3267f30a3f646",
+      "git_blob_sha1": "485880b7dd01e0eaf0227fd9af60d2e8a9f9af27",
+      "git_annex_pointer": "../../.git/annex/objects/x0/zG/SHA256E-s329165096--76a07dce5e0b7e2c0fc87fa2ace3430b96dec7de656b282ccdf3267f30a3f646.edf/SHA256E-s329165096--76a07dce5e0b7e2c0fc87fa2ace3430b96dec7de656b282ccdf3267f30a3f646.edf",
+      "sha256": "76a07dce5e0b7e2c0fc87fa2ace3430b96dec7de656b282ccdf3267f30a3f646"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-14/eeg/sub-14_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-14/eeg/sub-14_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-14/eeg/sub-14_task-sleep_acq-PSG_events.tsv",
+      "bytes": 10863,
+      "checksum": "sha256:1acc7bf654c27081b1df69c9d86d0352a161f5036a86124d42a4651aec20caf8",
+      "sha256": "1acc7bf654c27081b1df69c9d86d0352a161f5036a86124d42a4651aec20caf8",
+      "git_blob_sha1": "3778fd4333c8f84e8c79027826bfdc37ffa26d1e"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-15/eeg/sub-15_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-15/eeg/sub-15_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 397238216,
+      "checksum": "sha256:c97afa85577e5ead21e83646db29ae12f52e5b79a28d495ada50ffc0083441b7",
+      "git_blob_sha1": "8f49491867bab16c789190b902833859256ba53f",
+      "git_annex_pointer": "../../.git/annex/objects/K2/Ww/SHA256E-s397238216--c97afa85577e5ead21e83646db29ae12f52e5b79a28d495ada50ffc0083441b7.edf/SHA256E-s397238216--c97afa85577e5ead21e83646db29ae12f52e5b79a28d495ada50ffc0083441b7.edf",
+      "sha256": "c97afa85577e5ead21e83646db29ae12f52e5b79a28d495ada50ffc0083441b7"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-15/eeg/sub-15_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-15/eeg/sub-15_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-15/eeg/sub-15_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13071,
+      "checksum": "sha256:dec1751f8eba34480311e21f1e06f4446bec0d9d081dbe268eb7cbf2cc0b094e",
+      "sha256": "dec1751f8eba34480311e21f1e06f4446bec0d9d081dbe268eb7cbf2cc0b094e",
+      "git_blob_sha1": "de86f532b7a7e5c41f7b54f7b0ce585556329fdf"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-16/eeg/sub-16_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-16/eeg/sub-16_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 400973936,
+      "checksum": "sha256:0041c32166067c3b9152376e3e24002d603757d41e4616a4e2d52e1a12cab0b2",
+      "git_blob_sha1": "ad22563edb09be9df9451c57504e94dbc9d5f5f4",
+      "git_annex_pointer": "../../.git/annex/objects/fV/XF/SHA256E-s400973936--0041c32166067c3b9152376e3e24002d603757d41e4616a4e2d52e1a12cab0b2.edf/SHA256E-s400973936--0041c32166067c3b9152376e3e24002d603757d41e4616a4e2d52e1a12cab0b2.edf",
+      "sha256": "0041c32166067c3b9152376e3e24002d603757d41e4616a4e2d52e1a12cab0b2"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-16/eeg/sub-16_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-16/eeg/sub-16_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-16/eeg/sub-16_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13292,
+      "checksum": "sha256:db1f453d634cfed35e288d268925959447d3fde33c33464258de81aa2698bb1c",
+      "sha256": "db1f453d634cfed35e288d268925959447d3fde33c33464258de81aa2698bb1c",
+      "git_blob_sha1": "965b5c9323ff363b8b54036f51bd31430d31ed15"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-17/eeg/sub-17_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-17/eeg/sub-17_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 374823896,
+      "checksum": "sha256:ff77a6c02bade7c7f8db0e4afe04156d3c5357f2b7dd1b6a8dbd2098fc6fbfb7",
+      "git_blob_sha1": "83b64db547d43380fd8d75f9fc71f4b2cc79e9ba",
+      "git_annex_pointer": "../../.git/annex/objects/xj/jX/SHA256E-s374823896--ff77a6c02bade7c7f8db0e4afe04156d3c5357f2b7dd1b6a8dbd2098fc6fbfb7.edf/SHA256E-s374823896--ff77a6c02bade7c7f8db0e4afe04156d3c5357f2b7dd1b6a8dbd2098fc6fbfb7.edf",
+      "sha256": "ff77a6c02bade7c7f8db0e4afe04156d3c5357f2b7dd1b6a8dbd2098fc6fbfb7"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-17/eeg/sub-17_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-17/eeg/sub-17_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-17/eeg/sub-17_task-sleep_acq-PSG_events.tsv",
+      "bytes": 12439,
+      "checksum": "sha256:4ea25873d21888ab0b91cee06af52e8e06be14385a2467e589a82b169e79b759",
+      "sha256": "4ea25873d21888ab0b91cee06af52e8e06be14385a2467e589a82b169e79b759",
+      "git_blob_sha1": "e266017567bfe3b8832ca88f6869818da72d135a"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-18/eeg/sub-18_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-18/eeg/sub-18_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 431274776,
+      "checksum": "sha256:ba193df3c43db14ab2f291e4f5e8744642ac574a503cb2b5f75b9bbe8b79b19b",
+      "git_blob_sha1": "09d5c8cae33673a3950ad2a53ff2bfffebefdf6f",
+      "git_annex_pointer": "../../.git/annex/objects/wk/QV/SHA256E-s431274776--ba193df3c43db14ab2f291e4f5e8744642ac574a503cb2b5f75b9bbe8b79b19b.edf/SHA256E-s431274776--ba193df3c43db14ab2f291e4f5e8744642ac574a503cb2b5f75b9bbe8b79b19b.edf",
+      "sha256": "ba193df3c43db14ab2f291e4f5e8744642ac574a503cb2b5f75b9bbe8b79b19b"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-18/eeg/sub-18_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-18/eeg/sub-18_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-18/eeg/sub-18_task-sleep_acq-PSG_events.tsv",
+      "bytes": 14060,
+      "checksum": "sha256:8ea278b61a8703f3040dc9b614d221718e1d40354ccbbca4b033214a38b9c43b",
+      "sha256": "8ea278b61a8703f3040dc9b614d221718e1d40354ccbbca4b033214a38b9c43b",
+      "git_blob_sha1": "b26b22167489a0acf7fc5901b1feaf5882a85a4e"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-19/eeg/sub-19_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-19/eeg/sub-19_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 351164336,
+      "checksum": "sha256:3ca15479f3dae1699d2ce44a6725ad8ed043d74fa9e22ff466960d82d2a40865",
+      "git_blob_sha1": "9024630746863c2b9d6b8c0a60f13a3440e4d205",
+      "git_annex_pointer": "../../.git/annex/objects/Wz/P3/SHA256E-s351164336--3ca15479f3dae1699d2ce44a6725ad8ed043d74fa9e22ff466960d82d2a40865.edf/SHA256E-s351164336--3ca15479f3dae1699d2ce44a6725ad8ed043d74fa9e22ff466960d82d2a40865.edf",
+      "sha256": "3ca15479f3dae1699d2ce44a6725ad8ed043d74fa9e22ff466960d82d2a40865"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-19/eeg/sub-19_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-19/eeg/sub-19_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-19/eeg/sub-19_task-sleep_acq-PSG_events.tsv",
+      "bytes": 11642,
+      "checksum": "sha256:78bf6c82a244f7e9460cf9b2146d752536fc1f637f03686ba4b57c8ce34c92f1",
+      "sha256": "78bf6c82a244f7e9460cf9b2146d752536fc1f637f03686ba4b57c8ce34c92f1",
+      "git_blob_sha1": "e2fbaab8787ada8606e350f533861b9e4d981929"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-20/eeg/sub-20_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-20/eeg/sub-20_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 350334176,
+      "checksum": "sha256:887f0516c3ec8b0cf46e96c8ebbce6d0a6b772818fd027889917668b12d80630",
+      "git_blob_sha1": "c939bd50ef593234d65e4f4304554936c1662770",
+      "git_annex_pointer": "../../.git/annex/objects/Vz/GX/SHA256E-s350334176--887f0516c3ec8b0cf46e96c8ebbce6d0a6b772818fd027889917668b12d80630.edf/SHA256E-s350334176--887f0516c3ec8b0cf46e96c8ebbce6d0a6b772818fd027889917668b12d80630.edf",
+      "sha256": "887f0516c3ec8b0cf46e96c8ebbce6d0a6b772818fd027889917668b12d80630"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-20/eeg/sub-20_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-20/eeg/sub-20_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-20/eeg/sub-20_task-sleep_acq-PSG_events.tsv",
+      "bytes": 11695,
+      "checksum": "sha256:fcab3fa3d21f7e8942c71cb04b0f2f7ae47afc92f56d26a9b0eaea9810082040",
+      "sha256": "fcab3fa3d21f7e8942c71cb04b0f2f7ae47afc92f56d26a9b0eaea9810082040",
+      "git_blob_sha1": "64719d8dae348c37c83f34979af4662c0094e922"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-21/eeg/sub-21_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-21/eeg/sub-21_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 399313616,
+      "checksum": "sha256:5bc353855150fcde10e30512b4f717502a7b99698a14aec1705a70f3bae9dad6",
+      "git_blob_sha1": "462edeb1fb5368c025973175c6ef6479f5dd5715",
+      "git_annex_pointer": "../../.git/annex/objects/PJ/6Z/SHA256E-s399313616--5bc353855150fcde10e30512b4f717502a7b99698a14aec1705a70f3bae9dad6.edf/SHA256E-s399313616--5bc353855150fcde10e30512b4f717502a7b99698a14aec1705a70f3bae9dad6.edf",
+      "sha256": "5bc353855150fcde10e30512b4f717502a7b99698a14aec1705a70f3bae9dad6"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-21/eeg/sub-21_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-21/eeg/sub-21_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-21/eeg/sub-21_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13129,
+      "checksum": "sha256:7392432589016c8fbcb40c96c3bd4201af657cd45a4412cf947fb9ac624cd6bc",
+      "sha256": "7392432589016c8fbcb40c96c3bd4201af657cd45a4412cf947fb9ac624cd6bc",
+      "git_blob_sha1": "03826b8f1fb0cff8438979f515f734114cee71b8"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-22/eeg/sub-22_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-22/eeg/sub-22_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 365692136,
+      "checksum": "sha256:666ddf79a60196837eb558e2696eae4bd2c0fc65cea83a8edee7d9ce94e378ea",
+      "git_blob_sha1": "bed6e00cdfd06e00fc83e5d89c6cb1ea838b50f6",
+      "git_annex_pointer": "../../.git/annex/objects/3X/Z8/SHA256E-s365692136--666ddf79a60196837eb558e2696eae4bd2c0fc65cea83a8edee7d9ce94e378ea.edf/SHA256E-s365692136--666ddf79a60196837eb558e2696eae4bd2c0fc65cea83a8edee7d9ce94e378ea.edf",
+      "sha256": "666ddf79a60196837eb558e2696eae4bd2c0fc65cea83a8edee7d9ce94e378ea"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-22/eeg/sub-22_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-22/eeg/sub-22_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-22/eeg/sub-22_task-sleep_acq-PSG_events.tsv",
+      "bytes": 12138,
+      "checksum": "sha256:03f983e7774de62449c4e540557adce13dede36d0cc671f421235bbe00d7d5e7",
+      "sha256": "03f983e7774de62449c4e540557adce13dede36d0cc671f421235bbe00d7d5e7",
+      "git_blob_sha1": "b6b379c6155abee8c113dce5175c9883d39d15e2"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-23/eeg/sub-23_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-23/eeg/sub-23_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 392257256,
+      "checksum": "sha256:967eeff4f7b9c27bb63b7de8ac5149c5166a27e0c105b66a22a6842757991df1",
+      "git_blob_sha1": "c2dc52129bce1782877905c1505fa4a37870387a",
+      "git_annex_pointer": "../../.git/annex/objects/64/pJ/SHA256E-s392257256--967eeff4f7b9c27bb63b7de8ac5149c5166a27e0c105b66a22a6842757991df1.edf/SHA256E-s392257256--967eeff4f7b9c27bb63b7de8ac5149c5166a27e0c105b66a22a6842757991df1.edf",
+      "sha256": "967eeff4f7b9c27bb63b7de8ac5149c5166a27e0c105b66a22a6842757991df1"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-23/eeg/sub-23_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-23/eeg/sub-23_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-23/eeg/sub-23_task-sleep_acq-PSG_events.tsv",
+      "bytes": 12693,
+      "checksum": "sha256:d410434ec2097b15f7be98b2a7bb1a2ed6e6a5aaa6bb3a0bd5e6b6b927d6336f",
+      "sha256": "d410434ec2097b15f7be98b2a7bb1a2ed6e6a5aaa6bb3a0bd5e6b6b927d6336f",
+      "git_blob_sha1": "cde0dd3c32099a229908b74409a54e8c87532f3c"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-24/eeg/sub-24_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-24/eeg/sub-24_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 325429376,
+      "checksum": "sha256:097eadf1a0d0fbbdd559eb306fd5e21bf2bb980be988e5612ed6d9d80d80a618",
+      "git_blob_sha1": "aad584678ac0b83c1ba72decd959e8cedb8b49da",
+      "git_annex_pointer": "../../.git/annex/objects/57/jP/SHA256E-s325429376--097eadf1a0d0fbbdd559eb306fd5e21bf2bb980be988e5612ed6d9d80d80a618.edf/SHA256E-s325429376--097eadf1a0d0fbbdd559eb306fd5e21bf2bb980be988e5612ed6d9d80d80a618.edf",
+      "sha256": "097eadf1a0d0fbbdd559eb306fd5e21bf2bb980be988e5612ed6d9d80d80a618"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-24/eeg/sub-24_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-24/eeg/sub-24_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-24/eeg/sub-24_task-sleep_acq-PSG_events.tsv",
+      "bytes": 10697,
+      "checksum": "sha256:bb3b485abe9a88c4f74b53b1d287dc3a1ea2d003e96157e50ffa141b3b353686",
+      "sha256": "bb3b485abe9a88c4f74b53b1d287dc3a1ea2d003e96157e50ffa141b3b353686",
+      "git_blob_sha1": "f01582c6809cb6ad15a433c5837b8b4749097e63"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-25/eeg/sub-25_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-25/eeg/sub-25_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 387276296,
+      "checksum": "sha256:cc8711468a82452c87c9cf7cd934523581acf4a9270dc585e06de3ee856bf88f",
+      "git_blob_sha1": "8891bb12d084ecf5e3bdcb23934cf14cd5956209",
+      "git_annex_pointer": "../../.git/annex/objects/qw/fg/SHA256E-s387276296--cc8711468a82452c87c9cf7cd934523581acf4a9270dc585e06de3ee856bf88f.edf/SHA256E-s387276296--cc8711468a82452c87c9cf7cd934523581acf4a9270dc585e06de3ee856bf88f.edf",
+      "sha256": "cc8711468a82452c87c9cf7cd934523581acf4a9270dc585e06de3ee856bf88f"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-25/eeg/sub-25_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-25/eeg/sub-25_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-25/eeg/sub-25_task-sleep_acq-PSG_events.tsv",
+      "bytes": 12820,
+      "checksum": "sha256:a52af9840598c180a264371928dbe7350e7b82aef5b918279ec54adc312713cb",
+      "sha256": "a52af9840598c180a264371928dbe7350e7b82aef5b918279ec54adc312713cb",
+      "git_blob_sha1": "9a105200dd0bcaf45c911bdb075d494fcd900f0f"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-26/eeg/sub-26_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-26/eeg/sub-26_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 403879496,
+      "checksum": "sha256:1218686371c5ec8727cc3699b8f5539667e1ae0a47174dd5ac427bb380ed32af",
+      "git_blob_sha1": "2cefd164c9abe8fdaf13702ae7e1bdc3051d1c9a",
+      "git_annex_pointer": "../../.git/annex/objects/Xx/4G/SHA256E-s403879496--1218686371c5ec8727cc3699b8f5539667e1ae0a47174dd5ac427bb380ed32af.edf/SHA256E-s403879496--1218686371c5ec8727cc3699b8f5539667e1ae0a47174dd5ac427bb380ed32af.edf",
+      "sha256": "1218686371c5ec8727cc3699b8f5539667e1ae0a47174dd5ac427bb380ed32af"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-26/eeg/sub-26_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-26/eeg/sub-26_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-26/eeg/sub-26_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13343,
+      "checksum": "sha256:be946d91f7616e9e016048e95a15e1dfb2303dc2a4637ed3c14387c334d2fcfe",
+      "sha256": "be946d91f7616e9e016048e95a15e1dfb2303dc2a4637ed3c14387c334d2fcfe",
+      "git_blob_sha1": "3cc278fa0425dd37ba2977a60704b3770d6b3f66"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-27/eeg/sub-27_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-27/eeg/sub-27_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 357805616,
+      "checksum": "sha256:42bc35b19e0d64832d6d114dd0340a1d18618827a9f19af3d261c7111107145e",
+      "git_blob_sha1": "5952302af8a0e967bb99a295c3556a1300b3fbaf",
+      "git_annex_pointer": "../../.git/annex/objects/kX/gV/SHA256E-s357805616--42bc35b19e0d64832d6d114dd0340a1d18618827a9f19af3d261c7111107145e.edf/SHA256E-s357805616--42bc35b19e0d64832d6d114dd0340a1d18618827a9f19af3d261c7111107145e.edf",
+      "sha256": "42bc35b19e0d64832d6d114dd0340a1d18618827a9f19af3d261c7111107145e"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-27/eeg/sub-27_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-27/eeg/sub-27_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-27/eeg/sub-27_task-sleep_acq-PSG_events.tsv",
+      "bytes": 11809,
+      "checksum": "sha256:03dbba034b6df3b4f36e65e4335f650b48d6fefd265d438c7aacb8abd61db2b5",
+      "sha256": "03dbba034b6df3b4f36e65e4335f650b48d6fefd265d438c7aacb8abd61db2b5",
+      "git_blob_sha1": "9eca61a053eeca92217728f79d9e099a432ced36"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-28/eeg/sub-28_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-28/eeg/sub-28_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 415086656,
+      "checksum": "sha256:5e0b86d43568308406df1d09e13a0f9dba5c55630d7b8f4a0a736263d5e9cb5f",
+      "git_blob_sha1": "4258930ea507cb4c1eb9b20078c3146f3672f8de",
+      "git_annex_pointer": "../../.git/annex/objects/XW/gk/SHA256E-s415086656--5e0b86d43568308406df1d09e13a0f9dba5c55630d7b8f4a0a736263d5e9cb5f.edf/SHA256E-s415086656--5e0b86d43568308406df1d09e13a0f9dba5c55630d7b8f4a0a736263d5e9cb5f.edf",
+      "sha256": "5e0b86d43568308406df1d09e13a0f9dba5c55630d7b8f4a0a736263d5e9cb5f"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-28/eeg/sub-28_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-28/eeg/sub-28_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-28/eeg/sub-28_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13638,
+      "checksum": "sha256:975dfeff11f35ffe1ab71036f1a8968e7ea652fd4663655b29f4b204f07a893b",
+      "sha256": "975dfeff11f35ffe1ab71036f1a8968e7ea652fd4663655b29f4b204f07a893b",
+      "git_blob_sha1": "5e344bef9e9dd1419d8913d3fe3bf9032b15dcf1"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-29/eeg/sub-29_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-29/eeg/sub-29_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 420911612,
+      "checksum": "sha256:d9cc4d199cca3323be5fe9f503b1b6381a9a49ae1c800337dc1c9a44f54991bd",
+      "git_blob_sha1": "68c635a94d881d05ada612cb35a409fd2dff307f",
+      "git_annex_pointer": "../../.git/annex/objects/9k/PZ/SHA256E-s420911612--d9cc4d199cca3323be5fe9f503b1b6381a9a49ae1c800337dc1c9a44f54991bd.edf/SHA256E-s420911612--d9cc4d199cca3323be5fe9f503b1b6381a9a49ae1c800337dc1c9a44f54991bd.edf",
+      "sha256": "d9cc4d199cca3323be5fe9f503b1b6381a9a49ae1c800337dc1c9a44f54991bd"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-29/eeg/sub-29_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-29/eeg/sub-29_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-29/eeg/sub-29_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13649,
+      "checksum": "sha256:f1c10f2a7d3da0c99f36cd12b7f5a406f72a097acedc6d63d833c57b1d3409a8",
+      "sha256": "f1c10f2a7d3da0c99f36cd12b7f5a406f72a097acedc6d63d833c57b1d3409a8",
+      "git_blob_sha1": "77dab7ccb7572f2ee778674900794cc46b7c6bff"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-30/eeg/sub-30_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-30/eeg/sub-30_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 376069136,
+      "checksum": "sha256:950486954489c5bf0474fe2850ef57cda2f2c6fdc405bca81369a91e7224645e",
+      "git_blob_sha1": "818c6986b00cce48d84c22b71769e385a7c5b734",
+      "git_annex_pointer": "../../.git/annex/objects/gP/31/SHA256E-s376069136--950486954489c5bf0474fe2850ef57cda2f2c6fdc405bca81369a91e7224645e.edf/SHA256E-s376069136--950486954489c5bf0474fe2850ef57cda2f2c6fdc405bca81369a91e7224645e.edf",
+      "sha256": "950486954489c5bf0474fe2850ef57cda2f2c6fdc405bca81369a91e7224645e"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-30/eeg/sub-30_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-30/eeg/sub-30_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-30/eeg/sub-30_task-sleep_acq-PSG_events.tsv",
+      "bytes": 12472,
+      "checksum": "sha256:a4190165199593fe820888ca053232e2604d3808276fd65402dd846de6e039ba",
+      "sha256": "a4190165199593fe820888ca053232e2604d3808276fd65402dd846de6e039ba",
+      "git_blob_sha1": "77dc6e163425869699910fbf8b023ef660ec694d"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-31/eeg/sub-31_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-31/eeg/sub-31_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 412181096,
+      "checksum": "sha256:6d14d5cd930571c7e9b0f9c4f5897cce8082fba275c73f5eb6a5724d38e60256",
+      "git_blob_sha1": "4aa0280f6ebdf81b07ab2920e743bb071a4cc92a",
+      "git_annex_pointer": "../../.git/annex/objects/9K/qz/SHA256E-s412181096--6d14d5cd930571c7e9b0f9c4f5897cce8082fba275c73f5eb6a5724d38e60256.edf/SHA256E-s412181096--6d14d5cd930571c7e9b0f9c4f5897cce8082fba275c73f5eb6a5724d38e60256.edf",
+      "sha256": "6d14d5cd930571c7e9b0f9c4f5897cce8082fba275c73f5eb6a5724d38e60256"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-31/eeg/sub-31_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-31/eeg/sub-31_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-31/eeg/sub-31_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13673,
+      "checksum": "sha256:e4c356221959c9a7b1361f4007c774c68a0d3de3f4b75b6e89d6140dd9903ddb",
+      "sha256": "e4c356221959c9a7b1361f4007c774c68a0d3de3f4b75b6e89d6140dd9903ddb",
+      "git_blob_sha1": "61c2d9fc735f2420203646c44d60346cb93ee214"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-32/eeg/sub-32_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-32/eeg/sub-32_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 372748496,
+      "checksum": "sha256:d763b8b197e8bf34eabefc0c85aee488dfeaceb34e5b0b3ead38c52ccf143fd8",
+      "git_blob_sha1": "04bf60c90e8f94f9e3d240a759b71003ec5b955f",
+      "git_annex_pointer": "../../.git/annex/objects/vp/Px/SHA256E-s372748496--d763b8b197e8bf34eabefc0c85aee488dfeaceb34e5b0b3ead38c52ccf143fd8.edf/SHA256E-s372748496--d763b8b197e8bf34eabefc0c85aee488dfeaceb34e5b0b3ead38c52ccf143fd8.edf",
+      "sha256": "d763b8b197e8bf34eabefc0c85aee488dfeaceb34e5b0b3ead38c52ccf143fd8"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-32/eeg/sub-32_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-32/eeg/sub-32_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-32/eeg/sub-32_task-sleep_acq-PSG_events.tsv",
+      "bytes": 12299,
+      "checksum": "sha256:f2c5e2cb62f278c562aee98f96daf9dd5b024b1e530cbda02e86c5b6a4d35938",
+      "sha256": "f2c5e2cb62f278c562aee98f96daf9dd5b024b1e530cbda02e86c5b6a4d35938",
+      "git_blob_sha1": "9ddbf388feadb9446f4dbfd955ffb969e5e3cf12"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-33/eeg/sub-33_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-33/eeg/sub-33_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 394747736,
+      "checksum": "sha256:b42c48a8ca9dcc9e54f064e48f25c04060657d32d3728568546f167bb564d466",
+      "git_blob_sha1": "411a215fbcce72ac8ad76859dfd33df1ec516909",
+      "git_annex_pointer": "../../.git/annex/objects/KP/Jz/SHA256E-s394747736--b42c48a8ca9dcc9e54f064e48f25c04060657d32d3728568546f167bb564d466.edf/SHA256E-s394747736--b42c48a8ca9dcc9e54f064e48f25c04060657d32d3728568546f167bb564d466.edf",
+      "sha256": "b42c48a8ca9dcc9e54f064e48f25c04060657d32d3728568546f167bb564d466"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-33/eeg/sub-33_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-33/eeg/sub-33_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-33/eeg/sub-33_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13156,
+      "checksum": "sha256:8f9aacd503bb76719dfd8ba2aaa729483e261183e8ab7e39144f888151fe31fd",
+      "sha256": "8f9aacd503bb76719dfd8ba2aaa729483e261183e8ab7e39144f888151fe31fd",
+      "git_blob_sha1": "cddda30c7251f076d8a4b1706cb8b316c8841c5d"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-34/eeg/sub-34_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-34/eeg/sub-34_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 324599216,
+      "checksum": "sha256:5c9ef4162e8f4306c36b3bbb1a665285fd4deade11e6d6ed7d9066432d740ddc",
+      "git_blob_sha1": "b42b21193395ff9f80584a208ccd53df60aad0ea",
+      "git_annex_pointer": "../../.git/annex/objects/74/P8/SHA256E-s324599216--5c9ef4162e8f4306c36b3bbb1a665285fd4deade11e6d6ed7d9066432d740ddc.edf/SHA256E-s324599216--5c9ef4162e8f4306c36b3bbb1a665285fd4deade11e6d6ed7d9066432d740ddc.edf",
+      "sha256": "5c9ef4162e8f4306c36b3bbb1a665285fd4deade11e6d6ed7d9066432d740ddc"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-34/eeg/sub-34_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-34/eeg/sub-34_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-34/eeg/sub-34_task-sleep_acq-PSG_events.tsv",
+      "bytes": 10702,
+      "checksum": "sha256:6f67979222ad24dbbf30ab7772bde4206fdb085fde73d83e87084f1be3af8765",
+      "sha256": "6f67979222ad24dbbf30ab7772bde4206fdb085fde73d83e87084f1be3af8765",
+      "git_blob_sha1": "b0ea94d4e4fd36c737280d4bba400dfc7909d01f"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-35/eeg/sub-35_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-35/eeg/sub-35_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 421312856,
+      "checksum": "sha256:44c924dd7d483cc850579c6a1ad8ea03dbf98d80575ae3804728897a7a96c991",
+      "git_blob_sha1": "15e4fc25b4f2265b37daeefe5c3c5992954c3bed",
+      "git_annex_pointer": "../../.git/annex/objects/4k/gf/SHA256E-s421312856--44c924dd7d483cc850579c6a1ad8ea03dbf98d80575ae3804728897a7a96c991.edf/SHA256E-s421312856--44c924dd7d483cc850579c6a1ad8ea03dbf98d80575ae3804728897a7a96c991.edf",
+      "sha256": "44c924dd7d483cc850579c6a1ad8ea03dbf98d80575ae3804728897a7a96c991"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-35/eeg/sub-35_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-35/eeg/sub-35_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-35/eeg/sub-35_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13878,
+      "checksum": "sha256:037def7bb3b8912b52e9bdf2edfeb9a81ad8b30e2afd7a61e842c93d21f13408",
+      "sha256": "037def7bb3b8912b52e9bdf2edfeb9a81ad8b30e2afd7a61e842c93d21f13408",
+      "git_blob_sha1": "64add7d3f6c9b28ff3d178e07d2292855b1054f3"
+    },
+    {
+      "name": "sub-36/eeg/sub-36_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-36/eeg/sub-36_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-36/eeg/sub-36_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-36/eeg/sub-36_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 452858936,
+      "checksum": "sha256:af032107071fffc02505d47c427b7dc42732f17695f6f5ee085f47ae04147f98",
+      "git_blob_sha1": "f321787ed11d062f0fac7f0d90a38d5b61d9af79",
+      "git_annex_pointer": "../../.git/annex/objects/PJ/K1/SHA256E-s452858936--af032107071fffc02505d47c427b7dc42732f17695f6f5ee085f47ae04147f98.edf/SHA256E-s452858936--af032107071fffc02505d47c427b7dc42732f17695f6f5ee085f47ae04147f98.edf",
+      "sha256": "af032107071fffc02505d47c427b7dc42732f17695f6f5ee085f47ae04147f98"
+    },
+    {
+      "name": "sub-36/eeg/sub-36_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-36/eeg/sub-36_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-36/eeg/sub-36_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-36/eeg/sub-36_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-36/eeg/sub-36_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-36/eeg/sub-36_task-sleep_acq-PSG_events.tsv",
+      "bytes": 14942,
+      "checksum": "sha256:18c65fcd08c52537dd1e0e72edaf95b332881e9bdf1ecf4e9a2e3929fd4830c4",
+      "sha256": "18c65fcd08c52537dd1e0e72edaf95b332881e9bdf1ecf4e9a2e3929fd4830c4",
+      "git_blob_sha1": "19bd65e3cc2edf8d4dcba6b1e0b662c8a871d3ec"
+    },
+    {
+      "name": "sub-37/eeg/sub-37_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-37/eeg/sub-37_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-37/eeg/sub-37_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-37/eeg/sub-37_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 399313616,
+      "checksum": "sha256:4f4c21e3c463a3ae7d6fb97583f75a3fc2754685731c4846db37c614c4d5b577",
+      "git_blob_sha1": "d358225d5a2dae4579932c4f565097037b39181c",
+      "git_annex_pointer": "../../.git/annex/objects/4v/j2/SHA256E-s399313616--4f4c21e3c463a3ae7d6fb97583f75a3fc2754685731c4846db37c614c4d5b577.edf/SHA256E-s399313616--4f4c21e3c463a3ae7d6fb97583f75a3fc2754685731c4846db37c614c4d5b577.edf",
+      "sha256": "4f4c21e3c463a3ae7d6fb97583f75a3fc2754685731c4846db37c614c4d5b577"
+    },
+    {
+      "name": "sub-37/eeg/sub-37_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-37/eeg/sub-37_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-37/eeg/sub-37_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-37/eeg/sub-37_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-37/eeg/sub-37_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-37/eeg/sub-37_task-sleep_acq-PSG_events.tsv",
+      "bytes": 12941,
+      "checksum": "sha256:71e923a2c67368a79f42be95118ee12d784fdad5b01e3d9d45275e65eb3cdb34",
+      "sha256": "71e923a2c67368a79f42be95118ee12d784fdad5b01e3d9d45275e65eb3cdb34",
+      "git_blob_sha1": "90bf0c40cdef444a673487875f5a54ce6ae092c6"
+    },
+    {
+      "name": "sub-40/eeg/sub-40_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-40/eeg/sub-40_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-40/eeg/sub-40_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-40/eeg/sub-40_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 376069136,
+      "checksum": "sha256:7e6c9bef590abe40cc31754d49597db348672b6e717e0024749587fed3f05fc5",
+      "git_blob_sha1": "a7e3958b941a4fd21f735cf94771d6d7e3fca0d2",
+      "git_annex_pointer": "../../.git/annex/objects/Pk/fM/SHA256E-s376069136--7e6c9bef590abe40cc31754d49597db348672b6e717e0024749587fed3f05fc5.edf/SHA256E-s376069136--7e6c9bef590abe40cc31754d49597db348672b6e717e0024749587fed3f05fc5.edf",
+      "sha256": "7e6c9bef590abe40cc31754d49597db348672b6e717e0024749587fed3f05fc5"
+    },
+    {
+      "name": "sub-40/eeg/sub-40_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-40/eeg/sub-40_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-40/eeg/sub-40_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-40/eeg/sub-40_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-40/eeg/sub-40_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-40/eeg/sub-40_task-sleep_acq-PSG_events.tsv",
+      "bytes": 12107,
+      "checksum": "sha256:b99f69459e2fbc19bcffd3657dbb49ff4680781d2f0d86f0700e541c781b119e",
+      "sha256": "b99f69459e2fbc19bcffd3657dbb49ff4680781d2f0d86f0700e541c781b119e",
+      "git_blob_sha1": "72cd3220f79fc49802d6f646409a50d6ce3af824"
+    },
+    {
+      "name": "sub-41/eeg/sub-41_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-41/eeg/sub-41_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-41/eeg/sub-41_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-41/eeg/sub-41_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 339957176,
+      "checksum": "sha256:976c4593166fafec2af7a25041a6acf61b7314b842ec3aae23790987782e0b5e",
+      "git_blob_sha1": "c4d93d6d16675572d97f7c7fdef9564bdd692de0",
+      "git_annex_pointer": "../../.git/annex/objects/41/7w/SHA256E-s339957176--976c4593166fafec2af7a25041a6acf61b7314b842ec3aae23790987782e0b5e.edf/SHA256E-s339957176--976c4593166fafec2af7a25041a6acf61b7314b842ec3aae23790987782e0b5e.edf",
+      "sha256": "976c4593166fafec2af7a25041a6acf61b7314b842ec3aae23790987782e0b5e"
+    },
+    {
+      "name": "sub-41/eeg/sub-41_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-41/eeg/sub-41_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-41/eeg/sub-41_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-41/eeg/sub-41_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-41/eeg/sub-41_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-41/eeg/sub-41_task-sleep_acq-PSG_events.tsv",
+      "bytes": 10987,
+      "checksum": "sha256:d06ef2e7f4f5e4b0dc34ba6c976eea26cd0f8d63fa4b74c54b4a7b7a47aae5c3",
+      "sha256": "d06ef2e7f4f5e4b0dc34ba6c976eea26cd0f8d63fa4b74c54b4a7b7a47aae5c3",
+      "git_blob_sha1": "19d66ce465eb760c17119e748633a0e9c5bd2a2b"
+    },
+    {
+      "name": "sub-42/eeg/sub-42_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-42/eeg/sub-42_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-42/eeg/sub-42_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-42/eeg/sub-42_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 431689856,
+      "checksum": "sha256:592091d88287bade7f84c6bacd25b98bbfad938bd7c1438206824b7e6bc265b8",
+      "git_blob_sha1": "bc37bb4512b7d511beb01c98bc8d1c2daa66bcdc",
+      "git_annex_pointer": "../../.git/annex/objects/1p/7w/SHA256E-s431689856--592091d88287bade7f84c6bacd25b98bbfad938bd7c1438206824b7e6bc265b8.edf/SHA256E-s431689856--592091d88287bade7f84c6bacd25b98bbfad938bd7c1438206824b7e6bc265b8.edf",
+      "sha256": "592091d88287bade7f84c6bacd25b98bbfad938bd7c1438206824b7e6bc265b8"
+    },
+    {
+      "name": "sub-42/eeg/sub-42_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-42/eeg/sub-42_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-42/eeg/sub-42_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-42/eeg/sub-42_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-42/eeg/sub-42_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-42/eeg/sub-42_task-sleep_acq-PSG_events.tsv",
+      "bytes": 14033,
+      "checksum": "sha256:d6315029fa5a02f089645f2c76e78e9ce662fcbd71ee0692c905dc192582f1d9",
+      "sha256": "d6315029fa5a02f089645f2c76e78e9ce662fcbd71ee0692c905dc192582f1d9",
+      "git_blob_sha1": "332a8f9991d7379b36d13a4198039ce24e494936"
+    },
+    {
+      "name": "sub-44/eeg/sub-44_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-44/eeg/sub-44_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-44/eeg/sub-44_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-44/eeg/sub-44_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 312561896,
+      "checksum": "sha256:24fd4e0e16ebfa347d79c023bf1020ee55df94bf94cb0a8e6e2f68f0c627c6c4",
+      "git_blob_sha1": "acc24d984ffa0371bf7a2bec1ae2a29b745efd6d",
+      "git_annex_pointer": "../../.git/annex/objects/vz/z0/SHA256E-s312561896--24fd4e0e16ebfa347d79c023bf1020ee55df94bf94cb0a8e6e2f68f0c627c6c4.edf/SHA256E-s312561896--24fd4e0e16ebfa347d79c023bf1020ee55df94bf94cb0a8e6e2f68f0c627c6c4.edf",
+      "sha256": "24fd4e0e16ebfa347d79c023bf1020ee55df94bf94cb0a8e6e2f68f0c627c6c4"
+    },
+    {
+      "name": "sub-44/eeg/sub-44_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-44/eeg/sub-44_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-44/eeg/sub-44_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-44/eeg/sub-44_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-44/eeg/sub-44_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-44/eeg/sub-44_task-sleep_acq-PSG_events.tsv",
+      "bytes": 10064,
+      "checksum": "sha256:708e39633692925a1250e14523ab6867fdd2eab374ec3703fca28b63ab7c1e00",
+      "sha256": "708e39633692925a1250e14523ab6867fdd2eab374ec3703fca28b63ab7c1e00",
+      "git_blob_sha1": "2a76d0f1f8bd63478d88d830b2ef9278d140ebe0"
+    },
+    {
+      "name": "sub-45/eeg/sub-45_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-45/eeg/sub-45_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-45/eeg/sub-45_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-45/eeg/sub-45_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 413011256,
+      "checksum": "sha256:67815840f23c4c580ed93d45b2329fc1d1876aae0ccc6a60ca2650e462b02993",
+      "git_blob_sha1": "2cfd13e9ad1cda60f7c567a50acf4b160874e362",
+      "git_annex_pointer": "../../.git/annex/objects/g1/pM/SHA256E-s413011256--67815840f23c4c580ed93d45b2329fc1d1876aae0ccc6a60ca2650e462b02993.edf/SHA256E-s413011256--67815840f23c4c580ed93d45b2329fc1d1876aae0ccc6a60ca2650e462b02993.edf",
+      "sha256": "67815840f23c4c580ed93d45b2329fc1d1876aae0ccc6a60ca2650e462b02993"
+    },
+    {
+      "name": "sub-45/eeg/sub-45_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-45/eeg/sub-45_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-45/eeg/sub-45_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-45/eeg/sub-45_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-45/eeg/sub-45_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-45/eeg/sub-45_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13599,
+      "checksum": "sha256:280a4d48706f754ecd7e39470d807a3f29b6cb44d21da2ee59d936cc4e645725",
+      "sha256": "280a4d48706f754ecd7e39470d807a3f29b6cb44d21da2ee59d936cc4e645725",
+      "git_blob_sha1": "9a1e846b134f6f39049b45fe83b974464bdcb80d"
+    },
+    {
+      "name": "sub-46/eeg/sub-46_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-46/eeg/sub-46_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-46/eeg/sub-46_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-46/eeg/sub-46_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 406369976,
+      "checksum": "sha256:4f38a665cba36bb22d1f4045d317cc821e6cb1c4322a011bee28025a5cf6abee",
+      "git_blob_sha1": "4ea31ffb040e1a56655ed8f99a9bcd86606c9a33",
+      "git_annex_pointer": "../../.git/annex/objects/9m/mZ/SHA256E-s406369976--4f38a665cba36bb22d1f4045d317cc821e6cb1c4322a011bee28025a5cf6abee.edf/SHA256E-s406369976--4f38a665cba36bb22d1f4045d317cc821e6cb1c4322a011bee28025a5cf6abee.edf",
+      "sha256": "4f38a665cba36bb22d1f4045d317cc821e6cb1c4322a011bee28025a5cf6abee"
+    },
+    {
+      "name": "sub-46/eeg/sub-46_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-46/eeg/sub-46_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-46/eeg/sub-46_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-46/eeg/sub-46_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-46/eeg/sub-46_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-46/eeg/sub-46_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13440,
+      "checksum": "sha256:ad75ee5145ca93b144e41739dc8f3ca10c2697d8cdfe7a184d14da971ba6715b",
+      "sha256": "ad75ee5145ca93b144e41739dc8f3ca10c2697d8cdfe7a184d14da971ba6715b",
+      "git_blob_sha1": "93c9067547ffb2cb0b37b4aee55cbeeef81927f8"
+    },
+    {
+      "name": "sub-47/eeg/sub-47_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-47/eeg/sub-47_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-47/eeg/sub-47_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-47/eeg/sub-47_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 409690616,
+      "checksum": "sha256:1688b6e4aad406398b218ec5e5bd9dd6acc766eb0e7042f9d29712848b416ac6",
+      "git_blob_sha1": "a01a39a7168424b574698415cccae32db0a54a6f",
+      "git_annex_pointer": "../../.git/annex/objects/p7/MF/SHA256E-s409690616--1688b6e4aad406398b218ec5e5bd9dd6acc766eb0e7042f9d29712848b416ac6.edf/SHA256E-s409690616--1688b6e4aad406398b218ec5e5bd9dd6acc766eb0e7042f9d29712848b416ac6.edf",
+      "sha256": "1688b6e4aad406398b218ec5e5bd9dd6acc766eb0e7042f9d29712848b416ac6"
+    },
+    {
+      "name": "sub-47/eeg/sub-47_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-47/eeg/sub-47_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-47/eeg/sub-47_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-47/eeg/sub-47_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-47/eeg/sub-47_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-47/eeg/sub-47_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13551,
+      "checksum": "sha256:1452a15728dd1361d103c77a5959502a7b5bf03dfe99652af4f5a7e60a6fb99e",
+      "sha256": "1452a15728dd1361d103c77a5959502a7b5bf03dfe99652af4f5a7e60a6fb99e",
+      "git_blob_sha1": "41dcb6ce1c8d8c176ae542ce435ac40a1ee14c91"
+    },
+    {
+      "name": "sub-48/eeg/sub-48_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-48/eeg/sub-48_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-48/eeg/sub-48_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-48/eeg/sub-48_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 393502496,
+      "checksum": "sha256:94a545bc2d27adb9ab66502cec6359634e94501ff99ab02fdf4c1fa60d6aa2f2",
+      "git_blob_sha1": "0fe938e33303927303ba1f087ea0f4ac5638bf8e",
+      "git_annex_pointer": "../../.git/annex/objects/3Z/44/SHA256E-s393502496--94a545bc2d27adb9ab66502cec6359634e94501ff99ab02fdf4c1fa60d6aa2f2.edf/SHA256E-s393502496--94a545bc2d27adb9ab66502cec6359634e94501ff99ab02fdf4c1fa60d6aa2f2.edf",
+      "sha256": "94a545bc2d27adb9ab66502cec6359634e94501ff99ab02fdf4c1fa60d6aa2f2"
+    },
+    {
+      "name": "sub-48/eeg/sub-48_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-48/eeg/sub-48_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-48/eeg/sub-48_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-48/eeg/sub-48_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-48/eeg/sub-48_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-48/eeg/sub-48_task-sleep_acq-PSG_events.tsv",
+      "bytes": 12966,
+      "checksum": "sha256:e3dc90ceda78fbfa618a4b6009ea732f2d6bacb660d608d9418de55c0dda84f7",
+      "sha256": "e3dc90ceda78fbfa618a4b6009ea732f2d6bacb660d608d9418de55c0dda84f7",
+      "git_blob_sha1": "cd060dc26b57eaf2cd6a29daf275acd7ddd739f0"
+    },
+    {
+      "name": "sub-49/eeg/sub-49_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-49/eeg/sub-49_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-49/eeg/sub-49_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-49/eeg/sub-49_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 339957176,
+      "checksum": "sha256:88ccd3fe7c62fa2597656aa76bc7a1a3e4ba0ea9f39fae174bfd3692217ed720",
+      "git_blob_sha1": "0c3bf5d92816e5e108084d5fbfda5e84b50becc9",
+      "git_annex_pointer": "../../.git/annex/objects/xX/5G/SHA256E-s339957176--88ccd3fe7c62fa2597656aa76bc7a1a3e4ba0ea9f39fae174bfd3692217ed720.edf/SHA256E-s339957176--88ccd3fe7c62fa2597656aa76bc7a1a3e4ba0ea9f39fae174bfd3692217ed720.edf",
+      "sha256": "88ccd3fe7c62fa2597656aa76bc7a1a3e4ba0ea9f39fae174bfd3692217ed720"
+    },
+    {
+      "name": "sub-49/eeg/sub-49_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-49/eeg/sub-49_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-49/eeg/sub-49_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-49/eeg/sub-49_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-49/eeg/sub-49_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-49/eeg/sub-49_task-sleep_acq-PSG_events.tsv",
+      "bytes": 10982,
+      "checksum": "sha256:03f3f4bd44a5ae1f4dfbe0adddb9c96333973ad9d9c3a675df4c708a2f6b7457",
+      "sha256": "03f3f4bd44a5ae1f4dfbe0adddb9c96333973ad9d9c3a675df4c708a2f6b7457",
+      "git_blob_sha1": "0d79dcdb4aa39f00bb8819f6f6657d8164c35a3e"
+    },
+    {
+      "name": "sub-50/eeg/sub-50_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-50/eeg/sub-50_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-50/eeg/sub-50_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-50/eeg/sub-50_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 430029536,
+      "checksum": "sha256:af76be8af116b18e65c420c71c9f899ddd366649f03140fbb2811591bbf3c460",
+      "git_blob_sha1": "78704d3ffa6e315cce3518852ff8ddfb21938c98",
+      "git_annex_pointer": "../../.git/annex/objects/3f/9f/SHA256E-s430029536--af76be8af116b18e65c420c71c9f899ddd366649f03140fbb2811591bbf3c460.edf/SHA256E-s430029536--af76be8af116b18e65c420c71c9f899ddd366649f03140fbb2811591bbf3c460.edf",
+      "sha256": "af76be8af116b18e65c420c71c9f899ddd366649f03140fbb2811591bbf3c460"
+    },
+    {
+      "name": "sub-50/eeg/sub-50_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-50/eeg/sub-50_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-50/eeg/sub-50_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-50/eeg/sub-50_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-50/eeg/sub-50_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-50/eeg/sub-50_task-sleep_acq-PSG_events.tsv",
+      "bytes": 14174,
+      "checksum": "sha256:60d83d2900f6021d182af5ebc6129dd05b66a8cd1e60fb884c43a3786a50918d",
+      "sha256": "60d83d2900f6021d182af5ebc6129dd05b66a8cd1e60fb884c43a3786a50918d",
+      "git_blob_sha1": "7b9e4bbee34a8e4d2d9ba37bca70824eaad96619"
+    },
+    {
+      "name": "sub-51/eeg/sub-51_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-51/eeg/sub-51_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-51/eeg/sub-51_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-51/eeg/sub-51_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-51/eeg/sub-51_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-51/eeg/sub-51_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-51/eeg/sub-51_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-51/eeg/sub-51_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13550,
+      "checksum": "sha256:aa47f3a522e04cd2dcf01f5533e0605d8720adb376368420378282949fe9fee4",
+      "sha256": "aa47f3a522e04cd2dcf01f5533e0605d8720adb376368420378282949fe9fee4",
+      "git_blob_sha1": "614143cd6b35488cfb311d00d349a52e68707a33"
+    },
+    {
+      "name": "sub-52/eeg/sub-52_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-52/eeg/sub-52_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-52/eeg/sub-52_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-52/eeg/sub-52_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 347013536,
+      "checksum": "sha256:a642304217410344d474b92ec7e60516d9fe3116fb05d7e8b4c77628d4723ea5",
+      "git_blob_sha1": "a90ddf48156d072a43141de6bf5bc60ea1b79ca2",
+      "git_annex_pointer": "../../.git/annex/objects/qK/v6/SHA256E-s347013536--a642304217410344d474b92ec7e60516d9fe3116fb05d7e8b4c77628d4723ea5.edf/SHA256E-s347013536--a642304217410344d474b92ec7e60516d9fe3116fb05d7e8b4c77628d4723ea5.edf",
+      "sha256": "a642304217410344d474b92ec7e60516d9fe3116fb05d7e8b4c77628d4723ea5"
+    },
+    {
+      "name": "sub-52/eeg/sub-52_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-52/eeg/sub-52_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-52/eeg/sub-52_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-52/eeg/sub-52_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-52/eeg/sub-52_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-52/eeg/sub-52_task-sleep_acq-PSG_events.tsv",
+      "bytes": 11480,
+      "checksum": "sha256:45e4934e7e673236b3ebbde32ea47b62ec810aa1527b7307622a1e58baecb522",
+      "sha256": "45e4934e7e673236b3ebbde32ea47b62ec810aa1527b7307622a1e58baecb522",
+      "git_blob_sha1": "071968cda3c2662e3a15703aec49879e532f339e"
+    },
+    {
+      "name": "sub-53/eeg/sub-53_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-53/eeg/sub-53_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-53/eeg/sub-53_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-53/eeg/sub-53_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 404709656,
+      "checksum": "sha256:4a27ea131d4cca3eac5723b83438a4cf77caa12fdcf2e0d52c31a43ff439a82b",
+      "git_blob_sha1": "43672fe739e578b2c73fae2bafb83240df0f5e26",
+      "git_annex_pointer": "../../.git/annex/objects/g0/Qx/SHA256E-s404709656--4a27ea131d4cca3eac5723b83438a4cf77caa12fdcf2e0d52c31a43ff439a82b.edf/SHA256E-s404709656--4a27ea131d4cca3eac5723b83438a4cf77caa12fdcf2e0d52c31a43ff439a82b.edf",
+      "sha256": "4a27ea131d4cca3eac5723b83438a4cf77caa12fdcf2e0d52c31a43ff439a82b"
+    },
+    {
+      "name": "sub-53/eeg/sub-53_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-53/eeg/sub-53_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-53/eeg/sub-53_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-53/eeg/sub-53_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-53/eeg/sub-53_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-53/eeg/sub-53_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13317,
+      "checksum": "sha256:b005c4d0bc72914d82d41257b74240a63d905d7d09ffa4c4f76c6ab295ebaa8c",
+      "sha256": "b005c4d0bc72914d82d41257b74240a63d905d7d09ffa4c4f76c6ab295ebaa8c",
+      "git_blob_sha1": "6af0e1d690eb58352ff7dbf295b67bc01c9b8cac"
+    },
+    {
+      "name": "sub-54/eeg/sub-54_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-54/eeg/sub-54_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-54/eeg/sub-54_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-54/eeg/sub-54_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 281430896,
+      "checksum": "sha256:5ab825449de1ce4807abfda31d68c2786299e2d3671011acfdae0b68b07af2e4",
+      "git_blob_sha1": "06822711798791446e247c620db0beec88673f0e",
+      "git_annex_pointer": "../../.git/annex/objects/kP/8z/SHA256E-s281430896--5ab825449de1ce4807abfda31d68c2786299e2d3671011acfdae0b68b07af2e4.edf/SHA256E-s281430896--5ab825449de1ce4807abfda31d68c2786299e2d3671011acfdae0b68b07af2e4.edf",
+      "sha256": "5ab825449de1ce4807abfda31d68c2786299e2d3671011acfdae0b68b07af2e4"
+    },
+    {
+      "name": "sub-54/eeg/sub-54_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-54/eeg/sub-54_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-54/eeg/sub-54_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-54/eeg/sub-54_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-54/eeg/sub-54_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-54/eeg/sub-54_task-sleep_acq-PSG_events.tsv",
+      "bytes": 8951,
+      "checksum": "sha256:b01804a90a87bbb656b04db84c21b94441b057aa2839a65042a5bb55b3897662",
+      "sha256": "b01804a90a87bbb656b04db84c21b94441b057aa2839a65042a5bb55b3897662",
+      "git_blob_sha1": "268d324c37c867eb6f3df5ec15557ec4738d0392"
+    },
+    {
+      "name": "sub-55/eeg/sub-55_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-55/eeg/sub-55_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-55/eeg/sub-55_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-55/eeg/sub-55_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 361126256,
+      "checksum": "sha256:89155f881ae9879dacd2ac734ff7cd488cfec276cd556c540415ecf9246be8d4",
+      "git_blob_sha1": "362ad16f8e2b077c2d2577b8fdf57b83c9bc20fa",
+      "git_annex_pointer": "../../.git/annex/objects/fk/2W/SHA256E-s361126256--89155f881ae9879dacd2ac734ff7cd488cfec276cd556c540415ecf9246be8d4.edf/SHA256E-s361126256--89155f881ae9879dacd2ac734ff7cd488cfec276cd556c540415ecf9246be8d4.edf",
+      "sha256": "89155f881ae9879dacd2ac734ff7cd488cfec276cd556c540415ecf9246be8d4"
+    },
+    {
+      "name": "sub-55/eeg/sub-55_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-55/eeg/sub-55_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-55/eeg/sub-55_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-55/eeg/sub-55_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-55/eeg/sub-55_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-55/eeg/sub-55_task-sleep_acq-PSG_events.tsv",
+      "bytes": 11597,
+      "checksum": "sha256:9d5d2279f3c613d9502da8608e5f2f1293012ee93041a445655ce6aeabbab3ec",
+      "sha256": "9d5d2279f3c613d9502da8608e5f2f1293012ee93041a445655ce6aeabbab3ec",
+      "git_blob_sha1": "7625e07744a691e878076fd79dfd62a1c9749a5f"
+    },
+    {
+      "name": "sub-58/eeg/sub-58_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-58/eeg/sub-58_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-58/eeg/sub-58_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-58/eeg/sub-58_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 422143016,
+      "checksum": "sha256:9eeed02e004caeffad7886b34bdee8e860a5ff9dbd2874b005f823adf5a621d4",
+      "git_blob_sha1": "7afc961db1c717398f818c8d7ea9ffe8b9174ecc",
+      "git_annex_pointer": "../../.git/annex/objects/xF/3X/SHA256E-s422143016--9eeed02e004caeffad7886b34bdee8e860a5ff9dbd2874b005f823adf5a621d4.edf/SHA256E-s422143016--9eeed02e004caeffad7886b34bdee8e860a5ff9dbd2874b005f823adf5a621d4.edf",
+      "sha256": "9eeed02e004caeffad7886b34bdee8e860a5ff9dbd2874b005f823adf5a621d4"
+    },
+    {
+      "name": "sub-58/eeg/sub-58_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-58/eeg/sub-58_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-58/eeg/sub-58_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-58/eeg/sub-58_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-58/eeg/sub-58_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-58/eeg/sub-58_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13849,
+      "checksum": "sha256:b368c415714c20ec0f401b6e68ef15c61b88a2b6e3a3455456e78a39a0a6ea39",
+      "sha256": "b368c415714c20ec0f401b6e68ef15c61b88a2b6e3a3455456e78a39a0a6ea39",
+      "git_blob_sha1": "fd405f8f42560cc1e22ef8bfc0e6820704c3bb33"
+    },
+    {
+      "name": "sub-59/eeg/sub-59_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-59/eeg/sub-59_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-59/eeg/sub-59_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-59/eeg/sub-59_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 413426336,
+      "checksum": "sha256:a93af3735467ab13556aa8236afe9a00f27551a825207b293866a0d2c369b31d",
+      "git_blob_sha1": "f5967c9a1cb81aaf71ebbae183b61ec5a449b209",
+      "git_annex_pointer": "../../.git/annex/objects/VW/3F/SHA256E-s413426336--a93af3735467ab13556aa8236afe9a00f27551a825207b293866a0d2c369b31d.edf/SHA256E-s413426336--a93af3735467ab13556aa8236afe9a00f27551a825207b293866a0d2c369b31d.edf",
+      "sha256": "a93af3735467ab13556aa8236afe9a00f27551a825207b293866a0d2c369b31d"
+    },
+    {
+      "name": "sub-59/eeg/sub-59_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-59/eeg/sub-59_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-59/eeg/sub-59_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-59/eeg/sub-59_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-59/eeg/sub-59_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-59/eeg/sub-59_task-sleep_acq-PSG_events.tsv",
+      "bytes": 13654,
+      "checksum": "sha256:bed6e01af1205c06cdc9a0982c93e97ab4d7da5e51e5215c370956cf124330a7",
+      "sha256": "bed6e01af1205c06cdc9a0982c93e97ab4d7da5e51e5215c370956cf124330a7",
+      "git_blob_sha1": "b2db712fa17ba5b4e88f2aab8fc85ede0f201b6a"
+    },
+    {
+      "name": "sub-60/eeg/sub-60_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-60/eeg/sub-60_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-60/eeg/sub-60_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-60/eeg/sub-60_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 358220696,
+      "checksum": "sha256:c7f716ad2834625cbc58cb9aa3f270c062eb7b64bf7569f0397a0633d83ffd96",
+      "git_blob_sha1": "1ef732e641c5a3be32f56748471f4553e8aabfe6",
+      "git_annex_pointer": "../../.git/annex/objects/36/K6/SHA256E-s358220696--c7f716ad2834625cbc58cb9aa3f270c062eb7b64bf7569f0397a0633d83ffd96.edf/SHA256E-s358220696--c7f716ad2834625cbc58cb9aa3f270c062eb7b64bf7569f0397a0633d83ffd96.edf",
+      "sha256": "c7f716ad2834625cbc58cb9aa3f270c062eb7b64bf7569f0397a0633d83ffd96"
+    },
+    {
+      "name": "sub-60/eeg/sub-60_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-60/eeg/sub-60_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-60/eeg/sub-60_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-60/eeg/sub-60_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-60/eeg/sub-60_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-60/eeg/sub-60_task-sleep_acq-PSG_events.tsv",
+      "bytes": 11879,
+      "checksum": "sha256:c80e11b0af118fac2c1b0b02d0b9d997b26927da2503b022f54c90117ee6b486",
+      "sha256": "c80e11b0af118fac2c1b0b02d0b9d997b26927da2503b022f54c90117ee6b486",
+      "git_blob_sha1": "bea7aa741ae24423d2e2db84c2359624f95f9a59"
+    },
+    {
+      "name": "sub-61/eeg/sub-61_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-61/eeg/sub-61_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-61/eeg/sub-61_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-61/eeg/sub-61_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 446632736,
+      "checksum": "sha256:039f3a414ed4e344119235a436c0f6f9d13ad051c095571a38e324d765011956",
+      "git_blob_sha1": "80deb628fd6ea3507c8168a1704fd73649ad2706",
+      "git_annex_pointer": "../../.git/annex/objects/XX/pK/SHA256E-s446632736--039f3a414ed4e344119235a436c0f6f9d13ad051c095571a38e324d765011956.edf/SHA256E-s446632736--039f3a414ed4e344119235a436c0f6f9d13ad051c095571a38e324d765011956.edf",
+      "sha256": "039f3a414ed4e344119235a436c0f6f9d13ad051c095571a38e324d765011956"
+    },
+    {
+      "name": "sub-61/eeg/sub-61_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-61/eeg/sub-61_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-61/eeg/sub-61_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-61/eeg/sub-61_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-61/eeg/sub-61_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-61/eeg/sub-61_task-sleep_acq-PSG_events.tsv",
+      "bytes": 14401,
+      "checksum": "sha256:1f6f05294a514f2c98d2afdabdc6ba3c9d2af8756bd4a7bb048863815fa34704",
+      "sha256": "1f6f05294a514f2c98d2afdabdc6ba3c9d2af8756bd4a7bb048863815fa34704",
+      "git_blob_sha1": "c1eae051c0823895aa06321cc16a810b564b29a0"
+    },
+    {
+      "name": "sub-62/eeg/sub-62_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-62/eeg/sub-62_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-62/eeg/sub-62_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-62/eeg/sub-62_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 323769056,
+      "checksum": "sha256:9200d1eaf91d7736adcbbbaf381fa0bb100e169d34626fa362cb042446017ddb",
+      "git_blob_sha1": "6fd3135bad06e3c8b3c8f325800a8ec89e5faecb",
+      "git_annex_pointer": "../../.git/annex/objects/40/kK/SHA256E-s323769056--9200d1eaf91d7736adcbbbaf381fa0bb100e169d34626fa362cb042446017ddb.edf/SHA256E-s323769056--9200d1eaf91d7736adcbbbaf381fa0bb100e169d34626fa362cb042446017ddb.edf",
+      "sha256": "9200d1eaf91d7736adcbbbaf381fa0bb100e169d34626fa362cb042446017ddb"
+    },
+    {
+      "name": "sub-62/eeg/sub-62_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-62/eeg/sub-62_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-62/eeg/sub-62_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-62/eeg/sub-62_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-62/eeg/sub-62_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-62/eeg/sub-62_task-sleep_acq-PSG_events.tsv",
+      "bytes": 10703,
+      "checksum": "sha256:96b7a5cdd2af97b2ca2f3c4d6b61ef48f4f7a2dea98bfd6e81c35370766be7fe",
+      "sha256": "96b7a5cdd2af97b2ca2f3c4d6b61ef48f4f7a2dea98bfd6e81c35370766be7fe",
+      "git_blob_sha1": "23dea34bf5460341d35dcc32fc3bc8cc9e10bebd"
+    },
+    {
+      "name": "sub-63/eeg/sub-63_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-63/eeg/sub-63_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-63/eeg/sub-63_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-63/eeg/sub-63_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 383540576,
+      "checksum": "sha256:6e111f0909eeee13bd41e177589048691ecc6e44ecd61744a95006fe434ec9f9",
+      "git_blob_sha1": "ff07071153daf3b5c01adce05b73ac5a323ffa17",
+      "git_annex_pointer": "../../.git/annex/objects/4v/11/SHA256E-s383540576--6e111f0909eeee13bd41e177589048691ecc6e44ecd61744a95006fe434ec9f9.edf/SHA256E-s383540576--6e111f0909eeee13bd41e177589048691ecc6e44ecd61744a95006fe434ec9f9.edf",
+      "sha256": "6e111f0909eeee13bd41e177589048691ecc6e44ecd61744a95006fe434ec9f9"
+    },
+    {
+      "name": "sub-63/eeg/sub-63_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-63/eeg/sub-63_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-63/eeg/sub-63_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-63/eeg/sub-63_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-63/eeg/sub-63_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-63/eeg/sub-63_task-sleep_acq-PSG_events.tsv",
+      "bytes": 12552,
+      "checksum": "sha256:14c8e49048c490be209dac69321b4d9d41d7a4ca3631e30df0a6e7cb085ad861",
+      "sha256": "14c8e49048c490be209dac69321b4d9d41d7a4ca3631e30df0a6e7cb085ad861",
+      "git_blob_sha1": "e79720bb76711d75e56b00b5a839fda62ba3a2fe"
+    },
+    {
+      "name": "sub-64/eeg/sub-64_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-64/eeg/sub-64_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-64/eeg/sub-64_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-64/eeg/sub-64_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 357390536,
+      "checksum": "sha256:1383615fc23b7437c8f2f208abac8ffef84220d261cec5bcae3cc91f8fa84109",
+      "git_blob_sha1": "b7183ec070de95954aa58a7ec0db66382a21f00b",
+      "git_annex_pointer": "../../.git/annex/objects/JM/wX/SHA256E-s357390536--1383615fc23b7437c8f2f208abac8ffef84220d261cec5bcae3cc91f8fa84109.edf/SHA256E-s357390536--1383615fc23b7437c8f2f208abac8ffef84220d261cec5bcae3cc91f8fa84109.edf",
+      "sha256": "1383615fc23b7437c8f2f208abac8ffef84220d261cec5bcae3cc91f8fa84109"
+    },
+    {
+      "name": "sub-64/eeg/sub-64_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-64/eeg/sub-64_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-64/eeg/sub-64_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-64/eeg/sub-64_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-64/eeg/sub-64_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-64/eeg/sub-64_task-sleep_acq-PSG_events.tsv",
+      "bytes": 11678,
+      "checksum": "sha256:d2b1a41e2d83a16d53369bd7248c499fd6e99242c806cead7b885c2ef1bf1470",
+      "sha256": "d2b1a41e2d83a16d53369bd7248c499fd6e99242c806cead7b885c2ef1bf1470",
+      "git_blob_sha1": "43c80f4d4e16aaf06209103728a0cd8ffbeea37a"
+    },
+    {
+      "name": "sub-65/eeg/sub-65_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-65/eeg/sub-65_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-65/eeg/sub-65_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-65/eeg/sub-65_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 381465176,
+      "checksum": "sha256:0e20619bed0e9b8d15c2050be8554b8930439da40b7902f920707abb69ebe56d",
+      "git_blob_sha1": "5a6061bcf0651db237da960fa4277438d0ef1189",
+      "git_annex_pointer": "../../.git/annex/objects/KP/WM/SHA256E-s381465176--0e20619bed0e9b8d15c2050be8554b8930439da40b7902f920707abb69ebe56d.edf/SHA256E-s381465176--0e20619bed0e9b8d15c2050be8554b8930439da40b7902f920707abb69ebe56d.edf",
+      "sha256": "0e20619bed0e9b8d15c2050be8554b8930439da40b7902f920707abb69ebe56d"
+    },
+    {
+      "name": "sub-65/eeg/sub-65_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-65/eeg/sub-65_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-65/eeg/sub-65_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-65/eeg/sub-65_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-65/eeg/sub-65_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-65/eeg/sub-65_task-sleep_acq-PSG_events.tsv",
+      "bytes": 12644,
+      "checksum": "sha256:7e7041b1ce130043fa9553845b607f24a06de2610a2febfc2df2b67202a45937",
+      "sha256": "7e7041b1ce130043fa9553845b607f24a06de2610a2febfc2df2b67202a45937",
+      "git_blob_sha1": "57f4c4ce9f5bdf31243939e09fc34b67b8b6a373"
+    },
+    {
+      "name": "sub-66/eeg/sub-66_task-sleep_acq-PSG_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-66/eeg/sub-66_task-sleep_acq-PSG_channels.tsv",
+      "bytes": 340,
+      "checksum": "sha256:baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "sha256": "baf9c99b0cc9d09606d12925dfc70f6544761c38e90cbb6aeb57979eadcd379c",
+      "git_blob_sha1": "a2fee2ae2dfa7e955c250ae85ea1d42daa5c8495"
+    },
+    {
+      "name": "sub-66/eeg/sub-66_task-sleep_acq-PSG_eeg.edf",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds007181/sub-66/eeg/sub-66_task-sleep_acq-PSG_eeg.edf",
+      "bytes": 437916056,
+      "checksum": "sha256:ce575a05eee50bf1c9eb4fc7af9f0857cd464e6d9ae519896d5b60807b28233a",
+      "git_blob_sha1": "8a055f077ce8e1de85d4d255a189e24986c98105",
+      "git_annex_pointer": "../../.git/annex/objects/4p/MJ/SHA256E-s437916056--ce575a05eee50bf1c9eb4fc7af9f0857cd464e6d9ae519896d5b60807b28233a.edf/SHA256E-s437916056--ce575a05eee50bf1c9eb4fc7af9f0857cd464e6d9ae519896d5b60807b28233a.edf",
+      "sha256": "ce575a05eee50bf1c9eb4fc7af9f0857cd464e6d9ae519896d5b60807b28233a"
+    },
+    {
+      "name": "sub-66/eeg/sub-66_task-sleep_acq-PSG_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-66/eeg/sub-66_task-sleep_acq-PSG_eeg.json",
+      "bytes": 154,
+      "checksum": "sha256:64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "sha256": "64a5efb5efcb00ca4fcd2738131219945cd358ebb0bdf040c160a867e99c2e9b",
+      "git_blob_sha1": "5cd70155007a7dfeae9feeff73edcd6dba15a612"
+    },
+    {
+      "name": "sub-66/eeg/sub-66_task-sleep_acq-PSG_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-66/eeg/sub-66_task-sleep_acq-PSG_events.json",
+      "bytes": 677,
+      "checksum": "sha256:2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "sha256": "2aa69731fae43cb37ff52975ec62e23d3e2211941d6901038ed093ed176fc2da",
+      "git_blob_sha1": "0858058510cae6ff7e351486fc3d9807878854eb"
+    },
+    {
+      "name": "sub-66/eeg/sub-66_task-sleep_acq-PSG_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/sub-66/eeg/sub-66_task-sleep_acq-PSG_events.tsv",
+      "bytes": 14572,
+      "checksum": "sha256:fb23c0fca34bb70bbd2ccf48cd829adddec32c89e5b5e75bf8cd0efe73fd42dc",
+      "sha256": "fb23c0fca34bb70bbd2ccf48cd829adddec32c89e5b5e75bf8cd0efe73fd42dc",
+      "git_blob_sha1": "df817c2c008b11be7f8a92808a57d1122beb581d"
+    },
+    {
+      "name": "task-rest_bold.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds007181/2499c3d0f3dca9b3e84b8faf01e7838374dcc621/task-rest_bold.json",
+      "bytes": 356,
+      "checksum": "sha256:3f2d1e7af9bd4f54977fb41e5e3fbe08c9522619f1a66cce042afc2c53159cc2",
+      "sha256": "3f2d1e7af9bd4f54977fb41e5e3fbe08c9522619f1a66cce042afc2c53159cc2",
+      "git_blob_sha1": "e1c5d76b1bbe8252431142c03aadbd62323319f9"
+    }
+  ]
+}

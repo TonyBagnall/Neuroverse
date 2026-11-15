@@ -9,7 +9,7 @@ the [Signal scale and flat-channel audit](signal-scale-audit.md).
 Applied signal and metadata corrections are documented in
 [Local data corrections](local-data-corrections.md).
 
-The registry includes 61 additions to the original published benchmark.
+The registry includes 93 additions to the original published benchmark.
 OpenEEGBench sources are prepared using the
 [standalone import tools](openeegbench-import.md).
 The [additional dataset descriptions](additional-datasets.md) document MentalArithmetic,
@@ -25,11 +25,11 @@ collection includes the documented [local corrections](local-data-corrections.md
 The archive is a sub-collection of the
 [Multiverse](https://github.com/aeon-toolkit/multiverse) archive for multivariate time
 series classification, and some of these datasets are also in its benchmark subset,
-Multiverse-core. The local collection now contains 91 prepared
+Multiverse-core. The local collection now contains 123 prepared
 classification problems, including the additional preparations described below.
-The selected scalp EEG study list in `eeg.txt` contains 82 problems (including
-30 strict scalp-EEG Motor Imagery tasks in `MI`, 20 `Clinical` tasks, and 6 executed
-and pre-movement tasks in `ME`). It excludes
+The selected scalp EEG study list in `eeg.txt` contains 114 problems (including
+30 strict scalp-EEG Motor Imagery tasks in `MI`, 30 `Clinical` tasks, 30 `Cognitive`
+and affective tasks, and 6 executed and pre-movement tasks in `ME`). It excludes
 Blink, ButtonPress, Sleep and EpilepticSeizures, plus FaceDetection,
 HandMovementDirection, MatchWords and MindReading (MEG), and MotorImagery (ECoG).
 Their registry entries and local files are retained. See the
@@ -42,28 +42,39 @@ Their registry entries and local files are retained. See the
 | Dataset | Domain | Study type | Channels | Length | Classes | Subjects | Train | Test | Hz | Availability |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ALSAttention | BCI | ERP | 8 | 256 | 2 | 8 | 14400 | 19200 | 256 | local |
+| AcuteTBIVisualMemory | Med | Clinical | 63 | 2000 | 2 | 86 | 1920 | 660 | 500 | local |
+| AdultSeizures | Med | Clinical | 29 | 2048 | 2 | 14 | 1572 | 591 | 512 | local |
+| AffectiveMusic | Psy | Cognitive | 19 | 4000 | 4 | 31 | 2588 | 904 | 1000 | local |
+| AlcoholBandit | Med | Clinical | 59 | 2000 | 2 | 53 | 1170 | 420 | 500 | local |
 | Alzheimers | Med | Clinical | 19 | 15000 | 3 | 88 | 45 | 43 | 500 | aeon/Zenodo |
 | AlzheimersAuditory | Med | Clinical | 19 | 1000 | 3 | 33 | 2020 | 1000 | 250 | local |
+| ArithmeticDifficulty | Psy | Cognitive | 19 | 1500 | 7 | 18 | 819 | 315 | 250 | local |
 | ArmCoordination | BCI | ME | 64 | 1500 | 2 | 8 | 1498 | 505 | 500 | local |
 | ArmMovements | BCI | ME | 61 | 1536 | 7 | 15 | 4620 | 1680 | 512 | local |
+| AuditoryDeviance | Psy | Cognitive | 30 | 1024 | 2 | 40 | 11934 | 4000 | 1024 | local |
+| BanditGambling | Psy | Cognitive | 63 | 500 | 2 | 23 | 8146 | 2870 | 500 | local |
 | Blink | BCI | &mdash; | 4 | 510 | 2 | &mdash; | 500 | 450 | 255 | aeon/Zenodo |
 | ButtonPress | BCI | &mdash; | 32 | 1000 | 2 | 1 | 120 | 120 | 1000 | aeon/Zenodo |
 | ChildhoodSeizures | Med | Clinical | 17 | 2000 | 2 | 22 | 34045 | 2140 | 200 | local |
 | ClinicalSleepStages | Med | Clinical | 6 | 6000 | 5 | 82 | 64889 | 8803 | 200 | local |
 | CodedFlickerTargets | BCI | VEP | 28 | 1100 | 4 | 12 | 2160 | 720 | 500 | local |
 | CodedSymbols | BCI | VEP | 8 | 16128 | 20 | 30 | 2200 | 800 | 512 | local |
+| CognitiveLoadTasks | Psy | Cognitive | 8 | 1000 | 4 | 40 | 3600 | 1200 | 250 | local |
 | CovidSurvivors | Med | Clinical | 19 | 400 | 2 | 172 | 25319 | 11216 | 200 | local |
 | EpilepticSeizures | Med | &mdash; | 1 | 178 | 2 | &mdash; | 80 | 11420 | 178 | aeon/Zenodo |
 | EyesOpenShut | BCI | Cognitive | 14 | 128 | 2 | &mdash; | 56 | 42 | 128 | aeon/Zenodo |
 | FaceDetection | Psy | &mdash; | 144 | 62 | 2 | &mdash; | 5890 | 3524 | 250 | aeon/Zenodo |
+| FaceStimuli | Psy | Cognitive | 30 | 1024 | 4 | 40 | 9600 | 3200 | 1024 | local |
 | FeedbackButton | Psy | Cognitive | 61 | 450 | 2 | 57 | 1700 | 1150 | 500 | aeon/Zenodo |
 | FeetHands | BCI | ME | 64 | 640 | 2 | 105 | 2835 | 1890 | 160 | aeon/Zenodo |
 | FibroLiverpool | Med | Clinical | 64 | 15360 | 2 | 36 | 15 | 21 | 512 | restricted |
 | FibroUEA | Med | Clinical | 64 | 15000 | 2 | 41 | 17 | 23 | 500 | restricted |
 | FingerMovements | BCI | ME | 28 | 50 | 2 | &mdash; | 316 | 100 | 100 | aeon/Zenodo |
+| FlankerConflict | Psy | Cognitive | 29 | 500 | 6 | 60 | 12148 | 4050 | 500 | local |
 | FlickerAttention | BCI | VEP | 8 | 512 | 4 | 12 | 576 | 352 | 256 | local |
 | FlickerSymbols | BCI | VEP | 64 | 1500 | 40 | 35 | 6240 | 2160 | 250 | local |
 | FlickerTargets | BCI | VEP | 8 | 1114 | 12 | 10 | 1440 | 360 | 256 | local |
+| FuzzySemantics | Psy | Cognitive | 30 | 200 | 2 | 30 | 8780 | 3191 | 200 | local |
 | GameTargets | BCI | ERP | 8 | 225 | 2 | 22 | 20400 | 6000 | 250 | local |
 | HandMovementDirection | BCI | &mdash; | 10 | 400 | 4 | &mdash; | 160 | 74 | 400 | aeon/Zenodo |
 | ImaginedAnkleRest | BCI | MI | 28 | 1000 | 2 | 6 | 264 | 132 | 250 | local |
@@ -96,6 +107,7 @@ Their registry entries and local files are retained. See the
 | ImaginedRightHandFeet | BCI | MI | 16 | 1536 | 2 | 8 | 240 | 80 | 512 | local |
 | ImaginedRightHandFeetRest | BCI | MI | 24 | 750 | 3 | 1 | 150 | 40 | 250 | local |
 | InnerSpeech | BCI | Speech | 128 | 3584 | 4 | 9 | 250 | 200 | 1024 | aeon/Zenodo |
+| InternalAttention | Psy | Cognitive | 32 | 500 | 2 | 20 | 6071 | 2093 | 250 | local |
 | LongIntervalTask | Med | Clinical | 63 | 4750 | 2 | 139 | 1660 | 1120 | 500 | aeon/Zenodo |
 | LowCost | BCI | MI | 15 | 375 | 2 | 10 | 600 | 600 | 125 | aeon/Zenodo |
 | MatchWords | Psy | &mdash; | 156 | 1500 | 2 | &mdash; | 360 | 360 | 1000 | local |
@@ -103,35 +115,55 @@ Their registry entries and local files are retained. See the
 | MentalArithmetic | BCI | Cognitive | 19 | 1000 | 2 | 36 | 1515 | 192 | 200 | local |
 | MigraineRest | Med | Clinical | 128 | 2048 | 2 | 33 | 1920 | 750 | 512 | local |
 | MindReading | BCI | &mdash; | 204 | 200 | 5 | &mdash; | 727 | 653 | 200 | aeon/Zenodo |
+| MoralConflict | Psy | Cognitive | 32 | 512 | 4 | 31 | 2488 | 866 | 512 | local |
 | MotorImagery | BCI | &mdash; | 64 | 3000 | 2 | &mdash; | 278 | 100 | 1000 | aeon/Zenodo |
+| MultitaskWorkload | Psy | Cognitive | 61 | 500 | 3 | 15 | 9834 | 3576 | 250 | local |
 | NBackAudioCondition | Psy | Cognitive | 16 | 600 | 12 | 23 | 11520 | 5040 | 200 | local |
+| NBackDifficulty | Psy | Cognitive | 19 | 375 | 4 | 18 | 5200 | 2000 | 250 | local |
+| NarrativeReward | Psy | Cognitive | 30 | 1000 | 4 | 40 | 4319 | 1440 | 1000 | local |
+| NaturalisticEmotion | Psy | Cognitive | 128 | 1000 | 4 | 9 | 780 | 405 | 250 | local |
 | ObsessiveCompulsiveSymptoms | Med | Clinical | 52 | 2000 | 2 | 35 | 7754 | 2660 | 500 | local |
 | OpenCloseFist | BCI | ME | 64 | 640 | 2 | 105 | 2835 | 1890 | 160 | aeon/Zenodo |
 | ParkinsonsPedalling | Med | Clinical | 63 | 2000 | 2 | 39 | 2123 | 842 | 500 | local |
+| ParkinsonsReinforcement | Med | Clinical | 63 | 2000 | 2 | 56 | 1260 | 420 | 500 | local |
 | ParkinsonsRest | Med | Clinical | 63 | 2000 | 2 | 55 | 1216 | 420 | 500 | local |
 | ParkinsonsRestIowa | Med | Clinical | 60 | 2000 | 2 | 149 | 4598 | 1306 | 500 | local |
 | ParkinsonsRestUCSD | Med | Clinical | 32 | 2048 | 2 | 31 | 1126 | 380 | 512 | local |
 | ParkinsonsWalking | Med | Clinical | 53 | 1000 | 2 | 133 | 6493 | 2100 | 250 | local |
 | PhotoStimulation | Med | Clinical | 19 | 9000 | 3 | 73 | 37 | 36 | 500 | aeon/Zenodo |
+| PostCovidVigilance | Med | Clinical | 127 | 4000 | 2 | 97 | 1800 | 625 | 1000 | local |
+| ProbabilisticFeedback | Psy | Cognitive | 59 | 500 | 4 | 25 | 2877 | 1120 | 500 | local |
 | PronouncedSpeech | BCI | Speech | 128 | 3584 | 4 | 9 | 250 | 200 | 1024 | aeon/Zenodo |
 | PsychosisRestFirst | Med | Clinical | 61 | 4000 | 2 | 82 | 4657 | 1601 | 1000 | local |
 | PsychosisRestSecond | Med | Clinical | 61 | 4000 | 2 | 61 | 3472 | 1239 | 1000 | local |
+| PythonCodeReading | Psy | Cognitive | 32 | 334 | 4 | 61 | 7177 | 2560 | 256 | local |
 | RestingEyeState | BCI | Cognitive | 16 | 5120 | 2 | 19 | 140 | 50 | 512 | local |
+| SchizophreniaConflict | Med | Clinical | 60 | 4000 | 2 | 76 | 1680 | 600 | 1000 | local |
+| SchizophreniaMotion | Med | Clinical | 61 | 3600 | 2 | 40 | 870 | 330 | 1200 | local |
+| SchizophreniaUltimatum | Med | Clinical | 128 | 3072 | 2 | 43 | 768 | 264 | 2048 | local |
 | SelfRegulationSCP1 | BCI | ERP | 6 | 896 | 2 | &mdash; | 268 | 293 | 256 | aeon/Zenodo |
 | SelfRegulationSCP2 | BCI | ERP | 7 | 1152 | 2 | &mdash; | 200 | 180 | 256 | aeon/Zenodo |
+| SentenceViolations | Psy | Cognitive | 29 | 500 | 5 | 64 | 8640 | 2880 | 500 | local |
 | ShortIntervalTask | Med | Clinical | 63 | 2750 | 2 | 139 | 1660 | 1120 | 500 | aeon/Zenodo |
 | SitStand | BCI | MI | 17 | 1250 | 4 | 32 | 3200 | 3200 | 250 | aeon/Zenodo |
 | Sleep | Psy | &mdash; | 1 | 178 | 5 | 82 | 2394 | 1205 | 100 | aeon/Zenodo |
+| SleepDeprivation | Psy | Cognitive | 61 | 2000 | 2 | 68 | 3060 | 1020 | 500 | local |
 | SongFamiliarity | Psy | Cognitive | 32 | 3000 | 2 | 29 | 700 | 750 | 1000 | aeon/Zenodo |
+| SpatialAttention | Psy | Cognitive | 30 | 1024 | 2 | 40 | 9607 | 3200 | 1024 | local |
 | SpellerFlashes | BCI | ERP | 8 | 205 | 2 | 10 | 12600 | 12600 | 256 | local |
+| SternbergMemory | Psy | Cognitive | 69 | 500 | 3 | 23 | 1534 | 558 | 250 | local |
+| StrokeMotorImagery | Med | Clinical | 58 | 4000 | 2 | 18 | 520 | 200 | 1000 | local |
 | SymbolAttention | BCI | ERP | 8 | 256 | 2 | 19 | 521259 | 175180 | 256 | local |
 | TBIAuditoryOddball | Med | Clinical | 61 | 500 | 3 | 87 | 4848 | 1748 | 500 | local |
+| VerbalWorkingMemory | Psy | Cognitive | 19 | 1000 | 6 | 155 | 13910 | 4676 | 500 | local |
 | VideoEmotions | Psy | Cognitive | 25 | 2000 | 8 | 123 | 15629 | 3588 | 200 | local |
 | VisualSpeech | BCI | Speech | 128 | 3584 | 4 | 9 | 250 | 200 | 1024 | aeon/Zenodo |
 | VisualSubjects | BCI | ERP | 16 | 512 | 2 | 64 | 42189 | 18826 | 512 | local |
+| VisualSymmetry | Psy | Cognitive | 64 | 512 | 2 | 24 | 2879 | 960 | 512 | local |
 | WalkingTargets | BCI | ERP | 42 | 100 | 2 | 15 | 3600 | 900 | 100 | local |
 | WirelessFlicker | BCI | VEP | 14 | 640 | 5 | 11 | 1000 | 375 | 128 | local |
 | WordRelatedness | Psy | Cognitive | 30 | 1024 | 2 | 40 | 3600 | 1200 | 1024 | local |
+| ZosterNeuralgiaSleep | Med | Clinical | 19 | 1024 | 2 | 58 | 1290 | 450 | 256 | local |
 <!-- DATASETS:END -->
 
 ### SymbolAttention
@@ -447,8 +479,9 @@ EEG channels by 512 points: [2,4) seconds after a FIF marker, at 256 Hz.
 Native order is `Oz, O1, O2, PO3, POz, PO7, PO8, PO4`. Original codes are
 `1=rest, 2=13Hz, 3=21Hz, 4=17Hz`, preserving the source's corrected frequency
 mapping. Files are in `D:/Data/EEG/FlickerAttention/`, with recovered participant,
-recording, measurement-time and event/sample metadata. The distributed numeric
-scale is retained, with explicit unit and sensor-position caveats. See
+recording, measurement-time and event/sample metadata. Source FIF millivolt (`mV`)
+values are rescaled by `1e3` in `float64` to archive-standard microvolts (`uV`),
+with explicit sensor-position caveats retained. See
 [source audit and preparation](kalunga-preparation.md) and
 [validation summary](kalunga-local-results.json).
 
@@ -931,3 +964,179 @@ Chamanzar et al. (2020, 2021) / CMU KiltHub Figshare `12636731` v1. 33 participa
 High-density BioSemi ActiveTwo (`A1`–`D32`) resting-state scalp EEG comparing healthy controls (`18` retained) and interictal unmedicated migraine patients (`15` retained; `M5` and `M7` taking daily topiramate prophylaxis excluded per study protocol, and 3 control IDs absent from the upstream archive noted). Fixed whole-subject 75/25 split within each diagnostic group (`24` TRAIN / `9` TEST). Non-overlapping 4-second (`2048`-sample) windows extracted inside `254` (`eyes_closed`) and `255` (`eyes_open`) BioSemi `Status` trigger blocks, excluding the initial 0.5-second transition after each marker (`EXG1`–`EXG8` and `Status` excluded), calibrated from 24-bit BDF integers to `float64` microvolts with zero flat sensors removed and no added DSP.
 
 Original source [Figshare 12636731 v1](https://doi.org/10.1184/R1/12636731.v1), CC-BY-4.0. Array-aligned case tables, sensor sidecars and validation accompany `D:/Data/EEG/MigraineRest`. See [source lock](chamanzar2020-source-lock.json) and [conversion result](chamanzar2020-conversion-result.json).
+
+### ArithmeticDifficulty
+
+Barras and Booth / University of Hull / OpenNeuro `ds007262` v1.1.0. 18 participants; 819 training and 315 test cases, 19 channels x 1500 samples at 250 Hz. Classes: `0.6_to_1.5`, `1.5_to_2.4`, `2.4_to_3.3`, `3.3_to_4.2`, `4.2_to_5.1`, `5.1_to_6.0`, `6.0_to_6.9`.
+
+Seven-class graded mental arithmetic Q-value difficulty classification across the 18 QC-passed participants (`analysis_included == true`; `sub-002` and `sub-017` excluded per source QC), partitioned by a fixed whole-subject 75/25 split (`13` TRAIN / `5` TEST). Each 6.0-second (`1500`-sample) non-overlapping epoch starts at the arithmetic question stimulus marker immediately preceding the paired post-answer outcome marker on non-tutorial trials (`istutorial == false`), across the 19 10-20 scalp EEG channels (`D1` ECG and `D2`..`D5` MISC excluded) in calibrated `float64` microvolts with zero flat sensors removed. Recorded from the same University of Hull 20-subject cohort as `NBackDifficulty` (`ds007169`).
+
+Original source [OpenNeuro ds007262 v1.1.0](https://doi.org/10.18112/openneuro.ds007262.v1.1.0), CC0-1.0. See [cognitive plan](cognitive-group-a-plan.md), [source lock](ds007262-cognitive-source-lock.json) and [conversion result](ds007262-cognitive-conversion-result.json).
+
+### NBackDifficulty
+
+Barras and Booth / University of Hull / OpenNeuro `ds007169` v1.0.5. 18 participants; 5200 training and 2000 test cases, 19 channels x 375 samples at 250 Hz. Classes: `1_back`, `2_back`, `3_back`, `4_back`.
+
+Four-class visual n-back working-memory load classification across the 18 QC-passed participants (`analysis_included == true`; `sub-013` and `sub-017` excluded per source QC), partitioned by a fixed whole-subject 75/25 split (`13` TRAIN / `5` TEST). Non-overlapping 1.5-second (`375`-sample) post-stimulus epochs on non-tutorial trials (`istutorial == false`, SOA ~1.70 s) across the 19 10-20 scalp EEG channels (`D1` ECG and `D2`..`D5` MISC excluded) in calibrated `float64` microvolts (`1e-6` factor applied to correct the upstream `ds007169` v1.0.5 XDF-to-BIDS double-microvolt scaling in `convert_xdf_to_bids_eeg.py`, matching the `v1.1.0` upstream correction on sister dataset `ds007262`) with zero flat sensors removed. Case order, labels, participant IDs, and split are preserved. Shared laboratory cohort with `ArithmeticDifficulty` (`ds007262`).
+
+Original source [OpenNeuro ds007169 v1.0.5](https://doi.org/10.18112/openneuro.ds007169.v1.0.5), CC0-1.0. See [cognitive plan](cognitive-group-a-plan.md), [source lock](ds007169-cognitive-source-lock.json) and [conversion result](ds007169-cognitive-conversion-result.json).
+
+### MultitaskWorkload
+
+Hinss et al. (2021, 2023) / Neuroergonomics 2021 Passive BCI Competition / Zenodo `5055046` v2. 15 participants; 9834 training and 3576 test cases, 61 channels x 500 samples at 250 Hz. Classes: `easy`, `medium`, `difficult`.
+
+Three-class ecological multitasking workload classification elicited via NASA's Multi-Attribute Task Battery-II (`MATBeasy`, `MATBmed`, `MATBdiff`) across labelled sessions `S1` and `S2` (7 days apart; unlabelled competition session `S3` and resting files excluded). Fixed whole-subject 75/25 split (`11` TRAIN / `4` TEST). Native released 2.0-second (`500`-sample) non-overlapping epochs across 61 actiCHamp scalp EEG channels at 250 Hz cast to `float64` microvolts with zero flat sensors removed. Represents the 15-subject MATB competition release within the broader Hinss et al. (`COG-BCI`) programme.
+
+Original source [Zenodo 5055046](https://doi.org/10.5281/zenodo.5055046), CC-BY-SA-4.0. See [cognitive plan](cognitive-group-a-plan.md), [source lock](neuro2021-cognitive-source-lock.json) and [conversion result](neuro2021-cognitive-conversion-result.json).
+
+### CognitiveLoadTasks
+
+Nirabi et al. (2026) / IIUM / Mendeley Data `CLATEEG26` v3 (`10.17632/pxysmjn3j2.3`). 40 participants; 3600 training and 1200 test cases, 8 channels x 1000 samples at 250 Hz. Classes: `neutral`, `low`, `medium`, `high`.
+
+Four-class protocol-defined cognitive load classification pooled across Stroop Colour-Word (`Stroop_Data`) and Mental Arithmetic (`Arithmetic_Data`) tasks across 40 healthy adults (`subject-01`..`subject-40`). Fixed whole-subject 75/25 split (`30` TRAIN / `10` TEST). First 15 consecutive non-overlapping 4.0-second (`1000`-sample) windows (`60 s`) per task-condition recording across the 8 OpenBCI Cyton 10-20 scalp EEG channels (`Fp1`, `Fp2`, `F7`, `F3`, `Fz`, `F4`, `F8`, `C4`) at 250 Hz in `float64` microvolts with zero flat sensors removed.
+
+Original source [Mendeley Data 10.17632/pxysmjn3j2.3](https://doi.org/10.17632/pxysmjn3j2.3), CC-BY-4.0. See [cognitive plan](cognitive-group-a-plan.md), [source lock](clateeg26-cognitive-source-lock.json) and [conversion result](clateeg26-cognitive-conversion-result.json).
+
+### SternbergMemory
+
+Onton, Delorme and Makeig (2005) / SCCN UCSD / OpenNeuro `ds004117` v1.0.1. 23 participants; 1534 training and 558 test cases, 69 channels x 500 samples at 250 Hz. Classes: `load_3`, `load_5`, `load_7`.
+
+Three-class modified Sternberg working-memory maintenance load classification (`3`, `5`, or `7` memorised letters presented amongst ignored distractor letters) across 23 participants (`sub-001`..`sub-012`, `sub-014`..`sub-024`), partitioned by a fixed whole-subject 75/25 split (`17` TRAIN / `6` TEST). Non-overlapping 2.0-second (`500`-sample) maintenance-delay epochs starting at `task_role == work_memory` (`show_dash`, minimum delay to probe `2.233 s`), excluding `bad_trial` markers and 3 unmarked `+/-1000 uV` ADC rail-saturated trials (`trials 7, 8, and 25`) in `sub-004_ses-01_run-2`. The 69 scalp EEG channels (`LEYE` and `REYE` EOG excluded) are harmonised to 250 Hz via whole-recording anti-alias rational polyphase resampling where native runs were recorded at 500 Hz, 500.059 Hz, or 1000 Hz, preserving all 69 scalp channels with zero flat sensors removed.
+
+Original source [OpenNeuro ds004117 v1.0.1](https://doi.org/10.18112/openneuro.ds004117.v1.0.1), CC0-1.0. See [cognitive plan](cognitive-group-a-plan.md), [source lock](ds004117-cognitive-source-lock.json) and [conversion result](ds004117-cognitive-conversion-result.json).
+
+### NaturalisticEmotion
+
+Mishra, Asif, Tiwary and Srinivasan (2023) / IIIT Allahabad / OpenNeuro `ds003751` v1.0.6 (`DENS`). 9 participants; 780 training and 405 test cases, 128 channels x 1000 samples at 250 Hz. Classes: `HVHA`, `HVLA`, `LVHA`, `LVLA`.
+
+Four-class circumplex emotion classification (`valence >= 5.0` vs `< 5.0` and `arousal >= 5.0` vs `< 5.0` computed directly from participant numeric self-ratings in `beh/*_beh.tsv`) during naturalistic emotional multimedia videos across the 9 byte-intact rated participants in OpenNeuro `ds003751` v1.0.6 (`6` TRAIN / `3` TEST; 6 recordings lacking `_beh.tsv` and 25 recordings whose `.fdt` binaries are truncated mid-file across all OpenNeuro releases `v1.0.0`..`v1.0.6` relative to `EEG.nbchan * EEG.pnts * 4` are excluded and logged). Consecutive non-overlapping 4.0-second (`1000`-sample) windows within non-neutral `stm` stimulus intervals (1-based 250 Hz sample latencies in `events.tsv`, split around `[IBEG, IEND]` impedance checks) across the 128 active EGI HydroCel scalp channels (`E1`..`E128`; zero-valued vertex reference `E129` and peripheral `ECG`/`EMG` excluded) in `float64` microvolts with zero flat sensors removed.
+
+Original source [OpenNeuro ds003751 v1.0.6](https://doi.org/10.18112/openneuro.ds003751.v1.0.6), CC0-1.0 (`dataset_description.json`; `ODbL-1.0` in root `LICENSE`). See [cognitive plan](cognitive-group-a-plan.md), [source lock](ds003751-cognitive-source-lock.json) and [conversion result](ds003751-cognitive-conversion-result.json).
+
+### SleepDeprivation
+
+Xiang, Fan, Bai, Lv and Lei (2024) / Southwest University / OpenNeuro `ds004902` v1.0.8. 68 participants; 3060 training and 1020 test cases, 61 channels x 2000 samples at 500 Hz. Classes: `normal_sleep`, `sleep_deprived`.
+
+Binary vigilance-state classification (`ses-1` normal sleep vs `ses-2` acute sleep deprivation, with counterbalanced chronological visit order recorded in `SessionOrder`) during eyes-open resting-state scalp EEG across the 68 byte-intact paired participants (`sub-01`, `sub-28`, and `sub-44` excluded and logged due to upstream byte-truncated `ses-2` `.fdt` binaries on OpenNeuro). Fixed whole-subject 75/25 split (`51` TRAIN / `17` TEST). First 30 consecutive non-overlapping 4.0-second (`2000`-sample) windows (`120 s`) per session across the 61 scalp EEG channels harmonised to 500 Hz in `float64` microvolts (`sub-39_ses-2` and `sub-43_ses-2` recorded at 5000 Hz are anti-alias decimated 10x before windowing) with zero flat sensors removed.
+
+Original source [OpenNeuro ds004902 v1.0.8](https://doi.org/10.18112/openneuro.ds004902.v1.0.8), CC0-1.0. See [cognitive plan](cognitive-group-a-plan.md), [source lock](ds004902-cognitive-source-lock.json) and [conversion result](ds004902-cognitive-conversion-result.json).
+
+### PythonCodeReading
+
+Kuo and Prat (2024) / University of Washington / OpenNeuro `ds004771` v1.0.0. 61 participants; 7177 training and 2560 test cases, 32 channels x 334 samples at 256 Hz. Classes: `well_formed`, `semantically_implausible`, `structurally_invalid`, `doubly_anomalous`.
+
+Four-class Python code comprehension ERP classification across 61 programmers (`45` TRAIN / `16` TEST whole-subject split). Native pre-epoched 334-sample (`~1.305 s` at native 256 Hz) trials locked to critical Python tokens across the 32 scalp EEG channels (`LIO` and `ROC` ocular channels excluded) in `float64` microvolts with zero flat sensors removed and no added DSP. Prepared in `D:/Data/EEG/PythonCodeReading`.
+
+Original source [OpenNeuro ds004771 v1.0.0](https://doi.org/10.18112/openneuro.ds004771.v1.0.0), CC0-1.0. See [cognitive Group B plan](cognitive-group-b-plan.md), [source lock](ds004771-cognitive-source-lock.json) and [conversion result](ds004771-cognitive-conversion-result.json).
+
+### FuzzySemantics
+
+TMNRED / OpenNeuro `ds005383` v1.0.0. 30 participants; 8780 training and 3191 test cases, 30 channels x 200 samples at 200 Hz. Classes: `semantic_target`, `non_target`.
+
+Binary fuzzy semantic target versus non-target classification during Chinese natural reading RSVP across 30 participants (`22` TRAIN / `8` TEST whole-subject split). Epochs span `[-0.2, 0.8) s` (`200` samples at native 200 Hz) across the 30 scalp EEG channels (`Status` trigger channel excluded) in calibrated `float64` microvolts with zero flat sensors removed. Prepared in `D:/Data/EEG/FuzzySemantics`.
+
+Original source [OpenNeuro ds005383 v1.0.0](https://doi.org/10.18112/openneuro.ds005383.v1.0.0), CC0-1.0. See [cognitive Group B plan](cognitive-group-b-plan.md), [source lock](ds005383-cognitive-source-lock.json) and [conversion result](ds005383-cognitive-conversion-result.json).
+
+### InternalAttention
+
+Delorme et al. / OpenNeuro `ds002691` v1.1.0. 20 participants; 6071 training and 2093 test cases, 32 channels x 500 samples at 250 Hz. Classes: `concentration`, `relaxation`.
+
+Binary sustained internal mental concentration versus relaxation classification across 20 participants (`15` TRAIN / `5` TEST whole-subject split). Consecutive non-overlapping 2.0-second (`500`-sample) windows extracted strictly inside instructed concentration and relaxation task blocks at native 250 Hz across all 32 scalp EEG channels in `float64` microvolts with zero flat sensors removed. Prepared in `D:/Data/EEG/InternalAttention`.
+
+Original source [OpenNeuro ds002691 v1.1.0](https://doi.org/10.18112/openneuro.ds002691.v1.1.0), CC0-1.0. See [cognitive Group B plan](cognitive-group-b-plan.md), [source lock](ds002691-cognitive-source-lock.json) and [conversion result](ds002691-cognitive-conversion-result.json).
+
+### VisualSymmetry
+
+Makin et al. (2022) / University of Liverpool `SPN1` / OpenNeuro `ds004347` v1.0.0. 24 participants; 2879 training and 960 test cases, 64 channels x 512 samples at 512 Hz. Classes: `regular`, `random`.
+
+Binary sustained posterior negativity (`SPN`) visual symmetry perception classification (regular reflection/rotation symmetry vs random dot patterns) across 24 participants (`18` TRAIN / `6` TEST whole-subject split). Epochs span `[-0.2, 0.8) s` (`512` samples at native 512 Hz) decoded directly from 24-bit BioSemi BDF recordings across the 64 scalp EEG channels (`EXG1`..`EXG8` and `Status` excluded) in calibrated `float64` microvolts with zero flat sensors removed. Prepared in `D:/Data/EEG/VisualSymmetry`.
+
+Original source [OpenNeuro ds004347 v1.0.0](https://doi.org/10.18112/openneuro.ds004347.v1.0.0), CC0-1.0. See [cognitive Group B plan](cognitive-group-b-plan.md), [source lock](ds004347-cognitive-source-lock.json) and [conversion result](ds004347-cognitive-conversion-result.json).
+
+### MoralConflict
+
+OpenNeuro `ds004860` v1.0.0. 31 participants; 2488 training and 866 test cases, 32 channels x 512 samples at 512 Hz. Classes: `accidental_congruent`, `accidental_incongruent`, `intentional_congruent`, `intentional_incongruent`.
+
+Four-class moral intentionality by target congruency ERP classification (`accidental` vs `intentional` harm crossed with `congruent` vs `incongruent` target) across 31 participants (`23` TRAIN / `8` TEST whole-subject split). Epochs span `[-0.2, 0.8) s` (`512` samples at 512 Hz; 30 participants native 512 Hz, `sub-110` anti-alias decimated `4x` from 2,048 Hz) across the 32 BioSemi scalp EEG channels (`EXG1`..`EXG8` and `Status` excluded) in calibrated `float64` microvolts with zero flat sensors removed. Prepared in `D:/Data/EEG/MoralConflict`.
+
+Original source [OpenNeuro ds004860 v1.0.0](https://doi.org/10.18112/openneuro.ds004860.v1.0.0), CC0-1.0. See [cognitive Group B plan](cognitive-group-b-plan.md), [source lock](ds004860-cognitive-source-lock.json) and [conversion result](ds004860-cognitive-conversion-result.json).
+
+### ProbabilisticFeedback
+
+Brown, Jackson and Cavanagh (2022) / University of New Mexico / OpenNeuro `ds003753` v1.1.0. 25 participants; 2877 training and 1120 test cases, 59 channels x 500 samples at 500 Hz. Classes: `win_puppy`, `win_cow`, `lose_puppy`, `lose_cow`.
+
+Four-class probabilistic reinforcement learning feedback x affective stimulus classification (`win` vs `lose` feedback crossed with high-liking `puppy` vs neutral `cow` cues) across 25 participants (`18` TRAIN / `7` TEST whole-subject split). Epochs span `[-0.2, 0.8) s` (`500` samples at native 500 Hz) aligned onto the verified 59-channel shared 10-10 scalp EEG sensor order (`VEOG`, `HEOG`, `EKG`, and unshared auxiliary channels excluded) in `float64` microvolts with zero flat sensors removed. Prepared in `D:/Data/EEG/ProbabilisticFeedback`.
+
+Original source [OpenNeuro ds003753 v1.1.0](https://doi.org/10.18112/openneuro.ds003753.v1.1.0), CC0-1.0. See [cognitive Group B plan](cognitive-group-b-plan.md), [source lock](ds003753-cognitive-source-lock.json) and [conversion result](ds003753-cognitive-conversion-result.json).
+
+### SentenceViolations
+
+Holcomb / San Diego State University NCL / OpenNeuro `ds008711` v1.0.0. 64 participants; 8640 training and 2880 test cases, 29 channels x 500 samples at 500 Hz. Classes: `control`, `syntactic_violation`, `semantic_violation`, `double_violation`, `word_order_anomaly`.
+
+Five-class psycholinguistic critical-word RSVP classification across 64 participants (`48` TRAIN / `16` TEST whole-subject split). Epochs span `[-0.2, 0.8) s` (`500` samples at native 500 Hz) locked to critical target words across the 29 scalp EEG channels (`LE`, `HE`, and `A2` right-mastoid channels excluded) in calibrated `float64` microvolts with zero flat sensors removed. Prepared in `D:/Data/EEG/SentenceViolations`.
+
+Original source [OpenNeuro ds008711 v1.0.0](https://doi.org/10.18112/openneuro.ds008711.v1.0.0), CC0-1.0. See [cognitive Group B plan](cognitive-group-b-plan.md), [source lock](ds008711-cognitive-source-lock.json) and [conversion result](ds008711-cognitive-conversion-result.json).
+
+### NarrativeReward
+
+MacEwan University / OpenNeuro `ds007968` v1.0.0. 40 participants; 4319 training and 1440 test cases, 30 channels x 1000 samples at 1000 Hz. Classes: `narrative_win`, `narrative_loss`, `nonnarrative_win`, `nonnarrative_loss`.
+
+Four-class narrative context x monetary reward feedback classification (`S  7` narrative win, `S  8` narrative loss, `S 17` non-narrative win, `S 18` non-narrative loss, cross-verified 1-to-1 against `beh/*_beh.tsv`) across 40 participants (`30` TRAIN / `10` TEST whole-subject split). Epochs span `[-0.2, 0.8) s` (`1000` samples at native 1000 Hz) across the 30 BrainVision scalp EEG channels (`M1` and `M2` mastoids excluded) in calibrated `float64` microvolts with zero flat sensors removed. Prepared in `D:/Data/EEG/NarrativeReward`.
+
+Original source [OpenNeuro ds007968 v1.0.0](https://doi.org/10.18112/openneuro.ds007968.v1.0.0), CC0-1.0. See [cognitive Group B plan](cognitive-group-b-plan.md), [source lock](ds007968-cognitive-source-lock.json) and [conversion result](ds007968-cognitive-conversion-result.json).
+
+### FlankerConflict
+
+Holcomb and Emmorey / San Diego State University NCL / OpenNeuro `ds005866` v1.0.1 (`Flankers-NEAR`). 60 participants; 12148 training and 4050 test cases, 29 channels x 500 samples at 500 Hz. Classes: `word_none`, `word_same`, `word_different`, `pseudoword_none`, `pseudoword_same`, `pseudoword_different`.
+
+Six-class lexicality x orthographic flanker interference classification (`word` vs `pseudoword` crossed with `none`, `same`, or `different` flankers) across 60 participants (`45` TRAIN / `15` TEST whole-subject split). Epochs span `[-0.2, 0.8) s` (`500` samples at native 500 Hz) across the 29 scalp EEG channels (`LE`, `HE`, and `A2` excluded) in calibrated `float64` microvolts with zero flat sensors removed. Prepared in `D:/Data/EEG/FlankerConflict`.
+
+Original source [OpenNeuro ds005866 v1.0.1](https://doi.org/10.18112/openneuro.ds005866.v1.0.1), CC0-1.0. See [cognitive Group B plan](cognitive-group-b-plan.md), [source lock](ds005866-cognitive-source-lock.json) and [conversion result](ds005866-cognitive-conversion-result.json).
+
+### BanditGambling
+
+Cavanagh / University of New Mexico / OpenNeuro `ds003458` v1.1.0. 23 participants; 8146 training and 2870 test cases, 63 channels x 500 samples at 500 Hz. Classes: `feedback_win`, `feedback_loss`.
+
+Binary oscillating three-armed bandit reward (`S  5`) versus loss (`S  6`) feedback classification across 23 participants (`17` TRAIN / `6` TEST whole-subject split). Epochs span `[-0.2, 0.8) s` (`500` samples at native 500 Hz) aligned onto the verified 63-channel shared scalp EEG sensor order (`VEOG` excluded) in `float64` microvolts with zero flat sensors removed. Prepared in `D:/Data/EEG/BanditGambling`.
+
+Original source [OpenNeuro ds003458 v1.1.0](https://doi.org/10.18112/openneuro.ds003458.v1.1.0), CC0-1.0. See [cognitive Group B plan](cognitive-group-b-plan.md), [source lock](ds003458-cognitive-source-lock.json) and [conversion result](ds003458-cognitive-conversion-result.json).
+
+### AffectiveMusic
+
+Daly et al. (2020) / University of Reading / OpenNeuro `ds002721` v1.0.3. 31 participants; 2588 training and 904 test cases, 19 channels x 4000 samples at 1000 Hz. Classes: `HPHE`, `HPLE`, `LPHE`, `LPLE`.
+
+Four-class music-induced affect circumplex classification derived from per-trial participant pleasantness (`Q800`) and energy (`Q801`) ratings (`> 5` vs `< 5`, neutral midpoint `5` excluded) across all 31 participants (`23` TRAIN / `8` TEST whole-subject split) during acoustic music listening (`run2`..`run5`; resting `run1`/`run6` excluded). Extracts up to four consecutive non-overlapping 4.0-second (`4000`-sample) windows strictly within each 16-second music clip at native 1000 Hz across the 19 10-20 scalp EEG channels (`ECG` and `GSR` excluded) in calibrated `float64` microvolts with zero flat sensors removed. Prepared in `D:/Data/EEG/AffectiveMusic`.
+
+Original source [OpenNeuro ds002721 v1.0.3](https://doi.org/10.18112/openneuro.ds002721.v1.0.3), CC0-1.0 in `dataset_description.json` (`CC-BY-4.0` noted in `README`). See [cognitive Group B plan](cognitive-group-b-plan.md), [source lock](ds002721-cognitive-source-lock.json) and [conversion result](ds002721-cognitive-conversion-result.json).
+
+### VerbalWorkingMemory
+
+Pavlov and Kotchoubey (2022) / Ural Federal University / OpenNeuro `ds003655` v1.0.2. 155 participants; 13910 training and 4676 test cases, 19 channels x 1000 samples at 500 Hz. Classes: `retention_5`, `manipulation_5`, `retention_6`, `manipulation_6`, `retention_7`, `manipulation_7`.
+
+Six-class modified Sternberg verbal working-memory maintenance classification (`5`, `6`, or `7` consonants crossed with simple retention `R` vs alphabetical manipulation `M`) across 155 unique retained participants (`sub-001`..`sub-148`, `sub-150`..`sub-156`; `sub-149` excluded automatically as an exact duplicate waveform recording; `116` TRAIN / `39` TEST whole-subject split). Non-overlapping 2.0-second (`1000`-sample) delay-period windows at native 500 Hz across the 19 10-20 scalp EEG channels (`EOGv` and `EOGh` excluded) in `float64` microvolts with zero flat sensors removed. Prepared in `D:/Data/EEG/VerbalWorkingMemory`.
+
+Original source [OpenNeuro ds003655 v1.0.2](https://doi.org/10.18112/openneuro.ds003655.v1.0.2), CC0-1.0. See [cognitive Group B plan](cognitive-group-b-plan.md), [source lock](ds003655-cognitive-source-lock.json) and [conversion result](ds003655-cognitive-conversion-result.json).
+
+### FaceStimuli
+
+Kappenman et al. (2021) / `ERP CORE` `N170` (`ds003061` v1.0.0 / Zenodo `14866307`). 40 participants; 9600 training and 3200 test cases, 30 channels x 1024 samples at 1024 Hz. Classes: `faces`, `cars`, `scrambled_faces`, `scrambled_cars`.
+
+Four-class visual object and face perception ERP classification (`N170` paradigm) across the 40 `ERP CORE` participants (`001`..`030` TRAIN / `031`..`040` TEST, matching `WordRelatedness`). Epochs span `[-0.2, 0.8) s` (`1024` samples at native 1024 Hz) across the 30 scalp EEG channels (`HEOG_left`, `HEOG_right`, `VEOG_lower` excluded) in `float64` microvolts with zero flat sensors removed and no added DSP. Prepared in `D:/Data/EEG/FaceStimuli`.
+
+Original source [OSF/Zenodo ERP CORE](https://doi.org/10.18115/D5JW4R) ([OpenNeuro ds003061 v1.0.0](https://doi.org/10.18112/openneuro.ds003061.v1.0.0)), CC-BY-SA-4.0. Shared 40-participant cohort with `WordRelatedness`, `AuditoryDeviance`, and `SpatialAttention`. See [cognitive Group B plan](cognitive-group-b-plan.md) and [conversion result](erpcore-n170-cognitive-conversion-result.json).
+
+### AuditoryDeviance
+
+Kappenman et al. (2021) / `ERP CORE` `MMN` (`ds003064` v1.0.0 / Zenodo `14866307`). 40 participants; 11934 training and 4000 test cases, 30 channels x 1024 samples at 1024 Hz. Classes: `pre_deviant_standard`, `deviant`.
+
+Binary passive auditory oddball mismatch negativity (`MMN`) classification comparing `70 dB` intensity-deviant tones (`deviant`, code `70`) against the immediately preceding `80 dB` standard tones (`pre_deviant_standard`, matched `1:1` trial counts) across the 40 `ERP CORE` participants (`001`..`030` TRAIN / `031`..`040` TEST). Epochs span `[-0.2, 0.8) s` (`1024` samples at native 1024 Hz) across the 30 scalp EEG channels (`3` EOG channels excluded) in `float64` microvolts with zero flat sensors removed. Prepared in `D:/Data/EEG/AuditoryDeviance`.
+
+Original source [OSF/Zenodo ERP CORE](https://doi.org/10.18115/D5JW4R) ([OpenNeuro ds003064 v1.0.0](https://doi.org/10.18112/openneuro.ds003064.v1.0.0)), CC-BY-SA-4.0. Shared 40-participant cohort with `WordRelatedness`, `FaceStimuli`, and `SpatialAttention`. See [cognitive Group B plan](cognitive-group-b-plan.md) and [conversion result](erpcore-mmn-cognitive-conversion-result.json).
+
+### SpatialAttention
+
+Kappenman et al. (2021) / `ERP CORE` `N2pc` (`ds003065` v1.0.0 / Zenodo `14866307`). 40 participants; 9607 training and 3200 test cases, 30 channels x 1024 samples at 1024 Hz. Classes: `target_left`, `target_right`.
+
+Binary covert visual spatial attention (`N2pc`) classification (`target_left` vs `target_right` lateralised target pop-out arrays) across the 40 `ERP CORE` participants (`001`..`030` TRAIN / `031`..`040` TEST). Epochs span `[-0.2, 0.8) s` (`1024` samples at native 1024 Hz) across the 30 scalp EEG channels (`3` EOG channels excluded) in `float64` microvolts with zero flat sensors removed. Prepared in `D:/Data/EEG/SpatialAttention`.
+
+Original source [OSF/Zenodo ERP CORE](https://doi.org/10.18115/D5JW4R) ([OpenNeuro ds003065 v1.0.0](https://doi.org/10.18112/openneuro.ds003065.v1.0.0)), CC-BY-SA-4.0. Shared 40-participant cohort with `WordRelatedness`, `FaceStimuli`, and `AuditoryDeviance`. See [cognitive Group B plan](cognitive-group-b-plan.md) and [conversion result](erpcore-n2pc-cognitive-conversion-result.json).

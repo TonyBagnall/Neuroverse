@@ -1,0 +1,442 @@
+{
+  "dataset": "ds007262",
+  "checked": "2026-11-10",
+  "source": "OpenNeuro public S3 current object listing; metadata-only",
+  "total_bytes": 2062257491,
+  "selected_bids_eeg_bytes": 397315573,
+  "xdf_bytes": 1162088054,
+  "files": [
+    {
+      "name": "ds007262/sub-001/eeg/sub-001_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-001/eeg/sub-001_task-arithmetic_eeg.eeg",
+      "bytes": 16579584
+    },
+    {
+      "name": "ds007262/sub-001/eeg/sub-001_task-arithmetic_eeg.json",
+      "bytes": 418
+    },
+    {
+      "name": "ds007262/sub-001/eeg/sub-001_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-001/eeg/sub-001_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-001/eeg/sub-001_task-arithmetic_events.tsv",
+      "bytes": 31931
+    },
+    {
+      "name": "ds007262/sub-003/eeg/sub-003_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-003/eeg/sub-003_task-arithmetic_eeg.eeg",
+      "bytes": 18156096
+    },
+    {
+      "name": "ds007262/sub-003/eeg/sub-003_task-arithmetic_eeg.json",
+      "bytes": 416
+    },
+    {
+      "name": "ds007262/sub-003/eeg/sub-003_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-003/eeg/sub-003_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-003/eeg/sub-003_task-arithmetic_events.tsv",
+      "bytes": 66789
+    },
+    {
+      "name": "ds007262/sub-004/eeg/sub-004_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-004/eeg/sub-004_task-arithmetic_eeg.eeg",
+      "bytes": 18540288
+    },
+    {
+      "name": "ds007262/sub-004/eeg/sub-004_task-arithmetic_eeg.json",
+      "bytes": 418
+    },
+    {
+      "name": "ds007262/sub-004/eeg/sub-004_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-004/eeg/sub-004_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-004/eeg/sub-004_task-arithmetic_events.tsv",
+      "bytes": 82476
+    },
+    {
+      "name": "ds007262/sub-005/eeg/sub-005_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-005/eeg/sub-005_task-arithmetic_eeg.eeg",
+      "bytes": 22091904
+    },
+    {
+      "name": "ds007262/sub-005/eeg/sub-005_task-arithmetic_eeg.json",
+      "bytes": 418
+    },
+    {
+      "name": "ds007262/sub-005/eeg/sub-005_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-005/eeg/sub-005_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-005/eeg/sub-005_task-arithmetic_events.tsv",
+      "bytes": 78455
+    },
+    {
+      "name": "ds007262/sub-006/eeg/sub-006_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-006/eeg/sub-006_task-arithmetic_eeg.eeg",
+      "bytes": 19788480
+    },
+    {
+      "name": "ds007262/sub-006/eeg/sub-006_task-arithmetic_eeg.json",
+      "bytes": 418
+    },
+    {
+      "name": "ds007262/sub-006/eeg/sub-006_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-006/eeg/sub-006_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-006/eeg/sub-006_task-arithmetic_events.tsv",
+      "bytes": 56469
+    },
+    {
+      "name": "ds007262/sub-007/eeg/sub-007_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-007/eeg/sub-007_task-arithmetic_eeg.eeg",
+      "bytes": 20559168
+    },
+    {
+      "name": "ds007262/sub-007/eeg/sub-007_task-arithmetic_eeg.json",
+      "bytes": 418
+    },
+    {
+      "name": "ds007262/sub-007/eeg/sub-007_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-007/eeg/sub-007_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-007/eeg/sub-007_task-arithmetic_events.tsv",
+      "bytes": 61222
+    },
+    {
+      "name": "ds007262/sub-008/eeg/sub-008_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-008/eeg/sub-008_task-arithmetic_eeg.eeg",
+      "bytes": 36887616
+    },
+    {
+      "name": "ds007262/sub-008/eeg/sub-008_task-arithmetic_eeg.json",
+      "bytes": 418
+    },
+    {
+      "name": "ds007262/sub-008/eeg/sub-008_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-008/eeg/sub-008_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-008/eeg/sub-008_task-arithmetic_events.tsv",
+      "bytes": 132354
+    },
+    {
+      "name": "ds007262/sub-009/eeg/sub-009_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-009/eeg/sub-009_task-arithmetic_eeg.eeg",
+      "bytes": 20587968
+    },
+    {
+      "name": "ds007262/sub-009/eeg/sub-009_task-arithmetic_eeg.json",
+      "bytes": 418
+    },
+    {
+      "name": "ds007262/sub-009/eeg/sub-009_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-009/eeg/sub-009_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-009/eeg/sub-009_task-arithmetic_events.tsv",
+      "bytes": 44879
+    },
+    {
+      "name": "ds007262/sub-010/eeg/sub-010_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-010/eeg/sub-010_task-arithmetic_eeg.eeg",
+      "bytes": 25668864
+    },
+    {
+      "name": "ds007262/sub-010/eeg/sub-010_task-arithmetic_eeg.json",
+      "bytes": 419
+    },
+    {
+      "name": "ds007262/sub-010/eeg/sub-010_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-010/eeg/sub-010_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-010/eeg/sub-010_task-arithmetic_events.tsv",
+      "bytes": 52977
+    },
+    {
+      "name": "ds007262/sub-011/eeg/sub-011_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-011/eeg/sub-011_task-arithmetic_eeg.eeg",
+      "bytes": 28752192
+    },
+    {
+      "name": "ds007262/sub-011/eeg/sub-011_task-arithmetic_eeg.json",
+      "bytes": 419
+    },
+    {
+      "name": "ds007262/sub-011/eeg/sub-011_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-011/eeg/sub-011_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-011/eeg/sub-011_task-arithmetic_events.tsv",
+      "bytes": 76272
+    },
+    {
+      "name": "ds007262/sub-012/eeg/sub-012_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-012/eeg/sub-012_task-arithmetic_eeg.eeg",
+      "bytes": 19008000
+    },
+    {
+      "name": "ds007262/sub-012/eeg/sub-012_task-arithmetic_eeg.json",
+      "bytes": 418
+    },
+    {
+      "name": "ds007262/sub-012/eeg/sub-012_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-012/eeg/sub-012_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-012/eeg/sub-012_task-arithmetic_events.tsv",
+      "bytes": 79745
+    },
+    {
+      "name": "ds007262/sub-013/eeg/sub-013_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-013/eeg/sub-013_task-arithmetic_eeg.eeg",
+      "bytes": 19248192
+    },
+    {
+      "name": "ds007262/sub-013/eeg/sub-013_task-arithmetic_eeg.json",
+      "bytes": 418
+    },
+    {
+      "name": "ds007262/sub-013/eeg/sub-013_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-013/eeg/sub-013_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-013/eeg/sub-013_task-arithmetic_events.tsv",
+      "bytes": 90108
+    },
+    {
+      "name": "ds007262/sub-014/eeg/sub-014_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-014/eeg/sub-014_task-arithmetic_eeg.eeg",
+      "bytes": 21420288
+    },
+    {
+      "name": "ds007262/sub-014/eeg/sub-014_task-arithmetic_eeg.json",
+      "bytes": 418
+    },
+    {
+      "name": "ds007262/sub-014/eeg/sub-014_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-014/eeg/sub-014_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-014/eeg/sub-014_task-arithmetic_events.tsv",
+      "bytes": 53848
+    },
+    {
+      "name": "ds007262/sub-015/eeg/sub-015_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-015/eeg/sub-015_task-arithmetic_eeg.eeg",
+      "bytes": 19730880
+    },
+    {
+      "name": "ds007262/sub-015/eeg/sub-015_task-arithmetic_eeg.json",
+      "bytes": 418
+    },
+    {
+      "name": "ds007262/sub-015/eeg/sub-015_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-015/eeg/sub-015_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-015/eeg/sub-015_task-arithmetic_events.tsv",
+      "bytes": 67459
+    },
+    {
+      "name": "ds007262/sub-016/eeg/sub-016_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-016/eeg/sub-016_task-arithmetic_eeg.eeg",
+      "bytes": 27324288
+    },
+    {
+      "name": "ds007262/sub-016/eeg/sub-016_task-arithmetic_eeg.json",
+      "bytes": 419
+    },
+    {
+      "name": "ds007262/sub-016/eeg/sub-016_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-016/eeg/sub-016_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-016/eeg/sub-016_task-arithmetic_events.tsv",
+      "bytes": 80465
+    },
+    {
+      "name": "ds007262/sub-018/eeg/sub-018_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-018/eeg/sub-018_task-arithmetic_eeg.eeg",
+      "bytes": 21863808
+    },
+    {
+      "name": "ds007262/sub-018/eeg/sub-018_task-arithmetic_eeg.json",
+      "bytes": 418
+    },
+    {
+      "name": "ds007262/sub-018/eeg/sub-018_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-018/eeg/sub-018_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-018/eeg/sub-018_task-arithmetic_events.tsv",
+      "bytes": 47542
+    },
+    {
+      "name": "ds007262/sub-019/eeg/sub-019_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-019/eeg/sub-019_task-arithmetic_eeg.eeg",
+      "bytes": 20028672
+    },
+    {
+      "name": "ds007262/sub-019/eeg/sub-019_task-arithmetic_eeg.json",
+      "bytes": 418
+    },
+    {
+      "name": "ds007262/sub-019/eeg/sub-019_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-019/eeg/sub-019_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-019/eeg/sub-019_task-arithmetic_events.tsv",
+      "bytes": 60682
+    },
+    {
+      "name": "ds007262/sub-020/eeg/sub-020_task-arithmetic_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007262/sub-020/eeg/sub-020_task-arithmetic_eeg.eeg",
+      "bytes": 19772928
+    },
+    {
+      "name": "ds007262/sub-020/eeg/sub-020_task-arithmetic_eeg.json",
+      "bytes": 418
+    },
+    {
+      "name": "ds007262/sub-020/eeg/sub-020_task-arithmetic_eeg.vhdr",
+      "bytes": 1131
+    },
+    {
+      "name": "ds007262/sub-020/eeg/sub-020_task-arithmetic_eeg.vmrk",
+      "bytes": 527
+    },
+    {
+      "name": "ds007262/sub-020/eeg/sub-020_task-arithmetic_events.tsv",
+      "bytes": 79413
+    }
+  ]
+}

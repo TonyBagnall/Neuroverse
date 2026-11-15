@@ -1,0 +1,185 @@
+{
+  "name": "Hinss2021",
+  "url": "https://zenodo.org/api/records/6874128",
+  "record_id": 7413650,
+  "title": "COG-BCI database: A multi-session and multi-task EEG cognitive dataset for passive brain-computer interfaces",
+  "licence": {
+    "id": "cc-by-4.0"
+  },
+  "access_right": "open",
+  "doi": "10.5281/zenodo.7413650",
+  "description": "<p>Brain-Computer Interfaces, and especially passive Brain-Computer Interfaces (pBCI), with their ability to estimate and detect mental states, are receiving increasing attention from both the scientific and the research and development communities. Many pBCIs aim to increase the safety of complex work environments such as in the aeronautical domain. Therefore, mental workload, vigilance and decision-making are some of the most commonly examined aspects of cognition within this field of research. A large proportion of pBCIs involve a component of machine learning and signal processing as the data that are collected need to be transformed into a reliable estimate of the users&rsquo; current mental state (e.g. mental workload). Improving this component is a major challenge for researchers, requiring large quantities of data. While data sharing is common for the active BCI community, open pBCI datasets are scarcer and generally incomplete with regards to the information they report. This is particularly true for datasets encompassing several tasks or sessions, which are of importance for tackling the challenges of transfer learning. Testing new pipelines, feature extraction algorithms and classifiers are central issues for future advances in research within this domain, as well as for algorithm benchmark and research reproducibility.The COG-BCI database presented here is comprised of the recordings of 29 participants over 3 individual sessions with 4 different tasks designed to elicit different cognitive states. This results in a total of over 100 hours of open electrophysiological (EEG) and electrocardiogram (ECG) data. The project was validated by the local ethical committee of the University of Toulouse (CER number 2021-342). The dataset was validated on a subjective, behavioral and physiological level (i.e. cardiac and cerebral activity), to ensure its usefulness to the pBCI community. This body of work represents a large effort to promote the use of pBCIs, as well as the use of open science.</p>\n\n<p>&nbsp;</p>\n\n<p><strong>The data are in the Brain Imaging Data Structure (BIDS) format. For more information, please read the COG-BCI_info.pdf file.</strong></p>\n\n<p><strong>Please note that version 4 corrected an electrode name mismatch, for which we sincerely apologize. The answers to the RSME and KSS questionnaires are provided in two separate .txt files.</strong></p>",
+  "files": [
+    {
+      "name": "sub-11.zip",
+      "bytes": 1126840983,
+      "checksum": "md5:c63aab36869315fa7303c76c4bfaa0e6"
+    },
+    {
+      "name": "COG-BCI_info.pdf",
+      "bytes": 223785,
+      "checksum": "md5:cecae8707280dc2251b8ca6c48a7302d"
+    },
+    {
+      "name": "KSS.txt",
+      "bytes": 6307,
+      "checksum": "md5:e44478cb22f7520daa88ca418f4e2a92"
+    },
+    {
+      "name": "notebook.mat",
+      "bytes": 4651,
+      "checksum": "md5:aed8373beb94cd719eb37c49d4fa0d54"
+    },
+    {
+      "name": "RSME.txt",
+      "bytes": 20550,
+      "checksum": "md5:ab2ac797cd82b3ea3e20321ce6c86c29"
+    },
+    {
+      "name": "sub-01.zip",
+      "bytes": 1096627416,
+      "checksum": "md5:23f1f74cced86b40a0a956c67bba74fb"
+    },
+    {
+      "name": "sub-02.zip",
+      "bytes": 1077561911,
+      "checksum": "md5:f3f0b80c9752494c7e0eaba2b5cba63b"
+    },
+    {
+      "name": "sub-03.zip",
+      "bytes": 1091918375,
+      "checksum": "md5:3120766d0e2d65ef0299980381f4aa3e"
+    },
+    {
+      "name": "sub-04.zip",
+      "bytes": 1061048048,
+      "checksum": "md5:613ae1a3937261ba07ff239f80f6ebf9"
+    },
+    {
+      "name": "sub-05.zip",
+      "bytes": 1028766446,
+      "checksum": "md5:9395a89068a247dc1f28bee677a2522d"
+    },
+    {
+      "name": "sub-06.zip",
+      "bytes": 1047170742,
+      "checksum": "md5:da029812690e0e352d7b4a3f2f3231f3"
+    },
+    {
+      "name": "sub-07.zip",
+      "bytes": 1038697112,
+      "checksum": "md5:1c7778dd78b514108d20c39bd13f83b0"
+    },
+    {
+      "name": "sub-08.zip",
+      "bytes": 1075163598,
+      "checksum": "md5:3ddf5876b2ed252d7210be6bb5c54b79"
+    },
+    {
+      "name": "sub-09.zip",
+      "bytes": 1068933020,
+      "checksum": "md5:84e52f812865cc500f3c8d39b82a3d5f"
+    },
+    {
+      "name": "sub-10.zip",
+      "bytes": 1077684921,
+      "checksum": "md5:3470c8890aa6ae5bd684c2a4127554f8"
+    },
+    {
+      "name": "sub-12.zip",
+      "bytes": 1121359309,
+      "checksum": "md5:7fda5b987eb6374a257b142b839fcd28"
+    },
+    {
+      "name": "sub-13.zip",
+      "bytes": 1083674913,
+      "checksum": "md5:f0b00c46f9f2c6088e4d9a8b0affea81"
+    },
+    {
+      "name": "sub-14.zip",
+      "bytes": 1092417518,
+      "checksum": "md5:03e164e277d89070c30fa59424cd78c4"
+    },
+    {
+      "name": "sub-15.zip",
+      "bytes": 1109991868,
+      "checksum": "md5:1fd226373725dc3783d33a8c62ed06d6"
+    },
+    {
+      "name": "sub-16.zip",
+      "bytes": 1090030460,
+      "checksum": "md5:0dbab52411a3d8c2a07f7b2d749039c9"
+    },
+    {
+      "name": "sub-17.zip",
+      "bytes": 1090536096,
+      "checksum": "md5:1c81adb20356f3f1429df7d0dd7bb914"
+    },
+    {
+      "name": "sub-18.zip",
+      "bytes": 1109262532,
+      "checksum": "md5:76999fc70c7fd2d9ddbd9138deb14f8d"
+    },
+    {
+      "name": "triggerlist.txt",
+      "bytes": 1922,
+      "checksum": "md5:6c3b173794158d0a3298ad602e162b7a"
+    },
+    {
+      "name": "sub-29.zip",
+      "bytes": 1091533809,
+      "checksum": "md5:cfee23041f75b86b9e7d6f671c633287"
+    },
+    {
+      "name": "sub-28.zip",
+      "bytes": 1111741947,
+      "checksum": "md5:4d3862026ba6775f29b68a0c2b32e5f7"
+    },
+    {
+      "name": "sub-27.zip",
+      "bytes": 1090533893,
+      "checksum": "md5:0751c82f0cbeb2ee07e8ecec66d2797c"
+    },
+    {
+      "name": "sub-26.zip",
+      "bytes": 1121018183,
+      "checksum": "md5:e650edc8edcbbb295f3fa49f0bc9c62d"
+    },
+    {
+      "name": "sub-25.zip",
+      "bytes": 1089821633,
+      "checksum": "md5:bbe75eb0758ff331f0807b242ee3119c"
+    },
+    {
+      "name": "sub-24.zip",
+      "bytes": 1121684870,
+      "checksum": "md5:b3af9f114daa6f8a6022db580e9e012c"
+    },
+    {
+      "name": "sub-23.zip",
+      "bytes": 1079124591,
+      "checksum": "md5:e2cdcf884ca801b10951a2ede52d53cb"
+    },
+    {
+      "name": "sub-22.zip",
+      "bytes": 1144512791,
+      "checksum": "md5:4cfd73876a2de9b87a381260d750900d"
+    },
+    {
+      "name": "sub-21.zip",
+      "bytes": 1116697785,
+      "checksum": "md5:34a1bb2d9f95e5c7664c0fd6c2f00333"
+    },
+    {
+      "name": "sub-20.zip",
+      "bytes": 1116043019,
+      "checksum": "md5:6db83600139c2d075e96593d1a692ff1"
+    },
+    {
+      "name": "sub-19.zip",
+      "bytes": 1117484516,
+      "checksum": "md5:fe9b49a82ce7c4b0fadb2b9e7900bb65"
+    }
+  ],
+  "review_correction": "This is full COG-BCI29people/3sessions, not the15person Neuro2021 competition subset. Do not count both MATB views as independent recordings."
+}

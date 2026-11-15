@@ -1,0 +1,19 @@
+[
+  {
+    "filename": "CLATEEG26.zip",
+    "id": "6dc26575-b9a2-432c-b0da-4c0f85193aef",
+    "content_details": {
+      "id": "ef3022d4-ab49-48c3-95f8-e844823118dd",
+      "sha256_hash": "180c9dcb9df7db35527b67ce5b822c6250f11fc979d73f7f6898bb44120224de",
+      "content_type": "application/zip",
+      "size": 2315327236,
+      "created_date": "2026-10-08T15:10:31.469Z",
+      "download_url": "https://data.mendeley.com/public-files/datasets/pxysmjn3j2/files/6dc26575-b9a2-432c-b0da-4c0f85193aef/file_downloaded",
+      "view_url": "https://data.mendeley.com/public-files/datasets/pxysmjn3j2/files/6dc26575-b9a2-432c-b0da-4c0f85193aef/file_viewed",
+      "download_expiry_time": "2126-11-10T08:11:24.506895842Z"
+    },
+    "size": 2315327236,
+    "last_modified_date": "2026-10-08T15:10:31.469Z",
+    "status": "COMPLETED"
+  }
+]

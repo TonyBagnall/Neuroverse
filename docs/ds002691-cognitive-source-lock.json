@@ -1,0 +1,1203 @@
+{
+  "dataset": "ds002691",
+  "source_record_id": "ds002691",
+  "source_revision": "OpenNeuro ds002691 v1.1.0, Git bde891f03ab06f65b1eb8f00d3814cf63255e77c",
+  "original_ref": "1.1.0",
+  "original_commit": "bde891f03ab06f65b1eb8f00d3814cf63255e77c",
+  "licence": "CC0-1.0",
+  "licence_evidence": "Original pinned dataset_description.json License=CC0",
+  "source_urls": [
+    "https://openneuro.org/datasets/ds002691/versions/1.1.0"
+  ],
+  "metadata_archive_sha256": "e830cc0d1eae5206c9d43f5832c03a460a28ef9df86ac0d48acbda4b4c43c7fb",
+  "files": [
+    {
+      "name": "CHANGES",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/CHANGES",
+      "bytes": 141,
+      "checksum": "sha256:f5321892ef3c4c7e4f2c2f86d5364e8e74176231bbf1ce7a140813c4c28be595",
+      "sha256": "f5321892ef3c4c7e4f2c2f86d5364e8e74176231bbf1ce7a140813c4c28be595",
+      "git_blob_sha1": "f48c4d33fcb2c1366f5d38b269675902cf6a2af4"
+    },
+    {
+      "name": "README",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/README",
+      "bytes": 789,
+      "checksum": "sha256:eb0761c5fac472c14241c773eaafc0a6d4bdf7119a3402c5a8e417898dfbcb5d",
+      "sha256": "eb0761c5fac472c14241c773eaafc0a6d4bdf7119a3402c5a8e417898dfbcb5d",
+      "git_blob_sha1": "aec0cc588122bf35a7217c6428edb34da4c72ce9"
+    },
+    {
+      "name": "dataset_description.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/dataset_description.json",
+      "bytes": 612,
+      "checksum": "sha256:0b0d80dc2df7c62fcb8f1346e77f69bccb5c09cbbcc6ddb091f20fa847e28a58",
+      "sha256": "0b0d80dc2df7c62fcb8f1346e77f69bccb5c09cbbcc6ddb091f20fa847e28a58",
+      "git_blob_sha1": "8610eb2128d13cdf523eeef04da76dcc64320cbd"
+    },
+    {
+      "name": "events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/events.json",
+      "bytes": 349,
+      "checksum": "sha256:5c5828a864c370644d842a47349b6bbcb957aee1d3338b75ed482b5c2d43a33f",
+      "sha256": "5c5828a864c370644d842a47349b6bbcb957aee1d3338b75ed482b5c2d43a33f",
+      "git_blob_sha1": "e0737fad4c892c4a2ce21c9856d46a9c84944708"
+    },
+    {
+      "name": "participants.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/participants.json",
+      "bytes": 4530,
+      "checksum": "sha256:2b69002cf71180065f4e01ac2440526651d13497d980db042d3a5db05d63d028",
+      "sha256": "2b69002cf71180065f4e01ac2440526651d13497d980db042d3a5db05d63d028",
+      "git_blob_sha1": "2d56872270922ee3d6773e03077d6fa2cd50d2c8"
+    },
+    {
+      "name": "participants.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/participants.tsv",
+      "bytes": 3017,
+      "checksum": "sha256:a209a8118a81a1a03643846308d50a254715f873b31378752d8f1ddb805602d3",
+      "sha256": "a209a8118a81a1a03643846308d50a254715f873b31378752d8f1ddb805602d3",
+      "git_blob_sha1": "bd1fd8f5c0a4372e680d6e4742cda769411409ac"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-001/eeg/sub-001_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-001/eeg/sub-001_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-001/eeg/sub-001_task-internalattention_eeg.json",
+      "bytes": 1183,
+      "checksum": "sha256:254ed740d5a61621767330af86421544685f4d5fcb4b8d0bc89d877ab58074e6",
+      "sha256": "254ed740d5a61621767330af86421544685f4d5fcb4b8d0bc89d877ab58074e6",
+      "git_blob_sha1": "7c3ed8844b9f5de8c023386352b5f787794200e9"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-001/eeg/sub-001_task-internalattention_eeg.set",
+      "bytes": 24537768,
+      "checksum": "md5:274bb79bfc61c20bc6873ca142437659",
+      "git_blob_sha1": "826633eafaf31391c8845c1db6f814017c257b12",
+      "git_annex_pointer": "../../.git/annex/objects/m2/7j/MD5E-s24537768--274bb79bfc61c20bc6873ca142437659.set/MD5E-s24537768--274bb79bfc61c20bc6873ca142437659.set",
+      "sha256": "c969f6d999676febbb5098d1e0c9a4067d0dab957c58be0a20419a11ee6689db"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-001/eeg/sub-001_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-001/eeg/sub-001_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-001/eeg/sub-001_task-internalattention_events.tsv",
+      "bytes": 33694,
+      "checksum": "sha256:3b6c29ccfa517016c9a90b67375187cb2c6dc4ed47dd0e5dab8dc05245d58464",
+      "sha256": "3b6c29ccfa517016c9a90b67375187cb2c6dc4ed47dd0e5dab8dc05245d58464",
+      "git_blob_sha1": "265f8b6a82544643d0369eb887c95b3970b29976"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-002/eeg/sub-002_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-002/eeg/sub-002_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-002/eeg/sub-002_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:9b87e7713891a179b2c9e7bfb543f7f3579a3469d65d7e2e3fa8a3007a4bff8e",
+      "sha256": "9b87e7713891a179b2c9e7bfb543f7f3579a3469d65d7e2e3fa8a3007a4bff8e",
+      "git_blob_sha1": "b0bf6f9fe59db5955251e7959a07aebc0df9d840"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-002/eeg/sub-002_task-internalattention_eeg.set",
+      "bytes": 34741152,
+      "checksum": "md5:e261715316678cb26d04df4045279fe5",
+      "git_blob_sha1": "62832a739f4593b2d2ccfe035f81209e16ad9818",
+      "git_annex_pointer": "../../.git/annex/objects/5J/xx/MD5E-s34741152--e261715316678cb26d04df4045279fe5.set/MD5E-s34741152--e261715316678cb26d04df4045279fe5.set",
+      "sha256": "9eb75753fcfc41deb5cfd53826208171cc400a1fdcc07c37bfe54cbd2abcc923"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-002/eeg/sub-002_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-002/eeg/sub-002_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-002/eeg/sub-002_task-internalattention_events.tsv",
+      "bytes": 49340,
+      "checksum": "sha256:c6b52f71fd2da453cfb13060edeac6f22ca28e19e7bab2160129c8f4f7ce1851",
+      "sha256": "c6b52f71fd2da453cfb13060edeac6f22ca28e19e7bab2160129c8f4f7ce1851",
+      "git_blob_sha1": "3f2aa97443bcf9a44b2abcc1923f3217cb7548d3"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-003/eeg/sub-003_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-003/eeg/sub-003_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-003/eeg/sub-003_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:480b686e488766611e9beafbf82cf8675ea26fd916fc31d28d09668a5342d357",
+      "sha256": "480b686e488766611e9beafbf82cf8675ea26fd916fc31d28d09668a5342d357",
+      "git_blob_sha1": "8c2c870ef797b9a5555037419888bc8c18410e93"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-003/eeg/sub-003_task-internalattention_eeg.set",
+      "bytes": 36729912,
+      "checksum": "md5:7f4481afe81f801696e05d360d793b7b",
+      "git_blob_sha1": "e705590fca8f2646e4e6c654f1f775959e02fcaf",
+      "git_annex_pointer": "../../.git/annex/objects/4v/w7/MD5E-s36729912--7f4481afe81f801696e05d360d793b7b.set/MD5E-s36729912--7f4481afe81f801696e05d360d793b7b.set",
+      "sha256": "ae6462831373e5c4039e81dfef42f7a8250972b407698c413ec1d8e7f0c33b01"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-003/eeg/sub-003_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-003/eeg/sub-003_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-003/eeg/sub-003_task-internalattention_events.tsv",
+      "bytes": 51408,
+      "checksum": "sha256:7ea2284b107bdb4356a9156e60711d0dabb50151b2468c090b86d7df9555c085",
+      "sha256": "7ea2284b107bdb4356a9156e60711d0dabb50151b2468c090b86d7df9555c085",
+      "git_blob_sha1": "24c41056d738f8e27d2bb5d7f7d0c26512b441cf"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-004/eeg/sub-004_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-004/eeg/sub-004_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-004/eeg/sub-004_task-internalattention_eeg.json",
+      "bytes": 1183,
+      "checksum": "sha256:918b5e5169694e9954756f6584bce342f7b07b3074f1e71c0964dbfb04bf9e2c",
+      "sha256": "918b5e5169694e9954756f6584bce342f7b07b3074f1e71c0964dbfb04bf9e2c",
+      "git_blob_sha1": "3093ab6dbd0ae80ef2d63aaf9c7c7dc69da43182"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-004/eeg/sub-004_task-internalattention_eeg.set",
+      "bytes": 40094040,
+      "checksum": "md5:14c5d52082c18bcb3717b5c0cb6c2e61",
+      "git_blob_sha1": "fa64d56a196d0c310bbb2416db14aeb0c6df3528",
+      "git_annex_pointer": "../../.git/annex/objects/6J/20/MD5E-s40094040--14c5d52082c18bcb3717b5c0cb6c2e61.set/MD5E-s40094040--14c5d52082c18bcb3717b5c0cb6c2e61.set",
+      "sha256": "d9eb39212b9fd01bee879073eab2009ea85b15273e8fca2cceb57c70e0386179"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-004/eeg/sub-004_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-004/eeg/sub-004_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-004/eeg/sub-004_task-internalattention_events.tsv",
+      "bytes": 55946,
+      "checksum": "sha256:dd4969d7f3c67e496c6e29f961df8b7e2adee4b47148b8e6d4e2e9a5ce53f616",
+      "sha256": "dd4969d7f3c67e496c6e29f961df8b7e2adee4b47148b8e6d4e2e9a5ce53f616",
+      "git_blob_sha1": "271467fd0dba8e36cc204c004fa99c88847e8039"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-005/eeg/sub-005_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-005/eeg/sub-005_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-005/eeg/sub-005_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:3c9457a9394606410e7140207811f7e0591e730ee1c178690fcebbc9900db07f",
+      "sha256": "3c9457a9394606410e7140207811f7e0591e730ee1c178690fcebbc9900db07f",
+      "git_blob_sha1": "d580dac866e7b2246a93b1aebf4aa97e311aa6ba"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-005/eeg/sub-005_task-internalattention_eeg.set",
+      "bytes": 40375656,
+      "checksum": "md5:cd1541734d3fef84552d34af6ef5705e",
+      "git_blob_sha1": "9c591fb25a2d499e2b1f85ec44116a9f37644337",
+      "git_annex_pointer": "../../.git/annex/objects/8X/ZQ/MD5E-s40375656--cd1541734d3fef84552d34af6ef5705e.set/MD5E-s40375656--cd1541734d3fef84552d34af6ef5705e.set",
+      "sha256": "cfc119100475b890d203c476372f626c5c916cb6d8750fe95715637fb185e31c"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-005/eeg/sub-005_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-005/eeg/sub-005_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-005/eeg/sub-005_task-internalattention_events.tsv",
+      "bytes": 56202,
+      "checksum": "sha256:77488934413cbdbcba461b4e61a4bdc513fda20c609008e34c8c07c87a92b3a8",
+      "sha256": "77488934413cbdbcba461b4e61a4bdc513fda20c609008e34c8c07c87a92b3a8",
+      "git_blob_sha1": "340f547d9de6266c8e213b9b5c929ea4ec8dcd6c"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-006/eeg/sub-006_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-006/eeg/sub-006_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-006/eeg/sub-006_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:8392abb6e24add44eecbb5baa7482ada7af7cf101c3ef60b0ab59574df1361cf",
+      "sha256": "8392abb6e24add44eecbb5baa7482ada7af7cf101c3ef60b0ab59574df1361cf",
+      "git_blob_sha1": "0b19fde3a8c0bec3170eb9128d19542c15d06e7c"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-006/eeg/sub-006_task-internalattention_eeg.set",
+      "bytes": 42490776,
+      "checksum": "md5:9d24510fc82455cd8aa573ff1978c88a",
+      "git_blob_sha1": "d9c8c14e26ca3a381de8e411552542d545a14706",
+      "git_annex_pointer": "../../.git/annex/objects/wV/v7/MD5E-s42490776--9d24510fc82455cd8aa573ff1978c88a.set/MD5E-s42490776--9d24510fc82455cd8aa573ff1978c88a.set",
+      "sha256": "9f7f8dac4b68528e7f35ea6a061b386b132187c966db65492f5ff8b847b92bed"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-006/eeg/sub-006_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-006/eeg/sub-006_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-006/eeg/sub-006_task-internalattention_events.tsv",
+      "bytes": 61040,
+      "checksum": "sha256:0d8ad0e96ea2a76486e257aa8bceb0d9b853e926107811024fae0a5ec324a057",
+      "sha256": "0d8ad0e96ea2a76486e257aa8bceb0d9b853e926107811024fae0a5ec324a057",
+      "git_blob_sha1": "ff08174985aedbceadcb783db76800e087a76314"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-007/eeg/sub-007_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-007/eeg/sub-007_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-007/eeg/sub-007_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:be808d66359d9c647bc5b7c297a9c53b3989321cedb4d8c763f7c7a3020170ae",
+      "sha256": "be808d66359d9c647bc5b7c297a9c53b3989321cedb4d8c763f7c7a3020170ae",
+      "git_blob_sha1": "9c90e9aee905f3e8866df29323807378be6fc72c"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-007/eeg/sub-007_task-internalattention_eeg.set",
+      "bytes": 47848672,
+      "checksum": "md5:b545fdeaa4ce342f95484a75964708bc",
+      "git_blob_sha1": "232bebcf5017d61b995f78d78a9bfcd3c9471fcb",
+      "git_annex_pointer": "../../.git/annex/objects/60/zf/MD5E-s47848672--b545fdeaa4ce342f95484a75964708bc.set/MD5E-s47848672--b545fdeaa4ce342f95484a75964708bc.set",
+      "sha256": "3c439d2e3a507c52df13746273d394f2b82c924124d66a346fb2d6c3519fb933"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-007/eeg/sub-007_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-007/eeg/sub-007_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-007/eeg/sub-007_task-internalattention_events.tsv",
+      "bytes": 67256,
+      "checksum": "sha256:85a1bfb3fb353d65c540ba6d503f9d36d42aad1947a57ff91327b66e01968949",
+      "sha256": "85a1bfb3fb353d65c540ba6d503f9d36d42aad1947a57ff91327b66e01968949",
+      "git_blob_sha1": "ac9ef6eb6d57600c90a06db2fcbfaa560bb2adef"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-008/eeg/sub-008_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-008/eeg/sub-008_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-008/eeg/sub-008_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:af4e89ba7b487e360d402dd5f44922b0cc605724d4888740a63b44197a2e785a",
+      "sha256": "af4e89ba7b487e360d402dd5f44922b0cc605724d4888740a63b44197a2e785a",
+      "git_blob_sha1": "adcb177a003d02f6b777422ff09c3e7d9a88bca2"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-008/eeg/sub-008_task-internalattention_eeg.set",
+      "bytes": 38795832,
+      "checksum": "md5:8e9233887575d32d1bd6b85061e86dd5",
+      "git_blob_sha1": "786ea5878c977ca8cfb3760b64ef24fc296ecba3",
+      "git_annex_pointer": "../../.git/annex/objects/xk/G9/MD5E-s38795832--8e9233887575d32d1bd6b85061e86dd5.set/MD5E-s38795832--8e9233887575d32d1bd6b85061e86dd5.set",
+      "sha256": "c551d9f4356dc92c7579f17f3b40175f77b5bc44ab393b2b79e3336bb90c71bc"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-008/eeg/sub-008_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-008/eeg/sub-008_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-008/eeg/sub-008_task-internalattention_events.tsv",
+      "bytes": 55420,
+      "checksum": "sha256:0fd98afc75ca24d70ad358ef699404518bd1da9bbe786ac675faa3575144b356",
+      "sha256": "0fd98afc75ca24d70ad358ef699404518bd1da9bbe786ac675faa3575144b356",
+      "git_blob_sha1": "60cf221a225d7d18168fae566542e7e45c13529c"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-009/eeg/sub-009_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-009/eeg/sub-009_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-009/eeg/sub-009_task-internalattention_eeg.json",
+      "bytes": 1183,
+      "checksum": "sha256:c4e5568eded2fe3c96b0ccf3f8873757ed70fca4bd51ab765d9bbd40501b099f",
+      "sha256": "c4e5568eded2fe3c96b0ccf3f8873757ed70fca4bd51ab765d9bbd40501b099f",
+      "git_blob_sha1": "364804b66874bf8cf3dd38ee6277af9f38d7cbbb"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-009/eeg/sub-009_task-internalattention_eeg.set",
+      "bytes": 37421112,
+      "checksum": "md5:8c40ca3fe7c96b8bb5732b2e81f96323",
+      "git_blob_sha1": "e51741967aa53c893903189d04de1440f4ca986d",
+      "git_annex_pointer": "../../.git/annex/objects/3K/zX/MD5E-s37421112--8c40ca3fe7c96b8bb5732b2e81f96323.set/MD5E-s37421112--8c40ca3fe7c96b8bb5732b2e81f96323.set",
+      "sha256": "1ed0cd78580a3c9246fcbb3971810a8b976e97e43ddb66e160967119e0e47eb4"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-009/eeg/sub-009_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-009/eeg/sub-009_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-009/eeg/sub-009_task-internalattention_events.tsv",
+      "bytes": 53939,
+      "checksum": "sha256:b7bb93addd16238c4d35d9a7d375d5e39008a130e0bf01e2d7ecee20020aeef6",
+      "sha256": "b7bb93addd16238c4d35d9a7d375d5e39008a130e0bf01e2d7ecee20020aeef6",
+      "git_blob_sha1": "5299092101eaca9c3ebf617e93408be9bc680d54"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-010/eeg/sub-010_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-010/eeg/sub-010_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-010/eeg/sub-010_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:e5beceb208e49763cb4c1073dffa09553d3bd7284dfd50425a26b14985db3cc5",
+      "sha256": "e5beceb208e49763cb4c1073dffa09553d3bd7284dfd50425a26b14985db3cc5",
+      "git_blob_sha1": "f4a52ffb9aa6b432a5e47592bbc22a0bf78fb710"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-010/eeg/sub-010_task-internalattention_eeg.set",
+      "bytes": 44297304,
+      "checksum": "md5:eced3026f20a49cd270c49f7b6f232de",
+      "git_blob_sha1": "087e3f6fa817831946162558f0a97aaea2dbb298",
+      "git_annex_pointer": "../../.git/annex/objects/8F/qk/MD5E-s44297304--eced3026f20a49cd270c49f7b6f232de.set/MD5E-s44297304--eced3026f20a49cd270c49f7b6f232de.set",
+      "sha256": "885cd5e1043bfd821ea4df20dcf1aeaf9800a85466fab2624943c8b79ca4ab4b"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-010/eeg/sub-010_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-010/eeg/sub-010_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-010/eeg/sub-010_task-internalattention_events.tsv",
+      "bytes": 63890,
+      "checksum": "sha256:7fc15dff6f17efefad9390b3261050a508248cec18d62a12879534b19506fad4",
+      "sha256": "7fc15dff6f17efefad9390b3261050a508248cec18d62a12879534b19506fad4",
+      "git_blob_sha1": "07e06c7d1d8a2fe6ba997ca9ab109d2d76bfc148"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-011/eeg/sub-011_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-011/eeg/sub-011_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-011/eeg/sub-011_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:33ec2bf34afb47139b973c65c3fe552efdfdf95b4375c2e5333f325c341836de",
+      "sha256": "33ec2bf34afb47139b973c65c3fe552efdfdf95b4375c2e5333f325c341836de",
+      "git_blob_sha1": "46ebd90bc7a9f5e052382fa501ba5e591b557dda"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-011/eeg/sub-011_task-internalattention_eeg.set",
+      "bytes": 42598320,
+      "checksum": "md5:e31468472ebf0741a2c644f1e2f0b6e6",
+      "git_blob_sha1": "a34e7d58b8c593c8bc5f7175601b84d25b4e6f4e",
+      "git_annex_pointer": "../../.git/annex/objects/XZ/17/MD5E-s42598320--e31468472ebf0741a2c644f1e2f0b6e6.set/MD5E-s42598320--e31468472ebf0741a2c644f1e2f0b6e6.set",
+      "sha256": "d010384ac41a6108f9f7d8caae566e793ad850b446fdce3cafb7ccb1178f4b46"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-011/eeg/sub-011_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-011/eeg/sub-011_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-011/eeg/sub-011_task-internalattention_events.tsv",
+      "bytes": 59532,
+      "checksum": "sha256:086c0aea793fa6d89357c1f10f76406dca127196d3598a6ffde984e0cae1b731",
+      "sha256": "086c0aea793fa6d89357c1f10f76406dca127196d3598a6ffde984e0cae1b731",
+      "git_blob_sha1": "c3487344045c1cfb6849199cdf7148b0f391662e"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-012/eeg/sub-012_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-012/eeg/sub-012_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-012/eeg/sub-012_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:c1ba042b963ac76559dde934d163d61338104ed82bf915a339249571c8f449c2",
+      "sha256": "c1ba042b963ac76559dde934d163d61338104ed82bf915a339249571c8f449c2",
+      "git_blob_sha1": "f1d856b681d104ae8d3a67059adc8ed88b436131"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-012/eeg/sub-012_task-internalattention_eeg.set",
+      "bytes": 38028984,
+      "checksum": "md5:c85018754c92423c558dc104218ddc93",
+      "git_blob_sha1": "d0e68994fa28f238b92949b904fd9697dc3af252",
+      "git_annex_pointer": "../../.git/annex/objects/51/0W/MD5E-s38028984--c85018754c92423c558dc104218ddc93.set/MD5E-s38028984--c85018754c92423c558dc104218ddc93.set",
+      "sha256": "a520e204036a3662645683ed8017b90f97d7ca348bfceec4050d04c20373f9f8"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-012/eeg/sub-012_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-012/eeg/sub-012_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-012/eeg/sub-012_task-internalattention_events.tsv",
+      "bytes": 52996,
+      "checksum": "sha256:3cdc90c890518ecf2abf818e0d8cefbdc91329dfd2da6e726f9e1a653a737ca6",
+      "sha256": "3cdc90c890518ecf2abf818e0d8cefbdc91329dfd2da6e726f9e1a653a737ca6",
+      "git_blob_sha1": "0be341687c810e0673c927b8a8ff9037208b92f4"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-013/eeg/sub-013_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-013/eeg/sub-013_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-013/eeg/sub-013_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:1b74f92fc779d8374412b2a25d7a7c2753878586f4f6af484b73ecfc231fbad8",
+      "sha256": "1b74f92fc779d8374412b2a25d7a7c2753878586f4f6af484b73ecfc231fbad8",
+      "git_blob_sha1": "eb49b273175f21ebe694d8f01f9973d14eb6dca3"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-013/eeg/sub-013_task-internalattention_eeg.set",
+      "bytes": 38681320,
+      "checksum": "md5:b8b135e8f3e399365675bddd6ae24cb9",
+      "git_blob_sha1": "ef7097efbfb6d79b59cf3896507067f08479ab59",
+      "git_annex_pointer": "../../.git/annex/objects/qv/75/MD5E-s38681320--b8b135e8f3e399365675bddd6ae24cb9.set/MD5E-s38681320--b8b135e8f3e399365675bddd6ae24cb9.set",
+      "sha256": "bc0eccd19a8f5c4ab6afddc3264e188cd2a439e4d81087e018e9d3d3f5b4ea6c"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-013/eeg/sub-013_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-013/eeg/sub-013_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-013/eeg/sub-013_task-internalattention_events.tsv",
+      "bytes": 55201,
+      "checksum": "sha256:316959e91e44a60946ecc2a08d5bb0c17394244e3c513387888029f485e40487",
+      "sha256": "316959e91e44a60946ecc2a08d5bb0c17394244e3c513387888029f485e40487",
+      "git_blob_sha1": "f700cd9b7cdc0ab12e42f4df945825d41a2bc13f"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-014/eeg/sub-014_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-014/eeg/sub-014_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-014/eeg/sub-014_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:6553883265cfbf1c555515158a1b311cba8243c6a7320169520e8f810ec39564",
+      "sha256": "6553883265cfbf1c555515158a1b311cba8243c6a7320169520e8f810ec39564",
+      "git_blob_sha1": "27e81fdbff3498a42db288c50d1736c6574ffea7"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-014/eeg/sub-014_task-internalattention_eeg.set",
+      "bytes": 51901080,
+      "checksum": "md5:38f3e12871b76e9d8f0b36fbeb821d51",
+      "git_blob_sha1": "8d47f1e6e5594c56a7f52d8d739575ddce265377",
+      "git_annex_pointer": "../../.git/annex/objects/XP/j9/MD5E-s51901080--38f3e12871b76e9d8f0b36fbeb821d51.set/MD5E-s51901080--38f3e12871b76e9d8f0b36fbeb821d51.set",
+      "sha256": "f8e6a0efb0f844cae4083b5d52f6f44fce28f295a01b43443fc0c2f0d60694b8"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-014/eeg/sub-014_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-014/eeg/sub-014_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-014/eeg/sub-014_task-internalattention_events.tsv",
+      "bytes": 74006,
+      "checksum": "sha256:cd71d747e28c56f5100a34b4d1d947ccb6a0399f0b0b93250e7eab0283c0d811",
+      "sha256": "cd71d747e28c56f5100a34b4d1d947ccb6a0399f0b0b93250e7eab0283c0d811",
+      "git_blob_sha1": "9d94edb873ad61315196b2dbe61338f469ab8aaa"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-015/eeg/sub-015_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-015/eeg/sub-015_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-015/eeg/sub-015_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:6bebcb3529b0f58dcee0eafad1e7b439141e0214a9ebf2d4a363a60c8df68a04",
+      "sha256": "6bebcb3529b0f58dcee0eafad1e7b439141e0214a9ebf2d4a363a60c8df68a04",
+      "git_blob_sha1": "e3cb6eede37ef21ed0fff41189abd6ee5f762c51"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-015/eeg/sub-015_task-internalattention_eeg.set",
+      "bytes": 45920256,
+      "checksum": "md5:711128112fb00d493ecbbdf21acd8767",
+      "git_blob_sha1": "04f4222a7428c99c5b59c557aac93db5121db78d",
+      "git_annex_pointer": "../../.git/annex/objects/4J/GV/MD5E-s45920256--711128112fb00d493ecbbdf21acd8767.set/MD5E-s45920256--711128112fb00d493ecbbdf21acd8767.set",
+      "sha256": "6ff22f89b9925f4741f8cee0c9edaa2e0958d733538a013c6ccd86cc4ba00675"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-015/eeg/sub-015_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-015/eeg/sub-015_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-015/eeg/sub-015_task-internalattention_events.tsv",
+      "bytes": 65840,
+      "checksum": "sha256:56e1305473376574b13f4b0087f2556879804916983170c7ffc72827c4c398a6",
+      "sha256": "56e1305473376574b13f4b0087f2556879804916983170c7ffc72827c4c398a6",
+      "git_blob_sha1": "a5c706d0e1e316dbb4071854b1d92c0f4fe4a9af"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-016/eeg/sub-016_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-016/eeg/sub-016_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-016/eeg/sub-016_task-internalattention_eeg.json",
+      "bytes": 1183,
+      "checksum": "sha256:da6565916ea66064c5550279b407c156999809f070a9f901d29cb55688abc42e",
+      "sha256": "da6565916ea66064c5550279b407c156999809f070a9f901d29cb55688abc42e",
+      "git_blob_sha1": "3dd33b1f560c73d4dd93b017feb8b54ced18cdb2"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-016/eeg/sub-016_task-internalattention_eeg.set",
+      "bytes": 37435728,
+      "checksum": "md5:c1fc9d37a00364f6f8489483fe2ad2d5",
+      "git_blob_sha1": "109690d6af02b1bef14c61ffaff86e2508c53a19",
+      "git_annex_pointer": "../../.git/annex/objects/K3/zK/MD5E-s37435728--c1fc9d37a00364f6f8489483fe2ad2d5.set/MD5E-s37435728--c1fc9d37a00364f6f8489483fe2ad2d5.set",
+      "sha256": "447778ff54bb579333852e226bc8ab9bae006fa017c5c779e34d71d037caa018"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-016/eeg/sub-016_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-016/eeg/sub-016_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-016/eeg/sub-016_task-internalattention_events.tsv",
+      "bytes": 53483,
+      "checksum": "sha256:fed0ca92aabda4356ce9dc3dd2152c48cd544c8e64d74168dfa58cf67c21146d",
+      "sha256": "fed0ca92aabda4356ce9dc3dd2152c48cd544c8e64d74168dfa58cf67c21146d",
+      "git_blob_sha1": "69989f6a5a34d36124342bb30229b1531780f4be"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-017/eeg/sub-017_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-017/eeg/sub-017_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-017/eeg/sub-017_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:ad4dafef2904af66800cbb1433ff8fbefea7d291d6e620b2a41fed06c8c55300",
+      "sha256": "ad4dafef2904af66800cbb1433ff8fbefea7d291d6e620b2a41fed06c8c55300",
+      "git_blob_sha1": "8227444312d2737942f172255ccae3c24bfd2bcd"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-017/eeg/sub-017_task-internalattention_eeg.set",
+      "bytes": 38582056,
+      "checksum": "md5:e2fe7f2d2a37e3ae68565976ec372d33",
+      "git_blob_sha1": "b3af1d2fe7a0180ec93fd88b8d458af9cb1a6408",
+      "git_annex_pointer": "../../.git/annex/objects/PK/48/MD5E-s38582056--e2fe7f2d2a37e3ae68565976ec372d33.set/MD5E-s38582056--e2fe7f2d2a37e3ae68565976ec372d33.set",
+      "sha256": "4770b743848c9b2020365c2b8c4c50dfb19fdbc26e918b48f7b45064e19f7b38"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-017/eeg/sub-017_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-017/eeg/sub-017_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-017/eeg/sub-017_task-internalattention_events.tsv",
+      "bytes": 55730,
+      "checksum": "sha256:18a5d4c05dfc0f16b0db85d1dd44e9a61241b0abecc32df2fe40fbcddbc46db1",
+      "sha256": "18a5d4c05dfc0f16b0db85d1dd44e9a61241b0abecc32df2fe40fbcddbc46db1",
+      "git_blob_sha1": "f8b606ff6521af2b14d0f65d080dd5a7edcd6fd9"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-018/eeg/sub-018_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-018/eeg/sub-018_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-018/eeg/sub-018_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:201c6adcc6a57f0b30ea15bc9566c39f7337801e17b6a54633fbe2fe0a6961f1",
+      "sha256": "201c6adcc6a57f0b30ea15bc9566c39f7337801e17b6a54633fbe2fe0a6961f1",
+      "git_blob_sha1": "18ca775c1209a7c7f3aae76434710ee1a9f8cf11"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-018/eeg/sub-018_task-internalattention_eeg.set",
+      "bytes": 51746480,
+      "checksum": "md5:0d1d618bd5966a6295586f8d60b6ea12",
+      "git_blob_sha1": "ee1ae61be2006433437ebd5e92884bde6a75f2b6",
+      "git_annex_pointer": "../../.git/annex/objects/f7/71/MD5E-s51746480--0d1d618bd5966a6295586f8d60b6ea12.set/MD5E-s51746480--0d1d618bd5966a6295586f8d60b6ea12.set",
+      "sha256": "11c6182ff68667b41bfb87c1635429c04cac192bf674cd45f0af1c56de136e91"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-018/eeg/sub-018_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-018/eeg/sub-018_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-018/eeg/sub-018_task-internalattention_events.tsv",
+      "bytes": 71785,
+      "checksum": "sha256:8e6d39e4ec75c1b3a641a403da978388b5a4d0712ee9d84459fe2043356d399b",
+      "sha256": "8e6d39e4ec75c1b3a641a403da978388b5a4d0712ee9d84459fe2043356d399b",
+      "git_blob_sha1": "884df6ac05dbb8e7699f08b37beb75834eb24747"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-019/eeg/sub-019_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-019/eeg/sub-019_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-019/eeg/sub-019_task-internalattention_eeg.json",
+      "bytes": 1183,
+      "checksum": "sha256:89b54eeaa8f7f3b64981845aa04ae1a9e597f852d7da9a38f7a50b2d81859ab5",
+      "sha256": "89b54eeaa8f7f3b64981845aa04ae1a9e597f852d7da9a38f7a50b2d81859ab5",
+      "git_blob_sha1": "799bdd28a48cddd089c69b5f7a4cc92452e996e9"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-019/eeg/sub-019_task-internalattention_eeg.set",
+      "bytes": 40893896,
+      "checksum": "md5:6e6cbcf1ce4cebaf137b331372567192",
+      "git_blob_sha1": "96f4c4328080ef90525cdfb4141230b6abe33316",
+      "git_annex_pointer": "../../.git/annex/objects/Mk/PW/MD5E-s40893896--6e6cbcf1ce4cebaf137b331372567192.set/MD5E-s40893896--6e6cbcf1ce4cebaf137b331372567192.set",
+      "sha256": "211719f1cfb0e71eaa01d5e931947d5f33062adcb8a3518dde0e651b460bdc71"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-019/eeg/sub-019_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-019/eeg/sub-019_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-019/eeg/sub-019_task-internalattention_events.tsv",
+      "bytes": 58345,
+      "checksum": "sha256:6b4a6faf3e20b22331884cb9e4d7fee9def7d95f355ed58affac5e3b2388a62c",
+      "sha256": "6b4a6faf3e20b22331884cb9e4d7fee9def7d95f355ed58affac5e3b2388a62c",
+      "git_blob_sha1": "c9989818956271017a06066e64dc3217eac5d2bd"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-internalattention_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-020/eeg/sub-020_task-internalattention_channels.tsv",
+      "bytes": 487,
+      "checksum": "sha256:221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "sha256": "221c8a861d8c2180ce3417e084cb01eb32b3584487f4ecd7df4d0c133565ddce",
+      "git_blob_sha1": "502959b648fcd787c8d452404ee4726e2c10c7da"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-internalattention_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-020/eeg/sub-020_task-internalattention_coordsystem.json",
+      "bytes": 97,
+      "checksum": "sha256:38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "sha256": "38cbd743cd80f8243716dcfe326138c49c124855551fbed50f935724a5ee71d3",
+      "git_blob_sha1": "f9ae8600917df6c33bf0a96da71be04677e17c3b"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-internalattention_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-020/eeg/sub-020_task-internalattention_eeg.json",
+      "bytes": 1184,
+      "checksum": "sha256:529f47d016be8b9db00a8ff2da0981bd44b5e08521ccf89b0d98ebd71a5b3263",
+      "sha256": "529f47d016be8b9db00a8ff2da0981bd44b5e08521ccf89b0d98ebd71a5b3263",
+      "git_blob_sha1": "fb644ef53d0033ad9cd53dd48121e4859b200fac"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-internalattention_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds002691/sub-020/eeg/sub-020_task-internalattention_eeg.set",
+      "bytes": 40134552,
+      "checksum": "md5:da6295f13cfa33e91ca975b2c5380bd3",
+      "git_blob_sha1": "3de6edc0a1be4955aabf6882565d9c37cfd95b5b",
+      "git_annex_pointer": "../../.git/annex/objects/qJ/kZ/MD5E-s40134552--da6295f13cfa33e91ca975b2c5380bd3.set/MD5E-s40134552--da6295f13cfa33e91ca975b2c5380bd3.set",
+      "sha256": "a3bb906b71a742ca6ef550ffd14341d4b79455c98bdca4ba0895a6ce7e4bc781"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-internalattention_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-020/eeg/sub-020_task-internalattention_electrodes.tsv",
+      "bytes": 658,
+      "checksum": "sha256:04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "sha256": "04cf462287ce3135555470f01ac2ed1cba8bedd52eedd5b4b76c28e9d100c8b4",
+      "git_blob_sha1": "9c52f84ab7111b5dd1f58d6cddb8cc31210ead19"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-internalattention_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-020/eeg/sub-020_task-internalattention_events.json",
+      "bytes": 764,
+      "checksum": "sha256:55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "sha256": "55c8deeed32be58108140236fa50a1fca949a5b48aa15d9e0d3dbe9c39e39040",
+      "git_blob_sha1": "f685df403974ad2d7bff2b3e15f57c518d6b9684"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-internalattention_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds002691/bde891f03ab06f65b1eb8f00d3814cf63255e77c/sub-020/eeg/sub-020_task-internalattention_events.tsv",
+      "bytes": 57452,
+      "checksum": "sha256:64c2dd97dadf9a0d8302334db223fecfd1e77d524526a67c7953bf07d6493d7c",
+      "sha256": "64c2dd97dadf9a0d8302334db223fecfd1e77d524526a67c7953bf07d6493d7c",
+      "git_blob_sha1": "3b435ea0b0ac3936fd8a93057b5f2f87b115d923"
+    }
+  ]
+}

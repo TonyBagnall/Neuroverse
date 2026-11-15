@@ -1,0 +1,588 @@
+{
+  "dataset": "Albrecht2019",
+  "source_record_id": "PRED+CT d004 (jalauer/Albrecht2019)",
+  "source_revision": "Hugging Face jalauer/Albrecht2019 commit 53b7c8732740f56325687eca673ae2eed8a2c5f6 (PRED+CT d004)",
+  "predct_accession": "d004",
+  "licence": "PDDL-1.0",
+  "licence_evidence": "Original PRED+CT downloads page and mirror root LICENSE.txt grant PDDL v1.0",
+  "source_urls": [
+    "https://predict.cs.unm.edu/downloads.php",
+    "https://huggingface.co/datasets/jalauer/Albrecht2019/tree/53b7c8732740f56325687eca673ae2eed8a2c5f6"
+  ],
+  "files": [
+    {
+      "name": "DataDictionary.txt",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/DataDictionary.txt",
+      "bytes": 2339,
+      "checksum": "gitblob:4b8083d026584c742de7c564d4b5e558ba2b5b8c",
+      "sha256": "cb0a2291821bc31e421d99363bade6918a3a1fbd74c6af5237629b02e171b18e"
+    },
+    {
+      "name": "DeID_Dems.csv",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/DeID_Dems.csv",
+      "bytes": 4896,
+      "checksum": "gitblob:0dad1089f76ee36b49f973626ab4bccc1f7e940c",
+      "sha256": "c3ba9aa62a79c3647d7e115c1ce027732f382bd222ca8e177ab326895399449f"
+    },
+    {
+      "name": "LICENSE.txt",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/LICENSE.txt",
+      "bytes": 15593,
+      "checksum": "gitblob:01c80c031728bdc592929402d085e80770a4dab4",
+      "sha256": "bce5bd822629f191482386ef184355b53ec43023b93e9b92ed60cd66ef9345e6"
+    },
+    {
+      "name": "MMN_ElectrodeCoords_MA2.ced",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/MMN_ElectrodeCoords_MA2.ced",
+      "bytes": 3303,
+      "checksum": "gitblob:22761fe1d9a441c2019a34ec883b532a299f3bf0",
+      "sha256": "eb23a996f22e36e3f3f125efe7eaa6d0f35fe50320728b4dad70e5c93e0a0110"
+    },
+    {
+      "name": "Pre-processing_Pseudo.txt",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/Pre-processing_Pseudo.txt",
+      "bytes": 4247,
+      "checksum": "gitblob:473a8786ab7b3670ededb997531d4277f8e9067b",
+      "sha256": "02239a96e5075cbd7b99f88c1c1f6b481f7f99dbefd94424a2c148ad8d8b7a73"
+    },
+    {
+      "name": "README.md",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/README.md",
+      "bytes": 4783,
+      "checksum": "gitblob:e3d102c917babd8b8d37fadcdf884e4312d93562",
+      "sha256": "e515c1b5973dddfac12fc2f072cb04925c8c7b252cb7e101a54fe55890ea72f1"
+    },
+    {
+      "name": "data/CC_EEG_s101_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s101_P.mat",
+      "bytes": 381392750,
+      "checksum": "sha256:829523eb7039d0d12b51335f6efacf960493d204fe9d6a4fe2d6c2ca4c23e801",
+      "sha256": "829523eb7039d0d12b51335f6efacf960493d204fe9d6a4fe2d6c2ca4c23e801"
+    },
+    {
+      "name": "data/CC_EEG_s102_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s102_P.mat",
+      "bytes": 339797736,
+      "checksum": "sha256:ab9d165f12c4d98add9ea7fd6f8e4e78e2fb493459ba7747e29a8cbf3ff3cc1f",
+      "sha256": "ab9d165f12c4d98add9ea7fd6f8e4e78e2fb493459ba7747e29a8cbf3ff3cc1f"
+    },
+    {
+      "name": "data/CC_EEG_s103_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s103_P.mat",
+      "bytes": 315133216,
+      "checksum": "sha256:6c4119aa3923e2fee0620801480ac69dc58adfef87dfabcbf61ec0aa0017bead",
+      "sha256": "6c4119aa3923e2fee0620801480ac69dc58adfef87dfabcbf61ec0aa0017bead"
+    },
+    {
+      "name": "data/CC_EEG_s104_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s104_P.mat",
+      "bytes": 346190084,
+      "checksum": "sha256:cf421e383489f0c6106dfc341400225dc151a09a8ac8670d85baa11dc7a56b70",
+      "sha256": "cf421e383489f0c6106dfc341400225dc151a09a8ac8670d85baa11dc7a56b70"
+    },
+    {
+      "name": "data/CC_EEG_s105_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s105_P.mat",
+      "bytes": 318726903,
+      "checksum": "sha256:d65b848cf96ed6b42546f234cec00c80ecb400a26941c6438e1ee1e6a2be2354",
+      "sha256": "d65b848cf96ed6b42546f234cec00c80ecb400a26941c6438e1ee1e6a2be2354"
+    },
+    {
+      "name": "data/CC_EEG_s107_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s107_P.mat",
+      "bytes": 354101980,
+      "checksum": "sha256:666516575883767acc8625eb13fb6930d1687c9272c0a720bff080a32d0bd9d0",
+      "sha256": "666516575883767acc8625eb13fb6930d1687c9272c0a720bff080a32d0bd9d0"
+    },
+    {
+      "name": "data/CC_EEG_s108_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s108_P.mat",
+      "bytes": 288220962,
+      "checksum": "sha256:21b979739e4facd9b975707435e130876c002aa9bdb24088fe9cf08f513dccb3",
+      "sha256": "21b979739e4facd9b975707435e130876c002aa9bdb24088fe9cf08f513dccb3"
+    },
+    {
+      "name": "data/CC_EEG_s109_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s109_P.mat",
+      "bytes": 434984799,
+      "checksum": "sha256:f87782650bb12b1235b24a4931522faaa504379d8d53b7beeafa4e44a36910d1",
+      "sha256": "f87782650bb12b1235b24a4931522faaa504379d8d53b7beeafa4e44a36910d1"
+    },
+    {
+      "name": "data/CC_EEG_s110_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s110_P.mat",
+      "bytes": 585882972,
+      "checksum": "sha256:b3bb72eb62e20fc80c1958e97b1e210e7345c243cdc4c65a0a321b61d1f5e1e1",
+      "sha256": "b3bb72eb62e20fc80c1958e97b1e210e7345c243cdc4c65a0a321b61d1f5e1e1"
+    },
+    {
+      "name": "data/CC_EEG_s111_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s111_P.mat",
+      "bytes": 373463725,
+      "checksum": "sha256:99b5024acbe4a9140321d763b65d83a8a7cdd5ba3e7ea592f17cfff475683b1f",
+      "sha256": "99b5024acbe4a9140321d763b65d83a8a7cdd5ba3e7ea592f17cfff475683b1f"
+    },
+    {
+      "name": "data/CC_EEG_s112_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s112_P.mat",
+      "bytes": 354743444,
+      "checksum": "sha256:115da70fb04f6f89006f6d33ead788c38117d3e7ad95a74aee34a586c0f638ea",
+      "sha256": "115da70fb04f6f89006f6d33ead788c38117d3e7ad95a74aee34a586c0f638ea"
+    },
+    {
+      "name": "data/CC_EEG_s113_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s113_P.mat",
+      "bytes": 409103550,
+      "checksum": "sha256:901664028f8a9343d0ee1b2762f86f37a8ab8c8d8062f85e1f9fc003eae1fe8b",
+      "sha256": "901664028f8a9343d0ee1b2762f86f37a8ab8c8d8062f85e1f9fc003eae1fe8b"
+    },
+    {
+      "name": "data/CC_EEG_s114_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s114_P.mat",
+      "bytes": 365402917,
+      "checksum": "sha256:01c1df413393d50dce6a7b63f0c142698ff8961c85e0198fd911863e7b34bf8e",
+      "sha256": "01c1df413393d50dce6a7b63f0c142698ff8961c85e0198fd911863e7b34bf8e"
+    },
+    {
+      "name": "data/CC_EEG_s115_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s115_P.mat",
+      "bytes": 365388489,
+      "checksum": "sha256:c7f9d35651c128c3aea038009fa85378ecf466675f46d9aac2b25aa9b74941b8",
+      "sha256": "c7f9d35651c128c3aea038009fa85378ecf466675f46d9aac2b25aa9b74941b8"
+    },
+    {
+      "name": "data/CC_EEG_s116_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s116_P.mat",
+      "bytes": 380763736,
+      "checksum": "sha256:341374284bcde975d0ac5398363ee9a43d58c405d6c35d44ab9de50d7bbcdd71",
+      "sha256": "341374284bcde975d0ac5398363ee9a43d58c405d6c35d44ab9de50d7bbcdd71"
+    },
+    {
+      "name": "data/CC_EEG_s117_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s117_P.mat",
+      "bytes": 386921201,
+      "checksum": "sha256:3775f3d8e14cfc7e62703db6c4f27072da1ef49e382449a1cdc4f002395d03e7",
+      "sha256": "3775f3d8e14cfc7e62703db6c4f27072da1ef49e382449a1cdc4f002395d03e7"
+    },
+    {
+      "name": "data/CC_EEG_s119_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s119_P.mat",
+      "bytes": 357917553,
+      "checksum": "sha256:d2fe2bca102782a56185e64affaaffccd519a1f296de45728d97e24d1d876fad",
+      "sha256": "d2fe2bca102782a56185e64affaaffccd519a1f296de45728d97e24d1d876fad"
+    },
+    {
+      "name": "data/CC_EEG_s120_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s120_P.mat",
+      "bytes": 409384489,
+      "checksum": "sha256:4f73f4f062cc4f334967d315bdd548684ac42994a928b4999d55b1ab8dbaa23b",
+      "sha256": "4f73f4f062cc4f334967d315bdd548684ac42994a928b4999d55b1ab8dbaa23b"
+    },
+    {
+      "name": "data/CC_EEG_s121_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s121_P.mat",
+      "bytes": 408078648,
+      "checksum": "sha256:941c33646f898546f6a223c48479e7af2fee71b8ca09687c71b06b2259dd3df5",
+      "sha256": "941c33646f898546f6a223c48479e7af2fee71b8ca09687c71b06b2259dd3df5"
+    },
+    {
+      "name": "data/CC_EEG_s122_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s122_P.mat",
+      "bytes": 360862793,
+      "checksum": "sha256:ea96148771830c547493c77a6f32fe246bfe75d101d33b71c3ad4fc30a7bd8c1",
+      "sha256": "ea96148771830c547493c77a6f32fe246bfe75d101d33b71c3ad4fc30a7bd8c1"
+    },
+    {
+      "name": "data/CC_EEG_s123_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s123_P.mat",
+      "bytes": 443877126,
+      "checksum": "sha256:b91ce6e0dd0affb347e7aa04a48a7780d7f96657a01c976ec9270e7f01643504",
+      "sha256": "b91ce6e0dd0affb347e7aa04a48a7780d7f96657a01c976ec9270e7f01643504"
+    },
+    {
+      "name": "data/CC_EEG_s124_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s124_P.mat",
+      "bytes": 348373541,
+      "checksum": "sha256:dce2c6789a8a4a673c76998540e776a4152aeba7017ceaa2575376afbdbc588c",
+      "sha256": "dce2c6789a8a4a673c76998540e776a4152aeba7017ceaa2575376afbdbc588c"
+    },
+    {
+      "name": "data/CC_EEG_s125_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s125_P.mat",
+      "bytes": 367046461,
+      "checksum": "sha256:85e6eb5c04e030076a7d1613bd926c9fa4e71a6435a3377ee04ddb22507f8785",
+      "sha256": "85e6eb5c04e030076a7d1613bd926c9fa4e71a6435a3377ee04ddb22507f8785"
+    },
+    {
+      "name": "data/CC_EEG_s126_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s126_P.mat",
+      "bytes": 337719732,
+      "checksum": "sha256:358d3dd958df90bdc3920368166b090cee73e578aabdf9895c6c19a7b2e923f0",
+      "sha256": "358d3dd958df90bdc3920368166b090cee73e578aabdf9895c6c19a7b2e923f0"
+    },
+    {
+      "name": "data/CC_EEG_s127_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s127_P.mat",
+      "bytes": 388802927,
+      "checksum": "sha256:b39c93424e2ab9057563d3f56153ae78cc3607e319372e44646e6f340350f35e",
+      "sha256": "b39c93424e2ab9057563d3f56153ae78cc3607e319372e44646e6f340350f35e"
+    },
+    {
+      "name": "data/CC_EEG_s128_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s128_P.mat",
+      "bytes": 349078052,
+      "checksum": "sha256:c4996afcac9e99774fb325a6b161906b183ed8119c6a20686627bd251004c5f5",
+      "sha256": "c4996afcac9e99774fb325a6b161906b183ed8119c6a20686627bd251004c5f5"
+    },
+    {
+      "name": "data/CC_EEG_s129_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s129_P.mat",
+      "bytes": 336608621,
+      "checksum": "sha256:2d7b2b4c155a1b8341c712ce8cfdf9236cc032a04709cd8c1de983741df0216a",
+      "sha256": "2d7b2b4c155a1b8341c712ce8cfdf9236cc032a04709cd8c1de983741df0216a"
+    },
+    {
+      "name": "data/CC_EEG_s130_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s130_P.mat",
+      "bytes": 341613179,
+      "checksum": "sha256:db1935d2945fd358c537b22028db136283e52c437168f5f63b2d0fa64bec2c5d",
+      "sha256": "db1935d2945fd358c537b22028db136283e52c437168f5f63b2d0fa64bec2c5d"
+    },
+    {
+      "name": "data/CC_EEG_s131_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s131_P.mat",
+      "bytes": 459763520,
+      "checksum": "sha256:202e240f460178942b2a9ea7762a5f86f3dda6cf9ad77ccaec7a396bccbb4e77",
+      "sha256": "202e240f460178942b2a9ea7762a5f86f3dda6cf9ad77ccaec7a396bccbb4e77"
+    },
+    {
+      "name": "data/CC_EEG_s132_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s132_P.mat",
+      "bytes": 371221448,
+      "checksum": "sha256:40f7d352e2c5300ed383efec4bd6103bc74cb06e27aded3eb51dff4e8956ee3f",
+      "sha256": "40f7d352e2c5300ed383efec4bd6103bc74cb06e27aded3eb51dff4e8956ee3f"
+    },
+    {
+      "name": "data/CC_EEG_s133_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s133_P.mat",
+      "bytes": 348645617,
+      "checksum": "sha256:96ad46886d1e3173f5df4813c4b7acebf382b0aa9b4f6c4fcf01e295738bfe61",
+      "sha256": "96ad46886d1e3173f5df4813c4b7acebf382b0aa9b4f6c4fcf01e295738bfe61"
+    },
+    {
+      "name": "data/CC_EEG_s134_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s134_P.mat",
+      "bytes": 383373235,
+      "checksum": "sha256:647a23ec7eed4d81fc422e3b4061cb115e15944b6a5e39510144dfd9f7c1b5b8",
+      "sha256": "647a23ec7eed4d81fc422e3b4061cb115e15944b6a5e39510144dfd9f7c1b5b8"
+    },
+    {
+      "name": "data/CC_EEG_s135_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s135_P.mat",
+      "bytes": 335540245,
+      "checksum": "sha256:ec92fa57a7283e9a2681757408625c7f920b595bb43a059171874a6a6fc4e21a",
+      "sha256": "ec92fa57a7283e9a2681757408625c7f920b595bb43a059171874a6a6fc4e21a"
+    },
+    {
+      "name": "data/CC_EEG_s136_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s136_P.mat",
+      "bytes": 355259953,
+      "checksum": "sha256:17d6cd40b804d8cfe289d2ba1b04063570f2f3982f50f9493f8c83a554dbe0bd",
+      "sha256": "17d6cd40b804d8cfe289d2ba1b04063570f2f3982f50f9493f8c83a554dbe0bd"
+    },
+    {
+      "name": "data/CC_EEG_s137_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s137_P.mat",
+      "bytes": 337355214,
+      "checksum": "sha256:afd0aba91ae8b469d829174fee392f65723f7a8b4611d37687e1ba288ea98bdd",
+      "sha256": "afd0aba91ae8b469d829174fee392f65723f7a8b4611d37687e1ba288ea98bdd"
+    },
+    {
+      "name": "data/CC_EEG_s138_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s138_P.mat",
+      "bytes": 324219572,
+      "checksum": "sha256:ecfd1e0114b2d6d13ff9a7532042be2e438d15b1b4328185bda37acbcba15f73",
+      "sha256": "ecfd1e0114b2d6d13ff9a7532042be2e438d15b1b4328185bda37acbcba15f73"
+    },
+    {
+      "name": "data/CC_EEG_s139_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s139_P.mat",
+      "bytes": 393638240,
+      "checksum": "sha256:a053a955ead43eb777177a591752dae7a3b872c85df7583529ee021b778c0bf1",
+      "sha256": "a053a955ead43eb777177a591752dae7a3b872c85df7583529ee021b778c0bf1"
+    },
+    {
+      "name": "data/CC_EEG_s140_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s140_P.mat",
+      "bytes": 399300275,
+      "checksum": "sha256:2a930ba77c310f508b74f82d9318d0a1702a1ee55186b9c4b3df8928f02132b7",
+      "sha256": "2a930ba77c310f508b74f82d9318d0a1702a1ee55186b9c4b3df8928f02132b7"
+    },
+    {
+      "name": "data/CC_EEG_s141_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s141_P.mat",
+      "bytes": 341894346,
+      "checksum": "sha256:bb325b9bf6ea71bcafa71b7600c24bfb92c2c926cf271ce650752b6d695849bb",
+      "sha256": "bb325b9bf6ea71bcafa71b7600c24bfb92c2c926cf271ce650752b6d695849bb"
+    },
+    {
+      "name": "data/CC_EEG_s142_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s142_P.mat",
+      "bytes": 394236828,
+      "checksum": "sha256:f3567180d8c51441547a3ca7bc04027a9661192ee99badd49f84b173706fe235",
+      "sha256": "f3567180d8c51441547a3ca7bc04027a9661192ee99badd49f84b173706fe235"
+    },
+    {
+      "name": "data/CC_EEG_s143_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s143_P.mat",
+      "bytes": 331942076,
+      "checksum": "sha256:a54d4b551a7c6cff4b0b737e795f004d7c70f0350cb23dd6fdd3ccc720936a35",
+      "sha256": "a54d4b551a7c6cff4b0b737e795f004d7c70f0350cb23dd6fdd3ccc720936a35"
+    },
+    {
+      "name": "data/CC_EEG_s144_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s144_P.mat",
+      "bytes": 337181788,
+      "checksum": "sha256:d0a8910767a9533dea49e2514da80c87e8b438ed1d8527b031fd63de8bf39b90",
+      "sha256": "d0a8910767a9533dea49e2514da80c87e8b438ed1d8527b031fd63de8bf39b90"
+    },
+    {
+      "name": "data/CC_EEG_s145_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s145_P.mat",
+      "bytes": 361848427,
+      "checksum": "sha256:2e0afa81c59c945d779165ba28c61a8ecf2413d4db0df1668cddd26531687264",
+      "sha256": "2e0afa81c59c945d779165ba28c61a8ecf2413d4db0df1668cddd26531687264"
+    },
+    {
+      "name": "data/CC_EEG_s146_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s146_P.mat",
+      "bytes": 327962845,
+      "checksum": "sha256:9d7ec7e8a791c4f5d5f18ea95128612d9ba41dab955892e1ef004f769324a014",
+      "sha256": "9d7ec7e8a791c4f5d5f18ea95128612d9ba41dab955892e1ef004f769324a014"
+    },
+    {
+      "name": "data/CC_EEG_s147_P.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s147_P.mat",
+      "bytes": 330142064,
+      "checksum": "sha256:ac8e78a613e8d7827a0ff1bf02faacc3f18dece2cc063f785fe269d3cc3a7344",
+      "sha256": "ac8e78a613e8d7827a0ff1bf02faacc3f18dece2cc063f785fe269d3cc3a7344"
+    },
+    {
+      "name": "data/CC_EEG_s149_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s149_N.mat",
+      "bytes": 391105578,
+      "checksum": "sha256:35c4c6747ec2041fe4df97df74438f83613127c8d8c3a4eb98aa50aeead34131",
+      "sha256": "35c4c6747ec2041fe4df97df74438f83613127c8d8c3a4eb98aa50aeead34131"
+    },
+    {
+      "name": "data/CC_EEG_s150_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s150_N.mat",
+      "bytes": 443198325,
+      "checksum": "sha256:5321bb63e6c620175d41a88ae27948ff94f8594a91d00d5d98400d08ec8d8658",
+      "sha256": "5321bb63e6c620175d41a88ae27948ff94f8594a91d00d5d98400d08ec8d8658"
+    },
+    {
+      "name": "data/CC_EEG_s151_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s151_N.mat",
+      "bytes": 360061471,
+      "checksum": "sha256:789f7b8e53029fe281afaaca602957c2512e689a9665d33a0cbd4ca57bf467a9",
+      "sha256": "789f7b8e53029fe281afaaca602957c2512e689a9665d33a0cbd4ca57bf467a9"
+    },
+    {
+      "name": "data/CC_EEG_s152_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s152_N.mat",
+      "bytes": 382233305,
+      "checksum": "sha256:a83031b4df0c0a15a7b49af17109dc3e6b9b0f3c3bca601a174d6578c0ff99a7",
+      "sha256": "a83031b4df0c0a15a7b49af17109dc3e6b9b0f3c3bca601a174d6578c0ff99a7"
+    },
+    {
+      "name": "data/CC_EEG_s153_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s153_N.mat",
+      "bytes": 360620877,
+      "checksum": "sha256:2023c7478e6535cdc62e5863b9897d3b0eed6250daa130c04013e1b5ea875cfd",
+      "sha256": "2023c7478e6535cdc62e5863b9897d3b0eed6250daa130c04013e1b5ea875cfd"
+    },
+    {
+      "name": "data/CC_EEG_s154_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s154_N.mat",
+      "bytes": 336058298,
+      "checksum": "sha256:0bb5886a6d23de6ffea513b3821214c3fe45617d96fd16b6664656d41ce27b69",
+      "sha256": "0bb5886a6d23de6ffea513b3821214c3fe45617d96fd16b6664656d41ce27b69"
+    },
+    {
+      "name": "data/CC_EEG_s155_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s155_N.mat",
+      "bytes": 368966283,
+      "checksum": "sha256:f390ce7ba608b7889f6edee1f58d1cb8e43b4f9b3e34b620b2fe0e8bfa45fdd5",
+      "sha256": "f390ce7ba608b7889f6edee1f58d1cb8e43b4f9b3e34b620b2fe0e8bfa45fdd5"
+    },
+    {
+      "name": "data/CC_EEG_s156_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s156_N.mat",
+      "bytes": 329056619,
+      "checksum": "sha256:ecc51e120a73206055344b1f74d88979d7e0d8630b2a280dcff06ad2da1ceb38",
+      "sha256": "ecc51e120a73206055344b1f74d88979d7e0d8630b2a280dcff06ad2da1ceb38"
+    },
+    {
+      "name": "data/CC_EEG_s157_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s157_N.mat",
+      "bytes": 387406001,
+      "checksum": "sha256:ece7065a553063d1587062adcdb0b1b68e8e304fc1ac18c083f3f63cb9885586",
+      "sha256": "ece7065a553063d1587062adcdb0b1b68e8e304fc1ac18c083f3f63cb9885586"
+    },
+    {
+      "name": "data/CC_EEG_s158_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s158_N.mat",
+      "bytes": 452247002,
+      "checksum": "sha256:2bc32e750446fcb2d8139653f06fe5613690d8154250b4e63eeb42ef24af3f3d",
+      "sha256": "2bc32e750446fcb2d8139653f06fe5613690d8154250b4e63eeb42ef24af3f3d"
+    },
+    {
+      "name": "data/CC_EEG_s159_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s159_N.mat",
+      "bytes": 329877167,
+      "checksum": "sha256:0a64b93b3bba7d929543728aad4e07c1c999dfa36089af246d4be4a7f0ee2ffb",
+      "sha256": "0a64b93b3bba7d929543728aad4e07c1c999dfa36089af246d4be4a7f0ee2ffb"
+    },
+    {
+      "name": "data/CC_EEG_s160_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s160_N.mat",
+      "bytes": 363239749,
+      "checksum": "sha256:7c57c19972625f5c9a0c47363ee2f0b5f74781edc38fe9d4ba7172b8a1e19d56",
+      "sha256": "7c57c19972625f5c9a0c47363ee2f0b5f74781edc38fe9d4ba7172b8a1e19d56"
+    },
+    {
+      "name": "data/CC_EEG_s161_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s161_N.mat",
+      "bytes": 363527302,
+      "checksum": "sha256:5aedacd27d38d96af1d85b8c927d039d82e7e310976d937b5448b005919d5539",
+      "sha256": "5aedacd27d38d96af1d85b8c927d039d82e7e310976d937b5448b005919d5539"
+    },
+    {
+      "name": "data/CC_EEG_s162_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s162_N.mat",
+      "bytes": 379580983,
+      "checksum": "sha256:db309b06471fc55a9a766109ff2166c896b6a9abc1b63766efcdd1fe7ae65850",
+      "sha256": "db309b06471fc55a9a766109ff2166c896b6a9abc1b63766efcdd1fe7ae65850"
+    },
+    {
+      "name": "data/CC_EEG_s163_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s163_N.mat",
+      "bytes": 374677694,
+      "checksum": "sha256:47dabfe7843a740d8bb51840058f514450e7736e6c392e863543e8becdc149b4",
+      "sha256": "47dabfe7843a740d8bb51840058f514450e7736e6c392e863543e8becdc149b4"
+    },
+    {
+      "name": "data/CC_EEG_s164_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s164_N.mat",
+      "bytes": 402461657,
+      "checksum": "sha256:615c4cdf2a5af6f860027a855d09d5ba09ae9517503b0adc72b112ae69592a17",
+      "sha256": "615c4cdf2a5af6f860027a855d09d5ba09ae9517503b0adc72b112ae69592a17"
+    },
+    {
+      "name": "data/CC_EEG_s165_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s165_N.mat",
+      "bytes": 370583562,
+      "checksum": "sha256:75776d8b69aa110a536d85aea79a359b5e8554aa3d4d0b956252a4823e230266",
+      "sha256": "75776d8b69aa110a536d85aea79a359b5e8554aa3d4d0b956252a4823e230266"
+    },
+    {
+      "name": "data/CC_EEG_s166_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s166_N.mat",
+      "bytes": 402542094,
+      "checksum": "sha256:d6a164aaf6d53bd7dad3cfda3ebab41218a474bb002961f68d3ec89f3f489607",
+      "sha256": "d6a164aaf6d53bd7dad3cfda3ebab41218a474bb002961f68d3ec89f3f489607"
+    },
+    {
+      "name": "data/CC_EEG_s167_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s167_N.mat",
+      "bytes": 372260624,
+      "checksum": "sha256:5651984733b1c39e634611e7fe12ff1088eacceebccd9a9f41f8e1878fe2c4dd",
+      "sha256": "5651984733b1c39e634611e7fe12ff1088eacceebccd9a9f41f8e1878fe2c4dd"
+    },
+    {
+      "name": "data/CC_EEG_s168_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s168_N.mat",
+      "bytes": 351035286,
+      "checksum": "sha256:c0d9d4521f2c6001947dae001c31b6e484bd3628e9bbf7aa2c0062dbb47b6c53",
+      "sha256": "c0d9d4521f2c6001947dae001c31b6e484bd3628e9bbf7aa2c0062dbb47b6c53"
+    },
+    {
+      "name": "data/CC_EEG_s169_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s169_N.mat",
+      "bytes": 386145295,
+      "checksum": "sha256:8f522500ed632a5a24ef94e97603cf67fcbd9aac1ca82532f43f18f0498ed522",
+      "sha256": "8f522500ed632a5a24ef94e97603cf67fcbd9aac1ca82532f43f18f0498ed522"
+    },
+    {
+      "name": "data/CC_EEG_s170_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s170_N.mat",
+      "bytes": 411059994,
+      "checksum": "sha256:3437d5d6bc07c55f7a9c1ad07893ffac7e61f7a7b39b91d347aa53235b44e546",
+      "sha256": "3437d5d6bc07c55f7a9c1ad07893ffac7e61f7a7b39b91d347aa53235b44e546"
+    },
+    {
+      "name": "data/CC_EEG_s171_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s171_N.mat",
+      "bytes": 348086286,
+      "checksum": "sha256:a09c1f9e94c75e03fb0360a370874528a59d36852133c7c92f04f8decd547083",
+      "sha256": "a09c1f9e94c75e03fb0360a370874528a59d36852133c7c92f04f8decd547083"
+    },
+    {
+      "name": "data/CC_EEG_s172_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s172_N.mat",
+      "bytes": 369645670,
+      "checksum": "sha256:9ee2031011edabf5b8571cc0a95f662d105b68ea9f2285f8cfc979df5fb7ef5e",
+      "sha256": "9ee2031011edabf5b8571cc0a95f662d105b68ea9f2285f8cfc979df5fb7ef5e"
+    },
+    {
+      "name": "data/CC_EEG_s173_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s173_N.mat",
+      "bytes": 399206925,
+      "checksum": "sha256:50c702df6b95786f35ce7deb490c623c7d8092a3f4b0a19cf7ab7d7e20dfdebc",
+      "sha256": "50c702df6b95786f35ce7deb490c623c7d8092a3f4b0a19cf7ab7d7e20dfdebc"
+    },
+    {
+      "name": "data/CC_EEG_s174_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s174_N.mat",
+      "bytes": 346609301,
+      "checksum": "sha256:186d949ef423230d1fdc7760897952192c75b83ea518704cf086eb1b4ff4b659",
+      "sha256": "186d949ef423230d1fdc7760897952192c75b83ea518704cf086eb1b4ff4b659"
+    },
+    {
+      "name": "data/CC_EEG_s176_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s176_N.mat",
+      "bytes": 354592392,
+      "checksum": "sha256:1a7825b9179c81e41fc97103746632ba5bbe63f417765559f907124323f4cdf3",
+      "sha256": "1a7825b9179c81e41fc97103746632ba5bbe63f417765559f907124323f4cdf3"
+    },
+    {
+      "name": "data/CC_EEG_s177_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s177_N.mat",
+      "bytes": 384998656,
+      "checksum": "sha256:05df320e53356880688477a389cd57b3d1acbc0dfd884112186ab4ea49588fa6",
+      "sha256": "05df320e53356880688477a389cd57b3d1acbc0dfd884112186ab4ea49588fa6"
+    },
+    {
+      "name": "data/CC_EEG_s178_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s178_N.mat",
+      "bytes": 330420809,
+      "checksum": "sha256:3a6bc98a42535961fa73f9a3d648e7ce7a8b48ea6fe67b82842b113fd3ea5788",
+      "sha256": "3a6bc98a42535961fa73f9a3d648e7ce7a8b48ea6fe67b82842b113fd3ea5788"
+    },
+    {
+      "name": "data/CC_EEG_s179_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s179_N.mat",
+      "bytes": 336060621,
+      "checksum": "sha256:2c1039a1ecb5435688e74c019570784afa2cc09f817198647422746e43e9307b",
+      "sha256": "2c1039a1ecb5435688e74c019570784afa2cc09f817198647422746e43e9307b"
+    },
+    {
+      "name": "data/CC_EEG_s180_N.mat",
+      "url": "https://huggingface.co/datasets/jalauer/Albrecht2019/resolve/53b7c8732740f56325687eca673ae2eed8a2c5f6/data/CC_EEG_s180_N.mat",
+      "bytes": 357866376,
+      "checksum": "sha256:23d3630a5e78ca52a729c67d187079c8959e3d924d69dbf0e8b45546cf891c3e",
+      "sha256": "23d3630a5e78ca52a729c67d187079c8959e3d924d69dbf0e8b45546cf891c3e"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_source": "Cavanagh2019",
+  "predct_id": "d009",
+  "huggingface_repo": "jalauer/Cavanagh2019",
+  "pinned_revision": "2b799ac8c319a79838fe64bfe1aea0598c16589e",
+  "licence": "PDDL-1.0",
+  "status": "excluded_duplicate_cohort_and_recordings",
+  "duplicate_of_registered_dataset": "TBIAuditoryOddball",
+  "duplicate_of_source_record": "OpenNeuro ds003522 v1.1.0 (Git fdec2faaa03172eaf40439d7f87437080c266770)",
+  "dedup_evidence": {
+    "publication": "Cavanagh, Wilson, Rieger, Gill, Broadway, Remer, Fratzke, Mayer, & Quinn (2019), ERPs predict symptomatic distress and recovery in sub-acute mild traumatic brain injury, Neuropsychologia 132, 107125 (10.1016/j.neuropsychologia.2019.107125)",
+    "cohort_identity": "Both releases contain the identical 96-participant University of New Mexico sub-acute mTBI (n=45), healthy control (n=26), and Quinn chronic TBI (n=25) three-stimulus auditory oddball cohort across sessions 1 to 3.",
+    "participant_id_match": "ds003522 participants.tsv Original_ID values (3001..3056 for Cavanagh mTBI/CTL and 5-digit URSI IDs 14000, 18367, 19759, 20543, 35957, 48880, etc. for Quinn chronic TBI) match Cavanagh2019 data/[PID]_[SESSION]_3AOB.mat and data/[PID]_1_QUINN_3AOB.mat one-for-one.",
+    "pipeline_provenance": "Cavanagh2019 scripts/ORIGINAL_README.txt and scripts/STEP1_3AOB_JFC.m confirm that Cavanagh2019 distributes the APPLE/EEGLAB epoched derivatives of the same raw BrainVision 3-stimulus auditory oddball recordings distributed in BIDS format in OpenNeuro ds003522, with identical exclusion IDs in scripts/s2_Kill_Data.m (3004, 3024, 3034 session 3, 3056, 14000, 35957, 48880)."
+  },
+  "activated_fallback": {
+    "dataset": "AdultSeizures",
+    "source": "PhysioNet Siena Scalp EEG Database v1.0.0",
+    "doi": "10.13026/5d4a-j060",
+    "url": "https://physionet.org/content/siena-scalp-eeg/1.0.0/",
+    "licence": "CC-BY-4.0",
+    "plan_reference": "docs/diagnostic-to-30-plan.md Section 2 #4"
+  }
+}

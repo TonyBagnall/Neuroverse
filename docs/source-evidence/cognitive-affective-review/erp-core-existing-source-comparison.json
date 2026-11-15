@@ -1,0 +1,23 @@
+[
+  {
+    "component": "N170",
+    "native_signal_files": 80,
+    "reference_component": "N400 / WordRelatedness",
+    "reference_native_signal_files": 80,
+    "matching_publisher_file_hashes": []
+  },
+  {
+    "component": "MMN",
+    "native_signal_files": 80,
+    "reference_component": "N400 / WordRelatedness",
+    "reference_native_signal_files": 80,
+    "matching_publisher_file_hashes": []
+  },
+  {
+    "component": "N2pc",
+    "native_signal_files": 80,
+    "reference_component": "N400 / WordRelatedness",
+    "reference_native_signal_files": 80,
+    "matching_publisher_file_hashes": []
+  }
+]

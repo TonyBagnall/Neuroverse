@@ -63,8 +63,9 @@ channels are reordered. The native frequency is 256 Hz. The retained window is
 **[2,4) seconds after each FIF marker**, matching MOABB's configured interval but
 defining an exclusive endpoint: exactly 512 samples. Each recording has 32 events,
 eight per class. There were no incomplete retained windows. No filtering,
-baseline correction, resampling or reference change is added. Values are cast to
-float32 and written with nine significant digits for exact float32 readback.
+baseline correction, resampling or reference change is added. Raw FIF millivolt (`mV`)
+values are multiplied by `1e3` in `float64` to archive-standard microvolts (`uV`) and
+written using exact IEEE-754 `binary64` decimal representations for lossless `float64` readback.
 
 FIF measurement datetimes, embedded subject IDs and calibration/reference tags are
 directly recovered. `session_id` uses the measurement datetime as a locally defined
@@ -73,12 +74,27 @@ original named session label. MOABB's single session `0` and run indices are kep
 separately. Each retained participant's recordings have the same measurement date;
 the general source claim of different-day sessions should not override file evidence.
 
-Two source metadata limitations are important:
+Two source metadata findings are documented:
 
-- **Signal units:** FIF voltage tags are preserved, but numeric calibration is
-  uncertain. A direct comparison with the original author's first GDF recording
-  found FIF numeric values approximately 1e6 times the GDF values read in SI by MNE.
-  We retain the distributed FIF numeric scale without an unverified unit correction.
+- **Signal units (`x1e3` mV -> uV rescaling applied):** Stored FIF, MAT, and OpenViBE
+  GDF numeric values are confirmed to be **millivolts (`mV`)**, not volts or microvolts:
+  1. Hardware ADC proof: the `g.tec g.MOBIlab+` EEG front-end has a fixed hardware
+     input range of `+-500 uV` (`+-0.5 mV`) on a 16-bit signed ADC (`step = 0.5 / 32768 mV`).
+     Raw `subject11` clips at `min = -0.499984771` (`-32767 * 0.5 / 32768`) and
+     `max = +0.499969512` (`+32766 * 0.5 / 32768`), proving `[-0.5, +0.5] mV`.
+  2. GDF vs FIF `1e6` discrepancy resolved: in the raw `GDF 1.25` header of
+     `subject01/record-[2012.07.06-19.02.16].gdf`, OpenViBE's `g.MOBIlab+` driver wrote
+     `mV` numbers (`phys_min/max = +-0.0383`) under OpenViBE's hardcoded `phys_dim = "uV"`
+     tag (so MNE `read_raw_gdf` multiplied by `1e-6` to `1e-3 * V`), whereas Chevallier's
+     FIF export stored the same `mV` numbers with `FIFF_UNIT_V, cal=1.0, range=1.0`
+     (`1e+3 * V`), producing a `1e6` ratio (`1e+3 / 1e-3`) when read in SI by MNE.
+  3. Author code confirmation: Chevallier's reference MNE script (`author-mne-example.txt`,
+     gist `0b8f37252aca85f41f0d`) sets `scalings={'eeg': 2e-2}` (`0.02 mV = 20 uV`) and
+     `epochs_data_train = 1e3 * epochs.get_data()` (`mV -> uV`).
+  `tools/prepare_kalunga.py` therefore multiplies raw FIF EEG samples by `1e3` in
+  `float64` (guarded by a raw `mV` median-SD check in `[1e-4, 0.5] mV`), yielding
+  archive-standard microvolts (`TRAIN` median SD `7.26 uV`, `max |x| = 311.33 uV`;
+  `TEST` median SD `6.74 uV`, `max |x| = 499.98 uV`).
 - **Sensor positions:** raw FIF `loc` vectors have magnitudes around 100 despite
   MNE's metre convention, suggesting an unresolved millimetre/metre discrepancy.
   Raw locations and coordinate-frame tags are retained; verified metre positions
@@ -105,16 +121,19 @@ measurement timestamps, source/loader run IDs, recording filenames, original eve
 indices/codes, original event/crop samples and relative times. `end_sample` is
 exclusive. Combined rows are TRAIN then TEST; `row` is zero-based within split.
 
-Full `.ts` readback matches source epoch hashes exactly as float32. Shape/label
-counts, row correspondence, source channel order, publisher checksums, participant
-and recording separation, and duplicate cases were checked. **No duplicate cases
+Full `.ts` readback matches rescaled `float64` epoch hashes (`<f8`) bit-for-bit, and
+`cases_*.tsv` / `FlickerAttention_rows.tsv` also retain each epoch's pre-rescale raw
+FIF `source_mV_float32_sha256`. Participant sidecars (`FlickerAttention_id_TRAIN.txt`
+and `FlickerAttention_id_TEST.txt`) are written alongside `.ts` files. Shape/label
+counts, row correspondence, source channel order, publisher checksums, amplitude bounds
+(`[0.5, 500.0] uV`), participant and recording separation, and duplicate cases were checked. **No duplicate cases
 remain**, including within training. An aeon SummaryClassifier successfully loaded,
 fitted and predicted representative cases from all four classes. No benchmark
 scores were added. A two-person pilot passed before the full export.
 
 ```powershell
 python -m tools.prepare_moabb --dataset kalunga2016 --output D:/Data/EEG
-# Reuse verified local files:
+# Reuse verified local files (add --overwrite to replace an existing folder atomically):
 python -m tools.prepare_moabb --dataset kalunga2016 --offline --output D:/Data/EEG
 ```
 

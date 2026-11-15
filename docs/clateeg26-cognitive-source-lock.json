@@ -1,0 +1,20 @@
+{
+  "dataset": "CLATEEG26",
+  "source_record_id": "pxysmjn3j2.3",
+  "source_revision": "Mendeley Data 10.17632/pxysmjn3j2.3 (v3, 2026-10-22)",
+  "licence": "CC-BY-4.0",
+  "licence_evidence": "Mendeley Data public-api data_licence short_name=CC BY 4.0",
+  "source_urls": [
+    "https://data.mendeley.com/datasets/pxysmjn3j2/3",
+    "https://doi.org/10.17632/pxysmjn3j2.3"
+  ],
+  "files": [
+    {
+      "name": "CLATEEG26.zip",
+      "url": "https://data.mendeley.com/public-files/datasets/pxysmjn3j2/files/6dc26575-b9a2-432c-b0da-4c0f85193aef/file_downloaded",
+      "bytes": 2315327236,
+      "checksum": "sha256:180c9dcb9df7db35527b67ce5b822c6250f11fc979d73f7f6898bb44120224de",
+      "sha256": "180c9dcb9df7db35527b67ce5b822c6250f11fc979d73f7f6898bb44120224de"
+    }
+  ]
+}

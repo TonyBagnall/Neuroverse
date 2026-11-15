@@ -2,7 +2,7 @@
 
 Two result layouts are supported across the repository:
 
-1. **Wide summary layout** (default in ``results/neuroverse`` for the 82-problem,
+1. **Wide summary layout** (default in ``results/neuroverse`` for the 114-problem,
    72-classifier study, storing all 90 evaluated configurations)::
 
        results/neuroverse/accuracy.csv
@@ -47,7 +47,13 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from neuroverse.datasets import STUDY_TAXONOMY, metadata, neuroverse, neuroverse_study
+from neuroverse.datasets import (
+    STUDY_TAXONOMY,
+    metadata,
+    neuroverse,
+    neuroverse_90,
+    neuroverse_114,
+)
 
 # metric name used in the file name -> attribute on a tsml-eval results object
 metrics = {
@@ -83,8 +89,18 @@ SOURCE_DATASETS = {
     "EpilepticSeizures": "Epilepsy",
 }
 
-DEFAULT_SKIP_ESTIMATORS = frozenset({"STC", "FreshPRINCE", "MiniROCKET", "ROCKET"})
+DEFAULT_SKIP_ESTIMATORS = frozenset({"STC"})
 DEFAULT_KEEP_HYBRID = frozenset({"HC2-500-pc", "HC2-noTDE-500-pc"})
+RAW_TO_EXPORT_ESTIMATOR = {
+    "HC2-noTDE-500-pc": "HC2",
+    "DrCIF-500": "DrCIF",
+    "DrCIF": "DrCIF-200",
+    "STC-aeon": "STC",
+    "IT": "InceptionTime",
+}
+DROPPED_FROM_REGISTRY = frozenset(
+    {"TRCSP-LDA-MOABB", "SSTDPN-NB", "FBLightConvNet-NB", "SleepStagerChambon2018-NB"}
+)
 
 results_path = Path(__file__).resolve().parents[2] / "results" / "neuroverse"
 
@@ -172,6 +188,7 @@ def export_wide_snapshot(
     datasets: list[str] | None = None,
     skip_estimators=DEFAULT_SKIP_ESTIMATORS,
     keep_hybrid=DEFAULT_KEEP_HYBRID,
+    rename_estimators=RAW_TO_EXPORT_ESTIMATOR,
     resample: int = 0,
     include_default: bool = True,
 ) -> pd.DataFrame:
@@ -186,11 +203,17 @@ def export_wide_snapshot(
         Target directory for ``accuracy.csv``, ``balacc.csv``, ``logloss.csv``,
         ``auroc.csv``, ``classifiers.csv``, and ``datasets.csv``.
     datasets : list of str or None
-        Problems to export. Defaults to :data:`neuroverse.datasets.neuroverse_study`.
+        Problems to export. Defaults to :data:`neuroverse.datasets.neuroverse_114`
+        so both the primary 90-problem ``30/30/30`` benchmark and the extended
+        114-problem scalp EEG tabs are stored in the wide CSVs.
     skip_estimators : collection of str
-        Superseded estimator directory names to ignore.
+        Superseded raw estimator directory names to ignore before renaming.
     keep_hybrid : collection of str
-        Allowed directory names inside ``Hybrid``.
+        Allowed raw directory names inside ``Hybrid``.
+    rename_estimators : mapping of str -> str
+        Mapping from raw ``tsml-eval`` directory names to exported Neuroverse
+        classifier names (e.g. ``HC2-noTDE-500-pc -> HC2``, ``DrCIF-500 -> DrCIF``,
+        ``STC-aeon -> STC``, ``IT -> InceptionTime``).
     resample : int, default=0
         Resample index to read.
     include_default : bool, default=True
@@ -203,35 +226,46 @@ def export_wide_snapshot(
     """
     raw_root = Path(raw_results_dir)
     out = Path(output_dir)
-    selected = list(neuroverse_study if datasets is None else datasets)
+    selected = list(neuroverse_114 if datasets is None else datasets)
     selected_set = set(selected)
     skip_set = set(skip_estimators)
     hybrid_set = set(keep_hybrid)
+    rename_map = dict(rename_estimators or {})
 
     records = []
     pattern = f"*/*/Predictions/*/testResample{resample}.csv"
     for pred_file in raw_root.glob(pattern):
-        category, estimator, _, dataset = pred_file.parts[-5:-1]
+        category, raw_estimator, _, dataset = pred_file.parts[-5:-1]
         if (
             category.startswith("_")
             or category == "NBack"
             or dataset not in selected_set
-            or estimator in skip_set
+            or raw_estimator in skip_set
         ):
             continue
-        if category == "Hybrid" and estimator not in hybrid_set:
+        if category == "Hybrid" and raw_estimator not in hybrid_set:
             continue
+        exported_estimator = rename_map.get(raw_estimator, raw_estimator)
         acc, bal, ll, auc = _score_prediction_csv(pred_file)
-        records.append((category, estimator, dataset, acc, bal, ll, auc))
+        records.append((category, exported_estimator, raw_estimator, dataset, acc, bal, ll, auc))
 
     frame = pd.DataFrame(
         records,
-        columns=["family", "classifier", "dataset", "accuracy", "balacc", "logloss", "auroc"],
+        columns=[
+            "family",
+            "classifier",
+            "source_classifier",
+            "dataset",
+            "accuracy",
+            "balacc",
+            "logloss",
+            "auroc",
+        ],
     )
     if frame.duplicated(["classifier", "dataset"]).any():
         dups = frame[frame.duplicated(["classifier", "dataset"], keep=False)]
         raise ValueError(
-            f"duplicate classifier/dataset entries found: {dups[['family', 'classifier', 'dataset']].to_dict('records')[:5]}"
+            f"duplicate classifier/dataset entries found: {dups[['family', 'classifier', 'source_classifier', 'dataset']].to_dict('records')[:5]}"
         )
 
     out.mkdir(parents=True, exist_ok=True)
@@ -241,17 +275,22 @@ def export_wide_snapshot(
         wide.to_csv(out / f"{metric}.csv", float_format="%.6f")
 
     (
-        frame[["classifier", "family"]]
+        frame.loc[
+            ~frame["source_classifier"].isin(DROPPED_FROM_REGISTRY),
+            ["classifier", "family", "source_classifier"],
+        ]
         .drop_duplicates()
         .sort_values("classifier", key=lambda s: s.str.lower())
         .to_csv(out / "classifiers.csv", index=False)
     )
 
+    core_set = set(neuroverse_90)
     ds_rows = [
         {
             "dataset": ds,
             "family": STUDY_TAXONOMY.get(ds, ("", ""))[0],
             "bci_type": STUDY_TAXONOMY.get(ds, ("", ""))[1],
+            "core_90": ds in core_set,
         }
         for ds in selected
     ]
@@ -269,10 +308,24 @@ def compute_default_from_predictions(
     datasets: list[str] | None = None,
     resample: int = 0,
 ) -> list[str]:
-    """Compute the constant test-majority ``Default`` baseline from prediction files."""
+    """Compute the constant test-majority ``Default`` baseline from prediction files.
+
+    Existing ``Default/Default_<metric>.csv`` values are preserved for any
+    requested dataset that does not yet have a prediction file in
+    ``raw_results_dir``.
+    """
     raw_root = Path(raw_results_dir)
-    selected = list(neuroverse_study if datasets is None else datasets)
+    out = Path(output_dir)
+    selected = list(neuroverse_114 if datasets is None else datasets)
     expected_test = metadata()["test_size"].to_dict()
+
+    existing: dict[str, dict[str, float]] = {m: {} for m in WIDE_METRICS}
+    for m in WIDE_METRICS:
+        existing_path = out / "Default" / f"Default_{m}.csv"
+        if existing_path.is_file():
+            df_ex = pd.read_csv(existing_path, index_col=0)
+            if not df_ex.empty:
+                existing[m] = df_ex.iloc[:, 0].dropna().astype(float).to_dict()
 
     default_scores: dict[str, list[float]] = {m: [] for m in WIDE_METRICS}
     found: list[str] = []
@@ -290,6 +343,10 @@ def compute_default_from_predictions(
             chosen_y = np.array([row[0] for row in rows])
             break
         if chosen_y is None:
+            if all(dataset in existing[m] for m in WIDE_METRICS):
+                found.append(dataset)
+                for m in WIDE_METRICS:
+                    default_scores[m].append(float(existing[m][dataset]))
             continue
 
         classes, counts = np.unique(chosen_y, return_counts=True)

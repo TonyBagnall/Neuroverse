@@ -1,0 +1,171 @@
+{
+  "dataset": "ArithmeticDifficulty",
+  "source_key": "arithmetic_difficulty",
+  "path": "D:\\Data\\EEG\\ArithmeticDifficulty",
+  "train_cases": 819,
+  "test_cases": 315,
+  "subjects": 18,
+  "channels": 19,
+  "timepoints": 1500,
+  "classes": 7,
+  "frequency": 250,
+  "size_GB": 0.426402409,
+  "licence": "CC0-1.0",
+  "validation": {
+    "partitions": {
+      "TRAIN": {
+        "cases": 819,
+        "shape": [
+          819,
+          19,
+          1500
+        ],
+        "class_counts": {
+          "5": 117,
+          "3": 117,
+          "4": 117,
+          "7": 117,
+          "1": 117,
+          "6": 117,
+          "2": 117
+        },
+        "subjects": [
+          "001",
+          "003",
+          "004",
+          "005",
+          "006",
+          "007",
+          "008",
+          "009",
+          "010",
+          "011",
+          "012",
+          "013",
+          "014"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      },
+      "TEST": {
+        "cases": 315,
+        "shape": [
+          315,
+          19,
+          1500
+        ],
+        "class_counts": {
+          "7": 45,
+          "1": 45,
+          "6": 45,
+          "5": 45,
+          "4": 45,
+          "2": 45,
+          "3": 45
+        },
+        "subjects": [
+          "015",
+          "016",
+          "018",
+          "019",
+          "020"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      }
+    },
+    "shared_subjects": [],
+    "cross_split_duplicate_cases": 0,
+    "cross_split_overlapping_intervals": 0,
+    "aeon": {
+      "load_fit_predict": true,
+      "train_cases": 21,
+      "test_cases": 21
+    },
+    "aeon_scope": "All cases exact .ts readback; aeon load/variance/fit/predict on 3 cases per class per partition",
+    "channel_order_verified_all_recordings": true,
+    "source_sensor_identity": "Native MAT header, BIDS/EDF or SET/GDF labels; Castillos explicit named intersection"
+  },
+  "channel_quality": {
+    "threshold_std_uV": 1e-07,
+    "constant_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "effectively_flat_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_channel_names": [
+      "Pz",
+      "Fz",
+      "Cz",
+      "T6",
+      "T5",
+      "T4",
+      "T3",
+      "F8",
+      "F7",
+      "O2",
+      "O1",
+      "P4",
+      "P3",
+      "C4",
+      "C3",
+      "F4",
+      "F3",
+      "FP2",
+      "FP1"
+    ],
+    "removed_indices": [],
+    "policy": "Remove sensor globally if any retained trial has std <= 1e-7 uV"
+  },
+  "cache_cleanup": {
+    "removed_intermediate_npz": 18,
+    "removed_intermediate_bytes": 82577436,
+    "removed_raw_files": 55,
+    "removed_raw_bytes": 396367898
+  }
+}

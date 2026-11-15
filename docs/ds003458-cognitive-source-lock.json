@@ -1,0 +1,1573 @@
+{
+  "dataset": "ds003458",
+  "source_record_id": "ds003458",
+  "source_revision": "OpenNeuro ds003458 v1.1.0, Git 417ba109d89c92e58252a18f36f2dff4351b2ab2",
+  "original_ref": "1.1.0",
+  "original_commit": "417ba109d89c92e58252a18f36f2dff4351b2ab2",
+  "licence": "CC0-1.0",
+  "licence_evidence": "Original pinned dataset_description.json License=CC0",
+  "source_urls": [
+    "https://openneuro.org/datasets/ds003458/versions/1.1.0"
+  ],
+  "metadata_archive_sha256": "ef9f12484fda18302e6139971a4b81b1ff0df61542f3494d84273a77a833eebf",
+  "files": [
+    {
+      "name": "CHANGES",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/CHANGES",
+      "bytes": 46,
+      "checksum": "sha256:d90fd8619a5d81310e48782674be10ffeee1de62b24998058dbd0970e092a8c5",
+      "sha256": "d90fd8619a5d81310e48782674be10ffeee1de62b24998058dbd0970e092a8c5",
+      "git_blob_sha1": "809b03a4667059ce76ff46aa72a37e7d8270134c"
+    },
+    {
+      "name": "README",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/README",
+      "bytes": 894,
+      "checksum": "sha256:5c9ad6622be6fdab68b5029b4bc8e5782b6c051ca5d042464c0e024720765932",
+      "sha256": "5c9ad6622be6fdab68b5029b4bc8e5782b6c051ca5d042464c0e024720765932",
+      "git_blob_sha1": "9a52b43bb201a5eea7f08fb517f949079f02a21f"
+    },
+    {
+      "name": "dataset_description.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/dataset_description.json",
+      "bytes": 291,
+      "checksum": "sha256:f9f2c7a90b94178564fdac8e0192fcb7db129200882b6466fbf2e7bb5f180919",
+      "sha256": "f9f2c7a90b94178564fdac8e0192fcb7db129200882b6466fbf2e7bb5f180919",
+      "git_blob_sha1": "a524ee1a5745bb09ed9ece7a2274b0c87656f535"
+    },
+    {
+      "name": "participants.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/participants.json",
+      "bytes": 280,
+      "checksum": "sha256:9f5d3824520c7e855749f67aebb1341fc24b9674ad1c3e47086c2877e1aa5cb2",
+      "sha256": "9f5d3824520c7e855749f67aebb1341fc24b9674ad1c3e47086c2877e1aa5cb2",
+      "git_blob_sha1": "2957775717f413a892d67204f9159d2fe4c94fc6"
+    },
+    {
+      "name": "participants.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/participants.tsv",
+      "bytes": 322,
+      "checksum": "sha256:725a83450ad3502f1674b1486629be8f047a06366e8b6abd977951d9bf5d6a76",
+      "sha256": "725a83450ad3502f1674b1486629be8f047a06366e8b6abd977951d9bf5d6a76",
+      "git_blob_sha1": "d88d9c3b3357e74126bd38c39bf4a131da99f0c1"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-001/eeg/sub-001_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 756,
+      "checksum": "sha256:dc7f9c39dba48d62fd81a6e4eee33c8c402c520cff0c6ea4a2fba186895fae16",
+      "sha256": "dc7f9c39dba48d62fd81a6e4eee33c8c402c520cff0c6ea4a2fba186895fae16",
+      "git_blob_sha1": "10b7708badbc7fa07e246f7746ed5e6bae48d337"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-001/eeg/sub-001_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-001/eeg/sub-001_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 209248000,
+      "checksum": "md5:117612467f64bdda36bca3a0bf3df690",
+      "git_blob_sha1": "0f6d0e6a4d9ccda5657e02f6150931c82005f12c",
+      "git_annex_pointer": "../../.git/annex/objects/p1/3m/MD5E-s209248000--117612467f64bdda36bca3a0bf3df690.fdt/MD5E-s209248000--117612467f64bdda36bca3a0bf3df690.fdt",
+      "sha256": "a291b543a34616186633f9d93bcec32d9b5ec604113327c3979bd80b6e44421f"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-001/eeg/sub-001_task-ThreeArmedBandit_eeg.json",
+      "bytes": 608,
+      "checksum": "sha256:fcbf969b6ad762744936c955be8322c0abdf3dded282a8111de481e9ff3b1820",
+      "sha256": "fcbf969b6ad762744936c955be8322c0abdf3dded282a8111de481e9ff3b1820",
+      "git_blob_sha1": "8a9cf21c949d0b3fe8c7d0caa3cf3607febcce0e"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-001/eeg/sub-001_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5214560,
+      "checksum": "md5:b517b9decb82e6aa5199c3cfbdece0a1",
+      "git_blob_sha1": "fee5609ecc76e79964e03bf036a3dfde95d297bf",
+      "git_annex_pointer": "../../.git/annex/objects/v9/4m/MD5E-s5214560--b517b9decb82e6aa5199c3cfbdece0a1.set/MD5E-s5214560--b517b9decb82e6aa5199c3cfbdece0a1.set",
+      "sha256": "6a3d85ce094f3af5a0cca9886744cb7a57c0e85cb75c04a4e3aacc1c99c14218"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-001/eeg/sub-001_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1435,
+      "checksum": "sha256:d387bc195f2a19084c5a17563c679157eb65ebf4efe5e83ac9aac028db9f6b7a",
+      "sha256": "d387bc195f2a19084c5a17563c679157eb65ebf4efe5e83ac9aac028db9f6b7a",
+      "git_blob_sha1": "9e5b745d821c36a742fe4c5dfa3f4a7d2884113a"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-001/eeg/sub-001_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-001/eeg/sub-001_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106903,
+      "checksum": "sha256:f7baea04b4449ccc8d4fb6c3f97e8eb969c8dc81967a513840849bbb6df3a6cb",
+      "sha256": "f7baea04b4449ccc8d4fb6c3f97e8eb969c8dc81967a513840849bbb6df3a6cb",
+      "git_blob_sha1": "a79d69ab7ddea55dd400702a4d5d2b43c3288d69"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-002/eeg/sub-002_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 756,
+      "checksum": "sha256:dc7f9c39dba48d62fd81a6e4eee33c8c402c520cff0c6ea4a2fba186895fae16",
+      "sha256": "dc7f9c39dba48d62fd81a6e4eee33c8c402c520cff0c6ea4a2fba186895fae16",
+      "git_blob_sha1": "10b7708badbc7fa07e246f7746ed5e6bae48d337"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-002/eeg/sub-002_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-002/eeg/sub-002_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 209248000,
+      "checksum": "md5:94a1afab396bcd645a9f6e63c6f22832",
+      "git_blob_sha1": "e0b17e36258978ad26f59c0a60c368c21fb18af4",
+      "git_annex_pointer": "../../.git/annex/objects/5G/kz/MD5E-s209248000--94a1afab396bcd645a9f6e63c6f22832.fdt/MD5E-s209248000--94a1afab396bcd645a9f6e63c6f22832.fdt",
+      "sha256": "26930a8099d3707344eb8461f0173ed70b2c07cc4bb8ea3a63e22df9db587f70"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-002/eeg/sub-002_task-ThreeArmedBandit_eeg.json",
+      "bytes": 608,
+      "checksum": "sha256:fcbf969b6ad762744936c955be8322c0abdf3dded282a8111de481e9ff3b1820",
+      "sha256": "fcbf969b6ad762744936c955be8322c0abdf3dded282a8111de481e9ff3b1820",
+      "git_blob_sha1": "8a9cf21c949d0b3fe8c7d0caa3cf3607febcce0e"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-002/eeg/sub-002_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5213560,
+      "checksum": "md5:f92a744add39ed9a9c419108f8f840c7",
+      "git_blob_sha1": "e46f42be3cc67187aee6c42989b616e436fd59a3",
+      "git_annex_pointer": "../../.git/annex/objects/Vw/GG/MD5E-s5213560--f92a744add39ed9a9c419108f8f840c7.set/MD5E-s5213560--f92a744add39ed9a9c419108f8f840c7.set",
+      "sha256": "b53e544bdf343e78e64ee9501de26da582d0434bfbb57a837a21e8f7e4712cbc"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-002/eeg/sub-002_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1435,
+      "checksum": "sha256:d387bc195f2a19084c5a17563c679157eb65ebf4efe5e83ac9aac028db9f6b7a",
+      "sha256": "d387bc195f2a19084c5a17563c679157eb65ebf4efe5e83ac9aac028db9f6b7a",
+      "git_blob_sha1": "9e5b745d821c36a742fe4c5dfa3f4a7d2884113a"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-002/eeg/sub-002_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-002/eeg/sub-002_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106759,
+      "checksum": "sha256:cab1b6f7edff80c6afac577c0024a2e6673974de1d800b9c60cc41627df7781b",
+      "sha256": "cab1b6f7edff80c6afac577c0024a2e6673974de1d800b9c60cc41627df7781b",
+      "git_blob_sha1": "510b75e868df3d33ca3bbe0b4b675c823d33ea38"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-003/eeg/sub-003_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 756,
+      "checksum": "sha256:dc7f9c39dba48d62fd81a6e4eee33c8c402c520cff0c6ea4a2fba186895fae16",
+      "sha256": "dc7f9c39dba48d62fd81a6e4eee33c8c402c520cff0c6ea4a2fba186895fae16",
+      "git_blob_sha1": "10b7708badbc7fa07e246f7746ed5e6bae48d337"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-003/eeg/sub-003_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-003/eeg/sub-003_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 191372800,
+      "checksum": "md5:8da1efcc44a2e4257e22611920998102",
+      "git_blob_sha1": "ea1d837eccf795d12f72ecc4c9b5ef6d5346e7c9",
+      "git_annex_pointer": "../../.git/annex/objects/9F/QP/MD5E-s191372800--8da1efcc44a2e4257e22611920998102.fdt/MD5E-s191372800--8da1efcc44a2e4257e22611920998102.fdt",
+      "sha256": "6b17bd9782308206c1459ffe5ea31752b20726e8aaf0e4ece05421f7d65d2249"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-003/eeg/sub-003_task-ThreeArmedBandit_eeg.json",
+      "bytes": 607,
+      "checksum": "sha256:9ad978658549515566de4847cf2d8e92525a534f6999dc1cb1d8f650573e75ae",
+      "sha256": "9ad978658549515566de4847cf2d8e92525a534f6999dc1cb1d8f650573e75ae",
+      "git_blob_sha1": "4c6229bf7c6e7231744c4987a121efe28a6d2d71"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-003/eeg/sub-003_task-ThreeArmedBandit_eeg.set",
+      "bytes": 4936256,
+      "checksum": "md5:0ba97c59bfc2685adcc2346a085a869d",
+      "git_blob_sha1": "03cb8913362188e28e73d4e10096c5f8ec48ebfb",
+      "git_annex_pointer": "../../.git/annex/objects/K0/Wm/MD5E-s4936256--0ba97c59bfc2685adcc2346a085a869d.set/MD5E-s4936256--0ba97c59bfc2685adcc2346a085a869d.set",
+      "sha256": "bbca79c72572ec242eb1fb4e5c32bb1a5988d4ceb4e5454734bc09f50f22cdab"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-003/eeg/sub-003_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1435,
+      "checksum": "sha256:d387bc195f2a19084c5a17563c679157eb65ebf4efe5e83ac9aac028db9f6b7a",
+      "sha256": "d387bc195f2a19084c5a17563c679157eb65ebf4efe5e83ac9aac028db9f6b7a",
+      "git_blob_sha1": "9e5b745d821c36a742fe4c5dfa3f4a7d2884113a"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-003/eeg/sub-003_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-003/eeg/sub-003_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106479,
+      "checksum": "sha256:dadc2b8cf81c1818fb451b029f424577904272a3e701a7b3c7b519cf4386a454",
+      "sha256": "dadc2b8cf81c1818fb451b029f424577904272a3e701a7b3c7b519cf4386a454",
+      "git_blob_sha1": "ffdef6414382d8056092635c975c2b6b80d1c414"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-004/eeg/sub-004_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-004/eeg/sub-004_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-004/eeg/sub-004_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 223264800,
+      "checksum": "md5:865be2b4d0b72d9bf2ea437565aa2def",
+      "git_blob_sha1": "d013eea63f49c60d886db9d6c56e4ef0122732bd",
+      "git_annex_pointer": "../../.git/annex/objects/20/Q1/MD5E-s223264800--865be2b4d0b72d9bf2ea437565aa2def.fdt/MD5E-s223264800--865be2b4d0b72d9bf2ea437565aa2def.fdt",
+      "sha256": "043aa891cfbee1d9d99674de8374d485e7ec79218c877df17f56828d31285b14"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-004/eeg/sub-004_task-ThreeArmedBandit_eeg.json",
+      "bytes": 607,
+      "checksum": "sha256:b61a02bb9b6cbd944cd856f5d0755f8a7da8a78837d7298e4e063d1fe77b3b3d",
+      "sha256": "b61a02bb9b6cbd944cd856f5d0755f8a7da8a78837d7298e4e063d1fe77b3b3d",
+      "git_blob_sha1": "74d11a6902e37e15de169db34bd4c90474a60811"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-004/eeg/sub-004_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5327352,
+      "checksum": "md5:347ad5c615a8e2ea4750ff3ab131c748",
+      "git_blob_sha1": "648ae2ed279ff37b7594f9fd9033a0d0ab173e2c",
+      "git_annex_pointer": "../../.git/annex/objects/fk/65/MD5E-s5327352--347ad5c615a8e2ea4750ff3ab131c748.set/MD5E-s5327352--347ad5c615a8e2ea4750ff3ab131c748.set",
+      "sha256": "63ca7f17ec4a70ca0ce91509d048260e912b0f66614f6c249ae60f4fccd0aa44"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-004/eeg/sub-004_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-004/eeg/sub-004_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-004/eeg/sub-004_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106892,
+      "checksum": "sha256:3b069ed009d9fce3b8fe68feeebc4618ba8ca5e5540e9d7c4f95e30fb9000b04",
+      "sha256": "3b069ed009d9fce3b8fe68feeebc4618ba8ca5e5540e9d7c4f95e30fb9000b04",
+      "git_blob_sha1": "b1935e2babab580989fb82078100a368b3a2029b"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-005/eeg/sub-005_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-005/eeg/sub-005_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-005/eeg/sub-005_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 182232600,
+      "checksum": "md5:17332c2b0adc4f03afe440568852b84a",
+      "git_blob_sha1": "1707edac7dcf1b112c8f538679aee5881326cf5a",
+      "git_annex_pointer": "../../.git/annex/objects/F6/kw/MD5E-s182232600--17332c2b0adc4f03afe440568852b84a.fdt/MD5E-s182232600--17332c2b0adc4f03afe440568852b84a.fdt",
+      "sha256": "c598168f028c6447d215371de868377ed9483112d904bd32a534495da18baacf"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-005/eeg/sub-005_task-ThreeArmedBandit_eeg.json",
+      "bytes": 608,
+      "checksum": "sha256:ac8203eda355240b329c585f07427d232b8bced6ea43c194ecc6fec24e867d67",
+      "sha256": "ac8203eda355240b329c585f07427d232b8bced6ea43c194ecc6fec24e867d67",
+      "git_blob_sha1": "e5e98cbbc12cdc4aa44be1f7e6ddee827d01d865"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-005/eeg/sub-005_task-ThreeArmedBandit_eeg.set",
+      "bytes": 4707656,
+      "checksum": "md5:9a979c164384478a99a49954bf6a51c8",
+      "git_blob_sha1": "aefc5f2bf2aa42efc8b43fba2965122ea6431d80",
+      "git_annex_pointer": "../../.git/annex/objects/FQ/Q4/MD5E-s4707656--9a979c164384478a99a49954bf6a51c8.set/MD5E-s4707656--9a979c164384478a99a49954bf6a51c8.set",
+      "sha256": "13915f63e3375d16a4d7fd801fd2d94d2d77cbf4259e9107214c5e70f0bca18b"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-005/eeg/sub-005_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-005/eeg/sub-005_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-005/eeg/sub-005_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106608,
+      "checksum": "sha256:c3b82406fd42a0fed426d7bafb34467f54a6dec6bca1e352d63328fc8de334a2",
+      "sha256": "c3b82406fd42a0fed426d7bafb34467f54a6dec6bca1e352d63328fc8de334a2",
+      "git_blob_sha1": "467c799214b1dd853119b0aba9bf7e0414cc99e9"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-006/eeg/sub-006_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-006/eeg/sub-006_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-006/eeg/sub-006_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 192845400,
+      "checksum": "md5:2f183d0d172164d25b89b409ddd6bfa2",
+      "git_blob_sha1": "a7ee748103e289ff82bdcabab657fd1cd86d2ce7",
+      "git_annex_pointer": "../../.git/annex/objects/06/Q8/MD5E-s192845400--2f183d0d172164d25b89b409ddd6bfa2.fdt/MD5E-s192845400--2f183d0d172164d25b89b409ddd6bfa2.fdt",
+      "sha256": "c709feb397715bc3050a475427cb81e8f0059342c1b201fca3dc39127ca76021"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-006/eeg/sub-006_task-ThreeArmedBandit_eeg.json",
+      "bytes": 608,
+      "checksum": "sha256:5f3c4cc438b900a7369ac2286886874b0575d2f78c82f77e1918c5a7f4ee96a0",
+      "sha256": "5f3c4cc438b900a7369ac2286886874b0575d2f78c82f77e1918c5a7f4ee96a0",
+      "git_blob_sha1": "32d32baa989e447a0d0f783bb892e648da0d9137"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-006/eeg/sub-006_task-ThreeArmedBandit_eeg.set",
+      "bytes": 4868456,
+      "checksum": "md5:37e1248649288cfc08d9b0326cddc2ae",
+      "git_blob_sha1": "20142adf42b3ed79d090514cc632d7b23507682c",
+      "git_annex_pointer": "../../.git/annex/objects/2z/z8/MD5E-s4868456--37e1248649288cfc08d9b0326cddc2ae.set/MD5E-s4868456--37e1248649288cfc08d9b0326cddc2ae.set",
+      "sha256": "2772e452f9b3dc7e3be581bb69473245bb41e8806b27fc1f8d105649f0b06bd1"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-006/eeg/sub-006_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-006/eeg/sub-006_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-006/eeg/sub-006_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106711,
+      "checksum": "sha256:277585e4d17f18e3afbf464a077b66b4d41d16e18b9993502234babb7f862a0c",
+      "sha256": "277585e4d17f18e3afbf464a077b66b4d41d16e18b9993502234babb7f862a0c",
+      "git_blob_sha1": "2cb0d5a8d13d4f26a99f2c2c90f19743fb2c9f31"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-007/eeg/sub-007_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-007/eeg/sub-007_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-007/eeg/sub-007_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 216849600,
+      "checksum": "md5:2abb849324170ead314f493f7c2411ec",
+      "git_blob_sha1": "dc7d34c39807da03ece3008d484859f11365fcf5",
+      "git_annex_pointer": "../../.git/annex/objects/q6/6p/MD5E-s216849600--2abb849324170ead314f493f7c2411ec.fdt/MD5E-s216849600--2abb849324170ead314f493f7c2411ec.fdt",
+      "sha256": "47601f9635ce9e7e6acef5efb697de01b79a71e015b3c3f327defcbcd459ac6e"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-007/eeg/sub-007_task-ThreeArmedBandit_eeg.json",
+      "bytes": 607,
+      "checksum": "sha256:d0ecf920dfb96e3f5d9f93190ffb0c6326793ff26c4e14139625cea4d5d24a62",
+      "sha256": "d0ecf920dfb96e3f5d9f93190ffb0c6326793ff26c4e14139625cea4d5d24a62",
+      "git_blob_sha1": "92a08f1edcdae25e915663b163f594fd2f3c9178"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-007/eeg/sub-007_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5231152,
+      "checksum": "md5:446e7ee81dc1dc29c9f83a49a25140ba",
+      "git_blob_sha1": "938db2d9dc6ba3421bee4aa82bedaa0e47da719c",
+      "git_annex_pointer": "../../.git/annex/objects/8Q/m9/MD5E-s5231152--446e7ee81dc1dc29c9f83a49a25140ba.set/MD5E-s5231152--446e7ee81dc1dc29c9f83a49a25140ba.set",
+      "sha256": "952d51ad3588e6532f9613ea3aaa898253197d0b9b428b9c8a1344b9cf2d2397"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-007/eeg/sub-007_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-007/eeg/sub-007_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-007/eeg/sub-007_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106974,
+      "checksum": "sha256:f3b5e63447cb5d650a0a31c1c73008b3eafa0d81191fc5481d58f3b73b4480aa",
+      "sha256": "f3b5e63447cb5d650a0a31c1c73008b3eafa0d81191fc5481d58f3b73b4480aa",
+      "git_blob_sha1": "2112239771509c64be279dc1829921505b92916f"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-008/eeg/sub-008_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-008/eeg/sub-008_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-008/eeg/sub-008_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 215569200,
+      "checksum": "md5:11c1b4d543a981e8bac6e8d242543178",
+      "git_blob_sha1": "cb120909965fab4d8941cf061dfac3c3dec25e47",
+      "git_annex_pointer": "../../.git/annex/objects/95/zV/MD5E-s215569200--11c1b4d543a981e8bac6e8d242543178.fdt/MD5E-s215569200--11c1b4d543a981e8bac6e8d242543178.fdt",
+      "sha256": "401952d91b2c3d0c6e156f5cca76a95f66f48fe99e4d737ec82cb771c7ff2605"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-008/eeg/sub-008_task-ThreeArmedBandit_eeg.json",
+      "bytes": 607,
+      "checksum": "sha256:62d454b067da8b7f1c2c28ddae96a6cc2e5ec8f8d360556eb7ce97a1e064919c",
+      "sha256": "62d454b067da8b7f1c2c28ddae96a6cc2e5ec8f8d360556eb7ce97a1e064919c",
+      "git_blob_sha1": "cbac943c55e3c6635f3cc0ca74b8c09459b81012"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-008/eeg/sub-008_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5210752,
+      "checksum": "md5:29c5ffef2690fbc39dced1caaeda502f",
+      "git_blob_sha1": "6e176fb5b7762869ea2ca307ac4d331d3c0ccfb0",
+      "git_annex_pointer": "../../.git/annex/objects/fj/6K/MD5E-s5210752--29c5ffef2690fbc39dced1caaeda502f.set/MD5E-s5210752--29c5ffef2690fbc39dced1caaeda502f.set",
+      "sha256": "08f107589c5a2634ca1c8b3e4ddd9c40bf6e956977c1220d15ef965df68af87e"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-008/eeg/sub-008_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-008/eeg/sub-008_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-008/eeg/sub-008_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106805,
+      "checksum": "sha256:91e4066493f4aad7d0a1f6f3d874d409cfd171d1acafa650fa3f51a3a56cf5b6",
+      "sha256": "91e4066493f4aad7d0a1f6f3d874d409cfd171d1acafa650fa3f51a3a56cf5b6",
+      "git_blob_sha1": "6c0bb54cd94cc29e5ff21b1ce0625c023ebb0525"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-009/eeg/sub-009_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 756,
+      "checksum": "sha256:dc7f9c39dba48d62fd81a6e4eee33c8c402c520cff0c6ea4a2fba186895fae16",
+      "sha256": "dc7f9c39dba48d62fd81a6e4eee33c8c402c520cff0c6ea4a2fba186895fae16",
+      "git_blob_sha1": "10b7708badbc7fa07e246f7746ed5e6bae48d337"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-009/eeg/sub-009_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-009/eeg/sub-009_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 217376000,
+      "checksum": "md5:a67894a54ca81eee2b33ebbb54637268",
+      "git_blob_sha1": "5e29c15096ca5e3c3597fcc13e5186d94129101b",
+      "git_annex_pointer": "../../.git/annex/objects/qP/7j/MD5E-s217376000--a67894a54ca81eee2b33ebbb54637268.fdt/MD5E-s217376000--a67894a54ca81eee2b33ebbb54637268.fdt",
+      "sha256": "79a10cd684da94f2232e19051cb3e8723913c8389bb8ebd076b238b20c5d83fb"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-009/eeg/sub-009_task-ThreeArmedBandit_eeg.json",
+      "bytes": 608,
+      "checksum": "sha256:3ef16114b155a3f5b88961c6c5a6d9f2046667a96ec80f75b860f69e43b12ce3",
+      "sha256": "3ef16114b155a3f5b88961c6c5a6d9f2046667a96ec80f75b860f69e43b12ce3",
+      "git_blob_sha1": "1632fad6e962822f8957ff01c9703a823adea7d3"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-009/eeg/sub-009_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5341560,
+      "checksum": "md5:fdc3e30ec5bf71d2c4fb1b5c02a21f4f",
+      "git_blob_sha1": "f65566e2db3cab697d808a5be647936eb548435b",
+      "git_annex_pointer": "../../.git/annex/objects/5v/vm/MD5E-s5341560--fdc3e30ec5bf71d2c4fb1b5c02a21f4f.set/MD5E-s5341560--fdc3e30ec5bf71d2c4fb1b5c02a21f4f.set",
+      "sha256": "4e4451b7916c8d138b3793a96b04eed31109542b0420b64e84239dca6d44abf7"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-009/eeg/sub-009_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1435,
+      "checksum": "sha256:d387bc195f2a19084c5a17563c679157eb65ebf4efe5e83ac9aac028db9f6b7a",
+      "sha256": "d387bc195f2a19084c5a17563c679157eb65ebf4efe5e83ac9aac028db9f6b7a",
+      "git_blob_sha1": "9e5b745d821c36a742fe4c5dfa3f4a7d2884113a"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-009/eeg/sub-009_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-009/eeg/sub-009_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106869,
+      "checksum": "sha256:5e644cbc77cb0b0c2a838963586329a7d878103158d254a04e19686591a26723",
+      "sha256": "5e644cbc77cb0b0c2a838963586329a7d878103158d254a04e19686591a26723",
+      "git_blob_sha1": "521840a8224f86478dd62558cd4f79e60d66c34c"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-010/eeg/sub-010_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-010/eeg/sub-010_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-010/eeg/sub-010_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 270012600,
+      "checksum": "md5:66cedf1c2bdf40d3f0d1b9010e2ab32b",
+      "git_blob_sha1": "0bca6a2fa8318274ba9e14e6ec2118a44d8f9e68",
+      "git_annex_pointer": "../../.git/annex/objects/4z/vP/MD5E-s270012600--66cedf1c2bdf40d3f0d1b9010e2ab32b.fdt/MD5E-s270012600--66cedf1c2bdf40d3f0d1b9010e2ab32b.fdt",
+      "sha256": "fe61ce2735fd2283e224a39fb9dd0c85e9aff3be9573473c1544f9aee0bc67e7"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-010/eeg/sub-010_task-ThreeArmedBandit_eeg.json",
+      "bytes": 608,
+      "checksum": "sha256:630522c7409bf05262af9411d82b625cfebfe73899a4cdcb4773da635be16abe",
+      "sha256": "630522c7409bf05262af9411d82b625cfebfe73899a4cdcb4773da635be16abe",
+      "git_blob_sha1": "baf7e0dbfddb2492e32754d21abf25519eb6e206"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-010/eeg/sub-010_task-ThreeArmedBandit_eeg.set",
+      "bytes": 6034656,
+      "checksum": "md5:d6d5f425972debfd61086021a43c1e9c",
+      "git_blob_sha1": "1266459a54e76f545f94b549e4ef75014d797a1d",
+      "git_annex_pointer": "../../.git/annex/objects/MM/mm/MD5E-s6034656--d6d5f425972debfd61086021a43c1e9c.set/MD5E-s6034656--d6d5f425972debfd61086021a43c1e9c.set",
+      "sha256": "b532b91551bf8153e662b4d564c5d4b68d819c9099953d7e59f116025f1f32aa"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-010/eeg/sub-010_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-010/eeg/sub-010_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-010/eeg/sub-010_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106839,
+      "checksum": "sha256:0bc79c2c09b85e5457d44dfc13f23bb0c7b097429667d261a241cdbceded5944",
+      "sha256": "0bc79c2c09b85e5457d44dfc13f23bb0c7b097429667d261a241cdbceded5944",
+      "git_blob_sha1": "e4475300576b62d47ee9c4fe156ab7c80f0abc88"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-011/eeg/sub-011_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-011/eeg/sub-011_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-011/eeg/sub-011_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 213483600,
+      "checksum": "md5:a652c2101f8b90bba5575b977d75d2d3",
+      "git_blob_sha1": "27e50467787301315883cc1dcc4c859e2fbc9c4d",
+      "git_annex_pointer": "../../.git/annex/objects/7j/Pf/MD5E-s213483600--a652c2101f8b90bba5575b977d75d2d3.fdt/MD5E-s213483600--a652c2101f8b90bba5575b977d75d2d3.fdt",
+      "sha256": "a77d1be4cd1c589d6ccb3fd0e320b1d7319426b57acc4ffc24069f70c854fcfa"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-011/eeg/sub-011_task-ThreeArmedBandit_eeg.json",
+      "bytes": 607,
+      "checksum": "sha256:98edc286aec2120bae94297cef138ae5dc1873715eafc3343481523a43ab31ab",
+      "sha256": "98edc286aec2120bae94297cef138ae5dc1873715eafc3343481523a43ab31ab",
+      "git_blob_sha1": "4b59549239aa401a4dec2150d12a533480079e55"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-011/eeg/sub-011_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5181152,
+      "checksum": "md5:756483270804307d61a27d86b8bcafd8",
+      "git_blob_sha1": "bb69275e9430aaa21d32c428ebd305916d774d0b",
+      "git_annex_pointer": "../../.git/annex/objects/QF/v6/MD5E-s5181152--756483270804307d61a27d86b8bcafd8.set/MD5E-s5181152--756483270804307d61a27d86b8bcafd8.set",
+      "sha256": "82ac0ae5671b146e197e263cb4ba87180e2a090d1c4cc757e536e2a07c54efac"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-011/eeg/sub-011_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-011/eeg/sub-011_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-011/eeg/sub-011_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106896,
+      "checksum": "sha256:0976f00394a74da8a630244b0ade313e2c9a8d79aed0fc216b5b25483ff5fb70",
+      "sha256": "0976f00394a74da8a630244b0ade313e2c9a8d79aed0fc216b5b25483ff5fb70",
+      "git_blob_sha1": "3e22da191cd747648a24d63a01f5c070cdc4b181"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-012/eeg/sub-012_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-012/eeg/sub-012_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-012/eeg/sub-012_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 202250400,
+      "checksum": "md5:8ca8657ee32c79111251b52fea733051",
+      "git_blob_sha1": "894dd57ce8e270b935a8230faf16ff260af13fa7",
+      "git_annex_pointer": "../../.git/annex/objects/ZG/J2/MD5E-s202250400--8ca8657ee32c79111251b52fea733051.fdt/MD5E-s202250400--8ca8657ee32c79111251b52fea733051.fdt",
+      "sha256": "57513af3bc3cfe1b485445f7971b40811b0ca787d906d834fca08c0879bba1b0"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-012/eeg/sub-012_task-ThreeArmedBandit_eeg.json",
+      "bytes": 607,
+      "checksum": "sha256:9a4ecc6ffa4e0c9bebed9ce631dede8ce8b4a0e6e19be14d1172c3404cc57f84",
+      "sha256": "9a4ecc6ffa4e0c9bebed9ce631dede8ce8b4a0e6e19be14d1172c3404cc57f84",
+      "git_blob_sha1": "08ebb02fe64f8d4ae5263c703c81647480672d0e"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-012/eeg/sub-012_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5010952,
+      "checksum": "md5:ce01d541cd20965af284ef7ca37e03cb",
+      "git_blob_sha1": "05c542b148f85815d1983215ca710f092261ad72",
+      "git_annex_pointer": "../../.git/annex/objects/36/6Q/MD5E-s5010952--ce01d541cd20965af284ef7ca37e03cb.set/MD5E-s5010952--ce01d541cd20965af284ef7ca37e03cb.set",
+      "sha256": "10ead7a9a27fe5d8a318f40edea962d922f00fed9dcca60c9c1aa884c77742e0"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-012/eeg/sub-012_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-012/eeg/sub-012_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-012/eeg/sub-012_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106846,
+      "checksum": "sha256:e1392770918fae951e37c07c31a4bc2ec5b758f07f498bda884070e94bddb259",
+      "sha256": "e1392770918fae951e37c07c31a4bc2ec5b758f07f498bda884070e94bddb259",
+      "git_blob_sha1": "5bc8d351f2f272165589fe1cbc91b239cee51d76"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-013/eeg/sub-013_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-013/eeg/sub-013_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-013/eeg/sub-013_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 209602800,
+      "checksum": "md5:2e17222b027016adff52f31bd7e770d3",
+      "git_blob_sha1": "5bdf3d11830d22d05496f37f98a481e9124e2162",
+      "git_annex_pointer": "../../.git/annex/objects/z3/4v/MD5E-s209602800--2e17222b027016adff52f31bd7e770d3.fdt/MD5E-s209602800--2e17222b027016adff52f31bd7e770d3.fdt",
+      "sha256": "5c94ae14f05e1eb2e37d9bb9113d377d76cecc58f83ea9303fb02791ccd66671"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-013/eeg/sub-013_task-ThreeArmedBandit_eeg.json",
+      "bytes": 607,
+      "checksum": "sha256:be7bf2cbcb117bb08ab2c6593bca47865e3889b56e897af5c22d40510c4423ba",
+      "sha256": "be7bf2cbcb117bb08ab2c6593bca47865e3889b56e897af5c22d40510c4423ba",
+      "git_blob_sha1": "d5961b595febf1488b3ea07013a49c5ddc8fb2c6"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-013/eeg/sub-013_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5121352,
+      "checksum": "md5:2295e9be2079e41e0a105d6d2a747f59",
+      "git_blob_sha1": "63d669a56b15c003ac2a8233079be75036f38e2a",
+      "git_annex_pointer": "../../.git/annex/objects/X6/7Z/MD5E-s5121352--2295e9be2079e41e0a105d6d2a747f59.set/MD5E-s5121352--2295e9be2079e41e0a105d6d2a747f59.set",
+      "sha256": "feff52c41660f8b76bba89b59d112826fa9b01bb55e302588448eaeee2a0a9fc"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-013/eeg/sub-013_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-013/eeg/sub-013_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-013/eeg/sub-013_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106600,
+      "checksum": "sha256:586c62b0d9c7fb53a84f4f4cdced04a32b8656278d40b61e6a10eef74f92865f",
+      "sha256": "586c62b0d9c7fb53a84f4f4cdced04a32b8656278d40b61e6a10eef74f92865f",
+      "git_blob_sha1": "a61cc79087f0f40f53d67aacebcffa1f27a3c684"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-014/eeg/sub-014_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-014/eeg/sub-014_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-014/eeg/sub-014_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 207550200,
+      "checksum": "md5:672ef0890b6ecb6c7aac7c95a73152a5",
+      "git_blob_sha1": "84807b81cf7e7daf7aa48e911805a64c676f7afe",
+      "git_annex_pointer": "../../.git/annex/objects/Gv/3V/MD5E-s207550200--672ef0890b6ecb6c7aac7c95a73152a5.fdt/MD5E-s207550200--672ef0890b6ecb6c7aac7c95a73152a5.fdt",
+      "sha256": "2ef36cbf403a49d9fa6c90facdd0d67b745a6a707061f5b4fb18b04d092ca718"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-014/eeg/sub-014_task-ThreeArmedBandit_eeg.json",
+      "bytes": 608,
+      "checksum": "sha256:7057a9fd82ce2d42f648862c34831e42720f475234a54d360dd95dc6e2efc8a5",
+      "sha256": "7057a9fd82ce2d42f648862c34831e42720f475234a54d360dd95dc6e2efc8a5",
+      "git_blob_sha1": "3ae44d6da7d9ca310a24fff722d0a52d598d9105"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-014/eeg/sub-014_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5090256,
+      "checksum": "md5:ec221866f4b48d558a1ef815b064c029",
+      "git_blob_sha1": "8466d382b71fba8651c96850e35060e6180f315c",
+      "git_annex_pointer": "../../.git/annex/objects/8k/33/MD5E-s5090256--ec221866f4b48d558a1ef815b064c029.set/MD5E-s5090256--ec221866f4b48d558a1ef815b064c029.set",
+      "sha256": "0d1aaf9b8bdeab0396aecaa827e248d025b9101e1fcb18cd186437954a66a465"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-014/eeg/sub-014_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-014/eeg/sub-014_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-014/eeg/sub-014_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106795,
+      "checksum": "sha256:e4ba90c1cf5cfd4876b1e73c32bf9dbb8bf9d8feb59cd394270966e3ba2f7bdd",
+      "sha256": "e4ba90c1cf5cfd4876b1e73c32bf9dbb8bf9d8feb59cd394270966e3ba2f7bdd",
+      "git_blob_sha1": "a127eeb6c68fdd825513c770bdae071614ec787f"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-015/eeg/sub-015_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-015/eeg/sub-015_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-015/eeg/sub-015_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 216255600,
+      "checksum": "md5:91fdfa9869d04d9429f191935b97d0c8",
+      "git_blob_sha1": "c68503af53f3f7a7d6c8d2f8df70b26853960145",
+      "git_annex_pointer": "../../.git/annex/objects/J8/20/MD5E-s216255600--91fdfa9869d04d9429f191935b97d0c8.fdt/MD5E-s216255600--91fdfa9869d04d9429f191935b97d0c8.fdt",
+      "sha256": "0e546bb18182e0677eb722c46b0e2b3f8d8b350d65b73930acef947fa7b84dd7"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-015/eeg/sub-015_task-ThreeArmedBandit_eeg.json",
+      "bytes": 607,
+      "checksum": "sha256:f0bcaaf1c80cbee0cfe3f231a027df3a291d91693b7f2dd8517d25cdc9c1e0ba",
+      "sha256": "f0bcaaf1c80cbee0cfe3f231a027df3a291d91693b7f2dd8517d25cdc9c1e0ba",
+      "git_blob_sha1": "793c06dd7f8ea0dc348eae50f17f33a86a158145"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-015/eeg/sub-015_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5223152,
+      "checksum": "md5:2b0f7baa01f91a2407bbb994f19e4b50",
+      "git_blob_sha1": "5b5026f4c89f28030c3a8759f9f4c09dce0f143e",
+      "git_annex_pointer": "../../.git/annex/objects/w3/7Q/MD5E-s5223152--2b0f7baa01f91a2407bbb994f19e4b50.set/MD5E-s5223152--2b0f7baa01f91a2407bbb994f19e4b50.set",
+      "sha256": "60d3967765049b997c6fc4bced3a9f2e46b8882443d2b88ed3fba1e6e3f7dde8"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-015/eeg/sub-015_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-015/eeg/sub-015_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-015/eeg/sub-015_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106931,
+      "checksum": "sha256:6f0ec1bbe71961e5e487551995ab2ffd1366292d6f8c77dee19eeee178950bcf",
+      "sha256": "6f0ec1bbe71961e5e487551995ab2ffd1366292d6f8c77dee19eeee178950bcf",
+      "git_blob_sha1": "241d2d281bb538f79ea6617bdcff3f9354848e9f"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-016/eeg/sub-016_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-016/eeg/sub-016_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-016/eeg/sub-016_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 222875400,
+      "checksum": "md5:54886abb6193622085663ce416c6fbcd",
+      "git_blob_sha1": "1437c025b67626d9b13b4bc175cf0f50109964f7",
+      "git_annex_pointer": "../../.git/annex/objects/Vf/2M/MD5E-s222875400--54886abb6193622085663ce416c6fbcd.fdt/MD5E-s222875400--54886abb6193622085663ce416c6fbcd.fdt",
+      "sha256": "d3a159988cceae5b6437ccb6a3feec1edd6e29f57cf7a86f5b9a95ead294be13"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-016/eeg/sub-016_task-ThreeArmedBandit_eeg.json",
+      "bytes": 608,
+      "checksum": "sha256:154f3a1bc09ab6216e6633a32144230b1100a88dfc7ece8fe9f967349c91234e",
+      "sha256": "154f3a1bc09ab6216e6633a32144230b1100a88dfc7ece8fe9f967349c91234e",
+      "git_blob_sha1": "a0ecaec71daa0e529f6d0319c266eaf7bed25970"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-016/eeg/sub-016_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5323456,
+      "checksum": "md5:09ce4e94dd3c2f0893ab658c3c0cca7f",
+      "git_blob_sha1": "6e271ba73b9106f48056a827f3c6e60468cdcaf5",
+      "git_annex_pointer": "../../.git/annex/objects/71/ff/MD5E-s5323456--09ce4e94dd3c2f0893ab658c3c0cca7f.set/MD5E-s5323456--09ce4e94dd3c2f0893ab658c3c0cca7f.set",
+      "sha256": "ffde4ca573629df126b1c5355f12d0f02ad7d14a8ff22399658b91d4ec527860"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-016/eeg/sub-016_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-016/eeg/sub-016_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-016/eeg/sub-016_task-ThreeArmedBandit_events.tsv",
+      "bytes": 107064,
+      "checksum": "sha256:58d7bef6af7baa0975e218d5721033d061989fd0c990f881447a79017678d564",
+      "sha256": "58d7bef6af7baa0975e218d5721033d061989fd0c990f881447a79017678d564",
+      "git_blob_sha1": "ba2e498ded680b311309061b1483ae08de4db3c0"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-017/eeg/sub-017_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-017/eeg/sub-017_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-017/eeg/sub-017_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 207972600,
+      "checksum": "md5:cd442cbb0aaf47c1190c53b52ba49091",
+      "git_blob_sha1": "602b0661d38c19d6b4b8a6f1ae4991f7e7165030",
+      "git_annex_pointer": "../../.git/annex/objects/7f/1k/MD5E-s207972600--cd442cbb0aaf47c1190c53b52ba49091.fdt/MD5E-s207972600--cd442cbb0aaf47c1190c53b52ba49091.fdt",
+      "sha256": "62646de210fc3054c6ab90f8fb3e9dd5c6e7b89963b3c7613a0167676ccce6f3"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-017/eeg/sub-017_task-ThreeArmedBandit_eeg.json",
+      "bytes": 608,
+      "checksum": "sha256:ac144805e4d15e420fe0d5bc5a77801c854977a8e8fef20befb75b4d49c59ec8",
+      "sha256": "ac144805e4d15e420fe0d5bc5a77801c854977a8e8fef20befb75b4d49c59ec8",
+      "git_blob_sha1": "64db0eb089f69b57b2b003849c26ddb02c67e8fa"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-017/eeg/sub-017_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5097656,
+      "checksum": "md5:a9210cd9423a40977953fbd7b25702f7",
+      "git_blob_sha1": "e7adf235737c9696dad9ca8627465c15942fa903",
+      "git_annex_pointer": "../../.git/annex/objects/qQ/91/MD5E-s5097656--a9210cd9423a40977953fbd7b25702f7.set/MD5E-s5097656--a9210cd9423a40977953fbd7b25702f7.set",
+      "sha256": "0d30eb14396126f3ad8cd184dd4c7dd95226ac900a8c55049e45fb7abcb684c9"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-017/eeg/sub-017_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-017/eeg/sub-017_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-017/eeg/sub-017_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106852,
+      "checksum": "sha256:f9938cc4637a4f7ec8af66d8ef7ac2b91cea882bc6f404eba3197fb98da81a8e",
+      "sha256": "f9938cc4637a4f7ec8af66d8ef7ac2b91cea882bc6f404eba3197fb98da81a8e",
+      "git_blob_sha1": "95ba40668e122ef7c245435d1ba9e54df30d4aa0"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-018/eeg/sub-018_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-018/eeg/sub-018_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-018/eeg/sub-018_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 195795600,
+      "checksum": "md5:25f8640e476825ebc9e55b290bcea3ac",
+      "git_blob_sha1": "9c585c23218d2dfee7919365b3b6e893b6339f29",
+      "git_annex_pointer": "../../.git/annex/objects/xv/VF/MD5E-s195795600--25f8640e476825ebc9e55b290bcea3ac.fdt/MD5E-s195795600--25f8640e476825ebc9e55b290bcea3ac.fdt",
+      "sha256": "7a840d4f4505d4956c47532906606b7b41a40ec80f06661e413ffa98ec85980e"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-018/eeg/sub-018_task-ThreeArmedBandit_eeg.json",
+      "bytes": 607,
+      "checksum": "sha256:a32a31d2f128b68a466085bad559649b8730aa5e5e5be5f5fe80d8e7a31aa852",
+      "sha256": "a32a31d2f128b68a466085bad559649b8730aa5e5e5be5f5fe80d8e7a31aa852",
+      "git_blob_sha1": "aaf9875c64b124aacda3d3345a34f43763fb9b4f"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-018/eeg/sub-018_task-ThreeArmedBandit_eeg.set",
+      "bytes": 4911152,
+      "checksum": "md5:356327d690c0c4c1c3e3393355fe5f5b",
+      "git_blob_sha1": "4037a8e9ca9ce616ec1d1179528b9dcf151c2a8d",
+      "git_annex_pointer": "../../.git/annex/objects/gK/FM/MD5E-s4911152--356327d690c0c4c1c3e3393355fe5f5b.set/MD5E-s4911152--356327d690c0c4c1c3e3393355fe5f5b.set",
+      "sha256": "b394ffe1a5777a16671ed277254575e216fe327baf61e14e8d2d35d43dc7b6d9"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-018/eeg/sub-018_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-018/eeg/sub-018_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-018/eeg/sub-018_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106599,
+      "checksum": "sha256:05bca1defb521e75a69ef58c702d1f88bd71368bb6c9085cf9b5bc81593c7130",
+      "sha256": "05bca1defb521e75a69ef58c702d1f88bd71368bb6c9085cf9b5bc81593c7130",
+      "git_blob_sha1": "2efd77d0aba4d1efddd217ae6f5899f36f1edf86"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-019/eeg/sub-019_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-019/eeg/sub-019_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-019/eeg/sub-019_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 213219600,
+      "checksum": "md5:f32871350d30750d664fe4463ddc1728",
+      "git_blob_sha1": "3420f924a5b1e9972ae3873794e0b06fcde85e63",
+      "git_annex_pointer": "../../.git/annex/objects/JJ/6k/MD5E-s213219600--f32871350d30750d664fe4463ddc1728.fdt/MD5E-s213219600--f32871350d30750d664fe4463ddc1728.fdt",
+      "sha256": "9a7c465493dbab574e51236eb0bbdf6fd441d7d66fce3276fafe996c55178c53"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-019/eeg/sub-019_task-ThreeArmedBandit_eeg.json",
+      "bytes": 607,
+      "checksum": "sha256:fef416cd12b9ff1def597d6defd9334a8549091da5122cd6646b3013c8349b6b",
+      "sha256": "fef416cd12b9ff1def597d6defd9334a8549091da5122cd6646b3013c8349b6b",
+      "git_blob_sha1": "f0d00357ac35484464916d14163538c5eccb082a"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-019/eeg/sub-019_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5176152,
+      "checksum": "md5:266f1860fe47343761e36bc5c63d345e",
+      "git_blob_sha1": "45dbed8e19fd2fa5dafa8601b531a6955efe8cd4",
+      "git_annex_pointer": "../../.git/annex/objects/wF/f0/MD5E-s5176152--266f1860fe47343761e36bc5c63d345e.set/MD5E-s5176152--266f1860fe47343761e36bc5c63d345e.set",
+      "sha256": "3c3313cd39e8a1f81c65a633a8bfc8b71e301744389eff891c5a79cd98aaa71f"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-019/eeg/sub-019_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-019/eeg/sub-019_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-019/eeg/sub-019_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106865,
+      "checksum": "sha256:f6bdac41541220e7ed7c065cbd09dc52b3915b97fcc84e4ce3d15951ee6cf874",
+      "sha256": "f6bdac41541220e7ed7c065cbd09dc52b3915b97fcc84e4ce3d15951ee6cf874",
+      "git_blob_sha1": "482804133f128e4016a366094465f0b3e33b4a4c"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-020/eeg/sub-020_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-020/eeg/sub-020_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-020/eeg/sub-020_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 224677200,
+      "checksum": "md5:2c4fb9fe36fe717faff0d1ba978d5f9c",
+      "git_blob_sha1": "0ecf019529054a441a6b8983d87bc3a2c2f06244",
+      "git_annex_pointer": "../../.git/annex/objects/M0/xw/MD5E-s224677200--2c4fb9fe36fe717faff0d1ba978d5f9c.fdt/MD5E-s224677200--2c4fb9fe36fe717faff0d1ba978d5f9c.fdt",
+      "sha256": "b73d5d6eaf3ddf3f014de3a763bd1099d7b5f41adb7c9ff5698118c161e9c3d5"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-020/eeg/sub-020_task-ThreeArmedBandit_eeg.json",
+      "bytes": 607,
+      "checksum": "sha256:2f81162575cd94ee20d0df4d14d28e942042b1a72d4a219a6fb488017dab3079",
+      "sha256": "2f81162575cd94ee20d0df4d14d28e942042b1a72d4a219a6fb488017dab3079",
+      "git_blob_sha1": "27a6fdea0f3838dd7dbbe07174a3e34926142bc5"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-020/eeg/sub-020_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5347752,
+      "checksum": "md5:805aa6e9e8bdd0889f0fefcae8ddabfa",
+      "git_blob_sha1": "10c9c0d8f681553dbae8be214ca410553a45b8ec",
+      "git_annex_pointer": "../../.git/annex/objects/9q/J6/MD5E-s5347752--805aa6e9e8bdd0889f0fefcae8ddabfa.set/MD5E-s5347752--805aa6e9e8bdd0889f0fefcae8ddabfa.set",
+      "sha256": "7b35f2f65798e13403d4836c6d42a2a74fcf9fcf1ec6c17268975df524475ef1"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-020/eeg/sub-020_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-020/eeg/sub-020_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-020/eeg/sub-020_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106816,
+      "checksum": "sha256:c61d764c03bfc0dd8ff485bc940d577001c4c5b84e7c55d7a8ccfd28d6277807",
+      "sha256": "c61d764c03bfc0dd8ff485bc940d577001c4c5b84e7c55d7a8ccfd28d6277807",
+      "git_blob_sha1": "12fcbf63edfdb26c30f92d7556fc62195c05e508"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-021/eeg/sub-021_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-021/eeg/sub-021_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-021/eeg/sub-021_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 236194200,
+      "checksum": "md5:0db7e5df299024c6294d953deb812d95",
+      "git_blob_sha1": "a1304edaa698d89feaa586bf7b0e9355b37d1f1e",
+      "git_annex_pointer": "../../.git/annex/objects/qz/wm/MD5E-s236194200--0db7e5df299024c6294d953deb812d95.fdt/MD5E-s236194200--0db7e5df299024c6294d953deb812d95.fdt",
+      "sha256": "c142d2bc672f886d592b8743a6a2b59a7df0d7f1a0660255c0178bda24606b4e"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-021/eeg/sub-021_task-ThreeArmedBandit_eeg.json",
+      "bytes": 608,
+      "checksum": "sha256:46d5b64eebf2461238e6374dfeb4a87fc0ce552bb06aa4352cd98d160b9a8dee",
+      "sha256": "46d5b64eebf2461238e6374dfeb4a87fc0ce552bb06aa4352cd98d160b9a8dee",
+      "git_blob_sha1": "550827a13296587ab764c8fa9ee952bdf7de2d9e"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-021/eeg/sub-021_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5521256,
+      "checksum": "md5:09f379c3298a69affb04c212b26a38f6",
+      "git_blob_sha1": "d0675e385166aa04b8b7b55d92d353d5d6565472",
+      "git_annex_pointer": "../../.git/annex/objects/Vj/Wf/MD5E-s5521256--09f379c3298a69affb04c212b26a38f6.set/MD5E-s5521256--09f379c3298a69affb04c212b26a38f6.set",
+      "sha256": "29741fb647d970fedc53021744f0564e7c2e1d20bc5c1d51553921f8135db55b"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-021/eeg/sub-021_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-021/eeg/sub-021_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-021/eeg/sub-021_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106877,
+      "checksum": "sha256:6ea4eeed4a1a1749b12937921ae5ee088e3ed83aed5f2daf6e47fc6428ded328",
+      "sha256": "6ea4eeed4a1a1749b12937921ae5ee088e3ed83aed5f2daf6e47fc6428ded328",
+      "git_blob_sha1": "33a1b753b469fd6421949d8d5392de7bd5fb6683"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-022/eeg/sub-022_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-022/eeg/sub-022_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-022/eeg/sub-022_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 204474600,
+      "checksum": "md5:74bd665a4ab432791cc6cde46eb28dcf",
+      "git_blob_sha1": "ee1073c80574e5267d748d638b1b5ddb6ce44f68",
+      "git_annex_pointer": "../../.git/annex/objects/K9/jf/MD5E-s204474600--74bd665a4ab432791cc6cde46eb28dcf.fdt/MD5E-s204474600--74bd665a4ab432791cc6cde46eb28dcf.fdt",
+      "sha256": "cfefb0ca0869cc1bf362f95d77d1103fb2e967c5b6b7ffbc66e19375715f3055"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-022/eeg/sub-022_task-ThreeArmedBandit_eeg.json",
+      "bytes": 608,
+      "checksum": "sha256:009bfee8c1f99134a7f5c7cafea7ae08179421318f0db483fbc228966e436a14",
+      "sha256": "009bfee8c1f99134a7f5c7cafea7ae08179421318f0db483fbc228966e436a14",
+      "git_blob_sha1": "a39b1cfaa2ff66b58adb421902de59701e209876"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-022/eeg/sub-022_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5044656,
+      "checksum": "md5:6eb0b879a63a1670878c740f9f5759e9",
+      "git_blob_sha1": "6a238e2ff8f538a2c47ac8e4f0ea35674a7fb970",
+      "git_annex_pointer": "../../.git/annex/objects/G8/jw/MD5E-s5044656--6eb0b879a63a1670878c740f9f5759e9.set/MD5E-s5044656--6eb0b879a63a1670878c740f9f5759e9.set",
+      "sha256": "74a316412a1999caa1717a99354c2264b9ec427bec47d145377edef245e80207"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-022/eeg/sub-022_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-022/eeg/sub-022_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-022/eeg/sub-022_task-ThreeArmedBandit_events.tsv",
+      "bytes": 106875,
+      "checksum": "sha256:ca54c1518fdce7a6d97fabbaa7f3d5b0cebe821cf501271e844b4d61cb5617f8",
+      "sha256": "ca54c1518fdce7a6d97fabbaa7f3d5b0cebe821cf501271e844b4d61cb5617f8",
+      "git_blob_sha1": "d2de3d6261037a98c3225d8a334503f2b9eb4f6b"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ThreeArmedBandit_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-023/eeg/sub-023_task-ThreeArmedBandit_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ThreeArmedBandit_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-023/eeg/sub-023_task-ThreeArmedBandit_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ThreeArmedBandit_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-023/eeg/sub-023_task-ThreeArmedBandit_eeg.fdt",
+      "bytes": 256377000,
+      "checksum": "md5:e53cdd35dd6cc73abdc09e2ea3aab4de",
+      "git_blob_sha1": "0d97f7f048d72f82e6cc273235a95c343d51c416",
+      "git_annex_pointer": "../../.git/annex/objects/Fv/Jf/MD5E-s256377000--e53cdd35dd6cc73abdc09e2ea3aab4de.fdt/MD5E-s256377000--e53cdd35dd6cc73abdc09e2ea3aab4de.fdt",
+      "sha256": "5c0b20136072992cdfad068272b6316aebf56d3d34b3492a209452ed3b2f18c2"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ThreeArmedBandit_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-023/eeg/sub-023_task-ThreeArmedBandit_eeg.json",
+      "bytes": 608,
+      "checksum": "sha256:8274936eecc24a66fd3d6788a56d0c42733c4ada1f1970acd3fbb568a378073e",
+      "sha256": "8274936eecc24a66fd3d6788a56d0c42733c4ada1f1970acd3fbb568a378073e",
+      "git_blob_sha1": "2923fe9727983db21acf2524671c9f2538708b22"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ThreeArmedBandit_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003458/sub-023/eeg/sub-023_task-ThreeArmedBandit_eeg.set",
+      "bytes": 5831056,
+      "checksum": "md5:14d33bcb17e59fc6e4f1ea60b5308c76",
+      "git_blob_sha1": "c6069a79267e78c873088cac2742ddfffb839214",
+      "git_annex_pointer": "../../.git/annex/objects/jj/5Z/MD5E-s5831056--14d33bcb17e59fc6e4f1ea60b5308c76.set/MD5E-s5831056--14d33bcb17e59fc6e4f1ea60b5308c76.set",
+      "sha256": "fa16eb9e9a8796b8ddac07705275ca6f447f03e30fbdaa81b4a246e3a4b9b02c"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ThreeArmedBandit_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-023/eeg/sub-023_task-ThreeArmedBandit_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ThreeArmedBandit_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-023/eeg/sub-023_task-ThreeArmedBandit_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ThreeArmedBandit_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003458/417ba109d89c92e58252a18f36f2dff4351b2ab2/sub-023/eeg/sub-023_task-ThreeArmedBandit_events.tsv",
+      "bytes": 107080,
+      "checksum": "sha256:74c3c1806496c220e7348c02472320f0dced9803cbaf16ae051ac0508ef8fe1b",
+      "sha256": "74c3c1806496c220e7348c02472320f0dced9803cbaf16ae051ac0508ef8fe1b",
+      "git_blob_sha1": "dbd98e32e2ce053fd11f7aed08c0639b6e060fa6"
+    }
+  ]
+}

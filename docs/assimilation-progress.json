@@ -1,15 +1,22 @@
 {
-  "updated": "2026-11-09",
-  "registered": 82,
-  "selected": 78,
+  "updated": "2026-11-14",
+  "registered": 123,
+  "selected": 114,
   "completed_latest": [
-    "ImaginedHandsOnline",
-    "ImaginedHandsCrossSession",
-    "ImaginedHandPupils",
-    "ImaginedHandsPhysiology",
-    "ImaginedHandMusicTempo"
+    "StrokeMotorImagery",
+    "AdultSeizures",
+    "AlcoholBandit",
+    "SchizophreniaConflict",
+    "PostCovidVigilance",
+    "SchizophreniaUltimatum",
+    "SchizophreniaMotion",
+    "ZosterNeuralgiaSleep",
+    "ParkinsonsReinforcement",
+    "AcuteTBIVisualMemory"
   ],
   "in_progress": {},
+  "clinical_problems": 30,
+  "cognitive_problems": 30,
   "deferred": {
     "VisualCategories": {
       "source": "Kaneshiro2015",
@@ -48,29 +55,39 @@
     "temporary_copies_removed": true
   },
   "motor_imagery_problems": 30,
-  "scalp_eeg_motor_imagery_problems": 29,
-  "completion_report": "docs/mi-to-30-preparation.md",
+  "scalp_eeg_motor_imagery_problems": 30,
+  "completion_report": "docs/diagnostic-to-30-plan.md",
   "next_candidate": null,
   "latest_batch": {
     "problems": [
-      "ImaginedHandsOnline",
-      "ImaginedHandsCrossSession",
-      "ImaginedHandPupils",
-      "ImaginedHandsPhysiology",
-      "ImaginedHandMusicTempo"
+      "StrokeMotorImagery",
+      "AdultSeizures",
+      "AlcoholBandit",
+      "SchizophreniaConflict",
+      "PostCovidVigilance",
+      "SchizophreniaUltimatum",
+      "SchizophreniaMotion",
+      "ZosterNeuralgiaSleep",
+      "ParkinsonsReinforcement",
+      "AcuteTBIVisualMemory"
     ],
     "locations": {
-      "ImaginedHandsOnline": "D:\\Data\\EEG\\ImaginedHandsOnline",
-      "ImaginedHandsCrossSession": "D:\\Data\\EEG\\ImaginedHandsCrossSession",
-      "ImaginedHandPupils": "D:\\Data\\EEG\\ImaginedHandPupils",
-      "ImaginedHandsPhysiology": "D:\\Data\\EEG\\ImaginedHandsPhysiology",
-      "ImaginedHandMusicTempo": "D:\\Data\\EEG\\ImaginedHandMusicTempo"
+      "StrokeMotorImagery": "D:\\Data\\EEG\\StrokeMotorImagery",
+      "AdultSeizures": "D:\\Data\\EEG\\AdultSeizures",
+      "AlcoholBandit": "D:\\Data\\EEG\\AlcoholBandit",
+      "SchizophreniaConflict": "D:\\Data\\EEG\\SchizophreniaConflict",
+      "PostCovidVigilance": "D:\\Data\\EEG\\PostCovidVigilance",
+      "SchizophreniaUltimatum": "D:\\Data\\EEG\\SchizophreniaUltimatum",
+      "SchizophreniaMotion": "D:\\Data\\EEG\\SchizophreniaMotion",
+      "ZosterNeuralgiaSleep": "C:\\Data\\EEG\\ZosterNeuralgiaSleep",
+      "ParkinsonsReinforcement": "C:\\Data\\EEG\\ParkinsonsReinforcement",
+      "AcuteTBIVisualMemory": "C:\\Data\\EEG\\AcuteTBIVisualMemory"
     },
-    "report": "docs/mi-to-30-progress.json",
+    "report": "docs/eegdash-diagnosis-progress.json",
     "manifest_artifacts_verified": true,
-    "tests": "106 passed"
+    "tests": "15 passed (prepare_diagnostic_to_30)"
   },
-  "active_batch_report": "docs/mi-to-30-progress.json",
+  "active_batch_report": "docs/eegdash-diagnosis-progress.json",
   "prepared_motor_imagery_problems": 30,
   "upstream_reports": {
     "Daly2020": {
@@ -81,5 +98,14 @@
       "evidence": "User confirmed posting to OpenNeuro in this conversation",
       "url": null
     }
+  },
+  "study_modality": "scalp EEG",
+  "study_motor_imagery_problems": 30,
+  "study_excluded_modalities": {
+    "FaceDetection": "MEG",
+    "HandMovementDirection": "MEG",
+    "MatchWords": "MEG",
+    "MindReading": "MEG",
+    "MotorImagery": "ECoG"
   }
 }

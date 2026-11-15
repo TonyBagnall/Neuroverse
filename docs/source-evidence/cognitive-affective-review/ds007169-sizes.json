@@ -1,0 +1,442 @@
+{
+  "dataset": "ds007169",
+  "checked": "2026-11-10",
+  "source": "OpenNeuro public S3 current object listing; metadata-only",
+  "total_bytes": 2291324825,
+  "selected_bids_eeg_bytes": 442127117,
+  "xdf_bytes": 1290795983,
+  "files": [
+    {
+      "name": "ds007169/sub-001/eeg/sub-001_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-001/eeg/sub-001_task-nback_eeg.eeg",
+      "bytes": 23004288
+    },
+    {
+      "name": "ds007169/sub-001/eeg/sub-001_task-nback_eeg.json",
+      "bytes": 413
+    },
+    {
+      "name": "ds007169/sub-001/eeg/sub-001_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-001/eeg/sub-001_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-001/eeg/sub-001_task-nback_events.tsv",
+      "bytes": 96896
+    },
+    {
+      "name": "ds007169/sub-002/eeg/sub-002_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-002/eeg/sub-002_task-nback_eeg.eeg",
+      "bytes": 22831488
+    },
+    {
+      "name": "ds007169/sub-002/eeg/sub-002_task-nback_eeg.json",
+      "bytes": 413
+    },
+    {
+      "name": "ds007169/sub-002/eeg/sub-002_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-002/eeg/sub-002_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-002/eeg/sub-002_task-nback_events.tsv",
+      "bytes": 84431
+    },
+    {
+      "name": "ds007169/sub-003/eeg/sub-003_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-003/eeg/sub-003_task-nback_eeg.eeg",
+      "bytes": 23492736
+    },
+    {
+      "name": "ds007169/sub-003/eeg/sub-003_task-nback_eeg.json",
+      "bytes": 412
+    },
+    {
+      "name": "ds007169/sub-003/eeg/sub-003_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-003/eeg/sub-003_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-003/eeg/sub-003_task-nback_events.tsv",
+      "bytes": 124807
+    },
+    {
+      "name": "ds007169/sub-004/eeg/sub-004_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-004/eeg/sub-004_task-nback_eeg.eeg",
+      "bytes": 23856192
+    },
+    {
+      "name": "ds007169/sub-004/eeg/sub-004_task-nback_eeg.json",
+      "bytes": 413
+    },
+    {
+      "name": "ds007169/sub-004/eeg/sub-004_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-004/eeg/sub-004_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-004/eeg/sub-004_task-nback_events.tsv",
+      "bytes": 124147
+    },
+    {
+      "name": "ds007169/sub-005/eeg/sub-005_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-005/eeg/sub-005_task-nback_eeg.eeg",
+      "bytes": 25128000
+    },
+    {
+      "name": "ds007169/sub-005/eeg/sub-005_task-nback_eeg.json",
+      "bytes": 414
+    },
+    {
+      "name": "ds007169/sub-005/eeg/sub-005_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-005/eeg/sub-005_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-005/eeg/sub-005_task-nback_events.tsv",
+      "bytes": 131375
+    },
+    {
+      "name": "ds007169/sub-006/eeg/sub-006_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-006/eeg/sub-006_task-nback_eeg.eeg",
+      "bytes": 27846144
+    },
+    {
+      "name": "ds007169/sub-006/eeg/sub-006_task-nback_eeg.json",
+      "bytes": 414
+    },
+    {
+      "name": "ds007169/sub-006/eeg/sub-006_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-006/eeg/sub-006_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-006/eeg/sub-006_task-nback_events.tsv",
+      "bytes": 100896
+    },
+    {
+      "name": "ds007169/sub-007/eeg/sub-007_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-007/eeg/sub-007_task-nback_eeg.eeg",
+      "bytes": 23495616
+    },
+    {
+      "name": "ds007169/sub-007/eeg/sub-007_task-nback_eeg.json",
+      "bytes": 412
+    },
+    {
+      "name": "ds007169/sub-007/eeg/sub-007_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-007/eeg/sub-007_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-007/eeg/sub-007_task-nback_events.tsv",
+      "bytes": 141654
+    },
+    {
+      "name": "ds007169/sub-008/eeg/sub-008_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-008/eeg/sub-008_task-nback_eeg.eeg",
+      "bytes": 24755904
+    },
+    {
+      "name": "ds007169/sub-008/eeg/sub-008_task-nback_eeg.json",
+      "bytes": 414
+    },
+    {
+      "name": "ds007169/sub-008/eeg/sub-008_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-008/eeg/sub-008_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-008/eeg/sub-008_task-nback_events.tsv",
+      "bytes": 164560
+    },
+    {
+      "name": "ds007169/sub-009/eeg/sub-009_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-009/eeg/sub-009_task-nback_eeg.eeg",
+      "bytes": 25535808
+    },
+    {
+      "name": "ds007169/sub-009/eeg/sub-009_task-nback_eeg.json",
+      "bytes": 414
+    },
+    {
+      "name": "ds007169/sub-009/eeg/sub-009_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-009/eeg/sub-009_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-009/eeg/sub-009_task-nback_events.tsv",
+      "bytes": 112091
+    },
+    {
+      "name": "ds007169/sub-010/eeg/sub-010_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-010/eeg/sub-010_task-nback_eeg.eeg",
+      "bytes": 23733504
+    },
+    {
+      "name": "ds007169/sub-010/eeg/sub-010_task-nback_eeg.json",
+      "bytes": 413
+    },
+    {
+      "name": "ds007169/sub-010/eeg/sub-010_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-010/eeg/sub-010_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-010/eeg/sub-010_task-nback_events.tsv",
+      "bytes": 127716
+    },
+    {
+      "name": "ds007169/sub-011/eeg/sub-011_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-011/eeg/sub-011_task-nback_eeg.eeg",
+      "bytes": 25860096
+    },
+    {
+      "name": "ds007169/sub-011/eeg/sub-011_task-nback_eeg.json",
+      "bytes": 412
+    },
+    {
+      "name": "ds007169/sub-011/eeg/sub-011_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-011/eeg/sub-011_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-011/eeg/sub-011_task-nback_events.tsv",
+      "bytes": 189861
+    },
+    {
+      "name": "ds007169/sub-012/eeg/sub-012_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-012/eeg/sub-012_task-nback_eeg.eeg",
+      "bytes": 25812288
+    },
+    {
+      "name": "ds007169/sub-012/eeg/sub-012_task-nback_eeg.json",
+      "bytes": 414
+    },
+    {
+      "name": "ds007169/sub-012/eeg/sub-012_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-012/eeg/sub-012_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-012/eeg/sub-012_task-nback_events.tsv",
+      "bytes": 218329
+    },
+    {
+      "name": "ds007169/sub-014/eeg/sub-014_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-014/eeg/sub-014_task-nback_eeg.eeg",
+      "bytes": 23076288
+    },
+    {
+      "name": "ds007169/sub-014/eeg/sub-014_task-nback_eeg.json",
+      "bytes": 413
+    },
+    {
+      "name": "ds007169/sub-014/eeg/sub-014_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-014/eeg/sub-014_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-014/eeg/sub-014_task-nback_events.tsv",
+      "bytes": 97937
+    },
+    {
+      "name": "ds007169/sub-015/eeg/sub-015_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-015/eeg/sub-015_task-nback_eeg.eeg",
+      "bytes": 24360192
+    },
+    {
+      "name": "ds007169/sub-015/eeg/sub-015_task-nback_eeg.json",
+      "bytes": 414
+    },
+    {
+      "name": "ds007169/sub-015/eeg/sub-015_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-015/eeg/sub-015_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-015/eeg/sub-015_task-nback_events.tsv",
+      "bytes": 102602
+    },
+    {
+      "name": "ds007169/sub-016/eeg/sub-016_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-016/eeg/sub-016_task-nback_eeg.eeg",
+      "bytes": 23551488
+    },
+    {
+      "name": "ds007169/sub-016/eeg/sub-016_task-nback_eeg.json",
+      "bytes": 413
+    },
+    {
+      "name": "ds007169/sub-016/eeg/sub-016_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-016/eeg/sub-016_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-016/eeg/sub-016_task-nback_events.tsv",
+      "bytes": 105735
+    },
+    {
+      "name": "ds007169/sub-018/eeg/sub-018_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-018/eeg/sub-018_task-nback_eeg.eeg",
+      "bytes": 23664384
+    },
+    {
+      "name": "ds007169/sub-018/eeg/sub-018_task-nback_eeg.json",
+      "bytes": 413
+    },
+    {
+      "name": "ds007169/sub-018/eeg/sub-018_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-018/eeg/sub-018_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-018/eeg/sub-018_task-nback_events.tsv",
+      "bytes": 91194
+    },
+    {
+      "name": "ds007169/sub-019/eeg/sub-019_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-019/eeg/sub-019_task-nback_eeg.eeg",
+      "bytes": 25191936
+    },
+    {
+      "name": "ds007169/sub-019/eeg/sub-019_task-nback_eeg.json",
+      "bytes": 413
+    },
+    {
+      "name": "ds007169/sub-019/eeg/sub-019_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-019/eeg/sub-019_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-019/eeg/sub-019_task-nback_events.tsv",
+      "bytes": 98118
+    },
+    {
+      "name": "ds007169/sub-020/eeg/sub-020_task-nback_channels.tsv",
+      "bytes": 1439
+    },
+    {
+      "name": "ds007169/sub-020/eeg/sub-020_task-nback_eeg.eeg",
+      "bytes": 24636096
+    },
+    {
+      "name": "ds007169/sub-020/eeg/sub-020_task-nback_eeg.json",
+      "bytes": 412
+    },
+    {
+      "name": "ds007169/sub-020/eeg/sub-020_task-nback_eeg.vhdr",
+      "bytes": 1121
+    },
+    {
+      "name": "ds007169/sub-020/eeg/sub-020_task-nback_eeg.vmrk",
+      "bytes": 522
+    },
+    {
+      "name": "ds007169/sub-020/eeg/sub-020_task-nback_events.tsv",
+      "bytes": 119408
+    }
+  ]
+}

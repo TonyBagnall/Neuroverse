@@ -1,0 +1,2583 @@
+{
+  "dataset": "ds005866",
+  "source_record_id": "ds005866",
+  "source_revision": "OpenNeuro ds005866 v1.0.1, Git 5b5be67a95dd0f38f802405eb56840d0ef4f2223",
+  "original_ref": "1.0.1",
+  "original_commit": "5b5be67a95dd0f38f802405eb56840d0ef4f2223",
+  "licence": "CC0-1.0",
+  "licence_evidence": "Original pinned dataset_description.json License=CC0",
+  "source_urls": [
+    "https://openneuro.org/datasets/ds005866/versions/1.0.1"
+  ],
+  "metadata_archive_sha256": "9c2049c486cf05124e95d2397a48d033ff45e0d6b16dca84e46bae99d3b10b53",
+  "files": [
+    {
+      "name": "CHANGES",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/CHANGES",
+      "bytes": 113,
+      "checksum": "sha256:f48cb4d5dbd8bb4ef2e4ff2c5c27def61d0e1f12e427755fdb8aec71b2d6b60d",
+      "sha256": "f48cb4d5dbd8bb4ef2e4ff2c5c27def61d0e1f12e427755fdb8aec71b2d6b60d",
+      "git_blob_sha1": "cc3a684b2fbfebb5f9868aae84d2e03194179db0"
+    },
+    {
+      "name": "README",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/README",
+      "bytes": 4292,
+      "checksum": "sha256:bdebc7dcc4ad2e7885abbd1f6562568dd23e67da8fcc028a2fa2826e50cb07f4",
+      "sha256": "bdebc7dcc4ad2e7885abbd1f6562568dd23e67da8fcc028a2fa2826e50cb07f4",
+      "git_blob_sha1": "bf207bc11bdd989062eed540246532c2b30c0c11"
+    },
+    {
+      "name": "dataset_description.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/dataset_description.json",
+      "bytes": 529,
+      "checksum": "sha256:978b255bd46f7d95067620035073abafa9f1477ebd270780ace1c3f06b4fc41b",
+      "sha256": "978b255bd46f7d95067620035073abafa9f1477ebd270780ace1c3f06b4fc41b",
+      "git_blob_sha1": "355256db24214c09501fa363e6656e35fd8f9f0e"
+    },
+    {
+      "name": "participants.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/participants.json",
+      "bytes": 750,
+      "checksum": "sha256:dd12a35ff687d47871deef80fab4a0dd11729fbe4ae60f82ec48c5c305c406f5",
+      "sha256": "dd12a35ff687d47871deef80fab4a0dd11729fbe4ae60f82ec48c5c305c406f5",
+      "git_blob_sha1": "3e8a4d79f39c7b9070fc12021ec1f02539255bf9"
+    },
+    {
+      "name": "participants.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/participants.tsv",
+      "bytes": 3918,
+      "checksum": "sha256:b93465d001f6c69fe04fb0ec1ca7bb58699ded4b109e1ed6f975cd38024809ff",
+      "sha256": "b93465d001f6c69fe04fb0ec1ca7bb58699ded4b109e1ed6f975cd38024809ff",
+      "git_blob_sha1": "7d4cdb2e448388540f2c057878f7f59b29de6d21"
+    },
+    {
+      "name": "sub-1/eeg/sub-1_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-1/eeg/sub-1_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-1/eeg/sub-1_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-1/eeg/sub-1_task-FlankerNEAR_eeg.fdt",
+      "bytes": 77103104,
+      "checksum": "sha256:69d5b87464ea51ad8044d55d15e244c0a7b8ca98bdace085c4f54140d80def62",
+      "git_blob_sha1": "10633565047c302955f42896d5d3329eac45b8e1",
+      "git_annex_pointer": "../../.git/annex/objects/Wx/WX/SHA256E-s77103104--69d5b87464ea51ad8044d55d15e244c0a7b8ca98bdace085c4f54140d80def62.fdt/SHA256E-s77103104--69d5b87464ea51ad8044d55d15e244c0a7b8ca98bdace085c4f54140d80def62.fdt",
+      "sha256": "69d5b87464ea51ad8044d55d15e244c0a7b8ca98bdace085c4f54140d80def62"
+    },
+    {
+      "name": "sub-1/eeg/sub-1_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-1/eeg/sub-1_task-FlankerNEAR_eeg.json",
+      "bytes": 914,
+      "checksum": "sha256:380cc9b7daa6b92b45e9f293ba6ea38cb2a27a7f4b4165abfa827edb34996368",
+      "sha256": "380cc9b7daa6b92b45e9f293ba6ea38cb2a27a7f4b4165abfa827edb34996368",
+      "git_blob_sha1": "bf6f0b1ea3f44a5751a91b2f23af77e1c7100e68"
+    },
+    {
+      "name": "sub-1/eeg/sub-1_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-1/eeg/sub-1_task-FlankerNEAR_eeg.set",
+      "bytes": 3065392,
+      "checksum": "sha256:2bffb89bce72994158fb3f02af488ccfc6b687ac48b4b1187979d06e4baabc05",
+      "git_blob_sha1": "4a58d5d8ff31752898b332fe4dbe23157a12c39d",
+      "git_annex_pointer": "../../.git/annex/objects/jF/53/SHA256E-s3065392--2bffb89bce72994158fb3f02af488ccfc6b687ac48b4b1187979d06e4baabc05.set/SHA256E-s3065392--2bffb89bce72994158fb3f02af488ccfc6b687ac48b4b1187979d06e4baabc05.set",
+      "sha256": "2bffb89bce72994158fb3f02af488ccfc6b687ac48b4b1187979d06e4baabc05"
+    },
+    {
+      "name": "sub-1/eeg/sub-1_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-1/eeg/sub-1_task-FlankerNEAR_events.tsv",
+      "bytes": 24786,
+      "checksum": "sha256:4ae15220305ee851412cceec699f79bda409ca33b00df58c88cecbc2595cfbe5",
+      "sha256": "4ae15220305ee851412cceec699f79bda409ca33b00df58c88cecbc2595cfbe5",
+      "git_blob_sha1": "c271bb87c4067fe889c04d8b4bc4d0075a0b59e2"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-10/eeg/sub-10_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-10/eeg/sub-10_task-FlankerNEAR_eeg.fdt",
+      "bytes": 59998208,
+      "checksum": "sha256:218a53ff85936a2a1241cbbef60dc713beeebc7e846983f8f7f1cdca95029590",
+      "git_blob_sha1": "6d2243c56cb7e50798710bb538b6045cf6ebc678",
+      "git_annex_pointer": "../../.git/annex/objects/2F/ZJ/SHA256E-s59998208--218a53ff85936a2a1241cbbef60dc713beeebc7e846983f8f7f1cdca95029590.fdt/SHA256E-s59998208--218a53ff85936a2a1241cbbef60dc713beeebc7e846983f8f7f1cdca95029590.fdt",
+      "sha256": "218a53ff85936a2a1241cbbef60dc713beeebc7e846983f8f7f1cdca95029590"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-10/eeg/sub-10_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:cad6977fdce092a8662f2604ce1d83478a8b53647e46f232673b342c98a7838e",
+      "sha256": "cad6977fdce092a8662f2604ce1d83478a8b53647e46f232673b342c98a7838e",
+      "git_blob_sha1": "5d6cd8e58dc271b777a04d7583cf9f498c64fe63"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-10/eeg/sub-10_task-FlankerNEAR_eeg.set",
+      "bytes": 2535424,
+      "checksum": "sha256:a8503429a61481c1c780b9e28918e088328ecec7332c5f02c072613cd1d72e00",
+      "git_blob_sha1": "3922f0dbc18c243fda04f48bdf690a9cb1540a7e",
+      "git_annex_pointer": "../../.git/annex/objects/jk/6X/SHA256E-s2535424--a8503429a61481c1c780b9e28918e088328ecec7332c5f02c072613cd1d72e00.set/SHA256E-s2535424--a8503429a61481c1c780b9e28918e088328ecec7332c5f02c072613cd1d72e00.set",
+      "sha256": "a8503429a61481c1c780b9e28918e088328ecec7332c5f02c072613cd1d72e00"
+    },
+    {
+      "name": "sub-10/eeg/sub-10_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-10/eeg/sub-10_task-FlankerNEAR_events.tsv",
+      "bytes": 24389,
+      "checksum": "sha256:b91ada43c16f1308ff444ed24389479f791dea103e4f215367ccdf4de907f0c6",
+      "sha256": "b91ada43c16f1308ff444ed24389479f791dea103e4f215367ccdf4de907f0c6",
+      "git_blob_sha1": "d771578db014b2e4f7ce2eea67bd8c90d0d2b9de"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-11/eeg/sub-11_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-11/eeg/sub-11_task-FlankerNEAR_eeg.fdt",
+      "bytes": 67338240,
+      "checksum": "sha256:7860adc9763817242ddb55a9559268b0a7bc454962d7821740ab6328b0d49707",
+      "git_blob_sha1": "751f5d6796a74565c7373f633d2ae5950985bd94",
+      "git_annex_pointer": "../../.git/annex/objects/0j/kq/SHA256E-s67338240--7860adc9763817242ddb55a9559268b0a7bc454962d7821740ab6328b0d49707.fdt/SHA256E-s67338240--7860adc9763817242ddb55a9559268b0a7bc454962d7821740ab6328b0d49707.fdt",
+      "sha256": "7860adc9763817242ddb55a9559268b0a7bc454962d7821740ab6328b0d49707"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-11/eeg/sub-11_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:cdc85e8866cffb364097ce9ae91d93d4056a757e709bf88a564680b0d514fbac",
+      "sha256": "cdc85e8866cffb364097ce9ae91d93d4056a757e709bf88a564680b0d514fbac",
+      "git_blob_sha1": "9be0af4706937698b26316c8ab640bea183ee44b"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-11/eeg/sub-11_task-FlankerNEAR_eeg.set",
+      "bytes": 2765664,
+      "checksum": "sha256:4564ba24469626b116c5b0148938dbbf1c7b85567c199c734d0ac92784e40ee1",
+      "git_blob_sha1": "c5df19c37e9f974d722c30162764072acb1948ca",
+      "git_annex_pointer": "../../.git/annex/objects/m1/6G/SHA256E-s2765664--4564ba24469626b116c5b0148938dbbf1c7b85567c199c734d0ac92784e40ee1.set/SHA256E-s2765664--4564ba24469626b116c5b0148938dbbf1c7b85567c199c734d0ac92784e40ee1.set",
+      "sha256": "4564ba24469626b116c5b0148938dbbf1c7b85567c199c734d0ac92784e40ee1"
+    },
+    {
+      "name": "sub-11/eeg/sub-11_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-11/eeg/sub-11_task-FlankerNEAR_events.tsv",
+      "bytes": 24460,
+      "checksum": "sha256:c490a551364855ea8ca37a43ac4f05f33806cf41f9691fa2346bff624ba06849",
+      "sha256": "c490a551364855ea8ca37a43ac4f05f33806cf41f9691fa2346bff624ba06849",
+      "git_blob_sha1": "7cbf5a192b408104893d634dbfe1cc9b5817f95c"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-12/eeg/sub-12_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-12/eeg/sub-12_task-FlankerNEAR_eeg.fdt",
+      "bytes": 64028672,
+      "checksum": "sha256:1510cb2d07aaa66a96bec2547e16768925b5b1f47faa01aa385f2e53292bfe47",
+      "git_blob_sha1": "2699bc6b567a366614890b1c3bb60e753c4e6d94",
+      "git_annex_pointer": "../../.git/annex/objects/M0/pk/SHA256E-s64028672--1510cb2d07aaa66a96bec2547e16768925b5b1f47faa01aa385f2e53292bfe47.fdt/SHA256E-s64028672--1510cb2d07aaa66a96bec2547e16768925b5b1f47faa01aa385f2e53292bfe47.fdt",
+      "sha256": "1510cb2d07aaa66a96bec2547e16768925b5b1f47faa01aa385f2e53292bfe47"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-12/eeg/sub-12_task-FlankerNEAR_eeg.json",
+      "bytes": 914,
+      "checksum": "sha256:f7426ab2adb3f810df11de1e35d356e3e667c798b3686a72b43cf5c494dfb5c8",
+      "sha256": "f7426ab2adb3f810df11de1e35d356e3e667c798b3686a72b43cf5c494dfb5c8",
+      "git_blob_sha1": "78c8756413b0fb8e02f35898521ac44b93c9732a"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-12/eeg/sub-12_task-FlankerNEAR_eeg.set",
+      "bytes": 2662576,
+      "checksum": "sha256:9f884e317081552e239ad34ef3e5e9f806750ad56c51fd6dcf7ab92381c52aad",
+      "git_blob_sha1": "5d82542d6832ac9cdcef8dbc9a384201596f11df",
+      "git_annex_pointer": "../../.git/annex/objects/z1/pJ/SHA256E-s2662576--9f884e317081552e239ad34ef3e5e9f806750ad56c51fd6dcf7ab92381c52aad.set/SHA256E-s2662576--9f884e317081552e239ad34ef3e5e9f806750ad56c51fd6dcf7ab92381c52aad.set",
+      "sha256": "9f884e317081552e239ad34ef3e5e9f806750ad56c51fd6dcf7ab92381c52aad"
+    },
+    {
+      "name": "sub-12/eeg/sub-12_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-12/eeg/sub-12_task-FlankerNEAR_events.tsv",
+      "bytes": 24424,
+      "checksum": "sha256:289d682d99e829b2970ad20d87bb4771413a61aa7de55a8efb815d28237b130e",
+      "sha256": "289d682d99e829b2970ad20d87bb4771413a61aa7de55a8efb815d28237b130e",
+      "git_blob_sha1": "3ec06b14a416d0a2701fe1a76f23e4049d268400"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-13/eeg/sub-13_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-13/eeg/sub-13_task-FlankerNEAR_eeg.fdt",
+      "bytes": 58327040,
+      "checksum": "sha256:217fe28d1a9755696d605bc2aab7c9d29d1ad4be6a9b9bdb0f1a7dba767a299c",
+      "git_blob_sha1": "66419e4e071c966f885b9a4596b824034ccf8ab9",
+      "git_annex_pointer": "../../.git/annex/objects/Zk/fJ/SHA256E-s58327040--217fe28d1a9755696d605bc2aab7c9d29d1ad4be6a9b9bdb0f1a7dba767a299c.fdt/SHA256E-s58327040--217fe28d1a9755696d605bc2aab7c9d29d1ad4be6a9b9bdb0f1a7dba767a299c.fdt",
+      "sha256": "217fe28d1a9755696d605bc2aab7c9d29d1ad4be6a9b9bdb0f1a7dba767a299c"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-13/eeg/sub-13_task-FlankerNEAR_eeg.json",
+      "bytes": 912,
+      "checksum": "sha256:bd10cf70f7040e4bd1e30eedd8392c1d378c646fe59c10b169cddb93ea0183fc",
+      "sha256": "bd10cf70f7040e4bd1e30eedd8392c1d378c646fe59c10b169cddb93ea0183fc",
+      "git_blob_sha1": "48c783fe9275c25fd90cbda959172736c294c98a"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-13/eeg/sub-13_task-FlankerNEAR_eeg.set",
+      "bytes": 2485416,
+      "checksum": "sha256:c3f63696e097461585a258466a2deae362c41bce64b035d05e03d655ef6fcdf2",
+      "git_blob_sha1": "8c0e8bf008e9c9858e1c626ba2bec24d4db7ea01",
+      "git_annex_pointer": "../../.git/annex/objects/pG/PW/SHA256E-s2485416--c3f63696e097461585a258466a2deae362c41bce64b035d05e03d655ef6fcdf2.set/SHA256E-s2485416--c3f63696e097461585a258466a2deae362c41bce64b035d05e03d655ef6fcdf2.set",
+      "sha256": "c3f63696e097461585a258466a2deae362c41bce64b035d05e03d655ef6fcdf2"
+    },
+    {
+      "name": "sub-13/eeg/sub-13_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-13/eeg/sub-13_task-FlankerNEAR_events.tsv",
+      "bytes": 24439,
+      "checksum": "sha256:dc9463fbd358158d7aac7c371bd6f1153377db2e8e306fa3473caca154a5d6b7",
+      "sha256": "dc9463fbd358158d7aac7c371bd6f1153377db2e8e306fa3473caca154a5d6b7",
+      "git_blob_sha1": "1928f186445495083e1702e64884d212c67b366a"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-14/eeg/sub-14_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-14/eeg/sub-14_task-FlankerNEAR_eeg.fdt",
+      "bytes": 60686336,
+      "checksum": "sha256:056257a39dc7e3b651c5d8b85538778563849ca14beb62f83b569d0c0451a747",
+      "git_blob_sha1": "d924b80b671a525ac059e31da5637369f10c790e",
+      "git_annex_pointer": "../../.git/annex/objects/J1/0z/SHA256E-s60686336--056257a39dc7e3b651c5d8b85538778563849ca14beb62f83b569d0c0451a747.fdt/SHA256E-s60686336--056257a39dc7e3b651c5d8b85538778563849ca14beb62f83b569d0c0451a747.fdt",
+      "sha256": "056257a39dc7e3b651c5d8b85538778563849ca14beb62f83b569d0c0451a747"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-14/eeg/sub-14_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:d3229fbc2bf1129aca136986a01afbad8882071fc50561340de6e85930194dd2",
+      "sha256": "d3229fbc2bf1129aca136986a01afbad8882071fc50561340de6e85930194dd2",
+      "git_blob_sha1": "d0d7ddfa5e5237104a09a2508062967e81dac722"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-14/eeg/sub-14_task-FlankerNEAR_eeg.set",
+      "bytes": 2558896,
+      "checksum": "sha256:4aaf196432de8100f73f76b146b843d1df5b416cb383485e47c80317a349a7e9",
+      "git_blob_sha1": "cf178ad818362d9933713c159d5e01dd17c075f1",
+      "git_annex_pointer": "../../.git/annex/objects/wk/W3/SHA256E-s2558896--4aaf196432de8100f73f76b146b843d1df5b416cb383485e47c80317a349a7e9.set/SHA256E-s2558896--4aaf196432de8100f73f76b146b843d1df5b416cb383485e47c80317a349a7e9.set",
+      "sha256": "4aaf196432de8100f73f76b146b843d1df5b416cb383485e47c80317a349a7e9"
+    },
+    {
+      "name": "sub-14/eeg/sub-14_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-14/eeg/sub-14_task-FlankerNEAR_events.tsv",
+      "bytes": 24465,
+      "checksum": "sha256:df6bcca6b2e76f6ead13a486d38b75a222196b5aa608038523dc99cc3fc2177f",
+      "sha256": "df6bcca6b2e76f6ead13a486d38b75a222196b5aa608038523dc99cc3fc2177f",
+      "git_blob_sha1": "c5fa1c81899afc712e5ecd25ec834e7fdec86d76"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-15/eeg/sub-15_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-15/eeg/sub-15_task-FlankerNEAR_eeg.fdt",
+      "bytes": 68845568,
+      "checksum": "sha256:9c5139ca4c9cd0b30bab7edbda5f386d658f603883d2970b690a3551d5e50a5f",
+      "git_blob_sha1": "15a462a683670a1fdd4f13c222e4b3f61e798ce8",
+      "git_annex_pointer": "../../.git/annex/objects/8k/FZ/SHA256E-s68845568--9c5139ca4c9cd0b30bab7edbda5f386d658f603883d2970b690a3551d5e50a5f.fdt/SHA256E-s68845568--9c5139ca4c9cd0b30bab7edbda5f386d658f603883d2970b690a3551d5e50a5f.fdt",
+      "sha256": "9c5139ca4c9cd0b30bab7edbda5f386d658f603883d2970b690a3551d5e50a5f"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-15/eeg/sub-15_task-FlankerNEAR_eeg.json",
+      "bytes": 914,
+      "checksum": "sha256:e769e1455e4f3b2ca2b3203e5cc0274cbb3182ed39094461a9b47a0496d1eede",
+      "sha256": "e769e1455e4f3b2ca2b3203e5cc0274cbb3182ed39094461a9b47a0496d1eede",
+      "git_blob_sha1": "7a440ca6f65f710b65ac402938f4fe8247be7927"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-15/eeg/sub-15_task-FlankerNEAR_eeg.set",
+      "bytes": 2812368,
+      "checksum": "sha256:9ed626eed99267f7656208a3ba2a096958ba541f80d042dfe5a5aaa92aa56e48",
+      "git_blob_sha1": "8b76d9825f47c95ff54405e00e2411bcad40bd8a",
+      "git_annex_pointer": "../../.git/annex/objects/JQ/8f/SHA256E-s2812368--9ed626eed99267f7656208a3ba2a096958ba541f80d042dfe5a5aaa92aa56e48.set/SHA256E-s2812368--9ed626eed99267f7656208a3ba2a096958ba541f80d042dfe5a5aaa92aa56e48.set",
+      "sha256": "9ed626eed99267f7656208a3ba2a096958ba541f80d042dfe5a5aaa92aa56e48"
+    },
+    {
+      "name": "sub-15/eeg/sub-15_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-15/eeg/sub-15_task-FlankerNEAR_events.tsv",
+      "bytes": 24459,
+      "checksum": "sha256:67a615d89dfe41c9a042a83695c13b4bbfc1c472de73c31e34116a83cd3d1200",
+      "sha256": "67a615d89dfe41c9a042a83695c13b4bbfc1c472de73c31e34116a83cd3d1200",
+      "git_blob_sha1": "9e37a2a4218216b0c8c022517afc05b9c298e0f8"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-16/eeg/sub-16_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-16/eeg/sub-16_task-FlankerNEAR_eeg.fdt",
+      "bytes": 60555264,
+      "checksum": "sha256:f9fde3b53363ee1275176f482a2456cd65905390e5134c44366cba8de5cf89b7",
+      "git_blob_sha1": "1b8af233b6e9de55a70d8951053f3a39cbdbf5b5",
+      "git_annex_pointer": "../../.git/annex/objects/wV/6q/SHA256E-s60555264--f9fde3b53363ee1275176f482a2456cd65905390e5134c44366cba8de5cf89b7.fdt/SHA256E-s60555264--f9fde3b53363ee1275176f482a2456cd65905390e5134c44366cba8de5cf89b7.fdt",
+      "sha256": "f9fde3b53363ee1275176f482a2456cd65905390e5134c44366cba8de5cf89b7"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-16/eeg/sub-16_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:d1f8dfd791ff55eef19aae59cd70907f28ecbfa18ada389f4e327a249eab25e8",
+      "sha256": "d1f8dfd791ff55eef19aae59cd70907f28ecbfa18ada389f4e327a249eab25e8",
+      "git_blob_sha1": "7e11c07ca4a13bb16002a0ad641bf41bb346add4"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-16/eeg/sub-16_task-FlankerNEAR_eeg.set",
+      "bytes": 2553384,
+      "checksum": "sha256:c102b5c322dc04aa3645f67cbe9c5c6f4c4efbc344ef68e54ee027965cfed0c2",
+      "git_blob_sha1": "e22a833949999edc9a2f37fcb0cbbd96c225c733",
+      "git_annex_pointer": "../../.git/annex/objects/wm/1G/SHA256E-s2553384--c102b5c322dc04aa3645f67cbe9c5c6f4c4efbc344ef68e54ee027965cfed0c2.set/SHA256E-s2553384--c102b5c322dc04aa3645f67cbe9c5c6f4c4efbc344ef68e54ee027965cfed0c2.set",
+      "sha256": "c102b5c322dc04aa3645f67cbe9c5c6f4c4efbc344ef68e54ee027965cfed0c2"
+    },
+    {
+      "name": "sub-16/eeg/sub-16_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-16/eeg/sub-16_task-FlankerNEAR_events.tsv",
+      "bytes": 24371,
+      "checksum": "sha256:961782a3d2238729d69f1a8d33bb35435944526ff19343ba9576409dc7e5a2d1",
+      "sha256": "961782a3d2238729d69f1a8d33bb35435944526ff19343ba9576409dc7e5a2d1",
+      "git_blob_sha1": "34c94c54dd5610b75b45d6dbd7ce17dc5778b969"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-17/eeg/sub-17_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-17/eeg/sub-17_task-FlankerNEAR_eeg.fdt",
+      "bytes": 57606144,
+      "checksum": "sha256:2b2b5f7c92b507841463a8617af1cc38eb5ed3f20e61b51d1f1aabe63a892c8b",
+      "git_blob_sha1": "cb7e3adeaf19a0f4dfb70c1c4df451622f7c0435",
+      "git_annex_pointer": "../../.git/annex/objects/g0/76/SHA256E-s57606144--2b2b5f7c92b507841463a8617af1cc38eb5ed3f20e61b51d1f1aabe63a892c8b.fdt/SHA256E-s57606144--2b2b5f7c92b507841463a8617af1cc38eb5ed3f20e61b51d1f1aabe63a892c8b.fdt",
+      "sha256": "2b2b5f7c92b507841463a8617af1cc38eb5ed3f20e61b51d1f1aabe63a892c8b"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-17/eeg/sub-17_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:280d013507d3277ccf38ee33fbf79f7881a37d7bd1cf92ba343ead4787b406b1",
+      "sha256": "280d013507d3277ccf38ee33fbf79f7881a37d7bd1cf92ba343ead4787b406b1",
+      "git_blob_sha1": "3020fac10ebbb401891d8b9011928268d3700391"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-17/eeg/sub-17_task-FlankerNEAR_eeg.set",
+      "bytes": 2462112,
+      "checksum": "sha256:232e089849d18faf81b459c5d0f556ea81ec0b2d4f67471b851f801b44063b83",
+      "git_blob_sha1": "bea66a278acab41f202aacf7002fdc244b72a88f",
+      "git_annex_pointer": "../../.git/annex/objects/81/06/SHA256E-s2462112--232e089849d18faf81b459c5d0f556ea81ec0b2d4f67471b851f801b44063b83.set/SHA256E-s2462112--232e089849d18faf81b459c5d0f556ea81ec0b2d4f67471b851f801b44063b83.set",
+      "sha256": "232e089849d18faf81b459c5d0f556ea81ec0b2d4f67471b851f801b44063b83"
+    },
+    {
+      "name": "sub-17/eeg/sub-17_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-17/eeg/sub-17_task-FlankerNEAR_events.tsv",
+      "bytes": 24364,
+      "checksum": "sha256:3c72ba36e480af95615b74921568ecf4d067967c840ef571a12ca02d915bd2f5",
+      "sha256": "3c72ba36e480af95615b74921568ecf4d067967c840ef571a12ca02d915bd2f5",
+      "git_blob_sha1": "7d79acf080a6c0637339148d3d050540acc6ed44"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-18/eeg/sub-18_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-18/eeg/sub-18_task-FlankerNEAR_eeg.fdt",
+      "bytes": 60588032,
+      "checksum": "sha256:93821561ac50737396a744572a997018c5cb5e055f3bd4d1d85f77dd6977f20c",
+      "git_blob_sha1": "b2522d07dad636478bd88d54804b14ef2641fa2e",
+      "git_annex_pointer": "../../.git/annex/objects/K5/k8/SHA256E-s60588032--93821561ac50737396a744572a997018c5cb5e055f3bd4d1d85f77dd6977f20c.fdt/SHA256E-s60588032--93821561ac50737396a744572a997018c5cb5e055f3bd4d1d85f77dd6977f20c.fdt",
+      "sha256": "93821561ac50737396a744572a997018c5cb5e055f3bd4d1d85f77dd6977f20c"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-18/eeg/sub-18_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:6de7dc982d221a335ce7e23cc2f8bdf81436f3fc3bb80dd36f7e13ecc2480538",
+      "sha256": "6de7dc982d221a335ce7e23cc2f8bdf81436f3fc3bb80dd36f7e13ecc2480538",
+      "git_blob_sha1": "045eea610ab58cfb6bda713e2a18d1a3dd830568"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-18/eeg/sub-18_task-FlankerNEAR_eeg.set",
+      "bytes": 2554472,
+      "checksum": "sha256:2b805d1ecd6326e3ee604180224cca4b5afa9658eda28ac7ec873f86e43eb553",
+      "git_blob_sha1": "27ebc2dfcf141d16406b60234ecd9a81d36eef62",
+      "git_annex_pointer": "../../.git/annex/objects/jP/p5/SHA256E-s2554472--2b805d1ecd6326e3ee604180224cca4b5afa9658eda28ac7ec873f86e43eb553.set/SHA256E-s2554472--2b805d1ecd6326e3ee604180224cca4b5afa9658eda28ac7ec873f86e43eb553.set",
+      "sha256": "2b805d1ecd6326e3ee604180224cca4b5afa9658eda28ac7ec873f86e43eb553"
+    },
+    {
+      "name": "sub-18/eeg/sub-18_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-18/eeg/sub-18_task-FlankerNEAR_events.tsv",
+      "bytes": 24364,
+      "checksum": "sha256:058d40161da9ec934973b88cf3a7cacabb68efafa3a2950e4a48e4b34d5a3229",
+      "sha256": "058d40161da9ec934973b88cf3a7cacabb68efafa3a2950e4a48e4b34d5a3229",
+      "git_blob_sha1": "d227942c651c2c842242d759d398a6a2a35c21b5"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-19/eeg/sub-19_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-19/eeg/sub-19_task-FlankerNEAR_eeg.fdt",
+      "bytes": 63635456,
+      "checksum": "sha256:8aa2a85e837d7fd1842cd1379bae7d45b3341339755c972ba0cbf1d7e0e768be",
+      "git_blob_sha1": "096501101738b99ac41968b92948e884a2bbc433",
+      "git_annex_pointer": "../../.git/annex/objects/p2/x8/SHA256E-s63635456--8aa2a85e837d7fd1842cd1379bae7d45b3341339755c972ba0cbf1d7e0e768be.fdt/SHA256E-s63635456--8aa2a85e837d7fd1842cd1379bae7d45b3341339755c972ba0cbf1d7e0e768be.fdt",
+      "sha256": "8aa2a85e837d7fd1842cd1379bae7d45b3341339755c972ba0cbf1d7e0e768be"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-19/eeg/sub-19_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:6b7ab08dd7d3879212d5ab79452e019202a059a7513eb90859cd663b06035439",
+      "sha256": "6b7ab08dd7d3879212d5ab79452e019202a059a7513eb90859cd663b06035439",
+      "git_blob_sha1": "a87579b0f659a434ee7a1f6e751105f21a76342a"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-19/eeg/sub-19_task-FlankerNEAR_eeg.set",
+      "bytes": 2650672,
+      "checksum": "sha256:ed26af5d789431987d7d7098586da23a7b741cc607f6562224739852f18c5c56",
+      "git_blob_sha1": "eeecdc798b7ef0c27aca75831d123a9139b9dc94",
+      "git_annex_pointer": "../../.git/annex/objects/KQ/F0/SHA256E-s2650672--ed26af5d789431987d7d7098586da23a7b741cc607f6562224739852f18c5c56.set/SHA256E-s2650672--ed26af5d789431987d7d7098586da23a7b741cc607f6562224739852f18c5c56.set",
+      "sha256": "ed26af5d789431987d7d7098586da23a7b741cc607f6562224739852f18c5c56"
+    },
+    {
+      "name": "sub-19/eeg/sub-19_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-19/eeg/sub-19_task-FlankerNEAR_events.tsv",
+      "bytes": 24407,
+      "checksum": "sha256:9ecda1abeb816a2b31026ccbc35e53fc20dfda2d303f9625d46de2265c4e6a1c",
+      "sha256": "9ecda1abeb816a2b31026ccbc35e53fc20dfda2d303f9625d46de2265c4e6a1c",
+      "git_blob_sha1": "4f87e6049a58227b8bbab660f909708cc6da6ff4"
+    },
+    {
+      "name": "sub-2/eeg/sub-2_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-2/eeg/sub-2_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-2/eeg/sub-2_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-2/eeg/sub-2_task-FlankerNEAR_eeg.fdt",
+      "bytes": 56754176,
+      "checksum": "sha256:48d21efc8b0487f099b7857a02f1396e1dd8891c7611c6a1d031b6b3c1dcc89f",
+      "git_blob_sha1": "507ba62af270fc6fceb0a0cd2370b5fe82ce2ad6",
+      "git_annex_pointer": "../../.git/annex/objects/Gj/qw/SHA256E-s56754176--48d21efc8b0487f099b7857a02f1396e1dd8891c7611c6a1d031b6b3c1dcc89f.fdt/SHA256E-s56754176--48d21efc8b0487f099b7857a02f1396e1dd8891c7611c6a1d031b6b3c1dcc89f.fdt",
+      "sha256": "48d21efc8b0487f099b7857a02f1396e1dd8891c7611c6a1d031b6b3c1dcc89f"
+    },
+    {
+      "name": "sub-2/eeg/sub-2_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-2/eeg/sub-2_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:b91ebd0f9ce5bbbdb04148773993edb2b52dc032da67dd650d3475d71ae37290",
+      "sha256": "b91ebd0f9ce5bbbdb04148773993edb2b52dc032da67dd650d3475d71ae37290",
+      "git_blob_sha1": "32b14559acb53f044d463e5c465682f86fc68d29"
+    },
+    {
+      "name": "sub-2/eeg/sub-2_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-2/eeg/sub-2_task-FlankerNEAR_eeg.set",
+      "bytes": 2435640,
+      "checksum": "sha256:2b052bc729f7420e69b62f58d1a6aa4a0c4a20b1a9601eaf251da9b517cd3f97",
+      "git_blob_sha1": "867e01b8419a1ffac3d4308694b36c8673bd4495",
+      "git_annex_pointer": "../../.git/annex/objects/vj/Z9/SHA256E-s2435640--2b052bc729f7420e69b62f58d1a6aa4a0c4a20b1a9601eaf251da9b517cd3f97.set/SHA256E-s2435640--2b052bc729f7420e69b62f58d1a6aa4a0c4a20b1a9601eaf251da9b517cd3f97.set",
+      "sha256": "2b052bc729f7420e69b62f58d1a6aa4a0c4a20b1a9601eaf251da9b517cd3f97"
+    },
+    {
+      "name": "sub-2/eeg/sub-2_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-2/eeg/sub-2_task-FlankerNEAR_events.tsv",
+      "bytes": 24365,
+      "checksum": "sha256:7b7e860aaa7d277986030499c3d2092b5b40e8e9738162d5a3e8c151aeb616fa",
+      "sha256": "7b7e860aaa7d277986030499c3d2092b5b40e8e9738162d5a3e8c151aeb616fa",
+      "git_blob_sha1": "ec4673cfb7544fc73332e6bac4e0866d6bdea2fe"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-20/eeg/sub-20_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-20/eeg/sub-20_task-FlankerNEAR_eeg.fdt",
+      "bytes": 58261504,
+      "checksum": "sha256:7ebe2a00c0817860f4a3a47d4c0bacc2b169d243353257b9bc01e5c32fc24874",
+      "git_blob_sha1": "7dd62f80643ecf72b9146e8c7b5310050d7960e7",
+      "git_annex_pointer": "../../.git/annex/objects/5j/2q/SHA256E-s58261504--7ebe2a00c0817860f4a3a47d4c0bacc2b169d243353257b9bc01e5c32fc24874.fdt/SHA256E-s58261504--7ebe2a00c0817860f4a3a47d4c0bacc2b169d243353257b9bc01e5c32fc24874.fdt",
+      "sha256": "7ebe2a00c0817860f4a3a47d4c0bacc2b169d243353257b9bc01e5c32fc24874"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-20/eeg/sub-20_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:66426559a657edf7be5e6e046f5d0dd889cb7e3b13fd01cf17e7d341a205ca22",
+      "sha256": "66426559a657edf7be5e6e046f5d0dd889cb7e3b13fd01cf17e7d341a205ca22",
+      "git_blob_sha1": "04391dac7b03b162a82014003d3c61adcb30399b"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-20/eeg/sub-20_task-FlankerNEAR_eeg.set",
+      "bytes": 2481712,
+      "checksum": "sha256:eb3f1458e3444179f369e26797027c613dbe0b3625b30acf64769f180de73d49",
+      "git_blob_sha1": "e7896c9868201f2a0bc42ba3ec054d701adb6511",
+      "git_annex_pointer": "../../.git/annex/objects/Q5/pZ/SHA256E-s2481712--eb3f1458e3444179f369e26797027c613dbe0b3625b30acf64769f180de73d49.set/SHA256E-s2481712--eb3f1458e3444179f369e26797027c613dbe0b3625b30acf64769f180de73d49.set",
+      "sha256": "eb3f1458e3444179f369e26797027c613dbe0b3625b30acf64769f180de73d49"
+    },
+    {
+      "name": "sub-20/eeg/sub-20_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-20/eeg/sub-20_task-FlankerNEAR_events.tsv",
+      "bytes": 24373,
+      "checksum": "sha256:e7425223b88d4043c8f146b552ce8d3b9aa518bb47b3e22cc2286e5ff71ed23c",
+      "sha256": "e7425223b88d4043c8f146b552ce8d3b9aa518bb47b3e22cc2286e5ff71ed23c",
+      "git_blob_sha1": "0c03450ee874c12a17bfed2a5079b1ecad2d83dc"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-21/eeg/sub-21_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-21/eeg/sub-21_task-FlankerNEAR_eeg.fdt",
+      "bytes": 57769984,
+      "checksum": "sha256:7c9fe437699503d98ac0731392cda91160383f4d2d659c321a9828eb8a48072b",
+      "git_blob_sha1": "32e35c62d103eda0763ee97d08ef575d9e7e196f",
+      "git_annex_pointer": "../../.git/annex/objects/jx/qZ/SHA256E-s57769984--7c9fe437699503d98ac0731392cda91160383f4d2d659c321a9828eb8a48072b.fdt/SHA256E-s57769984--7c9fe437699503d98ac0731392cda91160383f4d2d659c321a9828eb8a48072b.fdt",
+      "sha256": "7c9fe437699503d98ac0731392cda91160383f4d2d659c321a9828eb8a48072b"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-21/eeg/sub-21_task-FlankerNEAR_eeg.json",
+      "bytes": 923,
+      "checksum": "sha256:51f2a73908cbe6350e9a18a5f9e21257d8743fbf6f30603e2e640d04e60bdc50",
+      "sha256": "51f2a73908cbe6350e9a18a5f9e21257d8743fbf6f30603e2e640d04e60bdc50",
+      "git_blob_sha1": "ac90ec364728ed5d4697cbeb96fe474f4edbb8ab"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-21/eeg/sub-21_task-FlankerNEAR_eeg.set",
+      "bytes": 2467040,
+      "checksum": "sha256:a9f28df818b4e46d71111aa3016c81a59ea85f7f97b4c8540cb92d184dfc45d3",
+      "git_blob_sha1": "c8c8a34bcaf81fc356281da37b897d2b1915d13d",
+      "git_annex_pointer": "../../.git/annex/objects/3v/9m/SHA256E-s2467040--a9f28df818b4e46d71111aa3016c81a59ea85f7f97b4c8540cb92d184dfc45d3.set/SHA256E-s2467040--a9f28df818b4e46d71111aa3016c81a59ea85f7f97b4c8540cb92d184dfc45d3.set",
+      "sha256": "a9f28df818b4e46d71111aa3016c81a59ea85f7f97b4c8540cb92d184dfc45d3"
+    },
+    {
+      "name": "sub-21/eeg/sub-21_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-21/eeg/sub-21_task-FlankerNEAR_events.tsv",
+      "bytes": 24390,
+      "checksum": "sha256:cda1b45415567b20c1872ba3ceb20d6575fbc08cdf21203825111417faea8ea2",
+      "sha256": "cda1b45415567b20c1872ba3ceb20d6575fbc08cdf21203825111417faea8ea2",
+      "git_blob_sha1": "230042ae23274888797c3697834da6d338b9308e"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-22/eeg/sub-22_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-22/eeg/sub-22_task-FlankerNEAR_eeg.fdt",
+      "bytes": 59703296,
+      "checksum": "sha256:2fa27270b5ef2e8ff19364cc4da9e44b5682a15db4430e1078833300f0996ed5",
+      "git_blob_sha1": "ada13b76e7bbc7560e9ef937beae856138fa635e",
+      "git_annex_pointer": "../../.git/annex/objects/j6/Jw/SHA256E-s59703296--2fa27270b5ef2e8ff19364cc4da9e44b5682a15db4430e1078833300f0996ed5.fdt/SHA256E-s59703296--2fa27270b5ef2e8ff19364cc4da9e44b5682a15db4430e1078833300f0996ed5.fdt",
+      "sha256": "2fa27270b5ef2e8ff19364cc4da9e44b5682a15db4430e1078833300f0996ed5"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-22/eeg/sub-22_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:d2b3560326ff8efbb156dce0f75aac291f8d8fa0cabae0c234f6378b90a1fcc4",
+      "sha256": "d2b3560326ff8efbb156dce0f75aac291f8d8fa0cabae0c234f6378b90a1fcc4",
+      "git_blob_sha1": "ecf425372f490ab6cf36bd1bc4660650f288f76c"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-22/eeg/sub-22_task-FlankerNEAR_eeg.set",
+      "bytes": 2527000,
+      "checksum": "sha256:1a14fc8006289b6a186951a76aad88ef469085b23ca78ed11bd136b60a648ee4",
+      "git_blob_sha1": "a544c7174074dbaea4e41558115963286224756c",
+      "git_annex_pointer": "../../.git/annex/objects/fG/kj/SHA256E-s2527000--1a14fc8006289b6a186951a76aad88ef469085b23ca78ed11bd136b60a648ee4.set/SHA256E-s2527000--1a14fc8006289b6a186951a76aad88ef469085b23ca78ed11bd136b60a648ee4.set",
+      "sha256": "1a14fc8006289b6a186951a76aad88ef469085b23ca78ed11bd136b60a648ee4"
+    },
+    {
+      "name": "sub-22/eeg/sub-22_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-22/eeg/sub-22_task-FlankerNEAR_events.tsv",
+      "bytes": 24393,
+      "checksum": "sha256:9851e6d675cd2df055712a21ac4ec67b5716c28ff7df78ba13e70cbc47d4731e",
+      "sha256": "9851e6d675cd2df055712a21ac4ec67b5716c28ff7df78ba13e70cbc47d4731e",
+      "git_blob_sha1": "f9cc00a917a2b390dfd858eb236613a93bc02ac4"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-23/eeg/sub-23_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-23/eeg/sub-23_task-FlankerNEAR_eeg.fdt",
+      "bytes": 56786944,
+      "checksum": "sha256:ea227351211db13ed0a053646f0b83312c76725e24dc422725a1d4a5ca245259",
+      "git_blob_sha1": "90e9f71de35801062b75aa276fa186523486841c",
+      "git_annex_pointer": "../../.git/annex/objects/Q7/Vg/SHA256E-s56786944--ea227351211db13ed0a053646f0b83312c76725e24dc422725a1d4a5ca245259.fdt/SHA256E-s56786944--ea227351211db13ed0a053646f0b83312c76725e24dc422725a1d4a5ca245259.fdt",
+      "sha256": "ea227351211db13ed0a053646f0b83312c76725e24dc422725a1d4a5ca245259"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-23/eeg/sub-23_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:c06e1439aacd2c3d99ae9a7b85f43aa6be48d6a8ba847e125ce7e0115ffe094f",
+      "sha256": "c06e1439aacd2c3d99ae9a7b85f43aa6be48d6a8ba847e125ce7e0115ffe094f",
+      "git_blob_sha1": "26c8e6a5733b4cb806121c9eeeefc5b01672ac35"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-23/eeg/sub-23_task-FlankerNEAR_eeg.set",
+      "bytes": 2436816,
+      "checksum": "sha256:7a468b3550c9306c15cd757ff306a2ec17ededcee3f4b324175dccf34d6bd600",
+      "git_blob_sha1": "25bfb09cdd3d188153e5fba2249cdb5c448df860",
+      "git_annex_pointer": "../../.git/annex/objects/GV/G8/SHA256E-s2436816--7a468b3550c9306c15cd757ff306a2ec17ededcee3f4b324175dccf34d6bd600.set/SHA256E-s2436816--7a468b3550c9306c15cd757ff306a2ec17ededcee3f4b324175dccf34d6bd600.set",
+      "sha256": "7a468b3550c9306c15cd757ff306a2ec17ededcee3f4b324175dccf34d6bd600"
+    },
+    {
+      "name": "sub-23/eeg/sub-23_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-23/eeg/sub-23_task-FlankerNEAR_events.tsv",
+      "bytes": 24379,
+      "checksum": "sha256:301df123237a553a8f29f083edc3a6af825b93266a7c5168ba1499a1d293f562",
+      "sha256": "301df123237a553a8f29f083edc3a6af825b93266a7c5168ba1499a1d293f562",
+      "git_blob_sha1": "2cb90b92fea4ae6161aa64578e964a544945a021"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-24/eeg/sub-24_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-24/eeg/sub-24_task-FlankerNEAR_eeg.fdt",
+      "bytes": 58327040,
+      "checksum": "sha256:7ff524ca36bc67f04803bdafd4749741ec73fb5299958167d1ad2604110bb961",
+      "git_blob_sha1": "e048c9ecd11a4ab6f0ea693f90992cae5513e40f",
+      "git_annex_pointer": "../../.git/annex/objects/8X/W1/SHA256E-s58327040--7ff524ca36bc67f04803bdafd4749741ec73fb5299958167d1ad2604110bb961.fdt/SHA256E-s58327040--7ff524ca36bc67f04803bdafd4749741ec73fb5299958167d1ad2604110bb961.fdt",
+      "sha256": "7ff524ca36bc67f04803bdafd4749741ec73fb5299958167d1ad2604110bb961"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-24/eeg/sub-24_task-FlankerNEAR_eeg.json",
+      "bytes": 912,
+      "checksum": "sha256:bd10cf70f7040e4bd1e30eedd8392c1d378c646fe59c10b169cddb93ea0183fc",
+      "sha256": "bd10cf70f7040e4bd1e30eedd8392c1d378c646fe59c10b169cddb93ea0183fc",
+      "git_blob_sha1": "48c783fe9275c25fd90cbda959172736c294c98a"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-24/eeg/sub-24_task-FlankerNEAR_eeg.set",
+      "bytes": 2485024,
+      "checksum": "sha256:afa4e6ee82c2129f00861c3406672beef37d82ab310efe4ace751f4ba1cb95f7",
+      "git_blob_sha1": "811a00a0d54d7e6be7ce570db519b6db3b848c84",
+      "git_annex_pointer": "../../.git/annex/objects/J1/8X/SHA256E-s2485024--afa4e6ee82c2129f00861c3406672beef37d82ab310efe4ace751f4ba1cb95f7.set/SHA256E-s2485024--afa4e6ee82c2129f00861c3406672beef37d82ab310efe4ace751f4ba1cb95f7.set",
+      "sha256": "afa4e6ee82c2129f00861c3406672beef37d82ab310efe4ace751f4ba1cb95f7"
+    },
+    {
+      "name": "sub-24/eeg/sub-24_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-24/eeg/sub-24_task-FlankerNEAR_events.tsv",
+      "bytes": 24400,
+      "checksum": "sha256:bd99b0b0d9f86c52cfb21ec4bee415483be5cab44ab3fe75b6532f216abc4bec",
+      "sha256": "bd99b0b0d9f86c52cfb21ec4bee415483be5cab44ab3fe75b6532f216abc4bec",
+      "git_blob_sha1": "7dcbc91bceabe8816ad99cdea52dde72e43640f3"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-25/eeg/sub-25_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-25/eeg/sub-25_task-FlankerNEAR_eeg.fdt",
+      "bytes": 72974336,
+      "checksum": "sha256:e411af54cef7ee2d834decf104f3cb81b8258427d6bdc4b769b110a966392bb5",
+      "git_blob_sha1": "b0d2f5ae672dee9356b147f70e2aa2cb8a8ccebd",
+      "git_annex_pointer": "../../.git/annex/objects/k2/M9/SHA256E-s72974336--e411af54cef7ee2d834decf104f3cb81b8258427d6bdc4b769b110a966392bb5.fdt/SHA256E-s72974336--e411af54cef7ee2d834decf104f3cb81b8258427d6bdc4b769b110a966392bb5.fdt",
+      "sha256": "e411af54cef7ee2d834decf104f3cb81b8258427d6bdc4b769b110a966392bb5"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-25/eeg/sub-25_task-FlankerNEAR_eeg.json",
+      "bytes": 914,
+      "checksum": "sha256:c24dbac86702b57ac7d3e264f52b9912b32de1eecb7be0fcac769a7ed38cd233",
+      "sha256": "c24dbac86702b57ac7d3e264f52b9912b32de1eecb7be0fcac769a7ed38cd233",
+      "git_blob_sha1": "4ccb75ff1aa9cfe378a9d622d7c68b2616de2a7d"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-25/eeg/sub-25_task-FlankerNEAR_eeg.set",
+      "bytes": 2965280,
+      "checksum": "sha256:1410ba3b75aa17ba9b6b90231eed21e36b3e877ba8b62ef7d82a46815b7d3d3c",
+      "git_blob_sha1": "ccefff5eb6b122c977cd607056f268dd1fa3e380",
+      "git_annex_pointer": "../../.git/annex/objects/qF/2M/SHA256E-s2965280--1410ba3b75aa17ba9b6b90231eed21e36b3e877ba8b62ef7d82a46815b7d3d3c.set/SHA256E-s2965280--1410ba3b75aa17ba9b6b90231eed21e36b3e877ba8b62ef7d82a46815b7d3d3c.set",
+      "sha256": "1410ba3b75aa17ba9b6b90231eed21e36b3e877ba8b62ef7d82a46815b7d3d3c"
+    },
+    {
+      "name": "sub-25/eeg/sub-25_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-25/eeg/sub-25_task-FlankerNEAR_events.tsv",
+      "bytes": 25590,
+      "checksum": "sha256:d7f2f1e64eac63e758db25c9b57def30e98896ff2b0a2fbe9a38cd6923947381",
+      "sha256": "d7f2f1e64eac63e758db25c9b57def30e98896ff2b0a2fbe9a38cd6923947381",
+      "git_blob_sha1": "af808d554c4eae0b5f17baf6bac0f79ca483e3eb"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-26/eeg/sub-26_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-26/eeg/sub-26_task-FlankerNEAR_eeg.fdt",
+      "bytes": 72351744,
+      "checksum": "sha256:ee8ab028863ba3b552ad232006f4fe4b80538bb1766286df85ce03018dc7d7ee",
+      "git_blob_sha1": "2d74a4948c0c2bddf39d0832d0c29a2ffb3c781d",
+      "git_annex_pointer": "../../.git/annex/objects/wX/Wz/SHA256E-s72351744--ee8ab028863ba3b552ad232006f4fe4b80538bb1766286df85ce03018dc7d7ee.fdt/SHA256E-s72351744--ee8ab028863ba3b552ad232006f4fe4b80538bb1766286df85ce03018dc7d7ee.fdt",
+      "sha256": "ee8ab028863ba3b552ad232006f4fe4b80538bb1766286df85ce03018dc7d7ee"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-26/eeg/sub-26_task-FlankerNEAR_eeg.json",
+      "bytes": 914,
+      "checksum": "sha256:ef7b4c35650354460731b2c399559224008c14be16c413c3a886e1d817e55c03",
+      "sha256": "ef7b4c35650354460731b2c399559224008c14be16c413c3a886e1d817e55c03",
+      "git_blob_sha1": "63cc0dab6381709be6d5dd1640753d958a342744"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-26/eeg/sub-26_task-FlankerNEAR_eeg.set",
+      "bytes": 2922712,
+      "checksum": "sha256:06c691354d19290f6630eb118d28666967d34e921cf98b31641ae000c9047d3e",
+      "git_blob_sha1": "38b09431d7ab7698b00fe40c7b5f13513db4e0b1",
+      "git_annex_pointer": "../../.git/annex/objects/XG/JX/SHA256E-s2922712--06c691354d19290f6630eb118d28666967d34e921cf98b31641ae000c9047d3e.set/SHA256E-s2922712--06c691354d19290f6630eb118d28666967d34e921cf98b31641ae000c9047d3e.set",
+      "sha256": "06c691354d19290f6630eb118d28666967d34e921cf98b31641ae000c9047d3e"
+    },
+    {
+      "name": "sub-26/eeg/sub-26_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-26/eeg/sub-26_task-FlankerNEAR_events.tsv",
+      "bytes": 24664,
+      "checksum": "sha256:81b9d2a2e2c0746d66b604ee133af8ed1c3a2996812e9e40f057af85483851a2",
+      "sha256": "81b9d2a2e2c0746d66b604ee133af8ed1c3a2996812e9e40f057af85483851a2",
+      "git_blob_sha1": "da8ae035203667ce109494091389ccd9e038dcc5"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-27/eeg/sub-27_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-27/eeg/sub-27_task-FlankerNEAR_eeg.fdt",
+      "bytes": 92110848,
+      "checksum": "sha256:4bd2db7885448667fa3bf7240b7ec32f1739e4e003fe2d7492976e9a3dbf7950",
+      "git_blob_sha1": "480ab6551861614101433ef15d58803cbce6c936",
+      "git_annex_pointer": "../../.git/annex/objects/88/JX/SHA256E-s92110848--4bd2db7885448667fa3bf7240b7ec32f1739e4e003fe2d7492976e9a3dbf7950.fdt/SHA256E-s92110848--4bd2db7885448667fa3bf7240b7ec32f1739e4e003fe2d7492976e9a3dbf7950.fdt",
+      "sha256": "4bd2db7885448667fa3bf7240b7ec32f1739e4e003fe2d7492976e9a3dbf7950"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-27/eeg/sub-27_task-FlankerNEAR_eeg.json",
+      "bytes": 914,
+      "checksum": "sha256:11ad0d63d41d60f4e1f105c6614b74223bc271749d068455284ee2b5aab5e275",
+      "sha256": "11ad0d63d41d60f4e1f105c6614b74223bc271749d068455284ee2b5aab5e275",
+      "git_blob_sha1": "659c67fee0f6dca8d6850fae142059ef191d0118"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-27/eeg/sub-27_task-FlankerNEAR_eeg.set",
+      "bytes": 3540216,
+      "checksum": "sha256:e7c6d255a720be77c44c7de98f6b79b54aa5a61011050505c903d85f714245c6",
+      "git_blob_sha1": "c7f9cce49bcc506ec784bb30550f3d96eb527d3e",
+      "git_annex_pointer": "../../.git/annex/objects/31/Ff/SHA256E-s3540216--e7c6d255a720be77c44c7de98f6b79b54aa5a61011050505c903d85f714245c6.set/SHA256E-s3540216--e7c6d255a720be77c44c7de98f6b79b54aa5a61011050505c903d85f714245c6.set",
+      "sha256": "e7c6d255a720be77c44c7de98f6b79b54aa5a61011050505c903d85f714245c6"
+    },
+    {
+      "name": "sub-27/eeg/sub-27_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-27/eeg/sub-27_task-FlankerNEAR_events.tsv",
+      "bytes": 24971,
+      "checksum": "sha256:57f67b913a2b42ff672669fcd1bb2aee5c8745b169ec760ccbf8d4a27b6d959b",
+      "sha256": "57f67b913a2b42ff672669fcd1bb2aee5c8745b169ec760ccbf8d4a27b6d959b",
+      "git_blob_sha1": "1a91a066e79c99b00fa626afae5e6da54190daea"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-28/eeg/sub-28_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-28/eeg/sub-28_task-FlankerNEAR_eeg.fdt",
+      "bytes": 58556416,
+      "checksum": "sha256:07a75ccd55399ceec389a2b1d2ce7b020b87bd9c27593433c484ba524480e9c5",
+      "git_blob_sha1": "a4b5f920f8f119383513e7154b564dc9c36fc63a",
+      "git_annex_pointer": "../../.git/annex/objects/3G/vz/SHA256E-s58556416--07a75ccd55399ceec389a2b1d2ce7b020b87bd9c27593433c484ba524480e9c5.fdt/SHA256E-s58556416--07a75ccd55399ceec389a2b1d2ce7b020b87bd9c27593433c484ba524480e9c5.fdt",
+      "sha256": "07a75ccd55399ceec389a2b1d2ce7b020b87bd9c27593433c484ba524480e9c5"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-28/eeg/sub-28_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:f562a70a32916cfbf3dd87f4c3201e9adca72f143ec94c5f5ad6e2c1ad196a59",
+      "sha256": "f562a70a32916cfbf3dd87f4c3201e9adca72f143ec94c5f5ad6e2c1ad196a59",
+      "git_blob_sha1": "5c3d8489df11f48344311a2f395fc97b2d19a796"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-28/eeg/sub-28_task-FlankerNEAR_eeg.set",
+      "bytes": 2492152,
+      "checksum": "sha256:f85d1b2536c9fa5ab59575fec84310ba3183e7c39e78fe8811b2954c118912fb",
+      "git_blob_sha1": "6835348e10f6819be25fe6d729c9ce82f9614a65",
+      "git_annex_pointer": "../../.git/annex/objects/Jp/FQ/SHA256E-s2492152--f85d1b2536c9fa5ab59575fec84310ba3183e7c39e78fe8811b2954c118912fb.set/SHA256E-s2492152--f85d1b2536c9fa5ab59575fec84310ba3183e7c39e78fe8811b2954c118912fb.set",
+      "sha256": "f85d1b2536c9fa5ab59575fec84310ba3183e7c39e78fe8811b2954c118912fb"
+    },
+    {
+      "name": "sub-28/eeg/sub-28_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-28/eeg/sub-28_task-FlankerNEAR_events.tsv",
+      "bytes": 24364,
+      "checksum": "sha256:d93f23b94c6b653400be557a0d8ba87522f50c1abc7c6d65113b4ed2b82c8369",
+      "sha256": "d93f23b94c6b653400be557a0d8ba87522f50c1abc7c6d65113b4ed2b82c8369",
+      "git_blob_sha1": "00ff450727c87b0cc3d31f4d286ff7b6350a7452"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-29/eeg/sub-29_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-29/eeg/sub-29_task-FlankerNEAR_eeg.fdt",
+      "bytes": 66322432,
+      "checksum": "sha256:a7baa581b986a73aad6d34e4f21e2f1699d104fccfcf01fbc39cc11b7ad02d98",
+      "git_blob_sha1": "657766cc75f64c0094ba1c564898bb29fbb1625e",
+      "git_annex_pointer": "../../.git/annex/objects/w6/4P/SHA256E-s66322432--a7baa581b986a73aad6d34e4f21e2f1699d104fccfcf01fbc39cc11b7ad02d98.fdt/SHA256E-s66322432--a7baa581b986a73aad6d34e4f21e2f1699d104fccfcf01fbc39cc11b7ad02d98.fdt",
+      "sha256": "a7baa581b986a73aad6d34e4f21e2f1699d104fccfcf01fbc39cc11b7ad02d98"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-29/eeg/sub-29_task-FlankerNEAR_eeg.json",
+      "bytes": 914,
+      "checksum": "sha256:803ccb494ad7e23eba809efdddd4d97da3667ee6ad9000431d3a5e8c1637e1b1",
+      "sha256": "803ccb494ad7e23eba809efdddd4d97da3667ee6ad9000431d3a5e8c1637e1b1",
+      "git_blob_sha1": "56b26c642b5131631c33a5c4be45a94730289f8b"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-29/eeg/sub-29_task-FlankerNEAR_eeg.set",
+      "bytes": 2734968,
+      "checksum": "sha256:db23f384f0092c737b6b3f77564244ed0de4d0f76a24a3124a11003e6bf0a5aa",
+      "git_blob_sha1": "f55aa70cc27f3a7f0b076b8d768dc62537b72df9",
+      "git_annex_pointer": "../../.git/annex/objects/Kp/6j/SHA256E-s2734968--db23f384f0092c737b6b3f77564244ed0de4d0f76a24a3124a11003e6bf0a5aa.set/SHA256E-s2734968--db23f384f0092c737b6b3f77564244ed0de4d0f76a24a3124a11003e6bf0a5aa.set",
+      "sha256": "db23f384f0092c737b6b3f77564244ed0de4d0f76a24a3124a11003e6bf0a5aa"
+    },
+    {
+      "name": "sub-29/eeg/sub-29_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-29/eeg/sub-29_task-FlankerNEAR_events.tsv",
+      "bytes": 24478,
+      "checksum": "sha256:b5f9f4e42f94206f51f973b39d79e10da615a966e7355f66b28ecb79d229bbe1",
+      "sha256": "b5f9f4e42f94206f51f973b39d79e10da615a966e7355f66b28ecb79d229bbe1",
+      "git_blob_sha1": "fd79860da1543ab617caf92f9319348600533422"
+    },
+    {
+      "name": "sub-3/eeg/sub-3_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-3/eeg/sub-3_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-3/eeg/sub-3_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-3/eeg/sub-3_task-FlankerNEAR_eeg.fdt",
+      "bytes": 62193664,
+      "checksum": "sha256:10e0c39fbf6a3428619f3718a618e0e6a777302a9c3a0f75fb739f8dbd2243a9",
+      "git_blob_sha1": "362daf4ec6778bba2fff92f601f46501e1096484",
+      "git_annex_pointer": "../../.git/annex/objects/KK/Qw/SHA256E-s62193664--10e0c39fbf6a3428619f3718a618e0e6a777302a9c3a0f75fb739f8dbd2243a9.fdt/SHA256E-s62193664--10e0c39fbf6a3428619f3718a618e0e6a777302a9c3a0f75fb739f8dbd2243a9.fdt",
+      "sha256": "10e0c39fbf6a3428619f3718a618e0e6a777302a9c3a0f75fb739f8dbd2243a9"
+    },
+    {
+      "name": "sub-3/eeg/sub-3_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-3/eeg/sub-3_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:93caaa08d35ae436f9aa446b7e212ec7116ade4d632dcfc5de432f707dc72c3c",
+      "sha256": "93caaa08d35ae436f9aa446b7e212ec7116ade4d632dcfc5de432f707dc72c3c",
+      "git_blob_sha1": "0eb63306b7503023251ae59eaf58a18b63d088eb"
+    },
+    {
+      "name": "sub-3/eeg/sub-3_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-3/eeg/sub-3_task-FlankerNEAR_eeg.set",
+      "bytes": 2605864,
+      "checksum": "sha256:03e041e2a51aed176870a55232730ea4fb7de2d31ce4ded06a32955729dd548c",
+      "git_blob_sha1": "6cf0cb148d429bf0bf769c91004050ca4eeed5b7",
+      "git_annex_pointer": "../../.git/annex/objects/gJ/54/SHA256E-s2605864--03e041e2a51aed176870a55232730ea4fb7de2d31ce4ded06a32955729dd548c.set/SHA256E-s2605864--03e041e2a51aed176870a55232730ea4fb7de2d31ce4ded06a32955729dd548c.set",
+      "sha256": "03e041e2a51aed176870a55232730ea4fb7de2d31ce4ded06a32955729dd548c"
+    },
+    {
+      "name": "sub-3/eeg/sub-3_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-3/eeg/sub-3_task-FlankerNEAR_events.tsv",
+      "bytes": 24399,
+      "checksum": "sha256:1888f5214001c127e3d2ed286e1b9c7d40119b03647ca683b8a73f35874e856d",
+      "sha256": "1888f5214001c127e3d2ed286e1b9c7d40119b03647ca683b8a73f35874e856d",
+      "git_blob_sha1": "fc25761e9b58b0b88638f3fb7a71f219bab63d4c"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-30/eeg/sub-30_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-30/eeg/sub-30_task-FlankerNEAR_eeg.fdt",
+      "bytes": 60620800,
+      "checksum": "sha256:4d0b1a66e5d0704ec24f05dd6736982e919a4b4dbd08802da7ab1ba107e38227",
+      "git_blob_sha1": "184910c5a87299cd901ba033e6555f6b9300c6fc",
+      "git_annex_pointer": "../../.git/annex/objects/Xk/QQ/SHA256E-s60620800--4d0b1a66e5d0704ec24f05dd6736982e919a4b4dbd08802da7ab1ba107e38227.fdt/SHA256E-s60620800--4d0b1a66e5d0704ec24f05dd6736982e919a4b4dbd08802da7ab1ba107e38227.fdt",
+      "sha256": "4d0b1a66e5d0704ec24f05dd6736982e919a4b4dbd08802da7ab1ba107e38227"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-30/eeg/sub-30_task-FlankerNEAR_eeg.json",
+      "bytes": 911,
+      "checksum": "sha256:af4fbc6a9caad011f066eb991a12ba39d3d97dfd08179807a03e530d24d1045e",
+      "sha256": "af4fbc6a9caad011f066eb991a12ba39d3d97dfd08179807a03e530d24d1045e",
+      "git_blob_sha1": "fcbe985d21f9e15747b97cd40c9916cae394e929"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-30/eeg/sub-30_task-FlankerNEAR_eeg.set",
+      "bytes": 2556120,
+      "checksum": "sha256:3e66bfefc801cd9d46eb22cd6ba258bda21d110291a4864f284ad71eefc1aacd",
+      "git_blob_sha1": "d76b87ac453b4a6ad5a4f64fde7467e679d02389",
+      "git_annex_pointer": "../../.git/annex/objects/XZ/vk/SHA256E-s2556120--3e66bfefc801cd9d46eb22cd6ba258bda21d110291a4864f284ad71eefc1aacd.set/SHA256E-s2556120--3e66bfefc801cd9d46eb22cd6ba258bda21d110291a4864f284ad71eefc1aacd.set",
+      "sha256": "3e66bfefc801cd9d46eb22cd6ba258bda21d110291a4864f284ad71eefc1aacd"
+    },
+    {
+      "name": "sub-30/eeg/sub-30_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-30/eeg/sub-30_task-FlankerNEAR_events.tsv",
+      "bytes": 24405,
+      "checksum": "sha256:4f13ca6e450b8b193e9b6dc02950ac17338c5086819316f85db1bf143d887082",
+      "sha256": "4f13ca6e450b8b193e9b6dc02950ac17338c5086819316f85db1bf143d887082",
+      "git_blob_sha1": "85c2004570f48057c3dda4f91d1762dd8c002db3"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-31/eeg/sub-31_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-31/eeg/sub-31_task-FlankerNEAR_eeg.fdt",
+      "bytes": 57999360,
+      "checksum": "sha256:da4226392fac0e5462a1f2be2bad71c6ab7df91a80085771881fba619f384b65",
+      "git_blob_sha1": "7d5c788a6cbd3ae6ae7fb469a28c8b8558974e92",
+      "git_annex_pointer": "../../.git/annex/objects/W6/4G/SHA256E-s57999360--da4226392fac0e5462a1f2be2bad71c6ab7df91a80085771881fba619f384b65.fdt/SHA256E-s57999360--da4226392fac0e5462a1f2be2bad71c6ab7df91a80085771881fba619f384b65.fdt",
+      "sha256": "da4226392fac0e5462a1f2be2bad71c6ab7df91a80085771881fba619f384b65"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-31/eeg/sub-31_task-FlankerNEAR_eeg.json",
+      "bytes": 912,
+      "checksum": "sha256:1bdce3131da575cc9d3072655c45b19399cbad48cfbd8196521ca31ee460650b",
+      "sha256": "1bdce3131da575cc9d3072655c45b19399cbad48cfbd8196521ca31ee460650b",
+      "git_blob_sha1": "2dff3692059083b4fcceaee0eff0964554745b59"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-31/eeg/sub-31_task-FlankerNEAR_eeg.set",
+      "bytes": 2475072,
+      "checksum": "sha256:cf107c46da248c781adccbf7bb028e570d8c7020509ca6928c345cf70bb9326a",
+      "git_blob_sha1": "a18d019db2ea66d0392aff200cac734cb993c413",
+      "git_annex_pointer": "../../.git/annex/objects/0v/XQ/SHA256E-s2475072--cf107c46da248c781adccbf7bb028e570d8c7020509ca6928c345cf70bb9326a.set/SHA256E-s2475072--cf107c46da248c781adccbf7bb028e570d8c7020509ca6928c345cf70bb9326a.set",
+      "sha256": "cf107c46da248c781adccbf7bb028e570d8c7020509ca6928c345cf70bb9326a"
+    },
+    {
+      "name": "sub-31/eeg/sub-31_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-31/eeg/sub-31_task-FlankerNEAR_events.tsv",
+      "bytes": 24427,
+      "checksum": "sha256:409d3883957c829b576661b80a07e57b9d4123415f07fe4ac209f3eefa4d68e9",
+      "sha256": "409d3883957c829b576661b80a07e57b9d4123415f07fe4ac209f3eefa4d68e9",
+      "git_blob_sha1": "5f8ef5b682198f736f51a62759666bf4b7e1f707"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-32/eeg/sub-32_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-32/eeg/sub-32_task-FlankerNEAR_eeg.fdt",
+      "bytes": 69828608,
+      "checksum": "sha256:db43c9a0bb395f6b2f98046553d20357267536bb9f1bc5e2c3eb27d742fb887e",
+      "git_blob_sha1": "72a04cf253a383bb517f72d098d8b743e7052e1a",
+      "git_annex_pointer": "../../.git/annex/objects/13/V3/SHA256E-s69828608--db43c9a0bb395f6b2f98046553d20357267536bb9f1bc5e2c3eb27d742fb887e.fdt/SHA256E-s69828608--db43c9a0bb395f6b2f98046553d20357267536bb9f1bc5e2c3eb27d742fb887e.fdt",
+      "sha256": "db43c9a0bb395f6b2f98046553d20357267536bb9f1bc5e2c3eb27d742fb887e"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-32/eeg/sub-32_task-FlankerNEAR_eeg.json",
+      "bytes": 914,
+      "checksum": "sha256:5e75b20c486850da602b880c4b7241629155ba0a98884ec62634404b3eb277bb",
+      "sha256": "5e75b20c486850da602b880c4b7241629155ba0a98884ec62634404b3eb277bb",
+      "git_blob_sha1": "125072da753dcc7efc551e650ed0462a1b117e49"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-32/eeg/sub-32_task-FlankerNEAR_eeg.set",
+      "bytes": 2843672,
+      "checksum": "sha256:533c739807b4539151e384f3d1f40da4e4328e8a18c1cec7e7f684f8f8c2f7b4",
+      "git_blob_sha1": "76d26805e2005caa60e8a7232777fc16a74b7dfb",
+      "git_annex_pointer": "../../.git/annex/objects/2x/gM/SHA256E-s2843672--533c739807b4539151e384f3d1f40da4e4328e8a18c1cec7e7f684f8f8c2f7b4.set/SHA256E-s2843672--533c739807b4539151e384f3d1f40da4e4328e8a18c1cec7e7f684f8f8c2f7b4.set",
+      "sha256": "533c739807b4539151e384f3d1f40da4e4328e8a18c1cec7e7f684f8f8c2f7b4"
+    },
+    {
+      "name": "sub-32/eeg/sub-32_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-32/eeg/sub-32_task-FlankerNEAR_events.tsv",
+      "bytes": 24566,
+      "checksum": "sha256:0ed33ad61055d35cb8e50c562d7be8eb80dc5f894bf5251561cd0e9e7040b909",
+      "sha256": "0ed33ad61055d35cb8e50c562d7be8eb80dc5f894bf5251561cd0e9e7040b909",
+      "git_blob_sha1": "6d41bb903b07aacbc5e3495b05865beff08822e3"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-33/eeg/sub-33_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-33/eeg/sub-33_task-FlankerNEAR_eeg.fdt",
+      "bytes": 60030976,
+      "checksum": "sha256:b14d9019e70225fde92842c7c40a6cf9bf551060699ddb4585c42063257e7f12",
+      "git_blob_sha1": "6364771406b1224fe2d458d46c551405fe9756bb",
+      "git_annex_pointer": "../../.git/annex/objects/q6/7G/SHA256E-s60030976--b14d9019e70225fde92842c7c40a6cf9bf551060699ddb4585c42063257e7f12.fdt/SHA256E-s60030976--b14d9019e70225fde92842c7c40a6cf9bf551060699ddb4585c42063257e7f12.fdt",
+      "sha256": "b14d9019e70225fde92842c7c40a6cf9bf551060699ddb4585c42063257e7f12"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-33/eeg/sub-33_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:1f5f5c004aafdeeb6adec760d27cc9ef5520d7a8b047ba6cc4dc9e92fb4c6267",
+      "sha256": "1f5f5c004aafdeeb6adec760d27cc9ef5520d7a8b047ba6cc4dc9e92fb4c6267",
+      "git_blob_sha1": "a1c1e8b66c73c7b9c52bc96ae0ec89d6bd470c92"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-33/eeg/sub-33_task-FlankerNEAR_eeg.set",
+      "bytes": 2542552,
+      "checksum": "sha256:470ecf52c6b182c094796cd781cc7c555744e1ece8ce18720f6872e39b05250d",
+      "git_blob_sha1": "50c7d8ecec2475149bdfa62e9691b407fab39afb",
+      "git_annex_pointer": "../../.git/annex/objects/8G/xf/SHA256E-s2542552--470ecf52c6b182c094796cd781cc7c555744e1ece8ce18720f6872e39b05250d.set/SHA256E-s2542552--470ecf52c6b182c094796cd781cc7c555744e1ece8ce18720f6872e39b05250d.set",
+      "sha256": "470ecf52c6b182c094796cd781cc7c555744e1ece8ce18720f6872e39b05250d"
+    },
+    {
+      "name": "sub-33/eeg/sub-33_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-33/eeg/sub-33_task-FlankerNEAR_events.tsv",
+      "bytes": 24423,
+      "checksum": "sha256:72395ab050c3a714ac96f55503229f6fc09ed5b88749a78e8fea26609db8696a",
+      "sha256": "72395ab050c3a714ac96f55503229f6fc09ed5b88749a78e8fea26609db8696a",
+      "git_blob_sha1": "917937076a306ebf4f44fe644ef7d5e50191f798"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-34/eeg/sub-34_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-34/eeg/sub-34_task-FlankerNEAR_eeg.fdt",
+      "bytes": 59703296,
+      "checksum": "sha256:16abe4b8e8ec69aea98d6e7e7a536519292c8ad0b1ee2058c294623492a3dd58",
+      "git_blob_sha1": "a1afb864134aea5ff7feddb1828deadf56577ae4",
+      "git_annex_pointer": "../../.git/annex/objects/9w/X1/SHA256E-s59703296--16abe4b8e8ec69aea98d6e7e7a536519292c8ad0b1ee2058c294623492a3dd58.fdt/SHA256E-s59703296--16abe4b8e8ec69aea98d6e7e7a536519292c8ad0b1ee2058c294623492a3dd58.fdt",
+      "sha256": "16abe4b8e8ec69aea98d6e7e7a536519292c8ad0b1ee2058c294623492a3dd58"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-34/eeg/sub-34_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:d2b3560326ff8efbb156dce0f75aac291f8d8fa0cabae0c234f6378b90a1fcc4",
+      "sha256": "d2b3560326ff8efbb156dce0f75aac291f8d8fa0cabae0c234f6378b90a1fcc4",
+      "git_blob_sha1": "ecf425372f490ab6cf36bd1bc4660650f288f76c"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-34/eeg/sub-34_task-FlankerNEAR_eeg.set",
+      "bytes": 2527256,
+      "checksum": "sha256:ff8a65d590d3680f491660e59433a1332c59e8ae5d52f490c562b30b780c67d5",
+      "git_blob_sha1": "96c8169627a3dc5c628d09470895e9f8b33cb94b",
+      "git_annex_pointer": "../../.git/annex/objects/Vz/56/SHA256E-s2527256--ff8a65d590d3680f491660e59433a1332c59e8ae5d52f490c562b30b780c67d5.set/SHA256E-s2527256--ff8a65d590d3680f491660e59433a1332c59e8ae5d52f490c562b30b780c67d5.set",
+      "sha256": "ff8a65d590d3680f491660e59433a1332c59e8ae5d52f490c562b30b780c67d5"
+    },
+    {
+      "name": "sub-34/eeg/sub-34_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-34/eeg/sub-34_task-FlankerNEAR_events.tsv",
+      "bytes": 24433,
+      "checksum": "sha256:485bdc817604cd61cef0a1507f75107b47258bcff3101293d580b46341189bf2",
+      "sha256": "485bdc817604cd61cef0a1507f75107b47258bcff3101293d580b46341189bf2",
+      "git_blob_sha1": "66a921751e0516b69abb11c437c4bbbbb46df877"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-35/eeg/sub-35_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-35/eeg/sub-35_task-FlankerNEAR_eeg.fdt",
+      "bytes": 56721408,
+      "checksum": "sha256:f7998211f3773cab1960122038fdd8f296fbf9b6a7e957bca392a5c96090a792",
+      "git_blob_sha1": "af5554c6daabebdfbbc84dcfc135926e22144628",
+      "git_annex_pointer": "../../.git/annex/objects/vp/WK/SHA256E-s56721408--f7998211f3773cab1960122038fdd8f296fbf9b6a7e957bca392a5c96090a792.fdt/SHA256E-s56721408--f7998211f3773cab1960122038fdd8f296fbf9b6a7e957bca392a5c96090a792.fdt",
+      "sha256": "f7998211f3773cab1960122038fdd8f296fbf9b6a7e957bca392a5c96090a792"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-35/eeg/sub-35_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:bd657570889a5582094f4e266de6a75a787b6a1831b9ca5bc50401f2546482bf",
+      "sha256": "bd657570889a5582094f4e266de6a75a787b6a1831b9ca5bc50401f2546482bf",
+      "git_blob_sha1": "4dd1fa2955946386dc67636285f26ba1a3439b18"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-35/eeg/sub-35_task-FlankerNEAR_eeg.set",
+      "bytes": 2433416,
+      "checksum": "sha256:930d69b30bfd95648ab166a3dba0c646e060982047bdf252dda2790ed9a566c6",
+      "git_blob_sha1": "63c671a905b05f56763cd970cfbbbcb6dc841ec6",
+      "git_annex_pointer": "../../.git/annex/objects/JQ/Z9/SHA256E-s2433416--930d69b30bfd95648ab166a3dba0c646e060982047bdf252dda2790ed9a566c6.set/SHA256E-s2433416--930d69b30bfd95648ab166a3dba0c646e060982047bdf252dda2790ed9a566c6.set",
+      "sha256": "930d69b30bfd95648ab166a3dba0c646e060982047bdf252dda2790ed9a566c6"
+    },
+    {
+      "name": "sub-35/eeg/sub-35_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-35/eeg/sub-35_task-FlankerNEAR_events.tsv",
+      "bytes": 24410,
+      "checksum": "sha256:e6e4e6d14d0f1c514c52eea25c110532cecd92a1e91e7650867dd8b54978f2dc",
+      "sha256": "e6e4e6d14d0f1c514c52eea25c110532cecd92a1e91e7650867dd8b54978f2dc",
+      "git_blob_sha1": "40e7f5576fc1d261240c99c38fc61c4132ba32f6"
+    },
+    {
+      "name": "sub-36/eeg/sub-36_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-36/eeg/sub-36_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-36/eeg/sub-36_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-36/eeg/sub-36_task-FlankerNEAR_eeg.fdt",
+      "bytes": 57999360,
+      "checksum": "sha256:fbc26f4aa47dd5a3b97f719aae7f8670c047bad19e55ef71d749496efa3c85bd",
+      "git_blob_sha1": "6a7f0b954389184fbb82af24ef93439983548e53",
+      "git_annex_pointer": "../../.git/annex/objects/wg/61/SHA256E-s57999360--fbc26f4aa47dd5a3b97f719aae7f8670c047bad19e55ef71d749496efa3c85bd.fdt/SHA256E-s57999360--fbc26f4aa47dd5a3b97f719aae7f8670c047bad19e55ef71d749496efa3c85bd.fdt",
+      "sha256": "fbc26f4aa47dd5a3b97f719aae7f8670c047bad19e55ef71d749496efa3c85bd"
+    },
+    {
+      "name": "sub-36/eeg/sub-36_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-36/eeg/sub-36_task-FlankerNEAR_eeg.json",
+      "bytes": 912,
+      "checksum": "sha256:1bdce3131da575cc9d3072655c45b19399cbad48cfbd8196521ca31ee460650b",
+      "sha256": "1bdce3131da575cc9d3072655c45b19399cbad48cfbd8196521ca31ee460650b",
+      "git_blob_sha1": "2dff3692059083b4fcceaee0eff0964554745b59"
+    },
+    {
+      "name": "sub-36/eeg/sub-36_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-36/eeg/sub-36_task-FlankerNEAR_eeg.set",
+      "bytes": 2474552,
+      "checksum": "sha256:5220c5e4bbb9767abde5f658bf90be8897112a0573ca5388080044a18e6b35ef",
+      "git_blob_sha1": "85cc2ad12aacda942eaa4cd05569c6d45a1d6388",
+      "git_annex_pointer": "../../.git/annex/objects/5X/0f/SHA256E-s2474552--5220c5e4bbb9767abde5f658bf90be8897112a0573ca5388080044a18e6b35ef.set/SHA256E-s2474552--5220c5e4bbb9767abde5f658bf90be8897112a0573ca5388080044a18e6b35ef.set",
+      "sha256": "5220c5e4bbb9767abde5f658bf90be8897112a0573ca5388080044a18e6b35ef"
+    },
+    {
+      "name": "sub-36/eeg/sub-36_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-36/eeg/sub-36_task-FlankerNEAR_events.tsv",
+      "bytes": 24425,
+      "checksum": "sha256:f3cc042281ac486c2b6cf2047da678d9679710554587708daef91649c83afd5d",
+      "sha256": "f3cc042281ac486c2b6cf2047da678d9679710554587708daef91649c83afd5d",
+      "git_blob_sha1": "81d5e6b53678318b9d9000e8cff91466bd5cab23"
+    },
+    {
+      "name": "sub-37/eeg/sub-37_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-37/eeg/sub-37_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-37/eeg/sub-37_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-37/eeg/sub-37_task-FlankerNEAR_eeg.fdt",
+      "bytes": 57278464,
+      "checksum": "sha256:a03161b1952144d4b8d3d36d160895697361014bdb38f30b718639d8afa17c1a",
+      "git_blob_sha1": "8a4784ea7cef5091bac11f8fae614c87b308edbe",
+      "git_annex_pointer": "../../.git/annex/objects/gM/8m/SHA256E-s57278464--a03161b1952144d4b8d3d36d160895697361014bdb38f30b718639d8afa17c1a.fdt/SHA256E-s57278464--a03161b1952144d4b8d3d36d160895697361014bdb38f30b718639d8afa17c1a.fdt",
+      "sha256": "a03161b1952144d4b8d3d36d160895697361014bdb38f30b718639d8afa17c1a"
+    },
+    {
+      "name": "sub-37/eeg/sub-37_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-37/eeg/sub-37_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:be0b790a81f6f421a0d84436bfd487555126584036ef71f02a4b61d6f0886eaa",
+      "sha256": "be0b790a81f6f421a0d84436bfd487555126584036ef71f02a4b61d6f0886eaa",
+      "git_blob_sha1": "fd96df6cb38f8d51e25ed6f702e5c8a14ee7ae58"
+    },
+    {
+      "name": "sub-37/eeg/sub-37_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-37/eeg/sub-37_task-FlankerNEAR_eeg.set",
+      "bytes": 2451376,
+      "checksum": "sha256:205c71e1192f03702a4bfc01a1dc7aba62af767a4183fcfa0e11ea70d7ce9b05",
+      "git_blob_sha1": "1ce89e07b634c1d5f80a43555eae6cdb06a4aa89",
+      "git_annex_pointer": "../../.git/annex/objects/Zx/Z9/SHA256E-s2451376--205c71e1192f03702a4bfc01a1dc7aba62af767a4183fcfa0e11ea70d7ce9b05.set/SHA256E-s2451376--205c71e1192f03702a4bfc01a1dc7aba62af767a4183fcfa0e11ea70d7ce9b05.set",
+      "sha256": "205c71e1192f03702a4bfc01a1dc7aba62af767a4183fcfa0e11ea70d7ce9b05"
+    },
+    {
+      "name": "sub-37/eeg/sub-37_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-37/eeg/sub-37_task-FlankerNEAR_events.tsv",
+      "bytes": 24352,
+      "checksum": "sha256:e840eda09f1236fe3f7ad38a066cfdf119063038c12daff571f2ca7aa4211d13",
+      "sha256": "e840eda09f1236fe3f7ad38a066cfdf119063038c12daff571f2ca7aa4211d13",
+      "git_blob_sha1": "b26a7db9ef161bb015cca098e615051b2c727d02"
+    },
+    {
+      "name": "sub-38/eeg/sub-38_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-38/eeg/sub-38_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-38/eeg/sub-38_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-38/eeg/sub-38_task-FlankerNEAR_eeg.fdt",
+      "bytes": 57868288,
+      "checksum": "sha256:0543843232f852fb905cd7f9cd2f9ba478f743a68d70deb6c5d9901b164d3662",
+      "git_blob_sha1": "0ddbeada359aaaff0b4a48dd65d02e10dce6de8b",
+      "git_annex_pointer": "../../.git/annex/objects/GP/VP/SHA256E-s57868288--0543843232f852fb905cd7f9cd2f9ba478f743a68d70deb6c5d9901b164d3662.fdt/SHA256E-s57868288--0543843232f852fb905cd7f9cd2f9ba478f743a68d70deb6c5d9901b164d3662.fdt",
+      "sha256": "0543843232f852fb905cd7f9cd2f9ba478f743a68d70deb6c5d9901b164d3662"
+    },
+    {
+      "name": "sub-38/eeg/sub-38_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-38/eeg/sub-38_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:43de1e5c4e8234fe08e1264f1d80d18d6ffab5967ca5e069e276029986d4ed69",
+      "sha256": "43de1e5c4e8234fe08e1264f1d80d18d6ffab5967ca5e069e276029986d4ed69",
+      "git_blob_sha1": "6fc1619ab3bd65389e4c1d1d5a787505092d1957"
+    },
+    {
+      "name": "sub-38/eeg/sub-38_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-38/eeg/sub-38_task-FlankerNEAR_eeg.set",
+      "bytes": 2469832,
+      "checksum": "sha256:a5c289602acfdc46e1f8072a34c25bc5ecfe86c8510f08a1086e35f22e676718",
+      "git_blob_sha1": "2deae5d1f2eeff357314adadcdd473da0a34d54d",
+      "git_annex_pointer": "../../.git/annex/objects/zK/98/SHA256E-s2469832--a5c289602acfdc46e1f8072a34c25bc5ecfe86c8510f08a1086e35f22e676718.set/SHA256E-s2469832--a5c289602acfdc46e1f8072a34c25bc5ecfe86c8510f08a1086e35f22e676718.set",
+      "sha256": "a5c289602acfdc46e1f8072a34c25bc5ecfe86c8510f08a1086e35f22e676718"
+    },
+    {
+      "name": "sub-38/eeg/sub-38_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-38/eeg/sub-38_task-FlankerNEAR_events.tsv",
+      "bytes": 24418,
+      "checksum": "sha256:d0f1b3265c462a4ab0b3705c49b562b0f0000ed0cfa8d71645169766cf3e743c",
+      "sha256": "d0f1b3265c462a4ab0b3705c49b562b0f0000ed0cfa8d71645169766cf3e743c",
+      "git_blob_sha1": "e618d8a119f4a76b7525ed20084cab76c087d755"
+    },
+    {
+      "name": "sub-39/eeg/sub-39_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-39/eeg/sub-39_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-39/eeg/sub-39_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-39/eeg/sub-39_task-FlankerNEAR_eeg.fdt",
+      "bytes": 58359808,
+      "checksum": "sha256:fa5c1ee7a85e5f17a2ba282f3090c01d849e05630c7690e826b2357fd1b17c3a",
+      "git_blob_sha1": "5d29c497405a95feae86fcf1ff3bb5c8c9a039da",
+      "git_annex_pointer": "../../.git/annex/objects/3q/gM/SHA256E-s58359808--fa5c1ee7a85e5f17a2ba282f3090c01d849e05630c7690e826b2357fd1b17c3a.fdt/SHA256E-s58359808--fa5c1ee7a85e5f17a2ba282f3090c01d849e05630c7690e826b2357fd1b17c3a.fdt",
+      "sha256": "fa5c1ee7a85e5f17a2ba282f3090c01d849e05630c7690e826b2357fd1b17c3a"
+    },
+    {
+      "name": "sub-39/eeg/sub-39_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-39/eeg/sub-39_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:3fd5d4c4daf499500f8f5fdfe5cc712cbcb29fd427a33ed70d1d186d291d1e4b",
+      "sha256": "3fd5d4c4daf499500f8f5fdfe5cc712cbcb29fd427a33ed70d1d186d291d1e4b",
+      "git_blob_sha1": "f6549043ff5fd11594b75e0d41718e6f189cd752"
+    },
+    {
+      "name": "sub-39/eeg/sub-39_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-39/eeg/sub-39_task-FlankerNEAR_eeg.set",
+      "bytes": 2485248,
+      "checksum": "sha256:08241a4e45f588082e539df262202573eac5c90eefb59399ec3b5f5f22432de4",
+      "git_blob_sha1": "46d730138297d920cd8d6f259de4bd55c7b27152",
+      "git_annex_pointer": "../../.git/annex/objects/3Q/9w/SHA256E-s2485248--08241a4e45f588082e539df262202573eac5c90eefb59399ec3b5f5f22432de4.set/SHA256E-s2485248--08241a4e45f588082e539df262202573eac5c90eefb59399ec3b5f5f22432de4.set",
+      "sha256": "08241a4e45f588082e539df262202573eac5c90eefb59399ec3b5f5f22432de4"
+    },
+    {
+      "name": "sub-39/eeg/sub-39_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-39/eeg/sub-39_task-FlankerNEAR_events.tsv",
+      "bytes": 24387,
+      "checksum": "sha256:c86c9455f62abc383b97c6a47f6db44ed7214862d3c0b865db156e6f5298a248",
+      "sha256": "c86c9455f62abc383b97c6a47f6db44ed7214862d3c0b865db156e6f5298a248",
+      "git_blob_sha1": "98f2ddb2bb40915ca56393cd767ca9431a02d13e"
+    },
+    {
+      "name": "sub-4/eeg/sub-4_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-4/eeg/sub-4_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-4/eeg/sub-4_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-4/eeg/sub-4_task-FlankerNEAR_eeg.fdt",
+      "bytes": 59604992,
+      "checksum": "sha256:489d9c5ded483fc6c839f660f6a70b99db97bed89070eead9b2bdeb474cb76bb",
+      "git_blob_sha1": "1c927f6997a3d7c6a7e18b27055a96c6c7383dc2",
+      "git_annex_pointer": "../../.git/annex/objects/j7/WW/SHA256E-s59604992--489d9c5ded483fc6c839f660f6a70b99db97bed89070eead9b2bdeb474cb76bb.fdt/SHA256E-s59604992--489d9c5ded483fc6c839f660f6a70b99db97bed89070eead9b2bdeb474cb76bb.fdt",
+      "sha256": "489d9c5ded483fc6c839f660f6a70b99db97bed89070eead9b2bdeb474cb76bb"
+    },
+    {
+      "name": "sub-4/eeg/sub-4_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-4/eeg/sub-4_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:341f7d74313fba3ec2fe625e4ee5d5c1114f7852f6c15b64a9ebffb961bf8474",
+      "sha256": "341f7d74313fba3ec2fe625e4ee5d5c1114f7852f6c15b64a9ebffb961bf8474",
+      "git_blob_sha1": "7273f0a262b46d07b3b5f97904f2c53d90bb9bad"
+    },
+    {
+      "name": "sub-4/eeg/sub-4_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-4/eeg/sub-4_task-FlankerNEAR_eeg.set",
+      "bytes": 2523640,
+      "checksum": "sha256:15e327a7e7ea2aad3d4428b5e917699da32bff814fca137d9344af3074c5df2a",
+      "git_blob_sha1": "e7dd12b59811fdb45a3c9b01857697586d4dd107",
+      "git_annex_pointer": "../../.git/annex/objects/9m/zf/SHA256E-s2523640--15e327a7e7ea2aad3d4428b5e917699da32bff814fca137d9344af3074c5df2a.set/SHA256E-s2523640--15e327a7e7ea2aad3d4428b5e917699da32bff814fca137d9344af3074c5df2a.set",
+      "sha256": "15e327a7e7ea2aad3d4428b5e917699da32bff814fca137d9344af3074c5df2a"
+    },
+    {
+      "name": "sub-4/eeg/sub-4_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-4/eeg/sub-4_task-FlankerNEAR_events.tsv",
+      "bytes": 24384,
+      "checksum": "sha256:062681071f54303f5ff9fa712cfbb023673b412e79e3e5d707a68bd22a6bab5b",
+      "sha256": "062681071f54303f5ff9fa712cfbb023673b412e79e3e5d707a68bd22a6bab5b",
+      "git_blob_sha1": "f6ab9b6437d220ba192d74220db53a5e66af040b"
+    },
+    {
+      "name": "sub-40/eeg/sub-40_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-40/eeg/sub-40_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-40/eeg/sub-40_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-40/eeg/sub-40_task-FlankerNEAR_eeg.fdt",
+      "bytes": 58163200,
+      "checksum": "sha256:942a73517f04bfe844141c6fb6ca65ad620956e9a00919122cf1c37a03ca6165",
+      "git_blob_sha1": "907509c719db1c6ebca51b137318373e1e287f55",
+      "git_annex_pointer": "../../.git/annex/objects/7G/1W/SHA256E-s58163200--942a73517f04bfe844141c6fb6ca65ad620956e9a00919122cf1c37a03ca6165.fdt/SHA256E-s58163200--942a73517f04bfe844141c6fb6ca65ad620956e9a00919122cf1c37a03ca6165.fdt",
+      "sha256": "942a73517f04bfe844141c6fb6ca65ad620956e9a00919122cf1c37a03ca6165"
+    },
+    {
+      "name": "sub-40/eeg/sub-40_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-40/eeg/sub-40_task-FlankerNEAR_eeg.json",
+      "bytes": 911,
+      "checksum": "sha256:2c2c96cd77481c6bf7eee1de44c48cb90e756781f6d8c2f46f10a15db2a268e1",
+      "sha256": "2c2c96cd77481c6bf7eee1de44c48cb90e756781f6d8c2f46f10a15db2a268e1",
+      "git_blob_sha1": "5386e03cfc297e1b35bc43cd2cb6c5d4f638a0ee"
+    },
+    {
+      "name": "sub-40/eeg/sub-40_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-40/eeg/sub-40_task-FlankerNEAR_eeg.set",
+      "bytes": 2479016,
+      "checksum": "sha256:b425b4dde0967def409b02348bbfe3be810319d0279eb5c0b39bdc5ce573ddc3",
+      "git_blob_sha1": "2cca3724be0be95caaf622eb686bf0fd59f9c7f7",
+      "git_annex_pointer": "../../.git/annex/objects/GX/zw/SHA256E-s2479016--b425b4dde0967def409b02348bbfe3be810319d0279eb5c0b39bdc5ce573ddc3.set/SHA256E-s2479016--b425b4dde0967def409b02348bbfe3be810319d0279eb5c0b39bdc5ce573ddc3.set",
+      "sha256": "b425b4dde0967def409b02348bbfe3be810319d0279eb5c0b39bdc5ce573ddc3"
+    },
+    {
+      "name": "sub-40/eeg/sub-40_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-40/eeg/sub-40_task-FlankerNEAR_events.tsv",
+      "bytes": 24399,
+      "checksum": "sha256:085371e86aa85c19103abe6b8177389d1ada83bdaaa79bf3d31b2285e4cce25a",
+      "sha256": "085371e86aa85c19103abe6b8177389d1ada83bdaaa79bf3d31b2285e4cce25a",
+      "git_blob_sha1": "1cc01f42d18a36b75339067e6d8fcc76cfc1827c"
+    },
+    {
+      "name": "sub-41/eeg/sub-41_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-41/eeg/sub-41_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-41/eeg/sub-41_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-41/eeg/sub-41_task-FlankerNEAR_eeg.fdt",
+      "bytes": 63700992,
+      "checksum": "sha256:256c35ee0e050d5b9bb9522e0289101bc4f8317f47bb8fe33d5b94dd7f17e33d",
+      "git_blob_sha1": "10a84c9f61e4a1b2daa653e1428b8b44ba44fa73",
+      "git_annex_pointer": "../../.git/annex/objects/Qj/Fq/SHA256E-s63700992--256c35ee0e050d5b9bb9522e0289101bc4f8317f47bb8fe33d5b94dd7f17e33d.fdt/SHA256E-s63700992--256c35ee0e050d5b9bb9522e0289101bc4f8317f47bb8fe33d5b94dd7f17e33d.fdt",
+      "sha256": "256c35ee0e050d5b9bb9522e0289101bc4f8317f47bb8fe33d5b94dd7f17e33d"
+    },
+    {
+      "name": "sub-41/eeg/sub-41_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-41/eeg/sub-41_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:35ae788613e49b77ec94641e85667dbffbb32e7924063192a4be91206afee898",
+      "sha256": "35ae788613e49b77ec94641e85667dbffbb32e7924063192a4be91206afee898",
+      "git_blob_sha1": "c1545566b8a2447680363de1acd3952426f74152"
+    },
+    {
+      "name": "sub-41/eeg/sub-41_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-41/eeg/sub-41_task-FlankerNEAR_eeg.set",
+      "bytes": 2653392,
+      "checksum": "sha256:5e759b084c21f4f8fc33ba4d9e871d65106a1c877b7f8e23b13aabab85b74360",
+      "git_blob_sha1": "abab661109adff5a5289bb7299febe5a04a38643",
+      "git_annex_pointer": "../../.git/annex/objects/VV/Gk/SHA256E-s2653392--5e759b084c21f4f8fc33ba4d9e871d65106a1c877b7f8e23b13aabab85b74360.set/SHA256E-s2653392--5e759b084c21f4f8fc33ba4d9e871d65106a1c877b7f8e23b13aabab85b74360.set",
+      "sha256": "5e759b084c21f4f8fc33ba4d9e871d65106a1c877b7f8e23b13aabab85b74360"
+    },
+    {
+      "name": "sub-41/eeg/sub-41_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-41/eeg/sub-41_task-FlankerNEAR_events.tsv",
+      "bytes": 24449,
+      "checksum": "sha256:f0e8fab3a29357d2148acb333f3c1a84823bed4eea9c4fa8a2f81bea09328629",
+      "sha256": "f0e8fab3a29357d2148acb333f3c1a84823bed4eea9c4fa8a2f81bea09328629",
+      "git_blob_sha1": "b1592f038a112d268d7aa18a284ec111cc2598b0"
+    },
+    {
+      "name": "sub-42/eeg/sub-42_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-42/eeg/sub-42_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-42/eeg/sub-42_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-42/eeg/sub-42_task-FlankerNEAR_eeg.fdt",
+      "bytes": 59932672,
+      "checksum": "sha256:dc9f746e1085b12ade8f869f1b8cd8c81ccf7f80cc30dbd539b9791b9ac434a9",
+      "git_blob_sha1": "5f8eb36f69b52166d6bce7f834fbad3fa7362818",
+      "git_annex_pointer": "../../.git/annex/objects/6X/fm/SHA256E-s59932672--dc9f746e1085b12ade8f869f1b8cd8c81ccf7f80cc30dbd539b9791b9ac434a9.fdt/SHA256E-s59932672--dc9f746e1085b12ade8f869f1b8cd8c81ccf7f80cc30dbd539b9791b9ac434a9.fdt",
+      "sha256": "dc9f746e1085b12ade8f869f1b8cd8c81ccf7f80cc30dbd539b9791b9ac434a9"
+    },
+    {
+      "name": "sub-42/eeg/sub-42_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-42/eeg/sub-42_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:83f7be4c6bbdb6003fcaf5e37ee5f0a87b01d1203fd27362688610ee001c1e09",
+      "sha256": "83f7be4c6bbdb6003fcaf5e37ee5f0a87b01d1203fd27362688610ee001c1e09",
+      "git_blob_sha1": "c6f4aa8b7340c066a9fec42e402e54985a287546"
+    },
+    {
+      "name": "sub-42/eeg/sub-42_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-42/eeg/sub-42_task-FlankerNEAR_eeg.set",
+      "bytes": 2533448,
+      "checksum": "sha256:d4854b71fe8d0f024112f7ab6ced1136234c3da606e1bd0e6d6dafa54cfa2381",
+      "git_blob_sha1": "4c11263a011d7060cbfe119aacd468b470c24dd4",
+      "git_annex_pointer": "../../.git/annex/objects/0V/F8/SHA256E-s2533448--d4854b71fe8d0f024112f7ab6ced1136234c3da606e1bd0e6d6dafa54cfa2381.set/SHA256E-s2533448--d4854b71fe8d0f024112f7ab6ced1136234c3da606e1bd0e6d6dafa54cfa2381.set",
+      "sha256": "d4854b71fe8d0f024112f7ab6ced1136234c3da606e1bd0e6d6dafa54cfa2381"
+    },
+    {
+      "name": "sub-42/eeg/sub-42_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-42/eeg/sub-42_task-FlankerNEAR_events.tsv",
+      "bytes": 24378,
+      "checksum": "sha256:41d34513cd0e1ebddb0ecf8a60c9710f2491a967d70bb5f5aeee450a3dd66fa9",
+      "sha256": "41d34513cd0e1ebddb0ecf8a60c9710f2491a967d70bb5f5aeee450a3dd66fa9",
+      "git_blob_sha1": "a49be97576050e2bc3d6edc005641d113d1a51ee"
+    },
+    {
+      "name": "sub-43/eeg/sub-43_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-43/eeg/sub-43_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-43/eeg/sub-43_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-43/eeg/sub-43_task-FlankerNEAR_eeg.fdt",
+      "bytes": 58621952,
+      "checksum": "sha256:b80e7a1dbf7f10db83ec14f1e2167243ae4e16837ba80298ab2a53853d4860e4",
+      "git_blob_sha1": "c0332ebe9efdd4171339495a8a0f337063ad87dd",
+      "git_annex_pointer": "../../.git/annex/objects/75/Jp/SHA256E-s58621952--b80e7a1dbf7f10db83ec14f1e2167243ae4e16837ba80298ab2a53853d4860e4.fdt/SHA256E-s58621952--b80e7a1dbf7f10db83ec14f1e2167243ae4e16837ba80298ab2a53853d4860e4.fdt",
+      "sha256": "b80e7a1dbf7f10db83ec14f1e2167243ae4e16837ba80298ab2a53853d4860e4"
+    },
+    {
+      "name": "sub-43/eeg/sub-43_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-43/eeg/sub-43_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:96681e47904a885394438d156ac1ab9e1a76fd18226ad18bdf7627f7f9130966",
+      "sha256": "96681e47904a885394438d156ac1ab9e1a76fd18226ad18bdf7627f7f9130966",
+      "git_blob_sha1": "d93fd4e9bfb09b98a43771141c38cdc99278eb37"
+    },
+    {
+      "name": "sub-43/eeg/sub-43_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-43/eeg/sub-43_task-FlankerNEAR_eeg.set",
+      "bytes": 2493296,
+      "checksum": "sha256:2aebf14c0514f7570d16366ed33f395da25c38364806011090c0cb50417fd922",
+      "git_blob_sha1": "fdda3c393b9be61b0dea368fa912529402924813",
+      "git_annex_pointer": "../../.git/annex/objects/jK/fk/SHA256E-s2493296--2aebf14c0514f7570d16366ed33f395da25c38364806011090c0cb50417fd922.set/SHA256E-s2493296--2aebf14c0514f7570d16366ed33f395da25c38364806011090c0cb50417fd922.set",
+      "sha256": "2aebf14c0514f7570d16366ed33f395da25c38364806011090c0cb50417fd922"
+    },
+    {
+      "name": "sub-43/eeg/sub-43_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-43/eeg/sub-43_task-FlankerNEAR_events.tsv",
+      "bytes": 24408,
+      "checksum": "sha256:344b4827fccceb429358deddf614baa143f2c25c5ef4d9e43fe7f1672b22aa04",
+      "sha256": "344b4827fccceb429358deddf614baa143f2c25c5ef4d9e43fe7f1672b22aa04",
+      "git_blob_sha1": "8a43de44b30c12cc2f53543c15808798e400cf74"
+    },
+    {
+      "name": "sub-44/eeg/sub-44_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-44/eeg/sub-44_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-44/eeg/sub-44_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-44/eeg/sub-44_task-FlankerNEAR_eeg.fdt",
+      "bytes": 57016320,
+      "checksum": "sha256:eff5463f7d53e64dee8bf93a3bf7f00332e1497395b1bf6512da6c09331bf856",
+      "git_blob_sha1": "693ec8ef1e6e2acc72b21a84487421dd5f5c10d0",
+      "git_annex_pointer": "../../.git/annex/objects/5M/51/SHA256E-s57016320--eff5463f7d53e64dee8bf93a3bf7f00332e1497395b1bf6512da6c09331bf856.fdt/SHA256E-s57016320--eff5463f7d53e64dee8bf93a3bf7f00332e1497395b1bf6512da6c09331bf856.fdt",
+      "sha256": "eff5463f7d53e64dee8bf93a3bf7f00332e1497395b1bf6512da6c09331bf856"
+    },
+    {
+      "name": "sub-44/eeg/sub-44_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-44/eeg/sub-44_task-FlankerNEAR_eeg.json",
+      "bytes": 912,
+      "checksum": "sha256:d43829e20ee7c8af49c85495db61e4b5fa55568dd3bd2ef2d689d5c3b5ecc61a",
+      "sha256": "d43829e20ee7c8af49c85495db61e4b5fa55568dd3bd2ef2d689d5c3b5ecc61a",
+      "git_blob_sha1": "7f24a814199834e40290158bbb5251dce84a3c38"
+    },
+    {
+      "name": "sub-44/eeg/sub-44_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-44/eeg/sub-44_task-FlankerNEAR_eeg.set",
+      "bytes": 2443384,
+      "checksum": "sha256:85a1457acc3d17a3424d8cb8a7ca55dcdcefd177045c7f792374e456452a4663",
+      "git_blob_sha1": "e651d0d457c4b29aaecd97fb9c0520a703d6d751",
+      "git_annex_pointer": "../../.git/annex/objects/9w/59/SHA256E-s2443384--85a1457acc3d17a3424d8cb8a7ca55dcdcefd177045c7f792374e456452a4663.set/SHA256E-s2443384--85a1457acc3d17a3424d8cb8a7ca55dcdcefd177045c7f792374e456452a4663.set",
+      "sha256": "85a1457acc3d17a3424d8cb8a7ca55dcdcefd177045c7f792374e456452a4663"
+    },
+    {
+      "name": "sub-44/eeg/sub-44_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-44/eeg/sub-44_task-FlankerNEAR_events.tsv",
+      "bytes": 24366,
+      "checksum": "sha256:75d45a51fc542fbe0dd9935aa8f243ed1d2c25c7870134bf02054cd11bdfa7dd",
+      "sha256": "75d45a51fc542fbe0dd9935aa8f243ed1d2c25c7870134bf02054cd11bdfa7dd",
+      "git_blob_sha1": "4d1f59f68c3e315b5821ab46c6f491dc44238953"
+    },
+    {
+      "name": "sub-45/eeg/sub-45_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-45/eeg/sub-45_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-45/eeg/sub-45_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-45/eeg/sub-45_task-FlankerNEAR_eeg.fdt",
+      "bytes": 58916864,
+      "checksum": "sha256:af6600984dcba190031bb8cd5607d253689665c2d95d1c85a717f055928374c8",
+      "git_blob_sha1": "4030bbdb6f31cc9c462a615de7c640c9394cddf4",
+      "git_annex_pointer": "../../.git/annex/objects/f4/V8/SHA256E-s58916864--af6600984dcba190031bb8cd5607d253689665c2d95d1c85a717f055928374c8.fdt/SHA256E-s58916864--af6600984dcba190031bb8cd5607d253689665c2d95d1c85a717f055928374c8.fdt",
+      "sha256": "af6600984dcba190031bb8cd5607d253689665c2d95d1c85a717f055928374c8"
+    },
+    {
+      "name": "sub-45/eeg/sub-45_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-45/eeg/sub-45_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:ca0ee4d2252515bac2fbaed76e3c84711ac3d3bc78e77c0852c2d775115e6804",
+      "sha256": "ca0ee4d2252515bac2fbaed76e3c84711ac3d3bc78e77c0852c2d775115e6804",
+      "git_blob_sha1": "9b6cfe7a9101e852a5c71736644bef88531c5314"
+    },
+    {
+      "name": "sub-45/eeg/sub-45_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-45/eeg/sub-45_task-FlankerNEAR_eeg.set",
+      "bytes": 2502704,
+      "checksum": "sha256:c874dfda2689b33b2a182eed9c9153930b40c1deeacf5ff308d76f9cb0055e4d",
+      "git_blob_sha1": "9815e665c5847979be639787e807f1f7e741a71b",
+      "git_annex_pointer": "../../.git/annex/objects/kK/JW/SHA256E-s2502704--c874dfda2689b33b2a182eed9c9153930b40c1deeacf5ff308d76f9cb0055e4d.set/SHA256E-s2502704--c874dfda2689b33b2a182eed9c9153930b40c1deeacf5ff308d76f9cb0055e4d.set",
+      "sha256": "c874dfda2689b33b2a182eed9c9153930b40c1deeacf5ff308d76f9cb0055e4d"
+    },
+    {
+      "name": "sub-45/eeg/sub-45_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-45/eeg/sub-45_task-FlankerNEAR_events.tsv",
+      "bytes": 24374,
+      "checksum": "sha256:f17d23a09ffda65ebc5beadff41bfdf161a6420526cfc4d41ed69f44cb78c1dc",
+      "sha256": "f17d23a09ffda65ebc5beadff41bfdf161a6420526cfc4d41ed69f44cb78c1dc",
+      "git_blob_sha1": "474abdec85b1a577e7652e31235ac8d023e8685f"
+    },
+    {
+      "name": "sub-46/eeg/sub-46_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-46/eeg/sub-46_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-46/eeg/sub-46_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-46/eeg/sub-46_task-FlankerNEAR_eeg.fdt",
+      "bytes": 60948480,
+      "checksum": "sha256:6c0a90c68ee9283d82317dd0856997761efe2e03bb1e172ee9cda953d1160bd3",
+      "git_blob_sha1": "9df0896093ab18a4f7eac385a7d789c735236077",
+      "git_annex_pointer": "../../.git/annex/objects/wM/0k/SHA256E-s60948480--6c0a90c68ee9283d82317dd0856997761efe2e03bb1e172ee9cda953d1160bd3.fdt/SHA256E-s60948480--6c0a90c68ee9283d82317dd0856997761efe2e03bb1e172ee9cda953d1160bd3.fdt",
+      "sha256": "6c0a90c68ee9283d82317dd0856997761efe2e03bb1e172ee9cda953d1160bd3"
+    },
+    {
+      "name": "sub-46/eeg/sub-46_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-46/eeg/sub-46_task-FlankerNEAR_eeg.json",
+      "bytes": 923,
+      "checksum": "sha256:da63db1ac481136f3a6a0bf207e0d36183f362e532093b1ac462da4c9a0cba43",
+      "sha256": "da63db1ac481136f3a6a0bf207e0d36183f362e532093b1ac462da4c9a0cba43",
+      "git_blob_sha1": "60b983f71e03115a6963ea279e420bc778df87cf"
+    },
+    {
+      "name": "sub-46/eeg/sub-46_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-46/eeg/sub-46_task-FlankerNEAR_eeg.set",
+      "bytes": 2566368,
+      "checksum": "sha256:818dd6806ef04bf5275ceda728526a23732064657f0829aa988cdb732bf9a48d",
+      "git_blob_sha1": "cbb201a26fcab2eb2bbcc9f3580395b29e6601b1",
+      "git_annex_pointer": "../../.git/annex/objects/m6/wk/SHA256E-s2566368--818dd6806ef04bf5275ceda728526a23732064657f0829aa988cdb732bf9a48d.set/SHA256E-s2566368--818dd6806ef04bf5275ceda728526a23732064657f0829aa988cdb732bf9a48d.set",
+      "sha256": "818dd6806ef04bf5275ceda728526a23732064657f0829aa988cdb732bf9a48d"
+    },
+    {
+      "name": "sub-46/eeg/sub-46_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-46/eeg/sub-46_task-FlankerNEAR_events.tsv",
+      "bytes": 24375,
+      "checksum": "sha256:4951f3539bfc6f8e67b147bd3e659edfaf0e142799eb8a0fb03956e16ed40379",
+      "sha256": "4951f3539bfc6f8e67b147bd3e659edfaf0e142799eb8a0fb03956e16ed40379",
+      "git_blob_sha1": "ba721a79a78d0ee00b3b6cdca789f58eae5ee155"
+    },
+    {
+      "name": "sub-47/eeg/sub-47_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-47/eeg/sub-47_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-47/eeg/sub-47_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-47/eeg/sub-47_task-FlankerNEAR_eeg.fdt",
+      "bytes": 62357504,
+      "checksum": "sha256:f67fb5bbefcced5417eb1ebf24d963650fc7e31202b61f9fd560d99108aa4eb5",
+      "git_blob_sha1": "e7d78e93c8bdb0410c0daaae03ad0901006729e9",
+      "git_annex_pointer": "../../.git/annex/objects/Z5/w0/SHA256E-s62357504--f67fb5bbefcced5417eb1ebf24d963650fc7e31202b61f9fd560d99108aa4eb5.fdt/SHA256E-s62357504--f67fb5bbefcced5417eb1ebf24d963650fc7e31202b61f9fd560d99108aa4eb5.fdt",
+      "sha256": "f67fb5bbefcced5417eb1ebf24d963650fc7e31202b61f9fd560d99108aa4eb5"
+    },
+    {
+      "name": "sub-47/eeg/sub-47_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-47/eeg/sub-47_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:24fd9ead92e212e43292139d5f4620d94f502e7f7a5af9a7a69f5b720199dda2",
+      "sha256": "24fd9ead92e212e43292139d5f4620d94f502e7f7a5af9a7a69f5b720199dda2",
+      "git_blob_sha1": "3e41de718931989564b892f67902d6db89dab61c"
+    },
+    {
+      "name": "sub-47/eeg/sub-47_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-47/eeg/sub-47_task-FlankerNEAR_eeg.set",
+      "bytes": 2610096,
+      "checksum": "sha256:28c6e044cc4ec02ce9eea176a927fdfed55092eb1baec1eb59e3a4e759620a87",
+      "git_blob_sha1": "396bebbbc445418b2a8a8ee83cb0fe3cf17a49e9",
+      "git_annex_pointer": "../../.git/annex/objects/K5/0w/SHA256E-s2610096--28c6e044cc4ec02ce9eea176a927fdfed55092eb1baec1eb59e3a4e759620a87.set/SHA256E-s2610096--28c6e044cc4ec02ce9eea176a927fdfed55092eb1baec1eb59e3a4e759620a87.set",
+      "sha256": "28c6e044cc4ec02ce9eea176a927fdfed55092eb1baec1eb59e3a4e759620a87"
+    },
+    {
+      "name": "sub-47/eeg/sub-47_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-47/eeg/sub-47_task-FlankerNEAR_events.tsv",
+      "bytes": 24388,
+      "checksum": "sha256:856b6c4a31a2de88c1aa4b15dd024bf9d54ad4cb53f2580a18628e3d00ea88da",
+      "sha256": "856b6c4a31a2de88c1aa4b15dd024bf9d54ad4cb53f2580a18628e3d00ea88da",
+      "git_blob_sha1": "20654d2b6992e8754cfb8ea08d7bc577eaf6468c"
+    },
+    {
+      "name": "sub-48/eeg/sub-48_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-48/eeg/sub-48_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-48/eeg/sub-48_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-48/eeg/sub-48_task-FlankerNEAR_eeg.fdt",
+      "bytes": 59342848,
+      "checksum": "sha256:a06c1f5f7545225383ea2c438578496d58788d0cb9c6409a4dae9205474faa6f",
+      "git_blob_sha1": "30f25a66017df10cf89220c72ab105719472d3ff",
+      "git_annex_pointer": "../../.git/annex/objects/KP/Kf/SHA256E-s59342848--a06c1f5f7545225383ea2c438578496d58788d0cb9c6409a4dae9205474faa6f.fdt/SHA256E-s59342848--a06c1f5f7545225383ea2c438578496d58788d0cb9c6409a4dae9205474faa6f.fdt",
+      "sha256": "a06c1f5f7545225383ea2c438578496d58788d0cb9c6409a4dae9205474faa6f"
+    },
+    {
+      "name": "sub-48/eeg/sub-48_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-48/eeg/sub-48_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:feac6a82651c7430baac58993c5a6612db011ea0d35678b1a57b92aa4b401120",
+      "sha256": "feac6a82651c7430baac58993c5a6612db011ea0d35678b1a57b92aa4b401120",
+      "git_blob_sha1": "633477bab102592dd9d1ea9710d5a4292c9413f1"
+    },
+    {
+      "name": "sub-48/eeg/sub-48_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-48/eeg/sub-48_task-FlankerNEAR_eeg.set",
+      "bytes": 2516320,
+      "checksum": "sha256:b013178aeb1e9e4694597360d29fca7437b5744916919a91b0c0cf90c046251c",
+      "git_blob_sha1": "ffd522afc2b87b33cf726fcbf1843e78e5c7f691",
+      "git_annex_pointer": "../../.git/annex/objects/p8/6K/SHA256E-s2516320--b013178aeb1e9e4694597360d29fca7437b5744916919a91b0c0cf90c046251c.set/SHA256E-s2516320--b013178aeb1e9e4694597360d29fca7437b5744916919a91b0c0cf90c046251c.set",
+      "sha256": "b013178aeb1e9e4694597360d29fca7437b5744916919a91b0c0cf90c046251c"
+    },
+    {
+      "name": "sub-48/eeg/sub-48_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-48/eeg/sub-48_task-FlankerNEAR_events.tsv",
+      "bytes": 24408,
+      "checksum": "sha256:2d379c6e6e7e0507b88fc42f71409b3fce06e5182eb31b0d86a3d04a28eae0b8",
+      "sha256": "2d379c6e6e7e0507b88fc42f71409b3fce06e5182eb31b0d86a3d04a28eae0b8",
+      "git_blob_sha1": "6f085c9a35bb455fcd3bc68af4a178c4b4721d9d"
+    },
+    {
+      "name": "sub-49/eeg/sub-49_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-49/eeg/sub-49_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-49/eeg/sub-49_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-49/eeg/sub-49_task-FlankerNEAR_eeg.fdt",
+      "bytes": 58982400,
+      "checksum": "sha256:453b344a591164cf4b2f664b155a4ca3041e60d3049c68ac652fa5b821d0a548",
+      "git_blob_sha1": "f7e8e7116cb794724a01400b90671b3e0cfc81ef",
+      "git_annex_pointer": "../../.git/annex/objects/8m/p0/SHA256E-s58982400--453b344a591164cf4b2f664b155a4ca3041e60d3049c68ac652fa5b821d0a548.fdt/SHA256E-s58982400--453b344a591164cf4b2f664b155a4ca3041e60d3049c68ac652fa5b821d0a548.fdt",
+      "sha256": "453b344a591164cf4b2f664b155a4ca3041e60d3049c68ac652fa5b821d0a548"
+    },
+    {
+      "name": "sub-49/eeg/sub-49_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-49/eeg/sub-49_task-FlankerNEAR_eeg.json",
+      "bytes": 911,
+      "checksum": "sha256:993110808fc41b16bdc4a38c61c418bbadcba36050f94cdee4c98d1ed7ea3068",
+      "sha256": "993110808fc41b16bdc4a38c61c418bbadcba36050f94cdee4c98d1ed7ea3068",
+      "git_blob_sha1": "7c5359adb87b2cf17ad5f6f9af49f731d9bc1398"
+    },
+    {
+      "name": "sub-49/eeg/sub-49_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-49/eeg/sub-49_task-FlankerNEAR_eeg.set",
+      "bytes": 2504248,
+      "checksum": "sha256:e81d7b0bf7df2bf3eb821e62d10352108a3043bd3f33d47da3fa36cce8731383",
+      "git_blob_sha1": "9a385c0ecd3bba079aabfd9152367959b1f196e0",
+      "git_annex_pointer": "../../.git/annex/objects/6V/F6/SHA256E-s2504248--e81d7b0bf7df2bf3eb821e62d10352108a3043bd3f33d47da3fa36cce8731383.set/SHA256E-s2504248--e81d7b0bf7df2bf3eb821e62d10352108a3043bd3f33d47da3fa36cce8731383.set",
+      "sha256": "e81d7b0bf7df2bf3eb821e62d10352108a3043bd3f33d47da3fa36cce8731383"
+    },
+    {
+      "name": "sub-49/eeg/sub-49_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-49/eeg/sub-49_task-FlankerNEAR_events.tsv",
+      "bytes": 24374,
+      "checksum": "sha256:93126fd1bc7892cc9444072baa066448ebe0d37762c5d0ae77946327a4a9a356",
+      "sha256": "93126fd1bc7892cc9444072baa066448ebe0d37762c5d0ae77946327a4a9a356",
+      "git_blob_sha1": "8001b0ce6c983dc6b3ca435f0548d98adc7f616a"
+    },
+    {
+      "name": "sub-5/eeg/sub-5_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-5/eeg/sub-5_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-5/eeg/sub-5_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-5/eeg/sub-5_task-FlankerNEAR_eeg.fdt",
+      "bytes": 57933824,
+      "checksum": "sha256:88d3074abdb4ac47323ea614751e7e87f0757111d5b2c0904dbf1c6deeb1a6f9",
+      "git_blob_sha1": "56e9b428b12a5d5e025456abca2bd79cbbb624d3",
+      "git_annex_pointer": "../../.git/annex/objects/07/M9/SHA256E-s57933824--88d3074abdb4ac47323ea614751e7e87f0757111d5b2c0904dbf1c6deeb1a6f9.fdt/SHA256E-s57933824--88d3074abdb4ac47323ea614751e7e87f0757111d5b2c0904dbf1c6deeb1a6f9.fdt",
+      "sha256": "88d3074abdb4ac47323ea614751e7e87f0757111d5b2c0904dbf1c6deeb1a6f9"
+    },
+    {
+      "name": "sub-5/eeg/sub-5_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-5/eeg/sub-5_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:804740f5def3ea834f02d365ad355d76a90042cfc216f593bada230a2e37a64f",
+      "sha256": "804740f5def3ea834f02d365ad355d76a90042cfc216f593bada230a2e37a64f",
+      "git_blob_sha1": "cf114f975c4a8fa726b25ee7be13cac46e9087a9"
+    },
+    {
+      "name": "sub-5/eeg/sub-5_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-5/eeg/sub-5_task-FlankerNEAR_eeg.set",
+      "bytes": 2476184,
+      "checksum": "sha256:5f46adec6a8ad17b4e86e339e9f327825e07aa1da866df5c234e38b65ac58d6a",
+      "git_blob_sha1": "095edcd9792c29650a09477044b54199ccd60e48",
+      "git_annex_pointer": "../../.git/annex/objects/3p/v8/SHA256E-s2476184--5f46adec6a8ad17b4e86e339e9f327825e07aa1da866df5c234e38b65ac58d6a.set/SHA256E-s2476184--5f46adec6a8ad17b4e86e339e9f327825e07aa1da866df5c234e38b65ac58d6a.set",
+      "sha256": "5f46adec6a8ad17b4e86e339e9f327825e07aa1da866df5c234e38b65ac58d6a"
+    },
+    {
+      "name": "sub-5/eeg/sub-5_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-5/eeg/sub-5_task-FlankerNEAR_events.tsv",
+      "bytes": 24558,
+      "checksum": "sha256:8b41c7907f5079c9c4789e273c243fd73e5a697e42f238d90df16ae178b69a6b",
+      "sha256": "8b41c7907f5079c9c4789e273c243fd73e5a697e42f238d90df16ae178b69a6b",
+      "git_blob_sha1": "e2ca37a3a674a6e23a8ad624029ef5561bc8acad"
+    },
+    {
+      "name": "sub-50/eeg/sub-50_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-50/eeg/sub-50_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-50/eeg/sub-50_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-50/eeg/sub-50_task-FlankerNEAR_eeg.fdt",
+      "bytes": 59670528,
+      "checksum": "sha256:75f352261e75af73d6e5172bc25e190ce268801b8aecbb9717dcf9c026a543ab",
+      "git_blob_sha1": "0fca3e2f3d048baf46a14bcbd18924668e8bf47e",
+      "git_annex_pointer": "../../.git/annex/objects/mP/J7/SHA256E-s59670528--75f352261e75af73d6e5172bc25e190ce268801b8aecbb9717dcf9c026a543ab.fdt/SHA256E-s59670528--75f352261e75af73d6e5172bc25e190ce268801b8aecbb9717dcf9c026a543ab.fdt",
+      "sha256": "75f352261e75af73d6e5172bc25e190ce268801b8aecbb9717dcf9c026a543ab"
+    },
+    {
+      "name": "sub-50/eeg/sub-50_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-50/eeg/sub-50_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:f40cd3ff98b40a86b350a2533cf2ab74e25eaed4ddec1e19dc08fca356efe5f6",
+      "sha256": "f40cd3ff98b40a86b350a2533cf2ab74e25eaed4ddec1e19dc08fca356efe5f6",
+      "git_blob_sha1": "d6fa545e7f7d29dd779019b73d034a043f35e090"
+    },
+    {
+      "name": "sub-50/eeg/sub-50_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-50/eeg/sub-50_task-FlankerNEAR_eeg.set",
+      "bytes": 2526056,
+      "checksum": "sha256:7fa04536a682041b9c354b8eb2dfc9a1eb7a0ea300512808cdd3e749a9608717",
+      "git_blob_sha1": "712f22fbf0a24a71fdf27c0d33c41687d94317ea",
+      "git_annex_pointer": "../../.git/annex/objects/gW/1f/SHA256E-s2526056--7fa04536a682041b9c354b8eb2dfc9a1eb7a0ea300512808cdd3e749a9608717.set/SHA256E-s2526056--7fa04536a682041b9c354b8eb2dfc9a1eb7a0ea300512808cdd3e749a9608717.set",
+      "sha256": "7fa04536a682041b9c354b8eb2dfc9a1eb7a0ea300512808cdd3e749a9608717"
+    },
+    {
+      "name": "sub-50/eeg/sub-50_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-50/eeg/sub-50_task-FlankerNEAR_events.tsv",
+      "bytes": 24392,
+      "checksum": "sha256:ff5db3b5431bc6876127ba0af8bb9bb44a573e0ace10fcad73ca5a392d59e569",
+      "sha256": "ff5db3b5431bc6876127ba0af8bb9bb44a573e0ace10fcad73ca5a392d59e569",
+      "git_blob_sha1": "c8e4fbac0a7cfbbb6a3c817307fe56ab1a859762"
+    },
+    {
+      "name": "sub-51/eeg/sub-51_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-51/eeg/sub-51_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-51/eeg/sub-51_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-51/eeg/sub-51_task-FlankerNEAR_eeg.fdt",
+      "bytes": 59539456,
+      "checksum": "sha256:a7fcd2aca754a097d4651e3aa43a1bb1d1be13fa21468b56980db532cd2211d7",
+      "git_blob_sha1": "293a7eb1e2b587bb319a7df36a7016dbb1ce2d46",
+      "git_annex_pointer": "../../.git/annex/objects/58/Fp/SHA256E-s59539456--a7fcd2aca754a097d4651e3aa43a1bb1d1be13fa21468b56980db532cd2211d7.fdt/SHA256E-s59539456--a7fcd2aca754a097d4651e3aa43a1bb1d1be13fa21468b56980db532cd2211d7.fdt",
+      "sha256": "a7fcd2aca754a097d4651e3aa43a1bb1d1be13fa21468b56980db532cd2211d7"
+    },
+    {
+      "name": "sub-51/eeg/sub-51_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-51/eeg/sub-51_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:d42f0a8ea16c921a11df1bef458ea30f6b995a982860675d7a084a475e791c19",
+      "sha256": "d42f0a8ea16c921a11df1bef458ea30f6b995a982860675d7a084a475e791c19",
+      "git_blob_sha1": "10612ce2566525ab96b8624afa31725dba2a5d88"
+    },
+    {
+      "name": "sub-51/eeg/sub-51_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-51/eeg/sub-51_task-FlankerNEAR_eeg.set",
+      "bytes": 2521832,
+      "checksum": "sha256:03350bdb1b4a765ff00977a4abf80dd662966a99a0bd83bd55f9556d54e96f7b",
+      "git_blob_sha1": "1bdd02e5e4774e5a21db2efa6f922ea3f474b97e",
+      "git_annex_pointer": "../../.git/annex/objects/K4/Vw/SHA256E-s2521832--03350bdb1b4a765ff00977a4abf80dd662966a99a0bd83bd55f9556d54e96f7b.set/SHA256E-s2521832--03350bdb1b4a765ff00977a4abf80dd662966a99a0bd83bd55f9556d54e96f7b.set",
+      "sha256": "03350bdb1b4a765ff00977a4abf80dd662966a99a0bd83bd55f9556d54e96f7b"
+    },
+    {
+      "name": "sub-51/eeg/sub-51_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-51/eeg/sub-51_task-FlankerNEAR_events.tsv",
+      "bytes": 24416,
+      "checksum": "sha256:6ec276869d9c09e008262a621f3243787d39a223abaf64be89d4e95974563114",
+      "sha256": "6ec276869d9c09e008262a621f3243787d39a223abaf64be89d4e95974563114",
+      "git_blob_sha1": "de591ef53807aa08e755a8259a7d9b5c1e9ad6d8"
+    },
+    {
+      "name": "sub-52/eeg/sub-52_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-52/eeg/sub-52_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-52/eeg/sub-52_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-52/eeg/sub-52_task-FlankerNEAR_eeg.fdt",
+      "bytes": 63340544,
+      "checksum": "sha256:18b6a69e63aba226923b31e92c089bbfbda7c374f2fdeb5deba42664fed9d624",
+      "git_blob_sha1": "59d2f8a427807a402dd4d213b537d68f097d3375",
+      "git_annex_pointer": "../../.git/annex/objects/WF/x4/SHA256E-s63340544--18b6a69e63aba226923b31e92c089bbfbda7c374f2fdeb5deba42664fed9d624.fdt/SHA256E-s63340544--18b6a69e63aba226923b31e92c089bbfbda7c374f2fdeb5deba42664fed9d624.fdt",
+      "sha256": "18b6a69e63aba226923b31e92c089bbfbda7c374f2fdeb5deba42664fed9d624"
+    },
+    {
+      "name": "sub-52/eeg/sub-52_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-52/eeg/sub-52_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:f933a545a8312259bcf98db63d5c69ff44e2c6da65455123be73a955502fa233",
+      "sha256": "f933a545a8312259bcf98db63d5c69ff44e2c6da65455123be73a955502fa233",
+      "git_blob_sha1": "554ddb9b297914ab5259328022a41a8070d3ba0c"
+    },
+    {
+      "name": "sub-52/eeg/sub-52_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-52/eeg/sub-52_task-FlankerNEAR_eeg.set",
+      "bytes": 2641176,
+      "checksum": "sha256:ef4888832089dd82f4882d66d7db91dd4855a3e3638ff58f5f51e8adea85a03e",
+      "git_blob_sha1": "eec84ad87b56ae751984baa97cc5ba15201fae97",
+      "git_annex_pointer": "../../.git/annex/objects/67/zF/SHA256E-s2641176--ef4888832089dd82f4882d66d7db91dd4855a3e3638ff58f5f51e8adea85a03e.set/SHA256E-s2641176--ef4888832089dd82f4882d66d7db91dd4855a3e3638ff58f5f51e8adea85a03e.set",
+      "sha256": "ef4888832089dd82f4882d66d7db91dd4855a3e3638ff58f5f51e8adea85a03e"
+    },
+    {
+      "name": "sub-52/eeg/sub-52_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-52/eeg/sub-52_task-FlankerNEAR_events.tsv",
+      "bytes": 24423,
+      "checksum": "sha256:d122f8e9552fc32cc17db2de2d5265fbea7ec663bdbd896ceacd73dbced560a6",
+      "sha256": "d122f8e9552fc32cc17db2de2d5265fbea7ec663bdbd896ceacd73dbced560a6",
+      "git_blob_sha1": "00bb8dbd481d181c679b140a32fb2fdc50314e2e"
+    },
+    {
+      "name": "sub-53/eeg/sub-53_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-53/eeg/sub-53_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-53/eeg/sub-53_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-53/eeg/sub-53_task-FlankerNEAR_eeg.fdt",
+      "bytes": 64094208,
+      "checksum": "sha256:3e5f22f0e72317c3e42e23c2760a184470acd3439eee64919171bf5301166298",
+      "git_blob_sha1": "cd7727328680f7731479865e2d4a2c829438a699",
+      "git_annex_pointer": "../../.git/annex/objects/x5/gG/SHA256E-s64094208--3e5f22f0e72317c3e42e23c2760a184470acd3439eee64919171bf5301166298.fdt/SHA256E-s64094208--3e5f22f0e72317c3e42e23c2760a184470acd3439eee64919171bf5301166298.fdt",
+      "sha256": "3e5f22f0e72317c3e42e23c2760a184470acd3439eee64919171bf5301166298"
+    },
+    {
+      "name": "sub-53/eeg/sub-53_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-53/eeg/sub-53_task-FlankerNEAR_eeg.json",
+      "bytes": 914,
+      "checksum": "sha256:7e9f44189c053f62122e8ec7732c89ac63e99f50d1500918ba38112b0666a678",
+      "sha256": "7e9f44189c053f62122e8ec7732c89ac63e99f50d1500918ba38112b0666a678",
+      "git_blob_sha1": "2e299b6dda47ba81b625cd3b7296b4bf95a15386"
+    },
+    {
+      "name": "sub-53/eeg/sub-53_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-53/eeg/sub-53_task-FlankerNEAR_eeg.set",
+      "bytes": 2663816,
+      "checksum": "sha256:b28d8f6c401460db6de3c3251f2ea122e7b0e194838fe3b54aa30dc6cf0c71ff",
+      "git_blob_sha1": "9afa96187e77db67020ac19c5c773578ac3dfb9d",
+      "git_annex_pointer": "../../.git/annex/objects/z7/VF/SHA256E-s2663816--b28d8f6c401460db6de3c3251f2ea122e7b0e194838fe3b54aa30dc6cf0c71ff.set/SHA256E-s2663816--b28d8f6c401460db6de3c3251f2ea122e7b0e194838fe3b54aa30dc6cf0c71ff.set",
+      "sha256": "b28d8f6c401460db6de3c3251f2ea122e7b0e194838fe3b54aa30dc6cf0c71ff"
+    },
+    {
+      "name": "sub-53/eeg/sub-53_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-53/eeg/sub-53_task-FlankerNEAR_events.tsv",
+      "bytes": 24398,
+      "checksum": "sha256:6afd147589fca30c9cb1674f856b1c98c75ad7e48ea85adb67501548df585050",
+      "sha256": "6afd147589fca30c9cb1674f856b1c98c75ad7e48ea85adb67501548df585050",
+      "git_blob_sha1": "bd7c4e939a8d7357c264573f24ef5b17311221ab"
+    },
+    {
+      "name": "sub-54/eeg/sub-54_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-54/eeg/sub-54_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-54/eeg/sub-54_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-54/eeg/sub-54_task-FlankerNEAR_eeg.fdt",
+      "bytes": 57311232,
+      "checksum": "sha256:0a64b25339bd1bb65f25e87bb82aa4f127426a4cbf234b2604fecfd299f64b02",
+      "git_blob_sha1": "61fb6b633194bc338dd0614f23f079573625601d",
+      "git_annex_pointer": "../../.git/annex/objects/vk/fg/SHA256E-s57311232--0a64b25339bd1bb65f25e87bb82aa4f127426a4cbf234b2604fecfd299f64b02.fdt/SHA256E-s57311232--0a64b25339bd1bb65f25e87bb82aa4f127426a4cbf234b2604fecfd299f64b02.fdt",
+      "sha256": "0a64b25339bd1bb65f25e87bb82aa4f127426a4cbf234b2604fecfd299f64b02"
+    },
+    {
+      "name": "sub-54/eeg/sub-54_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-54/eeg/sub-54_task-FlankerNEAR_eeg.json",
+      "bytes": 923,
+      "checksum": "sha256:47f140c5282a7f8538de696f29c74b4d5fdc7e90886861bfeea418406e690b84",
+      "sha256": "47f140c5282a7f8538de696f29c74b4d5fdc7e90886861bfeea418406e690b84",
+      "git_blob_sha1": "80cd93beb219b6ae251dcd29dfbeae51644917c7"
+    },
+    {
+      "name": "sub-54/eeg/sub-54_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-54/eeg/sub-54_task-FlankerNEAR_eeg.set",
+      "bytes": 2452728,
+      "checksum": "sha256:b7ff75eac1f1d2534ce8254a5e0eafdf78891ef740d412ca589808678f465aea",
+      "git_blob_sha1": "c9c5ddf38b99f368c03855489ca9bf83c7a90d66",
+      "git_annex_pointer": "../../.git/annex/objects/2Q/j6/SHA256E-s2452728--b7ff75eac1f1d2534ce8254a5e0eafdf78891ef740d412ca589808678f465aea.set/SHA256E-s2452728--b7ff75eac1f1d2534ce8254a5e0eafdf78891ef740d412ca589808678f465aea.set",
+      "sha256": "b7ff75eac1f1d2534ce8254a5e0eafdf78891ef740d412ca589808678f465aea"
+    },
+    {
+      "name": "sub-54/eeg/sub-54_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-54/eeg/sub-54_task-FlankerNEAR_events.tsv",
+      "bytes": 24392,
+      "checksum": "sha256:2a9795c0973a32836e1c2248dca57f71cefdf1b506bce08fa8721b5db94ab586",
+      "sha256": "2a9795c0973a32836e1c2248dca57f71cefdf1b506bce08fa8721b5db94ab586",
+      "git_blob_sha1": "5f4fb32b216bb9f1a7b6e6772db9ec13165d0e88"
+    },
+    {
+      "name": "sub-55/eeg/sub-55_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-55/eeg/sub-55_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-55/eeg/sub-55_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-55/eeg/sub-55_task-FlankerNEAR_eeg.fdt",
+      "bytes": 58228736,
+      "checksum": "sha256:8acab262cd1e7f676207434d5b90e116b46fd6b705bec73f72b8e47995e50882",
+      "git_blob_sha1": "03a122c5211fdde0bf05429941b1cea308c55287",
+      "git_annex_pointer": "../../.git/annex/objects/mp/F3/SHA256E-s58228736--8acab262cd1e7f676207434d5b90e116b46fd6b705bec73f72b8e47995e50882.fdt/SHA256E-s58228736--8acab262cd1e7f676207434d5b90e116b46fd6b705bec73f72b8e47995e50882.fdt",
+      "sha256": "8acab262cd1e7f676207434d5b90e116b46fd6b705bec73f72b8e47995e50882"
+    },
+    {
+      "name": "sub-55/eeg/sub-55_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-55/eeg/sub-55_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:208502114fd076b8172301a293bf90b566191b0ac838ec2784c0e0774bb226aa",
+      "sha256": "208502114fd076b8172301a293bf90b566191b0ac838ec2784c0e0774bb226aa",
+      "git_blob_sha1": "59313b5590f14210347d5067e141beaffb661d28"
+    },
+    {
+      "name": "sub-55/eeg/sub-55_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-55/eeg/sub-55_task-FlankerNEAR_eeg.set",
+      "bytes": 2480936,
+      "checksum": "sha256:5b27ddca19b60e583b80a0549c5611c5c3994f989eec19c188e43e1070f57107",
+      "git_blob_sha1": "cd3476b83f939cceb969b57b6689aa91f5d4f6d7",
+      "git_annex_pointer": "../../.git/annex/objects/3q/Zk/SHA256E-s2480936--5b27ddca19b60e583b80a0549c5611c5c3994f989eec19c188e43e1070f57107.set/SHA256E-s2480936--5b27ddca19b60e583b80a0549c5611c5c3994f989eec19c188e43e1070f57107.set",
+      "sha256": "5b27ddca19b60e583b80a0549c5611c5c3994f989eec19c188e43e1070f57107"
+    },
+    {
+      "name": "sub-55/eeg/sub-55_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-55/eeg/sub-55_task-FlankerNEAR_events.tsv",
+      "bytes": 24361,
+      "checksum": "sha256:52715036acecab11ebe91be253c4008fc9aa5801eb02e92a77894d25c3a0e3e0",
+      "sha256": "52715036acecab11ebe91be253c4008fc9aa5801eb02e92a77894d25c3a0e3e0",
+      "git_blob_sha1": "29bdeb0753e5dd1b30107db697ec2b9adcb8e1ed"
+    },
+    {
+      "name": "sub-56/eeg/sub-56_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-56/eeg/sub-56_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-56/eeg/sub-56_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-56/eeg/sub-56_task-FlankerNEAR_eeg.fdt",
+      "bytes": 58327040,
+      "checksum": "sha256:fab20844176617de61002190cecc52957b97f8d0e8206ac4be9565b9c915e6b8",
+      "git_blob_sha1": "890a604f06d7adc4cf60ca3eeb472b216ef31ae6",
+      "git_annex_pointer": "../../.git/annex/objects/00/9k/SHA256E-s58327040--fab20844176617de61002190cecc52957b97f8d0e8206ac4be9565b9c915e6b8.fdt/SHA256E-s58327040--fab20844176617de61002190cecc52957b97f8d0e8206ac4be9565b9c915e6b8.fdt",
+      "sha256": "fab20844176617de61002190cecc52957b97f8d0e8206ac4be9565b9c915e6b8"
+    },
+    {
+      "name": "sub-56/eeg/sub-56_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-56/eeg/sub-56_task-FlankerNEAR_eeg.json",
+      "bytes": 912,
+      "checksum": "sha256:bd10cf70f7040e4bd1e30eedd8392c1d378c646fe59c10b169cddb93ea0183fc",
+      "sha256": "bd10cf70f7040e4bd1e30eedd8392c1d378c646fe59c10b169cddb93ea0183fc",
+      "git_blob_sha1": "48c783fe9275c25fd90cbda959172736c294c98a"
+    },
+    {
+      "name": "sub-56/eeg/sub-56_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-56/eeg/sub-56_task-FlankerNEAR_eeg.set",
+      "bytes": 2483960,
+      "checksum": "sha256:140fc21d6c276288d490a99fe263127208d187624eeea709facec7c5519c8db7",
+      "git_blob_sha1": "f165740ff40a7c000a0d2d92fea9377eef570ceb",
+      "git_annex_pointer": "../../.git/annex/objects/P3/f8/SHA256E-s2483960--140fc21d6c276288d490a99fe263127208d187624eeea709facec7c5519c8db7.set/SHA256E-s2483960--140fc21d6c276288d490a99fe263127208d187624eeea709facec7c5519c8db7.set",
+      "sha256": "140fc21d6c276288d490a99fe263127208d187624eeea709facec7c5519c8db7"
+    },
+    {
+      "name": "sub-56/eeg/sub-56_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-56/eeg/sub-56_task-FlankerNEAR_events.tsv",
+      "bytes": 24393,
+      "checksum": "sha256:972752c7a2dfccd2af34f99bdf9428034b77f993f821e04c8647991c4966f3e7",
+      "sha256": "972752c7a2dfccd2af34f99bdf9428034b77f993f821e04c8647991c4966f3e7",
+      "git_blob_sha1": "3d61fe65484abc8c7a39396323e88a4d8fa38e63"
+    },
+    {
+      "name": "sub-57/eeg/sub-57_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-57/eeg/sub-57_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-57/eeg/sub-57_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-57/eeg/sub-57_task-FlankerNEAR_eeg.fdt",
+      "bytes": 59998208,
+      "checksum": "sha256:48166074d7925c8ff6906abb32fcf8845d8423205cdcecb04c06b7c59239da99",
+      "git_blob_sha1": "18082e2bc7249818bcdeab6e6eb8b1d0fe9dc7e9",
+      "git_annex_pointer": "../../.git/annex/objects/0w/4f/SHA256E-s59998208--48166074d7925c8ff6906abb32fcf8845d8423205cdcecb04c06b7c59239da99.fdt/SHA256E-s59998208--48166074d7925c8ff6906abb32fcf8845d8423205cdcecb04c06b7c59239da99.fdt",
+      "sha256": "48166074d7925c8ff6906abb32fcf8845d8423205cdcecb04c06b7c59239da99"
+    },
+    {
+      "name": "sub-57/eeg/sub-57_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-57/eeg/sub-57_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:cad6977fdce092a8662f2604ce1d83478a8b53647e46f232673b342c98a7838e",
+      "sha256": "cad6977fdce092a8662f2604ce1d83478a8b53647e46f232673b342c98a7838e",
+      "git_blob_sha1": "5d6cd8e58dc271b777a04d7583cf9f498c64fe63"
+    },
+    {
+      "name": "sub-57/eeg/sub-57_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-57/eeg/sub-57_task-FlankerNEAR_eeg.set",
+      "bytes": 2536128,
+      "checksum": "sha256:1ec472752faee5d18e93e26ac67905e92e940a2749b72d068c868659c7598e58",
+      "git_blob_sha1": "b8e2cefec0eb48ca512809bd111a52f1e0a7e1bb",
+      "git_annex_pointer": "../../.git/annex/objects/22/0x/SHA256E-s2536128--1ec472752faee5d18e93e26ac67905e92e940a2749b72d068c868659c7598e58.set/SHA256E-s2536128--1ec472752faee5d18e93e26ac67905e92e940a2749b72d068c868659c7598e58.set",
+      "sha256": "1ec472752faee5d18e93e26ac67905e92e940a2749b72d068c868659c7598e58"
+    },
+    {
+      "name": "sub-57/eeg/sub-57_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-57/eeg/sub-57_task-FlankerNEAR_events.tsv",
+      "bytes": 24378,
+      "checksum": "sha256:4a794254b5af27561e29a226933b0598b333cd951d62c9cac097ad8967ca0deb",
+      "sha256": "4a794254b5af27561e29a226933b0598b333cd951d62c9cac097ad8967ca0deb",
+      "git_blob_sha1": "444d04c4050dd4a6de1a5145f5ad5ca8daf34bdd"
+    },
+    {
+      "name": "sub-58/eeg/sub-58_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-58/eeg/sub-58_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-58/eeg/sub-58_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-58/eeg/sub-58_task-FlankerNEAR_eeg.fdt",
+      "bytes": 67207168,
+      "checksum": "sha256:7d7e5c5d3442ebdec333124bfbebd9c7372c48f5aafdb3d254680df4af7de2fc",
+      "git_blob_sha1": "180c32744cc92216bcaafaf1f28a7fd7cbe93c48",
+      "git_annex_pointer": "../../.git/annex/objects/Mm/Mz/SHA256E-s67207168--7d7e5c5d3442ebdec333124bfbebd9c7372c48f5aafdb3d254680df4af7de2fc.fdt/SHA256E-s67207168--7d7e5c5d3442ebdec333124bfbebd9c7372c48f5aafdb3d254680df4af7de2fc.fdt",
+      "sha256": "7d7e5c5d3442ebdec333124bfbebd9c7372c48f5aafdb3d254680df4af7de2fc"
+    },
+    {
+      "name": "sub-58/eeg/sub-58_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-58/eeg/sub-58_task-FlankerNEAR_eeg.json",
+      "bytes": 914,
+      "checksum": "sha256:17755b1e468df27f5c60e79e985c2a4840aa05807f5f18b160888b405e6398b6",
+      "sha256": "17755b1e468df27f5c60e79e985c2a4840aa05807f5f18b160888b405e6398b6",
+      "git_blob_sha1": "6a0414ccaf87fd31cc14c9de1e65fc4e9e5c5c23"
+    },
+    {
+      "name": "sub-58/eeg/sub-58_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-58/eeg/sub-58_task-FlankerNEAR_eeg.set",
+      "bytes": 2719848,
+      "checksum": "sha256:6904e4f6b7d8b6f556a5484e25c8bb57efd2eb2eac64be93f7bf1bf6e235c0cd",
+      "git_blob_sha1": "dea97a7e4a6232e0c68a2450dcdd64ebac0bed15",
+      "git_annex_pointer": "../../.git/annex/objects/M1/jg/SHA256E-s2719848--6904e4f6b7d8b6f556a5484e25c8bb57efd2eb2eac64be93f7bf1bf6e235c0cd.set/SHA256E-s2719848--6904e4f6b7d8b6f556a5484e25c8bb57efd2eb2eac64be93f7bf1bf6e235c0cd.set",
+      "sha256": "6904e4f6b7d8b6f556a5484e25c8bb57efd2eb2eac64be93f7bf1bf6e235c0cd"
+    },
+    {
+      "name": "sub-58/eeg/sub-58_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-58/eeg/sub-58_task-FlankerNEAR_events.tsv",
+      "bytes": 24430,
+      "checksum": "sha256:3338d5dcb92ef038bed696684d2302cf3f4223a7a077b530e5999df61e29be90",
+      "sha256": "3338d5dcb92ef038bed696684d2302cf3f4223a7a077b530e5999df61e29be90",
+      "git_blob_sha1": "a5481fd58c72dfaec05011cc1b496abfd0083d71"
+    },
+    {
+      "name": "sub-59/eeg/sub-59_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-59/eeg/sub-59_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-59/eeg/sub-59_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-59/eeg/sub-59_task-FlankerNEAR_eeg.fdt",
+      "bytes": 58032128,
+      "checksum": "sha256:b02415140d780e9b725f2785826e3d94affdc6b9ebf87ba9c6d9e0cf3c1c2469",
+      "git_blob_sha1": "abbe13334084eaffac9d06c4d04ddbd439831d78",
+      "git_annex_pointer": "../../.git/annex/objects/Pv/xP/SHA256E-s58032128--b02415140d780e9b725f2785826e3d94affdc6b9ebf87ba9c6d9e0cf3c1c2469.fdt/SHA256E-s58032128--b02415140d780e9b725f2785826e3d94affdc6b9ebf87ba9c6d9e0cf3c1c2469.fdt",
+      "sha256": "b02415140d780e9b725f2785826e3d94affdc6b9ebf87ba9c6d9e0cf3c1c2469"
+    },
+    {
+      "name": "sub-59/eeg/sub-59_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-59/eeg/sub-59_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:c54de212f279a2dfe96695002a63cbb291328f0828976c441be373b6bd3469a4",
+      "sha256": "c54de212f279a2dfe96695002a63cbb291328f0828976c441be373b6bd3469a4",
+      "git_blob_sha1": "f2d7e161217423ed50d7aef5bd7a15ec51718a4b"
+    },
+    {
+      "name": "sub-59/eeg/sub-59_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-59/eeg/sub-59_task-FlankerNEAR_eeg.set",
+      "bytes": 2474856,
+      "checksum": "sha256:aaa582a245097f5c771b745dcd61a0dcc336a97e229822bfdf68823a28229105",
+      "git_blob_sha1": "5e706ab9c1aaf99f2c869d0e7e11de3dd7cafdd0",
+      "git_annex_pointer": "../../.git/annex/objects/Jf/jz/SHA256E-s2474856--aaa582a245097f5c771b745dcd61a0dcc336a97e229822bfdf68823a28229105.set/SHA256E-s2474856--aaa582a245097f5c771b745dcd61a0dcc336a97e229822bfdf68823a28229105.set",
+      "sha256": "aaa582a245097f5c771b745dcd61a0dcc336a97e229822bfdf68823a28229105"
+    },
+    {
+      "name": "sub-59/eeg/sub-59_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-59/eeg/sub-59_task-FlankerNEAR_events.tsv",
+      "bytes": 24356,
+      "checksum": "sha256:7c880b680addcea1b203563f63504f1d6017898a9e1541e583842bbe01a3b5b0",
+      "sha256": "7c880b680addcea1b203563f63504f1d6017898a9e1541e583842bbe01a3b5b0",
+      "git_blob_sha1": "85092eedae44535e5997225dfada53701d495ac7"
+    },
+    {
+      "name": "sub-6/eeg/sub-6_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-6/eeg/sub-6_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-6/eeg/sub-6_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-6/eeg/sub-6_task-FlankerNEAR_eeg.fdt",
+      "bytes": 61636608,
+      "checksum": "sha256:05f62cbf7152ddb777cbce98f4a55f1304670f5abee29c2eb9930884e562d9d3",
+      "git_blob_sha1": "08e0b1aa96cb2bf1f34be27dc278e2186f32c2fd",
+      "git_annex_pointer": "../../.git/annex/objects/9Z/2F/SHA256E-s61636608--05f62cbf7152ddb777cbce98f4a55f1304670f5abee29c2eb9930884e562d9d3.fdt/SHA256E-s61636608--05f62cbf7152ddb777cbce98f4a55f1304670f5abee29c2eb9930884e562d9d3.fdt",
+      "sha256": "05f62cbf7152ddb777cbce98f4a55f1304670f5abee29c2eb9930884e562d9d3"
+    },
+    {
+      "name": "sub-6/eeg/sub-6_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-6/eeg/sub-6_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:93d6b4e6b1932488d19a423ceda4e73b06306a25564db027c5dbfcf99856adc3",
+      "sha256": "93d6b4e6b1932488d19a423ceda4e73b06306a25564db027c5dbfcf99856adc3",
+      "git_blob_sha1": "ee77204b3ab68a80bc91874f8a4e16753009c0de"
+    },
+    {
+      "name": "sub-6/eeg/sub-6_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-6/eeg/sub-6_task-FlankerNEAR_eeg.set",
+      "bytes": 2586848,
+      "checksum": "sha256:d7f7768832c78846a83c5d3ba26e35c68336dcdced44457e48c740ef1e2335a6",
+      "git_blob_sha1": "f967a66fbd73a1263f9e363c3dffa8a709123e03",
+      "git_annex_pointer": "../../.git/annex/objects/8x/xJ/SHA256E-s2586848--d7f7768832c78846a83c5d3ba26e35c68336dcdced44457e48c740ef1e2335a6.set/SHA256E-s2586848--d7f7768832c78846a83c5d3ba26e35c68336dcdced44457e48c740ef1e2335a6.set",
+      "sha256": "d7f7768832c78846a83c5d3ba26e35c68336dcdced44457e48c740ef1e2335a6"
+    },
+    {
+      "name": "sub-6/eeg/sub-6_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-6/eeg/sub-6_task-FlankerNEAR_events.tsv",
+      "bytes": 24357,
+      "checksum": "sha256:0d3b03e06aa900c3c7ecb7e3e9fc5aa93673686a3add0bd5e66e31e590c64a60",
+      "sha256": "0d3b03e06aa900c3c7ecb7e3e9fc5aa93673686a3add0bd5e66e31e590c64a60",
+      "git_blob_sha1": "e007efe60ba2e482ca068429847e288c11fe6684"
+    },
+    {
+      "name": "sub-60/eeg/sub-60_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-60/eeg/sub-60_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-60/eeg/sub-60_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-60/eeg/sub-60_task-FlankerNEAR_eeg.fdt",
+      "bytes": 58490880,
+      "checksum": "sha256:43d9d626c99f585a1c464de7e7b8e42c4854b242cadf8e0265b4d4be9e5cd2ed",
+      "git_blob_sha1": "1b70a885fffc15528fa417e69e333061ef925e0b",
+      "git_annex_pointer": "../../.git/annex/objects/mg/27/SHA256E-s58490880--43d9d626c99f585a1c464de7e7b8e42c4854b242cadf8e0265b4d4be9e5cd2ed.fdt/SHA256E-s58490880--43d9d626c99f585a1c464de7e7b8e42c4854b242cadf8e0265b4d4be9e5cd2ed.fdt",
+      "sha256": "43d9d626c99f585a1c464de7e7b8e42c4854b242cadf8e0265b4d4be9e5cd2ed"
+    },
+    {
+      "name": "sub-60/eeg/sub-60_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-60/eeg/sub-60_task-FlankerNEAR_eeg.json",
+      "bytes": 912,
+      "checksum": "sha256:f94ea8ee42e410345b89608df8c23e0b474e27035f5d4d5eacdfd1aa82a2b270",
+      "sha256": "f94ea8ee42e410345b89608df8c23e0b474e27035f5d4d5eacdfd1aa82a2b270",
+      "git_blob_sha1": "b3dba14f203ead0bed428f421092cac19d4ff45e"
+    },
+    {
+      "name": "sub-60/eeg/sub-60_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-60/eeg/sub-60_task-FlankerNEAR_eeg.set",
+      "bytes": 2489208,
+      "checksum": "sha256:fc19e72abe22c263104aa2da192ccca150bdf3e5649447b8064eac2033a90bca",
+      "git_blob_sha1": "45e41ac79277d4ddfba91944ad6dbbc3951c95ca",
+      "git_annex_pointer": "../../.git/annex/objects/K8/P0/SHA256E-s2489208--fc19e72abe22c263104aa2da192ccca150bdf3e5649447b8064eac2033a90bca.set/SHA256E-s2489208--fc19e72abe22c263104aa2da192ccca150bdf3e5649447b8064eac2033a90bca.set",
+      "sha256": "fc19e72abe22c263104aa2da192ccca150bdf3e5649447b8064eac2033a90bca"
+    },
+    {
+      "name": "sub-60/eeg/sub-60_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-60/eeg/sub-60_task-FlankerNEAR_events.tsv",
+      "bytes": 24366,
+      "checksum": "sha256:816c890ab59fc8d0b4e98f1a3b16b97313f66bb3c625b0417b06c78d140d780c",
+      "sha256": "816c890ab59fc8d0b4e98f1a3b16b97313f66bb3c625b0417b06c78d140d780c",
+      "git_blob_sha1": "85bc0fbbd4d5717b56571334e31cfaa8632e7bee"
+    },
+    {
+      "name": "sub-7/eeg/sub-7_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-7/eeg/sub-7_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-7/eeg/sub-7_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-7/eeg/sub-7_task-FlankerNEAR_eeg.fdt",
+      "bytes": 55574528,
+      "checksum": "sha256:0885a7f80d390cc8c05c6a2c63dcf18415fd1c9bbbff4f1ace93b2fc95a66940",
+      "git_blob_sha1": "fb61262047a075cbfe5b60d8c5a48323f802b314",
+      "git_annex_pointer": "../../.git/annex/objects/86/3M/SHA256E-s55574528--0885a7f80d390cc8c05c6a2c63dcf18415fd1c9bbbff4f1ace93b2fc95a66940.fdt/SHA256E-s55574528--0885a7f80d390cc8c05c6a2c63dcf18415fd1c9bbbff4f1ace93b2fc95a66940.fdt",
+      "sha256": "0885a7f80d390cc8c05c6a2c63dcf18415fd1c9bbbff4f1ace93b2fc95a66940"
+    },
+    {
+      "name": "sub-7/eeg/sub-7_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-7/eeg/sub-7_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:0ffb8ac5f6025ed8e99e4f7ba5ad29175dd9edee62ebd05595e6dad62a468a82",
+      "sha256": "0ffb8ac5f6025ed8e99e4f7ba5ad29175dd9edee62ebd05595e6dad62a468a82",
+      "git_blob_sha1": "02505260204fa3b96e04710f34cfbb301766b6ed"
+    },
+    {
+      "name": "sub-7/eeg/sub-7_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-7/eeg/sub-7_task-FlankerNEAR_eeg.set",
+      "bytes": 2399816,
+      "checksum": "sha256:f2d2f030bc46ad6f898d9243a5273f1d21a77a31ad60a411484f2839d4732ccd",
+      "git_blob_sha1": "0ca15ad1f1271050d4abea020be133fbb45c8ebc",
+      "git_annex_pointer": "../../.git/annex/objects/8W/q0/SHA256E-s2399816--f2d2f030bc46ad6f898d9243a5273f1d21a77a31ad60a411484f2839d4732ccd.set/SHA256E-s2399816--f2d2f030bc46ad6f898d9243a5273f1d21a77a31ad60a411484f2839d4732ccd.set",
+      "sha256": "f2d2f030bc46ad6f898d9243a5273f1d21a77a31ad60a411484f2839d4732ccd"
+    },
+    {
+      "name": "sub-7/eeg/sub-7_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-7/eeg/sub-7_task-FlankerNEAR_events.tsv",
+      "bytes": 24441,
+      "checksum": "sha256:6be1308a2870c88937eddcfd5b0c86f0d56f89f22f8a673c868c23215253d232",
+      "sha256": "6be1308a2870c88937eddcfd5b0c86f0d56f89f22f8a673c868c23215253d232",
+      "git_blob_sha1": "326af7abd53100af4c9ddc3da63376402da03935"
+    },
+    {
+      "name": "sub-8/eeg/sub-8_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-8/eeg/sub-8_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-8/eeg/sub-8_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-8/eeg/sub-8_task-FlankerNEAR_eeg.fdt",
+      "bytes": 60030976,
+      "checksum": "sha256:2ac08cac5cfa3526de73cc38caa77a0c9fe4220731ed2187dec592a965e30b72",
+      "git_blob_sha1": "d13ea0b730e2de4c76824a2a3fe514107d4c492d",
+      "git_annex_pointer": "../../.git/annex/objects/K3/Fw/SHA256E-s60030976--2ac08cac5cfa3526de73cc38caa77a0c9fe4220731ed2187dec592a965e30b72.fdt/SHA256E-s60030976--2ac08cac5cfa3526de73cc38caa77a0c9fe4220731ed2187dec592a965e30b72.fdt",
+      "sha256": "2ac08cac5cfa3526de73cc38caa77a0c9fe4220731ed2187dec592a965e30b72"
+    },
+    {
+      "name": "sub-8/eeg/sub-8_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-8/eeg/sub-8_task-FlankerNEAR_eeg.json",
+      "bytes": 913,
+      "checksum": "sha256:1f5f5c004aafdeeb6adec760d27cc9ef5520d7a8b047ba6cc4dc9e92fb4c6267",
+      "sha256": "1f5f5c004aafdeeb6adec760d27cc9ef5520d7a8b047ba6cc4dc9e92fb4c6267",
+      "git_blob_sha1": "a1c1e8b66c73c7b9c52bc96ae0ec89d6bd470c92"
+    },
+    {
+      "name": "sub-8/eeg/sub-8_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-8/eeg/sub-8_task-FlankerNEAR_eeg.set",
+      "bytes": 2539224,
+      "checksum": "sha256:52c359d711f119773e087c7ee0b745a7dddd80169058960122d1b2b592648cb0",
+      "git_blob_sha1": "018101c36ae547ec798383cff28fc743428e1117",
+      "git_annex_pointer": "../../.git/annex/objects/q1/Zw/SHA256E-s2539224--52c359d711f119773e087c7ee0b745a7dddd80169058960122d1b2b592648cb0.set/SHA256E-s2539224--52c359d711f119773e087c7ee0b745a7dddd80169058960122d1b2b592648cb0.set",
+      "sha256": "52c359d711f119773e087c7ee0b745a7dddd80169058960122d1b2b592648cb0"
+    },
+    {
+      "name": "sub-8/eeg/sub-8_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-8/eeg/sub-8_task-FlankerNEAR_events.tsv",
+      "bytes": 24503,
+      "checksum": "sha256:741f321c83f8e53f6a80355ae93c2291f93f25730f500f0ea1fc7eea2e328812",
+      "sha256": "741f321c83f8e53f6a80355ae93c2291f93f25730f500f0ea1fc7eea2e328812",
+      "git_blob_sha1": "a7c45b4ee667ed17ad585289243fefb0c36a9e4c"
+    },
+    {
+      "name": "sub-9/eeg/sub-9_task-FlankerNEAR_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-9/eeg/sub-9_task-FlankerNEAR_channels.tsv",
+      "bytes": 379,
+      "checksum": "sha256:1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "sha256": "1fa6aa4d7d40463ae349c7f2e456505de44fbc733503ce99e58c93b2f34e35e3",
+      "git_blob_sha1": "70bf18b5ad9b7714b801378e1dd96e2b2964ce3a"
+    },
+    {
+      "name": "sub-9/eeg/sub-9_task-FlankerNEAR_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-9/eeg/sub-9_task-FlankerNEAR_eeg.fdt",
+      "bytes": 56688640,
+      "checksum": "sha256:57e3489490574f2f49d10d2d8fb53f1fabb6c43f70783bd841ccf6b57b335e25",
+      "git_blob_sha1": "cf2e16aded1afd682cf5d66a78e940ad3d6fdecc",
+      "git_annex_pointer": "../../.git/annex/objects/Mj/5m/SHA256E-s56688640--57e3489490574f2f49d10d2d8fb53f1fabb6c43f70783bd841ccf6b57b335e25.fdt/SHA256E-s56688640--57e3489490574f2f49d10d2d8fb53f1fabb6c43f70783bd841ccf6b57b335e25.fdt",
+      "sha256": "57e3489490574f2f49d10d2d8fb53f1fabb6c43f70783bd841ccf6b57b335e25"
+    },
+    {
+      "name": "sub-9/eeg/sub-9_task-FlankerNEAR_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-9/eeg/sub-9_task-FlankerNEAR_eeg.json",
+      "bytes": 912,
+      "checksum": "sha256:f19982f75aaa7beda25f826e39cb00ef653d7e11d019f78c423a7bef386cc3c9",
+      "sha256": "f19982f75aaa7beda25f826e39cb00ef653d7e11d019f78c423a7bef386cc3c9",
+      "git_blob_sha1": "a20329baadc5f677d7d6bbe9e41a0371b1c45808"
+    },
+    {
+      "name": "sub-9/eeg/sub-9_task-FlankerNEAR_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds005866/sub-9/eeg/sub-9_task-FlankerNEAR_eeg.set",
+      "bytes": 2432928,
+      "checksum": "sha256:ba46e9d166a9b209248689288bc81ebab18450f57893329f3f3602818844d806",
+      "git_blob_sha1": "41b40ecc947837a8508ed0f85f43934549756a98",
+      "git_annex_pointer": "../../.git/annex/objects/9x/xz/SHA256E-s2432928--ba46e9d166a9b209248689288bc81ebab18450f57893329f3f3602818844d806.set/SHA256E-s2432928--ba46e9d166a9b209248689288bc81ebab18450f57893329f3f3602818844d806.set",
+      "sha256": "ba46e9d166a9b209248689288bc81ebab18450f57893329f3f3602818844d806"
+    },
+    {
+      "name": "sub-9/eeg/sub-9_task-FlankerNEAR_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/sub-9/eeg/sub-9_task-FlankerNEAR_events.tsv",
+      "bytes": 24359,
+      "checksum": "sha256:14cfdcc5fce6ea48d216ca43ffda1a11d636e109fe4f7dd9cb9e6c0e51db989b",
+      "sha256": "14cfdcc5fce6ea48d216ca43ffda1a11d636e109fe4f7dd9cb9e6c0e51db989b",
+      "git_blob_sha1": "4f6b3d5f18aa34b6c66ac045dc071e03d6d5d3fe"
+    },
+    {
+      "name": "task-FlankerNEAR_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds005866/5b5be67a95dd0f38f802405eb56840d0ef4f2223/task-FlankerNEAR_events.json",
+      "bytes": 2,
+      "checksum": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "git_blob_sha1": "0637a088a01e8ddab3bf3fa98dbe804cbde1a0dc"
+    }
+  ]
+}

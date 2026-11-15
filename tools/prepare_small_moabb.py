@@ -338,8 +338,48 @@ def header(spec):
             ' '.join(map(str,range(1,spec['classes']+1)))+'\n@data\n')
 
 
+MIN_MEDIAN_CHANNEL_SD_UV = 0.5
+MAX_MEDIAN_CHANNEL_SD_UV = 500.0
+LARGE_EXCURSION_THRESHOLD_UV = 1000.0
+
+
+def check_amplitude_scale(
+    per_channel_sds,
+    case_max_abs,
+    min_median_sd_uV=MIN_MEDIAN_CHANNEL_SD_UV,
+    max_median_sd_uV=MAX_MEDIAN_CHANNEL_SD_UV,
+    excursion_threshold_uV=LARGE_EXCURSION_THRESHOLD_UV,
+):
+    """Fail if median per-channel SD lies outside [min_median_sd_uV, max_median_sd_uV] and report |x| > threshold fraction."""
+    sds=np.asarray(per_channel_sds,dtype=np.float64)
+    peaks=np.asarray(case_max_abs,dtype=np.float64)
+    if sds.size==0 or peaks.size==0 or not (np.isfinite(sds).all() and np.isfinite(peaks).all()):
+        raise ValueError('Amplitude check requires finite non-empty per-channel SDs and case maxima')
+    q05,median_sd,q95=map(float,np.quantile(sds,[0.05,0.5,0.95]))
+    max_abs=float(np.max(peaks))
+    n_cases=int(peaks.size)
+    n_gt=int(np.sum(peaks>excursion_threshold_uV))
+    frac_gt=float(n_gt/n_cases)
+    if not (min_median_sd_uV<=median_sd<=max_median_sd_uV):
+        raise ValueError(
+            f'Amplitude scale check failed: median per-channel SD {median_sd:.6g} uV outside '
+            f'[{min_median_sd_uV}, {max_median_sd_uV}] uV'
+        )
+    return dict(
+        median_channel_sd_uV=median_sd,
+        p05_channel_sd_uV=q05,
+        p95_channel_sd_uV=q95,
+        max_abs_uV=max_abs,
+        cases_max_abs_gt_1000_uV=n_gt,
+        fraction_cases_max_abs_gt_1000_uV=frac_gt,
+        amplitude_sd_bounds_uV=[float(min_median_sd_uV),float(max_median_sd_uV)],
+        amplitude_excursion_threshold_uV=float(excursion_threshold_uV),
+    )
+
+
 def validate(folder,spec,split):
     counts=Counter();people=set();hashes=set();duplicates=flat=tiny=0;intervals=defaultdict(list)
+    channel_sds=[];case_peaks=[]
     with (folder/f'cases_{split.lower()}.tsv').open(newline='',encoding='utf-8') as f:
         metadata=csv.DictReader(f,delimiter='\t')
         for i,(line,row) in enumerate(itertools.zip_longest(lines(folder/f'{spec["name"]}_{split}.ts'),metadata)):
@@ -351,10 +391,18 @@ def validate(folder,spec,split):
             duplicates+=h in hashes;hashes.add(h);counts[label]+=1;people.add(row['participant_id'])
             if row['sample_reference']!='Native epoch-local samples; original continuous offsets unavailable':intervals[row['recording_id']].append((int(row['start_sample']),int(row['end_sample'])))
             sd=x.std(axis=1);span=np.ptp(x,axis=1);flat+=int((span==0).sum());tiny+=int(((sd<=1e-7)&(span!=0)).sum())
+            channel_sds.append(sd);case_peaks.append(float(np.abs(x).max()))
     if set(counts)!=set(map(str,range(1,spec['classes']+1))):raise ValueError('Missing classes')
     if flat or tiny:raise ValueError(f'Channel quality review required: {flat} constant / {tiny} tiny pairs')
+    amplitude=check_amplitude_scale(
+        np.concatenate(channel_sds),
+        case_peaks,
+        min_median_sd_uV=spec.get('min_median_sd_uV',MIN_MEDIAN_CHANNEL_SD_UV),
+        max_median_sd_uV=spec.get('max_median_sd_uV',MAX_MEDIAN_CHANNEL_SD_UV),
+        excursion_threshold_uV=spec.get('excursion_threshold_uV',LARGE_EXCURSION_THRESHOLD_UV),
+    )
     return dict(cases=sum(counts.values()),shape=[sum(counts.values()),spec['channels'],spec['points']],class_counts=dict(counts),subjects=sorted(people),
-                exact_float64_roundtrip=True,metadata_rows_verified=True,finite=True,exact_constant_pairs=flat,aeon_tiny_nonconstant_pairs=tiny,within_split_duplicate_cases=duplicates),hashes,intervals
+                exact_float64_roundtrip=True,metadata_rows_verified=True,finite=True,exact_constant_pairs=flat,aeon_tiny_nonconstant_pairs=tiny,within_split_duplicate_cases=duplicates,**amplitude),hashes,intervals
 
 
 def overlapping_intervals(train,test):

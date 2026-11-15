@@ -5,14 +5,19 @@ for EEG are in aeon-neuro, ports of general multivariate classifiers are in
 multiverse.classification, and the rest are in aeon.
 
 An estimator's name here matches its column in ``results/neuroverse/<metric>.csv``
-(or its directory name in Multiverse per-estimator layout). Two groupings are
-recorded for every estimator:
+(or its directory name in Multiverse per-estimator layout). Three nested tiers
+organise the active benchmark classifiers:
 
-1. ``paradigm`` (:data:`PARADIGMS`): high-level methodological family used on
-   the interactive leaderboard and score matrix (General TSML, EEG Classical,
-   EEG Supervised DL, EEG Foundation, Tabular).
-2. ``tsml_family`` (:data:`TSML_FAMILIES`): the ``tsml-eval`` category folder
-   under which raw ``testResample0.csv`` predictions are stored.
+1. :data:`HEADLINE_ESTIMATORS` (12 classifiers): primary TSML + Tabular
+   representatives shown by default on the headline 30/30/30 leaderboard
+   (``HC2``, ``Arsenal``, ``MRHydra``, ``QUANT``, ``DrCIF``, ``STC``, ``RDST``,
+   ``TDE``, ``Catch22``, ``FreshPRINCE``, ``InceptionTime``, ``RotationForest``).
+2. :data:`CANONICAL_ESTIMATORS` (81 distinct classifiers): expanded benchmark
+   pool spanning General TSML, EEG Classical, EEG Supervised DL, EEG Foundation,
+   and Tabular baselines without counting preprocessing or control clones twice.
+3. :data:`BAKEOFF_ESTIMATORS` (109 configurations): all evaluated configurations
+   including band-pass, covariance-shrinkage, tree-count, linear-probe, and
+   random-weight controls (:data:`VARIANT_ESTIMATORS`).
 """
 
 from __future__ import annotations
@@ -20,6 +25,8 @@ from __future__ import annotations
 __all__ = [
     "ESTIMATORS",
     "ESTIMATOR_METADATA",
+    "ESTIMATOR_ALIASES",
+    "HEADLINE_ESTIMATORS",
     "BAKEOFF_ESTIMATORS",
     "CANONICAL_ESTIMATORS",
     "VARIANT_ESTIMATORS",
@@ -29,6 +36,7 @@ __all__ = [
     "PAPER_ESTIMATORS",
     "family",
     "paradigm",
+    "resolve_estimator_name",
     "estimator_info",
     "estimator_table",
     "estimator_markdown",
@@ -62,20 +70,49 @@ TSML_FAMILIES = {
     "IntervalBased": "Summary and spectral interval forests / quantiles",
     "ShapeletBased": "Phase-independent subsequences (shapelets)",
     "DictionaryBased": "Symbolic Fourier / bag-of-words representations",
-    "FeatureBased": "Spatial filters, band-power and tangent-space pipelines",
+    "FeatureBased": "Catch22/TSFresh features, spatial filters, band-power and tangent-space pipelines",
     "DistanceBased": "Riemannian geometry and template-correlation classifiers",
     "DeepLearning": "End-to-end neural networks and foundation backbones",
     "Tabular": "Flattened-channel standard tabular classifiers",
 }
 
-# Non-canonical preprocessing, tree-count, or ablation variants among the 90 columns
-# (leaving 72 canonical distinct classifiers in CANONICAL_ESTIMATORS).
+#: The 12 headline classifiers shown on the primary 30/30/30 leaderboard.
+HEADLINE_ESTIMATORS: list[str] = [
+    "HC2",
+    "Arsenal",
+    "MRHydra",
+    "QUANT",
+    "DrCIF",
+    "STC",
+    "RDST",
+    "TDE",
+    "Catch22",
+    "FreshPRINCE",
+    "InceptionTime",
+    "RotationForest",
+]
+_HEADLINE_SET: frozenset[str] = frozenset(HEADLINE_ESTIMATORS)
+
+#: Raw ``tsml-eval`` directory names mapped to clean Neuroverse names.
+ESTIMATOR_ALIASES: dict[str, str] = {
+    "HC2-noTDE-500-pc": "HC2",
+    "DrCIF-500": "DrCIF",
+    "STC-aeon": "STC",
+    "IT": "InceptionTime",
+}
+
+# Non-canonical preprocessing, tree-count, frozen-probe, or ablation variants
+# among the 109 active configurations (leaving 81 canonical distinct classifiers).
 _NON_CANONICAL_BAKEOFF: frozenset[str] = frozenset(
     {
-        "HC2-noTDE-500-pc",
-        "DrCIF",
+        "HC2-500-pc",
+        "DrCIF-200",
+        "CBraMod",
         "CBraMod-random",
+        "CBraMod-FT-random",
+        "LaBraM",
         "LaBraM-random",
+        "LaBraM-FT-random",
         "CSP+LDA",
         "CSP+LDA-BP140",
         "CSP+LDA-BP830",
@@ -87,23 +124,29 @@ _NON_CANONICAL_BAKEOFF: frozenset[str] = frozenset(
         "RiemannianMDM-OAS",
         "RiemannianMDM-OAS-BP140",
         "RiemannianMDM-OAS-BP830",
+        "RiemannianMDM-LWF",
+        "RiemannianMDM-LWF-BP140",
+        "RiemannianMDM-LWF-BP830",
         "RiemannianKNN",
         "RiemannianKNN-OAS",
         "RiemannianKNN-OAS-BP830",
+        "RiemannianKNN-LWF",
+        "RiemannianKNN-LWF-BP140",
+        "RiemannianKNN-LWF-BP830",
     }
 )
 
 # Tuple schema:
 #   (paradigm, tsml_family, legacy_family, base_method, library, is_ablation, in_bakeoff, description)
 _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
-    # --- General TSML (11 distinct classifiers; 13 configurations + 5 legacy paper entries) ---
+    # --- General TSML (15 distinct classifiers; 17 active configurations) ---
+    "HC2": (
+        "TSML", "Hybrid", "TSML", "HC2", "aeon", False, True,
+        "HIVE-COTE v2.0 hybrid ensemble (Arsenal, DrCIF, and STC with prior correction)",
+    ),
     "HC2-500-pc": (
         "TSML", "Hybrid", "TSML", "HC2", "aeon", False, True,
-        "HIVE-COTE v2.0 (500-tree DrCIF, per-channel hybrid configuration)",
-    ),
-    "HC2-noTDE-500-pc": (
-        "TSML", "Hybrid", "TSML", "HC2", "aeon", True, True,
-        "HIVE-COTE v2.0 without TDE ablation (Arsenal + DrCIF-500 + STC)",
+        "HIVE-COTE v2.0 variant including TDE dictionary component",
     ),
     "Arsenal": (
         "TSML", "ConvolutionBased", "TSML", "Arsenal", "aeon", False, True,
@@ -113,19 +156,27 @@ _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
         "TSML", "ConvolutionBased", "TSML", "MRHydra", "aeon", False, True,
         "MultiROCKET combined with Hydra competing convolutional dictionary",
     ),
+    "MiniROCKET": (
+        "TSML", "ConvolutionBased", "TSML", "MiniROCKET", "aeon", False, True,
+        "Deterministic MiniROCKET convolutional kernel transform with Ridge classifier",
+    ),
+    "ROCKET": (
+        "TSML", "ConvolutionBased", "TSML", "ROCKET", "aeon", False, True,
+        "Random Convolutional Kernel Transform with Ridge classifier",
+    ),
     "DrCIF": (
         "TSML", "IntervalBased", "TSML", "DrCIF", "aeon", False, True,
-        "Diverse Representation Canonical Interval Forest (default trees)",
-    ),
-    "DrCIF-500": (
-        "TSML", "IntervalBased", "TSML", "DrCIF", "aeon", False, True,
         "Diverse Representation Canonical Interval Forest (500 trees)",
+    ),
+    "DrCIF-200": (
+        "TSML", "IntervalBased", "TSML", "DrCIF", "aeon", False, True,
+        "Diverse Representation Canonical Interval Forest (default 200 trees)",
     ),
     "QUANT": (
         "TSML", "IntervalBased", "TSML", "QUANT", "aeon", False, True,
         "Dyadic interval quantile features with ExtraTrees",
     ),
-    "STC-aeon": (
+    "STC": (
         "TSML", "ShapeletBased", "TSML", "STC", "aeon", False, True,
         "Randomised Shapelet Transform Classifier with Rotation Forest",
     ),
@@ -137,11 +188,19 @@ _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
         "TSML", "DictionaryBased", "TSML", "TDE", "aeon", False, True,
         "Temporal Dictionary Ensemble over SFA word histograms",
     ),
+    "Catch22": (
+        "TSML", "FeatureBased", "TSML", "Catch22", "aeon", False, True,
+        "Canonical 22 time-series summary features per channel with Random Forest",
+    ),
+    "FreshPRINCE": (
+        "TSML", "FeatureBased", "TSML", "FreshPRINCE", "aeon", False, True,
+        "TSFresh summary features per channel with Rotation Forest",
+    ),
     "CNN": (
         "TSML", "DeepLearning", "Deep", "CNN", "aeon", False, True,
         "Time-CNN multivariate 1D convolutional network",
     ),
-    "IT": (
+    "InceptionTime": (
         "TSML", "DeepLearning", "Deep", "InceptionTime", "aeon", False, True,
         "InceptionTime ensemble of multi-scale 1D Inception networks",
     ),
@@ -150,25 +209,41 @@ _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
         "Multivariate Light Inception with Boosting and depthwise convolutions",
     ),
 
-    # --- EEG Foundation Models & Random-Init Controls (4 active) ---
+    # --- EEG Foundation Models & Controls (2 canonical; 8 active configurations) ---
+    "CBraMod-FT": (
+        "EEG-FM", "DeepLearning", "EEG-FM", "CBraMod", "aeon-neuro (Foundation)", False, True,
+        "Criss-cross Brain Foundation Model end-to-end fine-tuned patch transformer",
+    ),
     "CBraMod": (
         "EEG-FM", "DeepLearning", "EEG-FM", "CBraMod", "aeon-neuro (Foundation)", False, True,
-        "Criss-cross Brain Foundation Model (pretrained patch transformer)",
+        "Criss-cross Brain Foundation Model frozen-encoder linear probe",
+    ),
+    "CBraMod-FT-random": (
+        "EEG-FM", "DeepLearning", "EEG-FM", "CBraMod", "aeon-neuro (Foundation)", True, True,
+        "CBraMod fine-tuned from random weights (no pretraining control)",
     ),
     "CBraMod-random": (
         "EEG-FM", "DeepLearning", "EEG-FM", "CBraMod", "aeon-neuro (Foundation)", True, True,
-        "CBraMod architecture initialised from random weights (no pretraining control)",
+        "CBraMod architecture linear probe from random weights (no pretraining control)",
+    ),
+    "LaBraM-FT": (
+        "EEG-FM", "DeepLearning", "EEG-FM", "LaBraM", "aeon-neuro (Foundation)", False, True,
+        "Large Brain Model end-to-end fine-tuned neural tokeniser transformer (10-20 montage)",
     ),
     "LaBraM": (
         "EEG-FM", "DeepLearning", "EEG-FM", "LaBraM", "aeon-neuro (Foundation)", False, True,
-        "Large Brain Model pretrained neural tokenizer transformer (10-20 montage)",
+        "Large Brain Model frozen-encoder linear probe (10-20 montage)",
+    ),
+    "LaBraM-FT-random": (
+        "EEG-FM", "DeepLearning", "EEG-FM", "LaBraM", "aeon-neuro (Foundation)", True, True,
+        "LaBraM fine-tuned from random weights (no pretraining control)",
     ),
     "LaBraM-random": (
         "EEG-FM", "DeepLearning", "EEG-FM", "LaBraM", "aeon-neuro (Foundation)", True, True,
-        "LaBraM architecture initialised from random weights (no pretraining control)",
+        "LaBraM architecture linear probe from random weights (no pretraining control)",
     ),
 
-    # --- EEG Supervised Deep Learning: Braindecode / aeon-neuro (32 active) ---
+    # --- EEG Supervised Deep Learning: Braindecode / aeon-neuro (33 active) ---
     "ATCNet-NB": (
         "EEG-DL", "DeepLearning", "EEG-DL", "ATCNet", "aeon-neuro (Braindecode)", False, True,
         "Attention Temporal Convolutional Network for EEG decoding",
@@ -297,11 +372,19 @@ _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
         "EEG-DL", "DeepLearning", "EEG-DL", "TMSANet", "aeon-neuro (Braindecode)", False, True,
         "Temporal Multi-Scale Attention Network",
     ),
+    "TSception-NB": (
+        "EEG-DL", "DeepLearning", "EEG-DL", "TSception", "aeon-neuro (Braindecode)", False, True,
+        "Multi-scale temporal and hemispheric asymmetry CNN for affective/BCI EEG",
+    ),
 
-    # --- EEG Classical: FeatureBased (23 active) ---
+    # --- EEG Classical: FeatureBased (18 canonical; 25 active configurations) ---
     "AUG-TANG-SVM-MOABB": (
         "EEG-Classical", "FeatureBased", "EEG", "AugmentedTangentSVM", "aeon-neuro (MOABB)", False, True,
         "Augmented lag-embedded covariance tangent space + linear/RBF SVM",
+    ),
+    "CoSpectraLR-NB": (
+        "EEG-Classical", "FeatureBased", "EEG", "CoSpectraLR", "aeon-neuro (NeuralBench)", False, True,
+        "NeuralBench Welch cross-spectral co-spectra features + LogisticRegressionCV",
     ),
     "CSP+LDA": (
         "EEG-Classical", "FeatureBased", "EEG", "CSP+LDA", "aeon-neuro (MNE + sklearn)", False, True,
@@ -391,11 +474,19 @@ _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
         "EEG-Classical", "FeatureBased", "EEG", "xDAWNCov+TS-SVM", "aeon-neuro (MOABB)", False, True,
         "xDAWN template-augmented block covariance + tangent-space SVM",
     ),
+    "XdawnTSLR-NB": (
+        "EEG-Classical", "FeatureBased", "EEG", "xDAWN+TSLR", "aeon-neuro (NeuralBench)", False, True,
+        "NeuralBench xDAWN spatial filtering + covariance tangent-space LogisticRegressionCV",
+    ),
 
-    # --- EEG Classical: DistanceBased (14 active) ---
+    # --- EEG Classical: DistanceBased (9 canonical; 22 active configurations) ---
     "ERPCov-MDM-MOABB": (
         "EEG-Classical", "DistanceBased", "EEG", "ERPCov+MDM", "aeon-neuro (MOABB)", False, True,
         "Class-prototype super-trial ERP covariance + Riemannian MDM",
+    ),
+    "FBTRCA": (
+        "EEG-Classical", "DistanceBased", "EEG", "FBTRCA", "aeon-neuro", False, True,
+        "Filter-Bank Task-Related Component Analysis spatial filter ensemble",
     ),
     "FgMDM-MOABB": (
         "EEG-Classical", "DistanceBased", "EEG", "FgMDM", "aeon-neuro (MOABB)", False, True,
@@ -408,6 +499,18 @@ _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
     "RiemannianKNN": (
         "EEG-Classical", "DistanceBased", "EEG", "RiemannianKNN", "aeon-neuro (PyRiemann)", False, True,
         "k-Nearest Neighbours under affine-invariant Riemannian SPD distance",
+    ),
+    "RiemannianKNN-LWF": (
+        "EEG-Classical", "DistanceBased", "EEG", "RiemannianKNN", "aeon-neuro (PyRiemann)", False, True,
+        "Riemannian k-NN with Ledoit-Wolf shrinkage covariances",
+    ),
+    "RiemannianKNN-LWF-BP140": (
+        "EEG-Classical", "DistanceBased", "EEG", "RiemannianKNN", "aeon-neuro (PyRiemann)", False, True,
+        "1-40 Hz pass + Ledoit-Wolf covariance + Riemannian k-NN",
+    ),
+    "RiemannianKNN-LWF-BP830": (
+        "EEG-Classical", "DistanceBased", "EEG", "RiemannianKNN", "aeon-neuro (PyRiemann)", False, True,
+        "8-30 Hz mu/beta pass + Ledoit-Wolf covariance + Riemannian k-NN",
     ),
     "RiemannianKNN-OAS": (
         "EEG-Classical", "DistanceBased", "EEG", "RiemannianKNN", "aeon-neuro (PyRiemann)", False, True,
@@ -423,7 +526,19 @@ _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
     ),
     "RiemannianMDM": (
         "EEG-Classical", "DistanceBased", "EEG", "RiemannianMDM", "aeon-neuro (PyRiemann)", False, True,
-        "Riemannian Minimum Distance to Fréchet Mean over sample covariances",
+        "Riemannian Minimum Distance to Frechet Mean over sample covariances",
+    ),
+    "RiemannianMDM-LWF": (
+        "EEG-Classical", "DistanceBased", "EEG", "RiemannianMDM", "aeon-neuro (PyRiemann)", False, True,
+        "Riemannian MDM with Ledoit-Wolf shrinkage covariances",
+    ),
+    "RiemannianMDM-LWF-BP140": (
+        "EEG-Classical", "DistanceBased", "EEG", "RiemannianMDM", "aeon-neuro (PyRiemann)", False, True,
+        "1-40 Hz pass + Ledoit-Wolf covariance + Riemannian MDM",
+    ),
+    "RiemannianMDM-LWF-BP830": (
+        "EEG-Classical", "DistanceBased", "EEG", "RiemannianMDM", "aeon-neuro (PyRiemann)", False, True,
+        "8-30 Hz mu/beta pass + Ledoit-Wolf covariance + Riemannian MDM",
     ),
     "RiemannianMDM-OAS": (
         "EEG-Classical", "DistanceBased", "EEG", "RiemannianMDM", "aeon-neuro (PyRiemann)", False, True,
@@ -436,6 +551,10 @@ _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
     "RiemannianMDM-OAS-BP830": (
         "EEG-Classical", "DistanceBased", "EEG", "RiemannianMDM", "aeon-neuro (PyRiemann)", False, True,
         "8-30 Hz mu/beta pass + OAS covariance + Riemannian MDM",
+    ),
+    "TRACE": (
+        "EEG-Classical", "DistanceBased", "EEG", "TRACE", "aeon-neuro", False, True,
+        "Temporal Riemannian Adaptive Classification Ensemble over weighted intervals",
     ),
     "TemplateCCA-BP640": (
         "EEG-Classical", "DistanceBased", "EEG", "TemplateCCA", "aeon-neuro", False, True,
@@ -469,25 +588,9 @@ _REGISTRY: dict[str, tuple[str, str, str, str, str, bool, bool, str]] = {
     ),
 
     # --- Legacy 2026 DMLR Paper Identifiers (retained for paper reproduction) ---
-    "HC2": (
-        "TSML", "Hybrid", "TSML", "HC2", "aeon", False, False,
-        "HIVE-COTE v2.0 (2026 DMLR paper configuration)",
-    ),
-    "STC": (
-        "TSML", "ShapeletBased", "TSML", "STC", "aeon", False, False,
-        "Shapelet Transform Classifier, an HC2 component (2026 paper)",
-    ),
-    "ROCKET": (
-        "TSML", "ConvolutionBased", "TSML", "ROCKET", "aeon", False, False,
-        "Random convolutional kernel transform (2026 paper)",
-    ),
-    "MiniROCKET": (
-        "TSML", "ConvolutionBased", "TSML", "MiniROCKET", "aeon", False, False,
-        "Deterministic MiniROCKET kernel transform (2026 paper)",
-    ),
-    "FreshPRINCE": (
-        "TSML", "FeatureBased", "TSML", "FreshPRINCE", "aeon", False, False,
-        "TSFresh summary features with Rotation Forest (2026 paper)",
+    "IT": (
+        "TSML", "DeepLearning", "Deep", "InceptionTime", "aeon", False, False,
+        "InceptionTime (2026 DMLR paper identifier; active name is InceptionTime)",
     ),
     "EEGNet": (
         "EEG-DL", "DeepLearning", "EEG", "EEGNet", "Braindecode", False, False,
@@ -521,6 +624,7 @@ ESTIMATOR_METADATA: dict[str, dict[str, object]] = {
         "base_method": base,
         "library": lib,
         "is_ablation": is_abl,
+        "is_headline": bool(in_bo and name in _HEADLINE_SET),
         "is_canonical": bool(in_bo and name not in _NON_CANONICAL_BAKEOFF),
         "in_bakeoff": in_bo,
         "description": desc,
@@ -534,19 +638,19 @@ ESTIMATORS: dict[str, tuple[str, str, str]] = {
     for name, (_, _, leg_fam, _, lib, _, _, desc) in _REGISTRY.items()
 }
 
-#: All 90 classifier configurations stored in the wide result CSVs.
+#: All 109 classifier configurations stored in the wide result CSVs.
 BAKEOFF_ESTIMATORS: list[str] = sorted(
     (name for name, meta in ESTIMATOR_METADATA.items() if meta["in_bakeoff"]),
     key=str.lower,
 )
 
-#: The 72 distinct canonical classifiers ranked on the primary leaderboard.
+#: The 81 distinct canonical classifiers ranked on the expanded leaderboard.
 CANONICAL_ESTIMATORS: list[str] = sorted(
     (name for name, meta in ESTIMATOR_METADATA.items() if meta["is_canonical"]),
     key=str.lower,
 )
 
-#: The 18 preprocessing, tree-count, and random-weight ablation variants.
+#: The 28 preprocessing, tree-count, probe, and random-weight ablation variants.
 VARIANT_ESTIMATORS: list[str] = sorted(
     (
         name
@@ -560,14 +664,22 @@ VARIANT_ESTIMATORS: list[str] = sorted(
 PAPER_ESTIMATORS = ["R-MDM", "CSP-SVM", "CNN", "IT", "EEGNet", "DCN", "HC2", "MRHydra"]
 
 
+def resolve_estimator_name(name: str) -> str:
+    """Resolve raw ``tsml-eval`` estimator aliases to their canonical Neuroverse name."""
+    return ESTIMATOR_ALIASES.get(name, name)
+
+
 def family(name: str) -> str:
     """Return the legacy family code of an estimator, or ``""`` if unlisted."""
-    return ESTIMATORS[name][0] if name in ESTIMATORS else ""
+    if name in ESTIMATORS:
+        return ESTIMATORS[name][0]
+    resolved = resolve_estimator_name(name)
+    return ESTIMATORS[resolved][0] if resolved in ESTIMATORS else ""
 
 
 def paradigm(name: str) -> str:
     """Return the bake-off paradigm code of an estimator, or ``""`` if unlisted."""
-    info = ESTIMATOR_METADATA.get(name)
+    info = ESTIMATOR_METADATA.get(name) or ESTIMATOR_METADATA.get(resolve_estimator_name(name))
     return str(info["paradigm"]) if info is not None else ""
 
 
@@ -575,6 +687,9 @@ def estimator_info(name: str) -> dict[str, object]:
     """Return structured metadata for ``name``, with sensible fallback for custom runs."""
     if name in ESTIMATOR_METADATA:
         return dict(ESTIMATOR_METADATA[name])
+    resolved = resolve_estimator_name(name)
+    if resolved in ESTIMATOR_METADATA:
+        return dict(ESTIMATOR_METADATA[resolved])
     if name == "Default":
         return {
             "paradigm": "Baseline",
@@ -584,6 +699,7 @@ def estimator_info(name: str) -> dict[str, object]:
             "base_method": "Default",
             "library": "tsml-eval",
             "is_ablation": False,
+            "is_headline": False,
             "is_canonical": False,
             "in_bakeoff": False,
             "description": "Constant majority-class test floor",
@@ -596,6 +712,7 @@ def estimator_info(name: str) -> dict[str, object]:
         "base_method": name,
         "library": "custom",
         "is_ablation": name.endswith("-random"),
+        "is_headline": False,
         "is_canonical": not name.endswith("-random"),
         "in_bakeoff": False,
         "description": name,
@@ -619,13 +736,18 @@ def estimator_markdown(active_only: bool = True) -> str:
     header = ["Estimator", "Role", "Paradigm", "tsml-eval Family", "Library", "Description"]
     rows = ["| " + " | ".join(header) + " |", "|" + "---|" * len(header)]
     names = BAKEOFF_ESTIMATORS if active_only else list(ESTIMATOR_METADATA)
+    n_canon = len(CANONICAL_ESTIMATORS)
+    n_head = len(HEADLINE_ESTIMATORS)
     for name in names:
         meta = ESTIMATOR_METADATA[name]
-        role = (
-            "Primary (72)"
-            if meta["is_canonical"]
-            else ("Ablation / Control" if meta["is_ablation"] else "Preprocessing Variant")
-        )
+        if meta["is_headline"]:
+            role = f"Headline ({n_head})"
+        elif meta["is_canonical"]:
+            role = f"Expanded ({n_canon})"
+        elif meta["is_ablation"]:
+            role = "Ablation / Control"
+        else:
+            role = "Preprocessing / Probe Variant"
         rows.append(
             f"| `{name}` | {role} | {meta['paradigm_label']} | {meta['tsml_family']} "
             f"| {meta['library']} | {meta['description']} |"

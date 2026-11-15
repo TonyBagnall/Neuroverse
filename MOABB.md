@@ -1,4 +1,6 @@
-# MOABB dataset review for EEGBench
+# MOABB dataset review for Neuroverse
+
+**Latest scalp-EEG MI update (12 November 2026):** **ImaginedFingers** (`Damm2026`, OpenNeuro `ds008446` v1.0.1, CC0, 20 participants, 5-class individual-finger MI) brings strict scalp-EEG Motor Imagery from 29 (after excluding ECoG `MotorImagery`) to **30 problems**; remaining verified open-licence scalp-EEG MI candidates (`Lee2022`, `Tavakolan2017`, `PardoGarcia2026`, `Alawieh2025`, `Chang2025`, `Zuo2025`, `Dreyer2023`, etc.) are recorded in [`docs/scalp-mi-candidates.md`](docs/scalp-mi-candidates.md).
 
 **Latest completion 8 November 2026:** ImaginedHandsHaptics, ImaginedAnkleRest and ImaginedHandsFeedback are fully validated and registered: 77 registered / 73 selected, 25 MI including one ECoG. [Results and metadata](docs/mi-next-three-preparation.md). Five further MI problems are needed for 30. Earlier batch/survey snapshots below are historical.
 
@@ -442,3 +444,9 @@ Machine-readable source checks: [next-candidate-source-inspection.json](docs/nex
 
 
 **Completed follow-on preparations (6 November 2026):** SymbolAttention and ArmCoordination passed full conversion/validation and are now registered. Current collection: 66 registered / 62 selected problems. VisualCategories remains deferred with source-label evidence. See [dataset descriptions](docs/datasets.md) and [machine progress](docs/assimilation-progress.json).
+
+## ERP / P300 expansion review,9November2026
+
+See the [ERP/P300 plan](docs/p300-erp-plan.md) and [machine-readable shortlist](docs/p300-erp-candidates.json). Baseline4confirmed P300 plus N400 WordRelatedness. Requested12new sources would give16P300/17ERP; further tiers target20?26P300 without counting aliases or other ERP components as P300. Original Zenodo metadata/licence/size evidence retained; no new EEG signals downloaded in this review. ERP as parent category with explicit component/task subtype is proposed; existing domains unchanged.
+
+Taxonomy/count correction10November2026: [current mapping](docs/problem-taxonomy.md) finds6existingP300 (also GameTargets and WalkingTargets), plus N400 WordRelatedness. RomaniBF2025ERP is already GameTargets; do not add it again. The earlier4P300 baseline and reserve count are superseded by corrected plan/JSON.

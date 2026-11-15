@@ -1,0 +1,11 @@
+{
+  "name": "DREAMER",
+  "url": "https://zenodo.org/api/records/546113",
+  "record_id": 546113,
+  "title": "DREAMER: A Database for Emotion Recognition through EEG and ECG Signals from Wireless Low-cost Off-the-Shelf Devices",
+  "licence": null,
+  "access_right": "restricted",
+  "doi": "10.1109/JBHI.2017.2688239",
+  "description": "<p>We present DREAMER, a multi-modal database consisting of electroencephalogram (EEG) and electrocardiogram (ECG) signals recorded during affect elicitation by means of audio-visual stimuli. Signals from 23 participants were recorded along with the participants' self-assessment of their affective state after each stimuli, in terms of valence, arousal, and dominance. All the signals were captured using portable, wearable, wireless, low-cost and off-the-shelf equipment that has the potential to allow the use of affective computing methods in everyday applications. The Emotiv EPOC wireless EEG headset was used for EEG and the Shimmer2 ECG sensor for ECG.</p><p>Classification results for valence, arousal and dominance of the proposed database are comparable to the ones achieved for other databases that use non-portable, expensive, medical grade devices.</p><p>The proposed database is made publicly available in order to allow researchers to achieve a more thorough evaluation of the suitability of these capturing devices for affect recognition applications.</p><p>&nbsp;</p><p>Please cite as:</p><p>S. Katsigiannis, N. Ramzan, \"DREAMER: A Database for Emotion Recognition Through EEG and ECG Signals from Wireless Low-cost Off-the-Shelf Devices,\" IEEE Journal of Biomedical and Health Informatics, vol. 22, no. 1, pp. 98-107, Jan. 2018. doi: 10.1109/JBHI.2017.2688239</p>",
+  "files": []
+}

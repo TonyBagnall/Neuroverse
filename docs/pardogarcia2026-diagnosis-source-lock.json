@@ -1,0 +1,406 @@
+{
+  "dataset": "PardoGarcia2026",
+  "source_record_id": "19599466",
+  "source_revision": "Zenodo record 19599466 (concept 19599465, v1)",
+  "eegdash_id": "nm000309",
+  "licence": "CC-BY-4.0",
+  "licence_evidence": "Zenodo record 19599466 metadata license.id=cc-by-4.0",
+  "source_urls": [
+    "https://zenodo.org/records/19599466",
+    "https://doi.org/10.5281/zenodo.19599466"
+  ],
+  "files": [
+    {
+      "name": "02.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/02.eeg/content",
+      "bytes": 124215840,
+      "checksum": "md5:ae1109f6065e1ed0ab5b87fecc0c7e8c",
+      "sha256": "a0e8a393d2513c88d1843149fd1313ad7a4287248804a964d709f1f92d954042"
+    },
+    {
+      "name": "02.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/02.vhdr/content",
+      "bytes": 14541,
+      "checksum": "md5:8e5b967c19d637544abc527488030df1",
+      "sha256": "76dc0e7defb867313efe1bb076abe0f506b7c322b08dc9c4fae0e108fb34baea"
+    },
+    {
+      "name": "02.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/02.vmrk/content",
+      "bytes": 6767,
+      "checksum": "md5:40bdc6a1904bc9debb4da8cbdeb5663c",
+      "sha256": "9ae52ca953187fb4a26d65036a57b289acd6e28fb311cca71f2e0e3fad7c5479"
+    },
+    {
+      "name": "C01.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/C01.eeg/content",
+      "bytes": 149037840,
+      "checksum": "md5:2f94147a89095fcdaab0c0434c3f0fd5",
+      "sha256": "201ac1699fd404e31432ca11d9af57c8e674875a005c35e6e6daac8347525dab"
+    },
+    {
+      "name": "C01.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/C01.vhdr/content",
+      "bytes": 14682,
+      "checksum": "md5:fcd1f75c9a4f3202a337fa9b170992d4",
+      "sha256": "4f3f06f3993b9fab667f27b44e8adf7568b1afce6210411ba5d3fed149ee10db"
+    },
+    {
+      "name": "C01.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/C01.vmrk/content",
+      "bytes": 6803,
+      "checksum": "md5:2a9fb2c7df23a0600eb789d3f83478f1",
+      "sha256": "5f3f53426eac875aecef98c0b43a591b032872a5d3a91caeea76c3cb1012800a"
+    },
+    {
+      "name": "C03.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/C03.eeg/content",
+      "bytes": 202179600,
+      "checksum": "md5:633e2eca78088f6e39d7070f4463e928",
+      "sha256": "6e9b99589e9aa4a125b54885d6db0cfdf914f68473ac6a0f0ee0281c1a1b8be7"
+    },
+    {
+      "name": "C03.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/C03.vhdr/content",
+      "bytes": 15888,
+      "checksum": "md5:53b2d05a2e30f9504fa5515b06dc8973",
+      "sha256": "a0869efaa01bd61661aef67cee837b9497f14d7d338c4c3cbd6fab98b0555dc9"
+    },
+    {
+      "name": "C03.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/C03.vmrk/content",
+      "bytes": 9530,
+      "checksum": "md5:d3968108e0ee1c2ff81cd779aa0d3702",
+      "sha256": "c7c8aa5a4305c0ab92c3b3b1f210aa36194c3d5e3ebbc57abbf90871c2559b78"
+    },
+    {
+      "name": "CONTROL04.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL04.eeg/content",
+      "bytes": 218814120,
+      "checksum": "md5:f3278f088772813b6966b8e994e7f97e",
+      "sha256": "841d244fe8cd146e68dc19645ab2c654b178c313f0e97e66d21ff5a1ec8a9b48"
+    },
+    {
+      "name": "CONTROL04.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL04.vhdr/content",
+      "bytes": 14694,
+      "checksum": "md5:114585c9c5ed55dbd9462a98ed8cb5fc",
+      "sha256": "b95af270d8f31e043f5ba5f88e58d1376c811c81fd2849177c6817c3732471e7"
+    },
+    {
+      "name": "CONTROL04.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL04.vmrk/content",
+      "bytes": 9552,
+      "checksum": "md5:067fc990f2fb8502289f9d5d1a3cfb88",
+      "sha256": "9d81795ca5042eb74ea9f90b04a3240c6323889746496642e6eb06e0c01b22ae"
+    },
+    {
+      "name": "CONTROL05.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL05.eeg/content",
+      "bytes": 207408600,
+      "checksum": "md5:ab9c3e38df5d08cdc96a1cce29d0fa09",
+      "sha256": "718d37da1f2a341f70cff471726904b4dd87b71381da01404d268b7eb9f12b21"
+    },
+    {
+      "name": "CONTROL05.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL05.vhdr/content",
+      "bytes": 14555,
+      "checksum": "md5:0aa87992de8a74ececc424bafa6b599c",
+      "sha256": "37ecbf5e666deff80d2b434494ba502cf4b0b7bff96d76a41fcb265587a54f58"
+    },
+    {
+      "name": "CONTROL05.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL05.vmrk/content",
+      "bytes": 9506,
+      "checksum": "md5:2877e58b0a2438ab0dd3cc2aa8b20c19",
+      "sha256": "11ee5d3b9975065087eaed418238c28cbd6ea3fd53cc3439387097b2bc7ae59b"
+    },
+    {
+      "name": "CONTROL06.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL06.eeg/content",
+      "bytes": 215868240,
+      "checksum": "md5:7fcbc811821db71c0093c1fa14aaee99",
+      "sha256": "6b763b09e424d0aa2079f2dfcc0e6eac127baf144545efb68119a55283c4baf5"
+    },
+    {
+      "name": "CONTROL06.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL06.vhdr/content",
+      "bytes": 14710,
+      "checksum": "md5:7dfdba7796f5da8d035e7114c8cb82ec",
+      "sha256": "c42997bca195efe3d42dcf75989766c1ce6762ca4df9192c6914f21532569686"
+    },
+    {
+      "name": "CONTROL06.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL06.vmrk/content",
+      "bytes": 9512,
+      "checksum": "md5:ab659f6e87c0bbf6dbe9ea061b302371",
+      "sha256": "0b6cd24228d306713f326e515a53a1123992684ab6b29950b8b29536e6bc7915"
+    },
+    {
+      "name": "CONTROL07.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL07.eeg/content",
+      "bytes": 209328840,
+      "checksum": "md5:ca0ff0e1421e29740a8b38ee69b2d9b6",
+      "sha256": "51bf3138c214b3ddcccd9c6bcccefe63273ad50c8cc6a76ab621236f37e23fe1"
+    },
+    {
+      "name": "CONTROL07.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL07.vhdr/content",
+      "bytes": 14555,
+      "checksum": "md5:abaa252a022fc3c4ba4c3a8890ddc708",
+      "sha256": "2f3d3b0a9ba115d63754c1601fb7a4d0572c68125273c70923978574631274f6"
+    },
+    {
+      "name": "CONTROL07.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL07.vmrk/content",
+      "bytes": 9516,
+      "checksum": "md5:eca23d30d185689427cee15d26b2a4be",
+      "sha256": "1c18532c59435f4d9f29f0c1bbc55f1c03d89c7e14da75061e7130130f36b289"
+    },
+    {
+      "name": "CONTROL08.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL08.eeg/content",
+      "bytes": 206161200,
+      "checksum": "md5:84117cbff32f717d343a627638f4b6aa",
+      "sha256": "28fcf322bbccc3ab75bfecf46dd9f12d53d0696ecbdf932ccfa06ad5d92480f1"
+    },
+    {
+      "name": "CONTROL08.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL08.vhdr/content",
+      "bytes": 14694,
+      "checksum": "md5:b61322e102a361471475c7a029f33a42",
+      "sha256": "5c2d4f593e554f9392bf02abb1afbbd4b4c75cfd14cdf15967f83fc06e6ce247"
+    },
+    {
+      "name": "CONTROL08.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/CONTROL08.vmrk/content",
+      "bytes": 9538,
+      "checksum": "md5:693bd1065086335c18e3f37d85eafaac",
+      "sha256": "d8900a9e13a7006c7bb970ba3185bb3c2cb21a242e47ce1152caa329acb206d0"
+    },
+    {
+      "name": "PAC01.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC01.eeg/content",
+      "bytes": 177831360,
+      "checksum": "md5:c8ec1f6bf1ab7fbb303fe54094d8b97f",
+      "sha256": "6a38a546b0c80fd5ccf0dd1e5407b643883b334faf37c3d20249f6796841d26c"
+    },
+    {
+      "name": "PAC01.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC01.vhdr/content",
+      "bytes": 14547,
+      "checksum": "md5:2383e21afbec1709b41a4ba19abdf9d9",
+      "sha256": "5b0fe20c762cce215e5d4665778108c8ebb26922d28bc60e7362b82d4277d323"
+    },
+    {
+      "name": "PAC01.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC01.vmrk/content",
+      "bytes": 9419,
+      "checksum": "md5:79fc8b95ebdf2348704ec7e9b0d1078e",
+      "sha256": "08d61d9609dff9936674a3f0155ed4dccaf41cf7d367e5361273862c8637e461"
+    },
+    {
+      "name": "PAC02.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC02.eeg/content",
+      "bytes": 220459680,
+      "checksum": "md5:695ad658e4b6f7816c62de91d5de3259",
+      "sha256": "50f16fb1bf292b9b20d64ed29693cc0d3c29a64ee1bd368d554f33ad65d9f9f4"
+    },
+    {
+      "name": "PAC02.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC02.vhdr/content",
+      "bytes": 14564,
+      "checksum": "md5:c13a30486d5b511eac5ffb610cdda3da",
+      "sha256": "e953739f743d7b8cf9e8a3292420acf710cf9a57dd35be49f29897291035962e"
+    },
+    {
+      "name": "PAC02.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC02.vmrk/content",
+      "bytes": 9546,
+      "checksum": "md5:9f06e9f3656047c4e6afaaf7691c27a6",
+      "sha256": "8b60bb32cc329006c753c9e2998b65b606c90d84b47f4c5de31cb3b271bf7f57"
+    },
+    {
+      "name": "PAC03.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC03.eeg/content",
+      "bytes": 217775880,
+      "checksum": "md5:fe7313862c94add3841ec4d63fb4461c",
+      "sha256": "0521f063d5f579acebcc197aa53c6808686c4b06e76b0ea66c33a91b7b3c1cf4"
+    },
+    {
+      "name": "PAC03.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC03.vhdr/content",
+      "bytes": 14759,
+      "checksum": "md5:a0fa7f9c0cf04e3f73de557d36f46f58",
+      "sha256": "5eb5de3646cda5fc480d7a31b7e14290040344bb8ead71fe89c95b4404415197"
+    },
+    {
+      "name": "PAC03.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC03.vmrk/content",
+      "bytes": 9550,
+      "checksum": "md5:c88d91fe562f8c21c022d66b6cb38992",
+      "sha256": "405224fadd9e989c6f77fee68e4f436cdb6e4e528afc85122d555d3bf68c2dc2"
+    },
+    {
+      "name": "PAC04.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC04.eeg/content",
+      "bytes": 207771480,
+      "checksum": "md5:2b4e1accc9e881515154824b625efb84",
+      "sha256": "a1d155d19cf0a6c317edc5fc8b4929d66a92aaccd502e697bc7361f0a53b958f"
+    },
+    {
+      "name": "PAC04.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC04.vhdr/content",
+      "bytes": 14547,
+      "checksum": "md5:66fdfcaefb4bbe917d29f945d9741ab4",
+      "sha256": "d36f1326c42c0f30264ebbc59ab888599aa731011c6471caaae112908fe2847a"
+    },
+    {
+      "name": "PAC04.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC04.vmrk/content",
+      "bytes": 9456,
+      "checksum": "md5:3c32e7358be19f247ce5be4f16a34818",
+      "sha256": "f6f0da83cd69273a7c818418ea6e9a7a80045bd02d1889fec20b57d8d3269907"
+    },
+    {
+      "name": "PAC05.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC05.eeg/content",
+      "bytes": 206085600,
+      "checksum": "md5:688d21e8653afea448e8e662069cf1ed",
+      "sha256": "9f2e46b1281ccf3564a4c16aca46990a728e4b22ae4a32745a428b183394ea5c"
+    },
+    {
+      "name": "PAC05.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC05.vhdr/content",
+      "bytes": 14547,
+      "checksum": "md5:e00d536e2aa20869ecddc742b47ae485",
+      "sha256": "1250941adf4465de6d17b457e40fe480ada9b7f16e982007ff118e122b69db1e"
+    },
+    {
+      "name": "PAC05.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC05.vmrk/content",
+      "bytes": 8882,
+      "checksum": "md5:23427b0f33e094ef28f7edcdbfbeff95",
+      "sha256": "2d711b319c33d68f40f5f1e2e7f4ed0fe51d233a4acf717d258254c6b0fd6c14"
+    },
+    {
+      "name": "PAC06.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC06.eeg/content",
+      "bytes": 211211280,
+      "checksum": "md5:308067fae76be0ae9f85b2dcd054ee25",
+      "sha256": "49a0c499c65432ce85661bd2843d52ce275471c4ee0a7b8ca2425128457054cc"
+    },
+    {
+      "name": "PAC06.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC06.vhdr/content",
+      "bytes": 14555,
+      "checksum": "md5:c0133d992ab71c5b5d138083ab72fe53",
+      "sha256": "b394bc64adaa8369ba25e35d8ca18f32a8f8922693b26cd4c442e5b2b16929e4"
+    },
+    {
+      "name": "PAC06.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC06.vmrk/content",
+      "bytes": 9536,
+      "checksum": "md5:26cfd92d50c2d66838dd7427f3724afa",
+      "sha256": "06a78380815af84eb4669dfc3a624304535bce9019e2f858af78696fbc877bdc"
+    },
+    {
+      "name": "PAC07.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC07.eeg/content",
+      "bytes": 232706880,
+      "checksum": "md5:48bce748bced7e668ed1565c77cb02b3",
+      "sha256": "6a7d1d8ede4d58a84703e27e05f5d21ea8056785b88bd33ba9fc1190873e2ff4"
+    },
+    {
+      "name": "PAC07.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC07.vhdr/content",
+      "bytes": 14686,
+      "checksum": "md5:96f62f3cb1f26c571d10e22bb781cbe7",
+      "sha256": "b02abde0689e2dffc90c580cc8697a7093914a137fdc9ef524ff8762486a74c0"
+    },
+    {
+      "name": "PAC07.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC07.vmrk/content",
+      "bytes": 9552,
+      "checksum": "md5:e492cc16b64ae05013f07e95c6a3fe10",
+      "sha256": "c6c656371b4f8f45d0881b5268566e95fa0a214a0e8defb2f19ab6e821a356fb"
+    },
+    {
+      "name": "PAC08.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC08.eeg/content",
+      "bytes": 249046560,
+      "checksum": "md5:d3cc9c0669c0e9db11620f9e9f73ab81",
+      "sha256": "0ab799764f400c34807a56cf80ac2010439118e16e34592862d847919f183428"
+    },
+    {
+      "name": "PAC08.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC08.vhdr/content",
+      "bytes": 14686,
+      "checksum": "md5:6749bea58af77d65fc17d88941a8e874",
+      "sha256": "f9d90272742fbe2e7f149916a51a0aecb70cf1f6ad52d5bdb63c44cc9525f48f"
+    },
+    {
+      "name": "PAC08.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC08.vmrk/content",
+      "bytes": 9540,
+      "checksum": "md5:83fb93e321bb93ef0b0d199cabc7e3a7",
+      "sha256": "bc69d8b7fb17396b4c1d8e800051078a1820bdd25ebf386f86b9f008b93c2d76"
+    },
+    {
+      "name": "PAC09.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC09.eeg/content",
+      "bytes": 204727320,
+      "checksum": "md5:6a9f654d7fcf3da33d4d3b0be2e600b1",
+      "sha256": "a979c4de710db734ecdbf1d5a99a94bece9665f6eee3edc11712bf450d2194cb"
+    },
+    {
+      "name": "PAC09.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC09.vhdr/content",
+      "bytes": 14686,
+      "checksum": "md5:bd5a00e47310b1c771b45e2b87467fcd",
+      "sha256": "9e0c5d556f6cab803d5c107f4242237ce4e79689889324b6f01f7821f515a118"
+    },
+    {
+      "name": "PAC09.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC09.vmrk/content",
+      "bytes": 9504,
+      "checksum": "md5:131d474db5b6d51e9a75766a512aa480",
+      "sha256": "2d72bb713c23e39ac271c13fe4151d07bcd5ce44d40c4325632dfa2313b78087"
+    },
+    {
+      "name": "PAC10.eeg",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC10.eeg/content",
+      "bytes": 268594200,
+      "checksum": "md5:980f88ae6e6a9a575a45c9c584c26820",
+      "sha256": "b614f0eca90f5e287a9c8b252604b30ff8474cb829caff4fe2df096c6a3559d3"
+    },
+    {
+      "name": "PAC10.vhdr",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC10.vhdr/content",
+      "bytes": 14686,
+      "checksum": "md5:d556b13effe3c6166d75432bc052006d",
+      "sha256": "f9f6a561a3be8acbf7d85d26483af15788dc1d50098a240c54edb862a2202eab"
+    },
+    {
+      "name": "PAC10.vmrk",
+      "url": "https://zenodo.org/api/records/19599466/files/PAC10.vmrk/content",
+      "bytes": 9636,
+      "checksum": "md5:084df3d2a217bdaab7bf55ab982491d5",
+      "sha256": "3da94c7a26891e1d393a57524b9d15cb8014956f5ebc35d8db1dbd39157dd9b5"
+    },
+    {
+      "name": "bdf_IMAGEN.txt",
+      "url": "https://zenodo.org/api/records/19599466/files/bdf_IMAGEN.txt/content",
+      "bytes": 75,
+      "checksum": "md5:116e25159c98a07a233226a1ab2b4ba8",
+      "sha256": "595df84b1bdbe3350be78951dd17aca93e55873117caaea319a6a7126fc9a855"
+    },
+    {
+      "name": "nota post 02 y post 03.txt",
+      "url": "https://zenodo.org/api/records/19599466/files/nota%20post%2002%20y%20post%2003.txt/content",
+      "bytes": 138,
+      "checksum": "md5:05dc434eceda1a45977408dd8948a412",
+      "sha256": "cfa79331d4c84095098c6a6522a7586ce18dd293c29a7ec53b1d336f89e77677"
+    }
+  ]
+}

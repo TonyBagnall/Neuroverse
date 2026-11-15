@@ -1,0 +1,1705 @@
+{
+  "dataset": "ds003753",
+  "source_record_id": "ds003753",
+  "source_revision": "OpenNeuro ds003753 v1.1.0, Git c261d49df8cff6bb6f0ab1966508fa303a9c33e2",
+  "original_ref": "1.1.0",
+  "original_commit": "c261d49df8cff6bb6f0ab1966508fa303a9c33e2",
+  "licence": "CC0-1.0",
+  "licence_evidence": "Original pinned dataset_description.json License=CC0",
+  "source_urls": [
+    "https://openneuro.org/datasets/ds003753/versions/1.1.0"
+  ],
+  "metadata_archive_sha256": "a82a5b32c501a178f46a96955ac6eb85cecf0483e959156cc406ea9ca82b918c",
+  "files": [
+    {
+      "name": "CHANGES",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/CHANGES",
+      "bytes": 61,
+      "checksum": "sha256:ffeffe14282a09a1708b63e24b00257d5e3533b15121b620e134c3c7a611c8a4",
+      "sha256": "ffeffe14282a09a1708b63e24b00257d5e3533b15121b620e134c3c7a611c8a4",
+      "git_blob_sha1": "b94dba65459d5a0aac89e498352b30a96fb913ba"
+    },
+    {
+      "name": "README",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/README",
+      "bytes": 635,
+      "checksum": "sha256:a856b00199e7d4cd7455bcda6b5014e1488d9856f53e89394fc38481271e5000",
+      "sha256": "a856b00199e7d4cd7455bcda6b5014e1488d9856f53e89394fc38481271e5000",
+      "git_blob_sha1": "789852f73180b28fc151db93ee8e29d69d3dc46b"
+    },
+    {
+      "name": "dataset_description.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/dataset_description.json",
+      "bytes": 389,
+      "checksum": "sha256:2690ae88fa7351e9c004c3fa64d6f8f21b4797e7399091971a2e69a4a001dc88",
+      "sha256": "2690ae88fa7351e9c004c3fa64d6f8f21b4797e7399091971a2e69a4a001dc88",
+      "git_blob_sha1": "6412a59b11b4ec996cebf15a8b606a75202624fb"
+    },
+    {
+      "name": "participants.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/participants.json",
+      "bytes": 296,
+      "checksum": "sha256:f93f08fc89ab0f0c0d30a5443b038ffae49e20364fa4904744091af49d46b8b8",
+      "sha256": "f93f08fc89ab0f0c0d30a5443b038ffae49e20364fa4904744091af49d46b8b8",
+      "git_blob_sha1": "4b4a115c3b3d6927b56ea9a7d7e41b06ec44da30"
+    },
+    {
+      "name": "participants.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/participants.tsv",
+      "bytes": 485,
+      "checksum": "sha256:fdd85f3119c361d1026adc51353ff0dea4d9c3b4f4701334e9bfadf34f0c2275",
+      "sha256": "fdd85f3119c361d1026adc51353ff0dea4d9c3b4f4701334e9bfadf34f0c2275",
+      "git_blob_sha1": "fb52b937a84da1842123718d26bd72afb4cbaf5a"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-001/eeg/sub-001_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-001/eeg/sub-001_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-001/eeg/sub-001_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 207042000,
+      "checksum": "md5:b75c5a95eb477854a7b2e388036abd51",
+      "git_blob_sha1": "e5c6aa11a3d23312fd6cd58d9fb7caf518889e92",
+      "git_annex_pointer": "../../.git/annex/objects/qP/8V/MD5E-s207042000--b75c5a95eb477854a7b2e388036abd51.fdt/MD5E-s207042000--b75c5a95eb477854a7b2e388036abd51.fdt",
+      "sha256": "035940cfb401a215c9cd4c7d4a03a996610032d09be275fe74fac74ba1f6f734"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-001/eeg/sub-001_task-ProbabilisticSelection_eeg.json",
+      "bytes": 527,
+      "checksum": "sha256:7b2535af1dfb92b790cdb57de164539cefd5fd573015771b76717ff80e77c274",
+      "sha256": "7b2535af1dfb92b790cdb57de164539cefd5fd573015771b76717ff80e77c274",
+      "git_blob_sha1": "5cdeb452ba77cfb4dcf162ac7b3e44f7543b3a13"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-001/eeg/sub-001_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3710600,
+      "checksum": "md5:8e4cef8598fcd4864bb192561a02ed05",
+      "git_blob_sha1": "72275f8828d1902c277777480354df5fdb71f302",
+      "git_annex_pointer": "../../.git/annex/objects/mP/ff/MD5E-s3710600--8e4cef8598fcd4864bb192561a02ed05.set/MD5E-s3710600--8e4cef8598fcd4864bb192561a02ed05.set",
+      "sha256": "59d258c83f30d1387f371260b8ad1a99ae3ccd2b385f57b03b0b6fe34934a317"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-001/eeg/sub-001_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-001/eeg/sub-001_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-001/eeg/sub-001_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-001/eeg/sub-001_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27647,
+      "checksum": "sha256:1976f466350a0df9fcef3d5337af6dbf94c400a42a7fc26837c5cedc9e9c7806",
+      "sha256": "1976f466350a0df9fcef3d5337af6dbf94c400a42a7fc26837c5cedc9e9c7806",
+      "git_blob_sha1": "931302c2d556ec5ea70acfc5b374ce76e75e4a1d"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-002/eeg/sub-002_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-002/eeg/sub-002_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-002/eeg/sub-002_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 198534600,
+      "checksum": "md5:15396f82e0696518d000e9b15f4e7c61",
+      "git_blob_sha1": "566888e19bcef054197d246fd0b6b78d795c1864",
+      "git_annex_pointer": "../../.git/annex/objects/1Z/2G/MD5E-s198534600--15396f82e0696518d000e9b15f4e7c61.fdt/MD5E-s198534600--15396f82e0696518d000e9b15f4e7c61.fdt",
+      "sha256": "58cfaa88d9eb267b9f1f7fe110000997cfc4b171d6da9dbebb261671ce883a8a"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-002/eeg/sub-002_task-ProbabilisticSelection_eeg.json",
+      "bytes": 528,
+      "checksum": "sha256:b9412e443462eebb74cfae28893a7484180c3c849291bd5a171862275ae05a20",
+      "sha256": "b9412e443462eebb74cfae28893a7484180c3c849291bd5a171862275ae05a20",
+      "git_blob_sha1": "d981c498c8b64c4227a1648c62eec1b9546cb921"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-002/eeg/sub-002_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3581704,
+      "checksum": "md5:692b61b2c18c57b136873b41be5f56b3",
+      "git_blob_sha1": "6bd5adcb92a61cd4b0bb2e27bc19253f01839dce",
+      "git_annex_pointer": "../../.git/annex/objects/kG/7K/MD5E-s3581704--692b61b2c18c57b136873b41be5f56b3.set/MD5E-s3581704--692b61b2c18c57b136873b41be5f56b3.set",
+      "sha256": "24c7147210c08b065452786676d101b04e8ed5dc82be4bc00f6b24ce3999afa7"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-002/eeg/sub-002_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-002/eeg/sub-002_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-002/eeg/sub-002_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-002/eeg/sub-002_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27615,
+      "checksum": "sha256:2784c3154e3de92e40aa12e489c5b286d800f4f99fd209aaddf0ca9b2e8516da",
+      "sha256": "2784c3154e3de92e40aa12e489c5b286d800f4f99fd209aaddf0ca9b2e8516da",
+      "git_blob_sha1": "efb4967057795b0cdacff2ed87fb19e53390e9f2"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-003/eeg/sub-003_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-003/eeg/sub-003_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-003/eeg/sub-003_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 178035000,
+      "checksum": "md5:bbcfbd071d6617f6ac305c8582806a55",
+      "git_blob_sha1": "446b30aa1de96a3f37faa3f047ebd374a03abbad",
+      "git_annex_pointer": "../../.git/annex/objects/70/Gp/MD5E-s178035000--bbcfbd071d6617f6ac305c8582806a55.fdt/MD5E-s178035000--bbcfbd071d6617f6ac305c8582806a55.fdt",
+      "sha256": "57f784a7980f895c8ee6dfe2e62ab1814e066d8d1f1edf3c10572ab5fd5697fa"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-003/eeg/sub-003_task-ProbabilisticSelection_eeg.json",
+      "bytes": 528,
+      "checksum": "sha256:57846e09ca2dd8daacaeddc20848b69fd4dc2d9c78104e3ded848ec4fdb3c486",
+      "sha256": "57846e09ca2dd8daacaeddc20848b69fd4dc2d9c78104e3ded848ec4fdb3c486",
+      "git_blob_sha1": "61d1a4cf9f4e17a7418e08dbabc86b0f7464b74a"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-003/eeg/sub-003_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3273104,
+      "checksum": "md5:db43fd53dc8290c75f400b8d3d05c711",
+      "git_blob_sha1": "e61af2437fe68e4d5739fd58f5bc48e753f5c2d2",
+      "git_annex_pointer": "../../.git/annex/objects/wZ/m4/MD5E-s3273104--db43fd53dc8290c75f400b8d3d05c711.set/MD5E-s3273104--db43fd53dc8290c75f400b8d3d05c711.set",
+      "sha256": "f6a95f54227764adb8264d44c53acf61016d5176d16df925e284dfd92dae3517"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-003/eeg/sub-003_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-003/eeg/sub-003_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-003/eeg/sub-003_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-003/eeg/sub-003_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27726,
+      "checksum": "sha256:d968000d51decdaf8b6e67794b451b785ee71874ac7dd9882cb2cf5b3942c8b6",
+      "sha256": "d968000d51decdaf8b6e67794b451b785ee71874ac7dd9882cb2cf5b3942c8b6",
+      "git_blob_sha1": "dd861396a2b88a53021b4bbf1a54694b55ecc72c"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-004/eeg/sub-004_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-004/eeg/sub-004_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-004/eeg/sub-004_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 190509000,
+      "checksum": "md5:14c45eec4e7af6a4f6833a7fd3ccb6ef",
+      "git_blob_sha1": "578dc5f9b3b42ab8b428159c2c948012219dbd6a",
+      "git_annex_pointer": "../../.git/annex/objects/Qj/0M/MD5E-s190509000--14c45eec4e7af6a4f6833a7fd3ccb6ef.fdt/MD5E-s190509000--14c45eec4e7af6a4f6833a7fd3ccb6ef.fdt",
+      "sha256": "6453ddb4af12d28369c4b27c00ca526b904412dc58bf5a8b4be37b8146d3146b"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-004/eeg/sub-004_task-ProbabilisticSelection_eeg.json",
+      "bytes": 528,
+      "checksum": "sha256:6c83852971e7161538ecca36b16ed6868ab06771abc098ac8fb4b444c657bc54",
+      "sha256": "6c83852971e7161538ecca36b16ed6868ab06771abc098ac8fb4b444c657bc54",
+      "git_blob_sha1": "a1a6acbb56875c79e93765aaa3f447a5b600d9a1"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-004/eeg/sub-004_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3462104,
+      "checksum": "md5:92db120a145a7591ab1b321a944040e6",
+      "git_blob_sha1": "388a4d7e91c45c75e50e5fd54172db46086238fc",
+      "git_annex_pointer": "../../.git/annex/objects/gP/Jm/MD5E-s3462104--92db120a145a7591ab1b321a944040e6.set/MD5E-s3462104--92db120a145a7591ab1b321a944040e6.set",
+      "sha256": "85fa4a11f07a5a2a8b4e26c05d9237876236900ae065f8cffdd7c648cf0839ee"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-004/eeg/sub-004_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-004/eeg/sub-004_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-004/eeg/sub-004_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-004/eeg/sub-004_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27764,
+      "checksum": "sha256:5f62da6eb34c1e216ed351e68199b477c5d46494145324983536faeeb47b236b",
+      "sha256": "5f62da6eb34c1e216ed351e68199b477c5d46494145324983536faeeb47b236b",
+      "git_blob_sha1": "ee8ac1e057f14bada0a8ea9c15de660ded044284"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-005/eeg/sub-005_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-005/eeg/sub-005_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-005/eeg/sub-005_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 203722200,
+      "checksum": "md5:bfc38c505d5c5026b12cfc775a79f5a6",
+      "git_blob_sha1": "4d6cd44f58ae429414bfb2b0923819ef76de5357",
+      "git_annex_pointer": "../../.git/annex/objects/73/28/MD5E-s203722200--bfc38c505d5c5026b12cfc775a79f5a6.fdt/MD5E-s203722200--bfc38c505d5c5026b12cfc775a79f5a6.fdt",
+      "sha256": "1509bbbfe63dff5319a37e6c2243154c69f82c6ae423c8ae66b4922f0db11521"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-005/eeg/sub-005_task-ProbabilisticSelection_eeg.json",
+      "bytes": 528,
+      "checksum": "sha256:93f78cb655c4292cd2c962423081b820cb1f41588f77831e44663a7728e8637f",
+      "sha256": "93f78cb655c4292cd2c962423081b820cb1f41588f77831e44663a7728e8637f",
+      "git_blob_sha1": "4e774ad5b92395284aa7689bddf1d484ee35bf46"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-005/eeg/sub-005_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3661304,
+      "checksum": "md5:a626187e03dd325d821c89100112193a",
+      "git_blob_sha1": "c9e4a817974ffe6ef507004f85f25b9773d84db3",
+      "git_annex_pointer": "../../.git/annex/objects/8Q/3J/MD5E-s3661304--a626187e03dd325d821c89100112193a.set/MD5E-s3661304--a626187e03dd325d821c89100112193a.set",
+      "sha256": "53a69a7df11d8662d4f94d5d5788ac44991768b46fd82a708937c1e2ebb749be"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-005/eeg/sub-005_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-005/eeg/sub-005_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-005/eeg/sub-005_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-005/eeg/sub-005_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27726,
+      "checksum": "sha256:05f85e493c1250513e5d9f3fc0610d6c9d85baacb847168426be63077ebdcf82",
+      "sha256": "05f85e493c1250513e5d9f3fc0610d6c9d85baacb847168426be63077ebdcf82",
+      "git_blob_sha1": "9cf9f96507b0516673f10a744e4db17a327e1b58"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-006/eeg/sub-006_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-006/eeg/sub-006_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-006/eeg/sub-006_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 202534200,
+      "checksum": "md5:b626f7ff7323cdca8746bd54637c4283",
+      "git_blob_sha1": "99b22e05bd816950fb53c4a121234a5f80dd689a",
+      "git_annex_pointer": "../../.git/annex/objects/P9/5Z/MD5E-s202534200--b626f7ff7323cdca8746bd54637c4283.fdt/MD5E-s202534200--b626f7ff7323cdca8746bd54637c4283.fdt",
+      "sha256": "cd054f6819c7dc859609a358fc74e13a3197d940e7633363638d084c1599e530"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-006/eeg/sub-006_task-ProbabilisticSelection_eeg.json",
+      "bytes": 528,
+      "checksum": "sha256:65b9e9747440c02a95eb8807511e784518582102239119926f0fd547f23d68fc",
+      "sha256": "65b9e9747440c02a95eb8807511e784518582102239119926f0fd547f23d68fc",
+      "git_blob_sha1": "2b8f35ba1c3851f7ba11ba82ed15f600e9efe25f"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-006/eeg/sub-006_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3642304,
+      "checksum": "md5:5cd0f388ea2a2661d79056912c29a207",
+      "git_blob_sha1": "cd3e5901cf9d26586c9e09051ee1f0773f689387",
+      "git_annex_pointer": "../../.git/annex/objects/mw/4M/MD5E-s3642304--5cd0f388ea2a2661d79056912c29a207.set/MD5E-s3642304--5cd0f388ea2a2661d79056912c29a207.set",
+      "sha256": "7338545cc3a6aec39100939b72d8e9a8030cc31de997ed134f565f8bc9eb09b1"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-006/eeg/sub-006_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-006/eeg/sub-006_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-006/eeg/sub-006_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-006/eeg/sub-006_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27698,
+      "checksum": "sha256:4fea152d9a3883ad686f4f01c57e0b5d6e95a3b376f00d1345371e39b83996de",
+      "sha256": "4fea152d9a3883ad686f4f01c57e0b5d6e95a3b376f00d1345371e39b83996de",
+      "git_blob_sha1": "edd0842116d45de5b226e003a73137ae088bb0c4"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-007/eeg/sub-007_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-007/eeg/sub-007_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-007/eeg/sub-007_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 191070000,
+      "checksum": "md5:61f398b718ad133804eb0d2696f4b890",
+      "git_blob_sha1": "18c57a8bf76b1635ca041858a673037467d3a0ac",
+      "git_annex_pointer": "../../.git/annex/objects/XJ/kK/MD5E-s191070000--61f398b718ad133804eb0d2696f4b890.fdt/MD5E-s191070000--61f398b718ad133804eb0d2696f4b890.fdt",
+      "sha256": "7ab4826e200f3261c871aae970911dd8c05844e8e82f7514e84e5900366437e3"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-007/eeg/sub-007_task-ProbabilisticSelection_eeg.json",
+      "bytes": 527,
+      "checksum": "sha256:4041c26b3bd6321e251f637cba9acd65e94ab36fe9da9a9d684be419e2b039b6",
+      "sha256": "4041c26b3bd6321e251f637cba9acd65e94ab36fe9da9a9d684be419e2b039b6",
+      "git_blob_sha1": "62ac0ab54957f477201db95ad57cdac4dc431247"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-007/eeg/sub-007_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3470600,
+      "checksum": "md5:182067df603f1416a3e204d7dcaf9d0c",
+      "git_blob_sha1": "4cc64b1f8b4856941384ffce4fd2988a28034bd5",
+      "git_annex_pointer": "../../.git/annex/objects/7q/0p/MD5E-s3470600--182067df603f1416a3e204d7dcaf9d0c.set/MD5E-s3470600--182067df603f1416a3e204d7dcaf9d0c.set",
+      "sha256": "e20fb6de896717e4ca34f15aca8c4c2c30129dcd93306924b5c9eb47d54406d4"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-007/eeg/sub-007_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-007/eeg/sub-007_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-007/eeg/sub-007_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-007/eeg/sub-007_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27763,
+      "checksum": "sha256:91201376577cb58b52264c18cf98772afeb027e4e61d35c3cd555b1635fe0657",
+      "sha256": "91201376577cb58b52264c18cf98772afeb027e4e61d35c3cd555b1635fe0657",
+      "git_blob_sha1": "c411612a3c1bb91e2321eb0681626dda3afedf5b"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-008/eeg/sub-008_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-008/eeg/sub-008_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-008/eeg/sub-008_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 192990600,
+      "checksum": "md5:77926f7a45ae4087032f33969c75e64c",
+      "git_blob_sha1": "c9c97a88bde90689e67790518e23bcb3b2516b42",
+      "git_annex_pointer": "../../.git/annex/objects/Pz/Vg/MD5E-s192990600--77926f7a45ae4087032f33969c75e64c.fdt/MD5E-s192990600--77926f7a45ae4087032f33969c75e64c.fdt",
+      "sha256": "4b917a10b1b5ff8c9efd6ff20b40ec7f9823a059dc9ebd0347e61e22e9d1d66f"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-008/eeg/sub-008_task-ProbabilisticSelection_eeg.json",
+      "bytes": 528,
+      "checksum": "sha256:cd330d991dda0934df6b91742350d8a37a42ed74f2b699f4ee31abeccc70b747",
+      "sha256": "cd330d991dda0934df6b91742350d8a37a42ed74f2b699f4ee31abeccc70b747",
+      "git_blob_sha1": "4f8f697f6079c72a2e85466cb5441c1bb8b9ef4f"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-008/eeg/sub-008_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3497720,
+      "checksum": "md5:3c35af69c590c19f9cf1656039697ecc",
+      "git_blob_sha1": "889f77ab15a5bbca799fa78b22e8c2d6a84b9949",
+      "git_annex_pointer": "../../.git/annex/objects/QW/gX/MD5E-s3497720--3c35af69c590c19f9cf1656039697ecc.set/MD5E-s3497720--3c35af69c590c19f9cf1656039697ecc.set",
+      "sha256": "47afc74c544683dcf01b1205837cd0f90e1131441f64cee8a49bf96cc3faf2ab"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-008/eeg/sub-008_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-008/eeg/sub-008_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-008/eeg/sub-008_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-008/eeg/sub-008_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27603,
+      "checksum": "sha256:0d65a51848be9dd563d4bbe51559750d3984ecfeeea467145c16c435f0ccfc6b",
+      "sha256": "0d65a51848be9dd563d4bbe51559750d3984ecfeeea467145c16c435f0ccfc6b",
+      "git_blob_sha1": "3720ad213bbb6fc9c434ec848698b475afaa858d"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-009/eeg/sub-009_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-009/eeg/sub-009_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-009/eeg/sub-009_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 182094000,
+      "checksum": "md5:97567685145e057ddaffa6bc31508641",
+      "git_blob_sha1": "0cb3fec926d8fbf3f04ccffe8776052085f63748",
+      "git_annex_pointer": "../../.git/annex/objects/Xp/89/MD5E-s182094000--97567685145e057ddaffa6bc31508641.fdt/MD5E-s182094000--97567685145e057ddaffa6bc31508641.fdt",
+      "sha256": "fdf00a63332fcee3c45ddadff15df3f32be5387b7dd0ee1c985e37deef63fe90"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-009/eeg/sub-009_task-ProbabilisticSelection_eeg.json",
+      "bytes": 527,
+      "checksum": "sha256:601605b4e4273d44eb9981700579a50cb6fc2ef3781e0fbf996c5a321c037b57",
+      "sha256": "601605b4e4273d44eb9981700579a50cb6fc2ef3781e0fbf996c5a321c037b57",
+      "git_blob_sha1": "dc6d4caa47369f9a9d66c36eec7fae43a2a5d3fd"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-009/eeg/sub-009_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3334616,
+      "checksum": "md5:010637954ee7ece6d9d9f5f5d4f51e4e",
+      "git_blob_sha1": "701ba7ac3fad3fb1b9ea88942a4711a950cddb34",
+      "git_annex_pointer": "../../.git/annex/objects/19/J9/MD5E-s3334616--010637954ee7ece6d9d9f5f5d4f51e4e.set/MD5E-s3334616--010637954ee7ece6d9d9f5f5d4f51e4e.set",
+      "sha256": "1377bb5d2eede4515b670ad549638bc25bd73c0f25b958483c6f8311c416719a"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-009/eeg/sub-009_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-009/eeg/sub-009_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-009/eeg/sub-009_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-009/eeg/sub-009_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27694,
+      "checksum": "sha256:4ddce610e7370e357bbe36e472887965b63b429496d4417986b1e6d42454788c",
+      "sha256": "4ddce610e7370e357bbe36e472887965b63b429496d4417986b1e6d42454788c",
+      "git_blob_sha1": "b69b1e74e6b6e84c792ea78882baf7e734ca24a2"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-010/eeg/sub-010_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-010/eeg/sub-010_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-010/eeg/sub-010_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 180510000,
+      "checksum": "md5:42ff293efac75e0629640ea88ea2a201",
+      "git_blob_sha1": "9580424b09ad6cc10058c038dfaa9c468ae5b80c",
+      "git_annex_pointer": "../../.git/annex/objects/6v/8V/MD5E-s180510000--42ff293efac75e0629640ea88ea2a201.fdt/MD5E-s180510000--42ff293efac75e0629640ea88ea2a201.fdt",
+      "sha256": "4547335065502efd54ea0437664f2ef801b8807d2f125dd13903566045555264"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-010/eeg/sub-010_task-ProbabilisticSelection_eeg.json",
+      "bytes": 527,
+      "checksum": "sha256:15dbe0d37b05f21c467541d58ddacdec16698a89555ed8faf45a9302db8c9444",
+      "sha256": "15dbe0d37b05f21c467541d58ddacdec16698a89555ed8faf45a9302db8c9444",
+      "git_blob_sha1": "e349a684a0d3835db8c71296b6863315f2dc6e8b"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-010/eeg/sub-010_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3310616,
+      "checksum": "md5:56604d0d97b9cc7620519069695e0110",
+      "git_blob_sha1": "60ec70f73e67033a04fc72b63346046340414161",
+      "git_annex_pointer": "../../.git/annex/objects/Mq/0G/MD5E-s3310616--56604d0d97b9cc7620519069695e0110.set/MD5E-s3310616--56604d0d97b9cc7620519069695e0110.set",
+      "sha256": "a85ceb4a1bf067a5066cfbbf40f98781db74c3acae1afe020a6f4dedeeb7933c"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-010/eeg/sub-010_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-010/eeg/sub-010_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-010/eeg/sub-010_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-010/eeg/sub-010_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27695,
+      "checksum": "sha256:43ae1fe09e0cc238354aa4bb7f3fc8858abe1ba1ae78a0206b24fc41f3a279a6",
+      "sha256": "43ae1fe09e0cc238354aa4bb7f3fc8858abe1ba1ae78a0206b24fc41f3a279a6",
+      "git_blob_sha1": "55334426ad1041e8182cccbb649c97d28009f032"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-011/eeg/sub-011_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-011/eeg/sub-011_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-011/eeg/sub-011_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 220413600,
+      "checksum": "md5:223e7c15b8aa706b0fe2313459dff7b4",
+      "git_blob_sha1": "c3df27e63ab22509e808d5247fdee0f0dbb502f6",
+      "git_annex_pointer": "../../.git/annex/objects/kg/WV/MD5E-s220413600--223e7c15b8aa706b0fe2313459dff7b4.fdt/MD5E-s220413600--223e7c15b8aa706b0fe2313459dff7b4.fdt",
+      "sha256": "5feb01d3f9ce160e0912b888dd0ead149e0e803d1173b75c66ddbcf7030712a0"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-011/eeg/sub-011_task-ProbabilisticSelection_eeg.json",
+      "bytes": 527,
+      "checksum": "sha256:b58696871b8bdb804669834efb639ff5307db4f4d4f98728988883ce522a25e3",
+      "sha256": "b58696871b8bdb804669834efb639ff5307db4f4d4f98728988883ce522a25e3",
+      "git_blob_sha1": "c3ee824b491ace430c5ac90ec558a4964ccabf14"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-011/eeg/sub-011_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3913216,
+      "checksum": "md5:2c75d3c2f4c8bd9e904441ab4fe8c91a",
+      "git_blob_sha1": "adb51f5c95a79282de738b8b0ae6abe1f8f72f06",
+      "git_annex_pointer": "../../.git/annex/objects/FK/mw/MD5E-s3913216--2c75d3c2f4c8bd9e904441ab4fe8c91a.set/MD5E-s3913216--2c75d3c2f4c8bd9e904441ab4fe8c91a.set",
+      "sha256": "b734863ee0e056d80e963a69284fffd7c0167e929de6c10a28da46cca07314fb"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-011/eeg/sub-011_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-011/eeg/sub-011_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-011/eeg/sub-011_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-011/eeg/sub-011_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27664,
+      "checksum": "sha256:cc9d6ffe307f571ff1d04c615d25f182f7d76aef133b1bc6cd5cf097444b94c4",
+      "sha256": "cc9d6ffe307f571ff1d04c615d25f182f7d76aef133b1bc6cd5cf097444b94c4",
+      "git_blob_sha1": "a5217f305de47310701aae84ad174fcb35e7bc26"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-012/eeg/sub-012_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-012/eeg/sub-012_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-012/eeg/sub-012_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 188383800,
+      "checksum": "md5:229b41d97d93ad297148dd01eea7e93f",
+      "git_blob_sha1": "b7d22955bb4aef2f6ddbcdef7c42178bcd2639f8",
+      "git_annex_pointer": "../../.git/annex/objects/X1/gF/MD5E-s188383800--229b41d97d93ad297148dd01eea7e93f.fdt/MD5E-s188383800--229b41d97d93ad297148dd01eea7e93f.fdt",
+      "sha256": "78296fd84740b0ca7bbbe4fa9fa5a301e9a9e1fa07b1187aa9514a6f39abc2a1"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-012/eeg/sub-012_task-ProbabilisticSelection_eeg.json",
+      "bytes": 528,
+      "checksum": "sha256:545ae28ce75ce2788365cf3f54985bdc2a3b391bfe9d91ce747588d49853674f",
+      "sha256": "545ae28ce75ce2788365cf3f54985bdc2a3b391bfe9d91ce747588d49853674f",
+      "git_blob_sha1": "8d9fad9a4ad1f0cd5863218d1fb6c0652630a5d5"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-012/eeg/sub-012_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3429920,
+      "checksum": "md5:cb98f876fcb7e3d3d0b19d33caaeaa9f",
+      "git_blob_sha1": "861004bda30d8a9f7073f4dcc6d72e454d7482de",
+      "git_annex_pointer": "../../.git/annex/objects/Xv/MV/MD5E-s3429920--cb98f876fcb7e3d3d0b19d33caaeaa9f.set/MD5E-s3429920--cb98f876fcb7e3d3d0b19d33caaeaa9f.set",
+      "sha256": "1558c304d6dd4acb513d5189e32a250191bbd1f4e493ccf011913be7eb4384b1"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-012/eeg/sub-012_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-012/eeg/sub-012_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-012/eeg/sub-012_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-012/eeg/sub-012_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27748,
+      "checksum": "sha256:73f1b9c53bb3c125bb1f81bf849261e1b328b99553db1bc5362ffd459e3e9809",
+      "sha256": "73f1b9c53bb3c125bb1f81bf849261e1b328b99553db1bc5362ffd459e3e9809",
+      "git_blob_sha1": "78e2b9439a79d0bd827c2faea9550cd4411ea330"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-013/eeg/sub-013_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-013/eeg/sub-013_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-013/eeg/sub-013_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 217041000,
+      "checksum": "md5:67eaae4c34e575a70e0bfadaa19c1593",
+      "git_blob_sha1": "7fbad7a9de63753bf2505df80aa4d41b69c82a39",
+      "git_annex_pointer": "../../.git/annex/objects/VQ/PF/MD5E-s217041000--67eaae4c34e575a70e0bfadaa19c1593.fdt/MD5E-s217041000--67eaae4c34e575a70e0bfadaa19c1593.fdt",
+      "sha256": "9e931927c1104ecbfa84959d15c2dd922da295ac32d22a8ca01485ac2a76e027"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-013/eeg/sub-013_task-ProbabilisticSelection_eeg.json",
+      "bytes": 528,
+      "checksum": "sha256:1862301609babe485aea1781dfa713adf9cb042ddcc9e7bd65aa56fc7abb007a",
+      "sha256": "1862301609babe485aea1781dfa713adf9cb042ddcc9e7bd65aa56fc7abb007a",
+      "git_blob_sha1": "b6d064e4b0dda5a7963d0f2253c8699212c2d248"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-013/eeg/sub-013_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3862120,
+      "checksum": "md5:52b12d179e379e94e1484e721e4f1872",
+      "git_blob_sha1": "0ed5282d35e24bbef7bc046fcaa3c97ce63b7596",
+      "git_annex_pointer": "../../.git/annex/objects/QG/6m/MD5E-s3862120--52b12d179e379e94e1484e721e4f1872.set/MD5E-s3862120--52b12d179e379e94e1484e721e4f1872.set",
+      "sha256": "1996b03cc7e294c7c8c365b87b10912652991b79ffe849ce81f9b640c8da568e"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-013/eeg/sub-013_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-013/eeg/sub-013_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-013/eeg/sub-013_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-013/eeg/sub-013_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27607,
+      "checksum": "sha256:50b2506a505631ddcf30d4d2a6b8994cba7e0dadc543effb3d14b7917d06c8b5",
+      "sha256": "50b2506a505631ddcf30d4d2a6b8994cba7e0dadc543effb3d14b7917d06c8b5",
+      "git_blob_sha1": "9541c564cdf394e06b5f672aa23136ef9d20e955"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-014/eeg/sub-014_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 819,
+      "checksum": "sha256:82dec9eb1224d0b1e66720f8b398e6e1300b3568cbe93db08c3daef3b6e975ee",
+      "sha256": "82dec9eb1224d0b1e66720f8b398e6e1300b3568cbe93db08c3daef3b6e975ee",
+      "git_blob_sha1": "fe75afeda7799f96deed2ec389c78a944c4c66c2"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-014/eeg/sub-014_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-014/eeg/sub-014_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 169870800,
+      "checksum": "md5:1f6ab3863ca400683315797ac9713d95",
+      "git_blob_sha1": "60ca3ab288d9dd1efc450828a863fe057c436f81",
+      "git_annex_pointer": "../../.git/annex/objects/GJ/K8/MD5E-s169870800--1f6ab3863ca400683315797ac9713d95.fdt/MD5E-s169870800--1f6ab3863ca400683315797ac9713d95.fdt",
+      "sha256": "364a99056faf0f5f595803f9766148c5c0869abfa815f301c523a842aa5f379d"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-014/eeg/sub-014_task-ProbabilisticSelection_eeg.json",
+      "bytes": 527,
+      "checksum": "sha256:9f380928661a6ee7fa598d611936ae90b4ef2f56aee6bfe1ba17e2f963561d5d",
+      "sha256": "9f380928661a6ee7fa598d611936ae90b4ef2f56aee6bfe1ba17e2f963561d5d",
+      "git_blob_sha1": "3ff4ca290ddb62a1955498327291fad6e20b5c9e"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-014/eeg/sub-014_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3149496,
+      "checksum": "md5:fd12b4467b146bda07b810f88db17bdf",
+      "git_blob_sha1": "3e0e9ac4ff38538d4a05e2f2e68543a3f3ec3196",
+      "git_annex_pointer": "../../.git/annex/objects/kx/2M/MD5E-s3149496--fd12b4467b146bda07b810f88db17bdf.set/MD5E-s3149496--fd12b4467b146bda07b810f88db17bdf.set",
+      "sha256": "479cb1649d2c4e45022568e6f9a1f7513c459e2b555f745abb57aea043dc9d90"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-014/eeg/sub-014_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1474,
+      "checksum": "sha256:28d9040f6663791b41bb852576634c24bed1b97eca0bc27e713078e329f62468",
+      "sha256": "28d9040f6663791b41bb852576634c24bed1b97eca0bc27e713078e329f62468",
+      "git_blob_sha1": "22c8719d43998a1691beca11ca616b99488f9bb8"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-014/eeg/sub-014_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-014/eeg/sub-014_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-014/eeg/sub-014_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27648,
+      "checksum": "sha256:366267a2ea7eb33c80b01ec4e042a9898ea111b80e1016339cd02d5d01cf2005",
+      "sha256": "366267a2ea7eb33c80b01ec4e042a9898ea111b80e1016339cd02d5d01cf2005",
+      "git_blob_sha1": "99e4a966e47f5d41133783d0e55e3f15ba2e81f8"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-015/eeg/sub-015_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-015/eeg/sub-015_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-015/eeg/sub-015_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 201894000,
+      "checksum": "md5:e6c1c50da7238a366e1e6c3c9923403c",
+      "git_blob_sha1": "89f1816874efbcfa02270c72b444a09d2718d287",
+      "git_annex_pointer": "../../.git/annex/objects/0Q/P6/MD5E-s201894000--e6c1c50da7238a366e1e6c3c9923403c.fdt/MD5E-s201894000--e6c1c50da7238a366e1e6c3c9923403c.fdt",
+      "sha256": "e2c43db3b7e611c120091da5ccc557f5a61305ed6f8641ba8fd311008220bbf7"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-015/eeg/sub-015_task-ProbabilisticSelection_eeg.json",
+      "bytes": 527,
+      "checksum": "sha256:898eebdefd276100bec9b0a45871a48c455eaa2705af87148ea9fc0b2bd740d6",
+      "sha256": "898eebdefd276100bec9b0a45871a48c455eaa2705af87148ea9fc0b2bd740d6",
+      "git_blob_sha1": "d6085dd5730e81cfc0235e7fe74202d25ad626b9"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-015/eeg/sub-015_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3625616,
+      "checksum": "md5:327f896d726e5e572e1d59722a684201",
+      "git_blob_sha1": "c84945f882f92c3d02b13edf07b361950f27c2f2",
+      "git_annex_pointer": "../../.git/annex/objects/Jx/3z/MD5E-s3625616--327f896d726e5e572e1d59722a684201.set/MD5E-s3625616--327f896d726e5e572e1d59722a684201.set",
+      "sha256": "157a150dc6617b74fa792548c8052b490a0a0a48bd346b18311579295da63a8a"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-015/eeg/sub-015_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-015/eeg/sub-015_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-015/eeg/sub-015_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-015/eeg/sub-015_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27313,
+      "checksum": "sha256:3598cbedb725ce042ddf0ec9b883a01542d780388d6ab17df341eb5fb4bd7f30",
+      "sha256": "3598cbedb725ce042ddf0ec9b883a01542d780388d6ab17df341eb5fb4bd7f30",
+      "git_blob_sha1": "0bfe09ea56406cb6e7f49848df096a8a926dea61"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-016/eeg/sub-016_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 780,
+      "checksum": "sha256:a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "sha256": "a5c4e0aa1c6b8d5d927e0376e4a7b490ef11f3180df8f5248d2a9a0b2bf505ad",
+      "git_blob_sha1": "4801e71eea2019ae8bafb5b556e2715219403740"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-016/eeg/sub-016_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-016/eeg/sub-016_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 187803000,
+      "checksum": "md5:e1ab65cd0a8c468bec0de0efc3a04541",
+      "git_blob_sha1": "c71620f3249820735a8edcb9b6baa6e55011a18d",
+      "git_annex_pointer": "../../.git/annex/objects/WK/5k/MD5E-s187803000--e1ab65cd0a8c468bec0de0efc3a04541.fdt/MD5E-s187803000--e1ab65cd0a8c468bec0de0efc3a04541.fdt",
+      "sha256": "b62734a93edb1dd13f31aef3871bad991e4eca96e1a67b8861e2c42639789e3e"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-016/eeg/sub-016_task-ProbabilisticSelection_eeg.json",
+      "bytes": 528,
+      "checksum": "sha256:88723de7d0a40df29f7c3cb1f106c15080a8deea1b5613b320b3f874e7b7f94d",
+      "sha256": "88723de7d0a40df29f7c3cb1f106c15080a8deea1b5613b320b3f874e7b7f94d",
+      "git_blob_sha1": "6cfa63f3eb2e18be8af3e6941132a84ffc892780"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-016/eeg/sub-016_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3421104,
+      "checksum": "md5:dd35d72f71a1b340be917838242859c4",
+      "git_blob_sha1": "e5343e49312b266fafa739d470c24059be1d4388",
+      "git_annex_pointer": "../../.git/annex/objects/GF/QP/MD5E-s3421104--dd35d72f71a1b340be917838242859c4.set/MD5E-s3421104--dd35d72f71a1b340be917838242859c4.set",
+      "sha256": "e36b5218a9f2dd7365a2130d2d5018f930de3fbf4565e2cac8fb45423df0fcf9"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-016/eeg/sub-016_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1467,
+      "checksum": "sha256:524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "sha256": "524eeb1bc36fd97d2211a44e861cefae151514f80f6f9d5d408f3185455861e3",
+      "git_blob_sha1": "809ad6054578405abf298329bdfb9466922bf287"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-016/eeg/sub-016_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-016/eeg/sub-016_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-016/eeg/sub-016_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27713,
+      "checksum": "sha256:e4c5bd2d486c49a875aa527419ef22b53bf70b254b7d4549462ed061f1c5743e",
+      "sha256": "e4c5bd2d486c49a875aa527419ef22b53bf70b254b7d4549462ed061f1c5743e",
+      "git_blob_sha1": "6245802a30310af9a385b56aa220aa1df1968317"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-017/eeg/sub-017_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-017/eeg/sub-017_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-017/eeg/sub-017_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 140289600,
+      "checksum": "md5:f4990f003419db0e925b19edfefb4450",
+      "git_blob_sha1": "caf3ccf51d470539593760f1690dfa84535b4c5e",
+      "git_annex_pointer": "../../.git/annex/objects/4P/k9/MD5E-s140289600--f4990f003419db0e925b19edfefb4450.fdt/MD5E-s140289600--f4990f003419db0e925b19edfefb4450.fdt",
+      "sha256": "785d043ca16de2b28ef2cba23f962b196e238f05e40499e20c76ecaf2bb6e776"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-017/eeg/sub-017_task-ProbabilisticSelection_eeg.json",
+      "bytes": 527,
+      "checksum": "sha256:74873b69d4e0d6c77fe8c367dde45fadb910e2a81ca7436169f0e833989df4de",
+      "sha256": "74873b69d4e0d6c77fe8c367dde45fadb910e2a81ca7436169f0e833989df4de",
+      "git_blob_sha1": "309b57cf655e742eac80d367b3f1286c4c95dad5"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-017/eeg/sub-017_task-ProbabilisticSelection_eeg.set",
+      "bytes": 2671216,
+      "checksum": "md5:067576f13eba48cafa216f2be3e0bf87",
+      "git_blob_sha1": "f6a39b1c1db0a66a0fca302ece7df33cb5b32a3b",
+      "git_annex_pointer": "../../.git/annex/objects/5w/3X/MD5E-s2671216--067576f13eba48cafa216f2be3e0bf87.set/MD5E-s2671216--067576f13eba48cafa216f2be3e0bf87.set",
+      "sha256": "ecf52b5d663c062659faf2403dd11c1dfc39e1cde808f103c53741e34179f745"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-017/eeg/sub-017_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-017/eeg/sub-017_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-017/eeg/sub-017_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-017/eeg/sub-017_task-ProbabilisticSelection_events.tsv",
+      "bytes": 26157,
+      "checksum": "sha256:d26a35589bcd3767cda55c4fa2d89117b59dcb6dcc91e37afe360c861e3f8188",
+      "sha256": "d26a35589bcd3767cda55c4fa2d89117b59dcb6dcc91e37afe360c861e3f8188",
+      "git_blob_sha1": "987975443fa89d560edf055364ae6044556c847f"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-018/eeg/sub-018_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-018/eeg/sub-018_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-018/eeg/sub-018_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 173177400,
+      "checksum": "md5:66545783c7149793e0b2c9b45f4adb15",
+      "git_blob_sha1": "b66b7da10af12a922342794cf62b7eed02a63d0c",
+      "git_annex_pointer": "../../.git/annex/objects/mK/9Z/MD5E-s173177400--66545783c7149793e0b2c9b45f4adb15.fdt/MD5E-s173177400--66545783c7149793e0b2c9b45f4adb15.fdt",
+      "sha256": "a2e10cf38da2c11f05d0e4f094d4c1be0fc07da2c6b2dc31231113127dfac38c"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-018/eeg/sub-018_task-ProbabilisticSelection_eeg.json",
+      "bytes": 528,
+      "checksum": "sha256:9bb8227203ad092cc66e3edae5f82152cd99a451c84761c30702d0f0840b95ea",
+      "sha256": "9bb8227203ad092cc66e3edae5f82152cd99a451c84761c30702d0f0840b95ea",
+      "git_blob_sha1": "49af373825e6b768e9d40cc513b6abb89793c71c"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-018/eeg/sub-018_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3199520,
+      "checksum": "md5:5e183c9d30a2d10136902c40cde5b91e",
+      "git_blob_sha1": "dbc2c15bd9a0e72cbcdb3e19d150938ad62292fb",
+      "git_annex_pointer": "../../.git/annex/objects/v9/Mp/MD5E-s3199520--5e183c9d30a2d10136902c40cde5b91e.set/MD5E-s3199520--5e183c9d30a2d10136902c40cde5b91e.set",
+      "sha256": "e2bccc4d02864f0fbe8d36c9230ecf5dcb923683ff09b9c927119e7d882b3b02"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-018/eeg/sub-018_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-018/eeg/sub-018_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-018/eeg/sub-018_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-018/eeg/sub-018_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27644,
+      "checksum": "sha256:c01c6aa701518b466e0abbd5259bdfe0e85f57990bf2b08cf00123016dd6861c",
+      "sha256": "c01c6aa701518b466e0abbd5259bdfe0e85f57990bf2b08cf00123016dd6861c",
+      "git_blob_sha1": "63e504713520488c721171dc3b379b24deec3fa0"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-019/eeg/sub-019_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-019/eeg/sub-019_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-019/eeg/sub-019_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 174563400,
+      "checksum": "md5:6e1e4f36c3e7ba8b8d2ecd33aed8bb65",
+      "git_blob_sha1": "4221e421de993fbeae0706baecc4b9c8a0d2ee94",
+      "git_annex_pointer": "../../.git/annex/objects/g0/F7/MD5E-s174563400--6e1e4f36c3e7ba8b8d2ecd33aed8bb65.fdt/MD5E-s174563400--6e1e4f36c3e7ba8b8d2ecd33aed8bb65.fdt",
+      "sha256": "cf4ac8b9d5959943d208dce32b8d5efffac201495f9e299aac630b62019a1726"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-019/eeg/sub-019_task-ProbabilisticSelection_eeg.json",
+      "bytes": 528,
+      "checksum": "sha256:9f024fafa0b5b12144db4c4b54667dccd0adda89a61d46bb174b1e63a153ef6b",
+      "sha256": "9f024fafa0b5b12144db4c4b54667dccd0adda89a61d46bb174b1e63a153ef6b",
+      "git_blob_sha1": "41c34f8d3176249ec59e7e8f8d787ad08fa7aced"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-019/eeg/sub-019_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3220520,
+      "checksum": "md5:08f74bb8d56ba641fc5a586807edff02",
+      "git_blob_sha1": "b70a6709df96bf0fbc1b3641e55ce589d4285c75",
+      "git_annex_pointer": "../../.git/annex/objects/jx/8G/MD5E-s3220520--08f74bb8d56ba641fc5a586807edff02.set/MD5E-s3220520--08f74bb8d56ba641fc5a586807edff02.set",
+      "sha256": "4dc04d3532015f8683ff8e9297596a2e6f9695d265fe60541624856a85fe3757"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-019/eeg/sub-019_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-019/eeg/sub-019_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-019/eeg/sub-019_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-019/eeg/sub-019_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27658,
+      "checksum": "sha256:a33d4a98bb5d68101d0b844e40ce0c1be441b76493c136b9dff963b9f4df87d1",
+      "sha256": "a33d4a98bb5d68101d0b844e40ce0c1be441b76493c136b9dff963b9f4df87d1",
+      "git_blob_sha1": "6b8354abb7d32942a49f3a9c87e045fefe18ae7b"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-020/eeg/sub-020_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-020/eeg/sub-020_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-020/eeg/sub-020_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 188614800,
+      "checksum": "md5:559d7f2328a87f173c800b094f10e507",
+      "git_blob_sha1": "222bfe87fc8b05bd9dcc23c2d8d03dcc69bd2b06",
+      "git_annex_pointer": "../../.git/annex/objects/9X/zz/MD5E-s188614800--559d7f2328a87f173c800b094f10e507.fdt/MD5E-s188614800--559d7f2328a87f173c800b094f10e507.fdt",
+      "sha256": "795b9366a19d3dac577177f0be26f05c4e183e8d2ee19388578ad341333cb959"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-020/eeg/sub-020_task-ProbabilisticSelection_eeg.json",
+      "bytes": 527,
+      "checksum": "sha256:65ced70473f7c1469a0e8bfaad6093c4f96f75b188c323065a664102e7f4fba3",
+      "sha256": "65ced70473f7c1469a0e8bfaad6093c4f96f75b188c323065a664102e7f4fba3",
+      "git_blob_sha1": "4de3c2c2f1edb96378ae28e5754a81b4a3c3ab81"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-020/eeg/sub-020_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3432416,
+      "checksum": "md5:7481592134c6ef856826c7645372642a",
+      "git_blob_sha1": "4c11011f92fa3d0972c63a62e482d7b007da3b70",
+      "git_annex_pointer": "../../.git/annex/objects/5v/xf/MD5E-s3432416--7481592134c6ef856826c7645372642a.set/MD5E-s3432416--7481592134c6ef856826c7645372642a.set",
+      "sha256": "f04acef6ed178a622bedbdfc84c54ea14eb3f953badca27f7e966cc75b59d67b"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-020/eeg/sub-020_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-020/eeg/sub-020_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-020/eeg/sub-020_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-020/eeg/sub-020_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27623,
+      "checksum": "sha256:963bc1b7f7bed329533cbb1f3f52a11f95e881f88700ef90d6029544a2a988d9",
+      "sha256": "963bc1b7f7bed329533cbb1f3f52a11f95e881f88700ef90d6029544a2a988d9",
+      "git_blob_sha1": "b43ff429d412d1e14186bf67869ddf57e11ad561"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-021/eeg/sub-021_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-021/eeg/sub-021_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-021/eeg/sub-021_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 172755000,
+      "checksum": "md5:874e87069381e644f16d861d0951ba3d",
+      "git_blob_sha1": "e281c73c16e8465474672247b7eee4e492d14026",
+      "git_annex_pointer": "../../.git/annex/objects/q3/p5/MD5E-s172755000--874e87069381e644f16d861d0951ba3d.fdt/MD5E-s172755000--874e87069381e644f16d861d0951ba3d.fdt",
+      "sha256": "42ac2a8cb74446d78117949865012248742aebb76a96dc30fd1d1d537a0acf87"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-021/eeg/sub-021_task-ProbabilisticSelection_eeg.json",
+      "bytes": 528,
+      "checksum": "sha256:1d898ca4dd306fc1306c785356fbc9872f16cd7334f50bdadbe8c1340fb4dcec",
+      "sha256": "1d898ca4dd306fc1306c785356fbc9872f16cd7334f50bdadbe8c1340fb4dcec",
+      "git_blob_sha1": "27ef7d22a47ea13e006010e978166d6fa815c50b"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-021/eeg/sub-021_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3193120,
+      "checksum": "md5:b4e452ff62ba185f4ba2ddb67dad2b60",
+      "git_blob_sha1": "1f8793ab2571889cad3fa7268abc0e52ccc279d6",
+      "git_annex_pointer": "../../.git/annex/objects/M8/5q/MD5E-s3193120--b4e452ff62ba185f4ba2ddb67dad2b60.set/MD5E-s3193120--b4e452ff62ba185f4ba2ddb67dad2b60.set",
+      "sha256": "557d821bf4b713945e9e9307046d363ecb7982399932251f345120bd3c43f543"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-021/eeg/sub-021_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-021/eeg/sub-021_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-021/eeg/sub-021_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-021/eeg/sub-021_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27640,
+      "checksum": "sha256:6446c38efc2d4ec4fbaa3e2b685d55b83f7348c10c1b719484e09a3dd15ea39c",
+      "sha256": "6446c38efc2d4ec4fbaa3e2b685d55b83f7348c10c1b719484e09a3dd15ea39c",
+      "git_blob_sha1": "96c07f2942461780ce6854aa1a8859139e07a460"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-022/eeg/sub-022_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-022/eeg/sub-022_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-022/eeg/sub-022_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 168894000,
+      "checksum": "md5:56bbb10974b95d222105e7565eee72bb",
+      "git_blob_sha1": "798235f7f139ae5021451cccc9483847b2e47f3a",
+      "git_annex_pointer": "../../.git/annex/objects/4G/5k/MD5E-s168894000--56bbb10974b95d222105e7565eee72bb.fdt/MD5E-s168894000--56bbb10974b95d222105e7565eee72bb.fdt",
+      "sha256": "0dd46f33e80085f6363f3f621a383c42d9f05b0fc8074b80b64b4bfff6455087"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-022/eeg/sub-022_task-ProbabilisticSelection_eeg.json",
+      "bytes": 527,
+      "checksum": "sha256:cab5f4973592bd82c83718f060d87139122c0566c7edaffcbb2d3f7bc9e21c59",
+      "sha256": "cab5f4973592bd82c83718f060d87139122c0566c7edaffcbb2d3f7bc9e21c59",
+      "git_blob_sha1": "05d7ed468275e80f34d3d2eeb0931c888102903e"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-022/eeg/sub-022_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3134616,
+      "checksum": "md5:7c4f739cbae9598ac02c8d3f342b503d",
+      "git_blob_sha1": "5c43230d34415a7b968cbb541f2d1451e223a04b",
+      "git_annex_pointer": "../../.git/annex/objects/GG/K0/MD5E-s3134616--7c4f739cbae9598ac02c8d3f342b503d.set/MD5E-s3134616--7c4f739cbae9598ac02c8d3f342b503d.set",
+      "sha256": "356dabf819510894eafddd0a69df24ea72efb9d9e786082a79a27e19d0e5e6c9"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-022/eeg/sub-022_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-022/eeg/sub-022_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-022/eeg/sub-022_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-022/eeg/sub-022_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27690,
+      "checksum": "sha256:059dab093ed3139daf28a20e99b9eed98b1fc8c744d1ad8b3770a595fd5d753a",
+      "sha256": "059dab093ed3139daf28a20e99b9eed98b1fc8c744d1ad8b3770a595fd5d753a",
+      "git_blob_sha1": "6ac024d7ef2a63242df3f60c2d5bfaec9f6aaa86"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-023/eeg/sub-023_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-023/eeg/sub-023_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-023/eeg/sub-023_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 198693000,
+      "checksum": "md5:01824d276c22a100fd3bfb92858d6f4a",
+      "git_blob_sha1": "12fb717ec4fa6d1bd41b673bcd9633833415f8b3",
+      "git_annex_pointer": "../../.git/annex/objects/8f/9Z/MD5E-s198693000--01824d276c22a100fd3bfb92858d6f4a.fdt/MD5E-s198693000--01824d276c22a100fd3bfb92858d6f4a.fdt",
+      "sha256": "557f2e4c94c7cb1ff243de73393dee024a0fa2a353e0026711dcef89fbb8eba1"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-023/eeg/sub-023_task-ProbabilisticSelection_eeg.json",
+      "bytes": 528,
+      "checksum": "sha256:534f1062c1cbfabd3fef3731ed17edf80b79eb45648ddecb9664fb58650d5e4c",
+      "sha256": "534f1062c1cbfabd3fef3731ed17edf80b79eb45648ddecb9664fb58650d5e4c",
+      "git_blob_sha1": "c43bac9ee2cd393da4b32fff292ad30856c235d8"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-023/eeg/sub-023_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3586120,
+      "checksum": "md5:2d5fc7e28924966248472b27a80ca47c",
+      "git_blob_sha1": "ce52d27367fc8dc615d2ad56bdf29b0f6438de6b",
+      "git_annex_pointer": "../../.git/annex/objects/kz/q9/MD5E-s3586120--2d5fc7e28924966248472b27a80ca47c.set/MD5E-s3586120--2d5fc7e28924966248472b27a80ca47c.set",
+      "sha256": "ec1d43ac4503397f955935f1f1d4977aab61f2a8751fbd03150235749b1b3b59"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-023/eeg/sub-023_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-023/eeg/sub-023_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-023/eeg/sub-023_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-023/eeg/sub-023_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27752,
+      "checksum": "sha256:7d34e1ea572c58c4548556aed6ddf27394824f8b1d9e740cc16339fc1586c389",
+      "sha256": "7d34e1ea572c58c4548556aed6ddf27394824f8b1d9e740cc16339fc1586c389",
+      "git_blob_sha1": "5ec14bcda79eecd70ba0523eaea683f1a6051d34"
+    },
+    {
+      "name": "sub-024/eeg/sub-024_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-024/eeg/sub-024_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-024/eeg/sub-024_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-024/eeg/sub-024_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-024/eeg/sub-024_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-024/eeg/sub-024_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 279114000,
+      "checksum": "md5:a3aa037df3e02e773a0ddc49553e0a86",
+      "git_blob_sha1": "3644d8bd585153d95c4ff7f5fff52ca1cd9178df",
+      "git_annex_pointer": "../../.git/annex/objects/w4/69/MD5E-s279114000--a3aa037df3e02e773a0ddc49553e0a86.fdt/MD5E-s279114000--a3aa037df3e02e773a0ddc49553e0a86.fdt",
+      "sha256": "73f68d75733e11a457171f81a27114f96b0ebf8ac56d8399afa670d1a56bac99"
+    },
+    {
+      "name": "sub-024/eeg/sub-024_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-024/eeg/sub-024_task-ProbabilisticSelection_eeg.json",
+      "bytes": 527,
+      "checksum": "sha256:803e9a0e4e94e974d5ac843379e05730cace7e3169caf1a9d588f6c1b5d9d59d",
+      "sha256": "803e9a0e4e94e974d5ac843379e05730cace7e3169caf1a9d588f6c1b5d9d59d",
+      "git_blob_sha1": "e8cf4d60d2bbff66e9b9f536134d5b4b20024cc1"
+    },
+    {
+      "name": "sub-024/eeg/sub-024_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-024/eeg/sub-024_task-ProbabilisticSelection_eeg.set",
+      "bytes": 4807616,
+      "checksum": "md5:f30a818dc3e6a7f33d4a64e10f4c6f44",
+      "git_blob_sha1": "982a15ee67c03c7f99465ffe92d5de9a206bf422",
+      "git_annex_pointer": "../../.git/annex/objects/pM/J7/MD5E-s4807616--f30a818dc3e6a7f33d4a64e10f4c6f44.set/MD5E-s4807616--f30a818dc3e6a7f33d4a64e10f4c6f44.set",
+      "sha256": "fcce5e841a770fe0566a9a8209a2fbe3d534fb148fe12176647310a02ac2ab31"
+    },
+    {
+      "name": "sub-024/eeg/sub-024_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-024/eeg/sub-024_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-024/eeg/sub-024_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-024/eeg/sub-024_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-024/eeg/sub-024_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-024/eeg/sub-024_task-ProbabilisticSelection_events.tsv",
+      "bytes": 28096,
+      "checksum": "sha256:d9007b78701ab1a89238e6e500998c30d2eeec45c7a8a4656d0ce698b07a85a7",
+      "sha256": "d9007b78701ab1a89238e6e500998c30d2eeec45c7a8a4656d0ce698b07a85a7",
+      "git_blob_sha1": "9ddd979d3bfc6d8d3f7b370e1d0d8646a8d5bfa1"
+    },
+    {
+      "name": "sub-025/eeg/sub-025_task-ProbabilisticSelection_channels.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-025/eeg/sub-025_task-ProbabilisticSelection_channels.tsv",
+      "bytes": 788,
+      "checksum": "sha256:96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "sha256": "96d6879385c638df73612b6103c0f4229193b30e042ed1643b0dba132f89d872",
+      "git_blob_sha1": "67d66351daaba25805485a241defea674fc6a951"
+    },
+    {
+      "name": "sub-025/eeg/sub-025_task-ProbabilisticSelection_coordsystem.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-025/eeg/sub-025_task-ProbabilisticSelection_coordsystem.json",
+      "bytes": 141,
+      "checksum": "sha256:450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "sha256": "450649ac4cd12cfcb0d2b7c3cd1b6c07a211677b681470da9af1a0ec6e35f87a",
+      "git_blob_sha1": "f7268d20d3b16f234af171a5ddd2e7f7dd40a2cc"
+    },
+    {
+      "name": "sub-025/eeg/sub-025_task-ProbabilisticSelection_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-025/eeg/sub-025_task-ProbabilisticSelection_eeg.fdt",
+      "bytes": 192990600,
+      "checksum": "md5:bd347fad26384f0dccd7e3c5305e3567",
+      "git_blob_sha1": "41e8ed43ea1be04f59025cc2f2d11d1a25a84bcb",
+      "git_annex_pointer": "../../.git/annex/objects/WW/j7/MD5E-s192990600--bd347fad26384f0dccd7e3c5305e3567.fdt/MD5E-s192990600--bd347fad26384f0dccd7e3c5305e3567.fdt",
+      "sha256": "deb6e6bce8e8f6a5cfb4f95f376d0d0e0accfddcca0277f4d4fee35ddd4cf035"
+    },
+    {
+      "name": "sub-025/eeg/sub-025_task-ProbabilisticSelection_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-025/eeg/sub-025_task-ProbabilisticSelection_eeg.json",
+      "bytes": 528,
+      "checksum": "sha256:cd330d991dda0934df6b91742350d8a37a42ed74f2b699f4ee31abeccc70b747",
+      "sha256": "cd330d991dda0934df6b91742350d8a37a42ed74f2b699f4ee31abeccc70b747",
+      "git_blob_sha1": "4f8f697f6079c72a2e85466cb5441c1bb8b9ef4f"
+    },
+    {
+      "name": "sub-025/eeg/sub-025_task-ProbabilisticSelection_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003753/sub-025/eeg/sub-025_task-ProbabilisticSelection_eeg.set",
+      "bytes": 3499720,
+      "checksum": "md5:b3d1ced91a7b352cf5e38b21802d5694",
+      "git_blob_sha1": "27d55e725f0466ce5ec056c484261d176b4cfc58",
+      "git_annex_pointer": "../../.git/annex/objects/V8/wm/MD5E-s3499720--b3d1ced91a7b352cf5e38b21802d5694.set/MD5E-s3499720--b3d1ced91a7b352cf5e38b21802d5694.set",
+      "sha256": "4beb5d45017ebcd03bb23fbe71e72314925a9340e8dfb4a2f0856a49a8cf42a9"
+    },
+    {
+      "name": "sub-025/eeg/sub-025_task-ProbabilisticSelection_electrodes.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-025/eeg/sub-025_task-ProbabilisticSelection_electrodes.tsv",
+      "bytes": 1475,
+      "checksum": "sha256:8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "sha256": "8687b5934fce70e06ba21679ecf07c99c94989e9b63f4dbd8bd6f8a6d1cdf728",
+      "git_blob_sha1": "0f4a292a0765d660f7d8c77ba7bb05b87f5bb334"
+    },
+    {
+      "name": "sub-025/eeg/sub-025_task-ProbabilisticSelection_events.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-025/eeg/sub-025_task-ProbabilisticSelection_events.json",
+      "bytes": 137,
+      "checksum": "sha256:912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "sha256": "912753b00c8c9f3dd078a56c1e51da190b266337b7cc652e1532ee44b3facf5c",
+      "git_blob_sha1": "c6523a06649947c5b96a6e3438d6a0cb5b4bde37"
+    },
+    {
+      "name": "sub-025/eeg/sub-025_task-ProbabilisticSelection_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003753/c261d49df8cff6bb6f0ab1966508fa303a9c33e2/sub-025/eeg/sub-025_task-ProbabilisticSelection_events.tsv",
+      "bytes": 27710,
+      "checksum": "sha256:e772d9c58049e6a3a652037ac827b1ba77bfe0bcbab73720fa6ebe1faeecb8be",
+      "sha256": "e772d9c58049e6a3a652037ac827b1ba77bfe0bcbab73720fa6ebe1faeecb8be",
+      "git_blob_sha1": "1974afa2378371e1edd62b9a80ef8544b8044142"
+    }
+  ]
+}

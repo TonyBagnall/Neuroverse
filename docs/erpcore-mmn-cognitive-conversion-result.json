@@ -1,0 +1,14 @@
+{
+  "dataset": "AuditoryDeviance",
+  "component": "MMN",
+  "path": "D:\\Data\\EEG\\AuditoryDeviance",
+  "train_cases": 11934,
+  "test_cases": 4000,
+  "classes": 2,
+  "channels": 30,
+  "points": 1024,
+  "hz": 1024,
+  "subjects": 40,
+  "status": "passed",
+  "cache_purged": true
+}

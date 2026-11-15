@@ -1,0 +1,1588 @@
+{
+  "dataset": "ds003751",
+  "source_record_id": "ds003751",
+  "source_revision": "OpenNeuro ds003751 v1.0.6, Git 5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c",
+  "original_ref": "1.0.6",
+  "original_commit": "5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c",
+  "licence": "CC0-1.0",
+  "licence_evidence": "dataset_description.json declares License=CC0; root LICENSE file contains ODbL-1.0 (with DBCL-1.0 for individual contents); both retained in provenance",
+  "source_urls": [
+    "https://openneuro.org/datasets/ds003751/versions/1.0.6"
+  ],
+  "metadata_archive_sha256": "355a852b06e3a12e4278f0f4770824ff9ce2ccda4c548cade4a429bac3f83e27",
+  "files": [
+    {
+      "name": "CHANGES",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/CHANGES",
+      "bytes": 304,
+      "checksum": "sha256:b737f4cfd389666eaa6155509ef04768069f164d19c751d0b7a7a483089cca4a",
+      "sha256": "b737f4cfd389666eaa6155509ef04768069f164d19c751d0b7a7a483089cca4a",
+      "git_blob_sha1": "8352e46e441e9f87b7b56817028e489d8bee3131"
+    },
+    {
+      "name": "README",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/README",
+      "bytes": 2122,
+      "checksum": "sha256:24071ce3365f7acb67313aec3bb8e6994ee0596c064e521a26ee8fbf0a0b9240",
+      "sha256": "24071ce3365f7acb67313aec3bb8e6994ee0596c064e521a26ee8fbf0a0b9240",
+      "git_blob_sha1": "0e211ddb3f97fbd109f3b617f0c28d92c3d9a16d"
+    },
+    {
+      "name": "dataset_description.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/dataset_description.json",
+      "bytes": 1818,
+      "checksum": "sha256:364e818902eea8531435f09e4623000062e86fe9d3b2c5009c84e797f16285ae",
+      "sha256": "364e818902eea8531435f09e4623000062e86fe9d3b2c5009c84e797f16285ae",
+      "git_blob_sha1": "6a07181f23b9350c90c8b7c105a7cbc8643be72c"
+    },
+    {
+      "name": "participants.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/participants.json",
+      "bytes": 441,
+      "checksum": "sha256:46b46366e9a75fc30f135f65764fa8b8bc26e117c37bfc0e4ce663d7e6a69549",
+      "sha256": "46b46366e9a75fc30f135f65764fa8b8bc26e117c37bfc0e4ce663d7e6a69549",
+      "git_blob_sha1": "a962e16a65af39ff2e5f6abc531612b7af15eab4"
+    },
+    {
+      "name": "participants.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/participants.tsv",
+      "bytes": 1031,
+      "checksum": "sha256:9339e6336f18a132362dbefe3b75b67751560e4b519c00715f45fec9ccfb11d1",
+      "sha256": "9339e6336f18a132362dbefe3b75b67751560e4b519c00715f45fec9ccfb11d1",
+      "git_blob_sha1": "fe03725c95ce54f700794257db7979929e0a0da9"
+    },
+    {
+      "name": "sub-mit003/beh/sub-mit003_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit003/beh/sub-mit003_task-Emotion_beh.tsv",
+      "bytes": 1412,
+      "checksum": "sha256:197b714c4d14c46af228176b7813c1b740cabeb2189359b7f4a000c5d9189e53",
+      "sha256": "197b714c4d14c46af228176b7813c1b740cabeb2189359b7f4a000c5d9189e53",
+      "git_blob_sha1": "4fbddabff864271a5a8f6d64692486c1bb273634"
+    },
+    {
+      "name": "sub-mit003/eeg/sub-mit003_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit003/eeg/sub-mit003_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:6eeda4d29022e8431276b2681282cac433bea98c0a618ec1256151c04ddedde6",
+      "sha256": "6eeda4d29022e8431276b2681282cac433bea98c0a618ec1256151c04ddedde6",
+      "git_blob_sha1": "f985fecd42237c44f59b6dbc1b9a655b1296f230"
+    },
+    {
+      "name": "sub-mit003/eeg/sub-mit003_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit003/eeg/sub-mit003_task-emotion_events.tsv",
+      "bytes": 7380,
+      "checksum": "sha256:60a90772fe74610f6ebe3fd6b7e44d760783df32b8219240f582fc3a4393b6ed",
+      "sha256": "60a90772fe74610f6ebe3fd6b7e44d760783df32b8219240f582fc3a4393b6ed",
+      "git_blob_sha1": "ffb3630edeca71c3cb23df964fcb1bcbfb93694b"
+    },
+    {
+      "name": "sub-mit004/beh/sub-mit004_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit004/beh/sub-mit004_task-Emotion_beh.tsv",
+      "bytes": 1822,
+      "checksum": "sha256:cf27856fb321c25cbb7790eab262a654878865e1072d2ec7f50668705064e3a1",
+      "sha256": "cf27856fb321c25cbb7790eab262a654878865e1072d2ec7f50668705064e3a1",
+      "git_blob_sha1": "ba1de4463764c0e80ab941acc148826796108e44"
+    },
+    {
+      "name": "sub-mit004/eeg/sub-mit004_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit004/eeg/sub-mit004_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:741134debda873be70a21a7d55fd40458913bd658497b33a77d84c546cbc98df",
+      "sha256": "741134debda873be70a21a7d55fd40458913bd658497b33a77d84c546cbc98df",
+      "git_blob_sha1": "d43f2f03315ed2bfce95effe03454b84cc8d5f22"
+    },
+    {
+      "name": "sub-mit004/eeg/sub-mit004_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit004/eeg/sub-mit004_task-emotion_events.tsv",
+      "bytes": 7469,
+      "checksum": "sha256:c8bc24a84d7180cb8c1987a6a8edb6501ee2603369a95347a58c3691a7e8e5b9",
+      "sha256": "c8bc24a84d7180cb8c1987a6a8edb6501ee2603369a95347a58c3691a7e8e5b9",
+      "git_blob_sha1": "b7064271e73118b1fe93cef2825fb82161224684"
+    },
+    {
+      "name": "sub-mit007/beh/sub-mit007_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit007/beh/sub-mit007_task-Emotion_beh.tsv",
+      "bytes": 1821,
+      "checksum": "sha256:ebe912319e45b86125354d4c5070f9aad320f6d6c653f07ab671c226e3a0c2ca",
+      "sha256": "ebe912319e45b86125354d4c5070f9aad320f6d6c653f07ab671c226e3a0c2ca",
+      "git_blob_sha1": "987227b72241f50436b31dbaebb5f65a2b227fbd"
+    },
+    {
+      "name": "sub-mit007/eeg/sub-mit007_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit007/eeg/sub-mit007_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:af87ebbf72d76dfe1b8c0e3ba889b61c6a14b8d8471fbf21e21950f4f808258a",
+      "sha256": "af87ebbf72d76dfe1b8c0e3ba889b61c6a14b8d8471fbf21e21950f4f808258a",
+      "git_blob_sha1": "3ae5891efe2cae9149e207214052c467e7ae1b0b"
+    },
+    {
+      "name": "sub-mit007/eeg/sub-mit007_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit007/eeg/sub-mit007_task-emotion_events.tsv",
+      "bytes": 6580,
+      "checksum": "sha256:bef0edf1f4645ec03ac6d7ee4f4580ba7d00d740b9bfe141207e3b39aff358fa",
+      "sha256": "bef0edf1f4645ec03ac6d7ee4f4580ba7d00d740b9bfe141207e3b39aff358fa",
+      "git_blob_sha1": "f336479f78f55f3aefc2902912c8aa6200912cea"
+    },
+    {
+      "name": "sub-mit014/beh/sub-mit014_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit014/beh/sub-mit014_task-Emotion_beh.tsv",
+      "bytes": 3580,
+      "checksum": "sha256:a5ac3058f3cd83cfa1392dfb72e17e548883379cfdbc9e1f92f65e90ec820e55",
+      "sha256": "a5ac3058f3cd83cfa1392dfb72e17e548883379cfdbc9e1f92f65e90ec820e55",
+      "git_blob_sha1": "5ebfd4606ad8b004e004ab314843276d1ca8c2d0"
+    },
+    {
+      "name": "sub-mit014/eeg/sub-mit014_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit014/eeg/sub-mit014_task-emotion_eeg.json",
+      "bytes": 646,
+      "checksum": "sha256:625dd95a32df226c5ef143729e5cd8cadd55cc4924067283413051490f8868c1",
+      "sha256": "625dd95a32df226c5ef143729e5cd8cadd55cc4924067283413051490f8868c1",
+      "git_blob_sha1": "b5b1a77a8b51869b0dfa19c7c0e1a3f011af9575"
+    },
+    {
+      "name": "sub-mit014/eeg/sub-mit014_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit014/eeg/sub-mit014_task-emotion_events.tsv",
+      "bytes": 7676,
+      "checksum": "sha256:b184389a09c9b50cde2056b2cc251de141c3c75a0b53d5d07abf20ebbae5b227",
+      "sha256": "b184389a09c9b50cde2056b2cc251de141c3c75a0b53d5d07abf20ebbae5b227",
+      "git_blob_sha1": "1283686887bd807ef869bbf5d8b4d13588664a80"
+    },
+    {
+      "name": "sub-mit017/beh/sub-mit017_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit017/beh/sub-mit017_task-Emotion_beh.tsv",
+      "bytes": 1897,
+      "checksum": "sha256:f2e26c944de3e59677acb9bf40aa77871f2a9d0f98c1773b656f1123d45d96fd",
+      "sha256": "f2e26c944de3e59677acb9bf40aa77871f2a9d0f98c1773b656f1123d45d96fd",
+      "git_blob_sha1": "82e450155b2b691bada6b26629d5e32a664b88e8"
+    },
+    {
+      "name": "sub-mit017/eeg/sub-mit017_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit017/eeg/sub-mit017_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:8f98cd53d862c3876063bc3a63621df7de7542a189bc3e73bb4617a2b19eff4c",
+      "sha256": "8f98cd53d862c3876063bc3a63621df7de7542a189bc3e73bb4617a2b19eff4c",
+      "git_blob_sha1": "8638581a5dcaf99e4d0059f96892ebc0dad2a4c1"
+    },
+    {
+      "name": "sub-mit017/eeg/sub-mit017_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit017/eeg/sub-mit017_task-emotion_events.tsv",
+      "bytes": 7557,
+      "checksum": "sha256:db97e8adadc591df49a3d48bfbf6753b6bcac28d9480fdcee0f423f9fc0b7312",
+      "sha256": "db97e8adadc591df49a3d48bfbf6753b6bcac28d9480fdcee0f423f9fc0b7312",
+      "git_blob_sha1": "262cb15ca0ad7905b49c08bd3858ccd1fba5357f"
+    },
+    {
+      "name": "sub-mit022/beh/sub-mit022_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit022/beh/sub-mit022_task-Emotion_beh.tsv",
+      "bytes": 5218,
+      "checksum": "sha256:33776c0d6d12bf800f5083c7e924d1787e1b3e517f03ff33e4061f217a2fe29f",
+      "sha256": "33776c0d6d12bf800f5083c7e924d1787e1b3e517f03ff33e4061f217a2fe29f",
+      "git_blob_sha1": "f57547dc7bafabbbcc750abc817fe11b45140a9b"
+    },
+    {
+      "name": "sub-mit022/eeg/sub-mit022_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit022/eeg/sub-mit022_task-emotion_eeg.json",
+      "bytes": 648,
+      "checksum": "sha256:3bcb7d22b499128a07115ace920496d102d8a49dd3d89f6ea45e95f4216c5c72",
+      "sha256": "3bcb7d22b499128a07115ace920496d102d8a49dd3d89f6ea45e95f4216c5c72",
+      "git_blob_sha1": "fcb4a55dc2ac67b2b8614b4418b941bbfc9e82ec"
+    },
+    {
+      "name": "sub-mit022/eeg/sub-mit022_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit022/eeg/sub-mit022_task-emotion_events.tsv",
+      "bytes": 9464,
+      "checksum": "sha256:6907e8d713fb7f89844b6893b6cb0c7f0c938920ee60fd447f37680392ce388d",
+      "sha256": "6907e8d713fb7f89844b6893b6cb0c7f0c938920ee60fd447f37680392ce388d",
+      "git_blob_sha1": "376a226042069e89e091ba8796b4ec93d23be46e"
+    },
+    {
+      "name": "sub-mit023/beh/sub-mit023_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit023/beh/sub-mit023_task-Emotion_beh.tsv",
+      "bytes": 2303,
+      "checksum": "sha256:e7c1a63b220bb47370a62caf7b4a4e01905d770192cfc093481320ad97583ebd",
+      "sha256": "e7c1a63b220bb47370a62caf7b4a4e01905d770192cfc093481320ad97583ebd",
+      "git_blob_sha1": "b49749261d54ca6af03a0c76be1dace65a9246db"
+    },
+    {
+      "name": "sub-mit023/eeg/sub-mit023_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit023/eeg/sub-mit023_task-emotion_eeg.json",
+      "bytes": 648,
+      "checksum": "sha256:a2ee53ae3bf0149a443e78ec9d640e4f544002931757150ecd108eb052a28303",
+      "sha256": "a2ee53ae3bf0149a443e78ec9d640e4f544002931757150ecd108eb052a28303",
+      "git_blob_sha1": "02f0094c9b01b3205a981c2b1addceb2184972a5"
+    },
+    {
+      "name": "sub-mit023/eeg/sub-mit023_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit023/eeg/sub-mit023_task-emotion_events.tsv",
+      "bytes": 7570,
+      "checksum": "sha256:a4383770f694a698dab7fa85e0ef6eb71369a834670bc4c5943554dd43832152",
+      "sha256": "a4383770f694a698dab7fa85e0ef6eb71369a834670bc4c5943554dd43832152",
+      "git_blob_sha1": "eb01e0b8f79874216cd3228eb9f5225a654eca50"
+    },
+    {
+      "name": "sub-mit024/beh/sub-mit024_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit024/beh/sub-mit024_task-Emotion_beh.tsv",
+      "bytes": 1564,
+      "checksum": "sha256:4843c3d4dafeed09c55cf849bdfbe1e6616792917abbc9dee29703937972dc09",
+      "sha256": "4843c3d4dafeed09c55cf849bdfbe1e6616792917abbc9dee29703937972dc09",
+      "git_blob_sha1": "1ca8a00685778401a9ecee53ceb160be3043de5d"
+    },
+    {
+      "name": "sub-mit024/eeg/sub-mit024_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit024/eeg/sub-mit024_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:540dfbd6b5cfc184d22851699a6f75a05a4c140fe5c906138aca42f3e123a9d0",
+      "sha256": "540dfbd6b5cfc184d22851699a6f75a05a4c140fe5c906138aca42f3e123a9d0",
+      "git_blob_sha1": "65d7875acf14a233545831f5e793ce12488e4f74"
+    },
+    {
+      "name": "sub-mit024/eeg/sub-mit024_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit024/eeg/sub-mit024_task-emotion_events.tsv",
+      "bytes": 6060,
+      "checksum": "sha256:39e78d3a37b42c89da48a895a95c07ec09e75f2852e97a2822a3d5f3f1d79472",
+      "sha256": "39e78d3a37b42c89da48a895a95c07ec09e75f2852e97a2822a3d5f3f1d79472",
+      "git_blob_sha1": "c4f1808a37c11b7188c68dc0e750e3415ef41b63"
+    },
+    {
+      "name": "sub-mit032/beh/sub-mit032_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit032/beh/sub-mit032_task-Emotion_beh.tsv",
+      "bytes": 3231,
+      "checksum": "sha256:05a31c24163f104696f8f11b7148ad2220201f93c51d8a09a8efba4a5e573d83",
+      "sha256": "05a31c24163f104696f8f11b7148ad2220201f93c51d8a09a8efba4a5e573d83",
+      "git_blob_sha1": "a856b0b761748152758d1fd3b03658a60913ce63"
+    },
+    {
+      "name": "sub-mit032/eeg/sub-mit032_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit032/eeg/sub-mit032_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:d0bbda1889e9304e60d135ce484faa0ce092fa61dd2bc157294c0abf31ca3f04",
+      "sha256": "d0bbda1889e9304e60d135ce484faa0ce092fa61dd2bc157294c0abf31ca3f04",
+      "git_blob_sha1": "334311ea3fb8eb025647f87ccbcc875b70565825"
+    },
+    {
+      "name": "sub-mit032/eeg/sub-mit032_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit032/eeg/sub-mit032_task-emotion_events.tsv",
+      "bytes": 8283,
+      "checksum": "sha256:f47197960e8629614471e6b55256b62f334389947ea8d2ff96aed2bd35d57c82",
+      "sha256": "f47197960e8629614471e6b55256b62f334389947ea8d2ff96aed2bd35d57c82",
+      "git_blob_sha1": "1bb0646b921c162d2242c3c9e10f4fa2c32181da"
+    },
+    {
+      "name": "sub-mit035/beh/sub-mit035_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit035/beh/sub-mit035_task-Emotion_beh.tsv",
+      "bytes": 4079,
+      "checksum": "sha256:45099229ea50fcb155c409edcc3f1dbeb860825bdae8a50f1fa1af515eabd8a4",
+      "sha256": "45099229ea50fcb155c409edcc3f1dbeb860825bdae8a50f1fa1af515eabd8a4",
+      "git_blob_sha1": "87f1e0a1f96c50351c0f599812c2cfb2a1efc0e8"
+    },
+    {
+      "name": "sub-mit035/eeg/sub-mit035_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit035/eeg/sub-mit035_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:70d2ede6dcac49b8bc915647c0f8a8af84c62722a836bb089f954e09a42fa1b3",
+      "sha256": "70d2ede6dcac49b8bc915647c0f8a8af84c62722a836bb089f954e09a42fa1b3",
+      "git_blob_sha1": "77394242e7e4863452e12b84802396deb3e176b6"
+    },
+    {
+      "name": "sub-mit035/eeg/sub-mit035_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit035/eeg/sub-mit035_task-emotion_events.tsv",
+      "bytes": 8864,
+      "checksum": "sha256:be5f2d6cf783863a4306c74f41cdd29cb1c59f11ccd4afee9661ccbf00fc667e",
+      "sha256": "be5f2d6cf783863a4306c74f41cdd29cb1c59f11ccd4afee9661ccbf00fc667e",
+      "git_blob_sha1": "cb2113093c9c18bb1a1df8ebf6b7127ba3866379"
+    },
+    {
+      "name": "sub-mit039/beh/sub-mit039_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit039/beh/sub-mit039_task-Emotion_beh.tsv",
+      "bytes": 1761,
+      "checksum": "sha256:2c7cf4e371b8b757100f99d18f7a324d29b4ff1b781685db10cf0d6722411c4b",
+      "sha256": "2c7cf4e371b8b757100f99d18f7a324d29b4ff1b781685db10cf0d6722411c4b",
+      "git_blob_sha1": "824add94a0cdc11f77405868cd6ddbc7adab102c"
+    },
+    {
+      "name": "sub-mit039/eeg/sub-mit039_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit039/eeg/sub-mit039_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:94dcd1b1639789d4b3ab552fc0c60a7fda071929ecdf63b0d8a45e4e38ddbcff",
+      "sha256": "94dcd1b1639789d4b3ab552fc0c60a7fda071929ecdf63b0d8a45e4e38ddbcff",
+      "git_blob_sha1": "c0b14a5c019a10dd91094bc87673af1f7c1a28a8"
+    },
+    {
+      "name": "sub-mit039/eeg/sub-mit039_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit039/eeg/sub-mit039_task-emotion_events.tsv",
+      "bytes": 6902,
+      "checksum": "sha256:536878a403a94ac7d266998cfae97352be0271cf28fea3a2396c02c639b0ec6b",
+      "sha256": "536878a403a94ac7d266998cfae97352be0271cf28fea3a2396c02c639b0ec6b",
+      "git_blob_sha1": "21b59dc377925e7983ce278bfd760a2026cf9990"
+    },
+    {
+      "name": "sub-mit040/beh/sub-mit040_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit040/beh/sub-mit040_task-Emotion_beh.tsv",
+      "bytes": 1396,
+      "checksum": "sha256:9ddc3333bdb9dc131cc45427c7b09c348003c41fe704aafe926ce28137570298",
+      "sha256": "9ddc3333bdb9dc131cc45427c7b09c348003c41fe704aafe926ce28137570298",
+      "git_blob_sha1": "8c728b9f1251608292031694bc86960ed20930e5"
+    },
+    {
+      "name": "sub-mit040/eeg/sub-mit040_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit040/eeg/sub-mit040_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:c33014bfdcdb54213c58306afd9a8780cde13704a7889a72518571458fba976f",
+      "sha256": "c33014bfdcdb54213c58306afd9a8780cde13704a7889a72518571458fba976f",
+      "git_blob_sha1": "bea7a4fcd33360d758230922bb21ff2ad15c5993"
+    },
+    {
+      "name": "sub-mit040/eeg/sub-mit040_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit040/eeg/sub-mit040_task-emotion_events.tsv",
+      "bytes": 6877,
+      "checksum": "sha256:b77d957bbee48ab0f170bb4e4efeb95b872471ade04e03da0f19317cbe12e798",
+      "sha256": "b77d957bbee48ab0f170bb4e4efeb95b872471ade04e03da0f19317cbe12e798",
+      "git_blob_sha1": "364734fe49a287cd9ed514c17f0056e61bce6a57"
+    },
+    {
+      "name": "sub-mit051/beh/sub-mit051_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit051/beh/sub-mit051_task-Emotion_beh.tsv",
+      "bytes": 2635,
+      "checksum": "sha256:bc4c5267227c2c673742e896396ae2cf5d3ccd0729544ffa2811690456f5d1c6",
+      "sha256": "bc4c5267227c2c673742e896396ae2cf5d3ccd0729544ffa2811690456f5d1c6",
+      "git_blob_sha1": "e2ed556c3a11835b40614fe10dce7ab05e32fbb0"
+    },
+    {
+      "name": "sub-mit051/eeg/sub-mit051_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit051/eeg/sub-mit051_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:b2b2ccb58238771095527ef72cc51024c58ddf70f79e60241ad4667cc6d1d0f4",
+      "sha256": "b2b2ccb58238771095527ef72cc51024c58ddf70f79e60241ad4667cc6d1d0f4",
+      "git_blob_sha1": "4aee215502a7cb93c8d0c1f83523582234cd62ef"
+    },
+    {
+      "name": "sub-mit051/eeg/sub-mit051_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit051/eeg/sub-mit051_task-emotion_events.tsv",
+      "bytes": 8153,
+      "checksum": "sha256:508330c05f10fba9552d850176f37a9cb5810b54ebf9a010afad2cb91d62300e",
+      "sha256": "508330c05f10fba9552d850176f37a9cb5810b54ebf9a010afad2cb91d62300e",
+      "git_blob_sha1": "d3a1869695e092730ee4e889c549c42040411979"
+    },
+    {
+      "name": "sub-mit052/beh/sub-mit052_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit052/beh/sub-mit052_task-Emotion_beh.tsv",
+      "bytes": 6710,
+      "checksum": "sha256:6972e9bdd36be3b358396faae333cf0e9f96644673828e43fb0d4a13ec95018a",
+      "sha256": "6972e9bdd36be3b358396faae333cf0e9f96644673828e43fb0d4a13ec95018a",
+      "git_blob_sha1": "03e68bb893074c112f017af2dca397b7725c7fbd"
+    },
+    {
+      "name": "sub-mit052/eeg/sub-mit052_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit052/eeg/sub-mit052_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:36a18b77221ff7f9d5b9ab4aa1fc5203b208b0ac4d3db7bdeb4e9cf553aceed4",
+      "sha256": "36a18b77221ff7f9d5b9ab4aa1fc5203b208b0ac4d3db7bdeb4e9cf553aceed4",
+      "git_blob_sha1": "631eddfd3296eddf2e22d1c5d2fc364f9591195a"
+    },
+    {
+      "name": "sub-mit052/eeg/sub-mit052_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit052/eeg/sub-mit052_task-emotion_events.tsv",
+      "bytes": 10565,
+      "checksum": "sha256:ba23c568da04132a8465553bb1e493876e0c3373667067fb778216b4398a69e1",
+      "sha256": "ba23c568da04132a8465553bb1e493876e0c3373667067fb778216b4398a69e1",
+      "git_blob_sha1": "c060c27306d43788c1a8d06b50312b6d64fbe2a3"
+    },
+    {
+      "name": "sub-mit054/beh/sub-mit054_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit054/beh/sub-mit054_task-Emotion_beh.tsv",
+      "bytes": 1754,
+      "checksum": "sha256:2189b7f886596d38a7b88a470f9ed175ac97e7aacbc9ff0202612fe7b470f0d9",
+      "sha256": "2189b7f886596d38a7b88a470f9ed175ac97e7aacbc9ff0202612fe7b470f0d9",
+      "git_blob_sha1": "e3b74043ed6302b12d826518f201c36e6c265707"
+    },
+    {
+      "name": "sub-mit054/eeg/sub-mit054_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit054/eeg/sub-mit054_task-emotion_eeg.json",
+      "bytes": 648,
+      "checksum": "sha256:f64c2368e7b94b123639a6038594ff17508cb75993d8ce2c8400861e95159ec2",
+      "sha256": "f64c2368e7b94b123639a6038594ff17508cb75993d8ce2c8400861e95159ec2",
+      "git_blob_sha1": "4ae21e63d3bd91876fe4e9b4b3eed52d81a8213d"
+    },
+    {
+      "name": "sub-mit054/eeg/sub-mit054_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit054/eeg/sub-mit054_task-emotion_events.tsv",
+      "bytes": 7403,
+      "checksum": "sha256:c67972c0d4fe46998f5932008983c47ad4e2c1b740cec14a5ecce80ae9bc5d17",
+      "sha256": "c67972c0d4fe46998f5932008983c47ad4e2c1b740cec14a5ecce80ae9bc5d17",
+      "git_blob_sha1": "ca7ef7e3f1ab4871ba089d4cccc05aeae6e434f4"
+    },
+    {
+      "name": "sub-mit061/beh/sub-mit061_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit061/beh/sub-mit061_task-Emotion_beh.tsv",
+      "bytes": 1679,
+      "checksum": "sha256:e871df2e1c18b8d47a96f83f36701bf3acfc8de04c76514e34bff10a89613ebb",
+      "sha256": "e871df2e1c18b8d47a96f83f36701bf3acfc8de04c76514e34bff10a89613ebb",
+      "git_blob_sha1": "4726d90b768f520395ca46501620f2238023d791"
+    },
+    {
+      "name": "sub-mit061/eeg/sub-mit061_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit061/eeg/sub-mit061_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:13ccff187f5ae901cdca8d389d4d7a685ea90c7dc0a31b200e45c3c34d8e74f0",
+      "sha256": "13ccff187f5ae901cdca8d389d4d7a685ea90c7dc0a31b200e45c3c34d8e74f0",
+      "git_blob_sha1": "27fb2f7bd30db3e930f4c55cd3acf05c5c3c553a"
+    },
+    {
+      "name": "sub-mit061/eeg/sub-mit061_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit061/eeg/sub-mit061_task-emotion_events.tsv",
+      "bytes": 7053,
+      "checksum": "sha256:2aa398315d30d5f30c0909b9bb5e68ea6bb1decb5b3eab8f5600407a0473fb94",
+      "sha256": "2aa398315d30d5f30c0909b9bb5e68ea6bb1decb5b3eab8f5600407a0473fb94",
+      "git_blob_sha1": "594f2fcd798fd4f2efaf951d19e51a9788965412"
+    },
+    {
+      "name": "sub-mit067/beh/sub-mit067_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit067/beh/sub-mit067_task-Emotion_beh.tsv",
+      "bytes": 1549,
+      "checksum": "sha256:27182acbbb48b12078238ce3217b4d68395642ecd5d966ad7de51c999e4f3a73",
+      "sha256": "27182acbbb48b12078238ce3217b4d68395642ecd5d966ad7de51c999e4f3a73",
+      "git_blob_sha1": "d43e3007d0045bc011820dad28e8f33b6582e06f"
+    },
+    {
+      "name": "sub-mit067/eeg/sub-mit067_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit067/eeg/sub-mit067_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:4bcd46469c7420d072c8799bee0dc2ff03571614dc112650157ccab6125440b7",
+      "sha256": "4bcd46469c7420d072c8799bee0dc2ff03571614dc112650157ccab6125440b7",
+      "git_blob_sha1": "1a084580294490a4fa61696bf163cd3a18965cbd"
+    },
+    {
+      "name": "sub-mit067/eeg/sub-mit067_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit067/eeg/sub-mit067_task-emotion_events.tsv",
+      "bytes": 6818,
+      "checksum": "sha256:5a72e3f4e4fbbbd0ea2dce8bc85c0d16757c5b1a916a6d578c3ffd94d13e19a1",
+      "sha256": "5a72e3f4e4fbbbd0ea2dce8bc85c0d16757c5b1a916a6d578c3ffd94d13e19a1",
+      "git_blob_sha1": "735f7864554a56c209f5068c16e5933af56e00ba"
+    },
+    {
+      "name": "sub-mit072/beh/sub-mit072_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit072/beh/sub-mit072_task-Emotion_beh.tsv",
+      "bytes": 4929,
+      "checksum": "sha256:ab06687f8e1e2e12402160879bcb9e2a15a2615d2ab1c2538d82a65e7440fc4a",
+      "sha256": "ab06687f8e1e2e12402160879bcb9e2a15a2615d2ab1c2538d82a65e7440fc4a",
+      "git_blob_sha1": "b63c81cd7c3bccfc5d93afc3f5023b07aaf153c8"
+    },
+    {
+      "name": "sub-mit072/eeg/sub-mit072_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit072/eeg/sub-mit072_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:851fde7d0b697fa6d034c8801eddbfc054d3c72531a1181068821f6f6b08c386",
+      "sha256": "851fde7d0b697fa6d034c8801eddbfc054d3c72531a1181068821f6f6b08c386",
+      "git_blob_sha1": "2565609226224187ea7b0ddaecabb2e2b954aae2"
+    },
+    {
+      "name": "sub-mit072/eeg/sub-mit072_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit072/eeg/sub-mit072_task-emotion_events.tsv",
+      "bytes": 10048,
+      "checksum": "sha256:4454b8516fe0aab94bbde379ee560c6d6ce264d55bd369ded6633b6d02952704",
+      "sha256": "4454b8516fe0aab94bbde379ee560c6d6ce264d55bd369ded6633b6d02952704",
+      "git_blob_sha1": "0b8a2b2803b872cd6a0bd420aa257b2f201a3a7a"
+    },
+    {
+      "name": "sub-mit074/eeg/sub-mit074_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit074/eeg/sub-mit074_task-emotion_eeg.json",
+      "bytes": 648,
+      "checksum": "sha256:96ff8b7f8bd58b6d3782ff386a765951bd54c6a688f633500169cdc35fd331df",
+      "sha256": "96ff8b7f8bd58b6d3782ff386a765951bd54c6a688f633500169cdc35fd331df",
+      "git_blob_sha1": "a063bf5cccdbc2f4db35ec9c7260da721936ddfd"
+    },
+    {
+      "name": "sub-mit074/eeg/sub-mit074_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit074/eeg/sub-mit074_task-emotion_events.tsv",
+      "bytes": 8358,
+      "checksum": "sha256:ab998b72f9a2a95210d3173c3801d10b17863dc7b83d841426854b56335fc170",
+      "sha256": "ab998b72f9a2a95210d3173c3801d10b17863dc7b83d841426854b56335fc170",
+      "git_blob_sha1": "3dc0045146f0ed18d53c44beb491d3b4fa0d2e63"
+    },
+    {
+      "name": "sub-mit076/beh/sub-mit076_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit076/beh/sub-mit076_task-Emotion_beh.tsv",
+      "bytes": 1605,
+      "checksum": "sha256:c682faa7e048c3573cbcb61d4f09c183ffa7c085bd9ae2ff90dc090d95928a3e",
+      "sha256": "c682faa7e048c3573cbcb61d4f09c183ffa7c085bd9ae2ff90dc090d95928a3e",
+      "git_blob_sha1": "c83fced7ac68bf0a02205d0706e5dbfc0d769482"
+    },
+    {
+      "name": "sub-mit076/eeg/sub-mit076_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit076/eeg/sub-mit076_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:a040f3d62aa442ad191b41f47d83a44ccca93c9d228ab92c71af4e7f4a02b4af",
+      "sha256": "a040f3d62aa442ad191b41f47d83a44ccca93c9d228ab92c71af4e7f4a02b4af",
+      "git_blob_sha1": "10602eaf62c1f21cd3f25a148ebd6ca524dc9537"
+    },
+    {
+      "name": "sub-mit076/eeg/sub-mit076_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit076/eeg/sub-mit076_task-emotion_events.tsv",
+      "bytes": 6709,
+      "checksum": "sha256:078b4529de75a0dbf54ac39456baaf4ce2f70ba20d25dfbf087fcbb3c5f0f6e4",
+      "sha256": "078b4529de75a0dbf54ac39456baaf4ce2f70ba20d25dfbf087fcbb3c5f0f6e4",
+      "git_blob_sha1": "8bda217effde95cd24981bfb237ef8e9b650b315"
+    },
+    {
+      "name": "sub-mit079/eeg/sub-mit079_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit079/eeg/sub-mit079_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:eba59c7678325a223fe9a736f85aa5f8c6259234a3105d601567fc77e93b85e9",
+      "sha256": "eba59c7678325a223fe9a736f85aa5f8c6259234a3105d601567fc77e93b85e9",
+      "git_blob_sha1": "1b285359d015f986080c83dac3b1be051a47c843"
+    },
+    {
+      "name": "sub-mit079/eeg/sub-mit079_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit079/eeg/sub-mit079_task-emotion_events.tsv",
+      "bytes": 9932,
+      "checksum": "sha256:465a476f4ee9bc05db101be70b279bc494366e8483b31b347759f8455830818a",
+      "sha256": "465a476f4ee9bc05db101be70b279bc494366e8483b31b347759f8455830818a",
+      "git_blob_sha1": "50ad92667f36add79f325da61df1a0c86a034551"
+    },
+    {
+      "name": "sub-mit080/eeg/sub-mit080_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit080/eeg/sub-mit080_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:5dc223c4c8bc152768c2af21ebc9bc81ab7b358c78fc89c039346a5323101d50",
+      "sha256": "5dc223c4c8bc152768c2af21ebc9bc81ab7b358c78fc89c039346a5323101d50",
+      "git_blob_sha1": "9bad41fd2531dbf42425cc3c4c1c5d92b8972567"
+    },
+    {
+      "name": "sub-mit080/eeg/sub-mit080_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit080/eeg/sub-mit080_task-emotion_events.tsv",
+      "bytes": 6988,
+      "checksum": "sha256:290195edc510e25cefbc7360ce18cc037f9863bb0505b2a85561a067776dc4de",
+      "sha256": "290195edc510e25cefbc7360ce18cc037f9863bb0505b2a85561a067776dc4de",
+      "git_blob_sha1": "9c847a460a85ef33bc39348124b5722cb896e580"
+    },
+    {
+      "name": "sub-mit081/beh/sub-mit081_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit081/beh/sub-mit081_task-Emotion_beh.tsv",
+      "bytes": 2340,
+      "checksum": "sha256:85cac9714ac3212e6a1464ceecfe55db93acce495016e8d529a084185749dbb7",
+      "sha256": "85cac9714ac3212e6a1464ceecfe55db93acce495016e8d529a084185749dbb7",
+      "git_blob_sha1": "199b17793544030f6f275fee9999e6a578416a00"
+    },
+    {
+      "name": "sub-mit081/eeg/sub-mit081_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit081/eeg/sub-mit081_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:9400dd8c3c1d7f3745486c92efbdc8f64278bdbbe0168b4d1a91d233a4478738",
+      "sha256": "9400dd8c3c1d7f3745486c92efbdc8f64278bdbbe0168b4d1a91d233a4478738",
+      "git_blob_sha1": "a70b27b87dd725d431e1c05f4cf742a1184ea524"
+    },
+    {
+      "name": "sub-mit081/eeg/sub-mit081_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit081/eeg/sub-mit081_task-emotion_events.tsv",
+      "bytes": 7791,
+      "checksum": "sha256:a259507beb3661f0f642d128f2c92894bfda6fe87493826feddbe6229335d33f",
+      "sha256": "a259507beb3661f0f642d128f2c92894bfda6fe87493826feddbe6229335d33f",
+      "git_blob_sha1": "4604402d8008fa8eecfecd6311e0dbca68f542a4"
+    },
+    {
+      "name": "sub-mit082/beh/sub-mit082_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit082/beh/sub-mit082_task-Emotion_beh.tsv",
+      "bytes": 5514,
+      "checksum": "sha256:55f2ff093faa129438e09767da0da6b5c3c39f660eb65027e3578a9d3838ca9b",
+      "sha256": "55f2ff093faa129438e09767da0da6b5c3c39f660eb65027e3578a9d3838ca9b",
+      "git_blob_sha1": "9ea6b1bf6c22a8e1d2685c52a4f23bc8d801478e"
+    },
+    {
+      "name": "sub-mit082/eeg/sub-mit082_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit082/eeg/sub-mit082_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:3c2af26dd965de35ee350427eebf92d1d76a793b136c3bb77d108c88f1769429",
+      "sha256": "3c2af26dd965de35ee350427eebf92d1d76a793b136c3bb77d108c88f1769429",
+      "git_blob_sha1": "a0c23988ffe1f3b5e27e913990cc1a69708a4cf6"
+    },
+    {
+      "name": "sub-mit082/eeg/sub-mit082_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit082/eeg/sub-mit082_task-emotion_events.tsv",
+      "bytes": 9685,
+      "checksum": "sha256:d94548e47f0909e859a9450a4fe690c619e11ad5362569f05fb6496151cd4adf",
+      "sha256": "d94548e47f0909e859a9450a4fe690c619e11ad5362569f05fb6496151cd4adf",
+      "git_blob_sha1": "b047ab40f50edff23dc6bd5c97ab55b48e43d393"
+    },
+    {
+      "name": "sub-mit096/beh/sub-mit096_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit096/beh/sub-mit096_task-Emotion_beh.tsv",
+      "bytes": 1741,
+      "checksum": "sha256:360123f3e1f8470352b78c5dc23b17f05710a60f74801c8101d0bbcfa88f8680",
+      "sha256": "360123f3e1f8470352b78c5dc23b17f05710a60f74801c8101d0bbcfa88f8680",
+      "git_blob_sha1": "444b350a470f6f812906a0565ee207c739f1bb8d"
+    },
+    {
+      "name": "sub-mit096/eeg/sub-mit096_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit096/eeg/sub-mit096_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:1b894e5b16b2cdceb7d9d7acbf5f05af1ed7486385ee2d817db4e4087917a092",
+      "sha256": "1b894e5b16b2cdceb7d9d7acbf5f05af1ed7486385ee2d817db4e4087917a092",
+      "git_blob_sha1": "3917c6e1c05b9a9dff748ae6023f88cd7a9d4caa"
+    },
+    {
+      "name": "sub-mit096/eeg/sub-mit096_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit096/eeg/sub-mit096_task-emotion_events.tsv",
+      "bytes": 7912,
+      "checksum": "sha256:653a1f53e4fa154f6e6ca4bffe082cb5e82291749e979a35f3e51a17251a0a05",
+      "sha256": "653a1f53e4fa154f6e6ca4bffe082cb5e82291749e979a35f3e51a17251a0a05",
+      "git_blob_sha1": "8f4800606257be9f865920a7c90abfd1a60c7e0b"
+    },
+    {
+      "name": "sub-mit097/beh/sub-mit097_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit097/beh/sub-mit097_task-Emotion_beh.tsv",
+      "bytes": 2307,
+      "checksum": "sha256:b35c8c5dd15b107625eeef5f0f11a5c65c749f78f3e482bebddb3e5527ab6c63",
+      "sha256": "b35c8c5dd15b107625eeef5f0f11a5c65c749f78f3e482bebddb3e5527ab6c63",
+      "git_blob_sha1": "8319e671c6cf479d9335b7af6f1a867cf7090a90"
+    },
+    {
+      "name": "sub-mit097/eeg/sub-mit097_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit097/eeg/sub-mit097_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:658e9b512306d9e9cd3b0fb6339bfde90f2e11f1af21925ad3745b087b6dbae9",
+      "sha256": "658e9b512306d9e9cd3b0fb6339bfde90f2e11f1af21925ad3745b087b6dbae9",
+      "git_blob_sha1": "fb0cb54bbfc43e7f1a5c7990d86d5e22577caf71"
+    },
+    {
+      "name": "sub-mit097/eeg/sub-mit097_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit097/eeg/sub-mit097_task-emotion_events.tsv",
+      "bytes": 7644,
+      "checksum": "sha256:5b87c0f126db14f0e36e07fbac299862a3113f132cd5ccc3eb1e05e20848e5f1",
+      "sha256": "5b87c0f126db14f0e36e07fbac299862a3113f132cd5ccc3eb1e05e20848e5f1",
+      "git_blob_sha1": "badde9774005754637086468d70a7643d5df44ce"
+    },
+    {
+      "name": "sub-mit099/beh/sub-mit099_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit099/beh/sub-mit099_task-Emotion_beh.tsv",
+      "bytes": 5596,
+      "checksum": "sha256:e685bc06b7723932ac91fb8d293cf51b76780ae4d327ab42c10c71049c2e141b",
+      "sha256": "e685bc06b7723932ac91fb8d293cf51b76780ae4d327ab42c10c71049c2e141b",
+      "git_blob_sha1": "e2e27c33a4ffc5691664c7107b1a1be1651a997a"
+    },
+    {
+      "name": "sub-mit099/eeg/sub-mit099_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit099/eeg/sub-mit099_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:33e4f5418da916d3ef52a6d8fc8f1efdc94bc48eef4f266003cc5ce6916dc6cb",
+      "sha256": "33e4f5418da916d3ef52a6d8fc8f1efdc94bc48eef4f266003cc5ce6916dc6cb",
+      "git_blob_sha1": "91ca27ed30ee3e94c2ae7e13cdb09452ddb5954c"
+    },
+    {
+      "name": "sub-mit099/eeg/sub-mit099_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit099/eeg/sub-mit099_task-emotion_events.tsv",
+      "bytes": 8748,
+      "checksum": "sha256:a891a0de95201f347a04af9b72bf6ce5c8aa3491cb143d928f3c0ce11a357689",
+      "sha256": "a891a0de95201f347a04af9b72bf6ce5c8aa3491cb143d928f3c0ce11a357689",
+      "git_blob_sha1": "7a0fe1b5ccab9938e802d0b43036f3300e1993c8"
+    },
+    {
+      "name": "sub-mit104/eeg/sub-mit104_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit104/eeg/sub-mit104_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:49dbabc39ad8b5d12284ff0f8cd058f3a6001e14108fa878869f91891b5e3938",
+      "sha256": "49dbabc39ad8b5d12284ff0f8cd058f3a6001e14108fa878869f91891b5e3938",
+      "git_blob_sha1": "708a3e90585e6e8675f542be515e36c16f61d2b1"
+    },
+    {
+      "name": "sub-mit104/eeg/sub-mit104_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit104/eeg/sub-mit104_task-emotion_events.tsv",
+      "bytes": 6738,
+      "checksum": "sha256:b8d5844ec14ea813b0edd7b92ff9a568a8e89d2c8237a35643239ea8dbae86cf",
+      "sha256": "b8d5844ec14ea813b0edd7b92ff9a568a8e89d2c8237a35643239ea8dbae86cf",
+      "git_blob_sha1": "4304a4ea7998239ca1bac0573f83338b961bac4e"
+    },
+    {
+      "name": "sub-mit106/eeg/sub-mit106_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit106/eeg/sub-mit106_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:929b87637ca95918213903d25a6790004edde627c593f02722b5c2744f1314d9",
+      "sha256": "929b87637ca95918213903d25a6790004edde627c593f02722b5c2744f1314d9",
+      "git_blob_sha1": "b8a6fd3e12a794dddcda1b8ddf84089a83673105"
+    },
+    {
+      "name": "sub-mit106/eeg/sub-mit106_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit106/eeg/sub-mit106_task-emotion_events.tsv",
+      "bytes": 7455,
+      "checksum": "sha256:3f863599624b56b21d2c412d0e562a354b903b6ca82e41108535b04d8bff2ee6",
+      "sha256": "3f863599624b56b21d2c412d0e562a354b903b6ca82e41108535b04d8bff2ee6",
+      "git_blob_sha1": "c072220fdb5fca9ca1637aec2de2ef1c7471d771"
+    },
+    {
+      "name": "sub-mit107/eeg/sub-mit107_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit107/eeg/sub-mit107_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:fe5c49337781b532d39f0d1144da70dc080c0f06ac412aad2c0d2c3231dbe704",
+      "sha256": "fe5c49337781b532d39f0d1144da70dc080c0f06ac412aad2c0d2c3231dbe704",
+      "git_blob_sha1": "313be1697b214f9225906317aa51f1f64aca81e1"
+    },
+    {
+      "name": "sub-mit107/eeg/sub-mit107_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit107/eeg/sub-mit107_task-emotion_events.tsv",
+      "bytes": 6809,
+      "checksum": "sha256:16989a1125e9d71c6671860d6440c48a2e7e9455c636bb822f4e51185e47ed3d",
+      "sha256": "16989a1125e9d71c6671860d6440c48a2e7e9455c636bb822f4e51185e47ed3d",
+      "git_blob_sha1": "613030425894b3086a8b43c0a51f9f5747d320db"
+    },
+    {
+      "name": "sub-mit108/beh/sub-mit108_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit108/beh/sub-mit108_task-Emotion_beh.tsv",
+      "bytes": 1707,
+      "checksum": "sha256:e6fbd8e6ac283c21939f5f20834e38753ebf3c1a0e7c119b82ba91b9a6c8c382",
+      "sha256": "e6fbd8e6ac283c21939f5f20834e38753ebf3c1a0e7c119b82ba91b9a6c8c382",
+      "git_blob_sha1": "7047bf6dc757475a0dc190cbd664c0c06f2576a7"
+    },
+    {
+      "name": "sub-mit108/eeg/sub-mit108_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit108/eeg/sub-mit108_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:e8146b5514445c3df4db55f4a3d39612f21c4b42fe3f649bdbf5ee5d50f31ad4",
+      "sha256": "e8146b5514445c3df4db55f4a3d39612f21c4b42fe3f649bdbf5ee5d50f31ad4",
+      "git_blob_sha1": "d2aa6d01ec7f93bf172f13643f336689ad8d5ffe"
+    },
+    {
+      "name": "sub-mit108/eeg/sub-mit108_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit108/eeg/sub-mit108_task-emotion_events.tsv",
+      "bytes": 6511,
+      "checksum": "sha256:f1d89c5bd15d0aefc83c2c4ea23a995dfa4208f284a66e1918b3044f608122f8",
+      "sha256": "f1d89c5bd15d0aefc83c2c4ea23a995dfa4208f284a66e1918b3044f608122f8",
+      "git_blob_sha1": "d4e89bec1e384fdec52630490fc2f785f87945e4"
+    },
+    {
+      "name": "sub-mit111/beh/sub-mit111_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit111/beh/sub-mit111_task-Emotion_beh.tsv",
+      "bytes": 2184,
+      "checksum": "sha256:e3770f53b0ccbc65df092b0741f01063b628e0aa57fd01f8b355985601c7450b",
+      "sha256": "e3770f53b0ccbc65df092b0741f01063b628e0aa57fd01f8b355985601c7450b",
+      "git_blob_sha1": "bcd0984185a452b4ce72b4e069739bea5c662a76"
+    },
+    {
+      "name": "sub-mit111/eeg/sub-mit111_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit111/eeg/sub-mit111_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:6f0ae43632bcd38a5ebee7893a970e5dce121e496173507ff6299648b6505890",
+      "sha256": "6f0ae43632bcd38a5ebee7893a970e5dce121e496173507ff6299648b6505890",
+      "git_blob_sha1": "1900951766f927dac6fa51b55f83903652f73a64"
+    },
+    {
+      "name": "sub-mit111/eeg/sub-mit111_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit111/eeg/sub-mit111_task-emotion_events.tsv",
+      "bytes": 7167,
+      "checksum": "sha256:22e8d8c76b702c700f73c13aea4b5b895b069af70847108eb36b9d9e94ab604f",
+      "sha256": "22e8d8c76b702c700f73c13aea4b5b895b069af70847108eb36b9d9e94ab604f",
+      "git_blob_sha1": "9f28b9bc8a710b220c2040a6159700cc9e8921ca"
+    },
+    {
+      "name": "sub-mit113/beh/sub-mit113_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit113/beh/sub-mit113_task-Emotion_beh.tsv",
+      "bytes": 1953,
+      "checksum": "sha256:82b32ac0fbe8fe328ef0e4232ac4460bc2aaa577f8b90df86d42db657fc351b0",
+      "sha256": "82b32ac0fbe8fe328ef0e4232ac4460bc2aaa577f8b90df86d42db657fc351b0",
+      "git_blob_sha1": "4f6db6847e7be11da78cb0e82d194df5bbf4d001"
+    },
+    {
+      "name": "sub-mit113/eeg/sub-mit113_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit113/eeg/sub-mit113_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:48f5e564d095d49a78e0658512a9048f54b3d64bbb0dac66ca65783f2f35f3d9",
+      "sha256": "48f5e564d095d49a78e0658512a9048f54b3d64bbb0dac66ca65783f2f35f3d9",
+      "git_blob_sha1": "73e9699ba4c80efafbef0700979ace6ed9b2f751"
+    },
+    {
+      "name": "sub-mit113/eeg/sub-mit113_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit113/eeg/sub-mit113_task-emotion_events.tsv",
+      "bytes": 7141,
+      "checksum": "sha256:7a25dc476761394c97482cc440ad2d4a01e1800fe39a822e6a477835a0f015c6",
+      "sha256": "7a25dc476761394c97482cc440ad2d4a01e1800fe39a822e6a477835a0f015c6",
+      "git_blob_sha1": "8fd1063f77354fcb70ccd1b80aba0a3ca5abfbbb"
+    },
+    {
+      "name": "sub-mit114/beh/sub-mit114_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit114/beh/sub-mit114_task-Emotion_beh.tsv",
+      "bytes": 6337,
+      "checksum": "sha256:b6f0a66251d2ca8a98502d3c10d2eba566390342a28dab171603e7305b033706",
+      "sha256": "b6f0a66251d2ca8a98502d3c10d2eba566390342a28dab171603e7305b033706",
+      "git_blob_sha1": "d72c22e8df95a39543d55bda6040696ac3b93df0"
+    },
+    {
+      "name": "sub-mit114/eeg/sub-mit114_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit114/eeg/sub-mit114_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:94887586c06b15f537e2ddb9e63a9ae78734c0a999bef6804b2243be131dfcf5",
+      "sha256": "94887586c06b15f537e2ddb9e63a9ae78734c0a999bef6804b2243be131dfcf5",
+      "git_blob_sha1": "89803a4c6ce5fb531d39cbc0aadd0d25dc11c9a8"
+    },
+    {
+      "name": "sub-mit114/eeg/sub-mit114_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit114/eeg/sub-mit114_task-emotion_events.tsv",
+      "bytes": 10567,
+      "checksum": "sha256:1a85f7d5c390a2fdb9aa3186fee9c6184b89fa9fafa3de9d83366deb74c2a594",
+      "sha256": "1a85f7d5c390a2fdb9aa3186fee9c6184b89fa9fafa3de9d83366deb74c2a594",
+      "git_blob_sha1": "39e604aba0384ae12858b35e9ef82c8f8be8842c"
+    },
+    {
+      "name": "sub-mit116/beh/sub-mit116_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit116/beh/sub-mit116_task-Emotion_beh.tsv",
+      "bytes": 2761,
+      "checksum": "sha256:5352021b5b941b852409a16bfaaecccd4526a7e8b7451ac6f891c76046761fa0",
+      "sha256": "5352021b5b941b852409a16bfaaecccd4526a7e8b7451ac6f891c76046761fa0",
+      "git_blob_sha1": "b80726cf2b1f804013477feaf84be5ec503d09c5"
+    },
+    {
+      "name": "sub-mit116/eeg/sub-mit116_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit116/eeg/sub-mit116_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:088bc9de9d5afd328cfc168f3467696740d4f0723fe6d5d1e312d75aca80b7de",
+      "sha256": "088bc9de9d5afd328cfc168f3467696740d4f0723fe6d5d1e312d75aca80b7de",
+      "git_blob_sha1": "ece4b21e587d3461c6bd2713d31b4c97ca86b817"
+    },
+    {
+      "name": "sub-mit116/eeg/sub-mit116_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit116/eeg/sub-mit116_task-emotion_events.tsv",
+      "bytes": 8147,
+      "checksum": "sha256:1c607b4b559e215edc9ccda45dbfb0adf98890a41bd50b71f5c801cc4081a20d",
+      "sha256": "1c607b4b559e215edc9ccda45dbfb0adf98890a41bd50b71f5c801cc4081a20d",
+      "git_blob_sha1": "bab7578e561b29c02d02abe9747ddd0c4e5dc7f3"
+    },
+    {
+      "name": "sub-mit117/beh/sub-mit117_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit117/beh/sub-mit117_task-Emotion_beh.tsv",
+      "bytes": 2202,
+      "checksum": "sha256:de1ee88c7388be5e3fc5fbfb8da8573fa18c844b3100b179997923c8983da6c3",
+      "sha256": "de1ee88c7388be5e3fc5fbfb8da8573fa18c844b3100b179997923c8983da6c3",
+      "git_blob_sha1": "2628180eae72a2a92391178b33cda24179ae1159"
+    },
+    {
+      "name": "sub-mit117/eeg/sub-mit117_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit117/eeg/sub-mit117_task-emotion_eeg.json",
+      "bytes": 648,
+      "checksum": "sha256:975127f6afcf29d5c719f16869e40fd6232ad25b3d4a7f7bd136e0e85f364882",
+      "sha256": "975127f6afcf29d5c719f16869e40fd6232ad25b3d4a7f7bd136e0e85f364882",
+      "git_blob_sha1": "b52e1d8ea9d634b780f11777d12d54a5e64257a5"
+    },
+    {
+      "name": "sub-mit117/eeg/sub-mit117_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit117/eeg/sub-mit117_task-emotion_events.tsv",
+      "bytes": 8029,
+      "checksum": "sha256:0ecea6e3bab024a1c03c2e35f54b86befb0338cc19957d726a69933c9605502a",
+      "sha256": "0ecea6e3bab024a1c03c2e35f54b86befb0338cc19957d726a69933c9605502a",
+      "git_blob_sha1": "5c397c4f03ded6d7f656f4343129cf4f6c62a75f"
+    },
+    {
+      "name": "sub-mit121/beh/sub-mit121_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit121/beh/sub-mit121_task-Emotion_beh.tsv",
+      "bytes": 2404,
+      "checksum": "sha256:379412141ba121644ef5302665d76583ca0aa3977f35ce37b49c276d62b626c7",
+      "sha256": "379412141ba121644ef5302665d76583ca0aa3977f35ce37b49c276d62b626c7",
+      "git_blob_sha1": "883cf0676e8a77ebc587f3546ca4945367943886"
+    },
+    {
+      "name": "sub-mit121/eeg/sub-mit121_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit121/eeg/sub-mit121_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:136f300fd5fbd926d03a037df2debc8c48d619845e5804f881a6becca52c9f3f",
+      "sha256": "136f300fd5fbd926d03a037df2debc8c48d619845e5804f881a6becca52c9f3f",
+      "git_blob_sha1": "2b9ad83b3e2dbe304567530948b784f14a61da8f"
+    },
+    {
+      "name": "sub-mit121/eeg/sub-mit121_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit121/eeg/sub-mit121_task-emotion_events.tsv",
+      "bytes": 7917,
+      "checksum": "sha256:9e62dcfca1ea4a4b491b2f7f74f749ecd91d199a27bc225e137f8f201e91ceb9",
+      "sha256": "9e62dcfca1ea4a4b491b2f7f74f749ecd91d199a27bc225e137f8f201e91ceb9",
+      "git_blob_sha1": "5d77d26020fb35c0a92a060871c18bdb86edb8a7"
+    },
+    {
+      "name": "sub-mit122/beh/sub-mit122_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit122/beh/sub-mit122_task-Emotion_beh.tsv",
+      "bytes": 3485,
+      "checksum": "sha256:28bba84a4a67d41c5c5d5acefdbf38f0307f4301f935e0cef312c4d0d8540784",
+      "sha256": "28bba84a4a67d41c5c5d5acefdbf38f0307f4301f935e0cef312c4d0d8540784",
+      "git_blob_sha1": "2bb1dcfe07697074cfeb3ea4f290a65612da0c98"
+    },
+    {
+      "name": "sub-mit122/eeg/sub-mit122_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit122/eeg/sub-mit122_task-emotion_eeg.json",
+      "bytes": 648,
+      "checksum": "sha256:d84fffc881b75f7825e73f4e571a55ad8b34a9c96f23c58e18b584faafc6d260",
+      "sha256": "d84fffc881b75f7825e73f4e571a55ad8b34a9c96f23c58e18b584faafc6d260",
+      "git_blob_sha1": "6af30948ce46ef4ecefda346e34988777a6abe8a"
+    },
+    {
+      "name": "sub-mit122/eeg/sub-mit122_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit122/eeg/sub-mit122_task-emotion_events.tsv",
+      "bytes": 8901,
+      "checksum": "sha256:574ff2d19083e2cc678d555e14e61091909010ffb07ce8241f1b4149365bc0fb",
+      "sha256": "574ff2d19083e2cc678d555e14e61091909010ffb07ce8241f1b4149365bc0fb",
+      "git_blob_sha1": "d49d6644e6be570ef98708a6aee25da9d0f9b882"
+    },
+    {
+      "name": "sub-mit123/beh/sub-mit123_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit123/beh/sub-mit123_task-Emotion_beh.tsv",
+      "bytes": 1925,
+      "checksum": "sha256:4505dca398445e9490ba29db9be25411eb2476363e142dc91c3ca4686907bf3f",
+      "sha256": "4505dca398445e9490ba29db9be25411eb2476363e142dc91c3ca4686907bf3f",
+      "git_blob_sha1": "596b9a76c64900d095e9196e7d83797d2f88e924"
+    },
+    {
+      "name": "sub-mit123/eeg/sub-mit123_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit123/eeg/sub-mit123_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:e4f699293bd0768004a12de89c0b92a0aaa84a7dcf25e19a9040e24eda38ea85",
+      "sha256": "e4f699293bd0768004a12de89c0b92a0aaa84a7dcf25e19a9040e24eda38ea85",
+      "git_blob_sha1": "dd4e3a15d9672713dd5e08753363ad3dbdaa892c"
+    },
+    {
+      "name": "sub-mit123/eeg/sub-mit123_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mit123/eeg/sub-mit123_task-emotion_events.tsv",
+      "bytes": 7276,
+      "checksum": "sha256:ed492a60bb9f1f7485a2d4c6475d44334aac63599336c5fa65e4bfda4a0df7a7",
+      "sha256": "ed492a60bb9f1f7485a2d4c6475d44334aac63599336c5fa65e4bfda4a0df7a7",
+      "git_blob_sha1": "846cd654c53c69ab47b0f782bdfdf564756e60fc"
+    },
+    {
+      "name": "sub-mitb2017007/beh/sub-mitb2017007_task-Emotion_beh.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mitb2017007/beh/sub-mitb2017007_task-Emotion_beh.tsv",
+      "bytes": 1585,
+      "checksum": "sha256:89e5bc0b7508a0d29ab69d4db38f32962ee0af38faadfd6c5b346967a8628bb9",
+      "sha256": "89e5bc0b7508a0d29ab69d4db38f32962ee0af38faadfd6c5b346967a8628bb9",
+      "git_blob_sha1": "b1d9edec33e615b71f264b261a262c01f95cb2a5"
+    },
+    {
+      "name": "sub-mitb2017007/eeg/sub-mitb2017007_task-emotion_eeg.json",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mitb2017007/eeg/sub-mitb2017007_task-emotion_eeg.json",
+      "bytes": 650,
+      "checksum": "sha256:e7a9e432c3521e74a3160649c97ca0ddbadf29298c4d171476dae3c8c2e12e01",
+      "sha256": "e7a9e432c3521e74a3160649c97ca0ddbadf29298c4d171476dae3c8c2e12e01",
+      "git_blob_sha1": "50e3db474e899afd5e6e8eaa16b42b4dd674ace3"
+    },
+    {
+      "name": "sub-mitb2017007/eeg/sub-mitb2017007_task-emotion_events.tsv",
+      "url": "https://raw.githubusercontent.com/OpenNeuroDatasets/ds003751/5bca1418a5be2daa3fb5fdc5fc5c5556d1659b1c/sub-mitb2017007/eeg/sub-mitb2017007_task-emotion_events.tsv",
+      "bytes": 7175,
+      "checksum": "sha256:f743a8745798d3bcab0c9bc1d25fef096917142347420cec800a5b3ffec7dbfa",
+      "sha256": "f743a8745798d3bcab0c9bc1d25fef096917142347420cec800a5b3ffec7dbfa",
+      "git_blob_sha1": "c6f405598beec81a7db08d928f9017c2f4bb72a5"
+    },
+    {
+      "name": "LICENSE",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/LICENSE",
+      "bytes": 25297,
+      "checksum": "md5:70050bcd6964eb2a5e0149891fde89b3",
+      "git_blob_sha1": "17517a37e8b06409464774c435cee3ce662269aa",
+      "git_annex_pointer": ".git/annex/objects/mq/m5/MD5E-s25297--70050bcd6964eb2a5e0149891fde89b3/MD5E-s25297--70050bcd6964eb2a5e0149891fde89b3",
+      "sha256": "52fc126252ca2c5692d39e84050b21fb2342833636c3956f7d417ade30c96e19"
+    },
+    {
+      "name": "sub-mit003/eeg/sub-mit003_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit003/eeg/sub-mit003_task-Emotion_eeg.fdt",
+      "bytes": 355919520,
+      "checksum": "md5:1229e807e33f0d3f42dc2781f8623fd0",
+      "git_blob_sha1": "e88a16cfa361b75b0342d10bf097ce506e3b7b6e",
+      "git_annex_pointer": "../../.git/annex/objects/Xj/Kk/MD5E-s355919520--1229e807e33f0d3f42dc2781f8623fd0.fdt/MD5E-s355919520--1229e807e33f0d3f42dc2781f8623fd0.fdt",
+      "sha256": "461b604cd39ba13910b42565d682292ef84188c1fe1714ef170e570736991e0f"
+    },
+    {
+      "name": "sub-mit003/eeg/sub-mit003_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit003/eeg/sub-mit003_task-Emotion_eeg.set",
+      "bytes": 3184976,
+      "checksum": "md5:0c79151aa24d13de7bc42cb08a2a1223",
+      "git_blob_sha1": "df5105117c050eb22a52b2acdb1fd890194fe76f",
+      "git_annex_pointer": "../../.git/annex/objects/Vx/vf/MD5E-s3184976--0c79151aa24d13de7bc42cb08a2a1223.set/MD5E-s3184976--0c79151aa24d13de7bc42cb08a2a1223.set",
+      "sha256": "2332b51bcbc732dd552db63d7f9137651ef33cf94301c1660f52c90328c719a8"
+    },
+    {
+      "name": "sub-mit004/eeg/sub-mit004_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit004/eeg/sub-mit004_task-Emotion_eeg.fdt",
+      "bytes": 227318256,
+      "checksum": "md5:62941046388d475714dbfbd0d726a6a7",
+      "git_blob_sha1": "3778bfe523871fe5031c76ead01e363cf6689ce0",
+      "git_annex_pointer": "../../.git/annex/objects/K3/50/MD5E-s227318256--62941046388d475714dbfbd0d726a6a7.fdt/MD5E-s227318256--62941046388d475714dbfbd0d726a6a7.fdt",
+      "sha256": "c93a442d94a49b6245dbab371b28ed85b3ac4f9d2aeed1756c3d5af6c53f0004"
+    },
+    {
+      "name": "sub-mit004/eeg/sub-mit004_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit004/eeg/sub-mit004_task-Emotion_eeg.set",
+      "bytes": 2212000,
+      "checksum": "md5:971d32ac41809fb4e7b141e49893d730",
+      "git_blob_sha1": "7ccabffa6fd40883c7f40ad61cfb68340853112b",
+      "git_annex_pointer": "../../.git/annex/objects/M1/5X/MD5E-s2212000--971d32ac41809fb4e7b141e49893d730.set/MD5E-s2212000--971d32ac41809fb4e7b141e49893d730.set",
+      "sha256": "37606c08cea08a7f24b1a6419959c45fe9449b95c33169da05d733eb4570897a"
+    },
+    {
+      "name": "sub-mit007/eeg/sub-mit007_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit007/eeg/sub-mit007_task-Emotion_eeg.fdt",
+      "bytes": 74643816,
+      "checksum": "md5:6c9ec2902258795adb1c0b6960602fbc",
+      "git_blob_sha1": "4f7a87f05c89ef411750882cf138e1df606dc6e4",
+      "git_annex_pointer": "../../.git/annex/objects/ZK/39/MD5E-s74643816--6c9ec2902258795adb1c0b6960602fbc.fdt/MD5E-s74643816--6c9ec2902258795adb1c0b6960602fbc.fdt",
+      "sha256": "4418a8c824b84b8add1c470caa515837407020e66f4c49f84922fc6117b1640d"
+    },
+    {
+      "name": "sub-mit007/eeg/sub-mit007_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit007/eeg/sub-mit007_task-Emotion_eeg.set",
+      "bytes": 2209792,
+      "checksum": "md5:f95271a6baec81496ad07116469abf53",
+      "git_blob_sha1": "9ee4c67dcffb50260f923e93fda352d906d4e0ab",
+      "git_annex_pointer": "../../.git/annex/objects/x9/vq/MD5E-s2209792--f95271a6baec81496ad07116469abf53.set/MD5E-s2209792--f95271a6baec81496ad07116469abf53.set",
+      "sha256": "03ff14fe6851e07b34e40822a98e818e6bb424723f4b1d200bbe645509426bb8"
+    },
+    {
+      "name": "sub-mit014/eeg/sub-mit014_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit014/eeg/sub-mit014_task-Emotion_eeg.fdt",
+      "bytes": 74429688,
+      "checksum": "md5:b1853d1fd61ce8330f9b3e66e3f94f79",
+      "git_blob_sha1": "62741348e5176b366d5eb105c7e2f53499293824",
+      "git_annex_pointer": "../../.git/annex/objects/Kg/j0/MD5E-s74429688--b1853d1fd61ce8330f9b3e66e3f94f79.fdt/MD5E-s74429688--b1853d1fd61ce8330f9b3e66e3f94f79.fdt",
+      "sha256": "04b780dbc462eacf920acab7a1e0149c3386635127992fb89c106ab7f622e531"
+    },
+    {
+      "name": "sub-mit014/eeg/sub-mit014_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit014/eeg/sub-mit014_task-Emotion_eeg.set",
+      "bytes": 2150952,
+      "checksum": "md5:2ee45899859b455f91266814a97b579b",
+      "git_blob_sha1": "05c448d704ddb5345f1a16a5bb3041c1c93757a5",
+      "git_annex_pointer": "../../.git/annex/objects/81/9z/MD5E-s2150952--2ee45899859b455f91266814a97b579b.set/MD5E-s2150952--2ee45899859b455f91266814a97b579b.set",
+      "sha256": "e2c2f54e4042db22a40c701db0625821cb8162546a2750b5d4b8dc44a96f1b91"
+    },
+    {
+      "name": "sub-mit017/eeg/sub-mit017_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit017/eeg/sub-mit017_task-Emotion_eeg.fdt",
+      "bytes": 74591272,
+      "checksum": "md5:84f54e28fa27946de3087d3559a94c88",
+      "git_blob_sha1": "d298717b39146347e1a0ecf2773306d1b03f3fbd",
+      "git_annex_pointer": "../../.git/annex/objects/Jx/6z/MD5E-s74591272--84f54e28fa27946de3087d3559a94c88.fdt/MD5E-s74591272--84f54e28fa27946de3087d3559a94c88.fdt",
+      "sha256": "34d6b2cbf1fcc763f2830d454dba9865b4ebab9dde8ad3f2d244f26b34b82581"
+    },
+    {
+      "name": "sub-mit017/eeg/sub-mit017_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit017/eeg/sub-mit017_task-Emotion_eeg.set",
+      "bytes": 2114056,
+      "checksum": "md5:d537a163d4701516218f10b1233cddba",
+      "git_blob_sha1": "c3fd34ef1514ca7d57ed1bbb18e53582a0b611ab",
+      "git_annex_pointer": "../../.git/annex/objects/Qm/43/MD5E-s2114056--d537a163d4701516218f10b1233cddba.set/MD5E-s2114056--d537a163d4701516218f10b1233cddba.set",
+      "sha256": "e2d25e1cb5a941b78d8408c6039e707fefec516daef468eb2a75253e3ce1c080"
+    },
+    {
+      "name": "sub-mit022/eeg/sub-mit022_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit022/eeg/sub-mit022_task-Emotion_eeg.fdt",
+      "bytes": 74397672,
+      "checksum": "md5:f75f63598228289bb53f6adb77e87782",
+      "git_blob_sha1": "610c40af8daba38367063b0a12d32d846cecbce7",
+      "git_annex_pointer": "../../.git/annex/objects/jj/X5/MD5E-s74397672--f75f63598228289bb53f6adb77e87782.fdt/MD5E-s74397672--f75f63598228289bb53f6adb77e87782.fdt",
+      "sha256": "26c74b5de04e38fc68f80239ac2f55ef4171c1e6a096c4971a7e1e4b6f548e70"
+    },
+    {
+      "name": "sub-mit022/eeg/sub-mit022_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit022/eeg/sub-mit022_task-Emotion_eeg.set",
+      "bytes": 2173104,
+      "checksum": "md5:fb31cfdbb52ebb022424d6dcf89371aa",
+      "git_blob_sha1": "aec5a01c718ddf062cce2ea35602da1e5ec06690",
+      "git_annex_pointer": "../../.git/annex/objects/32/xw/MD5E-s2173104--fb31cfdbb52ebb022424d6dcf89371aa.set/MD5E-s2173104--fb31cfdbb52ebb022424d6dcf89371aa.set",
+      "sha256": "d891edf6d5873bf6e089be7c70e851bceab171c80f2dc7ec96d8f3f7328ddfc0"
+    },
+    {
+      "name": "sub-mit023/eeg/sub-mit023_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit023/eeg/sub-mit023_task-Emotion_eeg.fdt",
+      "bytes": 96318712,
+      "checksum": "md5:a1fe36b44ab0ea6a85f70e912cb830e3",
+      "git_blob_sha1": "6b32d48ea687426cd47303d4dea398fc86b27634",
+      "git_annex_pointer": "../../.git/annex/objects/GQ/7w/MD5E-s96318712--a1fe36b44ab0ea6a85f70e912cb830e3.fdt/MD5E-s96318712--a1fe36b44ab0ea6a85f70e912cb830e3.fdt",
+      "sha256": "dde2b1d5bd0eb57168ac3b3d0db2f183e2fb185039641c900486038d7f763999"
+    },
+    {
+      "name": "sub-mit023/eeg/sub-mit023_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit023/eeg/sub-mit023_task-Emotion_eeg.set",
+      "bytes": 2111256,
+      "checksum": "md5:b07b3ccf75f3ea4be46dbb02f2e5b068",
+      "git_blob_sha1": "44f10d91c746654e859d6608390bb31ad4f52e8f",
+      "git_annex_pointer": "../../.git/annex/objects/63/K9/MD5E-s2111256--b07b3ccf75f3ea4be46dbb02f2e5b068.set/MD5E-s2111256--b07b3ccf75f3ea4be46dbb02f2e5b068.set",
+      "sha256": "d934fca834880a311c5680312f7628d61644f10110920a5a34df4a7fd0ea0c3f"
+    },
+    {
+      "name": "sub-mit024/eeg/sub-mit024_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit024/eeg/sub-mit024_task-Emotion_eeg.fdt",
+      "bytes": 96647144,
+      "checksum": "md5:b9627afcfe36494c9c0004d66e59e34d",
+      "git_blob_sha1": "87b1849520682d17ca5ae174c7283a25ac61a960",
+      "git_annex_pointer": "../../.git/annex/objects/8j/gk/MD5E-s96647144--b9627afcfe36494c9c0004d66e59e34d.fdt/MD5E-s96647144--b9627afcfe36494c9c0004d66e59e34d.fdt",
+      "sha256": "426deaa47eb3f808934f582eb68b15f0ea09cb2a28729aa777c7b8645f087539"
+    },
+    {
+      "name": "sub-mit024/eeg/sub-mit024_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit024/eeg/sub-mit024_task-Emotion_eeg.set",
+      "bytes": 2206552,
+      "checksum": "md5:1ed3eab1eecd29e4e27afd52150e8fa0",
+      "git_blob_sha1": "8f0405b3575092e9c3e68c4cb62d151549ad363e",
+      "git_annex_pointer": "../../.git/annex/objects/9m/q0/MD5E-s2206552--1ed3eab1eecd29e4e27afd52150e8fa0.set/MD5E-s2206552--1ed3eab1eecd29e4e27afd52150e8fa0.set",
+      "sha256": "a6f2d339509790c962015d4b735d445e1f80019c28d6404e63c936edd517ebca"
+    },
+    {
+      "name": "sub-mit032/eeg/sub-mit032_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit032/eeg/sub-mit032_task-Emotion_eeg.fdt",
+      "bytes": 96188392,
+      "checksum": "md5:8e6c6f39209fd2b46d1d8dee670b26c8",
+      "git_blob_sha1": "25a8c6455613971c030468b06ed3d3097910d5e8",
+      "git_annex_pointer": "../../.git/annex/objects/0F/1Q/MD5E-s96188392--8e6c6f39209fd2b46d1d8dee670b26c8.fdt/MD5E-s96188392--8e6c6f39209fd2b46d1d8dee670b26c8.fdt",
+      "sha256": "2422f106596ade86a7ec5991c471cf934090a98d7220050cf70f1d95b02a1bb4"
+    },
+    {
+      "name": "sub-mit032/eeg/sub-mit032_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit032/eeg/sub-mit032_task-Emotion_eeg.set",
+      "bytes": 2041976,
+      "checksum": "md5:b3253ec5eddcee0b0a54100d982bde4d",
+      "git_blob_sha1": "9cf29cecb1be8e4127f18f64b85b962b3762dd0d",
+      "git_annex_pointer": "../../.git/annex/objects/68/Vk/MD5E-s2041976--b3253ec5eddcee0b0a54100d982bde4d.set/MD5E-s2041976--b3253ec5eddcee0b0a54100d982bde4d.set",
+      "sha256": "09d3d68e1bcc294ac1b7914a0784987f0812440353e3c0503161e05efdb84b1c"
+    },
+    {
+      "name": "sub-mit035/eeg/sub-mit035_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit035/eeg/sub-mit035_task-Emotion_eeg.fdt",
+      "bytes": 96141312,
+      "checksum": "md5:d9c6a2578dbb0e395dd83e9a23c08686",
+      "git_blob_sha1": "861cc2ec18d3ea3650c90b18354419712cbdbcd1",
+      "git_annex_pointer": "../../.git/annex/objects/vQ/X2/MD5E-s96141312--d9c6a2578dbb0e395dd83e9a23c08686.fdt/MD5E-s96141312--d9c6a2578dbb0e395dd83e9a23c08686.fdt",
+      "sha256": "81d897ae18a2adc16377913d06b64857dfa113449c2844a876c775567bb09e4a"
+    },
+    {
+      "name": "sub-mit035/eeg/sub-mit035_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit035/eeg/sub-mit035_task-Emotion_eeg.set",
+      "bytes": 2345576,
+      "checksum": "md5:f239c0f3af169cc4b0df49b2a48999e2",
+      "git_blob_sha1": "6a61e04111daaa67e505fc4184ee54ff661811b9",
+      "git_annex_pointer": "../../.git/annex/objects/P4/Gg/MD5E-s2345576--f239c0f3af169cc4b0df49b2a48999e2.set/MD5E-s2345576--f239c0f3af169cc4b0df49b2a48999e2.set",
+      "sha256": "8fe8afba286f6efbe7c7f53cd60cbe5e863b5b4930358a63609b23fae81d885d"
+    },
+    {
+      "name": "sub-mit039/eeg/sub-mit039_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit039/eeg/sub-mit039_task-Emotion_eeg.fdt",
+      "bytes": 132643928,
+      "checksum": "md5:f1e91f04d77f9b830c7da12e1d152b91",
+      "git_blob_sha1": "aa9246e03e1969fc691004d53972be2020febc14",
+      "git_annex_pointer": "../../.git/annex/objects/j2/4F/MD5E-s132643928--f1e91f04d77f9b830c7da12e1d152b91.fdt/MD5E-s132643928--f1e91f04d77f9b830c7da12e1d152b91.fdt",
+      "sha256": "a786ed2c898960856c1fc2323755032030033f82bfce1738e8749d9654bef62c"
+    },
+    {
+      "name": "sub-mit039/eeg/sub-mit039_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit039/eeg/sub-mit039_task-Emotion_eeg.set",
+      "bytes": 1915984,
+      "checksum": "md5:e77ed19cc982eef3d61f1c0a2974f2c0",
+      "git_blob_sha1": "ee8ab6250ef72be1c1ad213ff8f201fed3d335d5",
+      "git_annex_pointer": "../../.git/annex/objects/5J/4W/MD5E-s1915984--e77ed19cc982eef3d61f1c0a2974f2c0.set/MD5E-s1915984--e77ed19cc982eef3d61f1c0a2974f2c0.set",
+      "sha256": "726fec2913c961545aa1bb5ca0ce64836a09bbff352adbb5bcfebf39c124992e"
+    },
+    {
+      "name": "sub-mit040/eeg/sub-mit040_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit040/eeg/sub-mit040_task-Emotion_eeg.fdt",
+      "bytes": 133003624,
+      "checksum": "md5:46711444d15228161a8a4b5835cb0989",
+      "git_blob_sha1": "5cbaf15595bb1e675b5c9e85981c69e73eb779f0",
+      "git_annex_pointer": "../../.git/annex/objects/kW/GK/MD5E-s133003624--46711444d15228161a8a4b5835cb0989.fdt/MD5E-s133003624--46711444d15228161a8a4b5835cb0989.fdt",
+      "sha256": "1a888aa3056ce0f7504976c602960f233d2772d54f8c4430b028a0ad16f1bfb2"
+    },
+    {
+      "name": "sub-mit040/eeg/sub-mit040_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit040/eeg/sub-mit040_task-Emotion_eeg.set",
+      "bytes": 2082632,
+      "checksum": "md5:33ba20d47bfad6dcda198b0e8bbf5aa0",
+      "git_blob_sha1": "a390c12dfe817cb25bd87080711b516fef386816",
+      "git_annex_pointer": "../../.git/annex/objects/vw/M4/MD5E-s2082632--33ba20d47bfad6dcda198b0e8bbf5aa0.set/MD5E-s2082632--33ba20d47bfad6dcda198b0e8bbf5aa0.set",
+      "sha256": "abff7b5fbc03ea7d83e50d26bc1244053225f0d00d69977e1832fe5f3bbe520f"
+    },
+    {
+      "name": "sub-mit051/eeg/sub-mit051_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit051/eeg/sub-mit051_task-Emotion_eeg.fdt",
+      "bytes": 132675944,
+      "checksum": "md5:9d65d8c2ccd1acf73648fe238153b8a6",
+      "git_blob_sha1": "28ead451b2041588e6fa15c49f6851d8a4729d6c",
+      "git_annex_pointer": "../../.git/annex/objects/4x/W0/MD5E-s132675944--9d65d8c2ccd1acf73648fe238153b8a6.fdt/MD5E-s132675944--9d65d8c2ccd1acf73648fe238153b8a6.fdt",
+      "sha256": "d976825a4fcf13ea2d3e3b98e0161551734691629377db5758ae2b4536720bb2"
+    },
+    {
+      "name": "sub-mit051/eeg/sub-mit051_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit051/eeg/sub-mit051_task-Emotion_eeg.set",
+      "bytes": 2618832,
+      "checksum": "md5:ab655baf0f17c5a30aef759b0c99cfbf",
+      "git_blob_sha1": "225dc002121f0b3fc8f972077730d9924c52415d",
+      "git_annex_pointer": "../../.git/annex/objects/w3/Kx/MD5E-s2618832--ab655baf0f17c5a30aef759b0c99cfbf.set/MD5E-s2618832--ab655baf0f17c5a30aef759b0c99cfbf.set",
+      "sha256": "dde1a9aba5b86e2fa0d577caf0cf56b6f6a1fb8fe0b117ae7c67bb3fb19d9bad"
+    },
+    {
+      "name": "sub-mit052/eeg/sub-mit052_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit052/eeg/sub-mit052_task-Emotion_eeg.fdt",
+      "bytes": 132840536,
+      "checksum": "md5:77912fc65178b032109de94eac29dab3",
+      "git_blob_sha1": "065bf8f5abfe434a5e298da439a66a182ebffb2c",
+      "git_annex_pointer": "../../.git/annex/objects/2V/Jx/MD5E-s132840536--77912fc65178b032109de94eac29dab3.fdt/MD5E-s132840536--77912fc65178b032109de94eac29dab3.fdt",
+      "sha256": "ed642a50575278ca30f9a875c721f10170ca7e4bf1ad9715be83a218b0138688"
+    },
+    {
+      "name": "sub-mit052/eeg/sub-mit052_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit052/eeg/sub-mit052_task-Emotion_eeg.set",
+      "bytes": 3588408,
+      "checksum": "md5:ce44b37c28eb2fbadef0e9042cac5ae7",
+      "git_blob_sha1": "c9dd95a5d1978d7a3ff61ee6c9ee4770fe272080",
+      "git_annex_pointer": "../../.git/annex/objects/Mp/gv/MD5E-s3588408--ce44b37c28eb2fbadef0e9042cac5ae7.set/MD5E-s3588408--ce44b37c28eb2fbadef0e9042cac5ae7.set",
+      "sha256": "2872018ae9c53283c8d219f636ac5bc00bd88f94488bde22a98d35fe5bc68512"
+    },
+    {
+      "name": "sub-mit054/eeg/sub-mit054_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit054/eeg/sub-mit054_task-Emotion_eeg.fdt",
+      "bytes": 1245184,
+      "checksum": "md5:c9a6ef445566af0b618e5e95162af42d",
+      "git_blob_sha1": "9c18503106177a38f8093026ff8d54d67d26b848",
+      "git_annex_pointer": "../../.git/annex/objects/j3/Gw/MD5E-s1245184--c9a6ef445566af0b618e5e95162af42d.fdt/MD5E-s1245184--c9a6ef445566af0b618e5e95162af42d.fdt",
+      "sha256": "f8debada90004bd448adcf52150f253dcf993e80a993597cbdc3b92b12d49dfa"
+    },
+    {
+      "name": "sub-mit054/eeg/sub-mit054_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit054/eeg/sub-mit054_task-Emotion_eeg.set",
+      "bytes": 2296776,
+      "checksum": "md5:018515f34a39c3c982185e9083d4cc33",
+      "git_blob_sha1": "f8b7833ebb9284760a4db3193d1f7bf755b626e6",
+      "git_annex_pointer": "../../.git/annex/objects/9W/3z/MD5E-s2296776--018515f34a39c3c982185e9083d4cc33.set/MD5E-s2296776--018515f34a39c3c982185e9083d4cc33.set",
+      "sha256": "35062f1f3677890c1901a8cad04c3f0edbbbb283adb89e976cb0ef8c5b6a9ad8"
+    },
+    {
+      "name": "sub-mit061/eeg/sub-mit061_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit061/eeg/sub-mit061_task-Emotion_eeg.fdt",
+      "bytes": 180498912,
+      "checksum": "md5:a7884ec98b3f1c7b07b56f47ace672d4",
+      "git_blob_sha1": "77b6246bc97257d28fbf2ccc23f9bdabbd98c27f",
+      "git_annex_pointer": "../../.git/annex/objects/97/PG/MD5E-s180498912--a7884ec98b3f1c7b07b56f47ace672d4.fdt/MD5E-s180498912--a7884ec98b3f1c7b07b56f47ace672d4.fdt",
+      "sha256": "54e53caf60d8436b9f8e83b7085eebb9d326fca43d685dfbfb5878033633cede"
+    },
+    {
+      "name": "sub-mit061/eeg/sub-mit061_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit061/eeg/sub-mit061_task-Emotion_eeg.set",
+      "bytes": 1849856,
+      "checksum": "md5:523d1ab40e7b1bd715fb202215f3b267",
+      "git_blob_sha1": "1918e3286bd0f398cad66a543f7c83d5b9fa6279",
+      "git_annex_pointer": "../../.git/annex/objects/Pp/j0/MD5E-s1849856--523d1ab40e7b1bd715fb202215f3b267.set/MD5E-s1849856--523d1ab40e7b1bd715fb202215f3b267.set",
+      "sha256": "d0d43d21be0b83006ab8a8263f8a9a8b2cef19214c4282f2a86aaf537f45a832"
+    },
+    {
+      "name": "sub-mit067/eeg/sub-mit067_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit067/eeg/sub-mit067_task-Emotion_eeg.fdt",
+      "bytes": 1309032,
+      "checksum": "md5:58b4d476280bdd2d4d12999ad1e46d1d",
+      "git_blob_sha1": "d47f938cf3041fccec75b134a6a070bbac24d9a3",
+      "git_annex_pointer": "../../.git/annex/objects/gW/wk/MD5E-s1309032--58b4d476280bdd2d4d12999ad1e46d1d.fdt/MD5E-s1309032--58b4d476280bdd2d4d12999ad1e46d1d.fdt",
+      "sha256": "14268ec1ef6adb84bf5b1368996d968ac96d0e8a5546d113451ad1c681467ffa"
+    },
+    {
+      "name": "sub-mit067/eeg/sub-mit067_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit067/eeg/sub-mit067_task-Emotion_eeg.set",
+      "bytes": 2345464,
+      "checksum": "md5:fe7cbd7fe0b4fbd47d541d1badfa6fb8",
+      "git_blob_sha1": "3f6a2e826614162178ff49ac00e5362c5fecda3a",
+      "git_annex_pointer": "../../.git/annex/objects/KW/wz/MD5E-s2345464--fe7cbd7fe0b4fbd47d541d1badfa6fb8.set/MD5E-s2345464--fe7cbd7fe0b4fbd47d541d1badfa6fb8.set",
+      "sha256": "e765f1f4968250577e92a1ddc558c5b8071f0223dbf9154389ba22d244e3dd45"
+    },
+    {
+      "name": "sub-mit072/eeg/sub-mit072_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit072/eeg/sub-mit072_task-Emotion_eeg.fdt",
+      "bytes": 1261184,
+      "checksum": "md5:5fee1e4e08eba528102588adf9674e30",
+      "git_blob_sha1": "0b1e9da1ae1c199f8df1b5c02edad8999805cd35",
+      "git_annex_pointer": "../../.git/annex/objects/k3/7M/MD5E-s1261184--5fee1e4e08eba528102588adf9674e30.fdt/MD5E-s1261184--5fee1e4e08eba528102588adf9674e30.fdt",
+      "sha256": "dde84748f997f32eb33f414ee156ad419993717f7ff8189c526228d75375e6ab"
+    },
+    {
+      "name": "sub-mit072/eeg/sub-mit072_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit072/eeg/sub-mit072_task-Emotion_eeg.set",
+      "bytes": 3772888,
+      "checksum": "md5:7e14835824b3eb7d21462254abb50f04",
+      "git_blob_sha1": "4153959fa36dfe9c73a0568d6d055e05e843d9d7",
+      "git_annex_pointer": "../../.git/annex/objects/3P/84/MD5E-s3772888--7e14835824b3eb7d21462254abb50f04.set/MD5E-s3772888--7e14835824b3eb7d21462254abb50f04.set",
+      "sha256": "fe4f00828472c5344d8ed54cdbac34363443e67d7ed2fcf17686fc96fd8b6937"
+    },
+    {
+      "name": "sub-mit076/eeg/sub-mit076_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit076/eeg/sub-mit076_task-Emotion_eeg.fdt",
+      "bytes": 256348224,
+      "checksum": "md5:627937c738cf11aa6a7160b4ca271cb5",
+      "git_blob_sha1": "c685a1d87231013bc2ac6f518f91e345580db84e",
+      "git_annex_pointer": "../../.git/annex/objects/VQ/8Q/MD5E-s256348224--627937c738cf11aa6a7160b4ca271cb5.fdt/MD5E-s256348224--627937c738cf11aa6a7160b4ca271cb5.fdt",
+      "sha256": "cf20c38871c0a873387b61e8bd092a9cf7061bf0d7b42b74a39cca9fbdf5f9ab"
+    },
+    {
+      "name": "sub-mit076/eeg/sub-mit076_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit076/eeg/sub-mit076_task-Emotion_eeg.set",
+      "bytes": 2418592,
+      "checksum": "md5:5f95063c514ad8497171d4146da92ae0",
+      "git_blob_sha1": "c6f0817fdd9f1fd4b7f32045bd6ad847d2315d95",
+      "git_annex_pointer": "../../.git/annex/objects/KQ/Z9/MD5E-s2418592--5f95063c514ad8497171d4146da92ae0.set/MD5E-s2418592--5f95063c514ad8497171d4146da92ae0.set",
+      "sha256": "a69d9d5a44a2b9e349764a2d8af75b183180a51eac2c0bf554fe5f06d6929313"
+    },
+    {
+      "name": "sub-mit081/eeg/sub-mit081_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit081/eeg/sub-mit081_task-Emotion_eeg.fdt",
+      "bytes": 69204747,
+      "checksum": "md5:fbe27a7b7d2937c887d6e361c539c854",
+      "git_blob_sha1": "b52fe697a4ed58aa1a32939b22537d47a8064f5f",
+      "git_annex_pointer": "../../.git/annex/objects/VV/95/MD5E-s69204747--fbe27a7b7d2937c887d6e361c539c854.fdt/MD5E-s69204747--fbe27a7b7d2937c887d6e361c539c854.fdt",
+      "sha256": "37c3f159100a931028ef44d377074b3a3aa0ce35f21ecf982500168946307e49"
+    },
+    {
+      "name": "sub-mit081/eeg/sub-mit081_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit081/eeg/sub-mit081_task-Emotion_eeg.set",
+      "bytes": 2454336,
+      "checksum": "md5:9ecebf81c66455562f1e3962c082135d",
+      "git_blob_sha1": "5d769f922667a494a7b3e2f1ac50ec7aa55b5e44",
+      "git_annex_pointer": "../../.git/annex/objects/Ww/z5/MD5E-s2454336--9ecebf81c66455562f1e3962c082135d.set/MD5E-s2454336--9ecebf81c66455562f1e3962c082135d.set",
+      "sha256": "83f540ac2b3705aafa832f35c257b982569d5f4b42944c5fbd6832cfd76d16ba"
+    },
+    {
+      "name": "sub-mit082/eeg/sub-mit082_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit082/eeg/sub-mit082_task-Emotion_eeg.fdt",
+      "bytes": 47657480,
+      "checksum": "md5:97f15b06a4c85ebdde75671c09dd4191",
+      "git_blob_sha1": "c4d200e22a69757c75dbb5fb68b70a15c3ecdeea",
+      "git_annex_pointer": "../../.git/annex/objects/Pv/Q4/MD5E-s47657480--97f15b06a4c85ebdde75671c09dd4191.fdt/MD5E-s47657480--97f15b06a4c85ebdde75671c09dd4191.fdt",
+      "sha256": "eafd0c9b24ed2fc6aabc4e6d9e53d76cbab696ee3cba4cbef2b0874c99954a83"
+    },
+    {
+      "name": "sub-mit082/eeg/sub-mit082_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit082/eeg/sub-mit082_task-Emotion_eeg.set",
+      "bytes": 2343464,
+      "checksum": "md5:d85bee6adde7cb950f1f2ad4a9c002a4",
+      "git_blob_sha1": "1f10d28f6cfb9e2d2c1d5860dc4b817f2ee6a099",
+      "git_annex_pointer": "../../.git/annex/objects/f0/3g/MD5E-s2343464--d85bee6adde7cb950f1f2ad4a9c002a4.set/MD5E-s2343464--d85bee6adde7cb950f1f2ad4a9c002a4.set",
+      "sha256": "3a26ae211d781d4940363ff69240d06fc07082a81823e353e534a83cd57976e5"
+    },
+    {
+      "name": "sub-mit096/eeg/sub-mit096_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit096/eeg/sub-mit096_task-Emotion_eeg.fdt",
+      "bytes": 48020184,
+      "checksum": "md5:d3b0ccf8e1f6bc654a86378b723e55e1",
+      "git_blob_sha1": "c0dd7826b045bfcdd6fb546360be585b01db83c4",
+      "git_annex_pointer": "../../.git/annex/objects/6x/Gq/MD5E-s48020184--d3b0ccf8e1f6bc654a86378b723e55e1.fdt/MD5E-s48020184--d3b0ccf8e1f6bc654a86378b723e55e1.fdt",
+      "sha256": "e392f14ccc7fe1d05d13c0fa4c3d2afed7dfcf1c78a90409128143b3e2860221"
+    },
+    {
+      "name": "sub-mit096/eeg/sub-mit096_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit096/eeg/sub-mit096_task-Emotion_eeg.set",
+      "bytes": 2004496,
+      "checksum": "md5:49e947a600740a6fa17fe6dfb5cf48a1",
+      "git_blob_sha1": "c50ce049ba822c848066283ca4f1db4e36854bcb",
+      "git_annex_pointer": "../../.git/annex/objects/5V/9z/MD5E-s2004496--49e947a600740a6fa17fe6dfb5cf48a1.set/MD5E-s2004496--49e947a600740a6fa17fe6dfb5cf48a1.set",
+      "sha256": "61716ccff96cc1ab22aa44f1f6982f3541b342089de12f8deb9ab37c8209ffa4"
+    },
+    {
+      "name": "sub-mit097/eeg/sub-mit097_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit097/eeg/sub-mit097_task-Emotion_eeg.fdt",
+      "bytes": 47952392,
+      "checksum": "md5:28b646c0d05af482d5e80a0658be1074",
+      "git_blob_sha1": "fe72c15eadf0cf06bb17c37f55b225042815070e",
+      "git_annex_pointer": "../../.git/annex/objects/90/V4/MD5E-s47952392--28b646c0d05af482d5e80a0658be1074.fdt/MD5E-s47952392--28b646c0d05af482d5e80a0658be1074.fdt",
+      "sha256": "3f6c263cefeacd8069c2275c33450bf0a9e955aa4edfb15affb77d805edd7c00"
+    },
+    {
+      "name": "sub-mit097/eeg/sub-mit097_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit097/eeg/sub-mit097_task-Emotion_eeg.set",
+      "bytes": 2338248,
+      "checksum": "md5:ce4295cabc7c8e36e42e7b862e1f4fb6",
+      "git_blob_sha1": "e099ad294a122b00ef5817469cdd9c2a51d1974b",
+      "git_annex_pointer": "../../.git/annex/objects/k8/3j/MD5E-s2338248--ce4295cabc7c8e36e42e7b862e1f4fb6.set/MD5E-s2338248--ce4295cabc7c8e36e42e7b862e1f4fb6.set",
+      "sha256": "fe258b231925a70d9d19e88c88a99c64f5a6828ad4e6f7ee2acf59a495292530"
+    },
+    {
+      "name": "sub-mit099/eeg/sub-mit099_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit099/eeg/sub-mit099_task-Emotion_eeg.fdt",
+      "bytes": 47954648,
+      "checksum": "md5:ef08efde5dc82f7bb92fa7404dd3a51a",
+      "git_blob_sha1": "194e6e2019b3d92fcf71a263a74028c96ba97f3d",
+      "git_annex_pointer": "../../.git/annex/objects/z2/gf/MD5E-s47954648--ef08efde5dc82f7bb92fa7404dd3a51a.fdt/MD5E-s47954648--ef08efde5dc82f7bb92fa7404dd3a51a.fdt",
+      "sha256": "2e41473e38378b7776d8ff058caaaf3ee3bc2954f17b5f0294d5a00049885cef"
+    },
+    {
+      "name": "sub-mit099/eeg/sub-mit099_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit099/eeg/sub-mit099_task-Emotion_eeg.set",
+      "bytes": 3045712,
+      "checksum": "md5:af107566c0392db824627871ac6b623b",
+      "git_blob_sha1": "ec32a5752d973ac58855c049f0bd82e241b1ceb0",
+      "git_annex_pointer": "../../.git/annex/objects/6V/JQ/MD5E-s3045712--af107566c0392db824627871ac6b623b.set/MD5E-s3045712--af107566c0392db824627871ac6b623b.set",
+      "sha256": "1992ae4f86e0a31e6d854c5f34d1af451a86714adde1fa0436e4ab90c3c79545"
+    },
+    {
+      "name": "sub-mit108/eeg/sub-mit108_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit108/eeg/sub-mit108_task-Emotion_eeg.fdt",
+      "bytes": 193947600,
+      "checksum": "md5:d0d6f455547673f1383630d54fb5112a",
+      "git_blob_sha1": "7ffd41e763b7ddec81af4969ff3c4800a1c85dd6",
+      "git_annex_pointer": "../../.git/annex/objects/gW/w2/MD5E-s193947600--d0d6f455547673f1383630d54fb5112a.fdt/MD5E-s193947600--d0d6f455547673f1383630d54fb5112a.fdt",
+      "sha256": "7eff636e23b538faa72d5a797bc595ba1ed4703fa6853086761714c5bde80739"
+    },
+    {
+      "name": "sub-mit108/eeg/sub-mit108_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit108/eeg/sub-mit108_task-Emotion_eeg.set",
+      "bytes": 1941504,
+      "checksum": "md5:c420e9631cebacca67f3fcbbcbf8125b",
+      "git_blob_sha1": "61ed6dd9382d549dc20c9efd66c50724bd05ea74",
+      "git_annex_pointer": "../../.git/annex/objects/QJ/vx/MD5E-s1941504--c420e9631cebacca67f3fcbbcbf8125b.set/MD5E-s1941504--c420e9631cebacca67f3fcbbcbf8125b.set",
+      "sha256": "e6443c9cf19d10f095ac219261dd0479abe562694c122640863624d4edf79032"
+    },
+    {
+      "name": "sub-mit111/eeg/sub-mit111_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit111/eeg/sub-mit111_task-Emotion_eeg.fdt",
+      "bytes": 4700888,
+      "checksum": "md5:ddba602af5c2ffcacf0541c4a8a26c5f",
+      "git_blob_sha1": "98638256368d82047d0433e5fb50103d77305b25",
+      "git_annex_pointer": "../../.git/annex/objects/8X/MM/MD5E-s4700888--ddba602af5c2ffcacf0541c4a8a26c5f.fdt/MD5E-s4700888--ddba602af5c2ffcacf0541c4a8a26c5f.fdt",
+      "sha256": "e4e6592df99d45b68945ca710237ea7f4af28be801aa6a51bf046e95665ec864"
+    },
+    {
+      "name": "sub-mit111/eeg/sub-mit111_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit111/eeg/sub-mit111_task-Emotion_eeg.set",
+      "bytes": 1944152,
+      "checksum": "md5:17daca3bcc1133ef7d73a288d392d7ea",
+      "git_blob_sha1": "c111419b361e77dc582ad1de347cfbaed9915410",
+      "git_annex_pointer": "../../.git/annex/objects/Z8/q9/MD5E-s1944152--17daca3bcc1133ef7d73a288d392d7ea.set/MD5E-s1944152--17daca3bcc1133ef7d73a288d392d7ea.set",
+      "sha256": "a16db7cc1b34c2b270c738c6c1d1d45274c648eeb642a4c3aca8423bb19a62ca"
+    },
+    {
+      "name": "sub-mit113/eeg/sub-mit113_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit113/eeg/sub-mit113_task-Emotion_eeg.fdt",
+      "bytes": 4846472,
+      "checksum": "md5:f739288a1c64385eba5fdc1302acdb51",
+      "git_blob_sha1": "2eab9b4df89e1c04c0e51dd2913d262c80890814",
+      "git_annex_pointer": "../../.git/annex/objects/pw/Wp/MD5E-s4846472--f739288a1c64385eba5fdc1302acdb51.fdt/MD5E-s4846472--f739288a1c64385eba5fdc1302acdb51.fdt",
+      "sha256": "b6cf23e3f517f745d4847a19af9d8ff97f90a063445e13adb3e023e2f41487fa"
+    },
+    {
+      "name": "sub-mit113/eeg/sub-mit113_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit113/eeg/sub-mit113_task-Emotion_eeg.set",
+      "bytes": 2632528,
+      "checksum": "md5:cd1e2ab5998de140beede26ec9ea4311",
+      "git_blob_sha1": "912934545a044eee686421189102c94ada62e01b",
+      "git_annex_pointer": "../../.git/annex/objects/mz/MJ/MD5E-s2632528--cd1e2ab5998de140beede26ec9ea4311.set/MD5E-s2632528--cd1e2ab5998de140beede26ec9ea4311.set",
+      "sha256": "5e1ff250b721d64923b95171ab956440495df44d06eb5c4ad698e1b691a1d929"
+    },
+    {
+      "name": "sub-mit114/eeg/sub-mit114_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit114/eeg/sub-mit114_task-Emotion_eeg.fdt",
+      "bytes": 4470008,
+      "checksum": "md5:6574c31e328211834243d3396edc65eb",
+      "git_blob_sha1": "9a86f7ab7e6054613bf053b6e3bae19865332b94",
+      "git_annex_pointer": "../../.git/annex/objects/q9/p0/MD5E-s4470008--6574c31e328211834243d3396edc65eb.fdt/MD5E-s4470008--6574c31e328211834243d3396edc65eb.fdt",
+      "sha256": "30b1c11e8777d53adbbd766d81d4c57888724b18a87cfcbc8227efc43b96bce2"
+    },
+    {
+      "name": "sub-mit114/eeg/sub-mit114_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit114/eeg/sub-mit114_task-Emotion_eeg.set",
+      "bytes": 2981896,
+      "checksum": "md5:10bc7bcedbd280908272a06edd67eefc",
+      "git_blob_sha1": "f30adbb15ac17b387294178230d6e61dda6f41d6",
+      "git_annex_pointer": "../../.git/annex/objects/0W/Zw/MD5E-s2981896--10bc7bcedbd280908272a06edd67eefc.set/MD5E-s2981896--10bc7bcedbd280908272a06edd67eefc.set",
+      "sha256": "97855dd5cbbe6776d18c74678ee6eacdfdb5c8eb078099a635ec09c5c363f549"
+    },
+    {
+      "name": "sub-mit116/eeg/sub-mit116_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit116/eeg/sub-mit116_task-Emotion_eeg.fdt",
+      "bytes": 4848728,
+      "checksum": "md5:4f3cdcf90c2778c92e01eb13ffe3ef5f",
+      "git_blob_sha1": "c162345267ed44b130a07de88c788d1c58ef6b28",
+      "git_annex_pointer": "../../.git/annex/objects/5g/xZ/MD5E-s4848728--4f3cdcf90c2778c92e01eb13ffe3ef5f.fdt/MD5E-s4848728--4f3cdcf90c2778c92e01eb13ffe3ef5f.fdt",
+      "sha256": "744b6b2cbcedb9312e360596e3dabc47b57c43ded18034e2b191222ab73b2f18"
+    },
+    {
+      "name": "sub-mit116/eeg/sub-mit116_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit116/eeg/sub-mit116_task-Emotion_eeg.set",
+      "bytes": 3046360,
+      "checksum": "md5:78d51cf478a2bf6e2093d7ac4f5ee6d6",
+      "git_blob_sha1": "f57b175fd29a66606764bff5bcb659995535f387",
+      "git_annex_pointer": "../../.git/annex/objects/8f/mF/MD5E-s3046360--78d51cf478a2bf6e2093d7ac4f5ee6d6.set/MD5E-s3046360--78d51cf478a2bf6e2093d7ac4f5ee6d6.set",
+      "sha256": "d4d87a109de69dc52f9ca66be31c0ea51a38b00dd9da06c1342053efcc4bd873"
+    },
+    {
+      "name": "sub-mit117/eeg/sub-mit117_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit117/eeg/sub-mit117_task-Emotion_eeg.fdt",
+      "bytes": 328619808,
+      "checksum": "md5:f10828ab480826c4ca9efd4ee03626a9",
+      "git_blob_sha1": "ebf26764582173dff15f44a12247a5534f6ebd1b",
+      "git_annex_pointer": "../../.git/annex/objects/3K/3x/MD5E-s328619808--f10828ab480826c4ca9efd4ee03626a9.fdt/MD5E-s328619808--f10828ab480826c4ca9efd4ee03626a9.fdt",
+      "sha256": "faf47bbcdcfdbb8c54ab8e382db8a38b17cfebaf708e19882f1923897ea549dd"
+    },
+    {
+      "name": "sub-mit117/eeg/sub-mit117_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit117/eeg/sub-mit117_task-Emotion_eeg.set",
+      "bytes": 2990264,
+      "checksum": "md5:fde4b213c10f1c448eecf23c16546948",
+      "git_blob_sha1": "1329e6c03d66670cc668041597d2092b5a1261f2",
+      "git_annex_pointer": "../../.git/annex/objects/x6/Kf/MD5E-s2990264--fde4b213c10f1c448eecf23c16546948.set/MD5E-s2990264--fde4b213c10f1c448eecf23c16546948.set",
+      "sha256": "9fd026f16223389a7ca2f8f946ac6c0df13c3f31758ce7f947ef4009e24f1349"
+    },
+    {
+      "name": "sub-mit121/eeg/sub-mit121_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit121/eeg/sub-mit121_task-Emotion_eeg.fdt",
+      "bytes": 263898096,
+      "checksum": "md5:6905fcf1304624ef8e2699b6592950d0",
+      "git_blob_sha1": "4c28fa538e4518fd2a1048745d0819b1c91d3b33",
+      "git_annex_pointer": "../../.git/annex/objects/fk/kf/MD5E-s263898096--6905fcf1304624ef8e2699b6592950d0.fdt/MD5E-s263898096--6905fcf1304624ef8e2699b6592950d0.fdt",
+      "sha256": "542152adfaf24b71e2667410582b621b567bb6f7bcd0dd34d85e55bcda0bed30"
+    },
+    {
+      "name": "sub-mit121/eeg/sub-mit121_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit121/eeg/sub-mit121_task-Emotion_eeg.set",
+      "bytes": 2496456,
+      "checksum": "md5:18f6b7b13c514d136891a961480b748e",
+      "git_blob_sha1": "cb0979b3382144bb325083eef8dd812534a6f38a",
+      "git_annex_pointer": "../../.git/annex/objects/0w/M2/MD5E-s2496456--18f6b7b13c514d136891a961480b748e.set/MD5E-s2496456--18f6b7b13c514d136891a961480b748e.set",
+      "sha256": "d5b5d8a7c01722cecb52787a476663cd90e826bfdf3a458fd49341e6d187578c"
+    },
+    {
+      "name": "sub-mit122/eeg/sub-mit122_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit122/eeg/sub-mit122_task-Emotion_eeg.fdt",
+      "bytes": 247987270,
+      "checksum": "md5:08884bbe987d8d55ba0ff34463bbe087",
+      "git_blob_sha1": "d04abe21e4fa9801f36e36f5f1532bb6b6e42bd6",
+      "git_annex_pointer": "../../.git/annex/objects/6m/2z/MD5E-s247987270--08884bbe987d8d55ba0ff34463bbe087.fdt/MD5E-s247987270--08884bbe987d8d55ba0ff34463bbe087.fdt",
+      "sha256": "dfdc6c6a9c889cebbc52e1fd39d829b05b1f18bfa12610ba40f348a676d5063d"
+    },
+    {
+      "name": "sub-mit122/eeg/sub-mit122_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit122/eeg/sub-mit122_task-Emotion_eeg.set",
+      "bytes": 2500704,
+      "checksum": "md5:48fca8c807347bf8278f64668077c0f2",
+      "git_blob_sha1": "ff2d1641c1075b87953725ab0b3bc41763f4e637",
+      "git_annex_pointer": "../../.git/annex/objects/gJ/Z0/MD5E-s2500704--48fca8c807347bf8278f64668077c0f2.set/MD5E-s2500704--48fca8c807347bf8278f64668077c0f2.set",
+      "sha256": "b935b32752b8c0625c8442d89d646cce2fe3921977a92bbcdb3bfd3ea776d052"
+    },
+    {
+      "name": "sub-mit123/eeg/sub-mit123_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit123/eeg/sub-mit123_task-Emotion_eeg.fdt",
+      "bytes": 174915840,
+      "checksum": "md5:cc1a0e767f386bb92c76ccf11df9cca4",
+      "git_blob_sha1": "42a2d4d6c5408b002880dd23c62afef85be64ac1",
+      "git_annex_pointer": "../../.git/annex/objects/px/v4/MD5E-s174915840--cc1a0e767f386bb92c76ccf11df9cca4.fdt/MD5E-s174915840--cc1a0e767f386bb92c76ccf11df9cca4.fdt",
+      "sha256": "08b9149153832f8e5ac9eaf1ec9ad6c0c9dd5c6bfcfab2e61792462e4dc7c55e"
+    },
+    {
+      "name": "sub-mit123/eeg/sub-mit123_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mit123/eeg/sub-mit123_task-Emotion_eeg.set",
+      "bytes": 1812120,
+      "checksum": "md5:51a554cf4373422780483ba36a6a9cc9",
+      "git_blob_sha1": "deadc14daedaee9d2094726c8c4ad71d4aa8e560",
+      "git_annex_pointer": "../../.git/annex/objects/g1/MG/MD5E-s1812120--51a554cf4373422780483ba36a6a9cc9.set/MD5E-s1812120--51a554cf4373422780483ba36a6a9cc9.set",
+      "sha256": "d1312ee1980c4789adf4a02fb3615aa98db594158300328eb04d2ad9a4c4cf61"
+    },
+    {
+      "name": "sub-mitb2017007/eeg/sub-mitb2017007_task-Emotion_eeg.fdt",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mitb2017007/eeg/sub-mitb2017007_task-Emotion_eeg.fdt",
+      "bytes": 206491824,
+      "checksum": "md5:702b5c7360d8942890e195bd7207a802",
+      "git_blob_sha1": "258253af4710dbf36770599d465bceec9d0fafd2",
+      "git_annex_pointer": "../../.git/annex/objects/Zx/37/MD5E-s206491824--702b5c7360d8942890e195bd7207a802.fdt/MD5E-s206491824--702b5c7360d8942890e195bd7207a802.fdt",
+      "sha256": "d58ee6b55dc90a7f383d82d354aa0ecd444664a3cccad01b009373edb0ab6e7e"
+    },
+    {
+      "name": "sub-mitb2017007/eeg/sub-mitb2017007_task-Emotion_eeg.set",
+      "url": "https://s3.amazonaws.com/openneuro.org/ds003751/sub-mitb2017007/eeg/sub-mitb2017007_task-Emotion_eeg.set",
+      "bytes": 2050208,
+      "checksum": "md5:34be14aeb95cae8048c4cd9c3c0cebb4",
+      "git_blob_sha1": "f30787610cc750a96c52267cf9077e50641e3c4b",
+      "git_annex_pointer": "../../.git/annex/objects/0m/Mv/MD5E-s2050208--34be14aeb95cae8048c4cd9c3c0cebb4.set/MD5E-s2050208--34be14aeb95cae8048c4cd9c3c0cebb4.set",
+      "sha256": "9b909aa163b0984e7e634055a9fec407aabbc12cad561ce80266bd772db8db63"
+    }
+  ]
+}

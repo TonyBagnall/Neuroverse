@@ -1,0 +1,145 @@
+{
+  "dataset": "AlzheimersAuditoryPilot",
+  "source_key": "eegdash_auditory",
+  "path": "D:\\Data\\EEGSources\\EEGDash\\ds005048\\pilot-output\\AlzheimersAuditoryPilot",
+  "train_cases": 220,
+  "test_cases": 300,
+  "subjects": 6,
+  "channels": 19,
+  "timepoints": 1000,
+  "classes": 3,
+  "frequency": 250,
+  "size_GB": 0.19031756,
+  "licence": "CC0-1.0",
+  "validation": {
+    "partitions": {
+      "TRAIN": {
+        "cases": 220,
+        "shape": [
+          220,
+          19,
+          1000
+        ],
+        "class_counts": {
+          "1": 60,
+          "3": 60,
+          "2": 100
+        },
+        "subjects": [
+          "01",
+          "02",
+          "17"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      },
+      "TEST": {
+        "cases": 300,
+        "shape": [
+          300,
+          19,
+          1000
+        ],
+        "class_counts": {
+          "1": 100,
+          "2": 100,
+          "3": 100
+        },
+        "subjects": [
+          "31",
+          "32",
+          "35"
+        ],
+        "exact_float64_roundtrip": true,
+        "metadata_rows_verified": true,
+        "finite": true,
+        "exact_constant_pairs": 0,
+        "aeon_tiny_nonconstant_pairs": 0,
+        "within_split_duplicate_cases": 0
+      }
+    },
+    "shared_subjects": [],
+    "cross_split_duplicate_cases": 0,
+    "cross_split_overlapping_intervals": 0,
+    "aeon": {
+      "load_fit_predict": true,
+      "train_cases": 9,
+      "test_cases": 9
+    },
+    "aeon_scope": "All cases exact .ts readback; aeon load/variance/fit/predict on 3 cases per class per partition",
+    "channel_order_verified_all_recordings": true,
+    "source_sensor_identity": "Native MAT header, BIDS/EDF or SET/GDF labels; Castillos explicit named intersection"
+  },
+  "channel_quality": {
+    "threshold_std_uV": 1e-07,
+    "constant_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "effectively_flat_case_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_channel_names": [
+      "Fp1",
+      "Fp2",
+      "F7",
+      "F3",
+      "Fz",
+      "F4",
+      "F8",
+      "T7",
+      "C3",
+      "Cz",
+      "C4",
+      "T8",
+      "P7",
+      "P3",
+      "Pz",
+      "P4",
+      "P8",
+      "O1",
+      "O2"
+    ],
+    "removed_indices": [],
+    "policy": "Remove sensor globally if any retained trial has std <= 1e-7 uV"
+  }
+}

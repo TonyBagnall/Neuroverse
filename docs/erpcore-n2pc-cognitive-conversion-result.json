@@ -1,0 +1,14 @@
+{
+  "dataset": "SpatialAttention",
+  "component": "N2pc",
+  "path": "D:\\Data\\EEG\\SpatialAttention",
+  "train_cases": 9607,
+  "test_cases": 3200,
+  "classes": 2,
+  "channels": 30,
+  "points": 1024,
+  "hz": 1024,
+  "subjects": 40,
+  "status": "passed",
+  "cache_purged": true
+}

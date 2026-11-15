@@ -1,0 +1,1320 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        6,
+        15
+      ]
+    ],
+    "date-time": "2026-06-15T15:24:11Z",
+    "timestamp": 1781537051877,
+    "version": "3.54.5"
+  },
+  "reference-count": 92,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2019-09-01T00:00:00Z",
+        "timestamp": 1567296000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    }
+  ],
+  "funder": [
+    {
+      "name": "General Medical Sciences of the National Institutes of Health",
+      "award": [
+        "P20GM109089"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "P20GM109089"
+          ]
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Neuropsychologia"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        9
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.neuropsychologia.2019.107125",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        6,
+        19
+      ]
+    ],
+    "date-time": "2019-06-19T15:10:29Z",
+    "timestamp": 1560957029000
+  },
+  "page": "107125",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 17,
+  "special_numbering": "C",
+  "title": [
+    "ERPs predict symptomatic distress and recovery in sub-acute mild traumatic brain injury"
+  ],
+  "prefix": "10.1016",
+  "volume": "132",
+  "author": [
+    {
+      "given": "James F.",
+      "family": "Cavanagh",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "J. Kevin",
+      "family": "Wilson",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Rebecca E.",
+      "family": "Rieger",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Darbi",
+      "family": "Gill",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "James M.",
+      "family": "Broadway",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Jacqueline Hope",
+      "family": "Story Remer",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Violet",
+      "family": "Fratzke",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Andrew R.",
+      "family": "Mayer",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Davin K.",
+      "family": "Quinn",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "issue": "9",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib1",
+      "doi-asserted-by": "crossref",
+      "first-page": "1194",
+      "DOI": "10.1111/psyp.12441",
+      "article-title": "Psychopathy, attention, and oddball target detection: new insights from PCL-R facet scores",
+      "volume": "52",
+      "author": "Anderson",
+      "year": "2015",
+      "journal-title": "Psychophysiology"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib2",
+      "doi-asserted-by": "crossref",
+      "first-page": "41",
+      "DOI": "10.1016/j.ijpsycho.2011.03.004",
+      "article-title": "Clinical electrophysiologic assessments and mild traumatic brain injury: state-of-the-science and implications for clinical practice",
+      "volume": "82",
+      "author": "Arciniegas",
+      "year": "2011",
+      "journal-title": "Int. J. Psychophysiol."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib3",
+      "doi-asserted-by": "crossref",
+      "first-page": "213",
+      "DOI": "10.1176/jnp.13.2.213",
+      "article-title": "Reduced hippocampal volume in association with p50 nonsuppression following traumatic brain injury",
+      "volume": "13",
+      "author": "Arciniegas",
+      "year": "2001",
+      "journal-title": "J. Neuropsychiatry Clin. Neurosci."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib4",
+      "first-page": "493",
+      "article-title": "Comparison of quantitative EEG to current clinical decision rules for head CT use in acute mild traumatic brain injury in the",
+      "volume": "33",
+      "author": "Ayaz",
+      "year": "2015",
+      "journal-title": "AJEM (Am. J. Emerg. Med.)"
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib5",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.biopsycho.2015.01.011",
+      "article-title": "Neural evidence that conscious awareness of errors is reduced in depression following a traumatic brain injury",
+      "volume": "106",
+      "author": "Bailey",
+      "year": "2015",
+      "journal-title": "Biol. Psychol."
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib6",
+      "doi-asserted-by": "crossref",
+      "first-page": "1734",
+      "DOI": "10.1162/jocn.2006.18.10.1734",
+      "article-title": "Task switching and novelty processing activate a common neural network for cognitive control",
+      "volume": "18",
+      "author": "Barcelo",
+      "year": "2006",
+      "journal-title": "J. Cogn. Neurosci."
+    },
+    {
+      "issue": "15",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib7",
+      "doi-asserted-by": "crossref",
+      "first-page": "1887",
+      "DOI": "10.1097/00001756-200210280-00011",
+      "article-title": "Think differently: a brain orienting response to task novelty",
+      "volume": "13",
+      "author": "Barcel\u00f3",
+      "year": "2002",
+      "journal-title": "Neuroreport"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib8",
+      "doi-asserted-by": "crossref",
+      "first-page": "58",
+      "DOI": "10.3109/02699052.2011.608216",
+      "article-title": "Measuring brain electrical activity to track recovery from sport-related concussion",
+      "volume": "26",
+      "author": "Barr",
+      "year": "2012",
+      "journal-title": "Brain Inj."
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib9",
+      "first-page": "539",
+      "author": "Barry",
+      "year": "2006"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib10",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1017/S135561770808017X",
+      "article-title": "Neuropsychology and clinical neuroscience of persistent post-concussive syndrome",
+      "volume": "14",
+      "author": "Bigler",
+      "year": "2008",
+      "journal-title": "J. Int. Neuropsychol. Soc.: JINS"
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib11",
+      "series-title": "International Affective Digitized Sounds (IADS): Stimuli, Instruction Manual and Affective Ratings. Tech. Rep. No. B-2",
+      "author": "Bradley",
+      "year": "1999"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib12",
+      "doi-asserted-by": "crossref",
+      "first-page": "16",
+      "DOI": "10.1016/j.ijpsycho.2011.02.010",
+      "article-title": "A history of sport-related concussion on event-related brain potential correlates of cognition",
+      "volume": "82",
+      "author": "Broglio",
+      "year": "2011",
+      "journal-title": "Int. J. Psychophysiol."
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib13",
+      "article-title": "Do sport-related concussions result in long-term cognitive impairment? A review of event-related potential research",
+      "author": "Brush",
+      "year": "2017",
+      "journal-title": "Int. J. Psychophysiol."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib14",
+      "doi-asserted-by": "crossref",
+      "first-page": "751",
+      "DOI": "10.1016/j.neuron.2013.10.002",
+      "article-title": "Scaling brain size, keeping timing: evolutionary preservation of brain rhythms",
+      "volume": "80",
+      "author": "Buzs\u00e1ki",
+      "year": "2013",
+      "journal-title": "Neuron"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib15",
+      "doi-asserted-by": "crossref",
+      "first-page": "18",
+      "DOI": "10.1016/j.rehab.2017.07.246",
+      "article-title": "Longitudinal study of a NoGo-P3 event-related potential component following mild traumatic brain injury in adults",
+      "volume": "61",
+      "author": "Candrian",
+      "year": "2018",
+      "journal-title": "Ann. Phys. Rehabilitation Med."
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib16",
+      "volume": "vols. 1\u201313",
+      "author": "Cavanagh",
+      "year": "2019"
+    },
+    {
+      "issue": "1\u20133",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib17",
+      "first-page": "3",
+      "article-title": "Frontal midline theta reflects anxiety and cognitive control: meta-analytic evidence",
+      "volume": "109",
+      "author": "Cavanagh",
+      "year": "2014",
+      "journal-title": "J. Physiol. Paris"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib18",
+      "doi-asserted-by": "crossref",
+      "first-page": "220",
+      "DOI": "10.1111/j.1469-8986.2011.01293.x",
+      "article-title": "Theta lingua franca: a common mid-frontal substrate for action monitoring processes",
+      "volume": "49",
+      "author": "Cavanagh",
+      "year": "2012",
+      "journal-title": "Psychophysiology"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib19",
+      "doi-asserted-by": "crossref",
+      "first-page": "387",
+      "DOI": "10.1016/j.dadm.2015.08.004",
+      "article-title": "A clinical trial to validate event-related potential markers of Alzheimer's disease in outpatient settings",
+      "volume": "1",
+      "author": "Cecchi",
+      "year": "2015",
+      "journal-title": "Alzheimer's Dementia: Diagn., Assess. Dis. Monit."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib20",
+      "doi-asserted-by": "crossref",
+      "first-page": "739",
+      "DOI": "10.1093/cercor/bhs065",
+      "article-title": "Decoding the role of the insula in human cognition: functional parcellation and large-scale reverse inference",
+      "volume": "23",
+      "author": "Chang",
+      "year": "2013",
+      "journal-title": "Cerebr. Cortex"
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib21",
+      "series-title": "Large-Scale Meta-Analysis of Human Medial Frontal Cortex Reveals Tripartite Functional Organization",
+      "author": "De La Vega",
+      "year": "2016"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib22",
+      "doi-asserted-by": "crossref",
+      "first-page": "9",
+      "DOI": "10.1016/j.jneumeth.2003.10.009",
+      "article-title": "EEGLAB: an open source toolbox for analysis of single-trial EEG dynamics including independent component analysis",
+      "volume": "134",
+      "author": "Delorme",
+      "year": "2004",
+      "journal-title": "J. Neurosci. Methods"
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib23",
+      "doi-asserted-by": "crossref",
+      "first-page": "641",
+      "DOI": "10.1097/PHM.0b013e318115aca9",
+      "article-title": "Characteristics of cognitive function in patients after traumatic brain injury assessed by visual and auditory event-related potentials",
+      "volume": "86",
+      "author": "Doi",
+      "year": "2007",
+      "journal-title": "Am. J. Phys. Med. Rehab."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib24",
+      "doi-asserted-by": "crossref",
+      "first-page": "493",
+      "DOI": "10.1111/j.1469-8986.1981.tb01815.x",
+      "article-title": "Surprise!...Surprise?",
+      "volume": "18",
+      "author": "Donchin",
+      "year": "1981",
+      "journal-title": "Psychophysiology"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib25",
+      "doi-asserted-by": "crossref",
+      "first-page": "456",
+      "DOI": "10.1111/j.1469-8986.1977.tb01312.x",
+      "article-title": "On quantifying surprise: the variation of event-related potentials with subjective probability",
+      "volume": "14",
+      "author": "Duncan-Johnson",
+      "year": "1977",
+      "journal-title": "Psychophysiology"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib26",
+      "doi-asserted-by": "crossref",
+      "first-page": "24",
+      "DOI": "10.1016/j.ijpsycho.2011.02.013",
+      "article-title": "Evaluation of traumatic brain injury: brain potentials in diagnosis, function, and prognosis",
+      "volume": "82",
+      "author": "Duncan",
+      "year": "2011",
+      "journal-title": "Int. J. Psychophysiol."
+    },
+    {
+      "issue": "18",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib27",
+      "first-page": "4087",
+      "article-title": "Concussions in athletes produce brain dysfunction as revealed by event-related potentials",
+      "volume": "11",
+      "author": "Dupuis",
+      "year": "2000",
+      "journal-title": "Clin. Neurosci. Neuropathol."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib28",
+      "doi-asserted-by": "crossref",
+      "first-page": "4",
+      "DOI": "10.1016/j.ijpsycho.2011.03.005",
+      "article-title": "Electrophysiological assessments of cognition and sensory processing in TBI: applications for diagnosis, prognosis and rehabilitation",
+      "volume": "82",
+      "author": "Folmer",
+      "year": "2011",
+      "journal-title": "Int. J. Psychophysiol."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib29",
+      "doi-asserted-by": "crossref",
+      "first-page": "355",
+      "DOI": "10.1016/S0149-7634(01)00019-7",
+      "article-title": "The novelty P3: an event-related brain potential (ERP) sign of the brain's evaluation of novelty",
+      "volume": "25",
+      "author": "Friedman",
+      "year": "2001",
+      "journal-title": "Neurosci. Biobehav. Rev."
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib30",
+      "doi-asserted-by": "crossref",
+      "first-page": "209",
+      "DOI": "10.1146/annurev.neuro.051508.135603",
+      "article-title": "Neuronal gamma-band synchronization as a fundamental process in cortical computation",
+      "volume": "32",
+      "author": "Fries",
+      "year": "2009",
+      "journal-title": "Annu. Rev. Neurosci."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib31",
+      "doi-asserted-by": "crossref",
+      "first-page": "19",
+      "DOI": "10.1016/j.neuron.2016.06.002",
+      "article-title": "Taking psychiatry research online",
+      "volume": "91",
+      "author": "Gillan",
+      "year": "2016",
+      "journal-title": "Neuron"
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib32",
+      "doi-asserted-by": "crossref",
+      "first-page": "174",
+      "DOI": "10.1016/j.bbr.2016.12.002",
+      "article-title": "Reduced P3b brain response during sustained visual attention is associated with remote blast mTBI and current PTSD in U.S. military veterans",
+      "volume": "340",
+      "author": "Gilmore",
+      "year": "2018",
+      "journal-title": "Behav. Brain Res."
+    },
+    {
+      "issue": "3\u20134",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib33",
+      "doi-asserted-by": "crossref",
+      "first-page": "87",
+      "DOI": "10.1007/s41470-017-0011-2",
+      "article-title": "Event-related potentials as biomarkers of mild traumatic brain injury",
+      "volume": "59",
+      "author": "Gomes",
+      "year": "2017",
+      "journal-title": "Act. Nerv. Super."
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib34",
+      "series-title": "Frontal Systems Behavior Scale",
+      "author": "Grace",
+      "year": "2001"
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib35",
+      "doi-asserted-by": "crossref",
+      "first-page": "653",
+      "DOI": "10.1089/neu.2012.2585",
+      "article-title": "Electroencephalography and quantitative electroencephalography in mild traumatic brain injury",
+      "volume": "30",
+      "author": "Haneef",
+      "year": "2013",
+      "journal-title": "J. Neurotrauma"
+    },
+    {
+      "issue": "24",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib36",
+      "doi-asserted-by": "crossref",
+      "first-page": "2051",
+      "DOI": "10.1089/neu.2013.3062",
+      "article-title": "Use of brain electrical activity for the identification of hematomas in mild traumatic brain injury",
+      "volume": "30",
+      "author": "Hanley",
+      "year": "2013",
+      "journal-title": "J. Neurotrauma"
+    },
+    {
+      "issue": "neu.2017",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib37",
+      "first-page": "5004",
+      "article-title": "A brain electrical activity (EEG) based biomarker of functional impairment in traumatic head injury: a multisite validation trial",
+      "volume": "47",
+      "author": "Hanley",
+      "year": "2017",
+      "journal-title": "J. Neurotrauma"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib38",
+      "doi-asserted-by": "crossref",
+      "first-page": "617",
+      "DOI": "10.1111/acem.13175",
+      "article-title": "Emergency department triage of traumatic head injury using a brain electrical activity biomarker: a multisite prospective observational validation trial",
+      "volume": "24",
+      "author": "Hanley",
+      "year": "2017",
+      "journal-title": "Acad. Emerg. Med."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib39",
+      "doi-asserted-by": "crossref",
+      "first-page": "147",
+      "DOI": "10.1016/S0167-8760(03)00052-7",
+      "article-title": "Substance use disorders, externalizing psychopathology, and P300 event-related potential amplitude",
+      "volume": "48",
+      "author": "Iacono",
+      "year": "2003",
+      "journal-title": "Int. J. Psychophysiol."
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib40",
+      "doi-asserted-by": "crossref",
+      "first-page": "748",
+      "DOI": "10.1176/appi.ajp.2010.09091379",
+      "article-title": "Research domain criteria (RDoC): toward a new classification framework for research on mental disorders",
+      "volume": "167",
+      "author": "Insel",
+      "year": "2010",
+      "journal-title": "Am. J. Psychiatry"
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib41",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1111/j.1469-8986.1986.tb00649.x",
+      "article-title": "A triarchic model of P300 amplitude",
+      "author": "Johnson",
+      "year": "1986",
+      "journal-title": "Psychophysiology"
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib42",
+      "doi-asserted-by": "crossref",
+      "first-page": "587",
+      "DOI": "10.1007/BF00868811",
+      "article-title": "The Rivermead Post Concussion Symptoms Questionnaire: a measure of symptoms commonly experienced after head injury and its reliability",
+      "volume": "242",
+      "author": "King",
+      "year": "1995",
+      "journal-title": "J. Neurol."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib43",
+      "doi-asserted-by": "crossref",
+      "first-page": "155",
+      "DOI": "10.1016/j.jcm.2016.02.012",
+      "article-title": "A guideline of selecting and reporting intraclass correlation coefficients for reliability research",
+      "volume": "15",
+      "author": "Koo",
+      "year": "2016",
+      "journal-title": "J. Chiropractic Med."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib44",
+      "doi-asserted-by": "crossref",
+      "first-page": "949",
+      "DOI": "10.1162/jocn.2006.18.6.949",
+      "article-title": "Fractionating the neural mechanisms of cognitive control",
+      "volume": "18",
+      "author": "Kopp",
+      "year": "2006",
+      "journal-title": "J. Cogn. Neurosci."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib45",
+      "doi-asserted-by": "crossref",
+      "first-page": "39009",
+      "DOI": "10.1038/srep39009",
+      "article-title": "Auditory biological marker of concussion in children",
+      "volume": "6",
+      "author": "Kraus",
+      "year": "2016",
+      "journal-title": "Sci. Rep."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib46",
+      "doi-asserted-by": "crossref",
+      "first-page": "61",
+      "DOI": "10.1016/j.ijpsycho.2011.02.001",
+      "article-title": "Predictors of performance monitoring abilities following traumatic brain injury: the influence of negative affect and cognitive sequelae",
+      "volume": "82",
+      "author": "Larson",
+      "year": "2011",
+      "journal-title": "Int. J. Psychophysiol."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib47",
+      "doi-asserted-by": "crossref",
+      "first-page": "69",
+      "DOI": "10.1016/j.ijpsycho.2011.02.018",
+      "article-title": "Cognitive control in mild traumatic brain injury: conflict monitoring and conflict adaptation",
+      "volume": "82",
+      "author": "Larson",
+      "year": "2011",
+      "journal-title": "Int. J. Psychophysiol.: Off. J. Int. Org. Psychophysiol."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib48",
+      "doi-asserted-by": "crossref",
+      "first-page": "55",
+      "DOI": "10.1076/jcen.26.1.55.23936",
+      "article-title": "Visual P300 effects beyond symptoms in concussed college athletes",
+      "volume": "26",
+      "author": "Lavoie",
+      "year": "2004",
+      "journal-title": "J. Clin. Exp. Neuropsychol."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib49",
+      "doi-asserted-by": "crossref",
+      "first-page": "350",
+      "DOI": "10.1097/00001199-200607000-00006",
+      "article-title": "Prognostic value of evoked and event-related potentials in moderate to severe brain injury",
+      "volume": "21",
+      "author": "Lew",
+      "year": "2006",
+      "journal-title": "J. Head Trauma Rehabil."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib50",
+      "doi-asserted-by": "crossref",
+      "first-page": "563",
+      "DOI": "10.1177/1073858405280524",
+      "article-title": "The P300\u202f: where in the brain is it produced and what does it tell Us\u202f?",
+      "volume": "11",
+      "author": "Linden",
+      "year": "2005",
+      "journal-title": "Neuroscientist: Rev. J. Bringing Neurobiol., Neurol. Psychiatry"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib51",
+      "first-page": "294",
+      "article-title": "An examination of behavioral and neuronal effects of comorbid traumatic brain injury and alcohol use",
+      "volume": "3",
+      "author": "Mayer",
+      "year": "2018",
+      "journal-title": "Biol. Psychiatry: Cogn. Neurosci. Neuroimaging"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib52",
+      "doi-asserted-by": "crossref",
+      "first-page": "623",
+      "DOI": "10.1212/WNL.0000000000004214",
+      "article-title": "The spectrum of mild traumatic brain injury: a review",
+      "volume": "89",
+      "author": "Mayer",
+      "year": "2017",
+      "journal-title": "Neurology"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib53",
+      "doi-asserted-by": "crossref",
+      "first-page": "283",
+      "DOI": "10.1097/HTR.0b013e3181e67923",
+      "article-title": "Acute effects and recovery after sport-related concussion",
+      "volume": "25",
+      "author": "McCrea",
+      "year": "2010",
+      "journal-title": "J. Head Trauma Rehabil."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib54",
+      "doi-asserted-by": "crossref",
+      "first-page": "333",
+      "DOI": "10.3233/NRE-2002-17407",
+      "article-title": "Executive dysfunction following traumatic brain injury: neural substrates and treatment strategies",
+      "volume": "17",
+      "author": "McDonald",
+      "year": "2002",
+      "journal-title": "NeuroRehabilitation"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib55",
+      "doi-asserted-by": "crossref",
+      "first-page": "26",
+      "DOI": "10.1089/neu.2013.2984",
+      "article-title": "Symptomatology and functional outcome in mild traumatic brain injury: results from the prospective TRACK-TBI study",
+      "volume": "31",
+      "author": "McMahon",
+      "year": "2014",
+      "journal-title": "J. Neurotrauma"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib56",
+      "doi-asserted-by": "crossref",
+      "first-page": "172",
+      "DOI": "10.1037/0033-2909.111.1.172",
+      "article-title": "Comparing correlated correlation coefficients",
+      "volume": "111",
+      "author": "Meng",
+      "year": "1992",
+      "journal-title": "Psychol. Bull."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib57",
+      "doi-asserted-by": "crossref",
+      "first-page": "72",
+      "DOI": "10.1016/j.tics.2011.11.018",
+      "article-title": "Computational psychiatry",
+      "volume": "16",
+      "author": "Montague",
+      "year": "2012",
+      "journal-title": "Trends Cognit. Sci."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib58",
+      "doi-asserted-by": "crossref",
+      "first-page": "24",
+      "DOI": "10.4085/1062-6050-49.1.01",
+      "article-title": "The persistent influence of concussive injuries on cognitive control and neuroelectric function",
+      "volume": "49",
+      "author": "Moore",
+      "year": "2014",
+      "journal-title": "J. Athl. Train."
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib59",
+      "first-page": "1045",
+      "article-title": "Subacute to chronic mild traumatic brain injury",
+      "volume": "86",
+      "author": "Mott",
+      "year": "2012",
+      "journal-title": "Am. Fam. Physician"
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib60",
+      "doi-asserted-by": "crossref",
+      "first-page": "1324",
+      "DOI": "10.3109/02699052.2010.506862",
+      "article-title": "Use of brain electrical activity to quantify traumatic brain injury in the emergency department",
+      "volume": "24",
+      "author": "Naunheim",
+      "year": "2010",
+      "journal-title": "Brain Inj."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib61",
+      "doi-asserted-by": "crossref",
+      "first-page": "162",
+      "DOI": "10.1111/j.1469-8986.2010.01057.x",
+      "article-title": "The anatomical and functional relationship between the P3 and autonomic components of the orienting response",
+      "volume": "48",
+      "author": "Nieuwenhuis",
+      "year": "2011",
+      "journal-title": "Psychophysiology"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib62",
+      "doi-asserted-by": "crossref",
+      "first-page": "152",
+      "DOI": "10.1016/j.jneumeth.2010.07.015",
+      "article-title": "FASTER: fully automated statistical thresholding for EEG artifact rejection",
+      "volume": "192",
+      "author": "Nolan",
+      "year": "2010",
+      "journal-title": "J. Neurosci. Methods"
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib63",
+      "doi-asserted-by": "crossref",
+      "first-page": "2001",
+      "DOI": "10.1016/j.clinph.2005.05.008",
+      "article-title": "Routine and quantitative EEG in mild traumatic brain injury",
+      "volume": "116",
+      "author": "Nuwer",
+      "year": "2005",
+      "journal-title": "Clin. Neurophysiol.: Off. J. Int. Federation Clin. Neurophysiol."
+    },
+    {
+      "issue": "12",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib64",
+      "doi-asserted-by": "crossref",
+      "first-page": "1729",
+      "DOI": "10.1038/nn.3248",
+      "article-title": "A supramodal accumulation-to-bound signal that determines perceptual decisions in humans",
+      "volume": "15",
+      "author": "O'Connell",
+      "year": "2012",
+      "journal-title": "Nat. Neurosci."
+    },
+    {
+      "issue": "Suppl. D",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib65",
+      "first-page": "5",
+      "article-title": "Standardized low-resolution brain electromagnetic tomography (sLORETA): technical details",
+      "volume": "24",
+      "author": "Pascual-Marqui",
+      "year": "2002",
+      "journal-title": "Methods Find. Exp. Clin. Pharmacol."
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib66",
+      "doi-asserted-by": "crossref",
+      "first-page": "2128",
+      "DOI": "10.1016/j.clinph.2007.04.019",
+      "article-title": "Updating P300: an integrative theory of P3a and P3b",
+      "volume": "118",
+      "author": "Polich",
+      "year": "2007",
+      "journal-title": "Clin. Neurophysiol.: Off. J. Int. Federation Clin. Neurophysiol."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib67",
+      "doi-asserted-by": "crossref",
+      "first-page": "103",
+      "DOI": "10.1016/0301-0511(95)05130-9",
+      "article-title": "Cognitive and biological determinants of P300: an integrative review",
+      "volume": "41",
+      "author": "Polich",
+      "year": "1995",
+      "journal-title": "Biol. Psychol."
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib68",
+      "doi-asserted-by": "crossref",
+      "first-page": "125",
+      "DOI": "10.1016/j.compbiomed.2014.07.011",
+      "article-title": "Classification algorithms for the identification of structural injury in TBI using brain electrical activity",
+      "volume": "53",
+      "author": "Prichep",
+      "year": "2014",
+      "journal-title": "Comput. Biol. Med."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib69",
+      "doi-asserted-by": "crossref",
+      "first-page": "266",
+      "DOI": "10.1097/HTR.0b013e318247b54e",
+      "article-title": "Time course of clinical and electrophysiological recovery after sport-related concussion",
+      "volume": "28",
+      "author": "Prichep",
+      "year": "2013",
+      "journal-title": "J. Head Trauma Rehabil."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib70",
+      "doi-asserted-by": "crossref",
+      "first-page": "17",
+      "DOI": "10.1089/neu.2014.3365",
+      "article-title": "Identification of hematomas in mild traumatic brain injury using an index of quantitative brain electrical activity",
+      "volume": "32",
+      "author": "Prichep",
+      "year": "2015",
+      "journal-title": "J. Neurotrauma"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib71",
+      "doi-asserted-by": "crossref",
+      "first-page": "103",
+      "DOI": "10.1176/appi.ajp.2017.17020235",
+      "article-title": "Prolonged postconcussive symptoms",
+      "volume": "175",
+      "author": "Quinn",
+      "year": "2018",
+      "journal-title": "Am. J. Psychiatry"
+    },
+    {
+      "issue": "February",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib72",
+      "first-page": "1",
+      "article-title": "Traumatic brain injury detection using electrophysiological methods",
+      "volume": "9",
+      "author": "Rapp",
+      "year": "2015",
+      "journal-title": "Front. Hum. Neurosci."
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib73",
+      "series-title": "The \u201c Miserable Minority \u201d Following Mild Traumatic Brain Injury\u202f: Who Are They and Do Meta-Analyses Hide Them\u202f?",
+      "first-page": "4046",
+      "author": "Rohling",
+      "year": "2012"
+    },
+    {
+      "issue": "7\u20138",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib74",
+      "doi-asserted-by": "crossref",
+      "first-page": "798",
+      "DOI": "10.3109/02699052.2015.1004756",
+      "article-title": "How long is too long? the lack of consensus regarding the post-concussion syndrome diagnosis",
+      "volume": "29",
+      "author": "Rose",
+      "year": "2015",
+      "journal-title": "Brain Inj."
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib75",
+      "series-title": "Ventromedial Prefrontal-Subcortical Systems and the Generation of Affective Meaning. Trends in Cognitive Sciences",
+      "author": "Roy",
+      "year": "2012"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib76",
+      "first-page": "5",
+      "article-title": "Two Decades of Advances in Understanding of Mild Traumatic Brain Injury",
+      "volume": "20",
+      "author": "Ruff",
+      "year": "2005"
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib77",
+      "doi-asserted-by": "crossref",
+      "first-page": "691",
+      "DOI": "10.1016/j.neubiorev.2016.08.003",
+      "article-title": "Event-related potentials and cognition in Parkinson's disease: an integrative review",
+      "volume": "71",
+      "author": "Seer",
+      "year": "2016",
+      "journal-title": "Neurosci. Biobehav. Rev."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib78",
+      "doi-asserted-by": "crossref",
+      "first-page": "154",
+      "DOI": "10.1038/nrn2994",
+      "article-title": "The integration of negative affect, pain and cognitive control in the cingulate cortex",
+      "volume": "12",
+      "author": "Shackman",
+      "year": "2011",
+      "journal-title": "Nat. Rev. Neurosci."
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib79",
+      "doi-asserted-by": "crossref",
+      "first-page": "233",
+      "DOI": "10.1016/j.nicl.2017.01.010",
+      "article-title": "Executive attention deficits after traumatic brain injury reflect impaired recruitment of resources",
+      "volume": "14",
+      "author": "Shah",
+      "year": "2017",
+      "journal-title": "Neuroimage: Clinical"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib80",
+      "doi-asserted-by": "crossref",
+      "first-page": "121",
+      "DOI": "10.1038/nrn3137",
+      "article-title": "Spectral fingerprints of large-scale neuronal interactions",
+      "volume": "13",
+      "author": "Siegel",
+      "year": "2012",
+      "journal-title": "Nat. Rev. Neurosci."
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib81",
+      "doi-asserted-by": "crossref",
+      "first-page": "2142",
+      "DOI": "10.1016/j.clinph.2014.12.024",
+      "article-title": "The P3a wave: a reliable neurophysiological measure of Parkinson's disease duration and severity",
+      "volume": "126",
+      "author": "Sol\u00eds-Vivanco",
+      "year": "2015",
+      "journal-title": "Clin. Neurophysiol."
+    },
+    {
+      "issue": "510",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib82",
+      "first-page": "199",
+      "article-title": "Neural origins of the P300",
+      "volume": "14",
+      "author": "Soltani",
+      "year": "2000",
+      "journal-title": "Crit. Rev. Neurobiol."
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib83",
+      "first-page": "77",
+      "author": "Thatcher",
+      "year": "2001",
+      "journal-title": "Traumatic Brain Injury"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib84",
+      "doi-asserted-by": "crossref",
+      "first-page": "94",
+      "DOI": "10.1016/0013-4694(89)90188-0",
+      "article-title": "EEG discriminant analyses of mild head trauma",
+      "volume": "73",
+      "author": "Thatcher",
+      "year": "1989",
+      "journal-title": "Electroencephalogr. Clin. Neurophysiol."
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib85",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1111/ejn.12936",
+      "article-title": "The classic P300 encodes a build-to-threshold decision variable",
+      "author": "Twomey",
+      "year": "2015",
+      "journal-title": "Eur. J. Neurosci."
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib87",
+      "doi-asserted-by": "crossref",
+      "first-page": "532",
+      "DOI": "10.1016/S1474-4422(17)30117-5",
+      "article-title": "Early predictors of outcome after mild traumatic brain injury (UPFRONT): an observational cohort study",
+      "volume": "16",
+      "author": "van der Naalt",
+      "year": "2017",
+      "journal-title": "Lancet Neurol."
+    },
+    {
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib88",
+      "first-page": "1",
+      "article-title": "Common neural processes during action-stopping and infrequent stimulus detection\u202f: the frontocentral P3 as an index of generic motor inhibition",
+      "author": "Waller",
+      "year": "2019",
+      "journal-title": "Int. J. Psychophysiol."
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib89",
+      "doi-asserted-by": "crossref",
+      "first-page": "815",
+      "DOI": "10.1080/026990500421921",
+      "article-title": "Electrophysiological indices of persistent post-concussion symptoms",
+      "volume": "14",
+      "author": "Weinberg",
+      "year": "2000",
+      "journal-title": "Brain Inj."
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib90",
+      "doi-asserted-by": "crossref",
+      "first-page": "741",
+      "DOI": "10.1016/j.tics.2018.06.005",
+      "article-title": "Surprise: a more realistic framework for studying action stopping?",
+      "volume": "22",
+      "author": "Wessel",
+      "year": "2018",
+      "journal-title": "Trends Cognit. Sci."
+    },
+    {
+      "issue": "September",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib91",
+      "first-page": "1",
+      "article-title": "Novelty N2-P3a complex and theta oscillations reflect improving neural coordination within frontal brain networks during adolescence",
+      "volume": "12",
+      "author": "Wienke",
+      "year": "2018",
+      "journal-title": "Front. Behav. Neurosci."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib92",
+      "doi-asserted-by": "crossref",
+      "first-page": "113",
+      "DOI": "10.1080/87565641.2013.870177",
+      "article-title": "The effects of visual distracter complexity on auditory evoked p3b in contact sports athletes",
+      "volume": "39",
+      "author": "Wilson",
+      "year": "2014",
+      "journal-title": "Dev. Neuropsychol."
+    },
+    {
+      "issue": "3\u20134",
+      "key": "10.1016/j.neuropsychologia.2019.107125_bib93",
+      "doi-asserted-by": "crossref",
+      "first-page": "232",
+      "DOI": "10.1007/s11682-010-9102-3",
+      "article-title": "Decreased prefrontal cortex activity in mild traumatic brain injury during performance of an auditory oddball task",
+      "volume": "4",
+      "author": "Witt",
+      "year": "2010",
+      "journal-title": "Brain Imaging Behav."
+    }
+  ],
+  "container-title": [
+    "Neuropsychologia"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0028393219301630?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0028393219301630?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        7,
+        19
+      ]
+    ],
+    "date-time": "2024-07-19T23:26:55Z",
+    "timestamp": 1721431615000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0028393219301630"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        9
+      ]
+    ]
+  },
+  "references-count": 92,
+  "alternative-id": [
+    "S0028393219301630"
+  ],
+  "URL": "https://doi.org/10.1016/j.neuropsychologia.2019.107125",
+  "relation": {},
+  "ISSN": [
+    "0028-3932"
+  ],
+  "issn-type": [
+    {
+      "value": "0028-3932",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        9
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "ERPs predict symptomatic distress and recovery in sub-acute mild traumatic brain injury",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Neuropsychologia",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.neuropsychologia.2019.107125",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "\u00a9 2019 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "107125"
+}
