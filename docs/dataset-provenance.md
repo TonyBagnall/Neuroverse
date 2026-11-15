@@ -311,7 +311,10 @@ A useful handoff request is:
   The prose gives 19 patients and 18 controls (37 people), while the table and
   train/test sizes give 36. The omitted subject and recording release need confirmation.
 - **Papers / status:** benchmark paper only; no separate acquisition publication
-  identified. Restricted access; distinct cohort from FibroUEA.
+  identified. Restricted access; distinct cohort from FibroUEA. Excluded from the
+  open-access 90-problem (`eeg.txt`) and 114-problem (`eeg_114.txt`) study lists
+  (replaced in `Clinical` by `LearningDifficulties` / `ds006260`) while retained in
+  `neuroverse_paper` for Rushbrooke et al. (2026) reproduction.
 
 ## FibroUEA
 
@@ -325,7 +328,10 @@ A useful handoff request is:
   truncated to a common length, but the table implies 30 s and 40 cases. Subject
   exclusion and the exact extraction window remain unresolved.
 - **Papers / status:** benchmark paper only; no separate acquisition publication
-  identified. Restricted access.
+  identified. Restricted access. Excluded from the open-access 90-problem (`eeg.txt`)
+  and 114-problem (`eeg_114.txt`) study lists (replaced in `Clinical` by
+  `FamilialAlzheimersRest` / `ds007427`) while retained in `neuroverse_paper` for
+  Rushbrooke et al. (2026) reproduction.
 
 ## FingerMovements
 
@@ -1239,5 +1245,13 @@ Original source: [10.18112/openneuro.ds003506.v1.1.0](https://openneuro.org/data
 ### AcuteTBIVisualMemory (Cavanagh / OpenNeuro ds003523)
 
 Original source: [10.18112/openneuro.ds003523.v1.1.0](https://openneuro.org/datasets/ds003523/versions/1.1.0) (EEGDash `on003523`). Data licence: CC0-1.0 (`dataset_description.json` `License=CC0`). Cavanagh et al., University of New Mexico Center for Brain Recovery and Repair, baseline Session 1 (`ses-01`) scalp EEG during change-detection visual working memory (`task-VisualWorkingMemory`). Source revision: OpenNeuro `ds003523` v1.1.0, Git commit `ae850fd9843ef2ec32346e6183b13a59217d2a55`. `86` strictly disjoint, clinically validated participants (`54` sub-acute mild TBI 3-14 days post-injury with loss of consciousness, `32` healthy controls; 5 of 91 `ses-01` entries excluded per annex MD5 deduplication and author `s2_WM_Kill_Data.m`: byte-identical BIDS duplicate `sub-037` == `sub-036` `Original_ID=3013`, non-LOC mTBI exclusions `sub-064` `3004` and `sub-084` `3056`, and pre-existing head-injury exclusions `sub-068` `3024` and `sub-022` `3053`), `63 x 2000` BrainVision scalp EEG channels at native `500 Hz` (`VEOG` and `EKG` excluded), 2 classes (`subacute_mild_tbi`, `healthy_control`), `1920 / 660` TRAIN/TEST cases across `30` non-overlapping `4.0 s` (`2,000`-sample) memory-array-locked windows (`S  1`, `S  2`, `S  3`) per participant (stratified 75/25 whole-subject split: `64` TRAIN, `22` TEST; `0` flat sensors removed). Shared baseline mTBI/Control cohort with `TBIAuditoryOddball` (`ds003522`), recorded in a distinct visual working memory paradigm. Stored in `C:/Data/EEG/AcuteTBIVisualMemory`. See [diagnostic plan](diagnostic-to-30-plan.md), [source lock](ds003523-diagnosis-source-lock.json) and [conversion result](ds003523-diagnosis-conversion-result.json).
+
+### LearningDifficulties (OpenNeuro ds006260)
+
+Original source: [10.18112/openneuro.ds006260.v1.0.1](https://openneuro.org/datasets/ds006260/versions/1.0.1). Data licence: CC0-1.0 (`dataset_description.json` `License=CC0`). Paediatric resting-state scalp EEG in children diagnosed with mathematical versus reading learning difficulties prior to Smartick cognitive intervention. Source revision: OpenNeuro `ds006260` v1.0.1, Git commit `870271aa1f52444214b33d651d2ff2838717d041`. `75` baseline participants (`40` mathematical learning difficulty `sub-M*` with pre-intervention `ses-1/run-1` baseline EEG; `sub-Mc22` has no baseline recording and is logged in `excluded_participants`; and `35` reading learning difficulty `sub-R*` with pre-intervention `ses-1/run-1` baseline EEG; note `participants.tsv` `Group=exp/cont` denotes the post-baseline intervention arm rather than diagnostic status), `32 x 1024` 10-20 scalp EEG channels at native `256 Hz`, 2 classes (`math_learning_difficulty`, `reading_learning_difficulty`), `1680 / 570` TRAIN/TEST cases across `30` non-overlapping `4.0 s` (`1,024`-sample) eyes-open resting windows per participant (stratified 75/25 whole-subject split: `56` TRAIN, `19` TEST; `0` flat sensors removed). Replaces restricted `FibroLiverpool` in the open-access `Clinical` benchmark. Stored in `C:/Data/EEG/LearningDifficulties`. See [source lock](ds006260-diagnosis-source-lock.json) and [conversion result](ds006260-diagnosis-conversion-result.json).
+
+### FamilialAlzheimersRest (OpenNeuro ds007427)
+
+Original source: [10.18112/openneuro.ds007427.v1.0.2](https://openneuro.org/datasets/ds007427/versions/1.0.2). Data licence: CC0-1.0 (`dataset_description.json` `License=CC0`). Resting-state BrainVision scalp EEG in the Antioquia autosomal-dominant familial Alzheimer's disease (`PSEN1-E280A`) kindred (University of Antioquia Neurosciences Group). Source revision: OpenNeuro `ds007427` v1.0.2, Git commit `27e92df664fa9517545abe592c6a23f02cb1ff22`. `43` raw kindred participants (`27` asymptomatic `PSEN1-E280A` mutation carriers `sub-G1*`, `16` matched non-carrier family controls `sub-G2*`; `94` derivatives-only sporadic sub-study rows `sub-CTR*`/`sub-DCL*`/`sub-DTA*` and lone raw sporadic `sub-CTR011` excluded and logged in `excluded_participants` for protocol and cohort homogeneity), `58 x 4000` Neuroscan scalp EEG channels at native `1,000 Hz` (`HEO` and `VEO` ocular channels excluded), 2 classes (`psen1_e280a_carrier`, `non_carrier_control`), `960 / 330` TRAIN/TEST cases across `30` non-overlapping `4.0 s` (`4,000`-sample) eyes-closed resting windows (`task-rest`) per participant (stratified 75/25 whole-subject split: `32` TRAIN, `11` TEST; `0` flat sensors removed). Completely independent cohort, institution, country, and genetic aetiology from Greek hospital sporadic `Alzheimers` (`ds004504`) / `PhotoStimulation` (`ds006036`) and `AlzheimersAuditory`. Replaces restricted `FibroUEA` in the open-access `Clinical` benchmark. Stored in `C:/Data/EEG/FamilialAlzheimersRest`. See [source lock](ds007427-diagnosis-source-lock.json) and [conversion result](ds007427-diagnosis-conversion-result.json).
 
 

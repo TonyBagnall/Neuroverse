@@ -1,0 +1,113 @@
+{
+  "dataset": "ProteusCommandsAllPublic",
+  "train_cases": 2655,
+  "test_cases": 3,
+  "test_case_indices": [
+    2,
+    1,
+    0
+  ],
+  "labels": [
+    0,
+    1,
+    2
+  ],
+  "shape": [
+    2655,
+    41,
+    480
+  ],
+  "seed": 33,
+  "components": {
+    "ConvolutionBased": "Arsenal",
+    "IntervalBased": "DrCIF-500",
+    "ShapeletBased": "STC-aeon",
+    "DictionaryBased": "TDE"
+  },
+  "split": "TRAIN is all public cases in original case order. TEST repeats one TRAIN case per class for diagnostic prediction only; not a generalisation evaluation.",
+  "train_estimate": "Native component fit_predict_proba estimates, not resubstitution probabilities; these estimates supply HC2 weights and do not measure unseen-subject generalisation.",
+  "source_tsml_commit": "ce0d1131dca7c2f432ae005162284acfe28ce4be",
+  "files": {
+    "datasets.txt": {
+      "bytes": 26,
+      "sha256": "599cb8f97aa6d9a3ccdd70e6f6dadb431e1b4bcecce3ac1d7b228985ca024a71"
+    },
+    "check_track2_hc2_experiment.py": {
+      "bytes": 3723,
+      "sha256": "904fe87519656cbb80d6ca0972d5e643ff02c3f034fd7bd0e20b334590b1f92c"
+    },
+    "preflight.py": {
+      "bytes": 2602,
+      "sha256": "f07be12fe086bc855bbf03f0c69dd2eb87f660da1fadee0299ae4698dc26ae0e"
+    },
+    "verify_overlay.py": {
+      "bytes": 716,
+      "sha256": "eb465f6c3969da3a3f62d9cef9cd62f4e78ca8231aea06ce02b4a4f23ef71e3d"
+    },
+    "experiment.toml": {
+      "bytes": 1675,
+      "sha256": "33ba6849ad62e0791c52b6cd9d404234daca15fb69449bcb5bec192a47bd5de1"
+    },
+    "preflight.sbatch": {
+      "bytes": 1420,
+      "sha256": "a142e221ce43c2818c93b8d3f2c6dc34bc37cd3f846c0fc10c1a97d855e151f6"
+    },
+    "data/ProteusCommandsAllPublic/ProteusCommandsAllPublic_TRAIN.ts": {
+      "bytes": 1017537507,
+      "sha256": "04efef1c81022dacb22bff4a58806d24feec23a1b2dab0d19d8188cb43037f0e"
+    },
+    "data/ProteusCommandsAllPublic/ProteusCommandsAllPublic_TEST.ts": {
+      "bytes": 1149665,
+      "sha256": "250a7e7be9fe70135adbfd0e78071f7be5b7ae6880f9bdb689693824a4be1557"
+    },
+    "data/ProteusCommandsAllPublic/cases_train.tsv": {
+      "bytes": 880312,
+      "sha256": "f099d659bf4cdc9fdc1a2e2ece64d046a9a4c96edd992008a23d4e67a8b67a5e"
+    },
+    "data/ProteusCommandsAllPublic/cases_test.tsv": {
+      "bytes": 1337,
+      "sha256": "104aaaf0c2355d9c64ac3edd7f540df34724dc4572bd117007823c109eb393b3"
+    },
+    "data/ProteusCommandsAllPublic/ProteusCommandsAllPublic_id_TRAIN.txt": {
+      "bytes": 13275,
+      "sha256": "43869d39fda21b9fe18410ec87689d62d5c7fc20a9abdf8728490f249f6e1707"
+    },
+    "data/ProteusCommandsAllPublic/ProteusCommandsAllPublic_id_TEST.txt": {
+      "bytes": 15,
+      "sha256": "6d36d8b13210de2a57d155918a02130ddeb8dd266afecad017645a12ea67b4a7"
+    },
+    "data/ProteusCommandsAllPublic/metadata.json": {
+      "bytes": 3100389,
+      "sha256": "d22b2b3faa460449b0aacdfa2696afdff47aabf20a3ee846afffde3c44a6b6ce"
+    },
+    "data/ProteusCommandsAllPublic/channels.tsv": {
+      "bytes": 2620,
+      "sha256": "d7347585b029f2b0164358888a02735f0270420bc5bef0b4785dd075695925d2"
+    },
+    "overlay/tsml_eval/utils/arguments.py": {
+      "bytes": 15765,
+      "sha256": "e3a12b93090614172d32e56ac4086fc757eeebc5c8ddcadd0317dbea3130d98e"
+    },
+    "overlay/tsml_eval/experiments/experiments.py": {
+      "bytes": 55447,
+      "sha256": "c0016bc19b370b0d441d5583a6b7d48215bd1ca7cccb7d585e08b00a09d46d38"
+    },
+    "overlay/tsml_eval/experiments/classification_experiments.py": {
+      "bytes": 6502,
+      "sha256": "1b7fa68cef732b221aab4033600e9a9b3cd6a16c3319985c3484cb9a0821c527"
+    },
+    "overlay/tsml_eval/experiments/threaded_classification_experiments.py": {
+      "bytes": 5450,
+      "sha256": "558dd014fe3dc1bd239500c858120939080d260240af9045aba77ba50bdc79ef"
+    },
+    "overlay/tsml_eval/experiments/__pycache__/experiments.cpython-312.pyc": {
+      "bytes": 49524,
+      "sha256": "8625ab45b533b9a533c00bf057ce485e1ef38da77bf3be4a749491eef461b066"
+    },
+    "overlay/_tsml_research_resources/slurm/tsml_slurm.py": {
+      "bytes": 101009,
+      "sha256": "a1f86bebae27daeb3191e86662fd489cacbf9a81608f160fa3dd3c6fdbe7a737"
+    }
+  },
+  "training_array_sha256": "194854a54cdc13b9d4a8df2a8b0bdd148032d6651ac4d6f7bfe91c8da794835e"
+}

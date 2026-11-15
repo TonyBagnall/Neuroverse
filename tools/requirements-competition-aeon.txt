@@ -1,0 +1,7 @@
+# Training/export only. These libraries are NOT needed by the exported model.
+aeon==1.5.0
+scikit-learn==1.7.2
+numpy==2.3.5
+# Local official-framework replay (worker supplies its own framework).
+benchopt==1.10.0
+torch==2.11.0

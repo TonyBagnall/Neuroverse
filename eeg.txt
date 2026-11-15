@@ -13,9 +13,8 @@ CognitiveLoadTasks
 CovidSurvivors
 EyesOpenShut
 FaceStimuli
+FamilialAlzheimersRest
 FeedbackButton
-FibroLiverpool
-FibroUEA
 FlankerConflict
 FuzzySemantics
 ImaginedAnkleRest
@@ -47,6 +46,7 @@ ImaginedOpenCloseFist
 ImaginedRightHandFeet
 ImaginedRightHandFeetRest
 InternalAttention
+LearningDifficulties
 LongIntervalTask
 LowCost
 MentalArithmetic

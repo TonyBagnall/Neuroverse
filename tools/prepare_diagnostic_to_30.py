@@ -59,6 +59,8 @@ PHASE1_ORDER = [
     'ds007181',
     'ds003506',
     'ds003523',
+    'ds006260',
+    'ds007427',
 ]
 
 DATASET_NAMES = {
@@ -72,6 +74,8 @@ DATASET_NAMES = {
     'ds007181': 'ZosterNeuralgiaSleep',
     'ds003506': 'ParkinsonsReinforcement',
     'ds003523': 'AcuteTBIVisualMemory',
+    'ds006260': 'LearningDifficulties',
+    'ds007427': 'FamilialAlzheimersRest',
 }
 
 ESTIMATED_EXPORT_GB = {
@@ -85,6 +89,8 @@ ESTIMATED_EXPORT_GB = {
     'ds007181': 1.0,
     'ds003506': 3.6,
     'ds003523': 5.5,
+    'ds006260': 1.6,
+    'ds007427': 3.5,
 }
 
 ALBRECHT_REPO = 'jalauer/Albrecht2019'
@@ -215,6 +221,35 @@ OPENNEURO_PHASE1 = {
         commit='ae850fd9843ef2ec32346e6183b13a59217d2a55',
         eegdash_id='on003523',
         licence='CC0-1.0',
+    ),
+    'ds006260': dict(
+        dataset='ds006260',
+        ref='1.0.1',
+        commit='870271aa1f52444214b33d651d2ff2838717d041',
+        eegdash_id='on006260',
+        licence='CC0-1.0',
+    ),
+    'ds007427': dict(
+        dataset='ds007427',
+        ref='1.0.2',
+        commit='27e92df664fa9517545abe592c6a23f02cb1ff22',
+        eegdash_id='on007427',
+        licence='CC0-1.0',
+    ),
+}
+
+DS006260_MISSING_BASELINE = {
+    'sub-Mc22': (
+        'No pre-intervention ses-1/run-1 baseline EEG recording in OpenNeuro ds006260 v1.0.1 '
+        '(confirmed NO under PRE- EEG Baseline in 02_EEG_Data_Descriptor.xlsx)'
+    ),
+}
+
+DS007427_NON_EEG_TAIL = ['HEO', 'VEO']
+DS007427_SPORADIC_RAW_EXCLUSIONS = {
+    'sub-CTR011': (
+        'Single sporadic-cohort control raw file outside the matched Antioquia PSEN1-E280A kindred '
+        'sub-study (G1 asymptomatic mutation carriers vs G2 matched non-carrier controls per README)'
     ),
 }
 
@@ -2382,6 +2417,348 @@ def ds003523_records(cache: Path, spec: dict):
 
 
 # ---------------------------------------------------------------------------
+# #11 LearningDifficulties (OpenNeuro ds006260 v1.0.1)
+# ---------------------------------------------------------------------------
+def plan_ds006260_participants(
+    part_rows: list[dict],
+    available_set_names: set[str],
+) -> tuple[list[tuple[str, str, str, dict]], list[dict]]:
+    """Select pre-intervention ses-1/run-1 resting EEG across M vs R learning-difficulty cohorts."""
+    retained: list[tuple[str, str, str, dict]] = []
+    excluded: list[dict] = []
+    seen_ids: set[str] = set()
+    for r in part_rows:
+        pid = r['participant_id'].strip()
+        if pid in seen_ids:
+            raise ValueError(f'Duplicate participant_id {pid!r} in ds006260')
+        seen_ids.add(pid)
+        m = re.match(r'^sub-([MR])([ce])\d+$', pid)
+        if not m:
+            raise ValueError(f'Unexpected ds006260 participant_id prefix {pid!r}')
+        subtype_code, arm_code = m.group(1), m.group(2)
+        arm = r.get('Group', '').strip()
+        expected_arm = 'cont' if arm_code == 'c' else 'exp'
+        if arm != expected_arm:
+            raise ValueError(f'Inconsistent Group={arm!r} vs ID arm {arm_code!r} for {pid}')
+        rel_set = f'{pid}/ses-1/eeg/{pid}_ses-1_task-SmartickDataset_run-1_eeg.set'
+        if rel_set not in available_set_names:
+            if pid in DS006260_MISSING_BASELINE:
+                excluded.append(
+                    dict(participant_id=pid, group=subtype_code, reason=DS006260_MISSING_BASELINE[pid])
+                )
+                continue
+            raise ValueError(f'Unexpected missing baseline ses-1/run-1 .set for {pid}')
+        src_lbl = 'math_learning_difficulty' if subtype_code == 'M' else 'reading_learning_difficulty'
+        lbl = '1' if subtype_code == 'M' else '2'
+        retained.append((pid, src_lbl, lbl, r))
+    return sorted(retained, key=lambda item: item[0]), excluded
+
+
+def ds006260_records(cache: Path, spec: dict):
+    receipt = json.loads((cache / 'download-receipt.json').read_text(encoding='utf-8'))
+    annex = spec['_deferred_files']
+    by_name = {f['name']: f for f in annex}
+
+    part_rows = core.table(cache / 'participants.tsv')
+    participants, excluded = plan_ds006260_participants(part_rows, set(by_name))
+    spec['metadata_updates']['excluded_participants'] = excluded
+
+    subject_labels = {pid: lbl for pid, _, lbl, _ in participants}
+    train_subs, test_subs = stratified_diagnostic_split(subject_labels, train_ratio=0.75)
+    spec['_state']['train_subjects'] = train_subs
+    spec['metadata_updates']['split_definition'] = (
+        f'Stratified 75/25 whole-participant split by clinical learning-difficulty diagnosis '
+        f'(math_learning_difficulty sub-M* vs reading_learning_difficulty sub-R*) across {len(participants)} '
+        f'children with pre-intervention ses-1/run-1 eyes-open resting EEG: '
+        f'{len(train_subs)} TRAIN, {len(test_subs)} TEST; sub-Mc22 without baseline EEG excluded.'
+    )
+
+    canonical_names: list[str] | None = None
+    verified_stream: list[dict] = []
+    seen_hashes: set[str] = set()
+    picks = list(range(32))
+
+    for batch in batched(participants, 8):
+        batch_files = [
+            by_name[f'{pid}/ses-1/eeg/{pid}_ses-1_task-SmartickDataset_run-1_eeg.set']
+            for pid, _, _, _ in batch
+        ]
+
+        def _dl(f: dict) -> dict:
+            target = (cache / f['name']).resolve()
+            fetch(f['url'], target, f['checksum'], f['bytes'])
+            return {**f, 'sha256': sha(target)}
+
+        with ThreadPoolExecutor(max_workers=8) as pool:
+            verified_batch = list(pool.map(_dl, batch_files))
+        verified_by_name = {f['name']: f for f in verified_batch}
+        verified_stream.extend(verified_batch)
+
+        for pid, src_lbl, lbl, p_row in batch:
+            rel_set = f'{pid}/ses-1/eeg/{pid}_ses-1_task-SmartickDataset_run-1_eeg.set'
+            set_path = cache / rel_set
+            ch_tsv = cache / f'{pid}/ses-1/eeg/{pid}_ses-1_task-SmartickDataset_run-1_channels.tsv'
+            ev_tsv = cache / f'{pid}/ses-1/eeg/{pid}_ses-1_task-SmartickDataset_run-1_events.tsv'
+            try:
+                raw_data, meta = decode_eeglab_set(set_path)
+                if raw_data.ndim != 2 or round(meta['srate']) != spec['hz']:
+                    raise ValueError(f'Unexpected ds006260 shape/srate in {pid}: {raw_data.shape} @ {meta["srate"]}')
+                tsv_names = [r['name'].strip() for r in core.table(ch_tsv)]
+                if len(tsv_names) != 32 or raw_data.shape[0] != 32:
+                    raise ValueError(f'Expected 32 scalp EEG channels in ds006260 {pid}, got {len(tsv_names)}')
+                if canonical_names is None:
+                    canonical_names = tsv_names
+                elif tsv_names != canonical_names:
+                    raise ValueError(f'ds006260 channel order mismatch in {pid}: {tsv_names}')
+
+                scalp = np.ascontiguousarray(raw_data[picks], dtype='<f8')
+                bounds: list[int] = []
+                if ev_tsv.is_file():
+                    for er in core.table(ev_tsv):
+                        val = er.get('value', '').strip().lower()
+                        onset_str = er.get('onset', '').strip()
+                        if val == 'boundary' and onset_str and onset_str != 'n/a':
+                            samp = int(round(float(onset_str) * spec['hz']))
+                            if samp > 0:
+                                bounds.append(samp)
+                for ev in meta.get('events', []):
+                    if str(ev.get('type', '')).strip().lower() == 'boundary':
+                        lat = int(round(float(ev['latency']) - 1.0))
+                        if lat > 0:
+                            bounds.append(lat)
+
+                candidates = list(range(0, scalp.shape[1] - spec['points'] + 1, spec['points']))
+                wins, starts, dropped = extract_clean_windows(
+                    scalp, candidates, spec['points'], bounds, max_windows=30, seen_hashes=seen_hashes
+                )
+                if not wins:
+                    raise ValueError(f'Zero clean windows for ds006260 {pid}')
+                set_rec = verified_by_name[rel_set]
+                rec_id = f'{pid}_ses-1_run-1'
+                rows = [
+                    dict(
+                        participant_id=pid,
+                        session_id='ses-1',
+                        recording_id=rec_id,
+                        intervention_arm=p_row.get('Group', '').strip(),
+                        age_years=p_row.get('Age', '').strip(),
+                        gender=p_row.get('Gender', '').strip(),
+                        source_file=set_rec['name'],
+                        event_index=idx,
+                        start_sample=s,
+                        end_sample=s + spec['points'],
+                        start_time_seconds=s / spec['hz'],
+                        end_time_seconds=(s + spec['points']) / spec['hz'],
+                        sample_reference=SAMPLE_REF_CONT,
+                        source_label=src_lbl,
+                        label=lbl,
+                    )
+                    for idx, s in enumerate(starts)
+                ]
+                info = dict(
+                    recording_id=rec_id,
+                    participant_id=pid,
+                    session_id='ses-1',
+                    source_file=set_rec['name'],
+                    source_file_sha256=set_rec['sha256'],
+                    native_sampling_frequency_hz=meta['srate'],
+                    native_samples=int(raw_data.shape[1]),
+                    native_channels=int(raw_data.shape[0]),
+                    source_eeg_indices=picks,
+                    excluded_channels=[],
+                    retained_windows=len(wins),
+                    dropped_windows_count=len(dropped),
+                )
+                yield np.stack(wins, axis=0), rows, canonical_names, info
+            finally:
+                if set_path.exists():
+                    set_path.unlink()
+
+    full_files = sorted(receipt['files'] + verified_stream, key=lambda item: item['name'])
+    spec['_state']['all_source_files'] = full_files
+    dump(ROOT / 'docs' / 'ds006260-diagnosis-source-lock.json', {**receipt, 'files': full_files})
+
+
+# ---------------------------------------------------------------------------
+# #12 FamilialAlzheimersRest (OpenNeuro ds007427 v1.0.2)
+# ---------------------------------------------------------------------------
+def plan_ds007427_participants(
+    part_rows: list[dict],
+    available_eeg_names: set[str],
+) -> tuple[list[tuple[str, str, str, dict]], list[dict]]:
+    """Select matched Antioquia PSEN1-E280A kindred G1 carriers vs G2 non-carrier controls with raw EEG."""
+    retained: list[tuple[str, str, str, dict]] = []
+    excluded: list[dict] = []
+    seen_ids: set[str] = set()
+    for r in part_rows:
+        pid = r['participant_id'].strip()
+        if pid in seen_ids:
+            raise ValueError(f'Duplicate participant_id {pid!r} in ds007427')
+        seen_ids.add(pid)
+        rel_eeg = f'{pid}/ses-V0/eeg/{pid}_ses-V0_task-CE_eeg.eeg'
+        has_raw = rel_eeg in available_eeg_names
+        if pid in DS007427_SPORADIC_RAW_EXCLUSIONS:
+            excluded.append(
+                dict(participant_id=pid, group='CTR_sporadic', reason=DS007427_SPORADIC_RAW_EXCLUSIONS[pid])
+            )
+            continue
+        if pid.startswith('sub-G1'):
+            if not has_raw:
+                excluded.append(
+                    dict(
+                        participant_id=pid,
+                        group='G1',
+                        reason='Derivatives-only G1 participant without raw BrainVision .eeg in ds007427 v1.0.2',
+                    )
+                )
+                continue
+            retained.append((pid, 'psen1_e280a_carrier', '1', r))
+        elif pid.startswith('sub-G2'):
+            if not has_raw:
+                excluded.append(
+                    dict(
+                        participant_id=pid,
+                        group='G2',
+                        reason='Derivatives-only G2 participant without raw BrainVision .eeg in ds007427 v1.0.2',
+                    )
+                )
+                continue
+            retained.append((pid, 'non_carrier_control', '2', r))
+        else:
+            if has_raw:
+                raise ValueError(f'Unaccounted raw .eeg outside G1/G2 kindred in ds007427: {pid}')
+            excluded.append(
+                dict(
+                    participant_id=pid,
+                    group=pid[:7],
+                    reason='Derivatives-only sporadic sub-study participant without raw BrainVision .eeg',
+                )
+            )
+    return sorted(retained, key=lambda item: item[0]), excluded
+
+
+def ds007427_records(cache: Path, spec: dict):
+    receipt = json.loads((cache / 'download-receipt.json').read_text(encoding='utf-8'))
+    annex = spec['_deferred_files']
+    by_name = {f['name']: f for f in annex}
+
+    part_rows = core.table(cache / 'participants.tsv')
+    participants, excluded = plan_ds007427_participants(part_rows, set(by_name))
+    spec['metadata_updates']['excluded_participants'] = excluded
+
+    subject_labels = {pid: lbl for pid, _, lbl, _ in participants}
+    train_subs, test_subs = stratified_diagnostic_split(subject_labels, train_ratio=0.75)
+    spec['_state']['train_subjects'] = train_subs
+    spec['metadata_updates']['split_definition'] = (
+        f'Stratified 75/25 whole-participant split by genetic risk status '
+        f'(psen1_e280a_carrier sub-G1* vs non_carrier_control sub-G2*) across {len(participants)} '
+        f'Antioquia kindred participants with raw BrainVision eyes-closed resting EEG: '
+        f'{len(train_subs)} TRAIN, {len(test_subs)} TEST; derivatives-only rows and sporadic sub-CTR011 excluded.'
+    )
+
+    canonical_names: list[str] | None = None
+    verified_stream: list[dict] = []
+    seen_hashes: set[str] = set()
+    picks = list(range(58))
+
+    for batch in batched(participants, 6):
+        batch_files = [
+            by_name[f'{pid}/ses-V0/eeg/{pid}_ses-V0_task-CE_eeg.eeg']
+            for pid, _, _, _ in batch
+        ]
+
+        def _dl(f: dict) -> dict:
+            target = (cache / f['name']).resolve()
+            fetch(f['url'], target, f['checksum'], f['bytes'])
+            return {**f, 'sha256': sha(target)}
+
+        with ThreadPoolExecutor(max_workers=6) as pool:
+            verified_batch = list(pool.map(_dl, batch_files))
+        verified_by_name = {f['name']: f for f in verified_batch}
+        verified_stream.extend(verified_batch)
+
+        for pid, src_lbl, lbl, p_row in batch:
+            stem = f'{pid}/ses-V0/eeg/{pid}_ses-V0_task-CE_eeg'
+            local_eeg = cache / (stem + '.eeg')
+            vhdr_path = cache / (stem + '.vhdr')
+            vmrk_path = cache / (stem + '.vmrk')
+            ch_tsv = cache / f'{pid}/ses-V0/eeg/{pid}_ses-V0_task-CE_channels.tsv'
+            try:
+                raw_data, meta = decode_brainvision_safe(vhdr_path, local_eeg)
+                if round(meta['native_sampling_frequency_hz']) != spec['hz']:
+                    raise ValueError(f"Expected 1000 Hz in {stem}, got {meta['native_sampling_frequency_hz']}")
+                tsv_rows = core.table(ch_tsv)
+                tsv_names = [r['name'].strip() for r in tsv_rows]
+                tsv_types = [r.get('type', '').strip() for r in tsv_rows]
+                if len(tsv_names) != 60 or tsv_names[58:] != DS007427_NON_EEG_TAIL:
+                    raise ValueError(f'Unexpected ds007427 channel layout in {pid}: {tsv_names}')
+                if any(t != 'EEG' for t in tsv_types[:58]):
+                    raise ValueError(f'Non-EEG channel type inside first 58 channels of {pid}: {tsv_types[:58]}')
+                ch_58 = tsv_names[:58]
+                if canonical_names is None:
+                    canonical_names = ch_58
+                elif ch_58 != canonical_names:
+                    raise ValueError(f'ds007427 scalp channel order mismatch in {pid}: {ch_58}')
+
+                scalp = np.ascontiguousarray(raw_data[picks], dtype='<f8')
+                markers = parse_brainvision_vmrk(vmrk_path) if vmrk_path.is_file() else []
+                bounds = [m['sample'] for m in markers if m['type'].lower() == 'new segment' and m['sample'] > 0]
+
+                candidates = list(range(0, scalp.shape[1] - spec['points'] + 1, spec['points']))
+                wins, starts, dropped = extract_clean_windows(
+                    scalp, candidates, spec['points'], bounds, max_windows=30, seen_hashes=seen_hashes
+                )
+                if not wins:
+                    raise ValueError(f'Zero clean windows for ds007427 {pid}')
+                eeg_rec = verified_by_name[stem + '.eeg']
+                rec_id = f'{pid}_ses-V0'
+                rows = [
+                    dict(
+                        participant_id=pid,
+                        session_id='ses-V0',
+                        recording_id=rec_id,
+                        age_years=p_row.get('age', '').strip(),
+                        sex=p_row.get('sex', '').strip(),
+                        mmse_total=p_row.get('MM_total', '').strip(),
+                        source_file=eeg_rec['name'],
+                        event_index=idx,
+                        start_sample=s,
+                        end_sample=s + spec['points'],
+                        start_time_seconds=s / spec['hz'],
+                        end_time_seconds=(s + spec['points']) / spec['hz'],
+                        sample_reference=SAMPLE_REF_CONT,
+                        source_label=src_lbl,
+                        label=lbl,
+                    )
+                    for idx, s in enumerate(starts)
+                ]
+                info = dict(
+                    recording_id=rec_id,
+                    participant_id=pid,
+                    session_id='ses-V0',
+                    source_file=eeg_rec['name'],
+                    source_file_sha256=eeg_rec['sha256'],
+                    native_sampling_frequency_hz=meta['native_sampling_frequency_hz'],
+                    native_samples=meta['native_samples'],
+                    native_channels=meta['native_channels'],
+                    source_eeg_indices=picks,
+                    excluded_channels=DS007427_NON_EEG_TAIL,
+                    retained_windows=len(wins),
+                    dropped_windows_count=len(dropped),
+                )
+                if 'stale_vhdr_datafile' in meta:
+                    info['stale_vhdr_datafile'] = meta['stale_vhdr_datafile']
+                yield np.stack(wins, axis=0), rows, canonical_names, info
+            finally:
+                if local_eeg.exists():
+                    local_eeg.unlink()
+
+    full_files = sorted(receipt['files'] + verified_stream, key=lambda item: item['name'])
+    spec['_state']['all_source_files'] = full_files
+    dump(ROOT / 'docs' / 'ds007427-diagnosis-source-lock.json', {**receipt, 'files': full_files})
+
+
+# ---------------------------------------------------------------------------
 # Spec Definitions & Orchestrator
 # ---------------------------------------------------------------------------
 PHASE1_META = {
@@ -2601,6 +2978,52 @@ PHASE1_META = {
             'separate task recordings. Float64 microvolts.'
         ),
     ),
+    'ds006260': dict(
+        hz=256,
+        points=1024,
+        labels={'1': 'math_learning_difficulty', '2': 'reading_learning_difficulty'},
+        source='Corona-Gonzalez et al. / Tecnologico de Monterrey & University of Guadalajara / OpenNeuro ds006260 v1.0.1',
+        doi='10.18112/openneuro.ds006260.v1.0.1',
+        paper='Corona-Gonzalez, De Stefano-Ramos, Rosado-Aiza, Ibarra-Zarate, Gomez-Velazquez & Alonso-Valerdi (2025), Dataset of psychophysiological data from children with learning difficulties who strengthen reading and math skills through assistive technology, OpenNeuro ds006260 v1.0.1 (ISRCTN14013636)',
+        licence='CC0-1.0',
+        licence_url='https://creativecommons.org/publicdomain/zero/1.0/',
+        original_source_url='https://openneuro.org/datasets/ds006260/versions/1.0.1',
+        eegdash_id='on006260',
+        doc_slug='ds006260',
+        reader=ds006260_records,
+        note=(
+            'Binary paediatric clinical diagnostic classification (math_learning_difficulty sub-M* vs '
+            'reading_learning_difficulty sub-R*) during pre-intervention baseline eyes-open resting state '
+            '(ses-1, run-1) across 75 children (40 mathematical learning difficulty, 35 reading learning difficulty; '
+            'sub-Mc22 without baseline EEG excluded; post-intervention ses-2 and active task runs excluded so '
+            'recording protocol is identical across both cohorts) at native 256 Hz (32 g.USBamp 10-20 scalp EEG '
+            'channels referenced online to left earlobe; up to 30 clean non-overlapping 4.0-second / 1,024-sample '
+            'windows). Float64 microvolts.'
+        ),
+    ),
+    'ds007427': dict(
+        hz=1000,
+        points=4000,
+        labels={'1': 'psen1_e280a_carrier', '2': 'non_carrier_control'},
+        source='Henao Isaza, Aguillon, Tobon Quintero, Lopera & Ochoa Gomez / Universidad de Antioquia / OpenNeuro ds007427 v1.0.2',
+        doi='10.18112/openneuro.ds007427.v1.0.2',
+        paper='Henao Isaza, Aguillon, Tobon Quintero, Lopera & Ochoa Gomez (2026), Comprehensive methodology for sample enrichment in EEG biomarker studies for Alzheimer\'s risk classification, PLOS ONE, DOI 10.1371/journal.pone.0343722',
+        licence='CC0-1.0',
+        licence_url='https://creativecommons.org/publicdomain/zero/1.0/',
+        original_source_url='https://openneuro.org/datasets/ds007427/versions/1.0.2',
+        eegdash_id='on007427',
+        doc_slug='ds007427',
+        reader=ds007427_records,
+        note=(
+            'Binary preclinical autosomal-dominant Alzheimer\'s genetic risk classification '
+            '(asymptomatic PSEN1-E280A mutation carrier sub-G1* vs matched non-carrier healthy control sub-G2*) '
+            'during eyes-closed resting state (ses-V0, task-CE) across 43 Antioquia kindred participants with raw '
+            'BrainVision recordings (27 PSEN1-E280A carriers, 16 matched non-carrier controls; derivatives-only rows '
+            'and single sporadic-cohort raw file sub-CTR011 excluded) at native 1,000 Hz (58 Neuroscan extended 10-20 '
+            'scalp EEG channels referenced online to right mastoid; HEO and VEO electrooculogram channels excluded; '
+            'up to 30 clean non-overlapping 4.0-second / 4,000-sample windows). Float64 microvolts.'
+        ),
+    ),
 }
 
 
@@ -2611,7 +3034,7 @@ def bootstrap_dataset(key: str, cache: Path) -> tuple[dict, list[dict]]:
         return bootstrap_pardogarcia2026(cache)
     if key == 'siena':
         return bootstrap_siena(cache)
-    eager = ('.vhdr', '.vmrk') if key in {'ds007605', 'ds004000'} else ()
+    eager = ('.vhdr', '.vmrk') if key in {'ds007605', 'ds004000', 'ds007427'} else ()
     return bootstrap_openneuro_metadata(key, cache, annex_eager_exts=eager)
 
 
@@ -2628,8 +3051,10 @@ def build_spec(key: str, cache_root: Path, deferred_files: list[dict]) -> tuple[
             'participants.tsv',
             'participants.json',
             'README',
+            'README.txt',
             'README.md',
             'CHANGES',
+            '32_Chs_Location.ced',
             'DeID_Dems.csv',
             'DataDictionary.txt',
             'Pre-processing_Pseudo.txt',

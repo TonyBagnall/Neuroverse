@@ -1,0 +1,1888 @@
+{
+  "protocol": "Leave one whole subject out; all sessions/runs/interfaces together. Fresh fixed-parameter model per fold; no held-out subject used for fitting. All public subjects participate, including the previous development/test subjects.",
+  "configuration": {
+    "cases_sha256": "f099d659bf4cdc9fdc1a2e2ece64d046a9a4c96edd992008a23d4e67a8b67a5e",
+    "x_sha256": "194854a54cdc13b9d4a8df2a8b0bdd148032d6651ac4d6f7bfe91c8da794835e",
+    "y_sha256": "f3b755439120ed00c1c3bd91c74f63ed7b6f7ec6df93ad4eb8efb18916467fda",
+    "random_state": 33,
+    "jobs": 8,
+    "aeon": "1.5.0",
+    "sklearn": "1.7.2",
+    "torch": "2.11.0+cpu"
+  },
+  "folds": {
+    "MRHydra": {
+      "P01": {
+        "subject": "P01",
+        "train_cases": 2465,
+        "test_cases": 190,
+        "train_subjects": [
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 96.9738785000518,
+        "prediction_seconds": 8.438603299902752,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.4907594086021505,
+          "balanced_accuracy_session_mean": 0.49090608465608465,
+          "balanced_accuracy": 0.49090608465608465,
+          "accuracy": 0.48947368421052634,
+          "cells": [
+            {
+              "subject": "P01",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.5416666666666666
+            },
+            {
+              "subject": "P01",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 94,
+              "balanced_accuracy": 0.43985215053763443
+            }
+          ]
+        }
+      },
+      "P02": {
+        "subject": "P02",
+        "train_cases": 2466,
+        "test_cases": 189,
+        "train_subjects": [
+          "P01",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 54.07945079996716,
+        "prediction_seconds": 5.511456600041129,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.6254144265232975,
+          "balanced_accuracy_session_mean": 0.6247733188257382,
+          "balanced_accuracy": 0.6247733188257382,
+          "accuracy": 0.6243386243386243,
+          "cells": [
+            {
+              "subject": "P02",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.5529121863799283
+            },
+            {
+              "subject": "P02",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.6979166666666666
+            }
+          ]
+        }
+      },
+      "P03": {
+        "subject": "P03",
+        "train_cases": 2466,
+        "test_cases": 189,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 44.75265840010252,
+        "prediction_seconds": 5.560052199987695,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.45586917562724016,
+          "balanced_accuracy_session_mean": 0.45638654207202595,
+          "balanced_accuracy": 0.45638654207202595,
+          "accuracy": 0.455026455026455,
+          "cells": [
+            {
+              "subject": "P03",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.4638216845878136
+            },
+            {
+              "subject": "P03",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.4479166666666667
+            }
+          ]
+        }
+      },
+      "P04": {
+        "subject": "P04",
+        "train_cases": 2089,
+        "test_cases": 566,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P03",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 38.332355199963786,
+        "prediction_seconds": 15.760787899955176,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.33474462365591395,
+          "balanced_accuracy_session_mean": 0.335304126130739,
+          "balanced_accuracy": 0.335946248600224,
+          "accuracy": 0.33568904593639576,
+          "cells": [
+            {
+              "subject": "P04",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.28953853046594985
+            },
+            {
+              "subject": "P04",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.3333333333333333
+            },
+            {
+              "subject": "P04",
+              "session": "2",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.3037858422939068
+            },
+            {
+              "subject": "P04",
+              "session": "2",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.40625
+            },
+            {
+              "subject": "P04",
+              "session": "3",
+              "interface": "BrainHero",
+              "cases": 92,
+              "balanced_accuracy": 0.37347670250896053
+            },
+            {
+              "subject": "P04",
+              "session": "3",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.3020833333333333
+            }
+          ]
+        }
+      },
+      "P05": {
+        "subject": "P05",
+        "train_cases": 2465,
+        "test_cases": 190,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 43.81642839999404,
+        "prediction_seconds": 5.517804499948397,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.352486559139785,
+          "balanced_accuracy_session_mean": 0.35209986772486773,
+          "balanced_accuracy": 0.35209986772486773,
+          "accuracy": 0.3526315789473684,
+          "cells": [
+            {
+              "subject": "P05",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.3541666666666667
+            },
+            {
+              "subject": "P05",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 94,
+              "balanced_accuracy": 0.35080645161290325
+            }
+          ]
+        }
+      },
+      "P06": {
+        "subject": "P06",
+        "train_cases": 2468,
+        "test_cases": 187,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P07",
+          "P08",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 43.740613400004804,
+        "prediction_seconds": 5.159760499955155,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.5603158602150538,
+          "balanced_accuracy_session_mean": 0.5613585936166582,
+          "balanced_accuracy": 0.5613585936166582,
+          "accuracy": 0.5614973262032086,
+          "cells": [
+            {
+              "subject": "P06",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 91,
+              "balanced_accuracy": 0.5268817204301075
+            },
+            {
+              "subject": "P06",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.59375
+            }
+          ]
+        }
+      },
+      "P07": {
+        "subject": "P07",
+        "train_cases": 2466,
+        "test_cases": 189,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P08",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 44.264333899947815,
+        "prediction_seconds": 5.236149600008503,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.38567428315412183,
+          "balanced_accuracy_session_mean": 0.3860407066052227,
+          "balanced_accuracy": 0.3860407066052227,
+          "accuracy": 0.3862433862433862,
+          "cells": [
+            {
+              "subject": "P07",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.34426523297491035
+            },
+            {
+              "subject": "P07",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.4270833333333333
+            }
+          ]
+        }
+      },
+      "P08": {
+        "subject": "P08",
+        "train_cases": 2466,
+        "test_cases": 189,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 45.146592899924144,
+        "prediction_seconds": 5.381309099961072,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.6314516129032258,
+          "balanced_accuracy_session_mean": 0.6311417264038232,
+          "balanced_accuracy": 0.6311417264038232,
+          "accuracy": 0.6349206349206349,
+          "cells": [
+            {
+              "subject": "P08",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.596236559139785
+            },
+            {
+              "subject": "P08",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.6666666666666666
+            }
+          ]
+        }
+      },
+      "P09": {
+        "subject": "P09",
+        "train_cases": 2466,
+        "test_cases": 189,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P10"
+        ],
+        "fit_seconds": 44.22516699996777,
+        "prediction_seconds": 5.304754800046794,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.4405531609195402,
+          "balanced_accuracy_session_mean": 0.44065915300546443,
+          "balanced_accuracy": 0.44065915300546443,
+          "accuracy": 0.43386243386243384,
+          "cells": [
+            {
+              "subject": "P09",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.47485632183908044
+            },
+            {
+              "subject": "P09",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.40625
+            }
+          ]
+        }
+      },
+      "P10": {
+        "subject": "P10",
+        "train_cases": 2078,
+        "test_cases": 577,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09"
+        ],
+        "fit_seconds": 35.93703379994258,
+        "prediction_seconds": 15.494427300058305,
+        "score_argmax_agrees_with_native": false,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.4584275424729279,
+          "balanced_accuracy_session_mean": 0.458861061235394,
+          "balanced_accuracy": 0.45904344560191435,
+          "accuracy": 0.45753899480069327,
+          "cells": [
+            {
+              "subject": "P10",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 96,
+              "balanced_accuracy": 0.46875
+            },
+            {
+              "subject": "P10",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.40625
+            },
+            {
+              "subject": "P10",
+              "session": "2",
+              "interface": "BrainHero",
+              "cases": 90,
+              "balanced_accuracy": 0.44904214559386973
+            },
+            {
+              "subject": "P10",
+              "session": "2",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.4791666666666667
+            },
+            {
+              "subject": "P10",
+              "session": "3",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.4479166666666667
+            },
+            {
+              "subject": "P10",
+              "session": "3",
+              "interface": "BrainHero",
+              "cases": 103,
+              "balanced_accuracy": 0.49943977591036415
+            }
+          ]
+        }
+      }
+    },
+    "QUANT": {
+      "P01": {
+        "subject": "P01",
+        "train_cases": 2465,
+        "test_cases": 190,
+        "train_subjects": [
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 1557.1556760999374,
+        "prediction_seconds": 25.106113200075924,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.4897513440860215,
+          "balanced_accuracy_session_mean": 0.4899140211640212,
+          "balanced_accuracy": 0.4899140211640212,
+          "accuracy": 0.48947368421052634,
+          "cells": [
+            {
+              "subject": "P01",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.5416666666666666
+            },
+            {
+              "subject": "P01",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 94,
+              "balanced_accuracy": 0.4378360215053763
+            }
+          ]
+        }
+      },
+      "P02": {
+        "subject": "P02",
+        "train_cases": 2466,
+        "test_cases": 189,
+        "train_subjects": [
+          "P01",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 1670.686040700064,
+        "prediction_seconds": 10.225562599953264,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.6269713261648746,
+          "balanced_accuracy_session_mean": 0.6266987753882914,
+          "balanced_accuracy": 0.6266987753882914,
+          "accuracy": 0.6243386243386243,
+          "cells": [
+            {
+              "subject": "P02",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.5456093189964157
+            },
+            {
+              "subject": "P02",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.7083333333333334
+            }
+          ]
+        }
+      },
+      "P03": {
+        "subject": "P03",
+        "train_cases": 2466,
+        "test_cases": 189,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 1515.507211600081,
+        "prediction_seconds": 5.432515699998476,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.44060259856630823,
+          "balanced_accuracy_session_mean": 0.44143358508277863,
+          "balanced_accuracy": 0.44143358508277863,
+          "accuracy": 0.43915343915343913,
+          "cells": [
+            {
+              "subject": "P03",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.45412186379928315
+            },
+            {
+              "subject": "P03",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.4270833333333333
+            }
+          ]
+        }
+      },
+      "P04": {
+        "subject": "P04",
+        "train_cases": 2089,
+        "test_cases": 566,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P03",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 994.3462340000551,
+        "prediction_seconds": 12.902055999962613,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.3510192652329749,
+          "balanced_accuracy_session_mean": 0.3519443022131194,
+          "balanced_accuracy": 0.352314296379246,
+          "accuracy": 0.35159010600706714,
+          "cells": [
+            {
+              "subject": "P04",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.334005376344086
+            },
+            {
+              "subject": "P04",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.3541666666666667
+            },
+            {
+              "subject": "P04",
+              "session": "2",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.3128360215053763
+            },
+            {
+              "subject": "P04",
+              "session": "2",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.3541666666666667
+            },
+            {
+              "subject": "P04",
+              "session": "3",
+              "interface": "BrainHero",
+              "cases": 92,
+              "balanced_accuracy": 0.3967741935483871
+            },
+            {
+              "subject": "P04",
+              "session": "3",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.3541666666666667
+            }
+          ]
+        }
+      },
+      "P05": {
+        "subject": "P05",
+        "train_cases": 2465,
+        "test_cases": 190,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 1113.1062601999147,
+        "prediction_seconds": 4.441379800089635,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.2637768817204301,
+          "balanced_accuracy_session_mean": 0.26339285714285715,
+          "balanced_accuracy": 0.26339285714285715,
+          "accuracy": 0.2631578947368421,
+          "cells": [
+            {
+              "subject": "P05",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.21875
+            },
+            {
+              "subject": "P05",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 94,
+              "balanced_accuracy": 0.3088037634408602
+            }
+          ]
+        }
+      },
+      "P06": {
+        "subject": "P06",
+        "train_cases": 2468,
+        "test_cases": 187,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P07",
+          "P08",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 1394.4546467000619,
+        "prediction_seconds": 8.543045099941082,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.49872311827956994,
+          "balanced_accuracy_session_mean": 0.49880525686977295,
+          "balanced_accuracy": 0.49880525686977295,
+          "accuracy": 0.49732620320855614,
+          "cells": [
+            {
+              "subject": "P06",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 91,
+              "balanced_accuracy": 0.5182795698924731
+            },
+            {
+              "subject": "P06",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.4791666666666667
+            }
+          ]
+        }
+      },
+      "P07": {
+        "subject": "P07",
+        "train_cases": 2466,
+        "test_cases": 189,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P08",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 1536.282880899962,
+        "prediction_seconds": 5.616842200048268,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.3485663082437276,
+          "balanced_accuracy_session_mean": 0.34850763782215394,
+          "balanced_accuracy": 0.34850763782215394,
+          "accuracy": 0.3492063492063492,
+          "cells": [
+            {
+              "subject": "P07",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.35338261648745517
+            },
+            {
+              "subject": "P07",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.34375
+            }
+          ]
+        }
+      },
+      "P08": {
+        "subject": "P08",
+        "train_cases": 2466,
+        "test_cases": 189,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P09",
+          "P10"
+        ],
+        "fit_seconds": 1334.7798884999938,
+        "prediction_seconds": 4.327926500001922,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.5257504480286738,
+          "balanced_accuracy_session_mean": 0.5268230500085339,
+          "balanced_accuracy": 0.5268230500085339,
+          "accuracy": 0.5291005291005291,
+          "cells": [
+            {
+              "subject": "P08",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.38483422939068096
+            },
+            {
+              "subject": "P08",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.6666666666666666
+            }
+          ]
+        }
+      },
+      "P09": {
+        "subject": "P09",
+        "train_cases": 2466,
+        "test_cases": 189,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P10"
+        ],
+        "fit_seconds": 1088.2335798999993,
+        "prediction_seconds": 5.5146967000328,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.49676724137931033,
+          "balanced_accuracy_session_mean": 0.49743852459016397,
+          "balanced_accuracy": 0.49743852459016397,
+          "accuracy": 0.49206349206349204,
+          "cells": [
+            {
+              "subject": "P09",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.5247844827586207
+            },
+            {
+              "subject": "P09",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.46875
+            }
+          ]
+        }
+      },
+      "P10": {
+        "subject": "P10",
+        "train_cases": 2078,
+        "test_cases": 577,
+        "train_subjects": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09"
+        ],
+        "fit_seconds": 924.1854034999851,
+        "prediction_seconds": 11.996833399985917,
+        "score_argmax_agrees_with_native": true,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.45261930921793997,
+          "balanced_accuracy_session_mean": 0.451902465059635,
+          "balanced_accuracy": 0.45035323821689666,
+          "accuracy": 0.4488734835355286,
+          "cells": [
+            {
+              "subject": "P10",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 96,
+              "balanced_accuracy": 0.4791666666666667
+            },
+            {
+              "subject": "P10",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.4270833333333333
+            },
+            {
+              "subject": "P10",
+              "session": "2",
+              "interface": "BrainHero",
+              "cases": 90,
+              "balanced_accuracy": 0.564367816091954
+            },
+            {
+              "subject": "P10",
+              "session": "2",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.4583333333333333
+            },
+            {
+              "subject": "P10",
+              "session": "3",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.375
+            },
+            {
+              "subject": "P10",
+              "session": "3",
+              "interface": "BrainHero",
+              "cases": 103,
+              "balanced_accuracy": 0.411764705882353
+            }
+          ]
+        }
+      }
+    },
+    "ensemble": {
+      "P01": {
+        "subject": "P01",
+        "test_cases": 190,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.5171370967741935,
+          "balanced_accuracy_session_mean": 0.5171130952380952,
+          "balanced_accuracy": 0.5171130952380952,
+          "accuracy": 0.5157894736842106,
+          "cells": [
+            {
+              "subject": "P01",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.5520833333333334
+            },
+            {
+              "subject": "P01",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 94,
+              "balanced_accuracy": 0.48219086021505375
+            }
+          ]
+        }
+      },
+      "P02": {
+        "subject": "P02",
+        "test_cases": 189,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.6577060931899641,
+          "balanced_accuracy_session_mean": 0.6575300819252432,
+          "balanced_accuracy": 0.6575300819252432,
+          "accuracy": 0.656084656084656,
+          "cells": [
+            {
+              "subject": "P02",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.5654121863799283
+            },
+            {
+              "subject": "P02",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.75
+            }
+          ]
+        }
+      },
+      "P03": {
+        "subject": "P03",
+        "test_cases": 189,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.4668122759856631,
+          "balanced_accuracy_session_mean": 0.46730990783410137,
+          "balanced_accuracy": 0.46730990783410137,
+          "accuracy": 0.4656084656084656,
+          "cells": [
+            {
+              "subject": "P03",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.5169578853046595
+            },
+            {
+              "subject": "P03",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.4166666666666667
+            }
+          ]
+        }
+      },
+      "P04": {
+        "subject": "P04",
+        "test_cases": 566,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.35442428315412194,
+          "balanced_accuracy_session_mean": 0.3550769471468396,
+          "balanced_accuracy": 0.35567375886524827,
+          "accuracy": 0.3551236749116608,
+          "cells": [
+            {
+              "subject": "P04",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.3239247311827957
+            },
+            {
+              "subject": "P04",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.3541666666666667
+            },
+            {
+              "subject": "P04",
+              "session": "2",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.323252688172043
+            },
+            {
+              "subject": "P04",
+              "session": "2",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.3541666666666667
+            },
+            {
+              "subject": "P04",
+              "session": "3",
+              "interface": "BrainHero",
+              "cases": 92,
+              "balanced_accuracy": 0.4064516129032258
+            },
+            {
+              "subject": "P04",
+              "session": "3",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.3645833333333333
+            }
+          ]
+        }
+      },
+      "P05": {
+        "subject": "P05",
+        "test_cases": 190,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.3627352150537634,
+          "balanced_accuracy_session_mean": 0.3625165343915344,
+          "balanced_accuracy": 0.3625165343915344,
+          "accuracy": 0.3631578947368421,
+          "cells": [
+            {
+              "subject": "P05",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.34375
+            },
+            {
+              "subject": "P05",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 94,
+              "balanced_accuracy": 0.3817204301075268
+            }
+          ]
+        }
+      },
+      "P06": {
+        "subject": "P06",
+        "test_cases": 187,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.545038082437276,
+          "balanced_accuracy_session_mean": 0.5459976105137395,
+          "balanced_accuracy": 0.5459976105137395,
+          "accuracy": 0.5454545454545454,
+          "cells": [
+            {
+              "subject": "P06",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 91,
+              "balanced_accuracy": 0.5379928315412186
+            },
+            {
+              "subject": "P06",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.5520833333333334
+            }
+          ]
+        }
+      },
+      "P07": {
+        "subject": "P07",
+        "test_cases": 189,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.3755936379928316,
+          "balanced_accuracy_session_mean": 0.3752880184331797,
+          "balanced_accuracy": 0.3752880184331797,
+          "accuracy": 0.37566137566137564,
+          "cells": [
+            {
+              "subject": "P07",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.39702060931899646
+            },
+            {
+              "subject": "P07",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.3541666666666667
+            }
+          ]
+        }
+      },
+      "P08": {
+        "subject": "P08",
+        "test_cases": 189,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.6212141577060932,
+          "balanced_accuracy_session_mean": 0.6212344256699095,
+          "balanced_accuracy": 0.6212344256699095,
+          "accuracy": 0.6243386243386243,
+          "cells": [
+            {
+              "subject": "P08",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.5549283154121863
+            },
+            {
+              "subject": "P08",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.6875
+            }
+          ]
+        }
+      },
+      "P09": {
+        "subject": "P09",
+        "test_cases": 189,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.4879669540229885,
+          "balanced_accuracy_session_mean": 0.4885587431693989,
+          "balanced_accuracy": 0.4885587431693989,
+          "accuracy": 0.48148148148148145,
+          "cells": [
+            {
+              "subject": "P09",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 93,
+              "balanced_accuracy": 0.507183908045977
+            },
+            {
+              "subject": "P09",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.46875
+            }
+          ]
+        }
+      },
+      "P10": {
+        "subject": "P10",
+        "test_cases": 577,
+        "metrics": {
+          "balanced_accuracy_cell_mean": 0.4681241078807002,
+          "balanced_accuracy_session_mean": 0.46820599035311267,
+          "balanced_accuracy": 0.4677779764367919,
+          "accuracy": 0.4662045060658579,
+          "cells": [
+            {
+              "subject": "P10",
+              "session": "1",
+              "interface": "BrainHero",
+              "cases": 96,
+              "balanced_accuracy": 0.4791666666666667
+            },
+            {
+              "subject": "P10",
+              "session": "1",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.4270833333333333
+            },
+            {
+              "subject": "P10",
+              "session": "2",
+              "interface": "BrainHero",
+              "cases": 90,
+              "balanced_accuracy": 0.4950191570881226
+            },
+            {
+              "subject": "P10",
+              "session": "2",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.4895833333333333
+            },
+            {
+              "subject": "P10",
+              "session": "3",
+              "interface": "Graz",
+              "cases": 96,
+              "balanced_accuracy": 0.4375
+            },
+            {
+              "subject": "P10",
+              "session": "3",
+              "interface": "BrainHero",
+              "cases": 103,
+              "balanced_accuracy": 0.4803921568627451
+            }
+          ]
+        }
+      }
+    }
+  },
+  "status": "complete",
+  "overall": {
+    "MRHydra": {
+      "balanced_accuracy_cell_mean": 0.45157435610506713,
+      "balanced_accuracy_session_mean": 0.4518472539291631,
+      "balanced_accuracy": 0.4511781040894603,
+      "accuracy": 0.4512241054613936,
+      "cells": [
+        {
+          "subject": "P01",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.5416666666666666
+        },
+        {
+          "subject": "P01",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 94,
+          "balanced_accuracy": 0.43985215053763443
+        },
+        {
+          "subject": "P02",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.5529121863799283
+        },
+        {
+          "subject": "P02",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.6979166666666666
+        },
+        {
+          "subject": "P03",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.4638216845878136
+        },
+        {
+          "subject": "P03",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.4479166666666667
+        },
+        {
+          "subject": "P04",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.28953853046594985
+        },
+        {
+          "subject": "P04",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.3333333333333333
+        },
+        {
+          "subject": "P04",
+          "session": "2",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.3037858422939068
+        },
+        {
+          "subject": "P04",
+          "session": "2",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.40625
+        },
+        {
+          "subject": "P04",
+          "session": "3",
+          "interface": "BrainHero",
+          "cases": 92,
+          "balanced_accuracy": 0.37347670250896053
+        },
+        {
+          "subject": "P04",
+          "session": "3",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.3020833333333333
+        },
+        {
+          "subject": "P05",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.3541666666666667
+        },
+        {
+          "subject": "P05",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 94,
+          "balanced_accuracy": 0.35080645161290325
+        },
+        {
+          "subject": "P06",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 91,
+          "balanced_accuracy": 0.5268817204301075
+        },
+        {
+          "subject": "P06",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.59375
+        },
+        {
+          "subject": "P07",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.34426523297491035
+        },
+        {
+          "subject": "P07",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.4270833333333333
+        },
+        {
+          "subject": "P08",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.596236559139785
+        },
+        {
+          "subject": "P08",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.6666666666666666
+        },
+        {
+          "subject": "P09",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.47485632183908044
+        },
+        {
+          "subject": "P09",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.40625
+        },
+        {
+          "subject": "P10",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 96,
+          "balanced_accuracy": 0.46875
+        },
+        {
+          "subject": "P10",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.40625
+        },
+        {
+          "subject": "P10",
+          "session": "2",
+          "interface": "BrainHero",
+          "cases": 90,
+          "balanced_accuracy": 0.44904214559386973
+        },
+        {
+          "subject": "P10",
+          "session": "2",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.4791666666666667
+        },
+        {
+          "subject": "P10",
+          "session": "3",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.4479166666666667
+        },
+        {
+          "subject": "P10",
+          "session": "3",
+          "interface": "BrainHero",
+          "cases": 103,
+          "balanced_accuracy": 0.49943977591036415
+        }
+      ],
+      "subject_macro_cell_balanced_accuracy": 0.47356966532132566
+    },
+    "QUANT": {
+      "balanced_accuracy_cell_mean": 0.43584464213011864,
+      "balanced_accuracy_session_mean": 0.43603957213477396,
+      "balanced_accuracy": 0.43459663166738327,
+      "accuracy": 0.4346516007532957,
+      "cells": [
+        {
+          "subject": "P01",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.5416666666666666
+        },
+        {
+          "subject": "P01",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 94,
+          "balanced_accuracy": 0.4378360215053763
+        },
+        {
+          "subject": "P02",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.5456093189964157
+        },
+        {
+          "subject": "P02",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.7083333333333334
+        },
+        {
+          "subject": "P03",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.45412186379928315
+        },
+        {
+          "subject": "P03",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.4270833333333333
+        },
+        {
+          "subject": "P04",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.334005376344086
+        },
+        {
+          "subject": "P04",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.3541666666666667
+        },
+        {
+          "subject": "P04",
+          "session": "2",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.3128360215053763
+        },
+        {
+          "subject": "P04",
+          "session": "2",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.3541666666666667
+        },
+        {
+          "subject": "P04",
+          "session": "3",
+          "interface": "BrainHero",
+          "cases": 92,
+          "balanced_accuracy": 0.3967741935483871
+        },
+        {
+          "subject": "P04",
+          "session": "3",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.3541666666666667
+        },
+        {
+          "subject": "P05",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.21875
+        },
+        {
+          "subject": "P05",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 94,
+          "balanced_accuracy": 0.3088037634408602
+        },
+        {
+          "subject": "P06",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 91,
+          "balanced_accuracy": 0.5182795698924731
+        },
+        {
+          "subject": "P06",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.4791666666666667
+        },
+        {
+          "subject": "P07",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.35338261648745517
+        },
+        {
+          "subject": "P07",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.34375
+        },
+        {
+          "subject": "P08",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.38483422939068096
+        },
+        {
+          "subject": "P08",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.6666666666666666
+        },
+        {
+          "subject": "P09",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.5247844827586207
+        },
+        {
+          "subject": "P09",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.46875
+        },
+        {
+          "subject": "P10",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 96,
+          "balanced_accuracy": 0.4791666666666667
+        },
+        {
+          "subject": "P10",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.4270833333333333
+        },
+        {
+          "subject": "P10",
+          "session": "2",
+          "interface": "BrainHero",
+          "cases": 90,
+          "balanced_accuracy": 0.564367816091954
+        },
+        {
+          "subject": "P10",
+          "session": "2",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.4583333333333333
+        },
+        {
+          "subject": "P10",
+          "session": "3",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.375
+        },
+        {
+          "subject": "P10",
+          "session": "3",
+          "interface": "BrainHero",
+          "cases": 103,
+          "balanced_accuracy": 0.411764705882353
+        }
+      ],
+      "subject_macro_cell_balanced_accuracy": 0.44945478409198303
+    },
+    "ensemble": {
+      "balanced_accuracy_cell_mean": 0.4644177633048029,
+      "balanced_accuracy_session_mean": 0.46467123069107563,
+      "balanced_accuracy": 0.46360578314063233,
+      "accuracy": 0.46365348399246703,
+      "cells": [
+        {
+          "subject": "P01",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.5520833333333334
+        },
+        {
+          "subject": "P01",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 94,
+          "balanced_accuracy": 0.48219086021505375
+        },
+        {
+          "subject": "P02",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.5654121863799283
+        },
+        {
+          "subject": "P02",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.75
+        },
+        {
+          "subject": "P03",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.5169578853046595
+        },
+        {
+          "subject": "P03",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.4166666666666667
+        },
+        {
+          "subject": "P04",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.3239247311827957
+        },
+        {
+          "subject": "P04",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.3541666666666667
+        },
+        {
+          "subject": "P04",
+          "session": "2",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.323252688172043
+        },
+        {
+          "subject": "P04",
+          "session": "2",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.3541666666666667
+        },
+        {
+          "subject": "P04",
+          "session": "3",
+          "interface": "BrainHero",
+          "cases": 92,
+          "balanced_accuracy": 0.4064516129032258
+        },
+        {
+          "subject": "P04",
+          "session": "3",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.3645833333333333
+        },
+        {
+          "subject": "P05",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.34375
+        },
+        {
+          "subject": "P05",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 94,
+          "balanced_accuracy": 0.3817204301075268
+        },
+        {
+          "subject": "P06",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 91,
+          "balanced_accuracy": 0.5379928315412186
+        },
+        {
+          "subject": "P06",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.5520833333333334
+        },
+        {
+          "subject": "P07",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.39702060931899646
+        },
+        {
+          "subject": "P07",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.3541666666666667
+        },
+        {
+          "subject": "P08",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.5549283154121863
+        },
+        {
+          "subject": "P08",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.6875
+        },
+        {
+          "subject": "P09",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.507183908045977
+        },
+        {
+          "subject": "P09",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.46875
+        },
+        {
+          "subject": "P10",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 96,
+          "balanced_accuracy": 0.4791666666666667
+        },
+        {
+          "subject": "P10",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.4270833333333333
+        },
+        {
+          "subject": "P10",
+          "session": "2",
+          "interface": "BrainHero",
+          "cases": 90,
+          "balanced_accuracy": 0.4950191570881226
+        },
+        {
+          "subject": "P10",
+          "session": "2",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.4895833333333333
+        },
+        {
+          "subject": "P10",
+          "session": "3",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.4375
+        },
+        {
+          "subject": "P10",
+          "session": "3",
+          "interface": "BrainHero",
+          "cases": 103,
+          "balanced_accuracy": 0.4803921568627451
+        }
+      ],
+      "subject_macro_cell_balanced_accuracy": 0.4856751904197596
+    }
+  },
+  "ensemble_definition": "Equal mean of QUANT probabilities and clipped/normalised MRHydra ridge scores; no fitted calibration or weights."
+}

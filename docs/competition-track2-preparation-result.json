@@ -1,0 +1,138 @@
+{
+  "path": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\prepared",
+  "shape": [
+    2655,
+    41,
+    480
+  ],
+  "labels": [
+    0,
+    1,
+    2
+  ],
+  "class_counts": {
+    "2": 884,
+    "1": 886,
+    "0": 885
+  },
+  "finite": true,
+  "constant_case_channel_pairs": 0,
+  "effectively_flat_case_channel_pairs": 0,
+  "duplicate_cases": 0,
+  "channel_order_verified_all_recordings": true,
+  "native_edf_bids_cues_verified": true,
+  "subjects": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P10"
+  ],
+  "sessions": {
+    "P01": [
+      1
+    ],
+    "P02": [
+      1
+    ],
+    "P03": [
+      1
+    ],
+    "P04": [
+      1,
+      2,
+      3
+    ],
+    "P05": [
+      1
+    ],
+    "P06": [
+      1
+    ],
+    "P07": [
+      1
+    ],
+    "P08": [
+      1
+    ],
+    "P09": [
+      1
+    ],
+    "P10": [
+      1,
+      2,
+      3
+    ]
+  },
+  "split_counts": {
+    "train": 1521,
+    "val": 379,
+    "test": 755,
+    "cross_session_train": 2268,
+    "cross_session_test": 387
+  },
+  "subject_holdout_exact_ts_readback": true,
+  "cross_session_exact_ts_readback": true,
+  "serialised_case_metadata_verified": true,
+  "protocols": {
+    "subject_holdout": {
+      "train_cases": 1900,
+      "test_cases": 755,
+      "train_subjects": [
+        "P01",
+        "P02",
+        "P03",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P10"
+      ],
+      "test_subjects": [
+        "P04",
+        "P09"
+      ],
+      "shared_subjects": [],
+      "shared_recordings": [],
+      "shared_cases": [],
+      "subject_overlap_intentional": false
+    },
+    "cross_session": {
+      "train_cases": 2268,
+      "test_cases": 387,
+      "train_subjects": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10"
+      ],
+      "test_subjects": [
+        "P04",
+        "P10"
+      ],
+      "shared_subjects": [
+        "P04",
+        "P10"
+      ],
+      "shared_recordings": [],
+      "shared_cases": [],
+      "subject_overlap_intentional": true
+    }
+  },
+  "aeon_classifier_fit_predict_smoke": {
+    "train_cases": 3,
+    "test_cases": 3,
+    "passed": true
+  }
+}

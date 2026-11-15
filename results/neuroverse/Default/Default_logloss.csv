@@ -19,10 +19,9 @@ CognitiveLoadTasks,1.386294
 CovidSurvivors,0.692555
 EyesOpenShut,0.693147
 FaceStimuli,1.386294
+FamilialAlzheimersRest,0.655482
 FeedbackButton,0.693147
 FeetHands,0.693111
-FibroLiverpool,0.692013
-FibroUEA,0.614503
 FingerMovements,0.692947
 FlankerConflict,1.791759
 FlickerAttention,1.386294
@@ -61,6 +60,7 @@ ImaginedRightHandFeet,0.693147
 ImaginedRightHandFeetRest,1.082196
 InnerSpeech,1.385390
 InternalAttention,0.693142
+LearningDifficulties,0.691761
 LongIntervalTask,0.627942
 LowCost,0.693147
 MatchingPennies,0.693131

@@ -1,6 +1,6 @@
 # Neuroverse
 
-**Neuroverse** is an open benchmark and interactive leaderboard for electroencephalogram (EEG) time series classification. Its primary benchmark is a symmetric **90-problem `30 / 30 / 30` split** (**30 Motor Imagery + 30 Clinical + 30 Cognitive** scalp EEG tasks), within an extended **114-problem scalp EEG study** (`+ 24` Motor Execution, ERP/P300, VEP/SSVEP, and Speech BCI tasks; `123` prepared datasets in total). A curated **12-classifier Headline Leaderboard** spans every time series machine learning paradigm (`HC2`, `Arsenal`, `MRHydra`, `QUANT`, `DrCIF`, `STC`, `RDST`, `TDE`, `Catch22`, `FreshPRINCE`, `InceptionTime`, `RotationForest`) and expands in one click to **81 distinct classifiers** (across **109 configurations** including classical Riemannian/spatial-filtering EEG pipelines, supervised Braindecode neural networks, pretrained EEG foundation models, and band-pass/random-weight controls).
+**Neuroverse** is an open benchmark and interactive leaderboard for electroencephalogram (EEG) time series classification. Its primary benchmark is a symmetric, 100% open-access **90-problem `30 / 30 / 30` split** (**30 Motor Imagery + 30 Clinical + 30 Cognitive** scalp EEG tasks), within an extended **114-problem open scalp EEG study** (`+ 24` Motor Execution, ERP/P300, VEP/SSVEP, and Speech BCI tasks; `125` prepared datasets in total). A curated **12-classifier Headline Leaderboard** spans every time series machine learning paradigm (`HC2`, `Arsenal`, `MRHydra`, `QUANT`, `DrCIF`, `STC`, `RDST`, `TDE`, `Catch22`, `FreshPRINCE`, `InceptionTime`, `RotationForest`) and expands in one click to **81 distinct classifiers** (across **109 configurations** including classical Riemannian/spatial-filtering EEG pipelines, supervised Braindecode neural networks, pretrained EEG foundation models, and band-pass/random-weight controls).
 
 <p align="center">
   <a href="https://raw.githack.com/TonyBagnall/Neuroverse/main/results/neuroverse/leaderboard.html"><strong>Algorithm Leaderboard</strong></a>
@@ -35,28 +35,28 @@ This repository stands alone (no dependency on the `multiverse` package) while s
 
 | # | Classifier | Family | Cov. | Mean Rank | Balanced Acc | Accuracy | AUROC | Log Loss &darr; | Wins |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|
-| 1 | `HC2` | Hybrid | 48/90 | **3.30** | **56.23%** | **59.06%** | **0.6865** | **0.845** | 12 |
-| 2 | `Arsenal` | ConvolutionBased | 55/90 | 4.37 | 55.06% | 58.42% | 0.6732 | 4.933 | 4 |
-| 3 | `DrCIF` | IntervalBased | 49/90 | 4.66 | 53.57% | 57.49% | 0.6720 | 0.886 | 5 |
-| 4 | `QUANT` | IntervalBased | 52/90 | 4.71 | 54.49% | 57.84% | 0.6626 | 1.314 | 8 |
-| 5 | `MRHydra` | ConvolutionBased | 50/90 | 4.77 | 53.53% | 56.26% | 0.6035 | 15.128 | 8 |
-| 6 | `STC` | ShapeletBased | 52/90 | 5.30 | 53.19% | 56.79% | 0.6563 | 0.879 | 1 |
-| 7 | `RDST` | ShapeletBased | 52/90 | 5.73 | 51.98% | 55.36% | 0.5921 | 15.430 | 3 |
-| 8 | `TDE` | DictionaryBased | 48/90 | 7.04 | 48.96% | 52.76% | 0.6002 | 1.711 | 2 |
-| 9 | `InceptionTime` | DeepLearning | 51/90 | 7.48 | 46.01% | 47.72% | 0.5709 | 3.444 | 2 |
-| 10 | `Catch22` | FeatureBased | 48/90 | 7.64 | 47.87% | 51.97% | 0.5898 | 0.903 | 0 |
+| 1 | `HC2` | Hybrid | 46/90 | **3.26** | **56.32%** | **58.97%** | **0.6954** | **0.848** | 12 |
+| 2 | `Arsenal` | ConvolutionBased | 53/90 | 4.20 | 55.43% | 58.51% | 0.6812 | 4.741 | 4 |
+| 3 | `DrCIF` | IntervalBased | 47/90 | 4.66 | 53.47% | 57.11% | 0.6762 | 0.896 | 5 |
+| 4 | `MRHydra` | ConvolutionBased | 48/90 | 4.72 | 53.55% | 56.13% | 0.6069 | 15.177 | 8 |
+| 5 | `QUANT` | IntervalBased | 50/90 | 4.88 | 53.61% | 57.16% | 0.6606 | 1.309 | 6 |
+| 6 | `STC` | ShapeletBased | 50/90 | 5.35 | 53.14% | 56.59% | 0.6636 | 0.881 | 1 |
+| 7 | `RDST` | ShapeletBased | 50/90 | 5.58 | 52.39% | 55.84% | 0.5995 | 15.266 | 3 |
+| 8 | `TDE` | DictionaryBased | 46/90 | 7.19 | 48.60% | 52.17% | 0.6038 | 1.751 | 2 |
+| 9 | `InceptionTime` | DeepLearning | 49/90 | 7.50 | 45.83% | 47.53% | 0.5734 | 3.541 | 2 |
+| 10 | `Catch22` | FeatureBased | 46/90 | 7.66 | 47.83% | 51.66% | 0.5944 | 0.914 | 0 |
 
-*10 of 12 headline classifiers meet &ge;80% coverage (45/56 evaluated problems, 90 in Core 90), evaluated strictly on their 45 shared completed problems (resample 0, ordered by mean balanced-accuracy rank). Pending &ge;80% coverage: `FreshPRINCE` (21/90), `RotationForest` (44/90) (visible under *All Available* mode). Expand the interactive leaderboard to compare all **81 distinct classifiers** (109 total configurations) across TSML, EEG Classical, Braindecode DL, and EEG Foundation models.*
+*10 of 12 headline classifiers meet &ge;80% coverage (44/54 evaluated problems, 90 in Core 90), evaluated strictly on their 43 shared completed problems (resample 0, ordered by mean balanced-accuracy rank). Pending &ge;80% coverage: `FreshPRINCE` (21/90), `RotationForest` (42/90) (visible under *All Available* mode). Expand the interactive leaderboard to compare all **81 distinct classifiers** (109 total configurations) across TSML, EEG Classical, Braindecode DL, and EEG Foundation models.*
 
 #### 30 / 30 / 30 Core Benchmark & Extended BCI Summary
 
 | Benchmark Scope | Problems (Common) | #1 Headline | #2 Headline | #3 Headline | Best EEG-Specific (of 81) |
 |---|---:|---|---|---|---|
-| **Core 90 (30/30/30)** | 90 (45) | `HC2` (56.2%) | `Arsenal` (55.1%) | `DrCIF` (53.6%) | `EEGNeX-NB` (#2/47, 54.7%) |
+| **Core 90 (30/30/30)** | 90 (43) | `HC2` (56.3%) | `Arsenal` (55.4%) | `DrCIF` (53.5%) | `EEGNeX-NB` (#2/47, 55.0%) |
 | **Motor Imagery** | 30 (25) | `HC2` (58.2%) | `DrCIF` (56.5%) | `Arsenal` (56.9%) | `TIDNet-NB` (#6/76, 55.7%) |
-| **Clinical** | 30 (14) | `QUANT` (55.9%) | `Arsenal` (53.6%) | `STC` (51.8%) | `EEGNeX-NB` (#1/47, 59.1%) |
+| **Clinical** | 30 (12) | `QUANT` (53.0%) | `Arsenal` (54.7%) | `STC` (51.3%) | `EEGNeX-NB` (#1/47, 60.6%) |
 | **Cognitive** | 30 (8) | `RDST` (49.3%) | `Arsenal` (50.9%) | `MRHydra` (49.4%) | `EEGNeX-NB` (#1/29, 44.1%) |
-| **All Scalp EEG** | 114 (61) | `HC2` (54.5%) | `Arsenal` (53.0%) | `MRHydra` (52.5%) | `EEGNeX-NB` (#3/63, 51.7%) |
+| **All Scalp EEG** | 114 (64) | `HC2` (54.0%) | `Arsenal` (52.2%) | `MRHydra` (51.2%) | `EEGNeX-NB` (#2/62, 52.3%) |
 | **BCI (All)** | 54 (44) | `HC2` (54.8%) | `Arsenal` (53.1%) | `DrCIF` (53.1%) | `EEGNeX-NB` (#9/74, 50.5%) |
 | **Motor Execution** | 6 (5) | `HC2` (68.3%) | `Arsenal` (67.1%) | `STC` (66.4%) | `TCFormer-NB` (#3/75, 70.3%) |
 | **ERP / P300** | 8 (7) | `MRHydra` (61.4%) | `HC2` (58.7%) | `RDST` (57.3%) | `EEGNeX-NB` (#1/67, 67.4%) |
@@ -120,10 +120,10 @@ neuroverse-results --split MI --estimators canonical --format long --out mi_resu
 
 ### Explore datasets by problem type
 
-The repository registers 123 problems in `neuroverse.datasets.neuroverse`:
-- **`neuroverse_study` / `neuroverse_90`** (`90` primary scalp EEG problems, listed in [`eeg.txt`](eeg.txt)): symmetric **`30 / 30 / 30`** split across **Motor Imagery** (`30`), **Clinical** (`30`), and **Cognitive** (`30`).
-- **`neuroverse_114` / `neuroverse_extended`** (`114` scalp EEG problems, listed in [`eeg_114.txt`](eeg_114.txt)): adds the remaining `24` BCI tasks (`ME` `6`, `ERP` `8`, `VEP` `6`, `Speech` `4`), excluding MEG (`4`), ECoG (`1`), and four legacy tasks (`Blink`, `ButtonPress`, `EpilepticSeizures`, `Sleep`).
-- **`neuroverse_paper`** (`30` problems): the Rushbrooke et al. (2026) DMLR benchmark (`28` open on Zenodo as `neuroverse_open` / `aeon`'s `eeg2026`, plus `2` restricted fibromyalgia cohorts).
+The repository registers 125 problems in `neuroverse.datasets.neuroverse`:
+- **`neuroverse_study` / `neuroverse_90`** (`90` primary open-access scalp EEG problems, listed in [`eeg.txt`](eeg.txt)): symmetric **`30 / 30 / 30`** split across **Motor Imagery** (`30`), **Clinical** (`30`), and **Cognitive** (`30`).
+- **`neuroverse_114` / `neuroverse_extended`** (`114` open-access scalp EEG problems, listed in [`eeg_114.txt`](eeg_114.txt)): adds the remaining `24` BCI tasks (`ME` `6`, `ERP` `8`, `VEP` `6`, `Speech` `4`), excluding MEG (`4`), ECoG (`1`), restricted-access files (`FibroLiverpool`, `FibroUEA`), and four legacy tasks (`Blink`, `ButtonPress`, `EpilepticSeizures`, `Sleep`).
+- **`neuroverse_paper`** (`30` problems): the Rushbrooke et al. (2026) DMLR benchmark (`28` open on Zenodo as `neuroverse_open` / `aeon`'s `eeg2026`, plus `2` restricted fibromyalgia cohorts archived in [`results/neuroverse_paper_2026/`](results/neuroverse_paper_2026/)).
 
 ```python
 from aeon.datasets import load_classification
@@ -184,7 +184,7 @@ Neuroverse/
 │   ├── neuroverse_paper_2026/   # Archived 30-problem DMLR 2026 Multiverse CSVs & pages
 │   └── tsml-eval-20261111/      # Dated tsml-eval wide snapshot export
 ├── neuroverse/                  # Python package (metadata, result downloader & leaderboard tooling)
-│   ├── datasets.py              # Archive registry (123 total, 90 Core 30/30/30, 114 extended scalp EEG)
+│   ├── datasets.py              # Archive registry (125 total, 90 open Core 30/30/30, 114 open scalp EEG)
 │   ├── estimators.py            # Classifier metadata (12 headline -> 81 canonical -> 109 configs)
 │   ├── results.py               # Python API & interactive CLI (`neuroverse-results`) result downloader
 │   └── experiments/             # Benchmark runners, wide/Multiverse ingest, HTML builders

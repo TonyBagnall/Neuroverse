@@ -1,0 +1,11 @@
+{
+  "scope": "Iridis archive Results/EEG and local D:/Results/EEG only; competition models explicitly retained by user",
+  "archive_remote_checkpoints": 21,
+  "remote_bytes": 807940179913,
+  "eligible_completed_remote": 0,
+  "deleted": [],
+  "reason": "No remote checkpoint had both completed train/test outputs and no matching active task",
+  "local_checkpoints": [],
+  "competition_models_kept": true,
+  "inventory": ".openeegbench/iridis-checkpoint-cleanup-inventory-20261111.json"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "components_complete",
+  "job_id": "4888596",
+  "stage": "/home/ajb2u23/Competitions/NeuralInterfaces2026Track2/HC2",
+  "repo": "/home/ajb2u23/Code/tsml-eval-proteus-hc2-20261110",
+  "base_commit": "ce0d1131dca7c2f432ae005162284acfe28ce4be",
+  "remote_external_calls": false,
+  "production_jobs": {
+    "Arsenal|ProteusCommandsAllPublic|0": "4888747",
+    "DrCIF-500|ProteusCommandsAllPublic|0": "4888748",
+    "STC-aeon|ProteusCommandsAllPublic|0": "4888749",
+    "TDE|ProteusCommandsAllPublic|0": "4888750"
+  },
+  "preflight_passed": true,
+  "thread_environment_replaced_jobs": [
+    "4888631",
+    "4888632",
+    "4888633",
+    "4888634"
+  ],
+  "previous_jobs_before_cache_fix": {
+    "Arsenal|ProteusCommandsAllPublic|0": "4888654",
+    "DrCIF-500|ProteusCommandsAllPublic|0": "4888655",
+    "STC-aeon|ProteusCommandsAllPublic|0": "4888656",
+    "TDE|ProteusCommandsAllPublic|0": "4888657"
+  },
+  "cache_fix": "Verify only five source files; exclude generated __pycache__/pyc",
+  "completed_confirmed": "2026-11-11",
+  "results_local": "D:/Data/EEGCompetitions/NeuralInterfaces2026Track2/hc2-cluster-results/results",
+  "checkpoints_retained_on_cluster": true,
+  "offline_prediction_assembly": "complete"
+}

@@ -16,8 +16,8 @@ from neuroverse.estimators import ESTIMATORS, FAMILIES, PAPER_ESTIMATORS
 
 
 def test_archive_lists():
-    """All 123 problems, with published and local subsets explicitly identified."""
-    n_total = 123
+    """All 125 problems, with published and local subsets explicitly identified."""
+    n_total = 125
     n_paper = 30
     n_local = n_total - n_paper
     n_open = 28
@@ -35,9 +35,11 @@ def test_archive_lists():
         'AuditoryDeviance',
         'BanditGambling',
         'FaceStimuli',
+        'FamilialAlzheimersRest',
         'FlankerConflict',
         'FuzzySemantics',
         'InternalAttention',
+        'LearningDifficulties',
         'MoralConflict',
         'NarrativeReward',
         'ParkinsonsReinforcement',
@@ -112,6 +114,8 @@ def test_metadata():
         "AcuteTBIVisualMemory": [86, 63, 2, 2000, 1920, 660, 500],
         "AdultSeizures": [14, 29, 2, 2048, 1572, 591, 512],
         "AlcoholBandit": [53, 59, 2, 2000, 1170, 420, 500],
+        "FamilialAlzheimersRest": [43, 58, 2, 4000, 960, 330, 1000],
+        "LearningDifficulties": [75, 32, 2, 1024, 1680, 570, 256],
         "ParkinsonsReinforcement": [56, 63, 2, 2000, 1260, 420, 500],
         "PostCovidVigilance": [97, 127, 2, 4000, 1800, 625, 1000],
         "SchizophreniaConflict": [76, 60, 2, 4000, 1680, 600, 1000],
@@ -336,6 +340,8 @@ def test_study_taxonomy_partitions_selected_problems():
         "AcuteTBIVisualMemory",
         "AdultSeizures",
         "AlcoholBandit",
+        "FamilialAlzheimersRest",
+        "LearningDifficulties",
         "MigraineRest",
         "ParkinsonsReinforcement",
         "ParkinsonsWalking",
@@ -349,6 +355,8 @@ def test_study_taxonomy_partitions_selected_problems():
         "TBIAuditoryOddball",
         "ZosterNeuralgiaSleep",
     } <= set(by_type("Clinical"))
+    assert set(restricted).isdisjoint(neuroverse_114)
+    assert set(restricted) <= set(excluded_archive)
     assert "ImaginedFingers" in by_type("MI")
     assert by_type("ME") == expected_me
     assert set(by_type("MI")).isdisjoint(by_type("ME"))

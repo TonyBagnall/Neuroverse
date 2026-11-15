@@ -1,0 +1,88 @@
+{
+  "submission": {
+    "status": "components_submitted",
+    "job_id": "4888596",
+    "stage": "/home/ajb2u23/Competitions/NeuralInterfaces2026Track2/HC2",
+    "repo": "/home/ajb2u23/Code/tsml-eval-proteus-hc2-20261110",
+    "base_commit": "ce0d1131dca7c2f432ae005162284acfe28ce4be",
+    "remote_external_calls": false,
+    "production_jobs": {
+      "Arsenal|ProteusCommandsAllPublic|0": "4888654",
+      "DrCIF-500|ProteusCommandsAllPublic|0": "4888655",
+      "STC-aeon|ProteusCommandsAllPublic|0": "4888656",
+      "TDE|ProteusCommandsAllPublic|0": "4888657"
+    },
+    "preflight_passed": true,
+    "thread_environment_replaced_jobs": [
+      "4888631",
+      "4888632",
+      "4888633",
+      "4888634"
+    ]
+  },
+  "preflight": {
+    "passed": true,
+    "aeon": "1.6.0",
+    "sklearn": "1.8.0",
+    "drcif_production_trees": 500,
+    "reduced_smoke_models": true,
+    "components": {
+      "Arsenal": {
+        "checkpoint_kept": true,
+        "loaded_model_matches_test_probabilities": true,
+        "train_cases": 36,
+        "test_cases": 6
+      },
+      "DrCIF-500": {
+        "checkpoint_kept": true,
+        "loaded_model_matches_test_probabilities": true,
+        "train_cases": 36,
+        "test_cases": 6
+      },
+      "STC-aeon": {
+        "checkpoint_kept": true,
+        "loaded_model_matches_test_probabilities": true,
+        "train_cases": 36,
+        "test_cases": 6
+      },
+      "TDE": {
+        "checkpoint_kept": true,
+        "loaded_model_matches_test_probabilities": true,
+        "train_cases": 36,
+        "test_cases": 6
+      }
+    },
+    "data_shapes": {
+      "TRAIN": [
+        2655,
+        41,
+        480
+      ],
+      "TEST": [
+        3,
+        41,
+        480
+      ]
+    },
+    "all_case_hashes_and_labels_verified": true
+  },
+  "queue": "4888657_[0]|tsml-proteus-hc2-components-TDE-ProteusCommandsAllPublic|PENDING|(None)\n4888656_[0]|tsml-proteus-hc2-components-STC-aeon-ProteusCommandsAllPublic|PENDING|(None)\n4888655_[0]|tsml-proteus-hc2-components-DrCIF-500-ProteusCommandsAllPublic|PENDING|(None)\n4888654_[0]|tsml-proteus-hc2-components-Arsenal-ProteusCommandsAllPublic|PENDING|(None)\n",
+  "scripts": {
+    "4888655.sh": {
+      "eight_threads": true,
+      "mail_none": true
+    },
+    "4888656.sh": {
+      "eight_threads": true,
+      "mail_none": true
+    },
+    "4888654.sh": {
+      "eight_threads": true,
+      "mail_none": true
+    },
+    "4888657.sh": {
+      "eight_threads": true,
+      "mail_none": true
+    }
+  }
+}

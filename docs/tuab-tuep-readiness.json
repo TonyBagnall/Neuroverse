@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-11-14",
+  "phase_1_status": "completed_8_open_datasets_20_to_28_clinical",
+  "phase_2_target": [
+    {
+      "dataset_name": "TempleAbnormalEEG",
+      "source_corpus": "TUAB v3.0.1 (Temple University Hospital Abnormal EEG Corpus)",
+      "availability": "restricted",
+      "expected_source_path": "D:/Data/EEGSources/Temple/TUAB_v3.0.1 (or C:/Data/EEGSources/Temple/TUAB_v3.0.1)",
+      "present_on_disk": false,
+      "redistribution_allowed": false
+    },
+    {
+      "dataset_name": "TempleEpilepsyEEG",
+      "source_corpus": "TUEP v2.0.1 (Temple University Hospital Epilepsy EEG Corpus)",
+      "availability": "restricted",
+      "expected_source_path": "D:/Data/EEGSources/Temple/TUEP_v2.0.1 (or C:/Data/EEGSources/Temple/TUEP_v2.0.1)",
+      "present_on_disk": false,
+      "redistribution_allowed": false
+    }
+  ],
+  "checked_locations": [
+    "D:/Data/EEGSources",
+    "C:/Data/EEGSources"
+  ],
+  "next_action_options": [
+    "Option A (Preferred per plan Section 4): Place authorised TUAB v3.0.1 and TUEP v2.0.1 archives under C:/Data/EEGSources/Temple/ (or D:/Data/EEGSources/Temple/) to convert TempleAbnormalEEG and TempleEpilepsyEEG as restricted local problems (28 -> 30 Clinical).",
+    "Option B (Open-access alternative per plan Section 3): Substitute two pre-authorised open clinical reserves (ParkinsonsReinforcement / OpenNeuro ds003506 v1.1.0, ParkinsonsRestPDEEG / OpenNeuro ds007526 v1.0.2 task-rest, or AcuteTBIVisualMemory / OpenNeuro ds003523 v1.1.0) to reach 30 Clinical with CC0-1.0 open datasets."
+  ],
+  "phase_2_status": "completed_via_option_B_open_reserves_28_to_30_clinical",
+  "selected_option": "Option B confirmed by user (2026-11-14): converted open CC0-1.0 reserves ParkinsonsReinforcement (OpenNeuro ds003506 v1.1.0) and AcuteTBIVisualMemory (OpenNeuro ds003523 v1.1.0) to reach 30 Clinical problems without restricted Temple corpora."
+}

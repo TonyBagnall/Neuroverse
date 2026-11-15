@@ -1,7 +1,7 @@
 """The Neuroverse classification archive: dataset lists and metadata.
 
 The archive includes the 30 problems published by Rushbrooke et al. (2026)
-and 93 additional local preparations. Use the supplied fixed train/test splits;
+and 95 additional local preparations. Use the supplied fixed train/test splits;
 some protocols intentionally share subjects and some older identity mappings
 remain incomplete. See docs/dataset-provenance.md for dataset-specific evidence.
 
@@ -276,6 +276,8 @@ _TABLE += [
     ("SchizophreniaUltimatum", 128, 2, 3072, 43, 768, 264, 2048, "Med"),
     ("StrokeMotorImagery", 58, 2, 4000, 18, 520, 200, 1000, "Med"),
     ("ZosterNeuralgiaSleep", 19, 2, 1024, 58, 1290, 450, 256, "Med"),
+    ("FamilialAlzheimersRest", 58, 2, 4000, 43, 960, 330, 1000, "Med"),
+    ("LearningDifficulties", 32, 2, 1024, 75, 1680, 570, 256, "Med"),
 ]
 
 _TABLE.sort(key=lambda row: row[0])
@@ -287,19 +289,20 @@ local_only = [row[0] for row in _TABLE if row[0] not in neuroverse_paper]
 #: loaded through aeon. Results for them are still reported.
 restricted = ["FibroLiverpool", "FibroUEA"]
 
-#: All 123 prepared classification problems used by this repository.
+#: All 125 prepared classification problems used by this repository.
 neuroverse = [row[0] for row in _TABLE]
 
 #: The 28 problems anyone can download, the same list as aeon's ``eeg2026``.
 neuroverse_open = [name for name in neuroverse_paper if name not in restricted]
 
-#: Problem-type assignment ``(family, bci_type)`` for the 114 selected scalp EEG
-#: classification problems. Strict scalp-EEG motor imagery (``MI``) has 30
-#: problems, ``Clinical`` has 30 problems, ``Cognitive`` has 30 problems, and
+#: Problem-type assignment ``(family, bci_type)`` for the 114 selected open-access
+#: scalp EEG classification problems. Strict scalp-EEG motor imagery (``MI``) has
+#: 30 problems, ``Clinical`` has 30 problems, ``Cognitive`` has 30 problems, and
 #: the 6 executed/movement-intention motor tasks sit in ``ME``. MEG
 #: (FaceDetection, HandMovementDirection, MatchWords, MindReading), ECoG
-#: (MotorImagery), and the four older excluded problems (Blink, ButtonPress,
-#: EpilepticSeizures, Sleep) remain in the 123-item archive registry above.
+#: (MotorImagery), restricted-access files (FibroLiverpool, FibroUEA), and the
+#: four older excluded problems (Blink, ButtonPress, EpilepticSeizures, Sleep)
+#: remain in the 125-item archive registry above.
 STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "ALSAttention": ("BCI", "ERP"),
     "AcuteTBIVisualMemory": ("Clinical", ""),
@@ -321,10 +324,9 @@ STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "CovidSurvivors": ("Clinical", ""),
     "EyesOpenShut": ("Cognitive", ""),
     "FaceStimuli": ("Cognitive", ""),
+    "FamilialAlzheimersRest": ("Clinical", ""),
     "FeedbackButton": ("Cognitive", ""),
     "FeetHands": ("BCI", "ME"),
-    "FibroLiverpool": ("Clinical", ""),
-    "FibroUEA": ("Clinical", ""),
     "FingerMovements": ("BCI", "ME"),
     "FlankerConflict": ("Cognitive", ""),
     "FlickerAttention": ("BCI", "VEP"),
@@ -363,6 +365,7 @@ STUDY_TAXONOMY: dict[str, tuple[str, str]] = {
     "ImaginedRightHandFeetRest": ("BCI", "MI"),
     "InnerSpeech": ("BCI", "Speech"),
     "InternalAttention": ("Cognitive", ""),
+    "LearningDifficulties": ("Clinical", ""),
     "LongIntervalTask": ("Clinical", ""),
     "LowCost": ("BCI", "MI"),
     "MatchingPennies": ("BCI", "ME"),

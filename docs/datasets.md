@@ -9,7 +9,7 @@ the [Signal scale and flat-channel audit](signal-scale-audit.md).
 Applied signal and metadata corrections are documented in
 [Local data corrections](local-data-corrections.md).
 
-The registry includes 93 additions to the original published benchmark.
+The registry includes 95 additions to the original published benchmark.
 OpenEEGBench sources are prepared using the
 [standalone import tools](openeegbench-import.md).
 The [additional dataset descriptions](additional-datasets.md) document MentalArithmetic,
@@ -25,14 +25,17 @@ collection includes the documented [local corrections](local-data-corrections.md
 The archive is a sub-collection of the
 [Multiverse](https://github.com/aeon-toolkit/multiverse) archive for multivariate time
 series classification, and some of these datasets are also in its benchmark subset,
-Multiverse-core. The local collection now contains 123 prepared
+Multiverse-core. The local collection now contains 125 prepared
 classification problems, including the additional preparations described below.
-The selected scalp EEG study list in `eeg.txt` contains 114 problems (including
-30 strict scalp-EEG Motor Imagery tasks in `MI`, 30 `Clinical` tasks, 30 `Cognitive`
-and affective tasks, and 6 executed and pre-movement tasks in `ME`). It excludes
-Blink, ButtonPress, Sleep and EpilepticSeizures, plus FaceDetection,
-HandMovementDirection, MatchWords and MindReading (MEG), and MotorImagery (ECoG).
-Their registry entries and local files are retained. See the
+The primary scalp EEG benchmark list in `eeg.txt` contains 90 open-access problems
+(`30` strict scalp-EEG Motor Imagery tasks in `MI`, `30` `Clinical` tasks, and `30`
+`Cognitive` and affective tasks), within the extended 114-problem open scalp EEG
+list in `eeg_114.txt` (which adds `6` executed and pre-movement tasks in `ME`, `8`
+`ERP`, `6` `VEP`, and `4` `Speech` BCI tasks). Both lists exclude the restricted-access
+fibromyalgia cohorts (`FibroLiverpool`, `FibroUEA`), Blink, ButtonPress, Sleep and
+EpilepticSeizures, plus FaceDetection, HandMovementDirection, MatchWords and
+MindReading (MEG), and MotorImagery (ECoG). Their registry entries, archived paper
+results, and local files are retained. See the
 [study taxonomy and counts](problem-taxonomy.md) and the
 [scalp-EEG MI candidate queue](scalp-mi-candidates.md).
 
@@ -65,10 +68,11 @@ Their registry entries and local files are retained. See the
 | EyesOpenShut | BCI | Cognitive | 14 | 128 | 2 | &mdash; | 56 | 42 | 128 | aeon/Zenodo |
 | FaceDetection | Psy | &mdash; | 144 | 62 | 2 | &mdash; | 5890 | 3524 | 250 | aeon/Zenodo |
 | FaceStimuli | Psy | Cognitive | 30 | 1024 | 4 | 40 | 9600 | 3200 | 1024 | local |
+| FamilialAlzheimersRest | Med | Clinical | 58 | 4000 | 2 | 43 | 960 | 330 | 1000 | local |
 | FeedbackButton | Psy | Cognitive | 61 | 450 | 2 | 57 | 1700 | 1150 | 500 | aeon/Zenodo |
 | FeetHands | BCI | ME | 64 | 640 | 2 | 105 | 2835 | 1890 | 160 | aeon/Zenodo |
-| FibroLiverpool | Med | Clinical | 64 | 15360 | 2 | 36 | 15 | 21 | 512 | restricted |
-| FibroUEA | Med | Clinical | 64 | 15000 | 2 | 41 | 17 | 23 | 500 | restricted |
+| FibroLiverpool | Med | &mdash; | 64 | 15360 | 2 | 36 | 15 | 21 | 512 | restricted |
+| FibroUEA | Med | &mdash; | 64 | 15000 | 2 | 41 | 17 | 23 | 500 | restricted |
 | FingerMovements | BCI | ME | 28 | 50 | 2 | &mdash; | 316 | 100 | 100 | aeon/Zenodo |
 | FlankerConflict | Psy | Cognitive | 29 | 500 | 6 | 60 | 12148 | 4050 | 500 | local |
 | FlickerAttention | BCI | VEP | 8 | 512 | 4 | 12 | 576 | 352 | 256 | local |
@@ -108,6 +112,7 @@ Their registry entries and local files are retained. See the
 | ImaginedRightHandFeetRest | BCI | MI | 24 | 750 | 3 | 1 | 150 | 40 | 250 | local |
 | InnerSpeech | BCI | Speech | 128 | 3584 | 4 | 9 | 250 | 200 | 1024 | aeon/Zenodo |
 | InternalAttention | Psy | Cognitive | 32 | 500 | 2 | 20 | 6071 | 2093 | 250 | local |
+| LearningDifficulties | Med | Clinical | 32 | 1024 | 2 | 75 | 1680 | 570 | 256 | local |
 | LongIntervalTask | Med | Clinical | 63 | 4750 | 2 | 139 | 1660 | 1120 | 500 | aeon/Zenodo |
 | LowCost | BCI | MI | 15 | 375 | 2 | 10 | 600 | 600 | 125 | aeon/Zenodo |
 | MatchWords | Psy | &mdash; | 156 | 1500 | 2 | &mdash; | 360 | 360 | 1000 | local |
@@ -1140,3 +1145,19 @@ Kappenman et al. (2021) / `ERP CORE` `N2pc` (`ds003065` v1.0.0 / Zenodo `1486630
 Binary covert visual spatial attention (`N2pc`) classification (`target_left` vs `target_right` lateralised target pop-out arrays) across the 40 `ERP CORE` participants (`001`..`030` TRAIN / `031`..`040` TEST). Epochs span `[-0.2, 0.8) s` (`1024` samples at native 1024 Hz) across the 30 scalp EEG channels (`3` EOG channels excluded) in `float64` microvolts with zero flat sensors removed. Prepared in `D:/Data/EEG/SpatialAttention`.
 
 Original source [OSF/Zenodo ERP CORE](https://doi.org/10.18115/D5JW4R) ([OpenNeuro ds003065 v1.0.0](https://doi.org/10.18112/openneuro.ds003065.v1.0.0)), CC-BY-SA-4.0. Shared 40-participant cohort with `WordRelatedness`, `FaceStimuli`, and `AuditoryDeviance`. See [cognitive Group B plan](cognitive-group-b-plan.md) and [conversion result](erpcore-n2pc-cognitive-conversion-result.json).
+
+### LearningDifficulties
+
+OpenNeuro `ds006260` v1.0.1. 75 participants; 1680 training and 570 test cases, 32 channels x 1024 samples at 256 Hz. Classes: `math_learning_difficulty`, `reading_learning_difficulty`.
+
+Binary paediatric learning-difficulty subtype classification at pre-intervention eyes-open resting state (`ses-1`, `run-1`) comparing children diagnosed with mathematical learning difficulty (`sub-M*`, 40 baseline recordings; `sub-Mc22` has no baseline EEG) against children diagnosed with reading learning difficulty (`sub-R*`, 35 baseline recordings) across 75 participants (`56` TRAIN / `19` TEST stratified whole-subject split). Extracts 30 non-overlapping 4.0-second (`1024`-sample) windows per participant across the uniform 32-channel 10-20 scalp EEG montage at native 256 Hz in `float64` microvolts with zero flat sensors removed. Prepared in `C:/Data/EEG/LearningDifficulties` as an open-access replacement for restricted `FibroLiverpool` in the 30-problem `Clinical` benchmark.
+
+Original source [OpenNeuro ds006260 v1.0.1](https://doi.org/10.18112/openneuro.ds006260.v1.0.1), CC0-1.0. See [source lock](ds006260-diagnosis-source-lock.json) and [conversion result](ds006260-diagnosis-conversion-result.json).
+
+### FamilialAlzheimersRest
+
+OpenNeuro `ds007427` v1.0.2. 43 participants; 960 training and 330 test cases, 58 channels x 4000 samples at 1000 Hz. Classes: `psen1_e280a_carrier`, `non_carrier_control`.
+
+Binary autosomal-dominant familial Alzheimer's disease resting-state classification across the Antioquia `PSEN1-E280A` kindred (`27` asymptomatic `PSEN1-E280A` mutation carriers `sub-G1*` vs `16` matched non-carrier family controls `sub-G2*`, `32` TRAIN / `11` TEST stratified whole-subject split; derivatives-only sporadic rows and lone raw `sub-CTR011` excluded for protocol homogeneity). Extracts 30 non-overlapping 4.0-second (`4000`-sample) eyes-closed resting windows (`task-rest`) per participant decoded from raw BrainVision recordings across the uniform 58 Neuroscan scalp EEG channels (`HEO` and `VEO` excluded) at native 1000 Hz in calibrated `float64` microvolts with zero flat sensors removed. Prepared in `C:/Data/EEG/FamilialAlzheimersRest` as an open-access replacement for restricted `FibroUEA` in the 30-problem `Clinical` benchmark.
+
+Original source [OpenNeuro ds007427 v1.0.2](https://doi.org/10.18112/openneuro.ds007427.v1.0.2), CC0-1.0. See [source lock](ds007427-diagnosis-source-lock.json) and [conversion result](ds007427-diagnosis-conversion-result.json).

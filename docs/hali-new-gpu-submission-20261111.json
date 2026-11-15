@@ -1,0 +1,9 @@
+{
+  "status": "shape_preflight_submitted",
+  "job_id": "4951988",
+  "root": "/gpfs/home/ajb/tsml-gpu-new-20261111",
+  "requested_tasks": 115,
+  "models": 23,
+  "datasets": 5,
+  "remote_external_calls": false
+}

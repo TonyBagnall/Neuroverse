@@ -1,0 +1,39 @@
+{
+  "path": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\pilot",
+  "shape": [
+    34,
+    41,
+    480
+  ],
+  "labels": [
+    0,
+    1,
+    2
+  ],
+  "class_counts": {
+    "0": 11,
+    "1": 12,
+    "2": 11
+  },
+  "finite": true,
+  "constant_case_channel_pairs": 0,
+  "effectively_flat_case_channel_pairs": 0,
+  "duplicate_cases": 0,
+  "channel_order_verified_all_recordings": true,
+  "native_edf_bids_cues_verified": true,
+  "subjects": [
+    "P01"
+  ],
+  "sessions": {
+    "P01": [
+      1
+    ]
+  },
+  "split_counts": {
+    "train": 34,
+    "val": 0,
+    "test": 0,
+    "cross_session_train": 34,
+    "cross_session_test": 0
+  }
+}

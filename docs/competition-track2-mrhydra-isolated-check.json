@@ -1,0 +1,25 @@
+{
+  "zip": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\selected-submissions\\all-public\\MRHydra.zip",
+  "zip_sha256": "2f43a9622000aabd6f005bc4e05fde2f28398879dd7b76449ffea32b018164b4",
+  "passed": true,
+  "aeon_imports_blocked": true,
+  "numba_imports_blocked": true,
+  "cases": 12,
+  "predictions": [
+    2,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+  ],
+  "torch_input": true,
+  "submission_artifacts_unchanged": true,
+  "additional_python_modules": false
+}

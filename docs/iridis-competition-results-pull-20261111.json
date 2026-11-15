@@ -1,0 +1,88 @@
+{
+  "source_host": "ajb2u23@iridis6_b.soton.ac.uk",
+  "remote_root": "/home/ajb2u23/Competitions/NeuralInterfaces2026Track2/HC2",
+  "local_root": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\hc2-cluster-results",
+  "inventory_files": 12,
+  "requested_files": 8,
+  "requested_bytes": 625190,
+  "skipped_recent": [],
+  "fetched": [
+    {
+      "path": "results/ShapeletBased/STC-aeon/Predictions/ProteusCommandsAllPublic/trainResample0.csv",
+      "bytes": 156298,
+      "mtime_ns": 1794344612765694000,
+      "sha256": "4fc9ffc39bd8ec4fac9b6bc270197640ef32a69c3c550118a60a1fa00f8abdc7",
+      "cases": 2655,
+      "classes": 3,
+      "accuracy": 0.5461393596986818
+    },
+    {
+      "path": "results/ShapeletBased/STC-aeon/Predictions/ProteusCommandsAllPublic/testResample0.csv",
+      "bytes": 795,
+      "mtime_ns": 1794344613190085007,
+      "sha256": "149f5614d4a73aa7faec2bcc057bc54c929631d40c64f219c808c1dfea46ea55",
+      "cases": 3,
+      "classes": 3,
+      "accuracy": 1.0
+    },
+    {
+      "path": "results/ConvolutionBased/Arsenal/Predictions/ProteusCommandsAllPublic/trainResample0.csv",
+      "bytes": 137786,
+      "mtime_ns": 1794344307485518000,
+      "sha256": "e51d9819a2879a28f277d20740d30ddab7b98024c4a19d3d915251c6368cdaf7",
+      "cases": 2655,
+      "classes": 3,
+      "accuracy": 0.6048964218455744
+    },
+    {
+      "path": "results/ConvolutionBased/Arsenal/Predictions/ProteusCommandsAllPublic/testResample0.csv",
+      "bytes": 848,
+      "mtime_ns": 1794344309564686874,
+      "sha256": "1eac163d4df234cb7597fbc2028cc4182a06038bbc4590a845ecf10daafa203b",
+      "cases": 3,
+      "classes": 3,
+      "accuracy": 1.0
+    },
+    {
+      "path": "results/DictionaryBased/TDE/Predictions/ProteusCommandsAllPublic/trainResample0.csv",
+      "bytes": 163206,
+      "mtime_ns": 1794364154776868000,
+      "sha256": "14022675b762cbf4af721d42f28b7f3a40f448df84fe43bfbf1d3cb06a5bb5e7",
+      "cases": 2655,
+      "classes": 3,
+      "accuracy": 0.5792843691148776
+    },
+    {
+      "path": "results/DictionaryBased/TDE/Predictions/ProteusCommandsAllPublic/testResample0.csv",
+      "bytes": 1003,
+      "mtime_ns": 1794364156671077039,
+      "sha256": "7c3c0cae0f90450081ff42e2e8a50c6fb19838510d4cf447a7dce5929853d2c5",
+      "cases": 3,
+      "classes": 3,
+      "accuracy": 1.0
+    },
+    {
+      "path": "results/IntervalBased/DrCIF-500/Predictions/ProteusCommandsAllPublic/trainResample0.csv",
+      "bytes": 164440,
+      "mtime_ns": 1794344009229900000,
+      "sha256": "47ef7d158c64696c46b3959cd1d7f01a22b4c061090a156a76afe81b569607cc",
+      "cases": 2655,
+      "classes": 3,
+      "accuracy": 0.5830508474576271
+    },
+    {
+      "path": "results/IntervalBased/DrCIF-500/Predictions/ProteusCommandsAllPublic/testResample0.csv",
+      "bytes": 814,
+      "mtime_ns": 1794344262380478007,
+      "sha256": "1cfb496c43549327c2db3e85dc0712e3e7f656a2e9c75ba7753fe898be24a209",
+      "cases": 3,
+      "classes": 3,
+      "accuracy": 1.0
+    }
+  ],
+  "invalid": [],
+  "status": "complete",
+  "staging": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\hc2-cluster-results-incoming-20261111-075457",
+  "backup": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\hc2-cluster-results-replaced-20261111-075457",
+  "fetched_bytes": 625190
+}

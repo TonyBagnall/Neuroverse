@@ -1,0 +1,541 @@
+classifier,family,dataset,status,clusters,action
+Arsenal,ConvolutionBased,AcuteTBIVisualMemory,missing,hali:eeg-hc2-new=not submitted,queued (hali:eeg-hc2-new)
+Arsenal,ConvolutionBased,AdultSeizures,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+Arsenal,ConvolutionBased,AffectiveMusic,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,AlcoholBandit,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,Alzheimers,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,AlzheimersAuditory,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ArithmeticDifficulty,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+Arsenal,ConvolutionBased,AuditoryDeviance,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,BanditGambling,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,ChildhoodSeizures,complete,hali:eeg-hc2-hmem=done;iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ClinicalSleepStages,missing,hali:eeg-hc2-hmem=failed: cancelled by user;iridis:eeg-hc2-components=waiting,waiting (iridis:eeg-hc2-components)
+Arsenal,ConvolutionBased,CognitiveLoadTasks,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+Arsenal,ConvolutionBased,CovidSurvivors,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,EyesOpenShut,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,FaceStimuli,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,FamilialAlzheimersRest,missing,,unscheduled
+Arsenal,ConvolutionBased,FeedbackButton,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,FlankerConflict,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,FuzzySemantics,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+Arsenal,ConvolutionBased,ImaginedAnkleRest,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedArmMovements,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedArmTasks,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedFeetHands,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedFingers,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,ImaginedGrasps,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedGripForce,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandFeetTongue,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandFootActions,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandGestures,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandMusicTempo,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandPupils,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandsCrossSession,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandsEmbodiment,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandsFeedback,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandsFeet,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandsHaptics,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandSides,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandsOnline,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandsPhysiology,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandsRobot,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandsStroke,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedHandTraining,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedLeftRightHand,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedLeftRightHandRest,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedOpenCloseFist,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedRightHandFeet,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ImaginedRightHandFeetRest,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,InternalAttention,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,LearningDifficulties,missing,,unscheduled
+Arsenal,ConvolutionBased,LongIntervalTask,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,LowCost,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,MentalArithmetic,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,MigraineRest,complete,hali:eeg-hc2-rest=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,MoralConflict,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+Arsenal,ConvolutionBased,MultitaskWorkload,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,NarrativeReward,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+Arsenal,ConvolutionBased,NaturalisticEmotion,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,NBackAudioCondition,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,NBackDifficulty,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+Arsenal,ConvolutionBased,ObsessiveCompulsiveSymptoms,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ParkinsonsPedalling,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ParkinsonsReinforcement,missing,hali:eeg-hc2-new=not submitted,queued (hali:eeg-hc2-new)
+Arsenal,ConvolutionBased,ParkinsonsRest,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ParkinsonsRestIowa,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ParkinsonsRestUCSD,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ParkinsonsWalking,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,PhotoStimulation,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,PostCovidVigilance,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,ProbabilisticFeedback,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+Arsenal,ConvolutionBased,PsychosisRestFirst,complete,hali:eeg-hc2-rest=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,PsychosisRestSecond,complete,hali:eeg-hc2-rest=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,PythonCodeReading,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+Arsenal,ConvolutionBased,RestingEyeState,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,SchizophreniaConflict,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,SchizophreniaMotion,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,SchizophreniaUltimatum,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,SentenceViolations,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,ShortIntervalTask,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,SitStand,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,SleepDeprivation,complete,hali:eeg-hc2-rest=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,SongFamiliarity,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,SpatialAttention,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,SternbergMemory,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+Arsenal,ConvolutionBased,StrokeMotorImagery,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+Arsenal,ConvolutionBased,TBIAuditoryOddball,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,VerbalWorkingMemory,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,VideoEmotions,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,VisualSymmetry,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+Arsenal,ConvolutionBased,WordRelatedness,complete,iridis:eeg-hc2-components=done,
+Arsenal,ConvolutionBased,ZosterNeuralgiaSleep,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+DrCIF,IntervalBased,AcuteTBIVisualMemory,missing,,unscheduled
+DrCIF,IntervalBased,AdultSeizures,missing,iridis:eeg-hc2-new-x=submitted,submitted (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,AffectiveMusic,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,AlcoholBandit,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,Alzheimers,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,AlzheimersAuditory,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ArithmeticDifficulty,missing,iridis:eeg-hc2-new-x=submitted,submitted (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,AuditoryDeviance,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,BanditGambling,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,ChildhoodSeizures,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ClinicalSleepStages,missing,iridis:eeg-hc2-components=waiting,waiting (iridis:eeg-hc2-components)
+DrCIF,IntervalBased,CognitiveLoadTasks,missing,iridis:eeg-hc2-new-x=submitted,submitted (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,CovidSurvivors,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,EyesOpenShut,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,FaceStimuli,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,FamilialAlzheimersRest,missing,,unscheduled
+DrCIF,IntervalBased,FeedbackButton,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,FlankerConflict,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,FuzzySemantics,missing,iridis:eeg-hc2-new-x=submitted,submitted (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,ImaginedAnkleRest,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedArmMovements,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedArmTasks,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedFeetHands,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedFingers,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,ImaginedGrasps,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedGripForce,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandFeetTongue,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandFootActions,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandGestures,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandMusicTempo,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandPupils,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandsCrossSession,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandsEmbodiment,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandsFeedback,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandsFeet,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandsHaptics,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandSides,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandsOnline,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandsPhysiology,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandsRobot,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandsStroke,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedHandTraining,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedLeftRightHand,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedLeftRightHandRest,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedOpenCloseFist,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedRightHandFeet,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ImaginedRightHandFeetRest,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,InternalAttention,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,LearningDifficulties,missing,,unscheduled
+DrCIF,IntervalBased,LongIntervalTask,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,LowCost,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,MentalArithmetic,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,MigraineRest,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,MoralConflict,missing,iridis:eeg-hc2-new-x=submitted,submitted (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,MultitaskWorkload,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,NarrativeReward,missing,iridis:eeg-hc2-new-x=submitted,submitted (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,NaturalisticEmotion,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,NBackAudioCondition,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,NBackDifficulty,missing,iridis:eeg-hc2-new-x=submitted,submitted (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,ObsessiveCompulsiveSymptoms,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ParkinsonsPedalling,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ParkinsonsReinforcement,missing,,unscheduled
+DrCIF,IntervalBased,ParkinsonsRest,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ParkinsonsRestIowa,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ParkinsonsRestUCSD,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ParkinsonsWalking,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,PhotoStimulation,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,PostCovidVigilance,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,ProbabilisticFeedback,missing,iridis:eeg-hc2-new-x=submitted,submitted (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,PsychosisRestFirst,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,PsychosisRestSecond,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,PythonCodeReading,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,RestingEyeState,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,SchizophreniaConflict,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,SchizophreniaMotion,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,SchizophreniaUltimatum,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,SentenceViolations,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,ShortIntervalTask,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,SitStand,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,SleepDeprivation,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,SongFamiliarity,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,SpatialAttention,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,SternbergMemory,missing,iridis:eeg-hc2-new-x=submitted,submitted (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,StrokeMotorImagery,missing,iridis:eeg-hc2-new-x=submitted,submitted (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,TBIAuditoryOddball,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,VerbalWorkingMemory,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,VideoEmotions,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,VisualSymmetry,missing,iridis:eeg-hc2-new-x=not submitted,queued (iridis:eeg-hc2-new-x)
+DrCIF,IntervalBased,WordRelatedness,complete,iridis:eeg-hc2-components=done,
+DrCIF,IntervalBased,ZosterNeuralgiaSleep,missing,iridis:eeg-hc2-new-x=submitted,submitted (iridis:eeg-hc2-new-x)
+DrCIF-500,IntervalBased,AcuteTBIVisualMemory,missing,hali:eeg-hc2-new=not submitted,queued (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,AdultSeizures,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=submitted,running (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,AffectiveMusic,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,AlcoholBandit,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,Alzheimers,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,AlzheimersAuditory,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ArithmeticDifficulty,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+DrCIF-500,IntervalBased,AuditoryDeviance,missing,hali:eeg-hc2-new=submitted;iridis:eeg-hc2-new-x=not submitted,submitted (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,BanditGambling,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+DrCIF-500,IntervalBased,ChildhoodSeizures,complete,hali:eeg-hc2-hmem=failed: cancelled by user;iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ClinicalSleepStages,missing,hali:eeg-hc2-hmem=failed: cancelled by user;iridis:eeg-hc2-components=running,running (iridis:eeg-hc2-components)
+DrCIF-500,IntervalBased,CognitiveLoadTasks,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+DrCIF-500,IntervalBased,CovidSurvivors,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,EyesOpenShut,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,FaceStimuli,missing,hali:eeg-hc2-new=submitted;iridis:eeg-hc2-new-x=not submitted,submitted (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,FamilialAlzheimersRest,missing,,unscheduled
+DrCIF-500,IntervalBased,FeedbackButton,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,FlankerConflict,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,FuzzySemantics,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+DrCIF-500,IntervalBased,ImaginedAnkleRest,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedArmMovements,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedArmTasks,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedFeetHands,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedFingers,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,ImaginedGrasps,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedGripForce,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandFeetTongue,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandFootActions,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandGestures,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandMusicTempo,missing,iridis:eeg-hc2-components=running,running (iridis:eeg-hc2-components)
+DrCIF-500,IntervalBased,ImaginedHandPupils,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandsCrossSession,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandsEmbodiment,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandsFeedback,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandsFeet,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandsHaptics,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandSides,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandsOnline,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandsPhysiology,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandsRobot,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandsStroke,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedHandTraining,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedLeftRightHand,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedLeftRightHandRest,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedOpenCloseFist,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedRightHandFeet,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ImaginedRightHandFeetRest,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,InternalAttention,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+DrCIF-500,IntervalBased,LearningDifficulties,missing,,unscheduled
+DrCIF-500,IntervalBased,LongIntervalTask,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,LowCost,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,MentalArithmetic,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,MigraineRest,complete,hali:eeg-hc2-rest=done;iridis:eeg-hc2-new-x=not submitted,
+DrCIF-500,IntervalBased,MoralConflict,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+DrCIF-500,IntervalBased,MultitaskWorkload,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,NarrativeReward,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+DrCIF-500,IntervalBased,NaturalisticEmotion,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+DrCIF-500,IntervalBased,NBackAudioCondition,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,NBackDifficulty,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+DrCIF-500,IntervalBased,ObsessiveCompulsiveSymptoms,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ParkinsonsPedalling,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ParkinsonsReinforcement,missing,hali:eeg-hc2-new=not submitted,queued (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,ParkinsonsRest,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ParkinsonsRestIowa,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ParkinsonsRestUCSD,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ParkinsonsWalking,missing,hali:eeg-hc2-new=submitted;iridis:eeg-hc2-new-x=not submitted,submitted (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,PhotoStimulation,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,PostCovidVigilance,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,ProbabilisticFeedback,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+DrCIF-500,IntervalBased,PsychosisRestFirst,missing,hali:eeg-hc2-rest=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-rest)
+DrCIF-500,IntervalBased,PsychosisRestSecond,missing,hali:eeg-hc2-rest=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-rest)
+DrCIF-500,IntervalBased,PythonCodeReading,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+DrCIF-500,IntervalBased,RestingEyeState,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,SchizophreniaConflict,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,SchizophreniaMotion,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,SchizophreniaUltimatum,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,SentenceViolations,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+DrCIF-500,IntervalBased,ShortIntervalTask,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,SitStand,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,SleepDeprivation,complete,hali:eeg-hc2-rest=done;iridis:eeg-hc2-new-x=not submitted,
+DrCIF-500,IntervalBased,SongFamiliarity,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,SpatialAttention,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,SternbergMemory,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+DrCIF-500,IntervalBased,StrokeMotorImagery,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=submitted,running (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,TBIAuditoryOddball,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+DrCIF-500,IntervalBased,VerbalWorkingMemory,missing,hali:eeg-hc2-new=submitted;iridis:eeg-hc2-new-x=not submitted,submitted (hali:eeg-hc2-new)
+DrCIF-500,IntervalBased,VideoEmotions,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,VisualSymmetry,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+DrCIF-500,IntervalBased,WordRelatedness,complete,iridis:eeg-hc2-components=done,
+DrCIF-500,IntervalBased,ZosterNeuralgiaSleep,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+STC-aeon,ShapeletBased,AcuteTBIVisualMemory,missing,hali:eeg-hc2-new=not submitted,queued (hali:eeg-hc2-new)
+STC-aeon,ShapeletBased,AdultSeizures,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+STC-aeon,ShapeletBased,AffectiveMusic,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,AlcoholBandit,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,Alzheimers,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,AlzheimersAuditory,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ArithmeticDifficulty,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+STC-aeon,ShapeletBased,AuditoryDeviance,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,BanditGambling,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,ChildhoodSeizures,complete,hali:eeg-hc2-hmem=done;iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ClinicalSleepStages,missing,hali:eeg-hc2-hmem=failed: cancelled by user;iridis:eeg-hc2-components=running,running (iridis:eeg-hc2-components)
+STC-aeon,ShapeletBased,CognitiveLoadTasks,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+STC-aeon,ShapeletBased,CovidSurvivors,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,EyesOpenShut,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,FaceStimuli,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,FamilialAlzheimersRest,missing,,unscheduled
+STC-aeon,ShapeletBased,FeedbackButton,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,FlankerConflict,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,FuzzySemantics,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+STC-aeon,ShapeletBased,ImaginedAnkleRest,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedArmMovements,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedArmTasks,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedFeetHands,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedFingers,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+STC-aeon,ShapeletBased,ImaginedGrasps,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedGripForce,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandFeetTongue,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandFootActions,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandGestures,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandMusicTempo,missing,iridis:eeg-hc2-components=running,running (iridis:eeg-hc2-components)
+STC-aeon,ShapeletBased,ImaginedHandPupils,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandsCrossSession,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandsEmbodiment,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandsFeedback,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandsFeet,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandsHaptics,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandSides,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandsOnline,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandsPhysiology,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandsRobot,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandsStroke,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedHandTraining,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedLeftRightHand,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedLeftRightHandRest,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedOpenCloseFist,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedRightHandFeet,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ImaginedRightHandFeetRest,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,InternalAttention,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,LearningDifficulties,missing,,unscheduled
+STC-aeon,ShapeletBased,LongIntervalTask,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,LowCost,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,MentalArithmetic,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,MigraineRest,complete,hali:eeg-hc2-rest=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,MoralConflict,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+STC-aeon,ShapeletBased,MultitaskWorkload,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,NarrativeReward,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+STC-aeon,ShapeletBased,NaturalisticEmotion,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,NBackAudioCondition,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,NBackDifficulty,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+STC-aeon,ShapeletBased,ObsessiveCompulsiveSymptoms,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ParkinsonsPedalling,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ParkinsonsReinforcement,missing,hali:eeg-hc2-new=not submitted,queued (hali:eeg-hc2-new)
+STC-aeon,ShapeletBased,ParkinsonsRest,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ParkinsonsRestIowa,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ParkinsonsRestUCSD,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ParkinsonsWalking,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,PhotoStimulation,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,PostCovidVigilance,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+STC-aeon,ShapeletBased,ProbabilisticFeedback,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+STC-aeon,ShapeletBased,PsychosisRestFirst,complete,hali:eeg-hc2-rest=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,PsychosisRestSecond,complete,hali:eeg-hc2-rest=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,PythonCodeReading,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,RestingEyeState,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,SchizophreniaConflict,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+STC-aeon,ShapeletBased,SchizophreniaMotion,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,SchizophreniaUltimatum,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,SentenceViolations,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,ShortIntervalTask,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,SitStand,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,SleepDeprivation,complete,hali:eeg-hc2-rest=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,SongFamiliarity,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,SpatialAttention,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,SternbergMemory,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+STC-aeon,ShapeletBased,StrokeMotorImagery,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+STC-aeon,ShapeletBased,TBIAuditoryOddball,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,VerbalWorkingMemory,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,VideoEmotions,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,VisualSymmetry,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+STC-aeon,ShapeletBased,WordRelatedness,complete,iridis:eeg-hc2-components=done,
+STC-aeon,ShapeletBased,ZosterNeuralgiaSleep,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+TDE,DictionaryBased,AcuteTBIVisualMemory,missing,hali:eeg-hc2-new=not submitted,queued (hali:eeg-hc2-new)
+TDE,DictionaryBased,AdultSeizures,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+TDE,DictionaryBased,AffectiveMusic,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,AlcoholBandit,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+TDE,DictionaryBased,Alzheimers,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,AlzheimersAuditory,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ArithmeticDifficulty,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+TDE,DictionaryBased,AuditoryDeviance,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,BanditGambling,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,ChildhoodSeizures,missing,hali:eeg-hc2-hmem=failed: cancelled by user;iridis:eeg-hc2-components=running,running (iridis:eeg-hc2-components)
+TDE,DictionaryBased,ClinicalSleepStages,missing,hali:eeg-hc2-hmem=running;iridis:eeg-hc2-components=failed: cancelled by user,running (hali:eeg-hc2-hmem)
+TDE,DictionaryBased,CognitiveLoadTasks,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+TDE,DictionaryBased,CovidSurvivors,missing,iridis:eeg-hc2-components=running,running (iridis:eeg-hc2-components)
+TDE,DictionaryBased,EyesOpenShut,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,FaceStimuli,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,FamilialAlzheimersRest,missing,,unscheduled
+TDE,DictionaryBased,FeedbackButton,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,FlankerConflict,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,FuzzySemantics,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,ImaginedAnkleRest,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedArmMovements,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedArmTasks,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedFeetHands,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedFingers,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,ImaginedGrasps,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedGripForce,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandFeetTongue,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandFootActions,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandGestures,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandMusicTempo,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandPupils,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandsCrossSession,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandsEmbodiment,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandsFeedback,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandsFeet,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandsHaptics,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandSides,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandsOnline,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandsPhysiology,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandsRobot,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandsStroke,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedHandTraining,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedLeftRightHand,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedLeftRightHandRest,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedOpenCloseFist,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedRightHandFeet,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ImaginedRightHandFeetRest,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,InternalAttention,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,LearningDifficulties,missing,,unscheduled
+TDE,DictionaryBased,LongIntervalTask,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,LowCost,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,MentalArithmetic,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,MigraineRest,complete,hali:eeg-hc2-rest=done;iridis:eeg-hc2-new-x=not submitted,
+TDE,DictionaryBased,MoralConflict,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+TDE,DictionaryBased,MultitaskWorkload,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,NarrativeReward,missing,hali:eeg-hc2-new=submitted;iridis:eeg-hc2-new-x=submitted,"submitted (hali:eeg-hc2-new, iridis:eeg-hc2-new-x)"
+TDE,DictionaryBased,NaturalisticEmotion,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+TDE,DictionaryBased,NBackAudioCondition,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,NBackDifficulty,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,ObsessiveCompulsiveSymptoms,missing,iridis:eeg-hc2-components=running,running (iridis:eeg-hc2-components)
+TDE,DictionaryBased,ParkinsonsPedalling,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ParkinsonsReinforcement,missing,hali:eeg-hc2-new=not submitted,queued (hali:eeg-hc2-new)
+TDE,DictionaryBased,ParkinsonsRest,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ParkinsonsRestIowa,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ParkinsonsRestUCSD,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ParkinsonsWalking,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,PhotoStimulation,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,PostCovidVigilance,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,ProbabilisticFeedback,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+TDE,DictionaryBased,PsychosisRestFirst,missing,hali:eeg-hc2-rest=pending;iridis:eeg-hc2-new-x=not submitted,pending (hali:eeg-hc2-rest)
+TDE,DictionaryBased,PsychosisRestSecond,missing,hali:eeg-hc2-rest=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-rest)
+TDE,DictionaryBased,PythonCodeReading,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+TDE,DictionaryBased,RestingEyeState,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,SchizophreniaConflict,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,SchizophreniaMotion,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+TDE,DictionaryBased,SchizophreniaUltimatum,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+TDE,DictionaryBased,SentenceViolations,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,ShortIntervalTask,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,SitStand,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,SleepDeprivation,complete,hali:eeg-hc2-rest=done;iridis:eeg-hc2-new-x=not submitted,
+TDE,DictionaryBased,SongFamiliarity,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,SpatialAttention,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,SternbergMemory,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+TDE,DictionaryBased,StrokeMotorImagery,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+TDE,DictionaryBased,TBIAuditoryOddball,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,VerbalWorkingMemory,missing,hali:eeg-hc2-new=running;iridis:eeg-hc2-new-x=not submitted,running (hali:eeg-hc2-new)
+TDE,DictionaryBased,VideoEmotions,missing,iridis:eeg-hc2-components=running,running (iridis:eeg-hc2-components)
+TDE,DictionaryBased,VisualSymmetry,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=not submitted,
+TDE,DictionaryBased,WordRelatedness,complete,iridis:eeg-hc2-components=done,
+TDE,DictionaryBased,ZosterNeuralgiaSleep,complete,hali:eeg-hc2-new=done;iridis:eeg-hc2-new-x=submitted,
+TRACE,DistanceBased,AcuteTBIVisualMemory,missing,hali:eeg-trace-train=not submitted,queued (hali:eeg-trace-train)
+TRACE,DistanceBased,AdultSeizures,missing,hali:eeg-trace-train=pending,pending (hali:eeg-trace-train)
+TRACE,DistanceBased,AffectiveMusic,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,AlcoholBandit,missing,hali:eeg-trace-train=pending,pending (hali:eeg-trace-train)
+TRACE,DistanceBased,Alzheimers,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,AlzheimersAuditory,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ArithmeticDifficulty,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,AuditoryDeviance,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,BanditGambling,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,ChildhoodSeizures,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,ClinicalSleepStages,missing,hali:eeg-trace-train=pending,pending (hali:eeg-trace-train)
+TRACE,DistanceBased,CognitiveLoadTasks,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,CovidSurvivors,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,EyesOpenShut,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,FaceStimuli,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,FamilialAlzheimersRest,missing,,unscheduled
+TRACE,DistanceBased,FeedbackButton,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,FlankerConflict,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,FuzzySemantics,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,ImaginedAnkleRest,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedArmMovements,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,ImaginedArmTasks,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedFeetHands,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedFingers,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,ImaginedGrasps,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,ImaginedGripForce,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandFeetTongue,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandFootActions,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandGestures,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandMusicTempo,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandPupils,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandsCrossSession,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandsEmbodiment,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandsFeedback,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandsFeet,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandsHaptics,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandSides,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandsOnline,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandsPhysiology,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,ImaginedHandsRobot,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandsStroke,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedHandTraining,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedLeftRightHand,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedLeftRightHandRest,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedOpenCloseFist,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedRightHandFeet,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ImaginedRightHandFeetRest,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,InternalAttention,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,LearningDifficulties,missing,,unscheduled
+TRACE,DistanceBased,LongIntervalTask,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,LowCost,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,MentalArithmetic,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,MigraineRest,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,MoralConflict,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,MultitaskWorkload,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,NarrativeReward,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,NaturalisticEmotion,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,NBackAudioCondition,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,NBackDifficulty,missing,hali:eeg-trace-train=failed: Python exception,failed (hali:eeg-trace-train Python exception)
+TRACE,DistanceBased,ObsessiveCompulsiveSymptoms,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,ParkinsonsPedalling,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ParkinsonsReinforcement,missing,hali:eeg-trace-train=not submitted,queued (hali:eeg-trace-train)
+TRACE,DistanceBased,ParkinsonsRest,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ParkinsonsRestIowa,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,ParkinsonsRestUCSD,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ParkinsonsWalking,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,PhotoStimulation,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,PostCovidVigilance,missing,hali:eeg-trace-train=pending,pending (hali:eeg-trace-train)
+TRACE,DistanceBased,ProbabilisticFeedback,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,PsychosisRestFirst,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,PsychosisRestSecond,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,PythonCodeReading,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,RestingEyeState,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,SchizophreniaConflict,missing,hali:eeg-trace-train=pending,pending (hali:eeg-trace-train)
+TRACE,DistanceBased,SchizophreniaMotion,missing,hali:eeg-trace-train=pending,pending (hali:eeg-trace-train)
+TRACE,DistanceBased,SchizophreniaUltimatum,missing,hali:eeg-trace-train=pending,pending (hali:eeg-trace-train)
+TRACE,DistanceBased,SentenceViolations,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,ShortIntervalTask,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,SitStand,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,SleepDeprivation,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,SongFamiliarity,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,SpatialAttention,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,SternbergMemory,missing,hali:eeg-trace-train=failed: Python exception,failed (hali:eeg-trace-train Python exception)
+TRACE,DistanceBased,StrokeMotorImagery,missing,hali:eeg-trace-train=pending,pending (hali:eeg-trace-train)
+TRACE,DistanceBased,TBIAuditoryOddball,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,VerbalWorkingMemory,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,VideoEmotions,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,VisualSymmetry,missing,hali:eeg-trace-train=running,running (hali:eeg-trace-train)
+TRACE,DistanceBased,WordRelatedness,complete,hali:eeg-trace-train=done,
+TRACE,DistanceBased,ZosterNeuralgiaSleep,missing,hali:eeg-trace-train=pending,pending (hali:eeg-trace-train)

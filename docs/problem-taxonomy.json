@@ -1,13 +1,15 @@
 {
-  "as_of": "2026-11-14",
-  "selection": "eeg.txt",
+  "as_of": "2026-11-15",
+  "selection": "eeg_114.txt",
   "selected_problems": 114,
-  "registered_problems": 123,
+  "registered_problems": 125,
   "registered_not_selected": [
     "Blink",
     "ButtonPress",
     "EpilepticSeizures",
     "FaceDetection",
+    "FibroLiverpool",
+    "FibroUEA",
     "HandMovementDirection",
     "MatchWords",
     "MindReading",
@@ -210,6 +212,14 @@
       "notes": "4-class visual object and face perception (N170: faces, cars, scrambled faces, scrambled cars; Kappenman et al. ERP CORE, ds003061; shared 40-subject cohort with WordRelatedness, AuditoryDeviance, and SpatialAttention)."
     },
     {
+      "problem": "FamilialAlzheimersRest",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Asymptomatic PSEN1-E280A autosomal-dominant familial Alzheimer's mutation carriers versus matched non-carrier family controls during eyes-closed resting EEG (Antioquia kindred, OpenNeuro ds007427 v1.0.2; open-access replacement for restricted FibroUEA)."
+    },
+    {
       "problem": "FeedbackButton",
       "category": "Behaviour and activity",
       "subclass": "Movement intention",
@@ -221,22 +231,6 @@
       "problem": "FeetHands",
       "category": "Brain-computer interfaces",
       "subclass": "Motor execution",
-      "modality": "scalp EEG",
-      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
-      "notes": ""
-    },
-    {
-      "problem": "FibroLiverpool",
-      "category": "Clinical and physiological states",
-      "subclass": "Medical diagnosis / clinical cohort",
-      "modality": "scalp EEG",
-      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
-      "notes": ""
-    },
-    {
-      "problem": "FibroUEA",
-      "category": "Clinical and physiological states",
-      "subclass": "Medical diagnosis / clinical cohort",
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": ""
@@ -544,6 +538,14 @@
       "modality": "scalp EEG",
       "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
       "notes": "Sustained internal mental concentration versus relaxation on 2.0 s windows (Delorme et al., ds002691)."
+    },
+    {
+      "problem": "LearningDifficulties",
+      "category": "Clinical and physiological states",
+      "subclass": "Medical diagnosis / clinical cohort",
+      "modality": "scalp EEG",
+      "assignment_status": "Proposed primary taxonomy based on documented task; not a change to original domain",
+      "notes": "Paediatric mathematical versus reading learning difficulty subtypes at pre-intervention baseline eyes-open resting state (ses-1/run-1, OpenNeuro ds006260 v1.0.1; open-access replacement for restricted FibroLiverpool)."
     },
     {
       "problem": "LongIntervalTask",

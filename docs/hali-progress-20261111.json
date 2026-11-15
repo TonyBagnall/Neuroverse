@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-11",
+  "configured_problems": 74,
+  "queue_counts": {
+    "PENDING": 3,
+    "RUNNING": 27
+  },
+  "prediction_files": 4032,
+  "fetched_files": 806,
+  "fetched_bytes": 118580148,
+  "invalid_files": [],
+  "older_remote_files_skipped": 1637,
+  "reports": [
+    {
+      "experiment": "eeg-nb-deep",
+      "updated": "Updated 2026-11-10T08:38:08+00:00 on compute016.hali.private",
+      "completion": "Complete 222/222 (100.0%)  running 0  pending 0  failed 0  not yet submitted 0"
+    },
+    {
+      "experiment": "eeg-baselines2",
+      "updated": "Updated 2026-11-10T09:13:49+00:00 on compute016.hali.private",
+      "completion": "Complete 296/296 (100.0%)  running 0  pending 0  failed 0  not yet submitted 0"
+    },
+    {
+      "experiment": "eeg-gpu",
+      "updated": "Updated 2026-11-09T08:48:43+00:00 on hali-login02.hali.private",
+      "completion": "Complete 0/198 (0.0%)  running 0  pending 0  failed 0  not yet submitted 198"
+    },
+    {
+      "experiment": "eeg-nb-more",
+      "updated": "Updated 2026-11-10T13:07:56+00:00 on compute027.hali.private",
+      "completion": "Complete 873/888 (98.3%)  running 0  pending 0  failed 15  not yet submitted 0"
+    },
+    {
+      "experiment": "eeg-cpu",
+      "updated": "Updated 2026-11-09T08:48:39+00:00 on hali-login02.hali.private",
+      "completion": "Complete 0/462 (0.0%)  running 0  pending 0  failed 0  not yet submitted 462"
+    },
+    {
+      "experiment": "eeg-baselines",
+      "updated": "Updated 2026-11-10T07:58:59+00:00 on compute044.hali.private",
+      "completion": "Complete 74/74 (100.0%)  running 0  pending 0  failed 0  not yet submitted 0"
+    },
+    {
+      "experiment": "eeg-moabb-mi-more",
+      "updated": "Updated 2026-11-11T08:08:44+00:00 on compute077.hali.private",
+      "completion": "Complete 685/740 (92.6%)  running 22  pending 0  failed 33  not yet submitted 0"
+    },
+    {
+      "experiment": "eeg-baselines-mi",
+      "updated": "Updated 2026-11-10T07:43:20+00:00 on compute056.hali.private",
+      "completion": "Complete 74/74 (100.0%)  running 0  pending 0  failed 0  not yet submitted 0"
+    },
+    {
+      "experiment": "eeg-eegnet-nb",
+      "updated": "Updated 2026-11-10T08:46:01+00:00 on compute016.hali.private",
+      "completion": "Complete 74/74 (100.0%)  running 0  pending 0  failed 0  not yet submitted 0"
+    },
+    {
+      "experiment": "eeg-moabb-mi",
+      "updated": "Updated 2026-11-10T07:41:40+00:00 on compute057.hali.private",
+      "completion": "Complete 148/148 (100.0%)  running 0  pending 0  failed 0  not yet submitted 0"
+    },
+    {
+      "experiment": "eeg-filtered",
+      "updated": "Updated 2026-11-10T08:11:12+00:00 on hali-login02.hali.private",
+      "completion": "Complete 576/592 (97.3%)  running 0  pending 0  failed 16  not yet submitted 0"
+    },
+    {
+      "experiment": "eeg-nb-more2",
+      "updated": "Updated 2026-11-10T18:07:07+00:00 on compute028.hali.private",
+      "completion": "Complete 434/444 (97.7%)  running 0  pending 0  failed 10  not yet submitted 0"
+    },
+    {
+      "experiment": "eeg-ctnet",
+      "updated": "Updated 2026-11-10T08:40:44+00:00 on compute016.hali.private",
+      "completion": "Complete 74/74 (100.0%)  running 0  pending 0  failed 0  not yet submitted 0"
+    },
+    {
+      "experiment": "eeg-moabb-erp",
+      "updated": "Updated 2026-11-11T08:05:02+00:00 on compute039.hali.private",
+      "completion": "Complete 293/296 (99.0%)  running 2  pending 0  failed 1  not yet submitted 0"
+    }
+  ]
+}

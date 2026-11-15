@@ -1,0 +1,32 @@
+{
+  "components": [
+    {
+      "component": "ConvolutionBased/Arsenal",
+      "train_estimate_accuracy": 0.6048964218455744,
+      "raw_weight": 0.1338825766741452,
+      "normalised_weight": 0.2968447696561587
+    },
+    {
+      "component": "IntervalBased/DrCIF-500",
+      "train_estimate_accuracy": 0.5830508474576271,
+      "raw_weight": 0.11556484036416842,
+      "normalised_weight": 0.25623064083795094
+    },
+    {
+      "component": "ShapeletBased/STC-aeon",
+      "train_estimate_accuracy": 0.5461393596986818,
+      "raw_weight": 0.08896391925775708,
+      "normalised_weight": 0.1972510148505223
+    },
+    {
+      "component": "DictionaryBased/TDE",
+      "train_estimate_accuracy": 0.5792843691148776,
+      "raw_weight": 0.11260748013523812,
+      "normalised_weight": 0.24967357465536805
+    }
+  ],
+  "rule": "CAWPE accuracy**4, no tuned weights or prior correction",
+  "cases": 2655,
+  "test_scope": "Three in-sample diagnostic cases only; no held-out performance claim",
+  "checkpoints": "Retained on Iridis at user request; no checkpoint deletion"
+}

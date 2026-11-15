@@ -1,0 +1,108 @@
+{
+  "development": {
+    "model": "aeon MiniRocketClassifier, portable NumPy inference",
+    "aeon_version": "1.5.0",
+    "requested_kernels": 10000,
+    "actual_features": 9996,
+    "random_state": 33,
+    "train_cases": 1521,
+    "training_split": "development",
+    "training_data": "Public PROTEUS nm000290v1.0.0 only",
+    "fit_seconds": 14.743993900017813,
+    "inference_dependencies": [
+      "numpy",
+      "benchmark_utils.base_solver supplied by competition"
+    ],
+    "no_runtime_installation": true,
+    "aeon_import_required": false,
+    "parity": {
+      "cases": 379,
+      "class_predictions_identical": true,
+      "feature_sample_cases": 12,
+      "feature_max_abs_error": 0.0,
+      "feature_unequal_values": 0,
+      "median_seconds_per_window": 0.09815699991304427,
+      "p95_seconds_per_window": 0.18700677995802834,
+      "total_prediction_seconds": 42.89138350042049
+    },
+    "limitations": "NumPy versus Numba floating arithmetic may differ near learned thresholds; class agreement verified on stated cases, not a proof for every possible future input. Unseen sealed data inaccessible.",
+    "validation_score": {
+      "balanced_accuracy_cell_mean": 0.4770329301075269,
+      "balanced_accuracy_session_mean": 0.4771318697729988,
+      "balanced_accuracy": 0.4779819189268008,
+      "accuracy": 0.47757255936675463,
+      "cells": [
+        {
+          "subject": "P05",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.3854166666666667
+        },
+        {
+          "subject": "P05",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 94,
+          "balanced_accuracy": 0.40288978494623656
+        },
+        {
+          "subject": "P08",
+          "session": "1",
+          "interface": "BrainHero",
+          "cases": 93,
+          "balanced_accuracy": 0.505241935483871
+        },
+        {
+          "subject": "P08",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 96,
+          "balanced_accuracy": 0.6145833333333334
+        }
+      ]
+    },
+    "official_objective_replay": {
+      "balanced_accuracy_cell_mean": 0.4770329301075269,
+      "balanced_accuracy_session_mean": 0.4771318697729988,
+      "balanced_accuracy": 0.4779819189268008,
+      "accuracy": 0.47757255936675463,
+      "n_classes": 3,
+      "n_cells": 4
+    },
+    "zip_bytes": 356261,
+    "zip_sha256": "f646d2fc6fb7059ab1de4b0f5161bf48db77cbe64fcf7435a57fe1fdd211cb24",
+    "zip_path": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\aeon-submissions\\development.zip"
+  },
+  "all-public": {
+    "model": "aeon MiniRocketClassifier, portable NumPy inference",
+    "aeon_version": "1.5.0",
+    "requested_kernels": 10000,
+    "actual_features": 9996,
+    "random_state": 33,
+    "train_cases": 2655,
+    "training_split": "all-public",
+    "training_data": "Public PROTEUS nm000290v1.0.0 only",
+    "fit_seconds": 29.05157950008288,
+    "inference_dependencies": [
+      "numpy",
+      "benchmark_utils.base_solver supplied by competition"
+    ],
+    "no_runtime_installation": true,
+    "aeon_import_required": false,
+    "parity": {
+      "cases": 2655,
+      "class_predictions_identical": true,
+      "feature_sample_cases": 12,
+      "feature_max_abs_error": 0.0,
+      "feature_unequal_values": 0,
+      "median_seconds_per_window": 0.08800079999491572,
+      "p95_seconds_per_window": 0.17288041003048402,
+      "total_prediction_seconds": 273.5882512019016
+    },
+    "limitations": "NumPy versus Numba floating arithmetic may differ near learned thresholds; class agreement verified on stated cases, not a proof for every possible future input. Unseen sealed data inaccessible.",
+    "zip_bytes": 355947,
+    "zip_sha256": "65741a9e7c23fd90d3358c17acb489acff848b21f8d319eeec17b01f81eb88aa",
+    "zip_path": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\aeon-submissions\\all-public.zip"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "models": [
+    {
+      "repo": "braindecode/cbramod-pretrained",
+      "revision": "20102c9bf86fe1112e9d0542b33315bd0c5bbc94",
+      "licence": "bsd-3-clause",
+      "files": [
+        {
+          "path": "README.md",
+          "size": 2499,
+          "sha256": null,
+          "git_blob_sha1": "2497ff4c15cc7598fe87a623ed0de1c58abb4a3d"
+        },
+        {
+          "path": "config.json",
+          "size": 164,
+          "sha256": null,
+          "git_blob_sha1": "7621d127e102a49179d88146ae14c876fd805d04"
+        },
+        {
+          "path": "model.safetensors",
+          "size": 19717952,
+          "sha256": "a939ace9aa1e229f08391ad8bb2d197b507ae2c519a50addf087f0151b2df5c3",
+          "git_blob_sha1": null
+        },
+        {
+          "path": "pytorch_model.bin",
+          "size": 19768047,
+          "sha256": "44616452587522b3c84f7a90c5a5c8ff97ff4707a99686d9136b70df5d206287",
+          "git_blob_sha1": null
+        }
+      ]
+    },
+    {
+      "repo": "braindecode/labram-pretrained",
+      "revision": "c644177b77f70f46705897482d5e47f91bdcdc3a",
+      "licence": "bsd-3-clause",
+      "files": [
+        {
+          "path": "README.md",
+          "size": 6019,
+          "sha256": null,
+          "git_blob_sha1": "aba5e2b897752443b8f7a31f489e946c264f15ce"
+        },
+        {
+          "path": "config.json",
+          "size": 4776,
+          "sha256": null,
+          "git_blob_sha1": "664e1383ab0cca19a61f706676f198ca6aa6b43b"
+        },
+        {
+          "path": "model.safetensors",
+          "size": 23299672,
+          "sha256": "53b752edb366fd6395dd3cb7d63ae3e1e16aabed040aa0901d64ef32e8f444f8",
+          "git_blob_sha1": null
+        },
+        {
+          "path": "pytorch_model.bin",
+          "size": 23351447,
+          "sha256": "86a40de11088b85291eb47b788b049d784e619a6b3f8e84accbf640b2c59eec3",
+          "git_blob_sha1": null
+        }
+      ]
+    }
+  ],
+  "notes": "Checkpoint licence is recorded from the model card. Pretraining-data overlap requires a separate audit."
+}

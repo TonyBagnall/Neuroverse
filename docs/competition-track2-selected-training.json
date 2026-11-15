@@ -1,0 +1,165 @@
+{
+  "MRHydra": {
+    "development": {
+      "classifier": "MRHydra",
+      "phase": "development",
+      "train_cases": 1521,
+      "fit_seconds": 83.74533399997745,
+      "random_state": 33,
+      "n_jobs": 8,
+      "aeon": "1.5.0",
+      "sklearn": "1.7.2",
+      "torch": "2.11.0+cpu",
+      "path": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\selected-models\\MRHydra\\development\\model.joblib",
+      "validation": {
+        "balanced_accuracy_cell_mean": 0.5264280913978495,
+        "balanced_accuracy_session_mean": 0.5264390254309609,
+        "balanced_accuracy": 0.527663208765571,
+        "accuracy": 0.5277044854881267,
+        "cells": [
+          {
+            "subject": "P05",
+            "session": "1",
+            "interface": "Graz",
+            "cases": 96,
+            "balanced_accuracy": 0.40625
+          },
+          {
+            "subject": "P05",
+            "session": "1",
+            "interface": "BrainHero",
+            "cases": 94,
+            "balanced_accuracy": 0.46572580645161293
+          },
+          {
+            "subject": "P08",
+            "session": "1",
+            "interface": "BrainHero",
+            "cases": 93,
+            "balanced_accuracy": 0.5254032258064517
+          },
+          {
+            "subject": "P08",
+            "session": "1",
+            "interface": "Graz",
+            "cases": 96,
+            "balanced_accuracy": 0.7083333333333334
+          }
+        ]
+      },
+      "validation_seconds": 10.80183169990778
+    },
+    "all-public": {
+      "classifier": "MRHydra",
+      "phase": "all-public",
+      "train_cases": 2655,
+      "fit_seconds": 70.13577039993834,
+      "random_state": 33,
+      "n_jobs": 8,
+      "aeon": "1.5.0",
+      "sklearn": "1.7.2",
+      "torch": "2.11.0+cpu",
+      "path": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\selected-models\\MRHydra\\all-public\\model.joblib"
+    }
+  },
+  "QUANT": {
+    "development": {
+      "classifier": "QUANT",
+      "phase": "development",
+      "train_cases": 1521,
+      "fit_seconds": 590.3124571000226,
+      "random_state": 33,
+      "n_jobs": 8,
+      "aeon": "1.5.0",
+      "sklearn": "1.7.2",
+      "torch": "2.11.0+cpu",
+      "path": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\selected-models\\QUANT\\development\\model.joblib",
+      "validation": {
+        "balanced_accuracy_cell_mean": 0.4832997311827957,
+        "balanced_accuracy_session_mean": 0.4842736601809182,
+        "balanced_accuracy": 0.485522643002958,
+        "accuracy": 0.48548812664907653,
+        "cells": [
+          {
+            "subject": "P05",
+            "session": "1",
+            "interface": "Graz",
+            "cases": 96,
+            "balanced_accuracy": 0.4270833333333333
+          },
+          {
+            "subject": "P05",
+            "session": "1",
+            "interface": "BrainHero",
+            "cases": 94,
+            "balanced_accuracy": 0.4227150537634408
+          },
+          {
+            "subject": "P08",
+            "session": "1",
+            "interface": "BrainHero",
+            "cases": 93,
+            "balanced_accuracy": 0.36465053763440863
+          },
+          {
+            "subject": "P08",
+            "session": "1",
+            "interface": "Graz",
+            "cases": 96,
+            "balanced_accuracy": 0.71875
+          }
+        ]
+      },
+      "validation_seconds": 6.37831910001114
+    },
+    "all-public": {
+      "classifier": "QUANT",
+      "phase": "all-public",
+      "train_cases": 2655,
+      "fit_seconds": 1248.6082738999976,
+      "random_state": 33,
+      "n_jobs": 8,
+      "aeon": "1.5.0",
+      "sklearn": "1.7.2",
+      "torch": "2.11.0+cpu",
+      "path": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\selected-models\\QUANT\\all-public\\model.joblib"
+    }
+  },
+  "equal_weight_ensemble_validation": {
+    "balanced_accuracy_cell_mean": 0.5075100806451612,
+    "balanced_accuracy_session_mean": 0.507792498719918,
+    "balanced_accuracy": 0.5091655209765446,
+    "accuracy": 0.5092348284960422,
+    "cells": [
+      {
+        "subject": "P05",
+        "session": "1",
+        "interface": "Graz",
+        "cases": 96,
+        "balanced_accuracy": 0.3958333333333333
+      },
+      {
+        "subject": "P05",
+        "session": "1",
+        "interface": "BrainHero",
+        "cases": 94,
+        "balanced_accuracy": 0.4438844086021505
+      },
+      {
+        "subject": "P08",
+        "session": "1",
+        "interface": "BrainHero",
+        "cases": 93,
+        "balanced_accuracy": 0.48198924731182796
+      },
+      {
+        "subject": "P08",
+        "session": "1",
+        "interface": "Graz",
+        "cases": 96,
+        "balanced_accuracy": 0.7083333333333334
+      }
+    ]
+  },
+  "ensemble_definition": "Equal mean of QUANT ExtraTrees probabilities and clipped/normalised MRHydra ridge scores; no calibration parameters fitted on validation."
+}

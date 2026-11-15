@@ -1,0 +1,55 @@
+# Standard tsml-eval experiment; isolated competition checkout, no archive changes.
+[experiment]
+name = "proteus-hc2-components"
+cluster = "iridis6"
+resources = "cpu-array"
+task = "classification"
+repo_dir = "/home/ajb2u23/Code/tsml-eval-proteus-hc2-20261110"
+data_dir = "/home/ajb2u23/Competitions/NeuralInterfaces2026Track2/HC2/data"
+datasets = "/home/ajb2u23/Competitions/NeuralInterfaces2026Track2/HC2/datasets.txt"
+results_dir = "/home/ajb2u23/Competitions/NeuralInterfaces2026Track2/HC2/results"
+state_dir = "/home/ajb2u23/Competitions/NeuralInterfaces2026Track2/HC2/state"
+resamples = 1
+n_jobs = 8
+train_files = true
+extra_args = ["-ch", "-chi", "60", "--keep_checkpoint", "-rs", "33"]
+retry_timeouts = true
+max_attempts = 4
+pin_commit = true
+# Five reviewed overlay files in an isolated worktree, checked by hash per job.
+require_clean = false
+email = ""
+
+[estimators]
+ConvolutionBased = ["Arsenal"]
+IntervalBased = ["DrCIF-500"]
+ShapeletBased = ["STC-aeon"]
+DictionaryBased = ["TDE"]
+
+[estimator_kwargs.Arsenal]
+verbose = 1
+[estimator_kwargs."DrCIF-500"]
+verbose = 1
+[estimator_kwargs."STC-aeon"]
+verbose = 1
+[estimator_kwargs.TDE]
+verbose = 1
+
+[slurm]
+env_name = "tsml-eval"
+max_active = 4
+memory_gb = [64, 128, 256, 620]
+cpus_per_task = 8
+time_limit = "60:00:00"
+setup = [
+  "export NUMBA_NUM_THREADS=8",
+  "export HF_HUB_OFFLINE=1 HF_DATASETS_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HUB_DISABLE_TELEMETRY=1 WANDB_MODE=disabled WANDB_DISABLED=true DO_NOT_TRACK=1",
+  '"${PY[@]}" /home/ajb2u23/Competitions/NeuralInterfaces2026Track2/HC2/verify_overlay.py',
+]
+
+[supervisor]
+mode = "slurm"
+interval_minutes = 15
+partition = "batch"
+time_limit = "00:30:00"
+memory_gb = 2

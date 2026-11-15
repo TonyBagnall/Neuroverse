@@ -363,4 +363,67 @@ def test_plan_ds003523_participants_applies_author_exclusions_and_enforces_parit
         plan_ds003523_participants(dup_rows)
 
 
+def test_plan_ds006260_participants_separates_math_and_reading_cohorts_and_excludes_missing_baseline():
+    """Verify sub-M* vs sub-R* routing on ses-1/run-1 and documented exclusion of sub-Mc22."""
+    from tools.prepare_diagnostic_to_30 import plan_ds006260_participants
+
+    rows = [
+        {'participant_id': 'sub-Mc01', 'Group': 'cont', 'Age': '9', 'Gender': 'M'},
+        {'participant_id': 'sub-Me01', 'Group': 'exp', 'Age': '10', 'Gender': 'F'},
+        {'participant_id': 'sub-Rc01', 'Group': 'cont', 'Age': '8', 'Gender': 'M'},
+        {'participant_id': 'sub-Mc22', 'Group': 'cont', 'Age': '11', 'Gender': 'M'},
+    ]
+    available = {
+        f'{pid}/ses-1/eeg/{pid}_ses-1_task-SmartickDataset_run-1_eeg.set'
+        for pid in ('sub-Mc01', 'sub-Me01', 'sub-Rc01')
+    }
+    retained, excluded = plan_ds006260_participants(rows, available)
+
+    expected_retained = len(rows) - 1
+    assert len(retained) == expected_retained
+    assert [(pid, lbl) for pid, _, lbl, _ in retained] == [
+        ('sub-Mc01', '1'),
+        ('sub-Me01', '1'),
+        ('sub-Rc01', '2'),
+    ]
+    assert [e['participant_id'] for e in excluded] == ['sub-Mc22']
+
+    with pytest.raises(ValueError, match='Inconsistent Group'):
+        plan_ds006260_participants(
+            [{'participant_id': 'sub-Mc01', 'Group': 'exp', 'Age': '9', 'Gender': 'M'}],
+            available,
+        )
+
+
+def test_plan_ds007427_participants_retains_raw_kindred_and_excludes_sporadic_and_derivatives_only():
+    """Verify G1/G2 raw Antioquia kindred selection and exclusion of sporadic sub-CTR011 and derivatives-only rows."""
+    from tools.prepare_diagnostic_to_30 import plan_ds007427_participants
+
+    rows = [
+        {'participant_id': 'sub-CTR001', 'age': '55.0', 'sex': 'M', 'MM_total': '30.0'},
+        {'participant_id': 'sub-CTR011', 'age': '50.0', 'sex': 'F', 'MM_total': '29.0'},
+        {'participant_id': 'sub-G1001', 'age': '29.0', 'sex': 'F', 'MM_total': '30.0'},
+        {'participant_id': 'sub-G1002', 'age': '31.0', 'sex': 'M', 'MM_total': '29.0'},
+        {'participant_id': 'sub-G2001', 'age': '30.0', 'sex': 'F', 'MM_total': '30.0'},
+    ]
+    available = {
+        f'{pid}/ses-V0/eeg/{pid}_ses-V0_task-CE_eeg.eeg'
+        for pid in ('sub-CTR011', 'sub-G1001', 'sub-G2001')
+    }
+    retained, excluded = plan_ds007427_participants(rows, available)
+
+    assert [(pid, lbl) for pid, _, lbl, _ in retained] == [
+        ('sub-G1001', '1'),
+        ('sub-G2001', '2'),
+    ]
+    assert {e['participant_id'] for e in excluded} == {'sub-CTR001', 'sub-CTR011', 'sub-G1002'}
+
+    with pytest.raises(ValueError, match='Unaccounted raw .eeg'):
+        plan_ds007427_participants(
+            [{'participant_id': 'sub-DTA001', 'age': '60.0', 'sex': 'M', 'MM_total': '20.0'}],
+            {'sub-DTA001/ses-V0/eeg/sub-DTA001_ses-V0_task-CE_eeg.eeg'},
+        )
+
+
+
 

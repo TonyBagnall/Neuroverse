@@ -19,10 +19,9 @@ CognitiveLoadTasks,Cognitive,,True
 CovidSurvivors,Clinical,,True
 EyesOpenShut,Cognitive,,True
 FaceStimuli,Cognitive,,True
+FamilialAlzheimersRest,Clinical,,True
 FeedbackButton,Cognitive,,True
 FeetHands,BCI,ME,False
-FibroLiverpool,Clinical,,True
-FibroUEA,Clinical,,True
 FingerMovements,BCI,ME,False
 FlankerConflict,Cognitive,,True
 FlickerAttention,BCI,VEP,False
@@ -61,6 +60,7 @@ ImaginedRightHandFeet,BCI,MI,True
 ImaginedRightHandFeetRest,BCI,MI,True
 InnerSpeech,BCI,Speech,False
 InternalAttention,Cognitive,,True
+LearningDifficulties,Clinical,,True
 LongIntervalTask,Clinical,,True
 LowCost,BCI,MI,True
 MatchingPennies,BCI,ME,False

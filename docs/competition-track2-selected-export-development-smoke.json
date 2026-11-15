@@ -1,0 +1,115 @@
+{
+  "MRHydra": {
+    "mode": "MRHydra",
+    "phase": "development",
+    "verified_cases": 3,
+    "class_predictions_identical": true,
+    "max_score_error": 3.2706892749700955e-11,
+    "median_seconds_per_window": 0.5467952000908554,
+    "p95_seconds_per_window": 0.676860410044901,
+    "total_prediction_seconds": 1.7605259000556543,
+    "features": {
+      "hydra_max_abs_error": 0.0,
+      "multirocket_max_abs_error": 1.52587890625e-05
+    },
+    "aeon_inference_required": false,
+    "sklearn_inference_required": false,
+    "numba_inference_required": false,
+    "training_data": "Public PROTEUS nm000290v1.0.0",
+    "training_cases": 1521,
+    "validation_score": {
+      "balanced_accuracy_cell_mean": 0.0,
+      "balanced_accuracy_session_mean": 0.0,
+      "balanced_accuracy": 0.0,
+      "accuracy": 0.0,
+      "cells": [
+        {
+          "subject": "P05",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 3,
+          "balanced_accuracy": 0.0
+        }
+      ]
+    },
+    "zip_path": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\selected-submission-smoke\\development\\MRHydra.zip",
+    "zip_bytes": 2182673,
+    "zip_sha256": "e91364756cfcbd8844300de442ee4cd48d2b5a609ad75ba0120182000114ec71"
+  },
+  "QUANT": {
+    "mode": "QUANT",
+    "phase": "development",
+    "verified_cases": 3,
+    "class_predictions_identical": true,
+    "max_score_error": 0.0,
+    "median_seconds_per_window": 0.11864340002648532,
+    "p95_seconds_per_window": 0.14777289002668112,
+    "total_prediction_seconds": 0.3859250000678003,
+    "features": {
+      "quant_feature_max_abs_error": 0.0,
+      "forest_probability_max_abs_error": 0.0
+    },
+    "aeon_inference_required": false,
+    "sklearn_inference_required": false,
+    "numba_inference_required": false,
+    "training_data": "Public PROTEUS nm000290v1.0.0",
+    "training_cases": 1521,
+    "validation_score": {
+      "balanced_accuracy_cell_mean": 0.0,
+      "balanced_accuracy_session_mean": 0.0,
+      "balanced_accuracy": 0.0,
+      "accuracy": 0.0,
+      "cells": [
+        {
+          "subject": "P05",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 3,
+          "balanced_accuracy": 0.0
+        }
+      ]
+    },
+    "zip_path": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\selected-submission-smoke\\development\\QUANT.zip",
+    "zip_bytes": 1320629,
+    "zip_sha256": "c81a91ed9a01c28c5e510648f9462cd389668ce253c96f58f3bcd627d9a68aee"
+  },
+  "ensemble": {
+    "mode": "ensemble",
+    "phase": "development",
+    "verified_cases": 3,
+    "class_predictions_identical": true,
+    "max_score_error": 1.6353418619274862e-11,
+    "median_seconds_per_window": 0.6458093000110239,
+    "p95_seconds_per_window": 0.6715621699695475,
+    "total_prediction_seconds": 1.953995999880135,
+    "features": {
+      "hydra_max_abs_error": 0.0,
+      "multirocket_max_abs_error": 1.52587890625e-05,
+      "quant_feature_max_abs_error": 0.0,
+      "forest_probability_max_abs_error": 0.0
+    },
+    "aeon_inference_required": false,
+    "sklearn_inference_required": false,
+    "numba_inference_required": false,
+    "training_data": "Public PROTEUS nm000290v1.0.0",
+    "training_cases": 1521,
+    "validation_score": {
+      "balanced_accuracy_cell_mean": 0.0,
+      "balanced_accuracy_session_mean": 0.0,
+      "balanced_accuracy": 0.0,
+      "accuracy": 0.0,
+      "cells": [
+        {
+          "subject": "P05",
+          "session": "1",
+          "interface": "Graz",
+          "cases": 3,
+          "balanced_accuracy": 0.0
+        }
+      ]
+    },
+    "zip_path": "D:\\Data\\EEGCompetitions\\NeuralInterfaces2026Track2\\selected-submission-smoke\\development\\ensemble.zip",
+    "zip_bytes": 3498197,
+    "zip_sha256": "e284630eff48560595106d6f67eaed4bb4de0698e6a01ca4922a6084567b6037"
+  }
+}

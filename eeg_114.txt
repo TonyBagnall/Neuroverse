@@ -18,10 +18,9 @@ CognitiveLoadTasks
 CovidSurvivors
 EyesOpenShut
 FaceStimuli
+FamilialAlzheimersRest
 FeedbackButton
 FeetHands
-FibroLiverpool
-FibroUEA
 FingerMovements
 FlankerConflict
 FlickerAttention
@@ -60,6 +59,7 @@ ImaginedRightHandFeet
 ImaginedRightHandFeetRest
 InnerSpeech
 InternalAttention
+LearningDifficulties
 LongIntervalTask
 LowCost
 MatchingPennies
